@@ -1,23 +1,23 @@
 #!/usr/bin/env bash
-# Aktualizacja serwisu po zmianie treści. Uruchom na serwerze jako root:
-#   bash /opt/katalog/serwer/wdroz.sh
+# Aktualizacja serwisu na serwerze. Uruchom w katalogu projektu:
+#   bash serwer/wdroz.sh
 #
-# Buduje strony od nowa, podmienia je na dysku i przeładowuje usługę zapisów.
-# Przy błędzie budowania nic nie jest podmieniane — stara wersja zostaje online.
+# Pobiera zmiany z GitHuba, przebudowuje obrazy i podmienia kontenery.
+# Build stron dzieje się w obrazie — gdy się nie powiedzie, stare kontenery
+# zostają online i nic się nie podmienia.
 
 set -euo pipefail
-cd /opt/katalog
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
 
-echo "Buduję..."
-sudo -u katalog node build.mjs
+echo "Pobieram zmiany..."
+git pull --ff-only
 
-echo "Podmieniam pliki..."
-rsync -a --delete /opt/katalog/public/ /var/www/katalog/
-chown -R www-data:www-data /var/www/katalog
+echo "Buduję obrazy i podmieniam kontenery..."
+mkdir -p dane
+docker compose up -d --build
 
-echo "Przeładowuję usługę zapisów..."
-systemctl restart katalog-zapisy
-sleep 1
-systemctl is-active --quiet katalog-zapisy || { echo "BŁĄD: usługa nie wstała — journalctl -u katalog-zapisy -n 40"; exit 1; }
-
-echo "Gotowe. $(find /var/www/katalog -name index.html | wc -l) podstron online."
+echo "Sprawdzam..."
+sleep 2
+docker compose ps
+curl -fsS http://127.0.0.1:8790/api/zdrowie && echo
+echo "Gotowe."

@@ -1,0 +1,30 @@
+services:
+  web:
+    build:
+      context: .
+      target: web
+    ports:
+      - "127.0.0.1:8790:80"
+    depends_on:
+      zapisy:
+        condition: service_healthy
+    restart: unless-stopped
+
+  zapisy:
+    build:
+      context: .
+      target: zapisy
+    environment:
+      # W kontenerze usługa musi słuchać na 0.0.0.0, żeby nginx z sąsiedniego
+      # kontenera ją widział. Port 8788 nie jest wystawiony na hosta.
+      ZAPISY_HOST: 0.0.0.0
+    volumes:
+      # Dziennik zapisów i log maili — jeden katalog na hoście, backup to kopia pliku.
+      - ./dane:/var/lib/katalog
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8788/api/zdrowie"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+    restart: unless-stopped

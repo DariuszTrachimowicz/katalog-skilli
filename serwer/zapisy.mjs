@@ -256,8 +256,11 @@ const serwer = createServer(async (req, res) => {
   }
 });
 
-serwer.listen(C.port, "127.0.0.1", () => {
-  console.log(`Usługa zapisów działa na http://127.0.0.1:${C.port}`);
+// Domyślnie tylko localhost. W kontenerze ustawiamy ZAPISY_HOST=0.0.0.0 —
+// tam granicę wyznacza sieć compose, nie adres nasłuchu.
+const HOST = process.env.ZAPISY_HOST || "127.0.0.1";
+serwer.listen(C.port, HOST, () => {
+  console.log(`Usługa zapisów działa na http://${HOST}:${C.port}`);
   console.log(`Dane: ${C.plikDanych}`);
   console.log(`Wysyłka: tryb "${C.wysylka.tryb}"${C.wysylka.tryb === "log" ? ` (maile trafiają do ${DZIENNIK_MAILI}, nic nie wychodzi na zewnątrz)` : ""}`);
 });
