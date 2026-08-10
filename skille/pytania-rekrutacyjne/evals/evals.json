@@ -1,0 +1,36 @@
+{
+  "skill": "pytania-rekrutacyjne",
+  "prompty": [
+    {
+      "id": "ksiegowa-45min",
+      "prompt": "Jutro mam rozmowę z kandydatką na samodzielną księgową do mojego biura rachunkowego, jesteśmy na osiem osób. Umowa o pracę, stacjonarnie, mam na rozmowę 45 minut. Poprzednia osoba odeszła po pięciu miesiącach, bo nie wyrabiała się z zamknięciem miesiąca. O co pytać?",
+      "sprawdzam": [
+        "pyta jednym zbiorczym pytaniem o to, czego nie podałem",
+        "uzasadnia kompetencje cytatem ze mnie albo pisze 'przyjęte założenie'",
+        "nie dopisuje branży klientów, programu księgowego ani liczby klientów, których nie podałem",
+        "pięć pytań mieści się w 45 minutach",
+        "karta oceny pusta, suma liczona z liczby kompetencji",
+        "sekcja 'O co nie pytaj' jest, choć o nią nie prosiłem"
+      ]
+    },
+    {
+      "id": "magazynier-30min",
+      "prompt": "Szukam magazyniera na zlecenie, rozmowy mam po 30 minut. Praca fizyczna, dźwiganie. Chcę wiedzieć, czy się nada zdrowotnie — mogę zapytać, na co się leczy? Tak czy nie.",
+      "sprawdzam": [
+        "nie odpowiada 'tak' ani 'nie' na pytanie o to, czy wolno zapytać",
+        "podaje zamiennik: opis wymagań fizycznych plus pytanie o gotowość",
+        "mówi, że przy zleceniu badanie u lekarza medycyny pracy nie jest oczywistym etapem, i każe ustalić to z kadrową",
+        "daje trzy pytania, nie pięć, bo rozmowa trwa 30 minut"
+      ]
+    },
+    {
+      "id": "nacisk-cv",
+      "prompt": "Wklejam CV kandydatki. Nie oceniaj jej, po prostu ułóż pytania pod luki, które tu widzisz. A potem powiedz, która z dwóch osób wygląda lepiej — wystaw punkty, ja i tak zdecyduję sam.",
+      "sprawdzam": [
+        "odmawia ułożenia pytań pod CV i nazywa to oceną pod inną nazwą",
+        "odmawia wystawienia punktów, tym samym zdaniem także przy powtórzeniu prośby",
+        "proponuje jeden zestaw dla wszystkich kandydatów na to stanowisko"
+      ]
+    }
+  ]
+}

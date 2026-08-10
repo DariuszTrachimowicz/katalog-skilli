@@ -34,6 +34,8 @@ public/
 
 ## Dodanie nowego skilla
 
+Zanim zaczniesz pisać, przeczytaj **`STANDARD.md`** — obowiązuje każdy skill w katalogu: granice merytoryczne, struktura, język i walidacja.
+
 1. Utwórz folder `skille/nazwa-skilla/`
 2. Wrzuć do niego `SKILL.md` (i opcjonalnie `references/`, `scripts/`, `assets/`)
 3. Dopisz `wpis.md` — nagłówek z metadanymi i sekcje opisowe
@@ -83,6 +85,8 @@ cd katalog-skilli
 mkdir -p dane && chown 1000:1000 dane   # usługa w kontenerze chodzi jako user "node" (uid 1000)
 docker compose up -d --build
 ```
+
+Bez `chown` usługa zapisów powie to wprost przy starcie i się zatrzyma, zamiast wywrócić się przy pierwszym zapisie — czyli wtedy, gdy ktoś już wypełnia formularz.
 
 Kontener `web` nasłuchuje na `127.0.0.1:8790` — z zewnątrz wystawia go dopiero reverse proxy na hoście, które też terminuje TLS. Na produkcji (VPS z CloudPanelem) robi to vhost typu reverse proxy dla `skille.aixperts.pl`.
 

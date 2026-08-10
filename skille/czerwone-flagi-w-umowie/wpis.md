@@ -5,7 +5,7 @@ status: gotowy
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Czyta umowę, którą masz podpisać, i mówi po ludzku, na co uważać. Na koniec daje gotowe pytania do prawnika.
-szukaj: umowa, kontrakt, NDA, prawnik, ryzyko, kara umowna, zakaz konkurencji, freelancer, B2B, najem
+szukaj: umowa, kontrakt, prawnik, ryzyko, kara umowna, zakaz konkurencji, freelancer, B2B, najem
 tytulSeo: Na co uważać w umowie B2B — darmowe narzędzie AI po polsku
 opisSeo: Wgraj umowę i zobacz prostym językiem, które zapisy są ryzykowne. Kary umowne, zakaz konkurencji, prawa autorskie, ukryty etat. Za darmo, po polsku.
 zgodnosc:
@@ -55,14 +55,14 @@ Dowolny płatny plan Claude i umowa w pliku PDF, w Wordzie albo wklejona jako zw
 
 ## Czego ten skill nie robi celowo
 
-Nie pisze umów, nie proponuje poprawek, nie układa list rzeczy do wykreślenia, nie pisze maili do kontrahenta i nie odpowiada na pytanie „czy to jest zgodne z prawem". Jeśli poprosisz — odmówi i wróci do wyjaśniania.
+Nie pisze umów, nie proponuje poprawek, nie układa list rzeczy do wykreślenia, nie pisze maili do kontrahenta i nie odpowiada na pytanie „czy to jest zgodne z prawem”. Jeśli poprosisz — odmówi i wróci do wyjaśniania.
 
 To granica postawiona świadomie. Narzędzie, które generuje klauzule, wchodzi w buty prawnika, a odpowiedzialność za skutki zostawia Tobie. To narzędzie robi coś innego i uczciwszego: sprawia, że rozumiesz, co podpisujesz, i wiesz, o co zapytać.
 
 ## Jak powstał
 
-Pierwsza wersja zawierała błąd. Napisaliśmy w niej, że termin płatności powyżej 60 dni „wymaga szczególnego uzasadnienia" — co jest prawdą tylko w ogólnym przypadku. Przy kliencie publicznym granica jest inna, a w części układów 60 dni to limit twardy, którego nie da się negocjować. Skill podpowiadałby ludziom walkę o coś, czego wywalczyć się nie da.
+Pierwsza wersja zawierała błąd. Napisaliśmy w niej, że termin płatności powyżej 60 dni „wymaga szczególnego uzasadnienia” — co jest prawdą tylko w ogólnym przypadku. Przy kliencie publicznym granica jest inna, a w części układów 60 dni to limit twardy, którego nie da się negocjować. Skill podpowiadałby ludziom walkę o coś, czego wywalczyć się nie da.
 
-Wyszło to przy teście, w którym osobny model dostał zadanie obalić każde twierdzenie w pliku. Ten sam test wykrył trzy miejsca, w których dało się obejść granicę „nie piszę klauzul" — wystarczyło poprosić drugi raz.
+Wyszło to przy teście, w którym osobny model dostał zadanie obalić każde twierdzenie w pliku. Ten sam test wykrył trzy miejsca, w których dało się obejść granicę „nie piszę klauzul” — wystarczyło poprosić drugi raz.
 
-Stąd zasada, która obowiązuje teraz w całym katalogu: **skill uzasadnia skutkiem, nigdy przepisem.** Nie „przekracza ustawową granicę", tylko „to bardzo długo jak na płatność między firmami — zapytaj prawnika, czy taki termin jest tu dopuszczalny". Dzięki temu narzędzie nie dezaktualizuje się przy każdej nowelizacji i nie wkłada w usta użytkownika twierdzeń, których nie da się obronić.
+Stąd zasada, która obowiązuje teraz w całym katalogu: **skill uzasadnia skutkiem, nigdy przepisem.** Nie „przekracza ustawową granicę”, tylko „to bardzo długo jak na płatność między firmami — zapytaj prawnika, czy taki termin jest tu dopuszczalny”. Dzięki temu narzędzie nie dezaktualizuje się przy każdej nowelizacji i nie wkłada w usta użytkownika twierdzeń, których nie da się obronić.

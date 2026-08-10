@@ -256,9 +256,28 @@ const serwer = createServer(async (req, res) => {
   }
 });
 
-// Domyślnie tylko localhost. W kontenerze ustawiamy ZAPISY_HOST=0.0.0.0 —
-// tam granicę wyznacza sieć compose, nie adres nasłuchu.
+// Domyślnie tylko pętla zwrotna — przy instalacji na hoście nginx stoi obok
+// i nikt z zewnątrz nie ma się tu dobijać.
+//
+// W kontenerze to jednak nie wystarcza: nginx siedzi w SĄSIEDNIM kontenerze,
+// więc adres 127.0.0.1 oznacza dla niego coś innego niż dla nas i połączenie
+// nie ma prawa dojść. Awaria jest przy tym cicha — kontrola stanu usługi
+// odpytuje 127.0.0.1 od środka i przechodzi, więc kontener raportuje pełne
+// zdrowie, a każde żądanie do /api/ kończy się błędem bramy. Stąd ZAPISY_HOST:
+// w docker-compose ustawiamy 0.0.0.0, port i tak nie wychodzi poza sieć compose.
 const HOST = process.env.ZAPISY_HOST || "127.0.0.1";
+
+// Katalog na dane bywa podmontowany z hosta jako własność roota, a usługa
+// chodzi na nieuprzywilejowanym użytkowniku. Lepiej powiedzieć to wprost przy
+// starcie niż wywrócić się przy pierwszym zapisie, gdy ktoś już wypełnia formularz.
+try {
+  appendFileSync(C.plikDanych, "");
+} catch (e) {
+  console.error(`Nie mogę pisać do ${C.plikDanych} (${e.code}).`);
+  console.error(`Nadaj prawa katalogowi: chown -R 1000:1000 ${dirname(C.plikDanych)}`);
+  process.exit(1);
+}
+
 serwer.listen(C.port, HOST, () => {
   console.log(`Usługa zapisów działa na http://${HOST}:${C.port}`);
   console.log(`Dane: ${C.plikDanych}`);

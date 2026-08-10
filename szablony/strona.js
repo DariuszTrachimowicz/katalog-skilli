@@ -135,11 +135,15 @@ function pokazWynik() {
 
   // Nagłówek musi mówić prawdę o liczbie pozycji — przy małym katalogu
   // obietnica "sześć umiejętności" nad jedną kartą wygląda na awarię.
+  // Polski liczebnik rządzi przypadkiem: jedna dobrana, dwie–cztery dobrane,
+  // pięć i więcej dobranych. Bez tego nagłówek zgrzyta przy każdym wyniku.
   const SLOWNIE = ["Zero", "Jedna", "Dwie", "Trzy", "Cztery", "Pięć", "Sześć"];
+  const n = wynik.length;
+  const liczba = SLOWNIE[n] || n;
   const naglowek =
-    wynik.length === 1
-      ? "Jedna umiejętność dobrana pod Twoją pracę"
-      : `${SLOWNIE[wynik.length] || wynik.length} umiejętności dobrane pod Twoją pracę`;
+    n === 1 ? "Jedna umiejętność dobrana pod Twoją pracę"
+    : n >= 2 && n <= 4 ? `${liczba} umiejętności dobrane pod Twoją pracę`
+    : `${liczba} umiejętności dobranych pod Twoją pracę`;
 
   $("qbody").innerHTML = `
     <div class="q-title">${naglowek}</div>

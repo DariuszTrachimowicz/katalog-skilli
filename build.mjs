@@ -234,7 +234,7 @@ function stronaGlowna(skille) {
       <h3>${esc(s.nazwa)}</h3>
       <p>${esc(s.skrot)}</p>
       <div class="compat">${znacznikiZgodnosci(s)}</div>
-      <div class="card-foot"><span>${esc(s.poziom || "")}</span><em>Zobacz &rarr;</em></div>
+      <div class="card-foot"><em>Zobacz &rarr;</em></div>
     </a>`
     )
     .join("");
@@ -246,7 +246,7 @@ function stronaGlowna(skille) {
   <div class="wrap">
     <p class="eyebrow">Katalog kuratorowany &middot; aktualizacja ${new Date().toISOString().slice(0, 10)}</p>
     <h1>Co sztuczna inteligencja<br>może zrobić <em>za Ciebie</em><br>w Twojej pracy.</h1>
-    <p class="lede">Gotowe umiejętności do pobrania, opisane językiem, którym mówi się w biurze — a nie w dokumentacji technicznej. Jeden plik działa w Claude i ChatGPT. Każdą uruchomiliśmy sami, a jeśli gdzieś nie zadziała, piszemy o tym wprost.</p>
+    <p class="lede">Gotowe umiejętności do pobrania, opisane językiem, którym mówi się w biurze — a nie w dokumentacji technicznej. Jeden plik działa w Claude i ChatGPT. Zielony znacznik dostaje tylko skill, który uruchomiliśmy sami — o wszystkim innym piszemy wprost.</p>
     <div class="hero-cta">
       <a href="#test" class="btn">Dobierz skille dla siebie</a>
       <a href="#katalog" class="btn ghost">Przeglądaj katalog</a>
@@ -254,7 +254,7 @@ function stronaGlowna(skille) {
     <p class="hero-note">Test zajmuje minutę. Nie musisz nic instalować, żeby zobaczyć wynik.</p>
     <div class="stats">
       <div class="stat"><b>${skille.length}</b><span>umiejętności opisanych ręcznie — nie zescrapowanych z GitHuba</span></div>
-      <div class="stat"><b>${gotowe}</b><span>gotowych do pobrania i sprawdzonych na polskich dokumentach</span></div>
+      <div class="stat"><b>${gotowe}</b><span>gotowych do pobrania od ręki, bez podawania adresu e-mail</span></div>
       <div class="stat"><b>0 zł</b><span>za pobranie. Katalog jest i zostanie darmowy</span></div>
     </div>
   </div>

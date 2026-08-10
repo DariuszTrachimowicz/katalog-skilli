@@ -7,7 +7,7 @@ Lista mówi, **na co patrzeć**. Nie jest treścią do przepisania do odpowiedzi
 ## Pieniądze i terminy
 
 - Długi termin płatności. Granice zależą od tego, kto jest kim: inaczej przy kliencie publicznym, inaczej gdy dłużnikiem jest duża firma, a wierzycielem mała. **Z samego tekstu umowy tego nie rozstrzygniesz** — kieruj do prawnika lub księgowej.
-- Płatność uzależniona od tego, czy zapłaci ktoś trzeci („zapłacimy, gdy zapłaci nam klient końcowy").
+- Płatność uzależniona od tego, czy zapłaci ktoś trzeci („zapłacimy, gdy zapłaci nam klient końcowy”).
 - Brak terminu płatności w ogóle.
 - Wynagrodzenie stałe w umowie wieloletniej lub bezterminowej, bez możliwości podniesienia.
 - Warunek odbioru sformułowany tak, że druga strona może odwlekać go w nieskończoność — brak liczby dni na uwagi i brak skutku milczenia.
@@ -86,7 +86,7 @@ Lista mówi, **na co patrzeć**. Nie jest treścią do przepisania do odpowiedzi
 - Prawo jednostronnej zmiany warunków, cennika, załącznika lub procedur.
 - Odesłanie do dokumentu, który może się zmieniać bez zgody użytkownika.
 - Milcząca akceptacja zmian.
-- **Fikcja doręczenia** — „pismo wysłane na adres z umowy uważa się za doręczone". Wygląda niewinnie, a odcina od wiedzy o wypowiedzeniu czy karze.
+- **Fikcja doręczenia** — „pismo wysłane na adres z umowy uważa się za doręczone”. Wygląda niewinnie, a odcina od wiedzy o wypowiedzeniu czy karze.
 - Wymóg formy pisemnej dla zmian przy zespole, który wszystko ustala mailem.
 
 ## Spory i sąd
