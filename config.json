@@ -1,0 +1,47 @@
+{
+  "domena": "skille.aixperts.pl",
+  "nazwaSerwisu": "Skille po polsku",
+  "opisSerwisu": "Kuratorowany katalog umiejętności AI opisanych prostym językiem. Każda sprawdzona na polskich dokumentach, każda do pobrania za darmo.",
+  "autor": "Dariusz",
+  "mailKontaktowy": "kontakt@aixperts.pl",
+  "linkSzkolenia": "https://aixperts.pl/szkolenia/",
+
+  "zapisy": {
+    "port": 8788,
+    "plikDanych": "/var/lib/katalog/zapisy.jsonl",
+    "limitNaGodzine": 20,
+    "wysylka": {
+      "tryb": "log",
+      "_komentarz": "tryb: 'log' zapisuje treść maila do pliku zamiast wysyłać — używaj do czasu podpięcia dostawcy. Zmień na 'http', gdy uzupełnisz poniższe pola.",
+      "url": "https://api.resend.com/emails",
+      "naglowekAutoryzacji": "Bearer WSTAW_KLUCZ_API",
+      "nadawca": "Katalog <katalog@aixperts.pl>"
+    }
+  },
+
+  "platformy": {
+    "claude": {
+      "nazwa": "Claude",
+      "instalacja": "Ustawienia &rarr; Umiejętności &rarr; Prześlij umiejętność",
+      "uwaga": "Działa na dowolnym płatnym planie."
+    },
+    "gpt": {
+      "nazwa": "ChatGPT",
+      "instalacja": "Skills &rarr; Upload from your computer",
+      "uwaga": "Wymaga planu Business, Enterprise, Edu lub Healthcare. Na planie Plus i w wersji darmowej skille nie są dostępne."
+    },
+    "gemini": {
+      "nazwa": "Gemini",
+      "instalacja": "Skills &rarr; wgraj plik",
+      "uwaga": "Aplikacja Gemini obsługuje skille, ale funkcja nie została udostępniona w Europejskim Obszarze Gospodarczym, więc w Polsce nie zadziała. Google zapowiada zmianę, bez potwierdzonej daty."
+    }
+  },
+
+  "statusy": {
+    "ok": "przetestowane",
+    "format": "format zgodny, nietestowane",
+    "brak": "niedostępne w Polsce"
+  },
+
+  "kategorie": ["Biuro", "Finanse", "Kadry", "Prawo", "Marketing", "Dane"]
+}
