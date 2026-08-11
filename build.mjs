@@ -100,6 +100,7 @@ function strona({ tytul, opis, tresc, sciezka, jsonld = null, skrypt = "", obraz
 <link rel="stylesheet" href="/styl.css">
 <link rel="icon" href="/ikona.png" type="image/png">
 <link rel="apple-touch-icon" href="/ikona.png">
+${cfg.analityka ? `<script defer src="${cfg.analityka.skrypt}" data-website-id="${cfg.analityka.idSerwisu}"></script>` : ""}
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ""}
 </head>
 <body>
@@ -190,7 +191,7 @@ function stronaSkilla(s) {
 
   ${gotowy
     ? `<div class="dl"><div><b>${s.id}.skill</b><span>Pobranie nie wymaga podawania adresu e-mail</span></div>
-       <a class="btn" href="/pobierz/${s.id}.skill" download>Pobierz</a></div>`
+       <a class="btn" href="/pobierz/${s.id}.skill" download data-umami-event="pobranie" data-umami-event-skill="${s.id}">Pobierz</a></div>`
     : `<div class="dl"><div><b>W przygotowaniu</b><span>Zrób test doboru — napiszemy, gdy będzie gotowa</span></div>
        <a class="btn ghost" href="/#test">Powiadom mnie</a></div>`}
 
@@ -349,8 +350,9 @@ function stronaPrywatnosci() {
     <p>Po podaniu adresu dostajesz wiadomość z linkiem potwierdzającym. Dopóki w niego nie klikniesz, nie wyślemy Ci nic więcej. Jeśli ktoś wpisał Twój adres przez pomyłkę, wystarczy zignorować tę jedną wiadomość.</p></section>
   <section class="blok"><h3>Jak się wypisać</h3>
     <p>Link do wypisania jest w stopce każdej wiadomości i działa od razu, bez pytań i bez logowania. Możesz też napisać na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a> — usuwamy adres wraz z całą historią.</p></section>
-  <section class="blok"><h3>Ciasteczka</h3>
-    <p>Nie używamy ciasteczek śledzących ani zewnętrznych narzędzi analitycznych. Wyniki testu trzymamy w pamięci Twojej przeglądarki, żeby nie znikały przy przewijaniu strony — nie wychodzą one nigdzie poza Twoje urządzenie, dopóki sam nie klikniesz „wyślij".</p></section>
+  <section class="blok"><h3>Ciasteczka i statystyki</h3>
+    <p>Nie używamy ciasteczek śledzących ani narzędzi analitycznych firm trzecich. Wyniki testu trzymamy w pamięci Twojej przeglądarki, żeby nie znikały przy przewijaniu strony — nie wychodzą one nigdzie poza Twoje urządzenie, dopóki sam nie klikniesz „wyślij".</p>
+    <p>Oglądalność mierzymy własnym narzędziem (Umami) uruchomionym na tym samym serwerze co strona. Działa bez ciasteczek i nie buduje profilu: widzimy, które podstrony są odwiedzane, skąd przychodzą wejścia i ile osób kończy test lub pobiera plik — nie wiemy, kim jesteś, a dane nie są nikomu przekazywane. Dlatego nie wyświetlamy banera zgody: nie ma tu nic, na co trzeba by jej udzielać.</p></section>
   <div class="powrot"><a class="btn ghost" href="/">&larr; Wróć do katalogu</a></div>
 </article></main>`;
   return strona({ tytul: `Prywatność — ${cfg.nazwaSerwisu}`, opis: "Jakie dane zbiera katalog i co się z nimi dzieje.", sciezka: "/prywatnosc/", tresc });

@@ -6,6 +6,12 @@
   "mailKontaktowy": "kontakt@aixperts.pl",
   "linkSzkolenia": "https://aixperts.pl/szkolenia/",
 
+  "analityka": {
+    "_komentarz": "Self-hosted Umami na tym samym VPS-ie — bez ciasteczek, dane nie wychodzą poza nasz serwer. Usuń sekcję, żeby wyłączyć zbieranie.",
+    "skrypt": "https://statystyki.aixperts.pl/script.js",
+    "idSerwisu": "b60585a9-a097-4679-8fba-77d7005cd895"
+  },
+
   "zapisy": {
     "port": 8788,
     "plikDanych": "/var/lib/katalog/zapisy.jsonl",

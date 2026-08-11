@@ -168,6 +168,10 @@ function pokazWynik() {
   $("wyslij").addEventListener("click", wyslij);
   $("mail").addEventListener("keydown", (e) => { if (e.key === "Enter") wyslij(); });
   $("odnowa").addEventListener("click", () => { nr = 0; punkty = {}; rysuj(); });
+
+  // Zdarzenie do statystyk (self-hosted, bez ciasteczek) — sama liczba ukończeń,
+  // bez treści odpowiedzi. Gdy analityka jest wyłączona, nic się nie dzieje.
+  window.umami?.track("wynik-testu", { skilli: wynik.length });
 }
 
 async function wyslij() {
@@ -196,6 +200,7 @@ async function wyslij() {
 
     if (!odp.ok) throw new Error(dane.blad || "Nie udało się zapisać.");
 
+    window.umami?.track("zapis"); // sam fakt zapisu — adres nie trafia do statystyk
     $("cap").innerHTML = `<div class="sent"><strong>Sprawdź skrzynkę.</strong><br>
       Wysłaliśmy wiadomość na <strong>${adres}</strong> z linkiem potwierdzającym. Kliknij go, a zestaw przyjdzie od razu.
       Jeśli nic nie widzisz w ciągu kilku minut, zajrzyj do spamu.</div>`;
