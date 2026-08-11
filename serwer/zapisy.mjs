@@ -10,6 +10,8 @@
 // W produkcji chodzi pod systemd, za nginx-em, tylko na localhost.
 
 import { createServer } from "node:http";
+import { createConnection } from "node:net";
+import { connect as polaczTls } from "node:tls";
 import { readFileSync, appendFileSync, existsSync, mkdirSync } from "node:fs";
 import { randomBytes, timingSafeEqual, createHash } from "node:crypto";
 import { join, dirname } from "node:path";
@@ -92,8 +94,105 @@ function przekroczonyLimit(ip) {
 
 /* ---------- wysyłka ---------- */
 
+// Minimalny klient SMTP (STARTTLS + AUTH PLAIN) na czystej bibliotece Node —
+// dokładnie tyle protokołu, ile potrzebuje ta usługa, i ani linijki zależności.
+// Obsługuje wyłącznie nasz przypadek: jeden odbiorca, tekst, UTF-8.
+function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy, adresat, temat, tresc }) {
+  return new Promise((zrobione, blad) => {
+    let gniazdo = createConnection(port, host);
+    let zakonczone = false;
+    const koniec = (e) => {
+      if (zakonczone) return;
+      zakonczone = true;
+      try { gniazdo.destroy(); } catch {}
+      e ? blad(e) : zrobione();
+    };
+    gniazdo.setTimeout(20_000, () => koniec(new Error("SMTP: przekroczony czas")));
+    gniazdo.on("error", koniec);
+
+    // Odpowiedź SMTP jest kompletna, gdy ostatnia linia zaczyna się od "XXX " —
+    // wcześniejsze linie wieloliniowej odpowiedzi mają "XXX-".
+    const odpowiedz = () =>
+      new Promise((ok, zle) => {
+        let dane = "";
+        const naDane = (c) => {
+          dane += c.toString("utf8");
+          const linie = dane.split("\r\n").filter(Boolean);
+          if (linie.length && /^\d{3} /.test(linie[linie.length - 1])) {
+            gniazdo.off("data", naDane);
+            ok({ kod: parseInt(linie[linie.length - 1], 10), tekst: dane });
+          }
+        };
+        gniazdo.on("data", naDane);
+        gniazdo.once("error", zle);
+      });
+
+    const komenda = async (cmd, oczekiwany) => {
+      gniazdo.write(cmd + "\r\n");
+      const o = await odpowiedz();
+      if (o.kod !== oczekiwany) throw new Error(`SMTP: "${cmd.split(" ")[0]}" → ${o.tekst.trim().slice(0, 120)}`);
+      return o;
+    };
+
+    // Nagłówki z polskimi znakami idą jako RFC 2047, treść jako base64 —
+    // to zdejmuje wszystkie problemy 8-bitowych znaków w protokole.
+    const slowo = (t) => (/[^\x20-\x7E]/.test(t) ? `=?UTF-8?B?${Buffer.from(t, "utf8").toString("base64")}?=` : t);
+    const cialo = Buffer.from(tresc, "utf8").toString("base64").replace(/(.{76})/g, "$1\r\n");
+    const naglowki = [
+      `From: ${slowo(nazwaNadawcy)} <${adresNadawcy}>`,
+      `To: <${adresat}>`,
+      `Subject: ${slowo(temat)}`,
+      `Date: ${new Date().toUTCString()}`,
+      `Message-ID: <${randomBytes(12).toString("hex")}@${cfg.domena}>`,
+      "MIME-Version: 1.0",
+      'Content-Type: text/plain; charset=utf-8',
+      "Content-Transfer-Encoding: base64",
+    ].join("\r\n");
+
+    (async () => {
+      const powitanie = await odpowiedz();
+      if (powitanie.kod !== 220) throw new Error(`SMTP: powitanie → ${powitanie.tekst.trim().slice(0, 120)}`);
+      await komenda(`EHLO ${cfg.domena}`, 250);
+      await komenda("STARTTLS", 220);
+
+      // Podmiana gniazda na szyfrowane — dalsze komendy idą już w TLS.
+      await new Promise((ok, zle) => {
+        const tls = polaczTls({ socket: gniazdo, servername: host }, () => { gniazdo = tls; ok(); });
+        tls.once("error", zle);
+      });
+      gniazdo.setTimeout(20_000, () => koniec(new Error("SMTP: przekroczony czas (TLS)")));
+      gniazdo.on("error", koniec);
+
+      await komenda(`EHLO ${cfg.domena}`, 250);
+      await komenda("AUTH PLAIN " + Buffer.from(`\0${uzytkownik}\0${haslo}`, "utf8").toString("base64"), 235);
+      await komenda(`MAIL FROM:<${adresNadawcy}>`, 250);
+      await komenda(`RCPT TO:<${adresat}>`, 250);
+      await komenda("DATA", 354);
+      await komenda(naglowki + "\r\n\r\n" + cialo + "\r\n.", 250);
+      gniazdo.write("QUIT\r\n");
+      koniec();
+    })().catch(koniec);
+  });
+}
+
 async function wyslijMail({ do: adresat, temat, tresc }) {
   const w = C.wysylka;
+
+  if (w.tryb === "smtp") {
+    const haslo = process.env[w.hasloZmienna || "SMTP_HASLO"];
+    if (!haslo) { console.error("Wysyłka SMTP: brak hasła w zmiennej środowiskowej", w.hasloZmienna || "SMTP_HASLO"); return false; }
+    const [, nazwa = cfg.nazwaSerwisu, adres] = w.nadawca.match(/^\s*(.*?)\s*<([^>]+)>\s*$/) || [null, cfg.nazwaSerwisu, w.nadawca];
+    try {
+      await smtpWyslij({
+        host: w.host, port: w.port || 587, uzytkownik: w.uzytkownik, haslo,
+        adresNadawcy: adres, nazwaNadawcy: nazwa, adresat, temat, tresc,
+      });
+      return true;
+    } catch (e) {
+      console.error("Wysyłka SMTP nieudana:", e.message);
+      return false;
+    }
+  }
 
   if (w.tryb === "log") {
     appendFileSync(

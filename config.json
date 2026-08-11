@@ -21,11 +21,15 @@
       "formularz": "https://crm.aixperts.pl/forms/wtl/f7c7764615e1de062eba63114e759c18"
     },
     "wysylka": {
-      "tryb": "log",
-      "_komentarz": "tryb: 'log' zapisuje treść maila do pliku zamiast wysyłać — używaj do czasu podpięcia dostawcy. Zmień na 'http', gdy uzupełnisz poniższe pola.",
+      "tryb": "smtp",
+      "_komentarz": "Tryby: 'smtp' (własny klient, hasło w zmiennej środowiskowej z hasloZmienna — patrz .env), 'http' (API dostawcy, np. Resend), 'log' (mail do pliku zamiast wysyłki, do testów).",
+      "host": "smtp.dpoczta.pl",
+      "port": 587,
+      "uzytkownik": "katalog@aixperts.pl",
+      "hasloZmienna": "SMTP_HASLO",
+      "nadawca": "Skille po polsku <katalog@aixperts.pl>",
       "url": "https://api.resend.com/emails",
-      "naglowekAutoryzacji": "Bearer WSTAW_KLUCZ_API",
-      "nadawca": "Katalog <katalog@aixperts.pl>"
+      "naglowekAutoryzacji": "Bearer WSTAW_KLUCZ_API"
     }
   },
 

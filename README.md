@@ -114,8 +114,9 @@ docker compose exec zapisy node narzedzia/eksport.mjs --wszystkie  # z niepotwie
 
 W `config.json`, w sekcji `zapisy.wysylka`:
 
-- `"tryb": "log"` — maile lądują w `dane/wyslane-maile.log` zamiast wychodzić. Tak zostaw, dopóki nie podepniesz dostawcy; wszystko inne działa normalnie i możesz przeklikać całą ścieżkę.
-- `"tryb": "http"` — wysyłka przez API dostawcy poczty. Uzupełnij `url`, `naglowekAutoryzacji` i `nadawca`.
+- `"tryb": "smtp"` — wysyłka własnym, minimalnym klientem SMTP (STARTTLS + AUTH, czysta biblioteka Node). Uzupełnij `host`, `port`, `uzytkownik`, `nadawca`, a hasło podaj w zmiennej środowiskowej wskazanej w `hasloZmienna` — w Dockerze przez plik `.env` obok `docker-compose.yml` (jest w `.gitignore`, nie trafia do repo).
+- `"tryb": "http"` — wysyłka przez API dostawcy poczty (np. Resend). Uzupełnij `url`, `naglowekAutoryzacji` i `nadawca`.
+- `"tryb": "log"` — maile lądują w `dane/wyslane-maile.log` zamiast wychodzić; do testów, wszystko inne działa normalnie.
 
 **Nie wysyłaj maili bezpośrednio z VPS-a.** Świeży adres IP nie ma reputacji i wiadomości będą lądować w spamie albo znikać. Trzymanie adresów u siebie jest łatwe, dostarczanie poczty nie jest — to dwie różne rzeczy i tylko drugą warto oddać na zewnątrz.
 

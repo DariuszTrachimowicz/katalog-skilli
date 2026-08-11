@@ -18,6 +18,8 @@ services:
       # W kontenerze usługa musi słuchać na 0.0.0.0, żeby nginx z sąsiedniego
       # kontenera ją widział. Port 8788 nie jest wystawiony na hosta.
       ZAPISY_HOST: 0.0.0.0
+      # Hasło skrzynki nadawczej — z pliku .env obok compose (poza gitem).
+      SMTP_HASLO: ${SMTP_HASLO:-}
     volumes:
       # Dziennik zapisów i log maili — jeden katalog na hoście, backup to kopia pliku.
       - ./dane:/var/lib/katalog
