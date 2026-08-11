@@ -39,7 +39,8 @@ Zanim zaczniesz pisać, przeczytaj **`STANDARD.md`** — obowiązuje każdy skil
 1. Utwórz folder `skille/nazwa-skilla/`
 2. Wrzuć do niego `SKILL.md` (i opcjonalnie `references/`, `scripts/`, `assets/`)
 3. Dopisz `wpis.md` — nagłówek z metadanymi i sekcje opisowe
-4. `bash serwer/wdroz.sh`
+4. `node narzedzia/grafiki.mjs` — wygeneruje grafikę podglądu dla social mediów (wymaga Chrome; wynik commitujesz razem ze skillem)
+5. `bash serwer/wdroz.sh`
 
 Nawigacja, wyszukiwarka, sitemap i test doboru zaktualizują się same.
 

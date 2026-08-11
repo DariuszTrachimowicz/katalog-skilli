@@ -73,8 +73,9 @@ function wczytajSkille() {
 
 const klasaKat = (k) => "t-" + (k || "").toLowerCase().replace(/[ąĄ]/g, "a").replace(/[^a-z]/g, "");
 
-function strona({ tytul, opis, tresc, sciezka, jsonld = null, skrypt = "" }) {
+function strona({ tytul, opis, tresc, sciezka, jsonld = null, skrypt = "", obrazek = "katalog.png" }) {
   const kanoniczny = BAZA + sciezka;
+  const adresObrazka = `${BAZA}/og/${obrazek}`;
   return `<!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -88,7 +89,13 @@ function strona({ tytul, opis, tresc, sciezka, jsonld = null, skrypt = "" }) {
 <meta property="og:description" content="${esc(opis)}">
 <meta property="og:url" content="${kanoniczny}">
 <meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="${esc(cfg.nazwaSerwisu)}">
+<meta property="og:image" content="${adresObrazka}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="${esc(tytul)}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="${adresObrazka}">
 <link rel="stylesheet" href="/fonty.css">
 <link rel="stylesheet" href="/styl.css">
 <link rel="icon" href="/ikona.svg" type="image/svg+xml">
@@ -200,6 +207,7 @@ function stronaSkilla(s) {
     tytul: s.tytulSeo || `${s.nazwa} — ${cfg.nazwaSerwisu}`,
     opis: s.opisSeo || s.skrot,
     sciezka: `/skill/${s.id}/`,
+    obrazek: existsSync(join(KORZEN, "szablony", "og", `${s.id}.png`)) ? `${s.id}.png` : "katalog.png",
     tresc,
     jsonld: {
       "@context": "https://schema.org",
@@ -399,6 +407,7 @@ cpSync(join(KORZEN, "szablony", "styl.css"), join(WY, "styl.css"));
 cpSync(join(KORZEN, "szablony", "ikona.svg"), join(WY, "ikona.svg"));
 cpSync(join(KORZEN, "szablony", "fonty.css"), join(WY, "fonty.css"));
 cpSync(join(KORZEN, "szablony", "fonty"), join(WY, "fonty"), { recursive: true });
+if (existsSync(join(KORZEN, "szablony", "og"))) cpSync(join(KORZEN, "szablony", "og"), join(WY, "og"), { recursive: true });
 
 // dane dla usługi zapisów — żeby mail z zestawem znał nazwy i adresy skilli
 zapisz(
