@@ -130,7 +130,7 @@ ${tresc}
 <footer>
   <div class="wrap foot">
     <div>${esc(cfg.nazwaSerwisu)} &middot; <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a></div>
-    <div><a href="/prywatnosc/">Prywatność</a> &middot; Katalog nie jest powiązany z Anthropic, OpenAI ani Google.</div>
+    <div><a href="/regulamin/">Regulamin</a> &middot; <a href="/prywatnosc/">Prywatność</a> &middot; Katalog nie jest powiązany z Anthropic, OpenAI ani Google.</div>
   </div>
 </footer>
 ${skrypt}
@@ -340,6 +340,34 @@ ${readFileSync(join(KORZEN, "szablony", "strona.js"), "utf8")}
   });
 }
 
+/* ---------- regulamin ---------- */
+
+function stronaRegulaminu() {
+  const tresc = `<main class="wrap"><article class="art">
+  <p class="krusz"><a href="/">Katalog</a> &rarr; Regulamin</p>
+  <h1>Regulamin</h1>
+  <p class="skrot">Krótko i po ludzku — bo w tym serwisie naprawdę niewiele się dzieje. Obowiązuje od 12 sierpnia 2026.</p>
+  <section class="blok"><h3>Kto prowadzi ten serwis</h3>
+    <p>Serwis ${esc(cfg.nazwaSerwisu)} (${esc(cfg.domena)}) prowadzi <strong>D-X.PL Michał Jaśkiewicz</strong>, ul. Więckowskiego 32 lok. 8, 90-728 Łódź, NIP 7262533563, REGON 362247556. Kontakt: <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>.</p></section>
+  <section class="blok"><h3>Co oferuje serwis</h3>
+    <p>Trzy rzeczy, wszystkie bezpłatne: przeglądanie katalogu umiejętności AI, pobieranie plików .skill oraz test doboru z opcjonalnym newsletterem. Przeglądanie i pobieranie nie wymagają konta ani podawania jakichkolwiek danych.</p></section>
+  <section class="blok"><h3>Newsletter</h3>
+    <p>Zapis wymaga podania adresu e-mail i potwierdzenia go kliknięciem w link — bez potwierdzenia niczego więcej nie wysyłamy. Po potwierdzeniu dostajesz dobrany w teście zestaw umiejętności, a potem od czasu do czasu wiadomości o nowościach w katalogu oraz o szkoleniach i usługach prowadzącego serwis. Z listy wypisujesz się jednym kliknięciem w stopce każdej wiadomości — bez pytań i bez logowania.</p></section>
+  <section class="blok"><h3>Pliki .skill</h3>
+    <p>Pobrane umiejętności możesz używać w swojej pracy i w swojej firmie bez ograniczeń. Opisy są materiałem informacyjnym — nie zastępują porady prawnej, podatkowej ani kadrowej, a wyniki działania narzędzi AI zawsze warto sprawdzić przed użyciem.</p></section>
+  <section class="blok"><h3>Warunki techniczne</h3>
+    <p>Wystarczy przeglądarka internetowa z włączonym JavaScriptem, a do newslettera — działający adres e-mail.</p></section>
+  <section class="blok"><h3>Reklamacje</h3>
+    <p>Coś nie działa albo masz zastrzeżenia? Napisz na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a> — odpowiadamy najpóźniej w 14 dni.</p></section>
+  <section class="blok"><h3>Dane osobowe</h3>
+    <p>Wszystko o danych opisuje <a href="/prywatnosc/">polityka prywatności</a> — łącznie z tym, czego nie zbieramy.</p></section>
+  <section class="blok"><h3>Zmiany regulaminu</h3>
+    <p>O zmianach istotnych dla zapisanych na newsletter poinformujemy mailem. Data obowiązującej wersji jest zawsze na górze tej strony.</p></section>
+  <div class="powrot"><a class="btn ghost" href="/">&larr; Wróć do katalogu</a></div>
+</article></main>`;
+  return strona({ tytul: `Regulamin — ${cfg.nazwaSerwisu}`, opis: "Zasady korzystania z katalogu, pobierania skilli i newslettera.", sciezka: "/regulamin/", tresc });
+}
+
 /* ---------- strona prywatności ---------- */
 
 function stronaPrywatnosci() {
@@ -347,6 +375,8 @@ function stronaPrywatnosci() {
   <p class="krusz"><a href="/">Katalog</a> &rarr; Prywatność</p>
   <h1>Prywatność</h1>
   <p class="skrot">Krótko, bo naprawdę niewiele tu się dzieje.</p>
+  <section class="blok"><h3>Kto odpowiada za Twoje dane</h3>
+    <p>Administratorem danych jest <strong>D-X.PL Michał Jaśkiewicz</strong>, ul. Więckowskiego 32 lok. 8, 90-728 Łódź, NIP 7262533563. W każdej sprawie dotyczącej danych napisz na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>.</p></section>
   <section class="blok"><h3>Co zbieramy</h3>
     <p>Wyłącznie adres e-mail, i tylko wtedy, gdy sam go podasz na końcu testu doboru. Razem z nim zapisujemy listę umiejętności, które wyszły Ci w wyniku — po to, żeby móc wysłać Ci właściwy zestaw.</p>
     <p>Pobranie pliku nie wymaga podania żadnych danych. Przeglądanie katalogu też nie.</p></section>
@@ -357,6 +387,8 @@ function stronaPrywatnosci() {
     <p>Po podaniu adresu dostajesz wiadomość z linkiem potwierdzającym. Dopóki w niego nie klikniesz, nie wyślemy Ci nic więcej. Jeśli ktoś wpisał Twój adres przez pomyłkę, wystarczy zignorować tę jedną wiadomość.</p></section>
   <section class="blok"><h3>Jak się wypisać</h3>
     <p>Link do wypisania jest w stopce każdej wiadomości i działa od razu, bez pytań i bez logowania. Możesz też napisać na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a> — usuwamy adres wraz z całą historią.</p></section>
+  <section class="blok"><h3>Twoje prawa</h3>
+    <p>Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania i sprzeciwu — wystarczy mail na adres wyżej, bez formalności. Masz też prawo złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych, gdyby coś tu było nie tak.</p></section>
   <section class="blok"><h3>Ciasteczka i statystyki</h3>
     <p>Nie używamy ciasteczek śledzących ani narzędzi analitycznych firm trzecich. Wyniki testu trzymamy w pamięci Twojej przeglądarki, żeby nie znikały przy przewijaniu strony — nie wychodzą one nigdzie poza Twoje urządzenie, dopóki sam nie klikniesz „wyślij".</p>
     <p>Oglądalność mierzymy własnym narzędziem (Umami) uruchomionym na tym samym serwerze co strona. Działa bez ciasteczek i nie buduje profilu: widzimy, które podstrony są odwiedzane, skąd przychodzą wejścia i ile osób kończy test lub pobiera plik — nie wiemy, kim jesteś, a dane nie są nikomu przekazywane. Dlatego nie wyświetlamy banera zgody: nie ma tu nic, na co trzeba by jej udzielać.</p></section>
@@ -411,6 +443,8 @@ for (const s of skille) {
 }
 zapisz(join(WY, "prywatnosc", "index.html"), stronaPrywatnosci());
 console.log("  strona  /prywatnosc/");
+zapisz(join(WY, "regulamin", "index.html"), stronaRegulaminu());
+console.log("  strona  /regulamin/");
 
 // zasoby
 cpSync(join(KORZEN, "szablony", "styl.css"), join(WY, "styl.css"));
@@ -431,7 +465,7 @@ zapisz(
 );
 
 // sitemap i robots
-const adresy = ["/", "/prywatnosc/", ...skille.map((s) => `/skill/${s.id}/`)];
+const adresy = ["/", "/prywatnosc/", "/regulamin/", ...skille.map((s) => `/skill/${s.id}/`)];
 zapisz(
   join(WY, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +

@@ -160,7 +160,7 @@ function pokazWynik() {
         <div id="blad"></div>
         <input type="email" id="mail" placeholder="twoj@adres.pl" autocomplete="email">
         <button class="btn" id="wyslij" style="width:100%;justify-content:center">Wyślij mi zestaw</button>
-        <p class="consent">Wyślemy jedną wiadomość z prośbą o potwierdzenie. Dopiero po kliknięciu linku dopiszemy Cię do listy. Wypisujesz się jednym kliknięciem.</p>
+        <p class="consent">Wyślemy jedną wiadomość z prośbą o potwierdzenie — dopiero po kliknięciu linku dopiszemy Cię do listy. Potem będziemy pisać o nowościach w katalogu i od czasu do czasu o naszych szkoleniach. Wypisujesz się jednym kliknięciem. Szczegóły: <a href="/regulamin/">regulamin</a> i <a href="/prywatnosc/">prywatność</a>.</p>
       </div>
     </div>
     <div class="quiz-foot"><button class="link-btn" id="odnowa">&larr; Zacznij test od nowa</button><span></span></div>`;

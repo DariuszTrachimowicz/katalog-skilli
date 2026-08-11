@@ -267,8 +267,9 @@ JAK TO ZAINSTALOWAĆ
    ChatGPT: Skills → Upload from your computer (wymaga planu Business lub wyższego)
 3. Otwórz nową rozmowę i opisz, czego potrzebujesz. Umiejętność uruchomi się sama.
 
-Raz w miesiącu napiszemy, co nowego pojawiło się w katalogu. Nic poza tym.
-Wypisanie jednym kliknięciem: ${BAZA}/api/wypisz?t=${token}
+Będziemy pisać o nowościach w katalogu, a od czasu do czasu o naszych szkoleniach
+i usługach. Nic częściej, niż trzeba, i zawsze z wypisem jednym kliknięciem:
+${BAZA}/api/wypisz?t=${token}
 
 ${cfg.nazwaSerwisu}
 ${BAZA}`,
@@ -363,7 +364,7 @@ const serwer = createServer(async (req, res) => {
       }
       return stronaHtml(res, "Potwierdzone",
         `<p class="skrot">Zestaw poleciał na <strong>${rekord.email}</strong>. Powinien być w skrzynce w ciągu minuty — jeśli go nie ma, zajrzyj do spamu.</p>
-         <section class="blok"><h3>Co dalej</h3><p>Raz w miesiącu napiszemy, co nowego pojawiło się w katalogu. Nic poza tym, a wypisujesz się jednym kliknięciem ze stopki wiadomości.</p></section>`);
+         <section class="blok"><h3>Co dalej</h3><p>Będziemy pisać o nowościach w katalogu, a od czasu do czasu o naszych szkoleniach i usługach. Wypisujesz się jednym kliknięciem ze stopki każdej wiadomości.</p></section>`);
     }
 
     /* wypisanie */
