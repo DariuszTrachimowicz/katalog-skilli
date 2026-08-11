@@ -116,6 +116,23 @@ async function wyslijMail({ do: adresat, temat, tresc }) {
   return true;
 }
 
+// Potwierdzony zapis zgłaszamy jako lead do naszego CRM (ten sam serwer, nie firma
+// trzecia). Awaria CRM nie może zepsuć potwierdzenia — błąd tylko logujemy.
+async function zglosDoCrm(rekord) {
+  const crm = C.crm;
+  if (!crm?.formularz) return;
+  const dane = new URLSearchParams({
+    key: crm.formularz.split("/").pop(),
+    name: rekord.email,
+    email: rekord.email,
+    description: `Potwierdzony zapis z testu doboru (${cfg.domena}). Dobrane skille: ${
+      (rekord.wynik || []).map((id) => nazwaSkilla(id).nazwa).join(", ") || "brak"
+    }.`,
+  });
+  const odp = await fetch(crm.formularz, { method: "POST", body: dane, signal: AbortSignal.timeout(8000) });
+  if (!odp.ok) throw new Error(`CRM odpowiedział ${odp.status}`);
+}
+
 const mailPotwierdzajacy = (token) => ({
   temat: "Potwierdź zapis — zestaw umiejętności",
   tresc: `Cześć,
@@ -243,6 +260,7 @@ const serwer = createServer(async (req, res) => {
       if (!rekord.potwierdzony) {
         dopisz({ typ: "potwierdzenie", email: rekord.email, kiedy: new Date().toISOString() });
         await wyslijMail({ do: rekord.email, ...mailZZestawem(rekord.wynik, rekord.token) });
+        zglosDoCrm(rekord).catch((e) => console.error("Zgłoszenie do CRM nieudane:", e.message));
       }
       return stronaHtml(res, "Potwierdzone",
         `<p class="skrot">Zestaw poleciał na <strong>${rekord.email}</strong>. Powinien być w skrzynce w ciągu minuty — jeśli go nie ma, zajrzyj do spamu.</p>

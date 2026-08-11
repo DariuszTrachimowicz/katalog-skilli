@@ -16,6 +16,10 @@
     "port": 8788,
     "plikDanych": "/var/lib/katalog/zapisy.jsonl",
     "limitNaGodzine": 20,
+    "crm": {
+      "_komentarz": "Potwierdzone zapisy trafiają jako leady do naszego Perfexa (ten sam VPS) przez Web to Lead. Usuń sekcję, żeby wyłączyć.",
+      "formularz": "https://crm.aixperts.pl/forms/wtl/f7c7764615e1de062eba63114e759c18"
+    },
     "wysylka": {
       "tryb": "log",
       "_komentarz": "tryb: 'log' zapisuje treść maila do pliku zamiast wysyłać — używaj do czasu podpięcia dostawcy. Zmień na 'http', gdy uzupełnisz poniższe pola.",

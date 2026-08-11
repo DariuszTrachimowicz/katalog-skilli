@@ -351,7 +351,7 @@ function stronaPrywatnosci() {
     <p>Wyłącznie adres e-mail, i tylko wtedy, gdy sam go podasz na końcu testu doboru. Razem z nim zapisujemy listę umiejętności, które wyszły Ci w wyniku — po to, żeby móc wysłać Ci właściwy zestaw.</p>
     <p>Pobranie pliku nie wymaga podania żadnych danych. Przeglądanie katalogu też nie.</p></section>
   <section class="blok"><h3>Gdzie to trafia</h3>
-    <p>Na nasz własny serwer w Unii Europejskiej. Nie korzystamy z zewnętrznej platformy do zarządzania listą adresową, więc Twój adres nie jest przekazywany żadnej firmie trzeciej w celach marketingowych.</p>
+    <p>Na nasz własny serwer w Unii Europejskiej. Nie korzystamy z zewnętrznej platformy do zarządzania listą adresową, więc Twój adres nie jest przekazywany żadnej firmie trzeciej w celach marketingowych. Po potwierdzeniu zapisu adres trafia też do naszego systemu CRM — działającego na tym samym serwerze, u tego samego administratora.</p>
     <p>Do samego wysłania wiadomości używamy dostawcy poczty — inaczej maile trafiałyby do spamu.</p></section>
   <section class="blok"><h3>Potwierdzenie zapisu</h3>
     <p>Po podaniu adresu dostajesz wiadomość z linkiem potwierdzającym. Dopóki w niego nie klikniesz, nie wyślemy Ci nic więcej. Jeśli ktoś wpisał Twój adres przez pomyłkę, wystarczy zignorować tę jedną wiadomość.</p></section>
