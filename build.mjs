@@ -361,10 +361,27 @@ if (!skille.length) {
   process.exit(1);
 }
 
+// Metryczka pochodzenia — wstrzykiwana do frontmattera SKILL.md przy pakowaniu.
+// Pole `metadata` jest częścią standardu Agent Skills (platformy je ignorują,
+// walidator dopuszcza), a paczka niesie swoje źródło, gdy krąży poza katalogiem.
+function zMetryczka(plik, s) {
+  const tekst = plik.dane.toString("utf8");
+  const koniec = tekst.indexOf("\n---", 3);
+  if (koniec === -1 || tekst.includes("\nmetadata:")) return plik;
+  const metryczka = `metadata:
+  katalog: "${cfg.nazwaSerwisu}"
+  autor: "${cfg.autor}"
+  zrodlo: "${BAZA}/skill/${s.id}/"
+  kontakt: "${cfg.mailKontaktowy}"
+  aktualizacja: "${s.aktualizacja}"
+`;
+  return { ...plik, dane: Buffer.from(tekst.slice(0, koniec + 1) + metryczka + tekst.slice(koniec + 1), "utf8") };
+}
+
 // paczki .skill
 for (const s of skille) {
   if (s.status !== "gotowy") continue;
-  const zip = zbudujZip(s.pliki);
+  const zip = zbudujZip(s.pliki.map((p) => (p.nazwa === `${s.id}/SKILL.md` ? zMetryczka(p, s) : p)));
   zapisz(join(WY, "pobierz", `${s.id}.skill`), zip);
   console.log(`  paczka  /pobierz/${s.id}.skill  (${s.pliki.length} plików, ${(zip.length / 1024).toFixed(1)} KB)`);
 }
