@@ -11,7 +11,7 @@
 
 import { createServer } from "node:http";
 import { readFileSync, appendFileSync, existsSync, mkdirSync } from "node:fs";
-import { randomBytes, timingSafeEqual } from "node:crypto";
+import { randomBytes, timingSafeEqual, createHash } from "node:crypto";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -28,6 +28,15 @@ const nazwaSkilla = (id) => SKILLE.find((s) => s.id === id) || { id, nazwa: id, 
 
 mkdirSync(dirname(C.plikDanych), { recursive: true });
 const DZIENNIK_MAILI = join(dirname(C.plikDanych), "wyslane-maile.log");
+
+// Ta sama wersja arkuszy co na stronach z builda — bez niej wracający
+// użytkownik dostaje stronę potwierdzenia ze starym CSS-em z cache.
+const wersjaCss = (n) => {
+  const p = join(KORZEN, "public", n);
+  return existsSync(p) ? createHash("md5").update(readFileSync(p)).digest("hex").slice(0, 8) : "0";
+};
+const W_STYL = wersjaCss("styl.css");
+const W_FONTY = wersjaCss("fonty.css");
 
 /* ---------- przechowywanie ---------- */
 
@@ -166,7 +175,7 @@ function odpowiedz(res, kod, dane) {
 function stronaHtml(res, tytul, tresc) {
   const html = `<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>${tytul}</title>
-<meta name="robots" content="noindex"><link rel="stylesheet" href="/fonty.css"><link rel="stylesheet" href="/styl.css"></head><body>
+<meta name="robots" content="noindex"><link rel="stylesheet" href="/fonty.css?v=${W_FONTY}"><link rel="stylesheet" href="/styl.css?v=${W_STYL}"></head><body>
 <main class="wrap"><article class="art"><h1>${tytul}</h1>${tresc}
 <div class="powrot"><a class="btn" href="/">Wróć do katalogu</a></div></article></main></body></html>`;
   res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });

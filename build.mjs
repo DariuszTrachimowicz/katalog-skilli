@@ -8,6 +8,7 @@
 import { readFileSync, writeFileSync, readdirSync, statSync, mkdirSync, rmSync, cpSync, existsSync } from "node:fs";
 import { join, relative, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { createHash } from "node:crypto";
 import { zbudujZip } from "./narzedzia/zip.mjs";
 import { render, naglowkiPoziom2, frontmatter, lista, esc } from "./narzedzia/markdown.mjs";
 
@@ -20,6 +21,12 @@ const zapisz = (sciezka, tresc) => {
   mkdirSync(dirname(sciezka), { recursive: true });
   writeFileSync(sciezka, tresc);
 };
+
+// Wersja arkuszy w adresie (?v=skrót treści) — arkusze mają tygodniowy cache,
+// a bez tego zmiana stylu przy nowym HTML-u rozjeżdża strony u wracających.
+const wersja = (p) => createHash("md5").update(readFileSync(join(KORZEN, "szablony", p))).digest("hex").slice(0, 8);
+const W_STYL = wersja("styl.css");
+const W_FONTY = wersja("fonty.css");
 
 /* ---------- wczytanie skilli ---------- */
 
@@ -96,8 +103,8 @@ function strona({ tytul, opis, tresc, sciezka, jsonld = null, skrypt = "", obraz
 <meta property="og:image:alt" content="${esc(tytul)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="${adresObrazka}">
-<link rel="stylesheet" href="/fonty.css">
-<link rel="stylesheet" href="/styl.css">
+<link rel="stylesheet" href="/fonty.css?v=${W_FONTY}">
+<link rel="stylesheet" href="/styl.css?v=${W_STYL}">
 <link rel="icon" href="/ikona.png" type="image/png">
 <link rel="apple-touch-icon" href="/ikona.png">
 ${cfg.analityka ? `<script defer src="${cfg.analityka.skrypt}" data-website-id="${cfg.analityka.idSerwisu}"></script>` : ""}
@@ -109,7 +116,7 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
   <div class="wrap nav">
     <a class="brand" href="/">
       <img src="/ikona.png" width="40" height="40" alt="" aria-hidden="true">
-      <span class="brand-txt">${esc(cfg.nazwaSerwisu)}<img class="brand-wordmark" src="/logo-wordmark-czarny.png" alt="AI Xperts"></span>
+      <span class="brand-txt">${esc(cfg.nazwaSerwisu)}<img class="brand-wordmark" src="/logo-wordmark-czarny.png" width="42" height="10" alt="AI Xperts"></span>
     </a>
     <nav class="nav-links">
       <a href="/#test">Dobierz skille</a>
