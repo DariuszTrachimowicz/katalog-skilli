@@ -98,7 +98,8 @@ function strona({ tytul, opis, tresc, sciezka, jsonld = null, skrypt = "", obraz
 <meta name="twitter:image" content="${adresObrazka}">
 <link rel="stylesheet" href="/fonty.css">
 <link rel="stylesheet" href="/styl.css">
-<link rel="icon" href="/ikona.svg" type="image/svg+xml">
+<link rel="icon" href="/ikona.png" type="image/png">
+<link rel="apple-touch-icon" href="/ikona.png">
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ""}
 </head>
 <body>
@@ -106,7 +107,7 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
 <header>
   <div class="wrap nav">
     <a class="brand" href="/">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="1.2" y="1.2" width="17.6" height="17.6" rx="4" stroke="#1F2023" stroke-width="1.6"/><path d="M6 10.2l2.6 2.6L14.2 7.2" stroke="#1F2023" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <img src="/ikona.png" width="30" height="30" alt="" aria-hidden="true">
       ${esc(cfg.nazwaSerwisu)}
     </a>
     <nav class="nav-links">
@@ -404,7 +405,7 @@ console.log("  strona  /prywatnosc/");
 
 // zasoby
 cpSync(join(KORZEN, "szablony", "styl.css"), join(WY, "styl.css"));
-cpSync(join(KORZEN, "szablony", "ikona.svg"), join(WY, "ikona.svg"));
+cpSync(join(KORZEN, "szablony", "ikona.png"), join(WY, "ikona.png"));
 cpSync(join(KORZEN, "szablony", "fonty.css"), join(WY, "fonty.css"));
 cpSync(join(KORZEN, "szablony", "fonty"), join(WY, "fonty"), { recursive: true });
 if (existsSync(join(KORZEN, "szablony", "og"))) cpSync(join(KORZEN, "szablony", "og"), join(WY, "og"), { recursive: true });
