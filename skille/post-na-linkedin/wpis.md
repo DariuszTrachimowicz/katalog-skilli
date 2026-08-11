@@ -10,7 +10,7 @@ tytulSeo: Jak napisać post na LinkedIn po polsku — darmowe narzędzie AI
 opisSeo: Wklej notatkę albo wnioski z projektu i dostań gotowy post na LinkedIna. Bez korpomowy i bez zmyślonych liczb, z podziałem na fakt i domysł.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

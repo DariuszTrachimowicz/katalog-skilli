@@ -10,7 +10,7 @@ tytulSeo: Jak napisać pismo do urzędu — wzór i kontrola braków formalnych
 opisSeo: Wklej wezwanie z urzędu albo opisz sprawę, a dostaniesz gotowe pismo z poprawnym adresatem, znakiem sprawy i listą załączników. Za darmo, po polsku.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

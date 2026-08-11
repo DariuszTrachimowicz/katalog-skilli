@@ -10,7 +10,7 @@ tytulSeo: Notatka ze spotkania z transkrypcji — po polsku, za darmo
 opisSeo: Wklej transkrypcję albo notatki i dostań ustalenia, zadania i terminy. Rozumie polskie skróty i zwroty typu „po majówce”. Nie robi protokołów formalnych.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

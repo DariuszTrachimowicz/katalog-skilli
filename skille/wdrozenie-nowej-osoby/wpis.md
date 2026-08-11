@@ -10,7 +10,7 @@ tytulSeo: Plan wdrożenia nowego pracownika — rozpis pierwszych dwóch tygodni
 opisSeo: Wklej opis stanowiska i dostań plan pierwszych dwóch tygodni — dzień po dniu, kto za co odpowiada, plus lista formalności do potwierdzenia u kadrowej.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

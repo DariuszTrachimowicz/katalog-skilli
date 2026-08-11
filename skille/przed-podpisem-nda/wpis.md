@@ -10,7 +10,7 @@ tytulSeo: Dostałeś NDA do podpisu? Sprawdź, co właściwie podpisujesz — po
 opisSeo: Wgraj umowę o zachowaniu poufności i zobacz prostym językiem, co objęto tajemnicą, na jak długo i ile kosztuje naruszenie. Po polsku, bez konfiguracji.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

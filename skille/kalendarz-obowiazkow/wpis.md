@@ -10,7 +10,7 @@ tytulSeo: Terminy w firmie — co trzeba zrobić co miesiąc, co kwartał i raz 
 opisSeo: Zbuduj kalendarz obowiązków małej firmy. ZUS, podatek, VAT, sprawozdania, kasa fiskalna, BHP. Lista do potwierdzenia z księgową. Po polsku, bez ustawiania.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

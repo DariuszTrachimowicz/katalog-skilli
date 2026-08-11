@@ -10,7 +10,7 @@ tytulSeo: Jak napisać opis produktu do sklepu — darmowe narzędzie AI po pols
 opisSeo: Wklej tabelę parametrów, dostań gotowy opis produktu po polsku. Bez zmyślonych cech — pokazuje, skąd wzięło się każde zdanie i czego w danych brakuje.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

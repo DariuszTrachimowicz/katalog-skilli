@@ -10,7 +10,7 @@ tytulSeo: Ile naprawdę kosztuje Cię zlecenie — rachunek wyceny usługi po po
 opisSeo: Rozłóż cenę usługi na czynniki. Czas, koszty stałe, materiały, poprawki i koszty niewidoczne jednoosobowej działalności. Po polsku, za darmo.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

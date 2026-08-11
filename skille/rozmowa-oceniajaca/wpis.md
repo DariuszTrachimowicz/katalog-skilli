@@ -10,7 +10,7 @@ tytulSeo: Jak przeprowadzić rozmowę oceniającą z pracownikiem — przygotowa
 opisSeo: Masz jutro ocenę roczną i nie wiesz, jak zacząć. Dostajesz plan rozmowy, konkretne zdania zamiast ogólników i listę zwrotów, które ją wysadzą.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

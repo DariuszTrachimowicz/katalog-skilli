@@ -10,7 +10,7 @@ tytulSeo: Jak napisać newsletter do klientów — darmowe narzędzie AI po pols
 opisSeo: Napisz mail do listy klientów, który ludzie otworzą, a filtry przepuszczą. Temat, treść, stopka, zgoda i wypisanie — pod polskie realia. Za darmo.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

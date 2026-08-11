@@ -10,7 +10,7 @@ tytulSeo: Pytania na rozmowę kwalifikacyjną — gotowy zestaw dla pracodawcy
 opisSeo: Wklej opis stanowiska i dostań pytania na rozmowę z kandydatem, kartę oceny i listę pytań, których w Polsce lepiej nie zadawać. Za darmo, po polsku.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

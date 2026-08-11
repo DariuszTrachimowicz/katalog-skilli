@@ -10,7 +10,7 @@ tytulSeo: RODO w małej firmie — od czego zacząć, gdy nie masz inspektora
 opisSeo: Odpowiedz na sześć pytań o dane w swojej firmie i zobacz, co gdzie leży, kto ma dostęp i o co zapytać specjalistę. Za darmo, po polsku.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

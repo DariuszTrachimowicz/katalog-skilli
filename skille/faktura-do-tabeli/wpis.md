@@ -10,7 +10,7 @@ tytulSeo: Jak przepisać faktury PDF do Excela — narzędzie AI po polsku
 opisSeo: Wrzuć faktury PDF lub skany i dostań tabelę do księgowania: numery, daty, NIP-y, netto, VAT i brutto w rozbiciu na stawki. Po polsku, z kontrolą sum.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

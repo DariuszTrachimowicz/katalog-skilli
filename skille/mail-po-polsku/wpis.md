@@ -10,7 +10,7 @@ tytulSeo: Jak napisać maila służbowego po polsku — narzędzie AI
 opisSeo: Wpisz, o co chodzi, i dostań gotowego maila po polsku. Właściwy ton do urzędu, klienta i szefa. Odmowa, przypomnienie, przeprosiny. Za darmo.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

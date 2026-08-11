@@ -10,7 +10,7 @@ tytulSeo: Raport miesięczny dla zarządu — jak napisać z danych, po polsku
 opisSeo: Wrzuć dane za miesiąc i dostań gotowy raport dla szefa albo zarządu. Polska struktura, oddziela fakty od interpretacji, nie zmyśla przyczyn.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

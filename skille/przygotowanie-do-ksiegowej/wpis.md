@@ -10,7 +10,7 @@ tytulSeo: Co wysłać do biura rachunkowego co miesiąc — lista po polsku
 opisSeo: Kompletna lista dokumentów do księgowej, typowe braki i gotowe opisy wydatków. Plus pytania do zadania zamiast zgadywania. Za darmo, po polsku.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

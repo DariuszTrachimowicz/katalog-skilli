@@ -10,7 +10,7 @@ tytulSeo: Na co uważać w umowie B2B — darmowe narzędzie AI po polsku
 opisSeo: Wgraj umowę i zobacz prostym językiem, które zapisy są ryzykowne. Kary umowne, zakaz konkurencji, prawa autorskie, ukryty etat. Za darmo, po polsku.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

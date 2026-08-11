@@ -10,7 +10,7 @@ tytulSeo: Jak napisać pismo urzędowe prostym językiem — narzędzie AI po po
 opisSeo: Wklej pismo, regulamin albo mail do klienta i dostań wersję po ludzku. Bez gubienia treści, z listą zmian i fragmentami, których nie wolno ruszać.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

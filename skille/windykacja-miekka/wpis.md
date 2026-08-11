@@ -10,7 +10,7 @@ tytulSeo: Klient nie zapłacił faktury — co napisać i kiedy. Narzędzie AI p
 opisSeo: Opisz sytuację i dostań gotowe przypomnienie, wezwanie albo ostateczne pismo — z terminem, kanałem wysyłki i datą kolejnego kroku. Po polsku, za darmo.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

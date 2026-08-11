@@ -10,7 +10,7 @@ tytulSeo: Jak odmówić klientowi i podnieść ceny — przygotowanie do trudnej
 opisSeo: Opisz sytuację i dostań gotowe zdania do wypowiedzenia, listę reakcji, których się spodziewać, i odpowiedź na każdą. Po polsku, za darmo.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

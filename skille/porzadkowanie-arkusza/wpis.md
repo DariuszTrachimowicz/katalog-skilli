@@ -10,7 +10,7 @@ tytulSeo: Jak uporządkować rozjechany plik Excel — narzędzie AI po polsku
 opisSeo: Scalone komórki, trzy formaty daty, kwoty jako tekst, krzaczki zamiast polskich znaków. Skill sprząta arkusz i pokazuje, co dokładnie zmienił.
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 
