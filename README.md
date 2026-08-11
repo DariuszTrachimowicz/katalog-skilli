@@ -108,7 +108,10 @@ Zapis wymaga potwierdzenia kliknięciem w link z maila. Do tego czasu adres nie 
 ```bash
 docker compose exec zapisy node narzedzia/eksport.mjs              # tylko potwierdzone, w formacie CSV
 docker compose exec zapisy node narzedzia/eksport.mjs --wszystkie  # z niepotwierdzonymi, do diagnostyki
+docker compose exec zapisy node narzedzia/wymaz.mjs adres@x.pl     # trwałe wymazanie adresu (żądanie RODO)
 ```
+
+Wypisanie linkiem ukrywa adres ze stanu listy, ale dziennik jest append-only — na żądanie usunięcia danych uruchom `wymaz.mjs`, które usuwa też same bajty z dziennika i z logu maili.
 
 ### Wysyłka maili
 
