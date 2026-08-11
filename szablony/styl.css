@@ -28,6 +28,8 @@ img{max-width:100%}
 header{position:sticky;top:0;z-index:50;background:rgba(251,251,250,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:-.01em;text-decoration:none}
+.brand-txt{display:flex;flex-direction:column;line-height:1.15;gap:3px}
+.brand-wordmark{height:10px;width:auto;display:block;opacity:.5}
 .nav-links{display:flex;align-items:center;gap:28px}
 .nav-links a{font-size:14px;color:var(--ink-2);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--ink)}

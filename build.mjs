@@ -108,8 +108,8 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
 <header>
   <div class="wrap nav">
     <a class="brand" href="/">
-      <img src="/ikona.png" width="30" height="30" alt="" aria-hidden="true">
-      ${esc(cfg.nazwaSerwisu)}
+      <img src="/ikona.png" width="40" height="40" alt="" aria-hidden="true">
+      <span class="brand-txt">${esc(cfg.nazwaSerwisu)}<img class="brand-wordmark" src="/logo-wordmark-czarny.png" alt="AI Xperts"></span>
     </a>
     <nav class="nav-links">
       <a href="/#test">Dobierz skille</a>
@@ -408,6 +408,7 @@ console.log("  strona  /prywatnosc/");
 // zasoby
 cpSync(join(KORZEN, "szablony", "styl.css"), join(WY, "styl.css"));
 cpSync(join(KORZEN, "szablony", "ikona.png"), join(WY, "ikona.png"));
+cpSync(join(KORZEN, "szablony", "logo-wordmark-czarny.png"), join(WY, "logo-wordmark-czarny.png"));
 cpSync(join(KORZEN, "szablony", "fonty.css"), join(WY, "fonty.css"));
 cpSync(join(KORZEN, "szablony", "fonty"), join(WY, "fonty"), { recursive: true });
 if (existsSync(join(KORZEN, "szablony", "og"))) cpSync(join(KORZEN, "szablony", "og"), join(WY, "og"), { recursive: true });
