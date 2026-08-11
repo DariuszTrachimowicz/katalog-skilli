@@ -33,6 +33,7 @@ const KOLORY = {
 
 const fontUrl = (n) => pathToFileURL(join(KORZEN, "szablony", "fonty", n)).href;
 const logoUrl = pathToFileURL(join(KORZEN, "szablony", "logo-sygnet.png")).href;
+const wordmarkUrl = pathToFileURL(join(KORZEN, "szablony", "logo-wordmark.png")).href;
 const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
 
 function karta({ kategoria, tytul, opis, stopka }) {
@@ -63,6 +64,7 @@ h1{font-family:'Instrument Serif',serif;font-weight:400;font-size:76px;line-heig
 .dol{display:flex;align-items:center;justify-content:space-between;position:relative;
   border-top:1px solid #2E2F33;padding-top:26px;font-size:22px;color:#9B9A96}
 .dol b{color:#F4F2EC;font-weight:500}
+.dol img{height:44px;margin:-8px 0}
 </style></head><body>
 <div class="blask"></div>
 <div class="gora">
@@ -71,7 +73,7 @@ h1{font-family:'Instrument Serif',serif;font-weight:400;font-size:76px;line-heig
   ${kategoria ? `<div class="tag">${esc(kategoria)}</div>` : ""}
 </div>
 <div class="srodek"><h1>${esc(tytul)}</h1><p class="opis">${esc(opis)}</p></div>
-<div class="dol"><b>${esc(cfg.domena)}</b><span>${esc(stopka)}</span></div>
+<div class="dol"><span><b>${esc(cfg.domena)}</b> &nbsp;·&nbsp; ${esc(stopka)}</span><img src="${wordmarkUrl}" alt="AI Xperts"></div>
 </body></html>`;
 }
 
@@ -103,12 +105,38 @@ const zadania = [
 for (const z of zadania) {
   const html = join(ROBOCZY, z.plik.replace(/\.png$/, ".html"));
   writeFileSync(html, z.html);
-  execFileSync(CHROME, [
-    "--headless=new", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=1",
-    "--window-size=1200,630", `--screenshot=${join(CEL, z.plik)}`, pathToFileURL(html).href,
-  ], { stdio: "pipe" });
+
+  // Osobny profil na wywołanie — bez tego przy szybkiej serii Chrome oddaje
+  // zadanie już działającej instancji i wraca od razu, a spóźniony renderer
+  // trafia potem na posprzątany katalog roboczy i nadpisuje kartę stroną błędu.
+  const cel = join(CEL, z.plik);
+  const czekaj = (ms) => new Promise((r) => setTimeout(r, ms));
+
+  // Dwie pułapki Chrome'a w trybie headless: proces potrafi wrócić przed
+  // dokończeniem zapisu zrzutu (stąd odpytywanie zamiast natychmiastowej oceny),
+  // a deterministyczna nazwa profilu koliduje z singletonem po padzie
+  // (stąd profil unikalny per uruchomienie i próba).
+  let udane = false;
+  for (let proba = 1; proba <= 3 && !udane; proba++) {
+    const profil = join(ROBOCZY, `profil-${process.pid}-${z.plik}-${proba}`);
+    rmSync(cel, { force: true });
+    execFileSync(CHROME, [
+      "--headless=new", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=1",
+      `--user-data-dir=${profil}`, "--no-first-run",
+      "--window-size=1200,630", `--screenshot=${cel}`, pathToFileURL(html).href,
+    ], { stdio: "pipe" });
+    for (let i = 0; i < 20; i++) {
+      if (existsSync(cel) && statSync(cel).size > 30_000) { udane = true; break; }
+      await czekaj(250);
+    }
+  }
+  if (!udane) { console.error(`  BŁĄD: og/${z.plik} nie chce się wyrenderować`); process.exit(1); }
   console.log(`  grafika  og/${z.plik}`);
 }
+
+// Kontrola całości przed sprzątaniem: żadna karta nie może być stroną błędu.
+const zepsute = zadania.filter((z) => statSync(join(CEL, z.plik)).size <= 30_000);
+if (zepsute.length) { console.error(`BŁĄD: uszkodzone karty: ${zepsute.map((z) => z.plik).join(", ")}`); process.exit(1); }
 
 rmSync(ROBOCZY, { recursive: true, force: true });
 console.log(`\nGotowe: ${zadania.length} grafik w szablony/og/`);
