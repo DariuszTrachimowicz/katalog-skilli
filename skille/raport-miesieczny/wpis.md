@@ -9,7 +9,7 @@ szukaj: raport miesięczny, raport kwartalny, podsumowanie miesiąca, raport dla
 tytulSeo: Raport miesięczny dla zarządu — jak napisać z danych, po polsku
 opisSeo: Wrzuć dane za miesiąc i dostań gotowy raport dla szefa albo zarządu. Polska struktura, oddziela fakty od interpretacji, nie zmyśla przyczyn.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

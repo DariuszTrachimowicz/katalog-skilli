@@ -9,7 +9,7 @@ szukaj: rekrutacja, rozmowa kwalifikacyjna, pytania do kandydata, karta oceny, z
 tytulSeo: Pytania na rozmowę kwalifikacyjną — gotowy zestaw dla pracodawcy
 opisSeo: Wklej opis stanowiska i dostań pytania na rozmowę z kandydatem, kartę oceny i listę pytań, których w Polsce lepiej nie zadawać. Za darmo, po polsku.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

@@ -9,7 +9,7 @@ szukaj: LinkedIn, post, marka osobista, social media, copywriting, korpomowa, em
 tytulSeo: Jak napisać post na LinkedIn po polsku — darmowe narzędzie AI
 opisSeo: Wklej notatkę albo wnioski z projektu i dostań gotowy post na LinkedIna. Bez korpomowy i bez zmyślonych liczb, z podziałem na fakt i domysł.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

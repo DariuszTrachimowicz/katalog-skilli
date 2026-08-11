@@ -9,7 +9,7 @@ szukaj: mail, e-mail, korespondencja, mail do urzędu, zwroty grzecznościowe, o
 tytulSeo: Jak napisać maila służbowego po polsku — narzędzie AI
 opisSeo: Wpisz, o co chodzi, i dostań gotowego maila po polsku. Właściwy ton do urzędu, klienta i szefa. Odmowa, przypomnienie, przeprosiny. Za darmo.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

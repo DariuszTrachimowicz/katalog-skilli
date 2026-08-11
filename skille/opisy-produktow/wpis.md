@@ -9,7 +9,7 @@ szukaj: opis produktu, sklep internetowy, e-commerce, karta produktu, Allegro, c
 tytulSeo: Jak napisać opis produktu do sklepu — darmowe narzędzie AI po polsku
 opisSeo: Wklej tabelę parametrów, dostań gotowy opis produktu po polsku. Bez zmyślonych cech — pokazuje, skąd wzięło się każde zdanie i czego w danych brakuje.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

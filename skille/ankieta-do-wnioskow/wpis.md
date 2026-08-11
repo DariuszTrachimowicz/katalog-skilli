@@ -9,7 +9,7 @@ szukaj: ankieta, badanie satysfakcji, NPS, eNPS, CSAT, Google Forms, Webankieta,
 tytulSeo: Wyniki ankiety — co z nich naprawdę wynika, po polsku
 opisSeo: Wrzuć wyniki ankiety i zobacz, co się powtarza, gdzie odpowiedzi się rozjeżdżają i czego z nich nie wynika. Mówi wprost, kiedy próba jest za mała.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

@@ -9,7 +9,7 @@ szukaj: opis stanowiska, zakres obowiązków, karta stanowiska, rekrutacja, wyma
 tytulSeo: Opis stanowiska pracy — jak go napisać. Narzędzie AI po polsku
 opisSeo: Wpisz, kogo szukasz, i dostań gotowy opis stanowiska — obowiązki, wymagania konieczne i mile widziane, sposób sprawdzenia. Po polsku, za darmo.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

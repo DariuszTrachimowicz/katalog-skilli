@@ -9,7 +9,7 @@ szukaj: księgowa, biuro rachunkowe, dokumenty, faktury, koszty, JDG, zamknięci
 tytulSeo: Co wysłać do biura rachunkowego co miesiąc — lista po polsku
 opisSeo: Kompletna lista dokumentów do księgowej, typowe braki i gotowe opisy wydatków. Plus pytania do zadania zamiast zgadywania. Za darmo, po polsku.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

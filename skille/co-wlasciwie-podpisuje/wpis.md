@@ -9,7 +9,7 @@ szukaj: umowa, polisa, OWU, leasing, kredyt, abonament, aneks, harmonogram, naje
 tytulSeo: Streszczenie umowy, polisy i leasingu po ludzku — darmowe narzędzie AI
 opisSeo: Wgraj umowę, polisę, leasing albo aneks i zobacz w kilkunastu punktach, ile to kosztuje, jak długo trwa i jak z tego wyjść. Po polsku, za darmo.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

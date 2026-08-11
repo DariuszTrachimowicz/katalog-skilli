@@ -9,7 +9,7 @@ szukaj: excel, arkusz, csv, analiza danych, zestawienie sprzedaży, zestawienie 
 tytulSeo: Co wynika z tego zestawienia — analiza arkusza Excel po polsku
 opisSeo: Wrzuć zestawienie z Excela i zobacz, co z niego wynika — kierunki, wartości do sprawdzenia. Oddziela fakty od domysłów. Po polsku, na Twoim planie Claude.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

@@ -9,7 +9,7 @@ szukaj: regulamin, warunki korzystania, terms of service, subskrypcja, abonament
 tytulSeo: Co akceptujesz, klikając „Akceptuję regulamin” — sprawdź po polsku
 opisSeo: Wklej regulamin sklepu, aplikacji albo subskrypcji i zobacz po ludzku, co firma może zmienić sama, co z Twoimi danymi, jak zrezygnować i kiedy się odnawia.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

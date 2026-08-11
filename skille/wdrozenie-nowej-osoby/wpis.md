@@ -9,7 +9,7 @@ szukaj: wdrożenie, onboarding, nowy pracownik, pierwszy dzień w pracy, co przy
 tytulSeo: Plan wdrożenia nowego pracownika — rozpis pierwszych dwóch tygodni
 opisSeo: Wklej opis stanowiska i dostań plan pierwszych dwóch tygodni — dzień po dniu, kto za co odpowiada, plus lista formalności do potwierdzenia u kadrowej.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

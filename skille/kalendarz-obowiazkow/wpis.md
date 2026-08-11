@@ -9,7 +9,7 @@ szukaj: terminy, ZUS, VAT, podatki, kalendarz, obowiązki firmy, deklaracje, JPK
 tytulSeo: Terminy w firmie — co trzeba zrobić co miesiąc, co kwartał i raz w roku
 opisSeo: Zbuduj kalendarz obowiązków małej firmy. ZUS, podatek, VAT, sprawozdania, kasa fiskalna, BHP. Lista do potwierdzenia z księgową. Po polsku, bez ustawiania.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

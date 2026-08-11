@@ -9,7 +9,7 @@ szukaj: NDA, umowa o zachowaniu poufności, klauzula poufności, tajemnica przed
 tytulSeo: Dostałeś NDA do podpisu? Sprawdź, co właściwie podpisujesz — po polsku
 opisSeo: Wgraj umowę o zachowaniu poufności i zobacz prostym językiem, co objęto tajemnicą, na jak długo i ile kosztuje naruszenie. Po polsku, bez konfiguracji.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

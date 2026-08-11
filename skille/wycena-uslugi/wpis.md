@@ -9,7 +9,7 @@ szukaj: wycena, stawka godzinowa, cennik, ile wziąć za zlecenie, koszty firmy,
 tytulSeo: Ile naprawdę kosztuje Cię zlecenie — rachunek wyceny usługi po polsku
 opisSeo: Rozłóż cenę usługi na czynniki. Czas, koszty stałe, materiały, poprawki i koszty niewidoczne jednoosobowej działalności. Po polsku, za darmo.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

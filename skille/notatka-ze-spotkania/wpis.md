@@ -9,7 +9,7 @@ szukaj: notatka, spotkanie, transkrypcja, minutki, podsumowanie, zadania, ustale
 tytulSeo: Notatka ze spotkania z transkrypcji — po polsku, za darmo
 opisSeo: Wklej transkrypcję albo notatki i dostań ustalenia, zadania i terminy. Rozumie polskie skróty i zwroty typu „po majówce”. Nie robi protokołów formalnych.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

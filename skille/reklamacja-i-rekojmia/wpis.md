@@ -9,7 +9,7 @@ szukaj: reklamacja, rękojmia, gwarancja, zwrot towaru, niezgodność towaru z u
 tytulSeo: Reklamacja towaru i usługi — jak to działa w Polsce, krok po kroku
 opisSeo: Czego można żądać przy reklamacji, w jakiej kolejności, ile jest dni na odpowiedź i co realnie decyduje w sporze. Po polsku, za darmo.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

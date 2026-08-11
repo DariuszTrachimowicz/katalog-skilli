@@ -9,7 +9,7 @@ szukaj: oferta handlowa, wycena, kosztorys, propozycja współpracy, cennik, net
 tytulSeo: Jak napisać ofertę handlową dla firmy — narzędzie AI po polsku
 opisSeo: "Ułóż ofertę dla klienta B2B: zakres, cena netto czy brutto, termin płatności, data ważności. Bez wymyślonych referencji i liczb. Za darmo, po polsku."
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

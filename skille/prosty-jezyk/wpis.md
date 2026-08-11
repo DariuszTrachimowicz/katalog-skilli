@@ -9,7 +9,7 @@ szukaj: prosty język, prosta polszczyzna, pismo urzędowe, regulamin, bełkot, 
 tytulSeo: Jak napisać pismo urzędowe prostym językiem — narzędzie AI po polsku
 opisSeo: Wklej pismo, regulamin albo mail do klienta i dostań wersję po ludzku. Bez gubienia treści, z listą zmian i fragmentami, których nie wolno ruszać.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

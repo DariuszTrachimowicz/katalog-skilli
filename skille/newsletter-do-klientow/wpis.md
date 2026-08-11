@@ -9,7 +9,7 @@ szukaj: newsletter, mailing, e-mail marketing, baza adresowa, spam, temat wiadom
 tytulSeo: Jak napisać newsletter do klientów — darmowe narzędzie AI po polsku
 opisSeo: Napisz mail do listy klientów, który ludzie otworzą, a filtry przepuszczą. Temat, treść, stopka, zgoda i wypisanie — pod polskie realia. Za darmo.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

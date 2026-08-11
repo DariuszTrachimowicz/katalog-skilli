@@ -9,7 +9,7 @@ szukaj: odmowa klientowi, podwyżka cen, trudna rozmowa, asertywność, zła wia
 tytulSeo: Jak odmówić klientowi i podnieść ceny — przygotowanie do trudnej rozmowy
 opisSeo: Opisz sytuację i dostań gotowe zdania do wypowiedzenia, listę reakcji, których się spodziewać, i odpowiedź na każdą. Po polsku, za darmo.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

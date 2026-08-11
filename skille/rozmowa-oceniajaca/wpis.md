@@ -9,7 +9,7 @@ szukaj: rozmowa oceniająca, ocena roczna, ocena okresowa, feedback, informacja 
 tytulSeo: Jak przeprowadzić rozmowę oceniającą z pracownikiem — przygotowanie krok po kroku
 opisSeo: Masz jutro ocenę roczną i nie wiesz, jak zacząć. Dostajesz plan rozmowy, konkretne zdania zamiast ogólników i listę zwrotów, które ją wysadzą.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

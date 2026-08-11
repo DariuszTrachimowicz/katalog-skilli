@@ -9,7 +9,7 @@ szukaj: niezapłacona faktura, wezwanie do zapłaty, monit, przeterminowana pła
 tytulSeo: Klient nie zapłacił faktury — co napisać i kiedy. Narzędzie AI po polsku
 opisSeo: Opisz sytuację i dostań gotowe przypomnienie, wezwanie albo ostateczne pismo — z terminem, kanałem wysyłki i datą kolejnego kroku. Po polsku, za darmo.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

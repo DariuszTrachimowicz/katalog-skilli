@@ -9,7 +9,7 @@ szukaj: excel, arkusz, csv, dane, krzaczki, kodowanie, polskie znaki, Windows-12
 tytulSeo: Jak uporządkować rozjechany plik Excel — narzędzie AI po polsku
 opisSeo: Scalone komórki, trzy formaty daty, kwoty jako tekst, krzaczki zamiast polskich znaków. Skill sprząta arkusz i pokazuje, co dokładnie zmienił.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

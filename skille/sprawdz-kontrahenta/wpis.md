@@ -9,7 +9,7 @@ szukaj: kontrahent, weryfikacja firmy, KRS, CEIDG, biała lista VAT, NIP, zalicz
 tytulSeo: Jak sprawdzić kontrahenta przed umową — lista kroków po polsku
 opisSeo: Nowa firma chce zaliczkę? Zobacz, co sprawdzić i gdzie. KRS, CEIDG, biała lista VAT, kto może podpisać za spółkę. Lista do odklikania, po polsku.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---

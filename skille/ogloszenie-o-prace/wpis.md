@@ -9,7 +9,7 @@ szukaj: ogłoszenie o pracę, oferta pracy, rekrutacja, widełki, jawność wyna
 tytulSeo: Jak napisać ogłoszenie o pracę z wynagrodzeniem — narzędzie AI po polsku
 opisSeo: Sprawdź, czego brakuje w ogłoszeniu o pracę: informacja o wynagrodzeniu, neutralna nazwa stanowiska, warunki zatrudnienia. Po polsku, za darmo.
 zgodnosc:
-  claude: format
+  claude: ok
   gpt: format
   gemini: brak
 ---
