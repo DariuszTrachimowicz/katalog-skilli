@@ -89,9 +89,7 @@ function strona({ tytul, opis, tresc, sciezka, jsonld = null, skrypt = "" }) {
 <meta property="og:url" content="${kanoniczny}">
 <meta property="og:locale" content="pl_PL">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/fonty.css">
 <link rel="stylesheet" href="/styl.css">
 <link rel="icon" href="/ikona.svg" type="image/svg+xml">
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ""}
@@ -399,6 +397,8 @@ console.log("  strona  /prywatnosc/");
 // zasoby
 cpSync(join(KORZEN, "szablony", "styl.css"), join(WY, "styl.css"));
 cpSync(join(KORZEN, "szablony", "ikona.svg"), join(WY, "ikona.svg"));
+cpSync(join(KORZEN, "szablony", "fonty.css"), join(WY, "fonty.css"));
+cpSync(join(KORZEN, "szablony", "fonty"), join(WY, "fonty"), { recursive: true });
 
 // dane dla usługi zapisów — żeby mail z zestawem znał nazwy i adresy skilli
 zapisz(

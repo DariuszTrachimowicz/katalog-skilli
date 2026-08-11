@@ -166,7 +166,7 @@ function odpowiedz(res, kod, dane) {
 function stronaHtml(res, tytul, tresc) {
   const html = `<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>${tytul}</title>
-<meta name="robots" content="noindex"><link rel="stylesheet" href="/styl.css"></head><body>
+<meta name="robots" content="noindex"><link rel="stylesheet" href="/fonty.css"><link rel="stylesheet" href="/styl.css"></head><body>
 <main class="wrap"><article class="art"><h1>${tytul}</h1>${tresc}
 <div class="powrot"><a class="btn" href="/">Wróć do katalogu</a></div></article></main></body></html>`;
   res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
