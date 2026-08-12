@@ -28,6 +28,13 @@ const wersja = (p) => createHash("md5").update(readFileSync(join(KORZEN, "szablo
 const W_STYL = wersja("styl.css");
 const W_FONTY = wersja("fonty.css");
 
+const MIESIACE = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca",
+  "lipca", "sierpnia", "września", "października", "listopada", "grudnia"];
+
+function dataPoPolsku(d) {
+  return `${d.getDate()} ${MIESIACE[d.getMonth()]} ${d.getFullYear()}`;
+}
+
 /* ---------- wczytanie skilli ---------- */
 
 function plikiRekurencyjnie(katalog, prefiks = "") {
@@ -259,7 +266,7 @@ function stronaGlowna(skille) {
   const tresc = `
 <section class="hero">
   <div class="wrap">
-    <p class="eyebrow">Katalog kuratorowany &middot; aktualizacja ${new Date().toISOString().slice(0, 10)}</p>
+    <p class="eyebrow">Katalog kuratorowany &middot; aktualizacja ${dataPoPolsku(new Date())}</p>
     <h1>Co sztuczna inteligencja<br>może zrobić <em>za Ciebie</em><br>w Twojej pracy.</h1>
     <p class="lede">Gotowe umiejętności do pobrania, opisane językiem, którym mówi się w biurze — a nie w dokumentacji technicznej. Jeden plik działa w Claude i ChatGPT. Każdą uruchomiliśmy sami na polskich dokumentach, a jeśli gdzieś nie zadziała, piszemy o tym wprost.</p>
     <div class="hero-cta">
