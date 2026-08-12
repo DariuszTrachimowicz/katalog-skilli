@@ -367,6 +367,43 @@ const serwer = createServer(async (req, res) => {
          <section class="blok"><h3>Co dalej</h3><p>Będziemy pisać o nowościach w katalogu, a od czasu do czasu o naszych szkoleniach i usługach. Wypisujesz się jednym kliknięciem ze stopki każdej wiadomości.</p></section>`);
     }
 
+    /* feedback z ankiety — rozwiązuje token→e-mail, zapisuje do pliku dla automatu (n8n),
+       forwarduje do CRM. Dzięki temu e-mail nie krąży w przeglądarce, a n8n czyta plik. */
+    if (url.pathname === "/api/feedback" && req.method === "POST") {
+      if (przekroczonyLimit(ip)) return odpowiedz(res, 429, { blad: "Za dużo prób z tego adresu." });
+
+      let ciało;
+      try { ciało = new URLSearchParams(await czytajCialo(req, 8192)); }
+      catch { return odpowiedz(res, 400, { blad: "Nieprawidłowe dane." }); }
+
+      const token = String(ciało.get("token") || "").trim();
+      const rekord = token ? znajdzPoTokenie(token) : null;
+      const email = rekord?.email || (POPRAWNY_MAIL.test(String(ciało.get("email") || "").trim().toLowerCase())
+        ? String(ciało.get("email")).trim().toLowerCase() : null);
+
+      const pomogl = String(ciało.get("pomogl") || "").slice(0, 60);
+      const brakuje = String(ciało.get("brakuje") || "").slice(0, 2000);
+      const branza = String(ciało.get("branza") || "").slice(0, 200);
+
+      // plik czytany przez automat lejka (n8n) — obok dziennika zapisów
+      const PLIK_FEEDBACK = join(dirname(C.plikDanych), "feedback.jsonl");
+      appendFileSync(PLIK_FEEDBACK, JSON.stringify({
+        typ: "feedback", email, token: token || null, pomogl, brakuje, branza,
+        kiedy: new Date().toISOString(),
+      }) + "\n");
+
+      // forward do CRM (lead „Feedback katalogu") z rozwiązanym adresem
+      const crmUrl = C.crm?.feedback;
+      if (crmUrl) {
+        const opis = `Czy skill pomógł: ${pomogl || "brak odpowiedzi"}\nCzego brakuje / co pomogłoby: ${brakuje || "—"}\nBranża: ${branza || "brak odpowiedzi"}\nToken zapisu: ${token || "brak"}`;
+        const dane = new URLSearchParams({ key: crmUrl.split("/").pop(), name: "Feedback z katalogu", description: opis });
+        if (email) dane.set("email", email);
+        fetch(crmUrl, { method: "POST", body: dane, signal: AbortSignal.timeout(8000) })
+          .catch((e) => console.error("Feedback→CRM nieudane:", e.message));
+      }
+      return odpowiedz(res, 200, { ok: true });
+    }
+
     /* wypisanie */
     if (url.pathname === "/api/wypisz") {
       const rekord = znajdzPoTokenie(url.searchParams.get("t") || "");
