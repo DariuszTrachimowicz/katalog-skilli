@@ -31,7 +31,7 @@ Odbiorca Twojej pracy to kierowniczka biura, właściciel małej firmy, księgow
 
 1. **Ustal odbiorcę i relację.** Urząd, klient, przełożony, podwykonawca, kolega z zespołu. To decyduje o wszystkim pozostałym.
 2. **Nazwij jedną rzecz, którą odbiorca ma zrobić** po przeczytaniu. Jeśli są trzy, wypisz je listą — albo podziel na dwa maile.
-3. **Sprawdź, czy to nowy wątek, czy odpowiedź.** W odpowiedzi nie zmieniaj tematu i nie zaczynaj od nowa, tylko nawiąż.
+3. **Sprawdź, czy to nowy wątek, czy odpowiedź.** W odpowiedzi nie zmieniaj tematu i nie zaczynaj od nowa, tylko nawiąż. Temat zostaje „Re: [temat oryginalny]” — oryginalnej części nie ruszasz, żeby wątek się nie rozerwał; wolno za nią dopisać po myślniku krótki konkret sprawy („— potrzebujemy czasu do 18.08”), gdy to on ma zostać zauważony w skrzynce.
 4. **Podaj termin i skutek jego minięcia.** Mail bez terminu leży.
 5. **Sprawdź, czy mail w ogóle załatwia sprawę.** Przy urzędach, doręczeniach i fakturach często nie.
 

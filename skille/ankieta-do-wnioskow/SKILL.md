@@ -119,7 +119,7 @@ Tabela albo lista. Każda pozycja w układzie: pytanie · wynik · podstawa. Zer
 | Ocena kontaktu z obsługą (1–5) | mediana 4, najczęstsza odpowiedź 5 | 23 z 23 |
 
 **3. Co się powtarza**
-Najwyżej pięć motywów, od najczęstszego. Każdy tak:
+Najwyżej pięć motywów łącznie dla całej ankiety — nie pięć na każde pytanie otwarte — od najczęstszego. Każdy tak:
 
 > **Krótka nazwa motywu** — 9 z 23 osób
 > *„dosłowny cytat, maksymalnie dwa zdania”*

@@ -107,6 +107,8 @@ Trzymaj się dokładnie tego szablonu:
 To nie jest porada prawna. Jeśli po ostatnim piśmie nadal nie ma reakcji, dalsze kroki ustal z prawnikiem albo z kancelarią windykacyjną.
 ```
 
+**Gdy właściwą decyzją jest odczekanie, a nie pismo** (reguła „Kiedy zwolnić” — kontrahent podał termin zapłaty): trzymasz ten sam szablon, ale pomijasz „Temat” i blok cytatu, bo nie ma czego wysyłać; nagłówek „Stopień” opisuje decyzję o wstrzymaniu i jej podstawę („wstrzymuję się z kolejnym pismem — kontrahent podał termin, czekam do niego plus dwa dni robocze”) zamiast numeru 1–4; „Jak to wysłać” zamienia się w zalecenie zachowania korespondencji jako dowodu, a „Kolejny krok” dostaje datę policzoną z zadeklarowanego terminu.
+
 W „Co widzę” podaj same fakty, bez oceny. W bloku cytatu nie umieszczaj nic poza treścią pisma — komentarze idą do sekcji obok. W „Do sprawdzenia przed wysłaniem” daj dwa–cztery punkty, każdy jako czynność do odklikania albo pytanie do księgowej: *„sprawdź, czy rachunek z wezwania jest w wykazie podatników VAT”*, *„zapytaj księgową, czy przy tej fakturze minęło już 90 dni od terminu”*. Sprawdzenie rachunku zostaje jednopunktową czynnością do odklikania — pełną weryfikację kontrahenta prowadzi skill sprawdz-kontrahenta, więc nie rozbudowuj tej listy o rejestry i reprezentację. **Nigdy nie przepisuj z `references/` reguły w formie „prawo mówi, że…” ani „po X dniach przysługuje…”.** Reguła bez numeru artykułu to nadal uzasadnianie przepisem, a plik orientacyjny jest ich pełen — to najłatwiejsze miejsce na przeciek.
 
 ## Język

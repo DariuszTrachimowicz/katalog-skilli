@@ -41,7 +41,11 @@ treści SKILL.md zebrane w sekcji na dole — do wykonania przy najbliższym szl
 | windykacja-miekka | Finanse | zrobiony | PASS (A/B/C) | format → ok |
 | wycena-uslugi | Finanse | zrobiony | PASS (A/B/C) | format → ok |
 
-## Uwagi do poprawek treści (z raportów; nie blokują `ok`)
+## Uwagi do poprawek treści (z raportów; nie blokują `ok`) — WYKONANE 2026-08-12
+
+Wszystkie pozycje poniżej naniesione do SKILL.md 2026-08-12 (8 poprawek głównych + kosmetyka
+w 11 skillach wg uwag końcowych raportów; walidacja quick_validate 19/19 OK). Szczegóły
+w commicie „Szlif treści SKILL.md wg uwag z testów”.
 
 - **opisy-produktow** — dopisać przykład zdań negatywnie doprecyzowujących parametr; każde zdanie interpretujące ma mieć wiersz w „Skąd to wiem".
 - **sprawdz-kontrahenta** — wzmocnić regułę „odmowa jednym zdaniem" przy ponownym nacisku.

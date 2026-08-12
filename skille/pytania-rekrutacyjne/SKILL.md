@@ -64,7 +64,7 @@ Jeśli użytkownik nie odpowie i chce zestawu od ręki — zrób go z tego, co m
 
 Maksymalnie **pięć kompetencji**. Więcej nie zmieści się w rozmowie, a rozmowa o wszystkim nie rozstrzyga niczego.
 
-**Liczbę dopasuj do długości rozmowy, którą podał użytkownik.** Na jedno pytanie z dopytaniami licz około sześciu minut, a na powitanie, pytania kandydata i zamknięcie — kwadrans łącznie. Z rozmowy na trzydzieści minut zostaje więc miejsce na trzy pytania, nie na pięć. Zestaw, który się nie mieści, kończy się tym, że ostatnie pytania rekrutujący zadaje w biegu albo pomija, a karta oceny ma puste wiersze.
+**Liczbę dopasuj do długości rozmowy, którą podał użytkownik.** Na jedno pytanie z dopytaniami licz około sześciu minut, a na powitanie, pytania kandydata i zamknięcie — kwadrans łącznie. Wynik dzielenia zaokrąglasz w dół do pełnego pytania — zapas czasu zostaje po stronie rozmowy, nie zestawu. Z rozmowy na trzydzieści minut zostaje więc miejsce na trzy pytania, nie na pięć. Zestaw, który się nie mieści, kończy się tym, że ostatnie pytania rekrutujący zadaje w biegu albo pomija, a karta oceny ma puste wiersze.
 
 Wyciągaj z opisu **czynności, nie przymiotniki**. „Komunikatywność” zamień na to, co ta osoba faktycznie ma robić: tłumaczyć klientowi opóźnienie, spisać ustalenia po spotkaniu, powiedzieć szefowi, że termin jest nierealny. Dopiero to da się sprawdzić.
 

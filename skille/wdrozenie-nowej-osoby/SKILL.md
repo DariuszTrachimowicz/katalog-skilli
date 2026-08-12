@@ -101,6 +101,7 @@ Trzymaj ten szablon:
 ## Kto za co odpowiada
 | Rola | Kto | Ile czasu w tych dwóch tygodniach |
 |---|---|---|
+[W kolumnie „Kto” nawias kwadratowy `[imię]` oznacza tylko brakujące imię z zespołu użytkownika; rzeczy rozstrzygane poza planem wpisuj opisowo — „ustala kadrowa” — bez nawiasu, żeby nie wyglądały jak luka do samodzielnego wypełnienia.]
 
 ## Co może się posypać
 [2–4 punkty z tego konkretnego planu i co zrobić zamiast]

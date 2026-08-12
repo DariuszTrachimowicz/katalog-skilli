@@ -87,6 +87,7 @@ Trzymaj tę strukturę i tę kolejność nagłówków przy każdym uruchomieniu:
 ```markdown
 ## Co to jest
 [Trzy zdania bez oceny: samodzielne NDA czy fragment większej umowy, w którą stronę płynie tajemnica, kto jest kim, ile stron widziałeś, jakiemu prawu podlega dokument.]
+[Tu, jeśli dotyczy, jedna opcjonalna linijka poza oceną: jednorazowe ostrzeżenie o narzędziach zewnętrznych, gdy poufność obejmuje sam dokument lub fakt rozmów. Zbiorcze pytanie o brakujące rzeczy z sekcji „Zanim zaczniesz czytać” idzie natomiast zawsze na sam koniec odpowiedzi, po zdaniu zamknięcia. Nigdzie indziej tych dwóch elementów nie umieszczaj.]
 
 ## Siedem odpowiedzi
 

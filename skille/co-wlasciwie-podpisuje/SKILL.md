@@ -108,7 +108,7 @@ Wypełniony wiersz wygląda tak:
 Reguły do szablonu:
 
 - W bloku maksymalnie cztery punkty, każdy jedno zdanie.
-- Bloku, o którym dokument milczy, nie dopychaj zapisami wyjętymi z kontekstu — pomiń go i wpisz jednym zdaniem do „Czego w tym dokumencie nie znalazłem”.
+- Bloku, o którym dokument milczy, nie dopychaj zapisami wyjętymi z kontekstu — nagłówek bloku zostaje (szablon trzyma zawsze te same nagłówki), pod nim stawiasz jedno zdanie odsyłające niżej („dokument tego nie reguluje — patrz »Czego w tym dokumencie nie znalazłem«”), a sam brak wpisujesz jednym zdaniem właśnie tam.
 - „Gdzie schowano rzeczy…” to zapisy leżące daleko od miejsca, w którym człowiek by ich szukał: koszt w tabeli opłat zamiast w umowie, termin zgłoszenia szkody w OWU, kwota wykupu na ostatniej stronie harmonogramu. Kryterium jest czysto lokalizacyjne — liczy się to, gdzie zapis leży, a nie to, jak go oceniasz. Maksymalnie pięć pozycji, tylko te, które naprawdę są w tym dokumencie; jeśli znalazłeś jedną, podaj jedną, a jeśli żadnej — napisz, że nie widzisz w tym tekście zapisów schowanych poza oczywistym miejscem.
 - Zdanie zamykające trzymaj w tym duchu: *To streszczenie, a nie ocena. Mówi, co w dokumencie jest, nie czy warto go podpisywać. Jeśli chcesz wiedzieć, na co uważać i o co dopytać, użyj skilla „Czerwone flagi w umowie”. Przy dużych kwotach i długich zobowiązaniach decyzję warto skonsultować z prawnikiem.*
 

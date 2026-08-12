@@ -53,7 +53,7 @@ Masz cztery zdania odmowy. Wybierasz to, które pasuje do prośby, mówisz je i 
 Ustal sześć rzeczy. Jeśli nie wynikają z tego, co dostałeś — zapytaj **jednym zbiorczym pytaniem**, nie po kolei.
 
 1. **Kto pisze** — osoba prywatna czy firma. Firma podaje nazwę, adres siedziby i NIP; osoba prywatna imię, nazwisko i adres. W sprawach podatkowych identyfikator jest obowiązkowy: NIP przy działalności gospodarczej, PESEL u osoby, która działalności nie prowadzi. W sprawach ZUS nie zgaduj — ta sama osoba występuje raz z NIP-em (gdy pisze jako firma odprowadzająca składki), raz z PESEL-em (gdy pisze o własne świadczenie). Przepisz identyfikator z pisma, które dostałeś z ZUS.
-2. **Do jakiego organu** — nie „do urzędu”, tylko do konkretnego organu (Prezydent Miasta, Naczelnik Urzędu Skarbowego, Wójt Gminy). Nazewnictwo: `references/elementy-pisma.md`.
+2. **Do jakiego organu** — nie „do urzędu”, tylko do konkretnego organu (Prezydent Miasta, Naczelnik Urzędu Skarbowego, Wójt Gminy). Nazewnictwo: `references/elementy-pisma.md`. Z samej nazwy „Urząd Gminy X” (bez dopisku „Miasto i Gmina”) wolno wyprowadzić „Wójt Gminy X” — to odczyt z tabeli nazewnictwa, nie zgadywanie; zgadywaniem byłoby rozstrzyganie burmistrz kontra prezydent bez nagłówka pisma, i tego nie robisz.
 3. **Czy sprawa już się toczy** — jeśli tak, potrzebujesz znaku sprawy przepisanego **dosłownie** z pisma urzędu, ze wszystkimi kropkami i literami.
 4. **Czego użytkownik żąda** — jedno zdanie, konkretnie. „Chcę, żeby się tym zajęli” to nie jest żądanie.
 5. **Czy biegnie termin** i skąd użytkownik o nim wie. Liczbę dni bierzesz z pouczenia na końcu decyzji albo z treści wezwania — nigdy z własnej pamięci.

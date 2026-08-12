@@ -116,7 +116,7 @@ Do szablonu:
 - **Nazwa** — bez wielkich liter w środku zdania, bez wykrzykników, bez emoji.
 - **Opis rozwinięty** — od trzech do pięciu akapitów po dwa–cztery zdania. Ściana tekstu na telefonie nie zostanie przeczytana.
 - **Parametry** — przepisujesz **jeden do jednego**, bez upiększania. Jeśli pole opisu na platformie przyjmuje tylko zwykły tekst, bez tabel i nagłówków, podajesz te same parametry jako listę `nazwa: wartość` — zmienia się forma, nie treść.
-- **Skąd to wiem** — wiersz ma każde zdanie, które nie jest dosłownym przepisaniem pola z danych, w szczególności każde zdanie interpretujące parametr („odporna na deszcz” z „IP44”). Zdanie bez wiersza usuwasz z opisu.
+- **Skąd to wiem** — wiersz ma każde zdanie, które nie jest dosłownym przepisaniem pola z danych, w szczególności każde zdanie interpretujące parametr — zarówno dopowiedzenie pozytywne („odporna na deszcz” z „IP44”), jak i doprecyzowanie negatywne, rozróżniające („to filtracja, nie oczyszczanie powietrza” z „Filtracja: HEPA13”). Zdanie „X, nie Y” też jest interpretacją, choć niczego nie dopisuje. Zdanie bez wiersza usuwasz z opisu.
 - **Skąd to wiem przy więcej niż pięciu produktach** — nie powtarzasz wierszy dla parametrów przepisanych jeden do jednego. Wiersze dla zdań interpretujących i lista braków zostają przy każdym produkcie bez wyjątku. Skraca się prezentacja, nie kontrola.
 - **Do potwierdzenia** — pytanie nie może zawierać proponowanej wartości, parametru ani gotowego zdania do wklejenia, bo wtedy jest zmyśloną cechą udającą pytanie. Nie „zakładam, że zasilacz jest w zestawie”, tylko „czy zasilacz jest w zestawie?”.
 - **Czego brakuje w danych** — kolejność od tego, co najszybciej wróci do sklepu.
