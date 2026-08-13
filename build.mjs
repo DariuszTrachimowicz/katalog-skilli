@@ -87,6 +87,11 @@ function wczytajSkille() {
 
 const klasaKat = (k) => "t-" + (k || "").toLowerCase().replace(/[ąĄ]/g, "a").replace(/[^a-z]/g, "");
 
+// Płatny skill = wpis z `platny: true`. Jeśli ma `linkOferty`, karta prowadzi
+// do zewnętrznej oferty; bez niego generujemy stronę oferty w katalogu.
+const jestPlatny = (s) => String(s.platny) === "true";
+const maStroneWKatalogu = (s) => !jestPlatny(s) || !s.linkOferty;
+
 function strona({ tytul, opis, tresc, sciezka, jsonld = null, skrypt = "", obrazek = "katalog.png" }) {
   const kanoniczny = BAZA + sciezka;
   const adresObrazka = `${BAZA}/og/${obrazek}`;
@@ -185,7 +190,7 @@ function stronaSkilla(s) {
     <div class="gdzie">
       ${Object.entries(cfg.platformy).map(([k, p]) => {
         const st = s.zgodnosc[k] || "format";
-        return `<div><span class="pf ${st}"><i></i>${esc(p.nazwa)}</span><div><strong>${esc(cfg.statusy[st])}</strong> &mdash; ${p.uwaga}</div></div>`;
+        return `<div><span class="pf ${st}"><i></i>${esc(p.nazwa)}</span><div><strong>${esc(cfg.statusy[st])}</strong>, ${p.uwaga}</div></div>`;
       }).join("")}
     </div>
     <p style="margin-top:18px;font-size:14px;color:var(--muted)">Plik jest zgodny z otwartym standardem Agent Skills, więc ten sam folder działa w wielu narzędziach. „Format zgodny” znaczy, że powinien zadziałać, ale nie uruchomiliśmy go tam sami, a piszemy tylko o tym, co sprawdziliśmy.</p>
@@ -242,6 +247,47 @@ function stronaSkilla(s) {
   });
 }
 
+/* ---------- strona oferty (płatny skill) ---------- */
+
+// Strona oferty żyje w tej samej subdomenie i szablonie co strony skilli
+// (ten sam nagłówek, stopka, styl). Treść oferty pochodzi z pliku
+// `skille/<id>/oferta.html` (klasy katalogu). Dzięki temu płatny skill
+// wygląda jak reszta katalogu, a nie jak osobny landing.
+function stronaOferty(s) {
+  const plik = join(KORZEN, "skille", s.id, "oferta.html");
+  const cialo = existsSync(plik)
+    ? readFileSync(plik, "utf8")
+    : `<section class="blok"><p>${esc(s.skrot)}</p></section>`;
+
+  const tresc = `
+<main class="wrap">
+<article class="art oferta">
+  <p class="krusz"><a href="/">Katalog</a> &rarr; <a href="/#katalog">${esc(s.kategoria)}</a></p>
+  <h1>${esc(s.nazwa)}</h1>
+  <div class="meta">
+    <span class="tag ${klasaKat(s.kategoria)}">${esc(s.kategoria)}</span>
+    <span class="dot d-platny"><i></i>${esc(s.cena || "Płatny")}</span>
+    <span class="dot"><i style="background:#C9C9C6"></i>${esc(s.poziom || "")}</span>
+  </div>
+  <p class="skrot">${esc(s.skrot)}</p>
+  ${cialo}
+  <p class="disc">Materiał informacyjny. Nie zastępuje porady prawnej, podatkowej ani kadrowej.</p>
+  <div class="powrot">
+    <a class="btn ghost" href="/#katalog">&larr; Wróć do katalogu</a>
+    <a class="btn ghost" href="/#test">Dobierz skille dla siebie</a>
+  </div>
+</article>
+</main>`;
+
+  return strona({
+    tytul: s.tytulSeo || `${s.nazwa}, ${cfg.nazwaSerwisu}`,
+    opis: s.opisSeo || s.skrot,
+    sciezka: `/skill/${s.id}/`,
+    obrazek: existsSync(join(KORZEN, "szablony", "og", `${s.id}.png`)) ? `${s.id}.png` : "katalog.png",
+    tresc,
+  });
+}
+
 /* ---------- strona główna ---------- */
 
 function stronaGlowna(skille) {
@@ -249,13 +295,13 @@ function stronaGlowna(skille) {
 
   const karty = skille
     .map((s) => {
-      const platny = String(s.platny) === "true";
-      const href = platny ? esc(s.linkOferty) : `/skill/${s.id}/`;
+      const platny = jestPlatny(s);
+      const href = platny ? (s.linkOferty ? esc(s.linkOferty) : `/skill/${s.id}/`) : `/skill/${s.id}/`;
       const znacznik = platny
         ? `<span class="dot d-platny"><i></i>${esc(s.cena || "Płatny")}</span>`
         : `<span class="dot d-${s.status === "gotowy" ? "gotowy" : "wkrotce"}"><i></i>${s.status === "gotowy" ? "Gotowy" : "Wkrótce"}</span>`;
       const stopka = platny ? "Zobacz ofertę" : "Zobacz";
-      return `<a class="card" href="${href}" data-kat="${esc(s.kategoria)}" data-szukaj="${esc([s.nazwa, s.skrot, ...s.szukaj].join(" ").toLowerCase())}">
+      return `<a class="card" href="${href}" data-kat="${esc(s.kategoria)}" data-platny="${platny ? "1" : "0"}" data-szukaj="${esc([s.nazwa, s.skrot, ...s.szukaj].join(" ").toLowerCase())}">
       <div class="card-top">
         <span class="tag ${klasaKat(s.kategoria)}">${esc(s.kategoria)}</span>
         ${znacznik}
@@ -483,9 +529,14 @@ for (const s of skille) {
 zapisz(join(WY, "index.html"), stronaGlowna(skille));
 console.log("  strona  /");
 for (const s of skille) {
-  if (String(s.platny) === "true") continue;
-  zapisz(join(WY, "skill", s.id, "index.html"), stronaSkilla(s));
-  console.log(`  strona  /skill/${s.id}/`);
+  if (jestPlatny(s)) {
+    if (s.linkOferty) continue; // oferta hostowana zewnętrznie, karta linkuje wprost
+    zapisz(join(WY, "skill", s.id, "index.html"), stronaOferty(s));
+    console.log(`  oferta  /skill/${s.id}/`);
+  } else {
+    zapisz(join(WY, "skill", s.id, "index.html"), stronaSkilla(s));
+    console.log(`  strona  /skill/${s.id}/`);
+  }
 }
 zapisz(join(WY, "prywatnosc", "index.html"), stronaPrywatnosci());
 console.log("  strona  /prywatnosc/");
@@ -511,7 +562,7 @@ zapisz(
 );
 
 // sitemap i robots
-const adresy = ["/", "/prywatnosc/", "/regulamin/", ...skille.filter((s) => String(s.platny) !== "true").map((s) => `/skill/${s.id}/`)];
+const adresy = ["/", "/prywatnosc/", "/regulamin/", ...skille.filter(maStroneWKatalogu).map((s) => `/skill/${s.id}/`)];
 zapisz(
   join(WY, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +

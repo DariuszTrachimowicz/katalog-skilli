@@ -202,6 +202,75 @@ kbd{font-family:var(--mono);font-size:12.5px;border:1px solid var(--line);backgr
 .cta .btn:hover{background:#EFEFED}
 @media(max-width:680px){.cta{padding:44px 28px}}
 
+/* filtr platnosci obok kategorii */
+.chip-sep{flex:0 0 1px;align-self:stretch;background:var(--line);margin:2px 6px}
+.chip.chip-p.on{background:#B5791E;border-color:#B5791E;color:#fff}
+
+/* ---------- strona oferty (platny skill) ---------- */
+/* Akcent bursztynowy = tozsamosc platnych (spojne ze znacznikiem .d-platny). */
+.oferta{--akc:#B5791E;--akc-bg:#FBF3DB}
+.stawka-box{background:var(--yellow-bg);border:1px solid #EBD9A6;border-radius:12px;padding:26px 24px}
+.stawka-duze{font-family:var(--serif);font-size:clamp(24px,4vw,34px);line-height:1.15;color:#8A6412}
+.stawka-box p{margin-top:12px;margin-bottom:0}
+
+.zakres2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.zakres2 h4{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;font-weight:400}
+.zakres2 ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.zakres2 li{position:relative;padding-left:24px;font-size:15.5px;color:var(--ink-2);line-height:1.6}
+.zakres2 li:before{content:"";position:absolute}
+.zakres2 .tak-lista li:before{content:"\2713";left:0;top:0;color:#4F8A55;font-weight:700;width:auto;height:auto;background:none}
+.zakres2 .nie-lista li:before{content:"\2717";left:0;top:0;color:var(--muted);width:auto;height:auto;background:none}
+
+.pakiety{display:flex;gap:16px;align-items:stretch;margin-top:6px}
+.pakiet{flex:1 1 0;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;position:relative}
+.pakiet.wyroz{border:2px solid #B5791E;box-shadow:0 6px 24px rgba(140,100,20,.10)}
+.pakiet .badge{position:absolute;top:-11px;left:20px;right:20px;text-align:center;background:#B5791E;color:#fff;font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;padding:5px 10px;border-radius:9999px;line-height:1.3}
+.pakiet-nazwa{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.pakiet-dla{font-size:13px;color:var(--muted);line-height:1.5;margin-bottom:16px;min-height:2.8em}
+.pakiet-cena{font-family:var(--serif);font-size:34px;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+.pakiet-cena-sub{font-size:12px;color:var(--muted);margin:4px 0 16px}
+.pakiet ul{list-style:none;display:flex;flex-direction:column;gap:12px;margin:0 0 4px;flex:1}
+.pakiet li{position:relative;padding-left:22px;font-size:14px;color:var(--ink-2);line-height:1.5}
+.pakiet li:before{content:"\2713";position:absolute;left:0;top:0;color:#4F8A55;font-weight:700;width:auto;height:auto;background:none}
+.pakiet li.nie:before{content:"\2717";color:var(--muted)}
+.pakiet li .powod{display:block;font-size:12px;color:var(--muted);line-height:1.45;margin-top:2px}
+.pakiety-nota{font-size:13px;color:var(--muted);margin-top:16px}
+@media(max-width:680px){.pakiety{flex-direction:column}.pakiet.wyroz{order:-1}.zakres2{grid-template-columns:1fr}.kafle{grid-template-columns:1fr}}
+
+.kafle{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:4px}
+.kafel{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:22px}
+.kafel.po{background:var(--green-bg);border-color:#CBDFC9}
+.kafel-et{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.kafel.po .kafel-et{color:var(--green-tx)}
+.kafel-liczba{font-family:var(--serif);font-size:clamp(34px,6vw,52px);line-height:1.1;color:var(--ink)}
+.kafel-opis{font-size:13.5px;color:var(--muted);margin-top:4px}
+
+.os{list-style:none;display:flex;flex-direction:column}
+.os li{position:relative;padding:0 0 22px 26px;font-size:15.5px}
+.os li:before{content:"";position:absolute;left:5px;top:8px;bottom:-4px;width:2px;background:var(--line)}
+.os li:last-child:before{display:none}
+.os li:after{content:"";position:absolute;left:0;top:5px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:3px solid #B5791E}
+.os-czas{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#B5791E}
+.os b{display:block;color:var(--ink);font-weight:600;margin:2px 0 2px}
+.os span.o{display:block;font-size:14.5px;color:var(--muted);line-height:1.55}
+
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-of-type{border-top:1px solid var(--line)}
+.faq summary{cursor:pointer;font-weight:600;color:var(--ink);padding:16px 30px 16px 0;position:relative;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:4px;top:13px;font-size:20px;font-weight:400;color:#B5791E}
+.faq details[open] summary:after{content:"\2013"}
+.faq details>p{padding:0 0 16px;color:var(--ink-2);font-size:15.5px;line-height:1.65}
+
+.oferta-cta{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:34px 28px;text-align:center}
+.oferta-cta h3{font-family:var(--sans);font-size:22px;letter-spacing:0;text-transform:none;color:var(--ink);margin-bottom:8px}
+.oferta-cta .lead{font-size:16px;color:var(--ink-2);margin-bottom:20px}
+.formalnosci{margin-top:26px;padding-top:22px;border-top:1px solid var(--line);text-align:left}
+.formalnosci .naglowek-f{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.formalnosci ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.formalnosci li{font-size:13.5px;color:var(--muted);line-height:1.55}
+.formalnosci strong{color:var(--ink-2)}
+
 footer{border-top:1px solid var(--line);padding:44px 0;margin-top:96px}
 .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
 .foot a{text-decoration:none}

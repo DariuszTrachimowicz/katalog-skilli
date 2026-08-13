@@ -6,18 +6,27 @@ const $ = (id) => document.getElementById(id);
 /* ---------- katalog ---------- */
 
 let kat = "Wszystkie";
+let platnosc = "dowolne"; // dowolne | darmowe | platne
 let fraza = "";
 
+const PLATNOSC = [["Dowolne", "dowolne"], ["Darmowe", "darmowe"], ["Płatne", "platne"]];
+
 const filtry = $("filters");
-filtry.innerHTML = KATEGORIE.map(
-  (c) => `<button class="chip${c === kat ? " on" : ""}" data-c="${c}">${c}</button>`
-).join("");
+filtry.innerHTML =
+  KATEGORIE.map((c) => `<button class="chip${c === kat ? " on" : ""}" data-c="${c}">${c}</button>`).join("") +
+  `<span class="chip-sep" aria-hidden="true"></span>` +
+  PLATNOSC.map(([label, v]) => `<button class="chip chip-p${v === platnosc ? " on" : ""}" data-p="${v}">${label}</button>`).join("");
 
 filtry.addEventListener("click", (e) => {
   const b = e.target.closest(".chip");
   if (!b) return;
-  kat = b.dataset.c;
-  [...filtry.children].forEach((x) => x.classList.toggle("on", x.dataset.c === kat));
+  if (b.dataset.c !== undefined) {
+    kat = b.dataset.c;
+    [...filtry.querySelectorAll("[data-c]")].forEach((x) => x.classList.toggle("on", x.dataset.c === kat));
+  } else if (b.dataset.p !== undefined) {
+    platnosc = b.dataset.p;
+    [...filtry.querySelectorAll("[data-p]")].forEach((x) => x.classList.toggle("on", x.dataset.p === platnosc));
+  }
   filtruj();
 });
 
@@ -36,8 +45,10 @@ function odmiana(n) {
 function filtruj() {
   let widoczne = 0;
   for (const karta of document.querySelectorAll("#grid .card")) {
+    const platnaKarta = karta.dataset.platny === "1";
     const pasuje =
       (kat === "Wszystkie" || karta.dataset.kat === kat) &&
+      (platnosc === "dowolne" || (platnosc === "platne" ? platnaKarta : !platnaKarta)) &&
       (!fraza || karta.dataset.szukaj.includes(fraza));
     karta.style.display = pasuje ? "" : "none";
     if (pasuje) widoczne++;
