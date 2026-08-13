@@ -128,8 +128,7 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
     <nav class="nav-links">
       <a href="https://aixperts.pl/">Strona główna</a>
       <a href="${cfg.linkSzkolenia}">Warsztaty</a>
-      <a href="/#katalog">Darmowy katalog</a>
-      <a href="https://aixperts.pl/skille-platne/">Płatne skille</a>
+      <a href="/#katalog">Skille</a>
       <a href="/#test" class="btn">Zacznij od testu</a>
     </nav>
   </div>
@@ -249,21 +248,29 @@ function stronaGlowna(skille) {
   const gotowe = skille.filter((s) => s.status === "gotowy").length;
 
   const karty = skille
-    .map(
-      (s) => `<a class="card" href="/skill/${s.id}/" data-kat="${esc(s.kategoria)}" data-szukaj="${esc([s.nazwa, s.skrot, ...s.szukaj].join(" ").toLowerCase())}">
+    .map((s) => {
+      const platny = String(s.platny) === "true";
+      const href = platny ? esc(s.linkOferty) : `/skill/${s.id}/`;
+      const znacznik = platny
+        ? `<span class="dot d-platny"><i></i>${esc(s.cena || "Płatny")}</span>`
+        : `<span class="dot d-${s.status === "gotowy" ? "gotowy" : "wkrotce"}"><i></i>${s.status === "gotowy" ? "Gotowy" : "Wkrótce"}</span>`;
+      const stopka = platny ? "Zobacz ofertę" : "Zobacz";
+      return `<a class="card" href="${href}" data-kat="${esc(s.kategoria)}" data-szukaj="${esc([s.nazwa, s.skrot, ...s.szukaj].join(" ").toLowerCase())}">
       <div class="card-top">
         <span class="tag ${klasaKat(s.kategoria)}">${esc(s.kategoria)}</span>
-        <span class="dot d-${s.status === "gotowy" ? "gotowy" : "wkrotce"}"><i></i>${s.status === "gotowy" ? "Gotowy" : "Wkrótce"}</span>
+        ${znacznik}
       </div>
       <h3>${esc(s.nazwa)}</h3>
       <p>${esc(s.skrot)}</p>
       <div class="compat">${znacznikiZgodnosci(s)}</div>
-      <div class="card-foot"><em>Zobacz &rarr;</em></div>
-    </a>`
-    )
+      <div class="card-foot"><em>${stopka} &rarr;</em></div>
+    </a>`;
+    })
     .join("");
 
-  const daneQuizu = skille.map((s) => ({ id: s.id, n: s.nazwa, o: s.skrot, t: s.szukaj, g: s.status === "gotowy" }));
+  const daneQuizu = skille
+    .filter((s) => String(s.platny) !== "true")
+    .map((s) => ({ id: s.id, n: s.nazwa, o: s.skrot, t: s.szukaj, g: s.status === "gotowy" }));
 
   const tresc = `
 <section class="hero">
@@ -279,7 +286,7 @@ function stronaGlowna(skille) {
     <div class="stats">
       <div class="stat"><b>${skille.length}</b><span>umiejętności opisanych ręcznie, nie zescrapowanych z GitHuba</span></div>
       <div class="stat"><b>${gotowe}</b><span>gotowych do pobrania i sprawdzonych na polskich dokumentach</span></div>
-      <div class="stat"><b>0 zł</b><span>za pobranie. Katalog jest i zostanie darmowy</span></div>
+      <div class="stat"><b>2 modele</b><span>każdy skill działa i w Claude, i w ChatGPT</span></div>
     </div>
   </div>
 </section>
@@ -321,7 +328,7 @@ function stronaGlowna(skille) {
 <section class="sec">
   <div class="wrap"><div class="cta">
     <h2>Możesz to wdrożyć sam. Albo zrobimy to razem.</h2>
-    <p>Katalog jest darmowy i zostanie darmowy. Ale samo pobranie pliku to dopiero początek, najwięcej zmienia się wtedy, gdy zespół wie, kiedy tego użyć, a kiedy nie.</p>
+    <p>Samo pobranie albo kupno skilla to dopiero początek. Najwięcej zmienia się wtedy, gdy zespół wie, kiedy go użyć, a kiedy nie.</p>
     <a href="${cfg.linkSzkolenia}" class="btn">Zobacz terminy szkoleń</a>
   </div></div>
 </section>`;
@@ -359,11 +366,11 @@ function stronaRegulaminu() {
   <section class="blok"><h3>Kto prowadzi ten serwis</h3>
     <p>Serwis ${esc(cfg.nazwaSerwisu)} (${esc(cfg.domena)}) prowadzi <strong>D-X.PL Michał Jaśkiewicz</strong>, ul. Więckowskiego 32 lok. 8, 90-728 Łódź, NIP 7262533563, REGON 362247556. Kontakt: <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>.</p></section>
   <section class="blok"><h3>Co oferuje serwis</h3>
-    <p>Trzy rzeczy, wszystkie bezpłatne: przeglądanie katalogu umiejętności AI, pobieranie plików .skill oraz test doboru z opcjonalnym newsletterem. Przeglądanie i pobieranie nie wymagają konta ani podawania jakichkolwiek danych.</p></section>
+    <p>Przeglądanie katalogu umiejętności AI oraz test doboru z opcjonalnym newsletterem są bezpłatne i nie wymagają konta ani podawania jakichkolwiek danych. Część skilli pobierzesz za darmo na licencji GPL, część jest płatna, wtedy obowiązują warunki, licencja i cena podane w ofercie danego skilla.</p></section>
   <section class="blok"><h3>Newsletter</h3>
     <p>Zapis wymaga podania adresu e-mail i potwierdzenia go kliknięciem w link, bez potwierdzenia niczego więcej nie wysyłamy. Po potwierdzeniu dostajesz dobrany w teście zestaw umiejętności, a potem od czasu do czasu wiadomości o nowościach w katalogu oraz o szkoleniach i usługach prowadzącego serwis. Z listy wypisujesz się jednym kliknięciem w stopce każdej wiadomości, bez pytań i bez logowania.</p></section>
   <section class="blok"><h3>Pliki .skill</h3>
-    <p>Pobrane umiejętności możesz używać w swojej pracy i w swojej firmie bez ograniczeń. Opisy są materiałem informacyjnym, nie zastępują porady prawnej, podatkowej ani kadrowej, a wyniki działania narzędzi AI zawsze warto sprawdzić przed użyciem.</p></section>
+    <p>Darmowe umiejętności (licencja GPL) możesz używać w swojej pracy i w swojej firmie bez ograniczeń. Skille płatne obejmuje licencja komercyjna opisana w ich ofercie. Opisy są materiałem informacyjnym, nie zastępują porady prawnej, podatkowej ani kadrowej, a wyniki działania narzędzi AI zawsze warto sprawdzić przed użyciem.</p></section>
   <section class="blok"><h3>Warunki techniczne</h3>
     <p>Wystarczy przeglądarka internetowa z włączonym JavaScriptem, a do newslettera, działający adres e-mail.</p></section>
   <section class="blok"><h3>Reklamacje</h3>
@@ -462,6 +469,7 @@ licencji GPL. Rozpowszechniany bez jakiejkolwiek gwarancji.
 
 // paczki .skill
 for (const s of skille) {
+  if (String(s.platny) === "true") continue;
   if (s.status !== "gotowy") continue;
   const pliki = s.pliki.map((p) => (p.nazwa === `${s.id}/SKILL.md` ? zMetryczka(p, s) : p));
   pliki.push({ nazwa: `${s.id}/LICENSE.txt`, dane: Buffer.from(TEKST_LICENCJI, "utf8") });
@@ -475,6 +483,7 @@ for (const s of skille) {
 zapisz(join(WY, "index.html"), stronaGlowna(skille));
 console.log("  strona  /");
 for (const s of skille) {
+  if (String(s.platny) === "true") continue;
   zapisz(join(WY, "skill", s.id, "index.html"), stronaSkilla(s));
   console.log(`  strona  /skill/${s.id}/`);
 }
@@ -495,14 +504,14 @@ if (existsSync(join(KORZEN, "szablony", "og"))) cpSync(join(KORZEN, "szablony", 
 zapisz(
   join(WY, "dane", "skille.json"),
   JSON.stringify(
-    skille.map((s) => ({ id: s.id, nazwa: s.nazwa, skrot: s.skrot, gotowy: s.status === "gotowy" })),
+    skille.filter((s) => String(s.platny) !== "true").map((s) => ({ id: s.id, nazwa: s.nazwa, skrot: s.skrot, gotowy: s.status === "gotowy" })),
     null,
     2
   )
 );
 
 // sitemap i robots
-const adresy = ["/", "/prywatnosc/", "/regulamin/", ...skille.map((s) => `/skill/${s.id}/`)];
+const adresy = ["/", "/prywatnosc/", "/regulamin/", ...skille.filter((s) => String(s.platny) !== "true").map((s) => `/skill/${s.id}/`)];
 zapisz(
   join(WY, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
