@@ -11,8 +11,8 @@ szukaj: polityka AI, AI Act, rejestr systemów AI, obowiązki AI Act, kompetencj
 tytulSeo: Polityka AI i rejestr zastosowań w firmie pod AI Act, płatny skill
 opisSeo: "Zbuduj dokumentację AI dla firmy pod AI Act: rejestr systemów, polityka dla pracowników, klauzula do umów, praktyki zakazane, ścieżka incydentu. Nie orzeka zgodności."
 zgodnosc:
-  claude: format
-  gpt: format
+  claude: ok
+  gpt: ok
   gemini: brak
 ---
 
