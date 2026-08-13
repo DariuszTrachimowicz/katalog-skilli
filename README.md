@@ -136,3 +136,13 @@ curl -s localhost:8790/api/zdrowie
 ## Czego tu celowo nie ma
 
 Kont użytkowników, panelu administracyjnego, bazy danych, komentarzy, ocen, systemu wtyczek i automatycznej synchronizacji z GitHubem. Każde z nich to koszt utrzymania, który nie przekłada się na to, po co ten serwis powstał: żeby ktoś znalazł właściwą umiejętność, pobrał ją i został na szkoleniu.
+
+## Licencja i twórca
+
+Twórca: **Dariusz Trachimowicz**. Strona projektu: https://skille.aixperts.pl
+
+Skille w tym katalogu są objęte licencją **GPL-3.0-or-later** (GNU General Public License w wersji 3 lub nowszej). Pełny tekst licencji jest w pliku [`LICENSE`](LICENSE), a jego oficjalna wersja pod adresem https://www.gnu.org/licenses/gpl-3.0.html
+
+Co to oznacza w praktyce: możesz te skille pobierać, używać, kopiować i zmieniać za darmo, także w firmie i komercyjnie. Jeśli rozpowszechniasz je dalej (w oryginale albo zmienione), robisz to na tej samej licencji i zachowujesz informację o autorze oraz źródle. Skille są udostępniane bez jakiejkolwiek gwarancji.
+
+Każda paczka `.skill` niesie tę informację ze sobą: metryczkę w nagłówku `SKILL.md` (autor, licencja, źródło), pełny tekst licencji w `LICENSE.txt` oraz krótką notkę po polsku w `LICENCJA.txt`. Dzięki temu licencja i autorstwo zostają przy pliku, nawet gdy krąży poza tą stroną.

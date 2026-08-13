@@ -137,6 +137,7 @@ ${tresc}
 <footer>
   <div class="wrap foot">
     <div>${esc(cfg.nazwaSerwisu)} &middot; <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a></div>
+    <div>Twórca: ${esc(cfg.autor)} &middot; Skille na licencji <a href="${cfg.urlLicencji}" rel="license">${esc(cfg.licencja)}</a></div>
     <div><a href="/regulamin/">Regulamin</a> &middot; <a href="/prywatnosc/">Prywatność</a> &middot; Katalog nie jest powiązany z Anthropic, OpenAI ani Google.</div>
   </div>
 </footer>
@@ -372,7 +373,7 @@ function stronaRegulaminu() {
     <p>O zmianach istotnych dla zapisanych na newsletter poinformujemy mailem. Data obowiązującej wersji jest zawsze na górze tej strony.</p></section>
   <div class="powrot"><a class="btn ghost" href="/">&larr; Wróć do katalogu</a></div>
 </article></main>`;
-  return strona({ tytul: `Regulamin — ${cfg.nazwaSerwisu}`, opis: "Zasady korzystania z katalogu, pobierania skilli i newslettera.", sciezka: "/regulamin/", tresc });
+  return strona({ tytul: `Regulamin — ${cfg.nazwaSerwisu}`, opis: "Zasady korzystania z katalogu, pobierania skilli i newslettera.", sciezka: "/regulamin/", obrazek: "regulamin.png", tresc });
 }
 
 /* ---------- strona prywatności ---------- */
@@ -401,7 +402,7 @@ function stronaPrywatnosci() {
     <p>Oglądalność mierzymy własnym narzędziem (Umami) uruchomionym na tym samym serwerze co strona. Działa bez ciasteczek i nie buduje profilu: widzimy, które podstrony są odwiedzane, skąd przychodzą wejścia i ile osób kończy test lub pobiera plik — nie wiemy, kim jesteś, a dane nie są nikomu przekazywane. Dlatego nie wyświetlamy banera zgody: nie ma tu nic, na co trzeba by jej udzielać.</p></section>
   <div class="powrot"><a class="btn ghost" href="/">&larr; Wróć do katalogu</a></div>
 </article></main>`;
-  return strona({ tytul: `Prywatność — ${cfg.nazwaSerwisu}`, opis: "Jakie dane zbiera katalog i co się z nimi dzieje.", sciezka: "/prywatnosc/", tresc });
+  return strona({ tytul: `Prywatność — ${cfg.nazwaSerwisu}`, opis: "Jakie dane zbiera katalog i co się z nimi dzieje.", sciezka: "/prywatnosc/", obrazek: "prywatnosc.png", tresc });
 }
 
 /* ---------- build ---------- */
@@ -418,7 +419,7 @@ if (!skille.length) {
 
 // Metryczka pochodzenia — wstrzykiwana do frontmattera SKILL.md przy pakowaniu.
 // Pole `metadata` jest częścią standardu Agent Skills (platformy je ignorują,
-// walidator dopuszcza), a paczka niesie swoje źródło, gdy krąży poza katalogiem.
+// walidator dopuszcza), a paczka niesie swoje źródło i licencję, gdy krąży poza katalogiem.
 function zMetryczka(plik, s) {
   const tekst = plik.dane.toString("utf8");
   const koniec = tekst.indexOf("\n---", 3);
@@ -426,6 +427,8 @@ function zMetryczka(plik, s) {
   const metryczka = `metadata:
   katalog: "${cfg.nazwaSerwisu}"
   autor: "${cfg.autor}"
+  licencja: "${cfg.licencja}"
+  stronaProjektu: "${BAZA}/"
   zrodlo: "${BAZA}/skill/${s.id}/"
   kontakt: "${cfg.mailKontaktowy}"
   aktualizacja: "${s.aktualizacja}"
@@ -433,12 +436,38 @@ function zMetryczka(plik, s) {
   return { ...plik, dane: Buffer.from(tekst.slice(0, koniec + 1) + metryczka + tekst.slice(koniec + 1), "utf8") };
 }
 
+// Pełny tekst licencji GPL, dołączany do każdej paczki (jedno źródło: plik LICENSE w repo).
+const TEKST_LICENCJI = readFileSync(join(KORZEN, "LICENSE"), "utf8");
+
+// Krótka notka licencyjna po polsku, wskazuje autora, wersję licencji i pełny tekst.
+function notkaLicencyjna(s) {
+  return `Skill „${s.nazwa || s.id}" z katalogu ${cfg.nazwaSerwisu}
+Copyright (C) ${cfg.rok} ${cfg.autor}
+
+Licencja: ${cfg.licencja}
+(GNU General Public License w wersji 3 lub dowolnej nowszej.)
+
+Pełny tekst licencji znajdziesz w pliku LICENSE.txt obok tego pliku
+oraz pod adresem ${cfg.urlLicencji}
+
+Projekt: ${BAZA}/
+Źródło i aktualizacje tego skilla: ${BAZA}/skill/${s.id}/
+Kontakt: ${cfg.mailKontaktowy}
+
+Ten skill jest wolny: możesz go używać, kopiować i zmieniać na warunkach
+licencji GPL. Rozpowszechniany bez jakiejkolwiek gwarancji.
+`;
+}
+
 // paczki .skill
 for (const s of skille) {
   if (s.status !== "gotowy") continue;
-  const zip = zbudujZip(s.pliki.map((p) => (p.nazwa === `${s.id}/SKILL.md` ? zMetryczka(p, s) : p)));
+  const pliki = s.pliki.map((p) => (p.nazwa === `${s.id}/SKILL.md` ? zMetryczka(p, s) : p));
+  pliki.push({ nazwa: `${s.id}/LICENSE.txt`, dane: Buffer.from(TEKST_LICENCJI, "utf8") });
+  pliki.push({ nazwa: `${s.id}/LICENCJA.txt`, dane: Buffer.from(notkaLicencyjna(s), "utf8") });
+  const zip = zbudujZip(pliki);
   zapisz(join(WY, "pobierz", `${s.id}.skill`), zip);
-  console.log(`  paczka  /pobierz/${s.id}.skill  (${s.pliki.length} plików, ${(zip.length / 1024).toFixed(1)} KB)`);
+  console.log(`  paczka  /pobierz/${s.id}.skill  (${pliki.length} plików, ${(zip.length / 1024).toFixed(1)} KB)`);
 }
 
 // strony

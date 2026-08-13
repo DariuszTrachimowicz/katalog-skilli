@@ -2,12 +2,15 @@
   "domena": "skille.aixperts.pl",
   "nazwaSerwisu": "Skille po polsku",
   "opisSerwisu": "Kuratorowany katalog umiejętności AI opisanych prostym językiem. Każda sprawdzona na polskich dokumentach, każda do pobrania za darmo.",
-  "autor": "Dariusz",
+  "autor": "Dariusz Trachimowicz",
   "mailKontaktowy": "kontakt@aixperts.pl",
   "linkSzkolenia": "https://aixperts.pl/szkolenia/",
+  "rok": "2026",
+  "licencja": "GPL-3.0-or-later",
+  "urlLicencji": "https://www.gnu.org/licenses/gpl-3.0.html",
 
   "analityka": {
-    "_komentarz": "Self-hosted Umami na tym samym VPS-ie — bez ciasteczek, dane nie wychodzą poza nasz serwer. Usuń sekcję, żeby wyłączyć zbieranie.",
+    "_komentarz": "Self-hosted Umami na tym samym VPS-ie, bez ciasteczek, dane nie wychodzą poza nasz serwer. Usuń sekcję, żeby wyłączyć zbieranie.",
     "skrypt": "https://statystyki.aixperts.pl/script.js",
     "idSerwisu": "b60585a9-a097-4679-8fba-77d7005cd895"
   },
@@ -23,7 +26,7 @@
     },
     "wysylka": {
       "tryb": "smtp",
-      "_komentarz": "Tryby: 'smtp' (własny klient, hasło w zmiennej środowiskowej z hasloZmienna — patrz .env), 'http' (API dostawcy, np. Resend), 'log' (mail do pliku zamiast wysyłki, do testów).",
+      "_komentarz": "Tryby: 'smtp' (własny klient, hasło w zmiennej środowiskowej z hasloZmienna, patrz .env), 'http' (API dostawcy, np. Resend), 'log' (mail do pliku zamiast wysyłki, do testów).",
       "host": "smtp.dpoczta.pl",
       "port": 587,
       "uzytkownik": "katalog@aixperts.pl",
