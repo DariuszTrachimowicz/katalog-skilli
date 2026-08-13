@@ -56,7 +56,7 @@ const PYTANIA = [
         ["Marketing i sprzedaż", ["marketing", "sprzedaż", "treści"]],
         ["Pracuję na własnej działalności", ["freelancer", "umowa", "B2B"]],
         ["Administracja i biuro", ["biuro", "pisma", "dokumenty"]]] },
-  { q: "Co zjada Ci najwięcej czasu?", h: "Jedna odpowiedź — ta najbardziej dotkliwa.", wiele: false,
+  { q: "Co zjada Ci najwięcej czasu?", h: "Jedna odpowiedź, ta najbardziej dotkliwa.", wiele: false,
     o: [["Pisanie i poprawianie dokumentów", ["dokumenty", "pisma", "biuro"]],
         ["Przepisywanie danych między plikami", ["faktury", "dane", "księgowość"]],
         ["Maile i komunikacja", ["komunikacja", "maile"]],
@@ -76,7 +76,7 @@ const PYTANIA = [
   { q: "Jak duża jest Twoja firma?", h: "", wiele: false,
     o: [["Pracuję sam", ["freelancer", "firma"]],
         ["Do 10 osób", ["firma"]],
-        ["11–50 osób", ["firma", "kadry"]],
+        ["11-50 osób", ["firma", "kadry"]],
         ["Więcej niż 50", ["kadry", "raporty"]]] },
 ];
 
@@ -133,9 +133,9 @@ function pokazWynik() {
     .slice(0, 6)
     .map((r) => r.s);
 
-  // Nagłówek musi mówić prawdę o liczbie pozycji — przy małym katalogu
+  // Nagłówek musi mówić prawdę o liczbie pozycji, przy małym katalogu
   // obietnica "sześć umiejętności" nad jedną kartą wygląda na awarię.
-  // Polski liczebnik rządzi przypadkiem: jedna dobrana, dwie–cztery dobrane,
+  // Polski liczebnik rządzi przypadkiem: jedna dobrana, dwie, cztery dobrane,
   // pięć i więcej dobranych. Bez tego nagłówek zgrzyta przy każdym wyniku.
   const SLOWNIE = ["Zero", "Jedna", "Dwie", "Trzy", "Cztery", "Pięć", "Sześć"];
   const n = wynik.length;
@@ -147,7 +147,7 @@ function pokazWynik() {
 
   $("qbody").innerHTML = `
     <div class="q-title">${naglowek}</div>
-    <div class="q-help">${wynik.length > 1 ? "Kolejność nie jest przypadkowa — na górze to, co przy Twoich odpowiedziach zmieni najwięcej." : "To najlepsze dopasowanie do tego, co robisz. Katalog rośnie — resztę przyślemy, gdy będzie gotowa."}</div>
+    <div class="q-help">${wynik.length > 1 ? "Kolejność nie jest przypadkowa, na górze to, co przy Twoich odpowiedziach zmieni najwięcej." : "To najlepsze dopasowanie do tego, co robisz. Katalog rośnie, resztę przyślemy, gdy będzie gotowa."}</div>
     <div class="result-grid">
       <div class="rlist">${wynik.map((s, i) => `
         <a class="ritem" href="/skill/${s.id}/">
@@ -156,11 +156,11 @@ function pokazWynik() {
         </a>`).join("")}</div>
       <div class="capture" id="cap">
         <h3>Wysłać Ci ten zestaw na maila?</h3>
-        <p>Dostaniesz go jako jedną kartkę — z instrukcją instalacji i krótkim opisem, kiedy której umiejętności użyć.</p>
+        <p>Dostaniesz go jako jedną kartkę, z instrukcją instalacji i krótkim opisem, kiedy której umiejętności użyć.</p>
         <div id="blad"></div>
         <input type="email" id="mail" placeholder="twoj@adres.pl" autocomplete="email">
         <button class="btn" id="wyslij" style="width:100%;justify-content:center">Wyślij mi zestaw</button>
-        <p class="consent">Wyślemy jedną wiadomość z prośbą o potwierdzenie — dopiero po kliknięciu linku dopiszemy Cię do listy. Potem będziemy pisać o nowościach w katalogu i od czasu do czasu o naszych szkoleniach. Wypisujesz się jednym kliknięciem. Szczegóły: <a href="/regulamin/">regulamin</a> i <a href="/prywatnosc/">prywatność</a>.</p>
+        <p class="consent">Wyślemy jedną wiadomość z prośbą o potwierdzenie, dopiero po kliknięciu linku dopiszemy Cię do listy. Potem będziemy pisać o nowościach w katalogu i od czasu do czasu o naszych szkoleniach. Wypisujesz się jednym kliknięciem. Szczegóły: <a href="/regulamin/">regulamin</a> i <a href="/prywatnosc/">prywatność</a>.</p>
       </div>
     </div>
     <div class="quiz-foot"><button class="link-btn" id="odnowa">&larr; Zacznij test od nowa</button><span></span></div>`;
@@ -169,7 +169,7 @@ function pokazWynik() {
   $("mail").addEventListener("keydown", (e) => { if (e.key === "Enter") wyslij(); });
   $("odnowa").addEventListener("click", () => { nr = 0; punkty = {}; rysuj(); });
 
-  // Zdarzenie do statystyk (self-hosted, bez ciasteczek) — sama liczba ukończeń,
+  // Zdarzenie do statystyk (self-hosted, bez ciasteczek), sama liczba ukończeń,
   // bez treści odpowiedzi. Gdy analityka jest wyłączona, nic się nie dzieje.
   window.umami?.track("wynik-testu", { skilli: wynik.length });
 }
@@ -200,7 +200,7 @@ async function wyslij() {
 
     if (!odp.ok) throw new Error(dane.blad || "Nie udało się zapisać.");
 
-    window.umami?.track("zapis"); // sam fakt zapisu — adres nie trafia do statystyk
+    window.umami?.track("zapis"); // sam fakt zapisu, adres nie trafia do statystyk
     $("cap").innerHTML = `<div class="sent"><strong>Sprawdź skrzynkę.</strong><br>
       Wysłaliśmy wiadomość na <strong>${adres}</strong> z linkiem potwierdzającym. Kliknij go, a zestaw przyjdzie od razu.
       Jeśli nic nie widzisz w ciągu kilku minut, zajrzyj do spamu.</div>`;
