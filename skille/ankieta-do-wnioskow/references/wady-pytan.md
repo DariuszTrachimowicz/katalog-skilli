@@ -1,6 +1,6 @@
 # Wady pytań
 
-Przejdź tę listę przy każdej ankiecie. Znalezioną wadę opisz w sekcji „Pytania, które nie zadziałały” i napisz, co zrobić z wynikiem tego pytania — najczęściej: odczytać jako sygnał, nie jako liczbę.
+Przejdź tę listę przy każdej ankiecie. Znalezioną wadę opisz w sekcji „Pytania, które nie zadziałały” i napisz, co zrobić z wynikiem tego pytania, najczęściej: odczytać jako sygnał, nie jako liczbę.
 
 Nie przepisuj pytania na poprawne. Wskazujesz wadę i skutek; układanie kwestionariusza jest poza zakresem tego skilla.
 
@@ -24,13 +24,13 @@ Skutek: udziały poszczególnych odpowiedzi zawyżone o osoby, które nie miały
 
 ## Kafeteria, w której odpowiedzi się nakładają
 
-Przedziały typu „1–5 lat”, „5–10 lat” — osoba z pięcioletnim stażem pasuje do dwóch. Albo kategorie nierozłączne merytorycznie („cena”, „koszt zakupu”).
+Przedziały typu „1-5 lat”, „5-10 lat”, osoba z pięcioletnim stażem pasuje do dwóch. Albo kategorie nierozłączne merytorycznie („cena”, „koszt zakupu”).
 
 Skutek: podział zależy od tego, którą pozycję respondent przeczytał pierwszą. Rozkład pokazuje wtedy kolejność pozycji na liście, a nie to, co ludzie myślą.
 
 ## Środek skali i „trudno powiedzieć” w środku
 
-Opcja beztreściowa umieszczona pośrodku skali jest wybierana wyraźnie częściej niż ta sama opcja na końcu — wygląda jak neutralna ocena, a jest ucieczką od odpowiedzi.
+Opcja beztreściowa umieszczona pośrodku skali jest wybierana wyraźnie częściej niż ta sama opcja na końcu, wygląda jak neutralna ocena, a jest ucieczką od odpowiedzi.
 
 Skutek: rozdęta grupa „ani tak, ani nie”. Nie interpretuj jej jako obojętności; to worek, w którym siedzą i obojętni, i niezdecydowani, i ci bez wiedzy na dany temat.
 
@@ -48,7 +48,7 @@ Skutek: wynik można porównywać między falami badania, ale nie da się go czy
 
 ## Pytanie o odległą przeszłość
 
-„Ile razy kontaktowałeś się z obsługą w ciągu ostatniego roku?” — ludzie nie pamiętają i szacują, zwykle zaniżając rzadkie zdarzenia i zawyżając niedawne.
+„Ile razy kontaktowałeś się z obsługą w ciągu ostatniego roku?”, ludzie nie pamiętają i szacują, zwykle zaniżając rzadkie zdarzenia i zawyżając niedawne.
 
 Skutek: dane o częstotliwości traktuj jako rząd wielkości, nie jako liczbę.
 
@@ -60,7 +60,7 @@ Skutek: część odpowiedzi to szum, którego nie da się odróżnić od reszty.
 
 ## Efekt kolejności
 
-Długa lista odpowiedzi bez losowania kolejności — pierwsze pozycje wybierane są częściej. Pytanie poprzedzające ustawia nastawienie do następnego („Wymień trzy problemy, jakie napotkałeś” tuż przed „Jak ogólnie oceniasz współpracę?”).
+Długa lista odpowiedzi bez losowania kolejności, pierwsze pozycje wybierane są częściej. Pytanie poprzedzające ustawia nastawienie do następnego („Wymień trzy problemy, jakie napotkałeś” tuż przed „Jak ogólnie oceniasz współpracę?”).
 
 Skutek: przy liście powyżej mniej więcej siedmiu pozycji różnice między sąsiednimi wynikami czytaj ostrożnie. Ogólną ocenę postawioną po bloku pytań o problemy opisz z informacją o tym sąsiedztwie.
 
@@ -74,10 +74,10 @@ Skutek: przy szerokim pytaniu kategorie będą płytkie. Napisz to, zamiast twor
 
 Ankieta o obsłudze posprzedażowej rozesłana do wszystkich klientów, w tym tych, którzy nigdy nie kontaktowali się z obsługą.
 
-Skutek: podstawa procentu obejmuje ludzi bez doświadczenia w temacie. Jeśli w danych jest sposób, żeby ich odsiać — odsiej i podaj obie liczby. Jeśli nie ma — napisz, że wynik dotyczy mieszanki.
+Skutek: podstawa procentu obejmuje ludzi bez doświadczenia w temacie. Jeśli w danych jest sposób, żeby ich odsiać, odsiej i podaj obie liczby. Jeśli nie ma, napisz, że wynik dotyczy mieszanki.
 
 ## Ankieta nieanonimowa udająca anonimową
 
 W eksporcie są adresy e-mail, adresy IP albo token respondenta, a we wstępie napisano „ankieta jest anonimowa”. Respondenci zwykle to wyczuwają.
 
-Skutek: przy ankiecie pracowniczej oceny są łagodniejsze, a odpowiedzi otwarte krótsze i ostrożniejsze. Zgłoś to użytkownikowi jako rzecz do naprawienia przed następnym badaniem — i sam nie przepisuj tych danych do odpowiedzi.
+Skutek: przy ankiecie pracowniczej oceny są łagodniejsze, a odpowiedzi otwarte krótsze i ostrożniejsze. Zgłoś to użytkownikowi jako rzecz do naprawienia przed następnym badaniem, i sam nie przepisuj tych danych do odpowiedzi.

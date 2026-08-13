@@ -1,4 +1,4 @@
-# Katalog skilli AI — serwis
+# Katalog skilli AI, serwis
 
 Statyczny serwis generowany z folderów ze skillami, plus mała usługa obsługująca zapisy z testu doboru.
 
@@ -34,12 +34,12 @@ public/
 
 ## Dodanie nowego skilla
 
-Zanim zaczniesz pisać, przeczytaj **`STANDARD.md`** — obowiązuje każdy skill w katalogu: granice merytoryczne, struktura, język i walidacja.
+Zanim zaczniesz pisać, przeczytaj **`STANDARD.md`**, obowiązuje każdy skill w katalogu: granice merytoryczne, struktura, język i walidacja.
 
 1. Utwórz folder `skille/nazwa-skilla/`
 2. Wrzuć do niego `SKILL.md` (i opcjonalnie `references/`, `scripts/`, `assets/`)
-3. Dopisz `wpis.md` — nagłówek z metadanymi i sekcje opisowe
-4. `node narzedzia/grafiki.mjs` — wygeneruje grafikę podglądu dla social mediów (wymaga Chrome; wynik commitujesz razem ze skillem)
+3. Dopisz `wpis.md`, nagłówek z metadanymi i sekcje opisowe
+4. `node narzedzia/grafiki.mjs`, wygeneruje grafikę podglądu dla social mediów (wymaga Chrome; wynik commitujesz razem ze skillem)
 5. `bash serwer/wdroz.sh`
 
 Nawigacja, wyszukiwarka, sitemap i test doboru zaktualizują się same.
@@ -53,7 +53,7 @@ kategoria: Prawo              # Biuro, Finanse, Kadry, Prawo, Marketing, Dane
 status: gotowy                # gotowy | wkrotce
 poziom: Działa od razu
 aktualizacja: 2026-08-10
-skrot: Jedno zdanie o tym, co robi — pokazuje się na karcie i w wynikach testu.
+skrot: Jedno zdanie o tym, co robi, pokazuje się na karcie i w wynikach testu.
 szukaj: umowa, kontrakt, NDA  # słowa kluczowe po przecinku, zasilają wyszukiwarkę i test
 tytulSeo: ...                 # opcjonalne, inaczej powstaje z nazwy
 opisSeo: ...                  # opcjonalne, inaczej używany jest skrót
@@ -64,14 +64,14 @@ zgodnosc:
 ---
 ```
 
-Sekcje `## Co robi`, `## Dla kogo`, `## Ile Ci to oszczędza`, `## Przykład z życia`, `## Jak po polsku`, `## Czego potrzebujesz`, `## Na czym się wywala`, `## Czego ten skill nie robi celowo` trafiają w ustalone miejsca szablonu. **Każda inna sekcja `##` wyląduje na dole strony** — tak dokłada się rzeczy nietypowe, na przykład historię powstania skilla.
+Sekcje `## Co robi`, `## Dla kogo`, `## Ile Ci to oszczędza`, `## Przykład z życia`, `## Jak po polsku`, `## Czego potrzebujesz`, `## Na czym się wywala`, `## Czego ten skill nie robi celowo` trafiają w ustalone miejsca szablonu. **Każda inna sekcja `##` wyląduje na dole strony**, tak dokłada się rzeczy nietypowe, na przykład historię powstania skilla.
 
 Statusy zgodności znaczą dokładnie tyle:
 
 | Status | Znaczenie |
 |---|---|
 | `ok` | uruchomiliśmy skill na tej platformie i sprawdziliśmy wynik |
-| `format` | standard jest otwarty, więc powinno zadziałać — ale sami tego nie uruchomiliśmy |
+| `format` | standard jest otwarty, więc powinno zadziałać, ale sami tego nie uruchomiliśmy |
 | `brak` | platforma nie udostępnia tej funkcji w Polsce |
 
 Nie wpisuj `ok` bez faktycznego uruchomienia. Cała przewaga tego katalogu nad katalogami scrapującymi GitHuba polega na tym, że tu ta różnica jest prawdziwa.
@@ -87,9 +87,9 @@ mkdir -p dane && chown 1000:1000 dane   # usługa w kontenerze chodzi jako user 
 docker compose up -d --build
 ```
 
-Bez `chown` usługa zapisów powie to wprost przy starcie i się zatrzyma, zamiast wywrócić się przy pierwszym zapisie — czyli wtedy, gdy ktoś już wypełnia formularz.
+Bez `chown` usługa zapisów powie to wprost przy starcie i się zatrzyma, zamiast wywrócić się przy pierwszym zapisie, czyli wtedy, gdy ktoś już wypełnia formularz.
 
-Kontener `web` nasłuchuje na `127.0.0.1:8790` — z zewnątrz wystawia go dopiero reverse proxy na hoście, które też terminuje TLS. Na produkcji (VPS z CloudPanelem) robi to vhost typu reverse proxy dla `skille.aixperts.pl`.
+Kontener `web` nasłuchuje na `127.0.0.1:8790`, z zewnątrz wystawia go dopiero reverse proxy na hoście, które też terminuje TLS. Na produkcji (VPS z CloudPanelem) robi to vhost typu reverse proxy dla `skille.aixperts.pl`.
 
 Każdą aktualizację robi się potem jednym poleceniem:
 
@@ -97,7 +97,7 @@ Każdą aktualizację robi się potem jednym poleceniem:
 bash serwer/wdroz.sh
 ```
 
-Skrypt pobiera zmiany z GitHuba i przebudowuje kontenery. Przy błędzie budowania nic nie jest podmieniane — stara wersja zostaje online.
+Skrypt pobiera zmiany z GitHuba i przebudowuje kontenery. Przy błędzie budowania nic nie jest podmieniane, stara wersja zostaje online.
 
 ## Zapisy z testu
 
@@ -111,19 +111,19 @@ docker compose exec zapisy node narzedzia/eksport.mjs --wszystkie  # z niepotwie
 docker compose exec zapisy node narzedzia/wymaz.mjs adres@x.pl     # trwałe wymazanie adresu (żądanie RODO)
 ```
 
-Wypisanie linkiem ukrywa adres ze stanu listy, ale dziennik jest append-only — na żądanie usunięcia danych uruchom `wymaz.mjs`, które usuwa też same bajty z dziennika i z logu maili.
+Wypisanie linkiem ukrywa adres ze stanu listy, ale dziennik jest append-only, na żądanie usunięcia danych uruchom `wymaz.mjs`, które usuwa też same bajty z dziennika i z logu maili.
 
 ### Wysyłka maili
 
 W `config.json`, w sekcji `zapisy.wysylka`:
 
-- `"tryb": "smtp"` — wysyłka własnym, minimalnym klientem SMTP (STARTTLS + AUTH, czysta biblioteka Node). Uzupełnij `host`, `port`, `uzytkownik`, `nadawca`, a hasło podaj w zmiennej środowiskowej wskazanej w `hasloZmienna` — w Dockerze przez plik `.env` obok `docker-compose.yml` (jest w `.gitignore`, nie trafia do repo).
-- `"tryb": "http"` — wysyłka przez API dostawcy poczty (np. Resend). Uzupełnij `url`, `naglowekAutoryzacji` i `nadawca`.
-- `"tryb": "log"` — maile lądują w `dane/wyslane-maile.log` zamiast wychodzić; do testów, wszystko inne działa normalnie.
+- `"tryb": "smtp"`, wysyłka własnym, minimalnym klientem SMTP (STARTTLS + AUTH, czysta biblioteka Node). Uzupełnij `host`, `port`, `uzytkownik`, `nadawca`, a hasło podaj w zmiennej środowiskowej wskazanej w `hasloZmienna`, w Dockerze przez plik `.env` obok `docker-compose.yml` (jest w `.gitignore`, nie trafia do repo).
+- `"tryb": "http"`, wysyłka przez API dostawcy poczty (np. Resend). Uzupełnij `url`, `naglowekAutoryzacji` i `nadawca`.
+- `"tryb": "log"`, maile lądują w `dane/wyslane-maile.log` zamiast wychodzić; do testów, wszystko inne działa normalnie.
 
-**Nie wysyłaj maili bezpośrednio z VPS-a.** Świeży adres IP nie ma reputacji i wiadomości będą lądować w spamie albo znikać. Trzymanie adresów u siebie jest łatwe, dostarczanie poczty nie jest — to dwie różne rzeczy i tylko drugą warto oddać na zewnątrz.
+**Nie wysyłaj maili bezpośrednio z VPS-a.** Świeży adres IP nie ma reputacji i wiadomości będą lądować w spamie albo znikać. Trzymanie adresów u siebie jest łatwe, dostarczanie poczty nie jest, to dwie różne rzeczy i tylko drugą warto oddać na zewnątrz.
 
-Po podpięciu dostawcy ustaw dla domeny rekordy SPF, DKIM i DMARC — bez nich nawet dobry dostawca nie uratuje dostarczalności.
+Po podpięciu dostawcy ustaw dla domeny rekordy SPF, DKIM i DMARC, bez nich nawet dobry dostawca nie uratuje dostarczalności.
 
 ## Sprawdzenie, czy żyje
 

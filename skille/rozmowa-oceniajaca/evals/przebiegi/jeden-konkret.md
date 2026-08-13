@@ -1,4 +1,4 @@
-# Przebieg 1 — kierownik z jednym konkretem
+# Przebieg 1, kierownik z jednym konkretem
 
 Uruchomione 10.08.2026 na SKILL.md po poprawkach recenzenckich.
 
@@ -10,28 +10,28 @@ Uruchomione 10.08.2026 na SKILL.md po poprawkach recenzenckich.
 
 **1. Co to za rozmowa**
 
-Podsumowanie roku z pracownicą na umowie o pracę, w firmie bez arkusza i bez skali — czyli rozmowa całkowicie w Twoich rękach. Masz jeden sprawdzalny fakt (czerwcowe zestawienie, cztery dni po terminie) i jedno wrażenie („odpuściła”), którego jeszcze nie da się położyć na stole.
+Podsumowanie roku z pracownicą na umowie o pracę, w firmie bez arkusza i bez skali, czyli rozmowa całkowicie w Twoich rękach. Masz jeden sprawdzalny fakt (czerwcowe zestawienie, cztery dni po terminie) i jedno wrażenie („odpuściła”), którego jeszcze nie da się położyć na stole.
 
 **2. Zanim wejdziesz**
 
-- Zarezerwuj 45–60 minut i osobne pomieszczenie. Uprzedź Kasię dziś, nie w czwartek rano, i powiedz, o czym będzie rozmowa.
-- Odpowiedz sobie na jedno zbiorcze pytanie, zanim ułożymy resztę: **kto odczuł skutek czerwcowego opóźnienia i jak** (klient dzwonił? ktoś w biurze poprawiał to po godzinach? nic się nie stało?), **kiedy jeszcze poza czerwcem coś podobnego się zdarzyło**, **co Kasia zrobiła w tym roku dobrze — dwie sytuacje z miesiącem**, **czy słyszała już od Ciebie o tym opóźnieniu**, i **co się w jej pracy zmieniło poza nią samą** (nowe obowiązki, odejście kogoś z biura, nowy system).
-- Sprawdź, czego Ty jej nie dostarczyłeś na czas — dostępy, decyzje, odpowiedzi na maile. Jeśli czekała, to jest część Twoja i lepiej powiedzieć to pierwszemu.
+- Zarezerwuj 45-60 minut i osobne pomieszczenie. Uprzedź Kasię dziś, nie w czwartek rano, i powiedz, o czym będzie rozmowa.
+- Odpowiedz sobie na jedno zbiorcze pytanie, zanim ułożymy resztę: **kto odczuł skutek czerwcowego opóźnienia i jak** (klient dzwonił? ktoś w biurze poprawiał to po godzinach? nic się nie stało?), **kiedy jeszcze poza czerwcem coś podobnego się zdarzyło**, **co Kasia zrobiła w tym roku dobrze, dwie sytuacje z miesiącem**, **czy słyszała już od Ciebie o tym opóźnieniu**, i **co się w jej pracy zmieniło poza nią samą** (nowe obowiązki, odejście kogoś z biura, nowy system).
+- Sprawdź, czego Ty jej nie dostarczyłeś na czas, dostępy, decyzje, odpowiedzi na maile. Jeśli czekała, to jest część Twoja i lepiej powiedzieć to pierwszemu.
 - „Czuję, że odpuściła” zostaw poza rozmową, dopóki nie zamieni się w zachowanie z datą. Do wydobycia go służy pytanie: co konkretnie robiła rok temu, a przestała robić teraz? Kiedy zauważyłeś to pierwszy raz?
 
 **3. Plan rozmowy**
 
-> **Otwarcie (2 min)** — po co to spotkanie, ile potrwa, co się z nim stanie dalej.
-> **Najpierw Kasia (10 min)** — „Jak Ty patrzysz na ten rok? Co się udało, a co poszło inaczej, niż chciałaś?”, „Co Cię w tej pracy najbardziej spowalnia?”. Nie komentujesz, notujesz.
-> **Co działa (5 min)** — konkrety z miesiącem. Tu potrzebuję od Ciebie tych dwóch sytuacji, bo z opisu ich nie mam.
-> **Rzecz trudna (10 min)** — czerwcowe zestawienie, w schemacie fakt → skutek → oczekiwanie → pytanie.
-> **Ustalenia (5 min)** — co, do kiedy, po czym poznacie, że się udało, czego Kasia potrzebuje od Ciebie.
+> **Otwarcie (2 min)**, po co to spotkanie, ile potrwa, co się z nim stanie dalej.
+> **Najpierw Kasia (10 min)**, „Jak Ty patrzysz na ten rok? Co się udało, a co poszło inaczej, niż chciałaś?”, „Co Cię w tej pracy najbardziej spowalnia?”. Nie komentujesz, notujesz.
+> **Co działa (5 min)**, konkrety z miesiącem. Tu potrzebuję od Ciebie tych dwóch sytuacji, bo z opisu ich nie mam.
+> **Rzecz trudna (10 min)**, czerwcowe zestawienie, w schemacie fakt → skutek → oczekiwanie → pytanie.
+> **Ustalenia (5 min)**, co, do kiedy, po czym poznacie, że się udało, czego Kasia potrzebuje od Ciebie.
 
 **4. Zdania na trudny moment**
 
-Masz jeden fakt, więc dostajesz **jedno** zdanie — nie trzy. Wymyślanie dwóch pozostałych skończyłoby się tym, że Kasia obali je przy stole i cała rozmowa pójdzie o to, czy naprawdę było tak, jak mówisz.
+Masz jeden fakt, więc dostajesz **jedno** zdanie, nie trzy. Wymyślanie dwóch pozostałych skończyłoby się tym, że Kasia obali je przy stole i cała rozmowa pójdzie o to, czy naprawdę było tak, jak mówisz.
 
-> „W czerwcu zestawienie dla klienta wyszło cztery dni po terminie. [KTO TO ODCZUŁ I JAK?] Chcę, żeby od września zestawienia wychodziły w terminie, a jeśli coś się sypie — żebym wiedział o tym wcześniej, nie po fakcie. Co po Twojej stronie sprawiło, że ten czerwiec się rozjechał?”
+> „W czerwcu zestawienie dla klienta wyszło cztery dni po terminie. [KTO TO ODCZUŁ I JAK?] Chcę, żeby od września zestawienia wychodziły w terminie, a jeśli coś się sypie, żebym wiedział o tym wcześniej, nie po fakcie. Co po Twojej stronie sprawiło, że ten czerwiec się rozjechał?”
 
 Puste miejsce zostawiam celowo: nie wiem, kto odczuł to opóźnienie, a fakt bez skutku brzmi jak czepianie się o cztery dni sprzed roku. Napisz mi, co się wtedy stało, i wstawię to w zdanie.
 
@@ -41,14 +41,14 @@ Puste miejsce zostawiam celowo: nie wiem, kto odczuł to opóźnienie, a fakt be
 
 Z Twojego opisu:
 
-- **„Odpuściłaś”** — to ocena człowieka, nie zachowania, i nie da się jej poprawić do następnego kwartału. Zamiennik: „Mam wrażenie, że coś się zmieniło w tym, jak pracujesz — i chcę sprawdzić, czy mi się nie wydaje. Powiedz, jak Ty to widzisz.”
-- **„Ogólnie jest dobrze, tylko…”** — po tym zdaniu Kasia zapamięta „ogólnie dobrze” i nic więcej.
+- **„Odpuściłaś”**, to ocena człowieka, nie zachowania, i nie da się jej poprawić do następnego kwartału. Zamiennik: „Mam wrażenie, że coś się zmieniło w tym, jak pracujesz, i chcę sprawdzić, czy mi się nie wydaje. Powiedz, jak Ty to widzisz.”
+- **„Ogólnie jest dobrze, tylko…”**, po tym zdaniu Kasia zapamięta „ogólnie dobrze” i nic więcej.
 
 Ogólne, warte trzymania pod ręką przy każdej takiej rozmowie: „zawsze” i „nigdy”, „wszyscy uważają, że…”, „sam wiesz, o co chodzi”, „nie chcę Cię krytykować, ale…”.
 
 **6. Po rozmowie**
 
-Notatki za Ciebie nie napiszę — ma być zapisem tego, co naprawdę padło przy stole. Odpowiedz na pięć pytań jednym zdaniem każde i notatka zrobi się sama:
+Notatki za Ciebie nie napiszę, ma być zapisem tego, co naprawdę padło przy stole. Odpowiedz na pięć pytań jednym zdaniem każde i notatka zrobi się sama:
 
 > Co ustaliliście? · Do kiedy? · Po czym poznacie, że się udało? · Co obiecałeś Ty i do kiedy? · Kiedy wracacie do tematu?
 

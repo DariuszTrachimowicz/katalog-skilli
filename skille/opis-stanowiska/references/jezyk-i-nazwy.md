@@ -17,13 +17,13 @@ Do właścicielki małej firmy, kierownika biura, księgowej, brygadzisty. Zdani
 
 ## 2. Zadania
 
-Czasownik na początku, potem przedmiot, potem skala albo częstotliwość: „wystawia faktury sprzedaży — około [ile] miesięcznie”, „odbiera telefony na numer główny firmy”, „rozlicza delegacje [ilu] handlowców”. Skalę bierzesz od użytkownika; jeśli jej nie podał, zostaw `[DO UZUPEŁNIENIA: ile]` zamiast wpisywać liczbę z głowy.
+Czasownik na początku, potem przedmiot, potem skala albo częstotliwość: „wystawia faktury sprzedaży, około [ile] miesięcznie”, „odbiera telefony na numer główny firmy”, „rozlicza delegacje [ilu] handlowców”. Skalę bierzesz od użytkownika; jeśli jej nie podał, zostaw `[DO UZUPEŁNIENIA: ile]` zamiast wpisywać liczbę z głowy.
 
 Nie pisz „dbanie o dokumentację”, „wsparcie zespołu”, „bieżąca obsługa biura”. Rzeczownik zamiast czasownika sprawia, że nie da się odczytać, co ktoś robi w poniedziałek rano.
 
 ## 3. Nazwa stanowiska
 
-Nazwa ma być zrozumiała dla kandydata i wpisywalna w wyszukiwarkę ofert — kandydaci szukają po nazwie, więc nazwa nietrafiona kosztuje zgłoszenia. Trzymaj się nazw, których kandydaci używają w wyszukiwarkach ofert pracy: `specjalista ds. kadr i płac`, `młodszy księgowy`, `koordynator produkcji`, `magazynier`, `przedstawiciel handlowy`, `pracownik obsługi klienta`, `kierownik biura`.
+Nazwa ma być zrozumiała dla kandydata i wpisywalna w wyszukiwarkę ofert, kandydaci szukają po nazwie, więc nazwa nietrafiona kosztuje zgłoszenia. Trzymaj się nazw, których kandydaci używają w wyszukiwarkach ofert pracy: `specjalista ds. kadr i płac`, `młodszy księgowy`, `koordynator produkcji`, `magazynier`, `przedstawiciel handlowy`, `pracownik obsługi klienta`, `kierownik biura`.
 
 Angielską nazwę zostaw tylko tam, gdzie polska brzmi sztucznie, a angielska jest tym, czego kandydaci naprawdę szukają. Wewnętrzne nazwy własne firmy („opiekun obszaru B”) tłumacz na nazwę rynkową i zaznacz, że tę pierwszą warto zostawić tylko w dokumentach wewnętrznych.
 
@@ -31,12 +31,12 @@ Poziom oznaczaj po polsku tam, gdzie to naturalne: młodszy, samodzielny, starsz
 
 ## 4. Neutralność
 
-Nazwa i cały tekst mają się nadawać dla każdego: `specjalista / specjalistka ds. kadr` albo `osoba na stanowisku specjalisty ds. kadr`. Nie `sekretarka`, nie `handlowiec — mężczyzna`, nie „poszukiwana pani do biura”.
+Nazwa i cały tekst mają się nadawać dla każdego: `specjalista / specjalistka ds. kadr` albo `osoba na stanowisku specjalisty ds. kadr`. Nie `sekretarka`, nie `handlowiec, mężczyzna`, nie „poszukiwana pani do biura”.
 
-Utrzymuj to konsekwentnie także w zadaniach — jeśli w jednym punkcie napiszesz „odpowiedzialny”, a w drugim „odpowiedzialna”, tekst wygląda na sklejony z dwóch źródeł.
+Utrzymuj to konsekwentnie także w zadaniach, jeśli w jednym punkcie napiszesz „odpowiedzialny”, a w drugim „odpowiedzialna”, tekst wygląda na sklejony z dwóch źródeł.
 
 ## 5. Poziomy zamiast przymiotników
 
-- **Język:** `B2 — codzienna korespondencja z dostawcą z Niemiec`, nie „dobra znajomość niemieckiego”.
+- **Język:** `B2, codzienna korespondencja z dostawcą z Niemiec`, nie „dobra znajomość niemieckiego”.
 - **Programy:** po nazwie, tak jak nazywają je w polskich firmach (Optima, Symfonia, enova, Subiekt, Płatnik, wFirma).
 - **Doświadczenie:** opisane zadaniem („samodzielne prowadzenie księgowości małej spółki”), nie samą liczbą lat. Liczba lat jest wygodna, ale mierzy staż, nie umiejętność, i przy okazji odsiewa ludzi po wieku.

@@ -13,18 +13,18 @@ Kolejność, która działa: podziękowanie albo uznanie sprawy → **odmowa w j
 - Odmowa musi paść w pierwszych trzech zdaniach. Odmowa schowana w akapicie czwartym zostanie przeoczona i sprawa wróci.
 - Powód: jeden, prawdziwy, bez rozbudowanego tłumaczenia się. Im dłuższe usprawiedliwienie, tym bardziej brzmi jak pole do negocjacji.
 - Nie pisz „niestety nie mogę” trzy razy. Raz wystarczy.
-- Nie używaj „na ten moment”, „chwilowo”, „raczej nie”, jeśli odmowa jest ostateczna — to zaproszenie do ponowienia prośby.
+- Nie używaj „na ten moment”, „chwilowo”, „raczej nie”, jeśli odmowa jest ostateczna, to zaproszenie do ponowienia prośby.
 - Alternatywa jest opcjonalna. Jeśli jej nie ma, nie wymyślaj pozornej.
 
 **Odmowa przełożonemu** różni się jednym elementem: zamiast „nie” podajesz koszt. „Mogę wziąć raport na czwartek, ale wtedy inwentaryzacja przesuwa się na przyszły tydzień. Który wariant wybieramy?” Decyzja wraca do osoby, która ją powinna podjąć.
 
-## Zdanie o zapłacie — reguła awaryjna
+## Zdanie o zapłacie, reguła awaryjna
 
-**Upominanie się o pieniądze prowadzi skill windykacja-miekka.** Gdy mail ma być o nieopłaconej fakturze — pierwsze przypomnienie tak samo jak kolejne — powiedz to użytkownikowi jednym zdaniem i odeślij go tam. Nie pisz przypomnienia tutaj i nie proponuj, że „przy okazji” je dołożysz.
+**Upominanie się o pieniądze prowadzi skill windykacja-miekka.** Gdy mail ma być o nieopłaconej fakturze, pierwsze przypomnienie tak samo jak kolejne, powiedz to użytkownikowi jednym zdaniem i odeślij go tam. Nie pisz przypomnienia tutaj i nie proponuj, że „przy okazji” je dołożysz.
 
-Reguły niżej używaj **wyłącznie awaryjnie**: gdy pieniądze są wątkiem pobocznym maila o czymś innym i wycięcie ich zniekształciłoby sprawę — na przykład zdanie o zaległej fakturze w wiadomości o terminie kolejnej dostawy.
+Reguły niżej używaj **wyłącznie awaryjnie**: gdy pieniądze są wątkiem pobocznym maila o czymś innym i wycięcie ich zniekształciłoby sprawę, na przykład zdanie o zaległej fakturze w wiadomości o terminie kolejnej dostawy.
 
-W takim wypadku napisz **jedno zdanie**, przy założeniu, że to przeoczenie. „Faktura 148/2026 na 4 300,00 zł miała termin 5 sierpnia — czy dotarła do Państwa poprawnie?” Ton neutralny, bez słowa „zaległość”, bez liczenia dni opóźnienia. Na tym kończysz i w punkcie „Na co uważać” napisz, że samą sprawą płatności zajmuje się osobne narzędzie.
+W takim wypadku napisz **jedno zdanie**, przy założeniu, że to przeoczenie. „Faktura 148/2026 na 4 300,00 zł miała termin 5 sierpnia, czy dotarła do Państwa poprawnie?” Ton neutralny, bez słowa „zaległość”, bez liczenia dni opóźnienia. Na tym kończysz i w punkcie „Na co uważać” napisz, że samą sprawą płatności zajmuje się osobne narzędzie.
 
 Czego nie rób nigdy: nie licz odsetek, nie orzekaj, że druga strona jest w zwłoce, nie pisz o windykacji ani sądzie jako groźbie, nie zapowiadaj kroków prawnych i nie stawiaj terminu ostatecznego.
 
@@ -40,7 +40,7 @@ Nie zaczynaj od przeprosin i nie pisz „mam nadzieję, że to nie problem”. P
 
 - Nazwij błąd konkretnie w pierwszym zdaniu. „Wysłaliśmy fakturę z błędnym NIP-em” zamiast „doszło do nieprawidłowości”.
 - Jedno zdanie przeprosin, nie trzy.
-- **Nie tłumacz mechanizmu wewnętrznego** („nowa osoba w zespole”, „awaria systemu”) — to brzmi jak przerzucanie winy.
+- **Nie tłumacz mechanizmu wewnętrznego** („nowa osoba w zespole”, „awaria systemu”), to brzmi jak przerzucanie winy.
 - Napisz, co już zrobiłeś, żeby naprawić, i do kiedy będzie po sprawie.
 - Nie deklaruj rekompensaty, której użytkownik nie zaproponował. Jeśli o niej wspomniał, przenieś dokładnie jego słowa.
 
@@ -54,7 +54,7 @@ Zanim napiszesz do przełożonego drugiej strony, w mailu musi być widoczna his
 
 ## Odpowiedź na nieuprzejmy mail
 
-- Nie odpowiadasz tego samego dnia, jeśli sprawa nie płonie — i mówisz to użytkownikowi wprost.
+- Nie odpowiadasz tego samego dnia, jeśli sprawa nie płonie, i mówisz to użytkownikowi wprost.
 - Odpowiadasz wyłącznie na część merytoryczną. Wycieczki osobiste zostawiasz bez komentarza, nie odbijasz ich.
 - Krócej niż mail, na który odpowiadasz.
 - Jedno zdanie stawiające granicę jest dopuszczalne, jeśli użytkownik tego chce: „Zależy mi, żebyśmy rozmawiali o terminach, a nie o tym, kto zawinił.”
@@ -68,11 +68,11 @@ Po trzecim przypomnieniu zaproponuj zmianę kanału: telefon albo termin rozmowy
 
 ## Prośba o przysługę
 
-Polska konwencja: prośba idzie po kontekście, ale kontekst ma dwa zdania, nie osiem. Zawsze podaj, ile to zajmie i do kiedy jest potrzebne. Zawsze zostaw wyjście: „Jeśli to zły moment, powiedz — poradzę sobie inaczej.” Wyjście zwiększa szansę na „tak”.
+Polska konwencja: prośba idzie po kontekście, ale kontekst ma dwa zdania, nie osiem. Zawsze podaj, ile to zajmie i do kiedy jest potrzebne. Zawsze zostaw wyjście: „Jeśli to zły moment, powiedz, poradzę sobie inaczej.” Wyjście zwiększa szansę na „tak”.
 
 ## Sprostowanie cudzego błędu
 
-Popraw fakt, nie człowieka. „W zestawieniu jest kwota z lipca — poprawna to 12 400,00 zł” zamiast „pomylił się Pan”. Jeśli błąd widziało wielu ludzi, sprostowanie i tak idzie do wszystkich; jeśli widział jeden, popraw w mailu tylko do niego.
+Popraw fakt, nie człowieka. „W zestawieniu jest kwota z lipca, poprawna to 12 400,00 zł” zamiast „pomylił się Pan”. Jeśli błąd widziało wielu ludzi, sprostowanie i tak idzie do wszystkich; jeśli widział jeden, popraw w mailu tylko do niego.
 
 ## Autoresponder na urlop
 

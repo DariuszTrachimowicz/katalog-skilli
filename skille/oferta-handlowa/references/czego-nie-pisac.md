@@ -4,7 +4,7 @@ Lista kontrolna. Przechodzisz przez nią po napisaniu szkicu, przed pokazaniem g
 
 ## A. Twierdzenia o faktach, których nie masz
 
-Każde z poniższych to informacja o świecie, nie ozdobnik. Jeśli użytkownik jej nie podał — nie wpisujesz jej, nawet w formie ostrożnej.
+Każde z poniższych to informacja o świecie, nie ozdobnik. Jeśli użytkownik jej nie podał, nie wpisujesz jej, nawet w formie ostrożnej.
 
 - liczba klientów, projektów, lat na rynku, wielkość zespołu;
 - nazwy klientów i marek, dla których pracował;
@@ -15,9 +15,9 @@ Każde z poniższych to informacja o świecie, nie ozdobnik. Jeśli użytkownik 
 - gwarancje i okresy gwarancji;
 - cytaty z opinii klientów.
 
-Zamiast wpisać — zostawiasz `[DO UZUPEŁNIENIA: …]` i pytasz. Luka do uzupełnienia jest w szkicu widoczna; wymyślona liczba nie jest i dojedzie do klienta.
+Zamiast wpisać, zostawiasz `[DO UZUPEŁNIENIA: …]` i pytasz. Luka do uzupełnienia jest w szkicu widoczna; wymyślona liczba nie jest i dojedzie do klienta.
 
-**Test, który stosujesz do każdego zdania szkicu:** czy potrafię wskazać miejsce w materiałach użytkownika, z którego to pochodzi. Jeśli nie — zdanie wychodzi.
+**Test, który stosujesz do każdego zdania szkicu:** czy potrafię wskazać miejsce w materiałach użytkownika, z którego to pochodzi. Jeśli nie, zdanie wychodzi.
 
 ## B. Przypuszczenie awansowane na fakt
 
@@ -37,7 +37,7 @@ Wychodzą wszystkie: lider, najlepszy, numer jeden, czołowy, wiodący, renomowa
 
 Polski odbiorca firmowy czytał to setki razy i te zdania nic już dla niego nie znaczą, a część z nich to twierdzenia o faktach, których nie masz.
 
-Każdy taki zwrot zastępujesz konkretem od użytkownika albo usuwasz. „Wieloletnie doświadczenie” → „40 projektów identyfikacji od 2019 roku”, jeśli użytkownik takie liczby podał. Jeśli nie podał — sekcja wypada, nie zostaje pusty przymiotnik.
+Każdy taki zwrot zastępujesz konkretem od użytkownika albo usuwasz. „Wieloletnie doświadczenie” → „40 projektów identyfikacji od 2019 roku”, jeśli użytkownik takie liczby podał. Jeśli nie podał, sekcja wypada, nie zostaje pusty przymiotnik.
 
 ## D. Obietnice efektu po stronie klienta
 
@@ -56,11 +56,11 @@ Wyjątek: jeśli użytkownik ma udokumentowany wynik z konkretnego wdrożenia i 
 
 - kwota bez „netto” albo „do zapłaty”;
 - kwota bez jednostki (za projekt? za miesiąc? za sztukę?);
-- „cena od”, „już od”, „w zależności od zakresu”, „do uzgodnienia” — powiedz użytkownikowi wprost, że to nie jest cena i że odbiorca odłoży taką ofertę;
+- „cena od”, „już od”, „w zależności od zakresu”, „do uzgodnienia”, powiedz użytkownikowi wprost, że to nie jest cena i że odbiorca odłoży taką ofertę;
 - doliczona przez Ciebie stawka VAT, której użytkownik nie podał;
 - rabat bez warunku i bez daty;
 - „cena obowiązuje do wyczerpania zapasów” przy usłudze;
-- kilka wariantów bez wskazania, który jest domyślny — przy trzech równorzędnych pakietach bez rekomendacji odbiorca musi sam rozstrzygnąć, czego potrzebuje, a to jest praca, której nadawca mu nie ułatwił.
+- kilka wariantów bez wskazania, który jest domyślny, przy trzech równorzędnych pakietach bez rekomendacji odbiorca musi sam rozstrzygnąć, czego potrzebuje, a to jest praca, której nadawca mu nie ułatwił.
 
 ## F. Sformułowania, które osłabiają nadawcę
 
@@ -72,7 +72,7 @@ Zamiast tego jedno zdanie o konkretnym kolejnym kroku i termin, do kiedy nadawca
 
 Nie piszesz z własnej głowy: klauzul o tym, że pismo nie stanowi oferty, warunków gwarancji i rękojmi, kar umownych, zapisów o przeniesieniu praw autorskich, licencji, klauzul poufności, zapisów o danych osobowych, zapisów o właściwości sądu.
 
-Jeśli użytkownik ich chce — prosisz o brzmienie, którego już używa albo które dostał od prawnika, i wstawiasz je bez zmian. Nie proponujesz „typowego brzmienia” i nie składasz go z części.
+Jeśli użytkownik ich chce, prosisz o brzmienie, którego już używa albo które dostał od prawnika, i wstawiasz je bez zmian. Nie proponujesz „typowego brzmienia” i nie składasz go z części.
 
 ## H. Rzeczy techniczne, które psują odbiór
 
@@ -80,7 +80,7 @@ Jeśli użytkownik ich chce — prosisz o brzmienie, którego już używa albo k
 - angielski żargon w ofercie dla małej polskiej firmy: dedykowany, onboarding, deliverables, value, touchpoint, ekosystem;
 - ściana tekstu bez śródtytułów i bez wypunktowań;
 - ten sam plik wysłany do dziesięciu firm z widoczną nazwą innego klienta w nagłówku albo w nazwie pliku;
-- adresat zbiorczy: biuro@, kontakt@ — jeśli użytkownik zna nazwisko osoby decyzyjnej, oferta idzie do niej;
+- adresat zbiorczy: biuro@, kontakt@, jeśli użytkownik zna nazwisko osoby decyzyjnej, oferta idzie do niej;
 - brak NIP-u i telefonu w stopce;
 - cena wpisana w obrazku albo w tabeli, która na telefonie się rozjeżdża.
 

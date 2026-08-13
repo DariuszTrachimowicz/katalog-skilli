@@ -32,7 +32,7 @@ Zdanie, z którym nikt się nie spiera i które można wkleić do dowolnego post
 - „Ludzie kupują od ludzi.”
 - „Najważniejsze to być autentycznym.”
 
-**Test:** czy da się z tym zdaniem sensownie nie zgodzić? Jeśli nie — wytnij albo zamień na konkret, który za nim stoi.
+**Test:** czy da się z tym zdaniem sensownie nie zgodzić? Jeśli nie, wytnij albo zamień na konkret, który za nim stoi.
 
 ## 3. Korpomowa i kalki z angielskiego
 
@@ -56,17 +56,17 @@ Zdanie, z którym nikt się nie spiera i które można wkleić do dowolnego post
 | game changer | rzecz, która zmieniła sposób pracy (napisz jak) |
 | synergia, ekosystem, transformacja | co konkretnie się dzieje między czym a czym |
 | proaktywnie | z wyprzedzeniem |
-| efektowny (w znaczeniu „skuteczny”) | efektywny albo skuteczny — efektowny znaczy „robiący wrażenie” i to jest inna rzecz |
+| efektowny (w znaczeniu „skuteczny”) | efektywny albo skuteczny, efektowny znaczy „robiący wrażenie” i to jest inna rzecz |
 | kompleksowy, holistyczny, innowacyjny | wymień, co obejmuje |
 
 Nazwy narzędzi i funkcji zostawiasz bez zmian, jeśli tak się je w Polsce mówi (SEO, CRM, kod). Nie tłumaczysz na siłę.
 
 ## 4. Chwyty, które polski czytelnik rozpoznaje
 
-- **Sztuczna zagadka.** „Zrobiłem coś, czego nie robi 99% firm. Ale zanim powiem co…” — po dwóch takich postach odbiorca traci zaufanie.
+- **Sztuczna zagadka.** „Zrobiłem coś, czego nie robi 99% firm. Ale zanim powiem co…”, po dwóch takich postach odbiorca traci zaufanie.
 - **Fałszywa porażka.** Historia o „upadku”, z której wychodzi reklama własnej usługi.
 - **Rozbicie każdego zdania na osobną linijkę.** Po polsku wygląda to jak wiersz i psuje rytm zdań, które i tak są dłuższe niż angielskie.
-- **Emoji.** W poście nie ma ich wcale — ani zamiast punktorów (rakiety, żarówki, ptaszki), ani pojedynczo dla ocieplenia, ani w hasztagach. Czytnik ekranu odczytuje je na głos przy każdym wierszu, a w polskim poście pod nazwiskiem wyglądają jak ozdoba doklejona przez narzędzie. Zakaz jest bezwarunkowy, tak samo jak w SKILL.md.
+- **Emoji.** W poście nie ma ich wcale, ani zamiast punktorów (rakiety, żarówki, ptaszki), ani pojedynczo dla ocieplenia, ani w hasztagach. Czytnik ekranu odczytuje je na głos przy każdym wierszu, a w polskim poście pod nazwiskiem wyglądają jak ozdoba doklejona przez narzędzie. Zakaz jest bezwarunkowy, tak samo jak w SKILL.md.
 - **Pogrubienie znakami specjalnymi.** Litery z podmienionych zestawów znaków wyglądają na pogrubione, ale wyszukiwarka i czytniki ekranu widzą w nich śmieci.
 - **Prośba o reakcję.** „Zostaw plusa”, „udostępnij, jeśli się zgadzasz”, „napisz TAK w komentarzu”. Ustawianie zasięgu widać i działa przeciw autorowi.
 - **Ściana hasztagów.** Dziesięć hasztagów po angielsku pod polskim postem. Trzy do pięciu, po polsku.

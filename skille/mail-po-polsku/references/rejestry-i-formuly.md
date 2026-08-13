@@ -4,7 +4,7 @@ Lista mówi, **czym pisać**. Wybierasz z niej, nie przepisujesz jej użytkownik
 
 ---
 
-## Otwarcia — od najbardziej formalnego
+## Otwarcia, od najbardziej formalnego
 
 | Zwrot | Kiedy | Uwagi |
 |---|---|---|
@@ -14,7 +14,7 @@ Lista mówi, **czym pisać**. Wybierasz z niej, nie przepisujesz jej użytkownik
 | Szanowna Pani Anno, | Klient, z którym już korespondujesz | Cieplejsze, wciąż formalne |
 | Dzień dobry, Panie Marku, | Współpraca bieżąca, przełożony, podwykonawca | Dziś najczęstsze otwarcie w polskich firmach |
 | Dzień dobry, | Odbiorca nieznany z imienia, ton roboczy | Neutralne, nie zdradza płci |
-| Szanowna Pani Kowalska, | Ostateczność, gdy znasz tylko nazwisko i musisz je wskazać | Forma sporna — część odbiorców czyta ją jako chłodną albo urzędową. Domyślnie wybieraj „Szanowna Pani” albo funkcję. Jeśli już jej używasz, nazwisko w wołaczu: Pani Kowalska, Panie Kowalski |
+| Szanowna Pani Kowalska, | Ostateczność, gdy znasz tylko nazwisko i musisz je wskazać | Forma sporna, część odbiorców czyta ją jako chłodną albo urzędową. Domyślnie wybieraj „Szanowna Pani” albo funkcję. Jeśli już jej używasz, nazwisko w wołaczu: Pani Kowalska, Panie Kowalski |
 | Panie Tomaszu, / Aniu, | Wątek trwający, ktoś, z kim rozmawiasz na co dzień | Tylko gdy odbiorca sam tak pisze |
 
 **Nie używasz nigdy:** „Witam”, „Witam serdecznie”, „Cześć” w mailu do klienta i urzędu, „Droga Pani Anno” w sprawie służbowej, „Szanowna Pani Anno Nowak” (imię i nazwisko razem po „Pani” brzmi jak wezwanie).
@@ -37,7 +37,7 @@ Po formule pożegnalnej **nie stawiasz kropki ani wykrzyknika**. Podpis w nowej 
 ## Tytuły i funkcje
 
 - **Wołacz od stanowiska:** Panie Dyrektorze, Pani Dyrektor, Panie Prezesie, Pani Prezes, Panie Kierowniku, Pani Kierownik, Panie Mecenasie, Pani Mecenas, Panie Doktorze, Pani Doktor, Panie Profesorze, Pani Profesor.
-- Męskie formy odmieniają się, żeńskie w tradycyjnym uzusie zostają nieodmienne („Pani Dyrektor”). Jeśli odbiorczyni sama podpisuje się feminatywem („kierowniczka projektu”), użyj jej formy — to ona ustala, jak się nazywa.
+- Męskie formy odmieniają się, żeńskie w tradycyjnym uzusie zostają nieodmienne („Pani Dyrektor”). Jeśli odbiorczyni sama podpisuje się feminatywem („kierowniczka projektu”), użyj jej formy, to ona ustala, jak się nazywa.
 - **Ksiądz, siostra zakonna, wojsko, służby** mają własne zwroty. Jeśli nie masz pewności, użyj „Szanowny Panie” plus funkcja z podpisu odbiorcy i nie kombinuj.
 - Nie doklejaj tytułów, których odbiorca nie podał. „Panie Doktorze” do kogoś, kto doktoratu nie ma, kompromituje nadawcę.
 
@@ -56,7 +56,7 @@ Po formule pożegnalnej **nie stawiasz kropki ani wykrzyknika**. Podpis w nowej 
 - Czy będzie możliwe przesłanie… do 20 sierpnia?
 - Proszę o potwierdzenie, czy termin jest aktualny.
 - Potrzebuję jednej informacji: …
-- Bardzo proszę o odpowiedź do piątku — od niej zależy, czy zdążymy z…
+- Bardzo proszę o odpowiedź do piątku, od niej zależy, czy zdążymy z…
 
 **Załączniki i przekazanie**
 
@@ -72,9 +72,9 @@ Po formule pożegnalnej **nie stawiasz kropki ani wykrzyknika**. Podpis w nowej 
 
 ## Wielkie litery i drobiazgi
 
-- Pan, Pani, Państwo, Ty, Ciebie, Tobie, Twój, Wam — wielką literą, także w środku zdania.
+- Pan, Pani, Państwo, Ty, Ciebie, Tobie, Twój, Wam, wielką literą, także w środku zdania.
 - Nazwy stanowisk małą literą, chyba że to zwrot do adresata: „nasz dyrektor finansowy”, ale „Szanowny Panie Dyrektorze”.
 - Nazwa własna firmy dokładnie tak, jak zapisuje ją firma, łącznie z „sp. z o.o.”.
-- „Nr” i „nr” — w treści małą literą: „faktura nr 148/2026”.
+- „Nr” i „nr”, w treści małą literą: „faktura nr 148/2026”.
 - Skróty „np.”, „itp.”, „ok.” są dopuszczalne w mailu roboczym, ale nie w piśmie do urzędu.
 - Jedno pytanie na akapit. Trzy pytania w jednym bloku tekstu zostaną odpowiedziane najwyżej w połowie.

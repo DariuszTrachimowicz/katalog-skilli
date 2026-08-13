@@ -1,8 +1,8 @@
 # Bank pytań według kompetencji
 
-Materiał roboczy. Nie przepisuj go dosłownie do odpowiedzi — dopasuj sytuację, branżę i skalę do stanowiska, które rekrutuje użytkownik. Pytanie o „trudnego klienta” brzmi inaczej w warsztacie samochodowym, inaczej w biurze rachunkowym.
+Materiał roboczy. Nie przepisuj go dosłownie do odpowiedzi, dopasuj sytuację, branżę i skalę do stanowiska, które rekrutuje użytkownik. Pytanie o „trudnego klienta” brzmi inaczej w warsztacie samochodowym, inaczej w biurze rachunkowym.
 
-Sygnały opisują **treść odpowiedzi**, nie człowieka. Jeśli sygnał da się sprawdzić tylko patrząc na kandydata, a nie słuchając go — wyrzuć go.
+Sygnały opisują **treść odpowiedzi**, nie człowieka. Jeśli sygnał da się sprawdzić tylko patrząc na kandydata, a nie słuchając go, wyrzuć go.
 
 ## Spis kompetencji
 
@@ -25,7 +25,7 @@ Sygnały opisują **treść odpowiedzi**, nie człowieka. Jeśli sygnał da się
 
 **Pytanie:** Proszę opowiedzieć o najbardziej niezadowolonym kliencie, jakiego Pan obsługiwał w ostatnim roku. Co się stało i jak to się skończyło?
 
-**Dopytaj:** Co Pan wtedy powiedział, konkretnie? Kto podjął decyzję o rozwiązaniu — Pan czy przełożony? Czy klient został z firmą?
+**Dopytaj:** Co Pan wtedy powiedział, konkretnie? Kto podjął decyzję o rozwiązaniu, Pan czy przełożony? Czy klient został z firmą?
 
 **Mocna odpowiedź:** podaje przebieg rozmowy w kolejności, potrafi powiedzieć, gdzie sam popełnił błąd; rozdziela to, co obiecał, od tego, co dostarczył; mówi, jak zamknął sprawę, nie tylko jak ją odbierał emocjonalnie.
 
@@ -41,9 +41,9 @@ Sygnały opisują **treść odpowiedzi**, nie człowieka. Jeśli sygnał da się
 
 **Dopytaj:** Skąd Pan wiedział, że tak wolno? Co powiedział przełożony, gdy się dowiedział? Czy dziś zdecydowałby Pan tak samo?
 
-**Mocna odpowiedź:** widać granicę — wie, co mógł rozstrzygnąć sam, a co musiał eskalować; poinformował kogoś po fakcie; potrafi nazwać, czym ryzykował.
+**Mocna odpowiedź:** widać granicę, wie, co mógł rozstrzygnąć sam, a co musiał eskalować; poinformował kogoś po fakcie; potrafi nazwać, czym ryzykował.
 
-**Słaba odpowiedź:** wszystkie przykłady to „czekałem na decyzję”; albo odwrotnie — decyduje o wszystkim i nie widzi w tym problemu; nie umie podać ani jednej sytuacji.
+**Słaba odpowiedź:** wszystkie przykłady to „czekałem na decyzję”; albo odwrotnie, decyduje o wszystkim i nie widzi w tym problemu; nie umie podać ani jednej sytuacji.
 
 ---
 
@@ -119,7 +119,7 @@ Sygnały opisują **treść odpowiedzi**, nie człowieka. Jeśli sygnał da się
 
 **Dopytaj:** Skąd wziął się ten kontakt? Ile trwało i ile było rozmów? Jaka to była wartość?
 
-**Mocna odpowiedź:** podaje liczby — czas, wartość, liczba kontaktów; opisuje własne działania, nie działania firmy ani działu marketingu; wie, dlaczego klient kupił.
+**Mocna odpowiedź:** podaje liczby, czas, wartość, liczba kontaktów; opisuje własne działania, nie działania firmy ani działu marketingu; wie, dlaczego klient kupił.
 
 **Słaba odpowiedź:** wszystkie leady przychodziły z centrali; wynik podany bez żadnej liczby; „klient sam się zdecydował”.
 
@@ -137,7 +137,7 @@ Sygnały opisują **treść odpowiedzi**, nie człowieka. Jeśli sygnał da się
 
 **Słaba odpowiedź:** „nigdy nic się nie działo”; przechwałki tempem kosztem zabezpieczeń; obwinianie wszystkich wokół.
 
-**Uwaga:** o stan zdrowia nie pytasz. Pytasz o wymagania stanowiska wprost („praca wymaga dźwigania do 25 kg i stania przez większość zmiany — czy jest Pan gotów tak pracować?”) i o gotowość, nie o diagnozy.
+**Uwaga:** o stan zdrowia nie pytasz. Pytasz o wymagania stanowiska wprost („praca wymaga dźwigania do 25 kg i stania przez większość zmiany, czy jest Pan gotów tak pracować?”) i o gotowość, nie o diagnozy.
 
 ---
 
@@ -165,7 +165,7 @@ Sygnały opisują **treść odpowiedzi**, nie człowieka. Jeśli sygnał da się
 
 **Słaba odpowiedź:** wymienia nazwy programów bez opisu czynności; „znam wszystko” i „szybko się wdrożę” zamiast przykładu.
 
-**Zamiast pytania:** jeśli stanowisko naprawdę stoi na jednym narzędziu, krótkie zadanie praktyczne (do 30 minut, przy Was, na przykładowych danych) powie więcej niż trzy pytania. O długości uprzedź zawczasu, w zaproszeniu. Im dłuższe zadanie, tym mocniej odsiewa kandydatów, którzy mają inną pracę i nie wygospodarują na nie wieczoru — a takie zadanie wraca potem do firmy jako komentarz publiczny. Przy dużym zadaniu rozważ zapłatę.
+**Zamiast pytania:** jeśli stanowisko naprawdę stoi na jednym narzędziu, krótkie zadanie praktyczne (do 30 minut, przy Was, na przykładowych danych) powie więcej niż trzy pytania. O długości uprzedź zawczasu, w zaproszeniu. Im dłuższe zadanie, tym mocniej odsiewa kandydatów, którzy mają inną pracę i nie wygospodarują na nie wieczoru, a takie zadanie wraca potem do firmy jako komentarz publiczny. Przy dużym zadaniu rozważ zapłatę.
 
 ---
 
@@ -179,14 +179,14 @@ Sygnały opisują **treść odpowiedzi**, nie człowieka. Jeśli sygnał da się
 
 **Słaba odpowiedź:** wyłącznie narzekanie; „szukam wyzwań” bez treści; oczekiwania, o których wiadomo z góry, że stanowisko ich nie spełni.
 
-**O wynagrodzeniu:** to Wy podajecie kandydatowi początkową kwotę albo przedział, a moment wybieracie sami — w ogłoszeniu, przed rozmową albo przed zawarciem umowy. Ktoś musi ten krok wykonać, więc ustalcie, kto i kiedy. Pytanie na rozmowie brzmi „czy przedział, który podaliśmy, jest dla Pana do przyjęcia”, a **nie** „ile Pan zarabiał wcześniej”.
+**O wynagrodzeniu:** to Wy podajecie kandydatowi początkową kwotę albo przedział, a moment wybieracie sami, w ogłoszeniu, przed rozmową albo przed zawarciem umowy. Ktoś musi ten krok wykonać, więc ustalcie, kto i kiedy. Pytanie na rozmowie brzmi „czy przedział, który podaliśmy, jest dla Pana do przyjęcia”, a **nie** „ile Pan zarabiał wcześniej”.
 
 ---
 
 ## Pytania, których nie warto zadawać, choć są popularne
 
-- **„Jakie są Pana wady?”** — wszyscy znają oczekiwaną odpowiedź, więc pytanie mierzy przygotowanie do rozmowy, a nie pracę.
-- **„Gdzie widzi się Pan za pięć lat?”** — w małej firmie odpowiedź i tak nic nie zmienia w decyzji.
-- **„Dlaczego mielibyśmy zatrudnić właśnie Pana?”** — premiuje pewność siebie, nie umiejętności.
-- **Zagadki logiczne i pytania o kulki w autobusie** — nie mają związku z pracą, a zostawiają po firmie wrażenie, że lubi bawić się kosztem kandydata.
-- **„Jak by Pan zareagował, gdyby…”** — hipoteza. Zamień na to samo pytanie w czasie przeszłym.
+- **„Jakie są Pana wady?”**, wszyscy znają oczekiwaną odpowiedź, więc pytanie mierzy przygotowanie do rozmowy, a nie pracę.
+- **„Gdzie widzi się Pan za pięć lat?”**, w małej firmie odpowiedź i tak nic nie zmienia w decyzji.
+- **„Dlaczego mielibyśmy zatrudnić właśnie Pana?”**, premiuje pewność siebie, nie umiejętności.
+- **Zagadki logiczne i pytania o kulki w autobusie**, nie mają związku z pracą, a zostawiają po firmie wrażenie, że lubi bawić się kosztem kandydata.
+- **„Jak by Pan zareagował, gdyby…”**, hipoteza. Zamień na to samo pytanie w czasie przeszłym.
