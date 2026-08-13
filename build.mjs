@@ -180,6 +180,7 @@ function stronaSkilla(s) {
     <span class="dot"><i style="background:#C9C9C6"></i>${esc(s.poziom || "")}</span>
   </div>
   <p class="skrot">${esc(s.skrot)}</p>
+  <h2 class="sr-only">Szczegóły umiejętności</h2>
 
   ${["Dla kogo", "Ile Ci to oszczędza", "Przykład z życia", "Jak po polsku", "Czego potrzebujesz"]
     .filter((t) => s.sekcja(t))
@@ -270,6 +271,7 @@ function stronaOferty(s) {
     <span class="dot"><i style="background:#C9C9C6"></i>${esc(s.poziom || "")}</span>
   </div>
   <p class="skrot">${esc(s.skrot)}</p>
+  <h2 class="sr-only">Oferta</h2>
   ${cialo}
   <p class="disc">Materiał informacyjny. Nie zastępuje porady prawnej, podatkowej ani kadrowej.</p>
   <div class="powrot">
