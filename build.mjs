@@ -126,9 +126,10 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
       <span class="brand-txt">${esc(cfg.nazwaSerwisu)}<img class="brand-wordmark" src="/logo-wordmark-czarny.png" width="42" height="10" alt="AI Xperts"></span>
     </a>
     <nav class="nav-links">
-      <a href="/#test">Dobierz skille</a>
-      <a href="/#katalog">Katalog</a>
-      <a href="${cfg.linkSzkolenia}">Szkolenia</a>
+      <a href="https://aixperts.pl/">Strona główna</a>
+      <a href="${cfg.linkSzkolenia}">Warsztaty</a>
+      <a href="/#katalog">Darmowy katalog</a>
+      <a href="https://aixperts.pl/skille-platne/">Płatne skille</a>
       <a href="/#test" class="btn">Zacznij od testu</a>
     </nav>
   </div>
