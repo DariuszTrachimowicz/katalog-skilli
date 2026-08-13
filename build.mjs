@@ -22,7 +22,7 @@ const zapisz = (sciezka, tresc) => {
   writeFileSync(sciezka, tresc);
 };
 
-// Wersja arkuszy w adresie (?v=skrót treści) — arkusze mają tygodniowy cache,
+// Wersja arkuszy w adresie (?v=skrót treści), arkusze mają tygodniowy cache,
 // a bez tego zmiana stylu przy nowym HTML-u rozjeżdża strony u wracających.
 const wersja = (p) => createHash("md5").update(readFileSync(join(KORZEN, "szablony", p))).digest("hex").slice(0, 8);
 const W_STYL = wersja("styl.css");
@@ -60,7 +60,7 @@ function wczytajSkille() {
       const folder = join(katalogSkilli, id);
       const sciezkaWpisu = join(folder, "wpis.md");
       if (!existsSync(sciezkaWpisu)) {
-        console.warn(`  pomijam ${id} — brak pliku wpis.md`);
+        console.warn(`  pomijam ${id}, brak pliku wpis.md`);
         return null;
       }
       const { dane, tresc } = frontmatter(readFileSync(sciezkaWpisu, "utf8"));
@@ -189,7 +189,7 @@ function stronaSkilla(s) {
         return `<div><span class="pf ${st}"><i></i>${esc(p.nazwa)}</span><div><strong>${esc(cfg.statusy[st])}</strong> &mdash; ${p.uwaga}</div></div>`;
       }).join("")}
     </div>
-    <p style="margin-top:18px;font-size:14px;color:var(--muted)">Plik jest zgodny z otwartym standardem Agent Skills, więc ten sam folder działa w wielu narzędziach. „Format zgodny” znaczy, że powinien zadziałać, ale nie uruchomiliśmy go tam sami — a piszemy tylko o tym, co sprawdziliśmy.</p>
+    <p style="margin-top:18px;font-size:14px;color:var(--muted)">Plik jest zgodny z otwartym standardem Agent Skills, więc ten sam folder działa w wielu narzędziach. „Format zgodny” znaczy, że powinien zadziałać, ale nie uruchomiliśmy go tam sami, a piszemy tylko o tym, co sprawdziliśmy.</p>
   </section>
 
   ${["Na czym się wywala", "Czego ten skill nie robi celowo"]
@@ -201,14 +201,14 @@ function stronaSkilla(s) {
     <div class="steps">
       <div class="step"><b>1</b><div>Pobierz plik <kbd>${s.id}.skill</kbd>.</div></div>
       <div class="step"><b>2</b><div>${Object.values(cfg.platformy).slice(0, 2).map((p) => `<strong>${esc(p.nazwa)}:</strong> ${p.instalacja}`).join(" &nbsp;·&nbsp; ")}</div></div>
-      <div class="step"><b>3</b><div>Otwórz nową rozmowę i opisz, czego potrzebujesz. Umiejętność uruchomi się sama — nie musisz jej wywoływać z nazwy.</div></div>
+      <div class="step"><b>3</b><div>Otwórz nową rozmowę i opisz, czego potrzebujesz. Umiejętność uruchomi się sama, nie musisz jej wywoływać z nazwy.</div></div>
     </div>
   </section>
 
   ${gotowy
     ? `<div class="dl"><div><b>${s.id}.skill</b><span>Pobranie nie wymaga podawania adresu e-mail</span></div>
        <a class="btn" href="/pobierz/${s.id}.skill" download data-umami-event="pobranie" data-umami-event-skill="${s.id}">Pobierz</a></div>`
-    : `<div class="dl"><div><b>W przygotowaniu</b><span>Zrób test doboru — napiszemy, gdy będzie gotowa</span></div>
+    : `<div class="dl"><div><b>W przygotowaniu</b><span>Zrób test doboru, napiszemy, gdy będzie gotowa</span></div>
        <a class="btn ghost" href="/#test">Powiadom mnie</a></div>`}
 
   ${sekcjeDodatkowe.map((x) => `<section class="blok"><h3>${esc(x.tytul)}</h3>${x.html}</section>`).join("")}
@@ -222,7 +222,7 @@ function stronaSkilla(s) {
 </main>`;
 
   return strona({
-    tytul: s.tytulSeo || `${s.nazwa} — ${cfg.nazwaSerwisu}`,
+    tytul: s.tytulSeo || `${s.nazwa}, ${cfg.nazwaSerwisu}`,
     opis: s.opisSeo || s.skrot,
     sciezka: `/skill/${s.id}/`,
     obrazek: existsSync(join(KORZEN, "szablony", "og", `${s.id}.png`)) ? `${s.id}.png` : "katalog.png",
@@ -270,14 +270,14 @@ function stronaGlowna(skille) {
   <div class="wrap">
     <p class="eyebrow">Katalog kuratorowany &middot; aktualizacja <strong>${dataPoPolsku(new Date())}</strong></p>
     <h1>Co sztuczna inteligencja<br>może zrobić <em>za Ciebie</em><br>w Twojej pracy.</h1>
-    <p class="lede">Gotowe umiejętności do pobrania, opisane językiem, którym mówi się w biurze — a nie w dokumentacji technicznej. Jeden plik działa w Claude i ChatGPT. Każdą uruchomiliśmy sami na polskich dokumentach, a jeśli gdzieś nie zadziała, piszemy o tym wprost.</p>
+    <p class="lede">Gotowe umiejętności do pobrania, opisane językiem, którym mówi się w biurze, a nie w dokumentacji technicznej. Jeden plik działa w Claude i ChatGPT. Każdą uruchomiliśmy sami na polskich dokumentach, a jeśli gdzieś nie zadziała, piszemy o tym wprost.</p>
     <div class="hero-cta">
       <a href="#test" class="btn">Dobierz skille dla siebie</a>
       <a href="#katalog" class="btn ghost">Przeglądaj katalog</a>
     </div>
     <p class="hero-note">Test zajmuje minutę. Nie musisz nic instalować, żeby zobaczyć wynik.</p>
     <div class="stats">
-      <div class="stat"><b>${skille.length}</b><span>umiejętności opisanych ręcznie — nie zescrapowanych z GitHuba</span></div>
+      <div class="stat"><b>${skille.length}</b><span>umiejętności opisanych ręcznie, nie zescrapowanych z GitHuba</span></div>
       <div class="stat"><b>${gotowe}</b><span>gotowych do pobrania i sprawdzonych na polskich dokumentach</span></div>
       <div class="stat"><b>0 zł</b><span>za pobranie. Katalog jest i zostanie darmowy</span></div>
     </div>
@@ -299,7 +299,7 @@ function stronaGlowna(skille) {
 
 <section class="sec" id="katalog">
   <div class="wrap">
-    <div class="sec-head"><h2>Katalog</h2><p>Podzielony według tego, czym się zajmujesz — nie według tego, jak działa od środka.</p></div>
+    <div class="sec-head"><h2>Katalog</h2><p>Podzielony według tego, czym się zajmujesz, nie według tego, jak działa od środka.</p></div>
     <div class="legend">
       <span><i style="background:#4F8A55"></i>przetestowane przez nas</span>
       <span><i style="background:#C79A2E"></i>format zgodny, nietestowane</span>
@@ -310,7 +310,7 @@ function stronaGlowna(skille) {
       <div class="search">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5.2" stroke="#1F2023" stroke-width="1.6"/><path d="M11 11l3.4 3.4" stroke="#1F2023" stroke-width="1.6" stroke-linecap="round"/></svg>
         <label for="q" class="sr-only" style="position:absolute;left:-9999px">Szukaj</label>
-        <input id="q" type="text" placeholder="Wpisz, co chcesz zrobić — np. sprawdzić umowę, ogarnąć faktury">
+        <input id="q" type="text" placeholder="Wpisz, co chcesz zrobić, np. sprawdzić umowę, ogarnąć faktury">
       </div>
       <div class="count" id="count"></div>
     </div>
@@ -321,7 +321,7 @@ function stronaGlowna(skille) {
 <section class="sec">
   <div class="wrap"><div class="cta">
     <h2>Możesz to wdrożyć sam. Albo zrobimy to razem.</h2>
-    <p>Katalog jest darmowy i zostanie darmowy. Ale samo pobranie pliku to dopiero początek — najwięcej zmienia się wtedy, gdy zespół wie, kiedy tego użyć, a kiedy nie.</p>
+    <p>Katalog jest darmowy i zostanie darmowy. Ale samo pobranie pliku to dopiero początek, najwięcej zmienia się wtedy, gdy zespół wie, kiedy tego użyć, a kiedy nie.</p>
     <a href="${cfg.linkSzkolenia}" class="btn">Zobacz terminy szkoleń</a>
   </div></div>
 </section>`;
@@ -333,7 +333,7 @@ ${readFileSync(join(KORZEN, "szablony", "strona.js"), "utf8")}
 </script>`;
 
   return strona({
-    tytul: `${cfg.nazwaSerwisu} — katalog umiejętności AI po polsku`,
+    tytul: `${cfg.nazwaSerwisu}, katalog umiejętności AI po polsku`,
     opis: cfg.opisSerwisu,
     sciezka: "/",
     tresc,
@@ -355,26 +355,26 @@ function stronaRegulaminu() {
   const tresc = `<main class="wrap"><article class="art">
   <p class="krusz"><a href="/">Katalog</a> &rarr; Regulamin</p>
   <h1>Regulamin</h1>
-  <p class="skrot">Krótko i po ludzku — bo w tym serwisie naprawdę niewiele się dzieje. Obowiązuje od 12 sierpnia 2026.</p>
+  <p class="skrot">Krótko i po ludzku, bo w tym serwisie naprawdę niewiele się dzieje. Obowiązuje od 12 sierpnia 2026.</p>
   <section class="blok"><h3>Kto prowadzi ten serwis</h3>
     <p>Serwis ${esc(cfg.nazwaSerwisu)} (${esc(cfg.domena)}) prowadzi <strong>D-X.PL Michał Jaśkiewicz</strong>, ul. Więckowskiego 32 lok. 8, 90-728 Łódź, NIP 7262533563, REGON 362247556. Kontakt: <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>.</p></section>
   <section class="blok"><h3>Co oferuje serwis</h3>
     <p>Trzy rzeczy, wszystkie bezpłatne: przeglądanie katalogu umiejętności AI, pobieranie plików .skill oraz test doboru z opcjonalnym newsletterem. Przeglądanie i pobieranie nie wymagają konta ani podawania jakichkolwiek danych.</p></section>
   <section class="blok"><h3>Newsletter</h3>
-    <p>Zapis wymaga podania adresu e-mail i potwierdzenia go kliknięciem w link — bez potwierdzenia niczego więcej nie wysyłamy. Po potwierdzeniu dostajesz dobrany w teście zestaw umiejętności, a potem od czasu do czasu wiadomości o nowościach w katalogu oraz o szkoleniach i usługach prowadzącego serwis. Z listy wypisujesz się jednym kliknięciem w stopce każdej wiadomości — bez pytań i bez logowania.</p></section>
+    <p>Zapis wymaga podania adresu e-mail i potwierdzenia go kliknięciem w link, bez potwierdzenia niczego więcej nie wysyłamy. Po potwierdzeniu dostajesz dobrany w teście zestaw umiejętności, a potem od czasu do czasu wiadomości o nowościach w katalogu oraz o szkoleniach i usługach prowadzącego serwis. Z listy wypisujesz się jednym kliknięciem w stopce każdej wiadomości, bez pytań i bez logowania.</p></section>
   <section class="blok"><h3>Pliki .skill</h3>
-    <p>Pobrane umiejętności możesz używać w swojej pracy i w swojej firmie bez ograniczeń. Opisy są materiałem informacyjnym — nie zastępują porady prawnej, podatkowej ani kadrowej, a wyniki działania narzędzi AI zawsze warto sprawdzić przed użyciem.</p></section>
+    <p>Pobrane umiejętności możesz używać w swojej pracy i w swojej firmie bez ograniczeń. Opisy są materiałem informacyjnym, nie zastępują porady prawnej, podatkowej ani kadrowej, a wyniki działania narzędzi AI zawsze warto sprawdzić przed użyciem.</p></section>
   <section class="blok"><h3>Warunki techniczne</h3>
-    <p>Wystarczy przeglądarka internetowa z włączonym JavaScriptem, a do newslettera — działający adres e-mail.</p></section>
+    <p>Wystarczy przeglądarka internetowa z włączonym JavaScriptem, a do newslettera, działający adres e-mail.</p></section>
   <section class="blok"><h3>Reklamacje</h3>
-    <p>Coś nie działa albo masz zastrzeżenia? Napisz na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a> — odpowiadamy najpóźniej w 14 dni.</p></section>
+    <p>Coś nie działa albo masz zastrzeżenia? Napisz na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>, odpowiadamy najpóźniej w 14 dni.</p></section>
   <section class="blok"><h3>Dane osobowe</h3>
-    <p>Wszystko o danych opisuje <a href="/prywatnosc/">polityka prywatności</a> — łącznie z tym, czego nie zbieramy.</p></section>
+    <p>Wszystko o danych opisuje <a href="/prywatnosc/">polityka prywatności</a>, łącznie z tym, czego nie zbieramy.</p></section>
   <section class="blok"><h3>Zmiany regulaminu</h3>
     <p>O zmianach istotnych dla zapisanych na newsletter poinformujemy mailem. Data obowiązującej wersji jest zawsze na górze tej strony.</p></section>
   <div class="powrot"><a class="btn ghost" href="/">&larr; Wróć do katalogu</a></div>
 </article></main>`;
-  return strona({ tytul: `Regulamin — ${cfg.nazwaSerwisu}`, opis: "Zasady korzystania z katalogu, pobierania skilli i newslettera.", sciezka: "/regulamin/", obrazek: "regulamin.png", tresc });
+  return strona({ tytul: `Regulamin, ${cfg.nazwaSerwisu}`, opis: "Zasady korzystania z katalogu, pobierania skilli i newslettera.", sciezka: "/regulamin/", obrazek: "regulamin.png", tresc });
 }
 
 /* ---------- strona prywatności ---------- */
@@ -387,23 +387,23 @@ function stronaPrywatnosci() {
   <section class="blok"><h3>Kto odpowiada za Twoje dane</h3>
     <p>Administratorem danych jest <strong>D-X.PL Michał Jaśkiewicz</strong>, ul. Więckowskiego 32 lok. 8, 90-728 Łódź, NIP 7262533563. W każdej sprawie dotyczącej danych napisz na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>.</p></section>
   <section class="blok"><h3>Co zbieramy</h3>
-    <p>Wyłącznie adres e-mail, i tylko wtedy, gdy sam go podasz na końcu testu doboru. Razem z nim zapisujemy listę umiejętności, które wyszły Ci w wyniku — po to, żeby móc wysłać Ci właściwy zestaw.</p>
+    <p>Wyłącznie adres e-mail, i tylko wtedy, gdy sam go podasz na końcu testu doboru. Razem z nim zapisujemy listę umiejętności, które wyszły Ci w wyniku, po to, żeby móc wysłać Ci właściwy zestaw.</p>
     <p>Pobranie pliku nie wymaga podania żadnych danych. Przeglądanie katalogu też nie.</p></section>
   <section class="blok"><h3>Gdzie to trafia</h3>
-    <p>Na nasz własny serwer w Unii Europejskiej. Nie korzystamy z zewnętrznej platformy do zarządzania listą adresową, więc Twój adres nie jest przekazywany żadnej firmie trzeciej w celach marketingowych. Po potwierdzeniu zapisu adres trafia też do naszego systemu CRM — działającego na tym samym serwerze, u tego samego administratora.</p>
-    <p>Do samego wysłania wiadomości używamy dostawcy poczty — inaczej maile trafiałyby do spamu.</p></section>
+    <p>Na nasz własny serwer w Unii Europejskiej. Nie korzystamy z zewnętrznej platformy do zarządzania listą adresową, więc Twój adres nie jest przekazywany żadnej firmie trzeciej w celach marketingowych. Po potwierdzeniu zapisu adres trafia też do naszego systemu CRM, działającego na tym samym serwerze, u tego samego administratora.</p>
+    <p>Do samego wysłania wiadomości używamy dostawcy poczty, inaczej maile trafiałyby do spamu.</p></section>
   <section class="blok"><h3>Potwierdzenie zapisu</h3>
     <p>Po podaniu adresu dostajesz wiadomość z linkiem potwierdzającym. Dopóki w niego nie klikniesz, nie wyślemy Ci nic więcej. Jeśli ktoś wpisał Twój adres przez pomyłkę, wystarczy zignorować tę jedną wiadomość.</p></section>
   <section class="blok"><h3>Jak się wypisać</h3>
-    <p>Link do wypisania jest w stopce każdej wiadomości i działa od razu, bez pytań i bez logowania. Możesz też napisać na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a> — usuwamy adres wraz z całą historią.</p></section>
+    <p>Link do wypisania jest w stopce każdej wiadomości i działa od razu, bez pytań i bez logowania. Możesz też napisać na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>, usuwamy adres wraz z całą historią.</p></section>
   <section class="blok"><h3>Twoje prawa</h3>
-    <p>Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania i sprzeciwu — wystarczy mail na adres wyżej, bez formalności. Masz też prawo złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych, gdyby coś tu było nie tak.</p></section>
+    <p>Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania i sprzeciwu, wystarczy mail na adres wyżej, bez formalności. Masz też prawo złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych, gdyby coś tu było nie tak.</p></section>
   <section class="blok"><h3>Ciasteczka i statystyki</h3>
-    <p>Nie używamy ciasteczek śledzących ani narzędzi analitycznych firm trzecich. Wyniki testu trzymamy w pamięci Twojej przeglądarki, żeby nie znikały przy przewijaniu strony — nie wychodzą one nigdzie poza Twoje urządzenie, dopóki sam nie klikniesz „wyślij".</p>
-    <p>Oglądalność mierzymy własnym narzędziem (Umami) uruchomionym na tym samym serwerze co strona. Działa bez ciasteczek i nie buduje profilu: widzimy, które podstrony są odwiedzane, skąd przychodzą wejścia i ile osób kończy test lub pobiera plik — nie wiemy, kim jesteś, a dane nie są nikomu przekazywane. Dlatego nie wyświetlamy banera zgody: nie ma tu nic, na co trzeba by jej udzielać.</p></section>
+    <p>Nie używamy ciasteczek śledzących ani narzędzi analitycznych firm trzecich. Wyniki testu trzymamy w pamięci Twojej przeglądarki, żeby nie znikały przy przewijaniu strony, nie wychodzą one nigdzie poza Twoje urządzenie, dopóki sam nie klikniesz „wyślij".</p>
+    <p>Oglądalność mierzymy własnym narzędziem (Umami) uruchomionym na tym samym serwerze co strona. Działa bez ciasteczek i nie buduje profilu: widzimy, które podstrony są odwiedzane, skąd przychodzą wejścia i ile osób kończy test lub pobiera plik, nie wiemy, kim jesteś, a dane nie są nikomu przekazywane. Dlatego nie wyświetlamy banera zgody: nie ma tu nic, na co trzeba by jej udzielać.</p></section>
   <div class="powrot"><a class="btn ghost" href="/">&larr; Wróć do katalogu</a></div>
 </article></main>`;
-  return strona({ tytul: `Prywatność — ${cfg.nazwaSerwisu}`, opis: "Jakie dane zbiera katalog i co się z nimi dzieje.", sciezka: "/prywatnosc/", obrazek: "prywatnosc.png", tresc });
+  return strona({ tytul: `Prywatność, ${cfg.nazwaSerwisu}`, opis: "Jakie dane zbiera katalog i co się z nimi dzieje.", sciezka: "/prywatnosc/", obrazek: "prywatnosc.png", tresc });
 }
 
 /* ---------- build ---------- */
@@ -418,7 +418,7 @@ if (!skille.length) {
   process.exit(1);
 }
 
-// Metryczka pochodzenia — wstrzykiwana do frontmattera SKILL.md przy pakowaniu.
+// Metryczka pochodzenia, wstrzykiwana do frontmattera SKILL.md przy pakowaniu.
 // Pole `metadata` jest częścią standardu Agent Skills (platformy je ignorują,
 // walidator dopuszcza), a paczka niesie swoje źródło i licencję, gdy krąży poza katalogiem.
 function zMetryczka(plik, s) {
@@ -491,7 +491,7 @@ cpSync(join(KORZEN, "szablony", "fonty.css"), join(WY, "fonty.css"));
 cpSync(join(KORZEN, "szablony", "fonty"), join(WY, "fonty"), { recursive: true });
 if (existsSync(join(KORZEN, "szablony", "og"))) cpSync(join(KORZEN, "szablony", "og"), join(WY, "og"), { recursive: true });
 
-// dane dla usługi zapisów — żeby mail z zestawem znał nazwy i adresy skilli
+// dane dla usługi zapisów, żeby mail z zestawem znał nazwy i adresy skilli
 zapisz(
   join(WY, "dane", "skille.json"),
   JSON.stringify(
@@ -513,5 +513,5 @@ zapisz(join(WY, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${BAZA}/site
 
 console.log(`\nGotowe. ${skille.length} skilli, ${adresy.length} podstron, katalog public/`);
 if (cfg.domena.includes("PODMIEN")) {
-  console.log("\nUWAGA: w config.json nie ustawiono jeszcze domeny — sitemap i adresy kanoniczne są tymczasowe.");
+  console.log("\nUWAGA: w config.json nie ustawiono jeszcze domeny, sitemap i adresy kanoniczne są tymczasowe.");
 }
