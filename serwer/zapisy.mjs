@@ -87,6 +87,12 @@ function znajdzPoTokenie(token) {
   for (const [email, r] of stan()) {
     if (r.token && bezpieczneRowne(r.token, token)) return { email, ...r };
   }
+  // Tokeny z prosb o paczke tez identyfikuja adres (wypis, feedback z ankiety).
+  for (const r of wczytaj()) {
+    if (r.typ === "pobranie-prosba" && r.token && bezpieczneRowne(r.token, token)) {
+      return { email: r.email, token: r.token, wynik: [], potwierdzony: false };
+    }
+  }
   return null;
 }
 
