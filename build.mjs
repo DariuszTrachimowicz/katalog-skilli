@@ -204,15 +204,14 @@ function stronaSkilla(s) {
 
   <section class="blok"><h3>Instalacja</h3>
     <div class="steps">
-      <div class="step"><b>1</b><div>Pobierz plik <kbd>${s.id}.skill</kbd>.</div></div>
+      <div class="step"><b>1</b><div>Podaj e-mail w polu niżej, wyślemy link do pliku <kbd>${s.id}.skill</kbd>.</div></div>
       <div class="step"><b>2</b><div>${Object.values(cfg.platformy).slice(0, 2).map((p) => `<strong>${esc(p.nazwa)}:</strong> ${p.instalacja}`).join(" &nbsp;·&nbsp; ")}</div></div>
       <div class="step"><b>3</b><div>Otwórz nową rozmowę i opisz, czego potrzebujesz. Umiejętność uruchomi się sama, nie musisz jej wywoływać z nazwy.</div></div>
     </div>
   </section>
 
   ${gotowy
-    ? `<div class="dl"><div><b>${s.id}.skill</b><span>Pobranie nie wymaga podawania adresu e-mail</span></div>
-       <a class="btn" href="/pobierz/${s.id}.skill" download data-umami-event="pobranie" data-umami-event-skill="${s.id}">Pobierz</a></div>`
+    ? formularzPobrania(s.id, `${s.id}.skill`)
     : `<div class="dl"><div><b>W przygotowaniu</b><span>Zrób test doboru, napiszemy, gdy będzie gotowa</span></div>
        <a class="btn ghost" href="/#test">Powiadom mnie</a></div>`}
 
@@ -248,6 +247,29 @@ function stronaSkilla(s) {
   });
 }
 
+/* ---------- bramka mailowa pobrań ---------- */
+
+// Zamiast bezposredniego linku do .skill: e-mail -> mail z linkiem pobrania.
+// Nic nie schodzi z katalogu bez adresu; link w mailu weryfikuje adres.
+const SKRYPT_POBRANIA = `<script>window.poprosOPaczke||(window.poprosOPaczke=async function(f,skill){
+var b=f.querySelector("button");b.disabled=true;b.textContent="Wysyłam…";
+try{var o=await fetch("/api/pobranie",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:f.email.value,skill:skill})});
+var d=await o.json().catch(function(){return{}});
+if(o.ok){f.closest(".dl").outerHTML='<div class="dl dl-ok"><div><b>Sprawdź skrzynkę</b><span>Link do pobrania poleciał na Twój adres. Nie widzisz go po minucie? Zajrzyj do spamu.</span></div></div>';}
+else{b.disabled=false;b.textContent="Wyślij link";f.querySelector("input").setCustomValidity(d.blad||"Nie udało się wysłać");f.reportValidity();setTimeout(function(){f.querySelector("input").setCustomValidity("")},2500);}
+}catch(e){b.disabled=false;b.textContent="Spróbuj ponownie";}
+return false;});</script>`;
+
+function formularzPobrania(idPaczki, etykieta, { trial = false } = {}) {
+  return `<div class="dl"><div><b>${esc(etykieta)}</b><span>Podaj e-mail, wyślemy link do pobrania${trial ? " wersji trialowej" : ""}</span></div>
+    <form class="dl-form" onsubmit="return poprosOPaczke(this,'${idPaczki}')">
+      <input type="email" name="email" required placeholder="twoj@adres.pl" autocomplete="email" aria-label="Adres e-mail do wysyłki linku">
+      <button class="btn" data-umami-event="prosba-o-paczke" data-umami-event-skill="${idPaczki}">Wyślij link</button>
+    </form></div>
+  <p class="dl-rodo">Adres posłuży do dostarczenia pliku i odnotowania pobrania, szczegóły w <a href="/prywatnosc/">polityce prywatności</a>.</p>
+  ${SKRYPT_POBRANIA}`;
+}
+
 /* ---------- strona oferty (płatny skill) ---------- */
 
 // Strona oferty żyje w tej samej subdomenie i szablonie co strony skilli
@@ -272,6 +294,13 @@ function stronaOferty(s) {
   </div>
   <p class="skrot">${esc(s.skrot)}</p>
   <h2 class="sr-only">Oferta</h2>
+  <div class="oferta-akcje">
+    <a class="btn" href="https://licencje.aixperts.pl/zamow/${s.id}" data-umami-event="zakup" data-umami-event-skill="${s.id}">Kup teraz (${esc(s.cena || "cena w ofercie")})</a>
+    <span class="dl-rodo">Płatność online (BLIK, przelew, karta) albo faktura proforma. Klucz licencji i paczka przychodzą mailem.</span>
+  </div>
+  ${existsSync(join(KORZEN, "paczki-zewnetrzne", `${s.id}-trial.skill`))
+    ? formularzPobrania(`${s.id}-trial`, "Wypróbuj za darmo: wersja trialowa", { trial: true })
+    : ""}
   ${cialo}
   <p class="disc">Materiał informacyjny. Nie zastępuje porady prawnej, podatkowej ani kadrowej.</p>
   <div class="powrot">
@@ -414,13 +443,13 @@ function stronaRegulaminu() {
   <section class="blok"><h3>Kto prowadzi ten serwis</h3>
     <p>Serwis ${esc(cfg.nazwaSerwisu)} (${esc(cfg.domena)}) prowadzi <strong>D-X.PL Michał Jaśkiewicz</strong>, ul. Więckowskiego 32 lok. 8, 90-728 Łódź, NIP 7262533563, REGON 362247556. Kontakt: <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>.</p></section>
   <section class="blok"><h3>Co oferuje serwis</h3>
-    <p>Przeglądanie katalogu umiejętności AI oraz test doboru z opcjonalnym newsletterem są bezpłatne i nie wymagają konta ani podawania jakichkolwiek danych. Część skilli pobierzesz za darmo na licencji GPL, część jest płatna, wtedy obowiązują warunki, licencja i cena podane w ofercie danego skilla.</p></section>
+    <p>Przeglądanie katalogu umiejętności AI oraz test doboru są bezpłatne i nie wymagają konta. Pobranie paczki .skill wymaga podania adresu e-mail, na który wysyłamy link do pliku. Część skilli pobierzesz za darmo na licencji GPL, część jest płatna, wtedy obowiązują warunki, licencja i cena podane w ofercie danego skilla; płatne skille mają też bezpłatne wersje trialowe pobierane tak samo, linkiem z maila.</p></section>
   <section class="blok"><h3>Newsletter</h3>
     <p>Zapis wymaga podania adresu e-mail i potwierdzenia go kliknięciem w link, bez potwierdzenia niczego więcej nie wysyłamy. Po potwierdzeniu dostajesz dobrany w teście zestaw umiejętności, a potem od czasu do czasu wiadomości o nowościach w katalogu oraz o szkoleniach i usługach prowadzącego serwis. Z listy wypisujesz się jednym kliknięciem w stopce każdej wiadomości, bez pytań i bez logowania.</p></section>
   <section class="blok"><h3>Pliki .skill</h3>
     <p>Darmowe umiejętności (licencja GPL) możesz używać w swojej pracy i w swojej firmie bez ograniczeń. Skille płatne obejmuje licencja komercyjna opisana w ich ofercie. Opisy są materiałem informacyjnym, nie zastępują porady prawnej, podatkowej ani kadrowej, a wyniki działania narzędzi AI zawsze warto sprawdzić przed użyciem.</p></section>
   <section class="blok"><h3>Warunki techniczne</h3>
-    <p>Wystarczy przeglądarka internetowa z włączonym JavaScriptem, a do newslettera, działający adres e-mail.</p></section>
+    <p>Wystarczy przeglądarka internetowa z włączonym JavaScriptem, a do pobrania paczki i do newslettera, działający adres e-mail.</p></section>
   <section class="blok"><h3>Reklamacje</h3>
     <p>Coś nie działa albo masz zastrzeżenia? Napisz na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>, odpowiadamy najpóźniej w 14 dni.</p></section>
   <section class="blok"><h3>Dane osobowe</h3>
@@ -442,8 +471,8 @@ function stronaPrywatnosci() {
   <section class="blok"><h3>Kto odpowiada za Twoje dane</h3>
     <p>Administratorem danych jest <strong>D-X.PL Michał Jaśkiewicz</strong>, ul. Więckowskiego 32 lok. 8, 90-728 Łódź, NIP 7262533563. W każdej sprawie dotyczącej danych napisz na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>.</p></section>
   <section class="blok"><h3>Co zbieramy</h3>
-    <p>Wyłącznie adres e-mail, i tylko wtedy, gdy sam go podasz na końcu testu doboru. Razem z nim zapisujemy listę umiejętności, które wyszły Ci w wyniku, po to, żeby móc wysłać Ci właściwy zestaw.</p>
-    <p>Pobranie pliku nie wymaga podania żadnych danych. Przeglądanie katalogu też nie.</p></section>
+    <p>Wyłącznie adres e-mail, w dwóch sytuacjach: gdy podasz go na końcu testu doboru (razem z listą umiejętności z wyniku, żeby wysłać Ci właściwy zestaw) oraz gdy prosisz o pobranie paczki .skill (razem z informacją, o którą paczkę chodzi, żeby wysłać Ci link do pliku i odnotować pobranie).</p>
+    <p>Samo przeglądanie katalogu nie wymaga podania żadnych danych.</p></section>
   <section class="blok"><h3>Gdzie to trafia</h3>
     <p>Na nasz własny serwer w Unii Europejskiej. Nie korzystamy z zewnętrznej platformy do zarządzania listą adresową, więc Twój adres nie jest przekazywany żadnej firmie trzeciej w celach marketingowych. Po potwierdzeniu zapisu adres trafia też do naszego systemu CRM, działającego na tym samym serwerze, u tego samego administratora.</p>
     <p>Do samego wysłania wiadomości używamy dostawcy poczty, inaczej maile trafiałyby do spamu.</p></section>
@@ -516,6 +545,9 @@ licencji GPL. Rozpowszechniany bez jakiejkolwiek gwarancji.
 }
 
 // paczki .skill
+// Paczki laduja POZA public: nginx ich nie serwuje, wydaje je wylacznie
+// usluga zapisow linkiem z maila (nic nie schodzi bez adresu e-mail).
+rmSync(join(KORZEN, "paczki"), { recursive: true, force: true });
 for (const s of skille) {
   if (String(s.platny) === "true") continue;
   if (s.status !== "gotowy") continue;
@@ -523,8 +555,8 @@ for (const s of skille) {
   pliki.push({ nazwa: `${s.id}/LICENSE.txt`, dane: Buffer.from(TEKST_LICENCJI, "utf8") });
   pliki.push({ nazwa: `${s.id}/LICENCJA.txt`, dane: Buffer.from(notkaLicencyjna(s), "utf8") });
   const zip = zbudujZip(pliki);
-  zapisz(join(WY, "pobierz", `${s.id}.skill`), zip);
-  console.log(`  paczka  /pobierz/${s.id}.skill  (${pliki.length} plików, ${(zip.length / 1024).toFixed(1)} KB)`);
+  zapisz(join(KORZEN, "paczki", `${s.id}.skill`), zip);
+  console.log(`  paczka  paczki/${s.id}.skill  (${pliki.length} plików, ${(zip.length / 1024).toFixed(1)} KB)`);
 }
 
 // strony
@@ -553,11 +585,16 @@ cpSync(join(KORZEN, "szablony", "fonty.css"), join(WY, "fonty.css"));
 cpSync(join(KORZEN, "szablony", "fonty"), join(WY, "fonty"), { recursive: true });
 if (existsSync(join(KORZEN, "szablony", "og"))) cpSync(join(KORZEN, "szablony", "og"), join(WY, "og"), { recursive: true });
 
-// dane dla usługi zapisów, żeby mail z zestawem znał nazwy i adresy skilli
+// dane dla usługi zapisów, żeby maile (zestaw, pobrania paczek i triali)
+// znały nazwy i adresy wszystkich skilli, także płatnych
 zapisz(
   join(WY, "dane", "skille.json"),
   JSON.stringify(
-    skille.filter((s) => String(s.platny) !== "true").map((s) => ({ id: s.id, nazwa: s.nazwa, skrot: s.skrot, gotowy: s.status === "gotowy" })),
+    skille.map((s) => ({
+      id: s.id, nazwa: s.nazwa, skrot: s.skrot,
+      gotowy: s.status === "gotowy" && String(s.platny) !== "true",
+      platny: String(s.platny) === "true",
+    })),
     null,
     2
   )

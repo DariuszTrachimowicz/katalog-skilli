@@ -20,6 +20,10 @@ import { fileURLToPath } from "node:url";
 const KORZEN = join(dirname(fileURLToPath(import.meta.url)), "..");
 const cfg = JSON.parse(readFileSync(join(KORZEN, "config.json"), "utf8"));
 const C = cfg.zapisy;
+// Nadpisania do testow lokalnych (produkcja: config.json bez zmian).
+if (process.env.ZAPISY_PLIK) C.plikDanych = process.env.ZAPISY_PLIK;
+if (process.env.ZAPISY_TRYB) C.wysylka = { ...C.wysylka, tryb: process.env.ZAPISY_TRYB };
+if (process.env.ZAPISY_PORT) C.port = parseInt(process.env.ZAPISY_PORT, 10);
 const BAZA = `https://${cfg.domena}`;
 
 const SKILLE = (() => {
@@ -27,6 +31,19 @@ const SKILLE = (() => {
   return existsSync(p) ? JSON.parse(readFileSync(p, "utf8")) : [];
 })();
 const nazwaSkilla = (id) => SKILLE.find((s) => s.id === id) || { id, nazwa: id, skrot: "" };
+
+// Paczki .skill NIE leza w public (nginx ich nie serwuje) - wydaje je ta usluga,
+// wylacznie linkiem z maila. `paczki/` buduje build.mjs, `paczki-zewnetrzne/`
+// to commitowane paczki spoza builda (np. triale platnych skilli).
+const KATALOGI_PACZEK = [join(KORZEN, "paczki"), join(KORZEN, "paczki-zewnetrzne")];
+function plikPaczki(id) {
+  if (!/^[a-z0-9-]{1,64}$/.test(id)) return null;
+  for (const kat of KATALOGI_PACZEK) {
+    const p = join(kat, `${id}.skill`);
+    if (existsSync(p)) return p;
+  }
+  return null;
+}
 
 mkdirSync(dirname(C.plikDanych), { recursive: true });
 const DZIENNIK_MAILI = join(dirname(C.plikDanych), "wyslane-maile.log");
@@ -402,6 +419,92 @@ const serwer = createServer(async (req, res) => {
           .catch((e) => console.error("Feedback→CRM nieudane:", e.message));
       }
       return odpowiedz(res, 200, { ok: true });
+    }
+
+    /* prośba o paczkę: e-mail + id skilla -> mail z linkiem pobrania.
+       Nic nie schodzi bez adresu; link w mailu weryfikuje adres z natury. */
+    if (url.pathname === "/api/pobranie" && req.method === "POST") {
+      if (przekroczonyLimit(ip)) return odpowiedz(res, 429, { blad: "Za dużo prób z tego adresu." });
+
+      let ciało;
+      try { ciało = JSON.parse(await czytajCialo(req)); }
+      catch { return odpowiedz(res, 400, { blad: "Nieprawidłowe dane." }); }
+
+      const email = String(ciało.email || "").trim().toLowerCase();
+      if (!POPRAWNY_MAIL.test(email) || email.length > 254)
+        return odpowiedz(res, 400, { blad: "Nieprawidłowy adres e-mail." });
+      const skill = String(ciało.skill || "").trim();
+      if (!plikPaczki(skill)) return odpowiedz(res, 404, { blad: "Nie ma takiej paczki." });
+
+      const token = randomBytes(24).toString("hex");
+      dopisz({ typ: "pobranie-prosba", email, skill, token, kiedy: new Date().toISOString(), ip });
+
+      const trial = skill.endsWith("-trial");
+      const s = nazwaSkilla(trial ? skill.replace(/-trial$/, "") : skill);
+      const wyslany = await wyslijMail({
+        do: email,
+        temat: `Twoja paczka: ${s.nazwa}${trial ? " (wersja trialowa)" : ""}`,
+        tresc: `Cześć,
+
+ktoś (mamy nadzieję, że Ty) poprosił o paczkę „${s.nazwa}${trial ? ", wersja trialowa" : ""}" na ${cfg.domena}.
+
+Pobierz ją tutaj (link jest Twój, działa też przy ponownym pobraniu):
+${BAZA}/api/pobierz?t=${token}
+
+JAK ZAINSTALOWAĆ
+1. Pobierz plik .skill z linku wyżej
+2. Claude: Ustawienia -> Umiejętności -> Prześlij umiejętność
+   ChatGPT: Skills -> Upload from your computer (plan Business lub wyższy)
+3. Otwórz nową rozmowę i opisz, czego potrzebujesz
+${trial ? `
+To wersja trialowa płatnego skilla. Pełna wersja i cennik:
+${BAZA}/skill/${s.id}/
+` : ""}
+Jeśli to nie Ty prosiłeś o paczkę, po prostu zignoruj tę wiadomość.
+
+${cfg.nazwaSerwisu}
+${BAZA}`,
+      });
+      if (!wyslany) return odpowiedz(res, 502, { blad: "Nie udało się wysłać maila, spróbuj za chwilę." });
+      return odpowiedz(res, 200, { ok: true });
+    }
+
+    /* pobranie paczki z linku w mailu */
+    if (url.pathname === "/api/pobierz") {
+      const token = url.searchParams.get("t") || "";
+      const wszystkie = wczytaj();
+      const prosba = wszystkie.find((r) => r.typ === "pobranie-prosba" && r.token && bezpieczneRowne(r.token, token));
+      const plik = prosba ? plikPaczki(prosba.skill) : null;
+      if (!prosba || !plik) {
+        return stronaHtml(res, "Link wygasł albo jest nieprawidłowy",
+          "<p class='skrot'>Nie znaleźliśmy tej paczki. Wejdź na stronę skilla i poproś o link jeszcze raz.</p>");
+      }
+
+      // Pierwsze pobranie z tego linku: odnotuj i zgłoś lead (raz na token).
+      if (!wszystkie.some((r) => r.typ === "pobranie" && r.token === prosba.token)) {
+        dopisz({ typ: "pobranie", email: prosba.email, skill: prosba.skill, token: prosba.token, kiedy: new Date().toISOString() });
+        if (C.crm?.formularz) {
+          const trial = prosba.skill.endsWith("-trial");
+          const s = nazwaSkilla(trial ? prosba.skill.replace(/-trial$/, "") : prosba.skill);
+          const dane = new URLSearchParams({
+            key: C.crm.formularz.split("/").pop(),
+            name: prosba.email,
+            email: prosba.email,
+            description: `Pobranie paczki „${s.nazwa}${trial ? ", TRIAL płatnego skilla" : ""}" z ${cfg.domena}.`,
+          });
+          fetch(C.crm.formularz, { method: "POST", body: dane, signal: AbortSignal.timeout(8000) })
+            .catch((e) => console.error("Pobranie→CRM nieudane:", e.message));
+        }
+      }
+
+      const dane = readFileSync(plik);
+      res.writeHead(200, {
+        "Content-Type": "application/zip",
+        "Content-Disposition": `attachment; filename="${prosba.skill}.skill"`,
+        "Content-Length": dane.length,
+        "Cache-Control": "no-store",
+      });
+      return res.end(dane);
     }
 
     /* wypisanie */
