@@ -1,5 +1,5 @@
 const fs = require('fs');
-const TRYB = 'podglad';
+const TRYB = 'live';
 const CUTOFF = '2026-08-12';
 const H_INVITE = 48 * 3600e3;
 const H_OFFER  = 24 * 3600e3;
