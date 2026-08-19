@@ -233,6 +233,7 @@ kbd{font-family:var(--mono);font-size:12.5px;border:1px solid var(--line);backgr
 .pakiety{display:flex;gap:16px;align-items:stretch;margin-top:6px}
 .pakiet{flex:1 1 0;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;position:relative}
 .pakiet.wyroz{border:2px solid #B5791E;box-shadow:0 6px 24px rgba(140,100,20,.10)}
+.pakiet .pakiet-kup{margin-top:auto;align-self:flex-start;margin-top:16px}
 .pakiet .badge{position:absolute;top:-11px;left:20px;right:20px;text-align:center;background:#B5791E;color:#fff;font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;padding:5px 10px;border-radius:9999px;line-height:1.3}
 .pakiet-nazwa{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:4px}
 .pakiet-dla{font-size:13px;color:var(--muted);line-height:1.5;margin-bottom:16px;min-height:2.8em}
