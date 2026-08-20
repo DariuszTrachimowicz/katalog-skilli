@@ -8,13 +8,11 @@
   "rok": "2026",
   "licencja": "GPL-3.0-or-later",
   "urlLicencji": "https://www.gnu.org/licenses/gpl-3.0.html",
-
   "analityka": {
     "_komentarz": "Self-hosted Umami na tym samym VPS-ie, bez ciasteczek, dane nie wychodzą poza nasz serwer. Usuń sekcję, żeby wyłączyć zbieranie.",
     "skrypt": "https://statystyki.aixperts.pl/script.js",
     "idSerwisu": "b60585a9-a097-4679-8fba-77d7005cd895"
   },
-
   "zapisy": {
     "port": 8788,
     "plikDanych": "/var/lib/katalog/zapisy.jsonl",
@@ -36,7 +34,6 @@
       "naglowekAutoryzacji": "Bearer WSTAW_KLUCZ_API"
     }
   },
-
   "platformy": {
     "claude": {
       "nazwa": "Claude",
@@ -51,15 +48,20 @@
     "gemini": {
       "nazwa": "Gemini",
       "instalacja": "Skills &rarr; wgraj plik",
-      "uwaga": "Aplikacja Gemini obsługuje skille, ale funkcja nie została udostępniona w Europejskim Obszarze Gospodarczym, więc w Polsce nie zadziała. Google zapowiada zmianę, bez potwierdzonej daty."
+      "uwaga": "Instrukcje skilla przetestowaliśmy na modelach Gemini (runda z 20 sierpnia 2026; przy statusie „działa z zastrzeżeniami” szczegóły w raporcie testu). Wbudowana obsługa plików skill w aplikacji Gemini nie została jednak udostępniona w Europejskim Obszarze Gospodarczym, więc w Polsce trzeba wkleić instrukcje do rozmowy albo Gema; Google zapowiada zmianę, bez potwierdzonej daty."
     }
   },
-
   "statusy": {
     "ok": "przetestowane",
-    "format": "format zgodny, nietestowane",
+    "format": "działa z zastrzeżeniami",
     "brak": "niedostępne w Polsce"
   },
-
-  "kategorie": ["Biuro", "Finanse", "Kadry", "Prawo", "Marketing", "Dane"]
+  "kategorie": [
+    "Biuro",
+    "Finanse",
+    "Kadry",
+    "Prawo",
+    "Marketing",
+    "Dane"
+  ]
 }

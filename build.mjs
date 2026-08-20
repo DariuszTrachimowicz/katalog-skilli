@@ -194,7 +194,7 @@ function stronaSkilla(s) {
         return `<div><span class="pf ${st}"><i></i>${esc(p.nazwa)}</span><div><strong>${esc(cfg.statusy[st])}</strong>, ${p.uwaga}</div></div>`;
       }).join("")}
     </div>
-    <p style="margin-top:18px;font-size:14px;color:var(--muted)">Plik jest zgodny z otwartym standardem Agent Skills, więc ten sam folder działa w wielu narzędziach. „Format zgodny” znaczy, że powinien zadziałać, ale nie uruchomiliśmy go tam sami, a piszemy tylko o tym, co sprawdziliśmy.</p>
+    <p style="margin-top:18px;font-size:14px;color:var(--muted)">Plik jest zgodny z otwartym standardem Agent Skills, więc ten sam folder działa w wielu narzędziach. „Działa z zastrzeżeniami” znaczy, że w naszym teście na tej platformie wynik był użyteczny, ale z odstępstwami opisanymi w raporcie testu; piszemy tylko o tym, co sprawdziliśmy.</p>
   </section>
 
   ${["Na czym się wywala", "Czego ten skill nie robi celowo"]
