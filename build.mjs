@@ -349,7 +349,7 @@ function stronaGlowna(skille) {
       <h3>${esc(s.nazwa)}</h3>
       <p>${esc(s.skrot)}</p>
       <div class="compat">${znacznikiZgodnosci(s)}</div>
-      <div class="card-foot"><em>${stopka} &rarr;</em></div>
+      <div class="card-foot">${s.wersja ? `<span class="wer" title="wersja skilla">wer. ${esc(s.wersja)}</span>` : "<span></span>"}<em>${stopka} &rarr;</em></div>
     </a>`;
     })
     .join("");

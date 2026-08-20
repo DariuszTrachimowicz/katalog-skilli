@@ -149,7 +149,8 @@ input[type=email]:focus{outline:none;border-color:#B9B9B6}
 .legend i{width:6px;height:6px;border-radius:50%;display:block}
 /* Pole „poziom” zniknęło z karty: wszystkie skille działają bez konfiguracji,
    więc powtarzanie tego trzydzieści razy było szumem. Zostaje na podstronie. */
-.card-foot{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;align-items:center}
+.card-foot{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.card-foot .wer{font-size:12px;color:var(--muted)}
 .card-foot em{font-style:normal;font-size:13px;font-weight:500}
 
 /* strona skilla */
