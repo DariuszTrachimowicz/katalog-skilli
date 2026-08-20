@@ -18,7 +18,7 @@ zgodnosc:
 
 ## Co robi
 
-Prowadzi rzeczoznawcę majątkowego przez sporządzenie operatu szacunkowego w pięciu etapach z twardymi bramkami: założenia, analiza rynku, obliczenia, redakcja, kontrola. Każda decyzja (kryteria doboru próby, odrzucenie transakcji, rozstrzygnięcie outliera, wagi cech, wybór metody) trafia z uzasadnieniem do rejestru decyzji, w którym wpisy tworzą łańcuch skrótów, a powroty do wcześniejszych etapów wymagają jawnego wpisu z uzasadnieniem. Obliczenia wykonują skrypty, nie model: porównywanie parami z analizą wrażliwości (z arkuszem XLSX, w którym kluczowe wielkości mają w tablicy wiązań wskazane źródło i komórkę wyniku), zużycie techniczne i kapitalizacja prosta (obie z zapisem rachunku w wyniku) oraz statystyka próby. Na koniec skill przechodzi z Tobą arkusz samooceny operatu przed oddaniem.
+Prowadzi rzeczoznawcę majątkowego przez sporządzenie operatu szacunkowego w pięciu etapach z twardymi bramkami: założenia, analiza rynku, obliczenia, redakcja, kontrola. Każda decyzja (kryteria doboru próby, odrzucenie transakcji, rozstrzygnięcie outliera, wagi cech, wybór metody) trafia z uzasadnieniem do rejestru decyzji, w którym wpisy tworzą łańcuch skrótów, a powroty do wcześniejszych etapów wymagają jawnego wpisu z uzasadnieniem. Obliczenia wykonują skrypty, nie model: porównywanie parami z analizą wrażliwości (z arkuszem XLSX: liczby statyczne bez formuł, ślad do kontroli, nie arkusz roboczy; kluczowe wielkości mają w tablicy wiązań wskazane źródło i komórkę wyniku), zużycie techniczne i kapitalizacja prosta (obie z zapisem rachunku w wyniku) oraz statystyka próby. Na koniec skill przechodzi z Tobą arkusz samooceny operatu przed oddaniem.
 
 Wspiera warsztat. Autorem operatu jest rzeczoznawca, który weryfikuje dane, założenia i wyniki i odpowiada za treść operatu.
 
@@ -48,7 +48,7 @@ Własnych danych rynkowych (transakcje, stawki, stopy z Twojego badania rynku), 
 - Faza 1 liczy porównywanie parami, zużycie, kapitalizację prostą i statystykę próby; korygowanie ceny średniej, DCF, metoda pozostałościowa i kalkulatory opłat są poza tym wydaniem, a cele o reżimach szczególnych (wywłaszczenia, opłaty, aktualizacja UW) prowadzisz według przepisów właściwych, skill wspiera tylko część warsztatową.
 - Kalkulator porównywania parami rozkłada poprawki liniowo między stopniami skali ocen; przy cechach o nieliniowym wpływie korekty per stopień robisz poza skryptem i opisujesz w operacie.
 - Skrypty wymagają Pythona 3.10+ (XLSX dodatkowo openpyxl); bez tego zostaje prowadzenie metodyczne bez obliczeń.
-- Licencja jest roczna i obejmuje aktualizacje (w tym referencji stanu prawnego) pobierane kluczem z panelu; stan prawny referencji ma jawną datę i skill sam przypomina o weryfikacji po 6 miesiącach.
+- Licencja jest roczna, jak w całym katalogu: aktualne wydanie paczki (w tym referencje stanu prawnego) pobierasz kluczem z panelu licencji przez okres licencji; stan prawny referencji ma jawną datę i skill sam przypomina o weryfikacji po 6 miesiącach.
 - Nie łączy się z księgami wieczystymi ani rejestrami: dane z KW wchodzą tylko jako pliki, które sam wgrasz.
 
 ## Czego ten skill nie robi celowo
