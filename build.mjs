@@ -160,6 +160,19 @@ function znacznikiZgodnosci(s) {
     .join("");
 }
 
+function sekcjaGdzieDziala(s) {
+  return `
+  <section class="blok"><h3>Gdzie działa</h3>
+    <div class="gdzie">
+      ${Object.entries(cfg.platformy).map(([k, p]) => {
+        const st = s.zgodnosc[k] || "format";
+        return `<div><span class="pf ${st}"><i></i>${esc(p.nazwa)}</span><div><strong>${esc(cfg.statusy[st])}</strong>, ${p.uwaga}</div></div>`;
+      }).join("")}
+    </div>
+    <p style="margin-top:18px;font-size:14px;color:var(--muted)">Plik jest zgodny z otwartym standardem Agent Skills, więc ten sam folder działa w wielu narzędziach. „Działa z zastrzeżeniami” znaczy, że w naszym teście na tej platformie wynik był użyteczny, ale z odstępstwami opisanymi w raporcie testu; piszemy tylko o tym, co sprawdziliśmy.</p>
+  </section>`;
+}
+
 /* ---------- strona skilla ---------- */
 
 function stronaSkilla(s) {
@@ -187,15 +200,7 @@ function stronaSkilla(s) {
     .map((t) => `<section class="blok"><h3>${t}</h3>${s.sekcja(t)}</section>`)
     .join("")}
 
-  <section class="blok"><h3>Gdzie działa</h3>
-    <div class="gdzie">
-      ${Object.entries(cfg.platformy).map(([k, p]) => {
-        const st = s.zgodnosc[k] || "format";
-        return `<div><span class="pf ${st}"><i></i>${esc(p.nazwa)}</span><div><strong>${esc(cfg.statusy[st])}</strong>, ${p.uwaga}</div></div>`;
-      }).join("")}
-    </div>
-    <p style="margin-top:18px;font-size:14px;color:var(--muted)">Plik jest zgodny z otwartym standardem Agent Skills, więc ten sam folder działa w wielu narzędziach. „Działa z zastrzeżeniami” znaczy, że w naszym teście na tej platformie wynik był użyteczny, ale z odstępstwami opisanymi w raporcie testu; piszemy tylko o tym, co sprawdziliśmy.</p>
-  </section>
+  ${sekcjaGdzieDziala(s)}
 
   ${["Na czym się wywala", "Czego ten skill nie robi celowo"]
     .filter((t) => s.sekcja(t))
@@ -302,6 +307,7 @@ function stronaOferty(s) {
     ? formularzPobrania(`${s.id}-trial`, "Wypróbuj za darmo: wersja trialowa", { trial: true })
     : ""}
   ${cialo}
+  ${sekcjaGdzieDziala(s)}
   <p class="disc">Materiał informacyjny. Nie zastępuje porady prawnej, podatkowej ani kadrowej.</p>
   <div class="powrot">
     <a class="btn ghost" href="/#katalog">&larr; Wróć do katalogu</a>
