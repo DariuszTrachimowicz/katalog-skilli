@@ -396,6 +396,18 @@ function stronaGlowna(skille) {
     .filter((s) => String(s.platny) !== "true")
     .map((s) => ({ id: s.id, n: s.nazwa, o: s.skrot, t: s.szukaj, g: s.status === "gotowy" }));
 
+  // Płatne w teście doboru: osobny tor po tagach-kotwicach z pola `kotwice:`
+  // (NIE z `szukaj`, żeby np. tag "finanse" operatów nie łapał księgowych).
+  // Pokazywane najwyżej jedna pozycja, pod darmowym wynikiem, z ceną.
+  const danePremium = skille
+    .filter(jestPlatny)
+    .map((s) => {
+      const kotwice = lista(s.kotwice);
+      if (!kotwice.length || !s.cena) throw new Error(`płatny skill ${s.id} bez pola kotwice/cena, test doboru nie może go uczciwie pokazać`);
+      return { id: s.id, n: s.nazwa, o: s.skrot, cena: s.cena, kotwice,
+               trial: existsSync(join(KORZEN, "paczki-zewnetrzne", `${s.id}-trial.skill`)) };
+    });
+
   const tresc = `
 <section class="hero">
   <div class="wrap">
@@ -423,7 +435,7 @@ function stronaGlowna(skille) {
   <div class="wrap">
     <div class="sec-head">
       <h2>Nie wiesz, czego szukać? Nie musisz.</h2>
-      <p>Sześć pytań o Twoją pracę. Na końcu dostajesz zestaw umiejętności dobranych pod to, co robisz na co dzień.</p>
+      <p>Siedem pytań o Twoją pracę. Na końcu dostajesz zestaw umiejętności dobranych pod to, co robisz na co dzień.</p>
     </div>
     <div class="quiz">
       <div class="quiz-top"><span id="qstep">Pytanie 1 z 6</span><div class="bar"><i id="qbar"></i></div></div>
@@ -463,6 +475,7 @@ function stronaGlowna(skille) {
 
   const skrypt = `<script>
 const SKILLE=${JSON.stringify(daneQuizu)};
+const PREMIUM=${JSON.stringify(danePremium)};
 const KATEGORIE=${JSON.stringify(["Wszystkie", ...cfg.kategorie])};
 ${readFileSync(join(KORZEN, "szablony", "strona.js"), "utf8")}
 </script>`;
@@ -649,6 +662,8 @@ zapisz(
       id: s.id, nazwa: s.nazwa, skrot: s.skrot,
       gotowy: s.status === "gotowy" && String(s.platny) !== "true",
       platny: String(s.platny) === "true",
+      cena: s.cena || "",
+      trial: existsSync(join(KORZEN, "paczki-zewnetrzne", `${s.id}-trial.skill`)),
     })),
     null,
     2

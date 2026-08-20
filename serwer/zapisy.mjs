@@ -2,7 +2,7 @@
 // Usługa zapisów z testu doboru.
 //
 // Celowo bez frameworka i bez bazy danych. Lista adresowa katalogu to
-// dopisywanie wierszy i sporadyczne czytanie całości — plik JSONL obsługuje
+// dopisywanie wierszy i sporadyczne czytanie całości, plik JSONL obsługuje
 // to lepiej niż baza, którą trzeba utrzymywać, aktualizować i backupować
 // osobno. Kopia zapasowa to skopiowanie jednego pliku.
 //
@@ -48,7 +48,7 @@ function plikPaczki(id) {
 mkdirSync(dirname(C.plikDanych), { recursive: true });
 const DZIENNIK_MAILI = join(dirname(C.plikDanych), "wyslane-maile.log");
 
-// Ta sama wersja arkuszy co na stronach z builda — bez niej wracający
+// Ta sama wersja arkuszy co na stronach z builda, bez niej wracający
 // użytkownik dostaje stronę potwierdzenia ze starym CSS-em z cache.
 const wersjaCss = (n) => {
   const p = join(KORZEN, "public", n);
@@ -71,7 +71,7 @@ function wczytaj() {
 const dopisz = (rekord) => appendFileSync(C.plikDanych, JSON.stringify(rekord) + "\n");
 
 // Stan wyliczamy z pełnej historii: ostatni wpis dla danego adresu wygrywa.
-// Dzięki temu plik jest dziennikiem zdarzeń, a nie stanem do nadpisywania —
+// Dzięki temu plik jest dziennikiem zdarzeń, a nie stanem do nadpisywania -
 // nic się nie gubi i widać, co się kiedy działo.
 function stan() {
   const mapa = new Map();
@@ -117,7 +117,7 @@ function przekroczonyLimit(ip) {
 
 /* ---------- wysyłka ---------- */
 
-// Minimalny klient SMTP (STARTTLS + AUTH PLAIN) na czystej bibliotece Node —
+// Minimalny klient SMTP (STARTTLS + AUTH PLAIN) na czystej bibliotece Node -
 // dokładnie tyle protokołu, ile potrzebuje ta usługa, i ani linijki zależności.
 // Obsługuje wyłącznie nasz przypadek: jeden odbiorca, tekst, UTF-8.
 function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy, adresat, temat, tresc }) {
@@ -133,7 +133,7 @@ function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy,
     gniazdo.setTimeout(20_000, () => koniec(new Error("SMTP: przekroczony czas")));
     gniazdo.on("error", koniec);
 
-    // Odpowiedź SMTP jest kompletna, gdy ostatnia linia zaczyna się od "XXX " —
+    // Odpowiedź SMTP jest kompletna, gdy ostatnia linia zaczyna się od "XXX " -
     // wcześniejsze linie wieloliniowej odpowiedzi mają "XXX-".
     const odpowiedz = () =>
       new Promise((ok, zle) => {
@@ -157,7 +157,7 @@ function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy,
       return o;
     };
 
-    // Nagłówki z polskimi znakami idą jako RFC 2047, treść jako base64 —
+    // Nagłówki z polskimi znakami idą jako RFC 2047, treść jako base64 -
     // to zdejmuje wszystkie problemy 8-bitowych znaków w protokole.
     const slowo = (t) => (/[^\x20-\x7E]/.test(t) ? `=?UTF-8?B?${Buffer.from(t, "utf8").toString("base64")}?=` : t);
     const cialo = Buffer.from(tresc, "utf8").toString("base64").replace(/(.{76})/g, "$1\r\n");
@@ -178,7 +178,7 @@ function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy,
       await komenda(`EHLO ${cfg.domena}`, 250);
       await komenda("STARTTLS", 220);
 
-      // Podmiana gniazda na szyfrowane — dalsze komendy idą już w TLS.
+      // Podmiana gniazda na szyfrowane, dalsze komendy idą już w TLS.
       await new Promise((ok, zle) => {
         const tls = polaczTls({ socket: gniazdo, servername: host }, () => { gniazdo = tls; ok(); });
         tls.once("error", zle);
@@ -239,7 +239,7 @@ async function wyslijMail({ do: adresat, temat, tresc }) {
 }
 
 // Potwierdzony zapis zgłaszamy jako lead do naszego CRM (ten sam serwer, nie firma
-// trzecia). Awaria CRM nie może zepsuć potwierdzenia — błąd tylko logujemy.
+// trzecia). Awaria CRM nie może zepsuć potwierdzenia, błąd tylko logujemy.
 async function zglosDoCrm(rekord) {
   const crm = C.crm;
   if (!crm?.formularz) return;
@@ -249,14 +249,14 @@ async function zglosDoCrm(rekord) {
     email: rekord.email,
     description: `Potwierdzony zapis z testu doboru (${cfg.domena}). Dobrane skille: ${
       (rekord.wynik || []).map((id) => nazwaSkilla(id).nazwa).join(", ") || "brak"
-    }.`,
+    }.${rekord.premium ? ` Dopasowanie premium (PŁATNY): ${nazwaSkilla(rekord.premium).nazwa}${nazwaSkilla(rekord.premium).cena ? `, ${nazwaSkilla(rekord.premium).cena}` : ""}.` : ""}`,
   });
   const odp = await fetch(crm.formularz, { method: "POST", body: dane, signal: AbortSignal.timeout(8000) });
   if (!odp.ok) throw new Error(`CRM odpowiedział ${odp.status}`);
 }
 
 const mailPotwierdzajacy = (token) => ({
-  temat: "Potwierdź zapis — zestaw umiejętności",
+  temat: "Potwierdź zapis, zestaw umiejętności",
   tresc: `Cześć,
 
 ktoś (mamy nadzieję, że Ty) poprosił o zestaw umiejętności AI dobrany w teście na ${cfg.domena}.
@@ -264,13 +264,13 @@ ktoś (mamy nadzieję, że Ty) poprosił o zestaw umiejętności AI dobrany w te
 Potwierdź kliknięciem, a wyślemy go od razu:
 ${BAZA}/api/potwierdz?t=${token}
 
-Jeśli to nie Ty — po prostu zignoruj tę wiadomość. Bez potwierdzenia nie wyślemy nic więcej i nie zapiszemy Cię na żadną listę.
+Jeśli to nie Ty, po prostu zignoruj tę wiadomość. Bez potwierdzenia nie wyślemy nic więcej i nie zapiszemy Cię na żadną listę.
 
 ${cfg.nazwaSerwisu}
 ${BAZA}`,
 });
 
-const mailZZestawem = (wynik, token) => ({
+const mailZZestawem = (wynik, token, premium = null) => ({
   temat: "Twój zestaw umiejętności AI",
   tresc: `Oto zestaw dobrany na podstawie Twoich odpowiedzi.
 
@@ -282,7 +282,24 @@ ${wynik
    ${BAZA}/skill/${id}/`;
   })
   .join("\n\n")}
+${(() => {
+    // Dopasowanie premium: osobna sekcja, nigdy w numerowanej liście,
+    // bez instrukcji pobierania (płatnego się nie pobiera, zamawia się licencję).
+    if (!premium) return "";
+    const s = nazwaSkilla(premium);
+    if (!s.platny) return "";
+    return `
+POZA DARMOWYM ZESTAWEM
 
+Twoje odpowiedzi wskazują też na jedną specjalizację. Mamy do niej płatny skill:
+
+${s.nazwa}${s.cena ? ` (${s.cena})` : ""}
+${s.skrot}
+To płatny skill, nie pobiera się go jak pozycji wyżej; szczegóły i zamówienie licencji:
+${BAZA}/skill/${premium}/${s.trial ? `
+Najpierw możesz tam bezpłatnie pobrać wersję trial.` : ""}
+`;
+  })()}
 JAK TO ZAINSTALOWAĆ
 
 1. Wejdź na stronę wybranej umiejętności i pobierz plik .skill
@@ -359,16 +376,22 @@ const serwer = createServer(async (req, res) => {
         ? ciało.wynik.filter((x) => typeof x === "string" && /^[a-z0-9-]{1,64}$/.test(x)).slice(0, 12)
         : [];
 
+      // Dopasowanie premium z testu: jedno id, przyjmowane tylko jeśli to
+      // faktycznie płatny skill z katalogu; wszystko inne po cichu odpada.
+      const premium = typeof ciało.premium === "string" && /^[a-z0-9-]{1,64}$/.test(ciało.premium)
+        && SKILLE.some((s) => s.id === ciało.premium && s.platny)
+        ? ciało.premium : null;
+
       const obecne = stan().get(email);
-      // Adres już potwierdzony — nie zakładamy nowego wpisu, ale odpowiadamy
+      // Adres już potwierdzony, nie zakładamy nowego wpisu, ale odpowiadamy
       // tak samo jak przy nowym, żeby formularz nie zdradzał, kto jest na liście.
       if (obecne?.potwierdzony) {
-        await wyslijMail({ do: email, ...mailZZestawem(wynik.length ? wynik : obecne.wynik, obecne.token) });
+        await wyslijMail({ do: email, ...mailZZestawem(wynik.length ? wynik : obecne.wynik, obecne.token, premium ?? obecne.premium) });
         return odpowiedz(res, 200, { ok: true });
       }
 
       const token = randomBytes(24).toString("hex");
-      dopisz({ typ: "zapis", email, wynik, token, kiedy: new Date().toISOString(), ip });
+      dopisz({ typ: "zapis", email, wynik, premium, token, kiedy: new Date().toISOString(), ip });
       await wyslijMail({ do: email, ...mailPotwierdzajacy(token) });
       return odpowiedz(res, 200, { ok: true });
     }
@@ -378,19 +401,19 @@ const serwer = createServer(async (req, res) => {
       const rekord = znajdzPoTokenie(url.searchParams.get("t") || "");
       if (!rekord)
         return stronaHtml(res, "Link wygasł albo jest nieprawidłowy",
-          "<p class='skrot'>Nie znaleźliśmy tego zapisu. Zrób test jeszcze raz — zajmie minutę.</p>");
+          "<p class='skrot'>Nie znaleźliśmy tego zapisu. Zrób test jeszcze raz, zajmie minutę.</p>");
 
       if (!rekord.potwierdzony) {
         dopisz({ typ: "potwierdzenie", email: rekord.email, kiedy: new Date().toISOString() });
-        await wyslijMail({ do: rekord.email, ...mailZZestawem(rekord.wynik, rekord.token) });
+        await wyslijMail({ do: rekord.email, ...mailZZestawem(rekord.wynik, rekord.token, rekord.premium) });
         zglosDoCrm(rekord).catch((e) => console.error("Zgłoszenie do CRM nieudane:", e.message));
       }
       return stronaHtml(res, "Potwierdzone",
-        `<p class="skrot">Zestaw poleciał na <strong>${rekord.email}</strong>. Powinien być w skrzynce w ciągu minuty — jeśli go nie ma, zajrzyj do spamu.</p>
+        `<p class="skrot">Zestaw poleciał na <strong>${rekord.email}</strong>. Powinien być w skrzynce w ciągu minuty, jeśli go nie ma, zajrzyj do spamu.</p>
          <section class="blok"><h3>Co dalej</h3><p>Będziemy pisać o nowościach w katalogu, a od czasu do czasu o naszych szkoleniach i usługach. Wypisujesz się jednym kliknięciem ze stopki każdej wiadomości.</p></section>`);
     }
 
-    /* feedback z ankiety — rozwiązuje token→e-mail, zapisuje do pliku dla automatu (n8n),
+    /* feedback z ankiety, rozwiązuje token→e-mail, zapisuje do pliku dla automatu (n8n),
        forwarduje do CRM. Dzięki temu e-mail nie krąży w przeglądarce, a n8n czyta plik. */
     if (url.pathname === "/api/feedback" && req.method === "POST") {
       if (przekroczonyLimit(ip)) return odpowiedz(res, 429, { blad: "Za dużo prób z tego adresu." });
@@ -408,7 +431,7 @@ const serwer = createServer(async (req, res) => {
       const brakuje = String(ciało.get("brakuje") || "").slice(0, 2000);
       const branza = String(ciało.get("branza") || "").slice(0, 200);
 
-      // plik czytany przez automat lejka (n8n) — obok dziennika zapisów
+      // plik czytany przez automat lejka (n8n), obok dziennika zapisów
       const PLIK_FEEDBACK = join(dirname(C.plikDanych), "feedback.jsonl");
       appendFileSync(PLIK_FEEDBACK, JSON.stringify({
         typ: "feedback", email, token: token || null, pomogl, brakuje, branza,
@@ -418,7 +441,7 @@ const serwer = createServer(async (req, res) => {
       // forward do CRM (lead „Feedback katalogu") z rozwiązanym adresem
       const crmUrl = C.crm?.feedback;
       if (crmUrl) {
-        const opis = `Czy skill pomógł: ${pomogl || "brak odpowiedzi"}\nCzego brakuje / co pomogłoby: ${brakuje || "—"}\nBranża: ${branza || "brak odpowiedzi"}\nToken zapisu: ${token || "brak"}`;
+        const opis = `Czy skill pomógł: ${pomogl || "brak odpowiedzi"}\nCzego brakuje / co pomogłoby: ${brakuje || "-"}\nBranża: ${branza || "brak odpowiedzi"}\nToken zapisu: ${token || "brak"}`;
         const dane = new URLSearchParams({ key: crmUrl.split("/").pop(), name: "Feedback z katalogu", description: opis });
         if (email) dane.set("email", email);
         fetch(crmUrl, { method: "POST", body: dane, signal: AbortSignal.timeout(8000) })
@@ -529,12 +552,12 @@ ${BAZA}`,
   }
 });
 
-// Domyślnie tylko pętla zwrotna — przy instalacji na hoście nginx stoi obok
+// Domyślnie tylko pętla zwrotna, przy instalacji na hoście nginx stoi obok
 // i nikt z zewnątrz nie ma się tu dobijać.
 //
 // W kontenerze to jednak nie wystarcza: nginx siedzi w SĄSIEDNIM kontenerze,
 // więc adres 127.0.0.1 oznacza dla niego coś innego niż dla nas i połączenie
-// nie ma prawa dojść. Awaria jest przy tym cicha — kontrola stanu usługi
+// nie ma prawa dojść. Awaria jest przy tym cicha, kontrola stanu usługi
 // odpytuje 127.0.0.1 od środka i przechodzi, więc kontener raportuje pełne
 // zdrowie, a każde żądanie do /api/ kończy się błędem bramy. Stąd ZAPISY_HOST:
 // w docker-compose ustawiamy 0.0.0.0, port i tak nie wychodzi poza sieć compose.

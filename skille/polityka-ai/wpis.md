@@ -4,6 +4,7 @@ kategoria: Prawo
 status: platny
 wersja: 1.1.0
 platny: true
+kotwice: polityka AI, AI Act
 cena: od 890 zł netto
 poziom: Zaawansowany
 aktualizacja: 2026-08-13

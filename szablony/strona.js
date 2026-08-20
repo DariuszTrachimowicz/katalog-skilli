@@ -59,39 +59,51 @@ filtruj();
 
 /* ---------- test doboru ---------- */
 
+/* Tagi darmowe punktują ranking (dokładne dopasowanie do pola `szukaj` skilli,
+   dlatego brzmienia muszą istnieć w katalogu). Trzeci element odpowiedzi to
+   tagi-kotwice płatnych: liczą się TYLKO do osobnego toru premium i nie
+   występują w żadnym darmowym skillu, więc nie ruszają darmowego wyniku. */
 const PYTANIA = [
   { q: "Czym się głównie zajmujesz?", h: "Wybierz to, co najbliższe. Możesz zaznaczyć kilka.", wiele: true,
-    o: [["Prowadzę własną firmę", ["firma", "umowa", "B2B"]],
-        ["Księgowość i finanse", ["księgowość", "faktury", "finanse"]],
+    o: [["Prowadzę własną firmę", ["mała firma", "umowa", "B2B"]],
+        ["Księgowość i finanse", ["księgowość", "faktury", "VAT"]],
         ["Kadry i rekrutacja", ["kadry", "rekrutacja"]],
-        ["Marketing i sprzedaż", ["marketing", "sprzedaż", "treści"]],
-        ["Pracuję na własnej działalności", ["freelancer", "umowa", "B2B"]],
-        ["Administracja i biuro", ["biuro", "pisma", "dokumenty"]]] },
+        ["Marketing i sprzedaż", ["copywriting", "newsletter"], ["sprzedaż"]],
+        ["Pracuję na własnej działalności", ["freelancer", "JDG", "B2B"]],
+        ["Administracja i biuro", ["pismo do urzędu", "dokumenty", "notatka"]],
+        ["Wyceniam nieruchomości jako rzeczoznawca majątkowy", [], ["rzeczoznawca majątkowy", "operat szacunkowy"]]] },
   { q: "Co zjada Ci najwięcej czasu?", h: "Jedna odpowiedź, ta najbardziej dotkliwa.", wiele: false,
-    o: [["Pisanie i poprawianie dokumentów", ["dokumenty", "pisma", "biuro"]],
-        ["Przepisywanie danych między plikami", ["faktury", "dane", "księgowość"]],
-        ["Maile i komunikacja", ["komunikacja", "maile"]],
-        ["Czytanie długich dokumentów", ["umowa", "kontrakt", "ryzyko"]]] },
+    o: [["Pisanie i poprawianie dokumentów", ["dokumenty", "pismo do urzędu", "prosty język"]],
+        ["Przepisywanie danych między plikami", ["faktury", "dane", "excel"]],
+        ["Maile i komunikacja", ["mail", "e-mail", "trudna rozmowa"]],
+        ["Czytanie długich dokumentów", ["umowa", "kontrakt", "ryzyko"]],
+        ["Przygotowywanie ofert i wycen dla klientów", ["oferta handlowa", "wycena"], ["oferta B2B"]]] },
   { q: "Podpisujesz umowy z klientami albo dostawcami?", h: "", wiele: false,
     o: [["Tak, regularnie", ["umowa", "kontrakt", "prawnik", "ryzyko", "B2B"]],
         ["Czasem, przy większych sprawach", ["umowa", "kontrakt"]],
         ["Rzadko albo wcale", []]] },
   { q: "Wystawiasz albo księgujesz faktury?", h: "", wiele: false,
-    o: [["Tak, dużo", ["faktury", "księgowość", "finanse"]],
-        ["Kilka w miesiącu", ["faktury", "finanse"]],
+    o: [["Tak, dużo", ["faktury", "księgowość", "biuro rachunkowe"]],
+        ["Kilka w miesiącu", ["faktury"]],
         ["Nie zajmuję się tym", []]] },
   { q: "Zatrudniasz albo rekrutujesz?", h: "", wiele: false,
     o: [["Tak, prowadzimy rekrutacje", ["kadry", "rekrutacja"]],
         ["Sporadycznie", ["kadry"]],
         ["Nie", []]] },
   { q: "Jak duża jest Twoja firma?", h: "", wiele: false,
-    o: [["Pracuję sam", ["freelancer", "firma"]],
-        ["Do 10 osób", ["firma"]],
-        ["11-50 osób", ["firma", "kadry"]],
-        ["Więcej niż 50", ["kadry", "raporty"]]] },
+    o: [["Pracuję sam", ["freelancer", "JDG"]],
+        ["Do 10 osób", ["mała firma"]],
+        ["11-50 osób", ["mała firma", "kadry"]],
+        ["Więcej niż 50", ["kadry", "raport miesięczny"]]] },
+  { q: "Jak u Was wygląda korzystanie z AI w pracy?", h: "Chodzi o realne użycie w pracy, nie prywatne testy.", wiele: false,
+    o: [["Korzystamy regularnie i chcę uporządkować zasady albo przygotować firmę pod AI Act", [], ["polityka AI", "AI Act"]],
+        ["Korzystamy, ale bez spisanych zasad", [], ["polityka AI"]],
+        ["Dopiero zaczynamy albo wcale", []]] },
 ];
 
-let nr = 0, zaznaczone = [], punkty = {}, wynik = [];
+/* Odpowiedzi trzymamy per pytanie i punkty liczymy dopiero przy wyniku;
+   wcześniej "wstecz" + ponowna odpowiedź dublowały punkty w liczniku. */
+let nr = 0, zaznaczone = [], odpowiedzi = [], punkty = {}, punktyKotwic = {}, wynik = [], premium = null;
 
 function rysuj() {
   if (nr >= PYTANIA.length) return pokazWynik();
@@ -106,7 +118,8 @@ function rysuj() {
       <button class="link-btn" id="wstecz"${nr === 0 ? " disabled" : ""}>&larr; Wstecz</button>
       <button class="btn" id="dalej">${nr === PYTANIA.length - 1 ? "Pokaż wynik" : "Dalej"}</button>
     </div>`;
-  zaznaczone = [];
+  zaznaczone = odpowiedzi[nr] ? [...odpowiedzi[nr]] : [];
+  zaznaczone.forEach((i) => document.querySelector(`.opt[data-i="${i}"]`)?.classList.add("on"));
 
   document.querySelectorAll(".opt").forEach((b) => {
     b.addEventListener("click", () => {
@@ -127,7 +140,7 @@ function rysuj() {
       $("qhelp").textContent = "Zaznacz przynajmniej jedną odpowiedź, żeby przejść dalej.";
       return;
     }
-    zaznaczone.forEach((i) => P.o[i][1].forEach((t) => (punkty[t] = (punkty[t] || 0) + 1)));
+    odpowiedzi[nr] = [...zaznaczone];
     nr++;
     rysuj();
   });
@@ -139,10 +152,23 @@ function pokazWynik() {
   $("qstep").textContent = "Twój zestaw";
   $("qbar").style.width = "100%";
 
+  punkty = {}; punktyKotwic = {};
+  odpowiedzi.forEach((wybory, q) => (wybory || []).forEach((i) => {
+    PYTANIA[q].o[i][1].forEach((t) => (punkty[t] = (punkty[t] || 0) + 1));
+    (PYTANIA[q].o[i][2] || []).forEach((t) => (punktyKotwic[t] = (punktyKotwic[t] || 0) + 1));
+  }));
+
   wynik = SKILLE.map((s) => ({ s, n: s.t.reduce((a, t) => a + (punkty[t] || 0), 0) }))
     .sort((a, b) => b.n - a.n || (b.s.g ? 1 : 0) - (a.s.g ? 1 : 0))
     .slice(0, 6)
     .map((r) => r.s);
+
+  // Tor premium: osobny od rankingu darmowych, wyłącznie tagi-kotwice,
+  // próg 2 sygnałów, najwyżej jedna pozycja. Bez sygnału sekcji nie ma.
+  premium = PREMIUM.map((p) => ({ p, k: p.kotwice.reduce((a, t) => a + (punktyKotwic[t] || 0), 0) }))
+    .filter((x) => x.k >= 2)
+    .sort((a, b) => b.k - a.k)
+    .map((x) => x.p)[0] || null;
 
   // Nagłówek musi mówić prawdę o liczbie pozycji, przy małym katalogu
   // obietnica "sześć umiejętności" nad jedną kartą wygląda na awarię.
@@ -164,7 +190,16 @@ function pokazWynik() {
         <a class="ritem" href="/skill/${s.id}/">
           <div class="rnum">${String(i + 1).padStart(2, "0")}</div>
           <div><b>${s.n}</b><p>${s.o}</p></div>
-        </a>`).join("")}</div>
+        </a>`).join("")}
+      ${premium ? `
+        <div class="rpremium">
+          <div class="rp-head">Poza darmowym zestawem</div>
+          <p class="rp-intro">Twoje odpowiedzi wskazują na jedną specjalizację. Mamy do niej płatny skill:</p>
+          <a class="ritem rp-item" href="/skill/${premium.id}/">
+            <div><b>${premium.n} <span class="rp-cena">${premium.cena}</span></b><p>${premium.o}</p></div>
+          </a>
+          <p class="rp-nota">To płatny skill, nie pobiera się go jak pozycji z zestawu; licencję zamawiasz na stronie oferty.${premium.trial ? " Najpierw możesz tam bezpłatnie pobrać wersję trial." : ""}</p>
+        </div>` : ""}</div>
       <div class="capture" id="cap">
         <h3>Wysłać Ci ten zestaw na maila?</h3>
         <p>Dostaniesz go jako jedną kartkę, z instrukcją instalacji i krótkim opisem, kiedy której umiejętności użyć.</p>
@@ -178,11 +213,11 @@ function pokazWynik() {
 
   $("wyslij").addEventListener("click", wyslij);
   $("mail").addEventListener("keydown", (e) => { if (e.key === "Enter") wyslij(); });
-  $("odnowa").addEventListener("click", () => { nr = 0; punkty = {}; rysuj(); });
+  $("odnowa").addEventListener("click", () => { nr = 0; odpowiedzi = []; punkty = {}; punktyKotwic = {}; premium = null; rysuj(); });
 
   // Zdarzenie do statystyk (self-hosted, bez ciasteczek), sama liczba ukończeń,
   // bez treści odpowiedzi. Gdy analityka jest wyłączona, nic się nie dzieje.
-  window.umami?.track("wynik-testu", { skilli: wynik.length });
+  window.umami?.track("wynik-testu", { skilli: wynik.length, premium: premium ? premium.id : "brak" });
 }
 
 async function wyslij() {
@@ -205,7 +240,7 @@ async function wyslij() {
     const odp = await fetch("/api/zapis", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: adres, wynik: wynik.map((s) => s.id) }),
+      body: JSON.stringify({ email: adres, wynik: wynik.map((s) => s.id), premium: premium ? premium.id : undefined }),
     });
     const dane = await odp.json().catch(() => ({}));
 

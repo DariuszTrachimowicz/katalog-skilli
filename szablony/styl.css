@@ -312,3 +312,11 @@ a.pl-znak:hover{color:var(--ink)}
 .podpis-oferty .p-nazwa{font-family:var(--serif);font-size:34px;letter-spacing:-.02em;color:var(--ink)}
 .podpis-oferty .p-nazwa b{font-weight:400;color:var(--red-tx)}
 .podpis-oferty .p-stempel{width:96px;height:96px;transform:rotate(-9deg);opacity:.9;margin:-10px 0 -14px -12px;flex:0 0 auto}
+
+/* wynik testu: sekcja platna "Poza darmowym zestawem" (osobny tor, max 1 pozycja) */
+.rpremium{background:var(--surface);padding:18px 20px;border-top:2px solid #B5791E}
+.rpremium .rp-head{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#956400;margin-bottom:8px}
+.rpremium .rp-intro{font-size:13.5px;color:var(--ink-2);margin-bottom:12px}
+.rpremium .rp-item{border:1px solid var(--line);border-radius:8px;margin:0 0 10px}
+.rpremium .rp-cena{font-family:var(--mono);font-size:11.5px;color:#956400;background:var(--yellow-bg);border-radius:9999px;padding:3px 10px;margin-left:8px;white-space:nowrap;vertical-align:1px}
+.rpremium .rp-nota{font-size:12px;color:var(--muted)}

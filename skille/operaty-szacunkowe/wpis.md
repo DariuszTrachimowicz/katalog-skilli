@@ -4,6 +4,7 @@ kategoria: Finanse
 status: platny
 wersja: 1.0.0
 platny: true
+kotwice: rzeczoznawca majątkowy, operat szacunkowy
 cena: od 890 zł netto
 poziom: Zaawansowany
 aktualizacja: 2026-08-20
