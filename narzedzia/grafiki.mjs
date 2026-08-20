@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// Generator grafik podglądu (Open Graph, 1200×630) — po jednej na skill + karta katalogu.
+// Generator grafik podglądu (Open Graph, 1200×630), po jednej na skill + karta katalogu.
 // Uruchomienie: node narzedzia/grafiki.mjs   (wymaga Chrome na maszynie)
 //
-// Wynik trafia do szablony/og/ i jest commitowany do repo — build tylko kopiuje
+// Wynik trafia do szablony/og/ i jest commitowany do repo, build tylko kopiuje
 // gotowe PNG, więc serwer nie potrzebuje Chrome. Po dodaniu skilla uruchom ponownie.
 
 import { readFileSync, readdirSync, writeFileSync, mkdirSync, statSync, existsSync, rmSync } from "node:fs";
@@ -23,7 +23,7 @@ const CHROME = [
   "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
   "/usr/bin/chromium", "/usr/bin/chromium-browser", "/usr/bin/google-chrome",
 ].filter(Boolean).find((p) => existsSync(p));
-if (!CHROME) { console.error("Nie znalazłem Chrome — ustaw zmienną CHROME."); process.exit(1); }
+if (!CHROME) { console.error("Nie znalazłem Chrome, ustaw zmienną CHROME."); process.exit(1); }
 
 // Kolory kategorii jak na stronie, dobrane pod ciemne tło karty.
 const KOLORY = {
@@ -95,7 +95,7 @@ mkdirSync(ROBOCZY, { recursive: true });
 mkdirSync(CEL, { recursive: true });
 
 const zadania = [
-  { plik: "katalog.png", html: karta({ tytul: "Co sztuczna inteligencja może zrobić za Ciebie w Twojej pracy", opis: cfg.opisSerwisu, stopka: `${skille.length} umiejętności · za darmo · Claude i ChatGPT` }) },
+  { plik: "katalog.png", html: karta({ tytul: "Pisane od zera pod polskie realia. Nie tłumaczone.", opis: cfg.opisSerwisu, stopka: `${skille.length} umiejętności · za darmo · Claude i ChatGPT` }) },
   { plik: "regulamin.png", html: karta({ tytul: "Regulamin", opis: "Zasady korzystania z katalogu, pobierania skilli i newslettera.", stopka: cfg.nazwaSerwisu }) },
   { plik: "prywatnosc.png", html: karta({ tytul: "Prywatność", opis: "Jakie dane zbiera katalog i co się z nimi dzieje. Bez śledzenia, bez profilowania.", stopka: cfg.nazwaSerwisu }) },
   ...skille.map((s) => ({
@@ -108,7 +108,7 @@ for (const z of zadania) {
   const html = join(ROBOCZY, z.plik.replace(/\.png$/, ".html"));
   writeFileSync(html, z.html);
 
-  // Osobny profil na wywołanie — bez tego przy szybkiej serii Chrome oddaje
+  // Osobny profil na wywołanie, bez tego przy szybkiej serii Chrome oddaje
   // zadanie już działającej instancji i wraca od razu, a spóźniony renderer
   // trafia potem na posprzątany katalog roboczy i nadpisuje kartę stroną błędu.
   const cel = join(CEL, z.plik);

@@ -1,0 +1,1196 @@
+Reading additional input from stdin...
+OpenAI Codex v0.147.0
+--------
+workdir: C:\Users\CP24\AiXperts - projekty\katalog-skilli
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 01a01f6a-e019-71e3-abf6-e830392145cd
+--------
+user
+Jestes niezaleznym zespolem kreatywnym. Ponizej masz WSZYSTKIE materialy wklejone (nie czytaj plikow, nie uruchamiaj zadnych komend, nie korzystaj z internetu, odpowiedz WYLACZNIE tekstem). Wykonaj zadanie z briefu: zaproponuj WLASNA, kompletna koncepcje motywu przewodniego 'zbudowane na polskie realia' w formacie A/B/C/D z briefu, z gotowymi tekstami i wykonalnym HTML+CSS w stylu serwisu. Po polsku, bez dlugich myslnikow.
+
+===== BRIEF (docs/motyw-pl/BRIEF.md) =====
+# Brief: motyw przewodni "zbudowane na polskie realia"
+
+Cel: strona glowna skille.aixperts.pl otwiera sie dzis pytaniem "Co sztuczna
+inteligencja moze zrobic za Ciebie w Twojej pracy." Zamiast tego ma wejsc BANNER/HERO
+niosacy mysl przewodnia: te skille sa robione na polskie warunki, od zera, i to jest
+ich przewaga nad kopiami/tlumaczeniami z GitHuba. Motyw ma byc widoczny takze na
+podstronach skilli i na stronach ofert platnych (subtelnie, ale konsekwentnie).
+
+Prawdziwe przewagi do wykorzystania (nic poza nimi, zero zmyslen):
+- kazdy skill pisany recznie pod polskie realia: zl, VAT, NIP, faktury, polskie
+  urzedy i konwencje pism, polszczyzna biurowa (nie tlumaczenia szablonow),
+- granice prawne wbudowane: skille rozumieja dokumenty, nie orzekaja i nie udaja
+  prawnika (uczciwa sekcja "Na czym sie wywala" i "Czego nie robi celowo" na kazdej karcie),
+- przetestowane przez nas: Claude i ChatGPT (raporty), od 20 sierpnia 2026 takze
+  runda Gemini; statusy per skill na stronie ("Gdzie dziala"),
+- wersjonowane i aktualizowane (numer wersji na kazdej karcie),
+- 33 umiejetnosci, w tym 3 platne z audytami jakosci (panele ekspertow, sedziowie).
+
+Obecny hero (do zastapienia):
+  eyebrow: "Katalog kuratorowany · aktualizacja <data>"
+  h1: "Co sztuczna inteligencja / moze zrobic za Ciebie / w Twojej pracy."
+  lede: "Gotowe umiejetnosci do pobrania, opisane jezykiem, ktorym mowi sie w biurze...
+         Jeden plik dziala w Claude i ChatGPT. Kazda uruchomilismy sami na polskich
+         dokumentach, a jesli gdzies nie zadziala, piszemy o tym wprost."
+  stats: 33 / gotowe / 2 modele (jeden stat juz mowi "nie zescrapowanych z GitHuba")
+
+Ograniczenia twarde: jezyk polski, zero dlugich myslnikow (dywiz ok), zero emoji,
+zero sloganow pustych ("rewolucja", "nowa era"), zadnych obietnic ponad stan,
+bez szarganie konkurencji po nazwach; styl wizualny w ramach istniejacego styl.css
+(paleta, typografia; mozna dodac nowe klasy). Estetyka: elegancka, redakcyjna,
+nie "marketingowy krzyk".
+
+Oczekiwany format odpowiedzi kazdego eksperta:
+A. HERO/BANNER strony glownej: eyebrow + h1 (max 3 linie) + lede (2-3 zdania)
+   + ewentualny element wizualny (opis lub prosty HTML/CSS koncept) + co ze statami.
+B. MOTYW NA PODSTRONACH skilli: konkretny element (badge/pasek/zdanie) i gdzie.
+C. MOTYW W OFERTACH platnych: jak wpleciony (bez psucia struktury 11 sekcji).
+D. Konkretne teksty gotowe do wklejenia (nie opisy intencji).
+
+===== OBECNE HERO (build.mjs, fragment) =====
+      <p>${esc(s.skrot)}</p>
+      <div class="compat">${znacznikiZgodnosci(s)}</div>
+      <div class="card-foot">${s.wersja ? `<span class="wer" title="wersja skilla">wer. ${esc(s.wersja)}</span>` : "<span></span>"}<em>${stopka} &rarr;</em></div>
+    </a>`;
+    })
+    .join("");
+
+  const daneQuizu = skille
+    .filter((s) => String(s.platny) !== "true")
+    .map((s) => ({ id: s.id, n: s.nazwa, o: s.skrot, t: s.szukaj, g: s.status === "gotowy" }));
+
+  const tresc = `
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Katalog kuratorowany &middot; aktualizacja <strong>${dataPoPolsku(new Date())}</strong></p>
+    <h1>Co sztuczna inteligencja<br>może zrobić <em>za Ciebie</em><br>w Twojej pracy.</h1>
+    <p class="lede">Gotowe umiejętności do pobrania, opisane językiem, którym mówi się w biurze, a nie w dokumentacji technicznej. Jeden plik działa w Claude i ChatGPT. Każdą uruchomiliśmy sami na polskich dokumentach, a jeśli gdzieś nie zadziała, piszemy o tym wprost.</p>
+    <div class="hero-cta">
+      <a href="#test" class="btn">Dobierz skille dla siebie</a>
+      <a href="#katalog" class="btn ghost">Przeglądaj katalog</a>
+    </div>
+    <p class="hero-note">Test zajmuje minutę. Nie musisz nic instalować, żeby zobaczyć wynik.</p>
+    <div class="stats">
+      <div class="stat"><b>${skille.length}</b><span>umiejętności opisanych ręcznie, nie zescrapowanych z GitHuba</span></div>
+      <div class="stat"><b>${gotowe}</b><span>gotowych do pobrania i sprawdzonych na polskich dokumentach</span></div>
+      <div class="stat"><b>2 modele</b><span>każdy skill działa i w Claude, i w ChatGPT</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="test">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Nie wiesz, czego szukać? Nie musisz.</h2>
+      <p>Sześć pytań o Twoją pracę. Na końcu dostajesz zestaw umiejętności dobranych pod to, co robisz na co dzień.</p>
+    </div>
+    <div class="quiz">
+      <div class="quiz-top"><span id="qstep">Pytanie 1 z 6</span><div class="bar"><i id="qbar"></i></div></div>
+      <div class="quiz-body" id="qbody"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="katalog">
+  <div class="wrap">
+    <div class="sec-head"><h2>Katalog</h2><p>Podzielony według tego, czym się zajmujesz, nie według tego, jak działa od środka.</p></div>
+    <div class="legend">
+      <span><i style="background:#4F8A55"></i>przetestowane przez nas</span>
+      <span><i style="background:#C79A2E"></i>format zgodny, nietestowane</span>
+      <span><i style="background:#C0605E"></i>niedostępne w Polsce</span>
+    </div>
+
+===== STYL SERWISU (szablony/styl.css) =====
+:root{
+  --bg:#FBFBFA; --surface:#FFFFFF; --surface-2:#F7F6F3;
+  --line:#EAEAEA;
+  --ink:#1F2023; --ink-2:#4A4B4F; --muted:#787774;
+  --red-bg:#FDEBEC; --red-tx:#9F2F2D;
+  --blue-bg:#E1F3FE; --blue-tx:#1F6C9F;
+  --green-bg:#EDF3EC; --green-tx:#346538;
+  --yellow-bg:#FBF3DB; --yellow-tx:#956400;
+  --sans:'Inter Tight','SF Pro Display','Helvetica Neue',sans-serif;
+  --serif:'Instrument Serif','Lyon Text',Georgia,serif;
+  --mono:'IBM Plex Mono','SF Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+a{color:inherit}
+img{max-width:100%}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+.ambient{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.ambient i{position:absolute;display:block;border-radius:50%;
+  background:radial-gradient(circle at 50% 50%,rgba(190,160,120,.28),transparent 65%);
+  opacity:.05;filter:blur(40px);animation:drift 34s ease-in-out infinite alternate}
+.ambient i:nth-child(1){width:820px;height:820px;top:-260px;left:-180px}
+.ambient i:nth-child(2){width:640px;height:640px;top:38%;right:-220px;animation-duration:46s}
+@keyframes drift{from{transform:translate3d(0,0,0)}to{transform:translate3d(60px,-50px,0)}}
+
+header{position:sticky;top:0;z-index:50;background:rgba(251,251,250,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:-.01em;text-decoration:none}
+.brand-txt{display:flex;flex-direction:column;line-height:1.15;gap:3px}
+.brand-wordmark{height:10px;width:auto;display:block;opacity:.5}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{font-size:14px;color:var(--ink-2);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--ink)}
+/* Bez tego reguła .nav-links a wygrywa specyficznością i przycisk
+   dostaje ciemny tekst na ciemnym tle. */
+.nav-links a.btn{color:#fff}
+.nav-links a.btn:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border:0;border-radius:5px;
+  padding:10px 18px;font-family:var(--sans);font-size:14px;font-weight:500;cursor:pointer;text-decoration:none;
+  transition:background .2s,transform .1s}
+.btn:hover{background:#333}
+.btn:active{transform:scale(.98)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn.ghost:hover{background:var(--surface-2)}
+@media(max-width:820px){.nav-links a:not(.btn){display:none}}
+
+section{position:relative;z-index:1}
+.hero{padding:110px 0 84px;position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 16px;margin-bottom:26px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green-tx);flex:none}
+.eyebrow strong{color:var(--ink);font-weight:600}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(40px,6vw,70px);line-height:1.05;letter-spacing:-.025em;margin-bottom:24px}
+h1 em{font-style:italic;color:var(--ink-2)}
+.lede{font-size:19px;color:var(--ink-2);max-width:660px;margin-bottom:36px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-note{font-size:13px;color:var(--muted);margin-top:20px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:64px}
+.stat{background:var(--surface);padding:26px 28px}
+.stat b{display:block;font-family:var(--serif);font-size:34px;line-height:1;margin-bottom:8px}
+.stat span{font-size:13px;color:var(--muted)}
+@media(max-width:760px){.stats{grid-template-columns:1fr}}
+
+.sec{padding:96px 0;border-top:1px solid var(--line)}
+.sec-head{margin-bottom:44px;max-width:700px}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4vw,44px);line-height:1.1;letter-spacing:-.02em;margin-bottom:14px}
+.sec-head p{color:var(--muted);font-size:17px}
+
+.quiz{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.quiz-top{padding:22px 32px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:16px}
+.quiz-top span{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.bar{height:2px;background:var(--line);border-radius:2px;flex:1;max-width:220px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ink);width:0;transition:width .45s cubic-bezier(.16,1,.3,1)}
+.quiz-body{padding:44px 32px 40px}
+.q-title{font-family:var(--serif);font-size:28px;line-height:1.2;letter-spacing:-.02em;margin-bottom:8px}
+.q-help{font-size:14px;color:var(--muted);margin-bottom:28px}
+.opts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(max-width:700px){.opts{grid-template-columns:1fr}}
+.opt{display:flex;align-items:center;gap:12px;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:8px;
+  padding:16px 18px;font-family:var(--sans);font-size:15px;color:var(--ink);cursor:pointer;transition:border-color .2s,background .2s,box-shadow .2s}
+.opt:hover{border-color:#D6D6D4;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.opt.on{border-color:var(--ink);background:var(--surface-2)}
+.opt .box{width:16px;height:16px;border:1px solid #C9C9C6;border-radius:4px;flex:0 0 auto;position:relative}
+.opt.on .box{border-color:var(--ink);background:var(--ink)}
+.opt.on .box:after{content:"";position:absolute;left:4.5px;top:1.5px;width:4px;height:8px;border:solid #fff;border-width:0 1.6px 1.6px 0;transform:rotate(42deg)}
+.quiz-foot{display:flex;justify-content:space-between;align-items:center;margin-top:32px;gap:16px}
+.link-btn{background:none;border:0;font-family:var(--sans);font-size:14px;color:var(--muted);cursor:pointer;padding:6px 0}
+.link-btn:hover{color:var(--ink)}
+.link-btn[disabled]{opacity:.35;cursor:default}
+
+.result-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:start}
+@media(max-width:900px){.result-grid{grid-template-columns:1fr}}
+.rlist{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.ritem{background:var(--surface);padding:16px 20px;display:flex;gap:14px;align-items:flex-start;text-decoration:none;transition:background .2s}
+.ritem:hover{background:var(--surface-2)}
+.rnum{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:2px;min-width:20px}
+.ritem b{font-weight:600;font-size:15px;display:block;margin-bottom:2px}
+.ritem p{font-size:13.5px;color:var(--muted);line-height:1.5}
+.capture{background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:28px}
+.capture h3{font-family:var(--serif);font-size:23px;font-weight:400;line-height:1.2;margin-bottom:10px}
+.capture p{font-size:14px;color:var(--muted);margin-bottom:20px}
+input[type=email]{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:6px;font-family:var(--sans);font-size:15px;background:#fff;color:var(--ink);margin-bottom:10px}
+input[type=email]:focus{outline:none;border-color:#B9B9B6}
+.consent{font-size:12px;color:var(--muted);line-height:1.5;margin-top:12px}
+.sent{padding:22px;border:1px solid var(--green-bg);background:var(--green-bg);border-radius:8px;color:var(--green-tx);font-size:14.5px}
+.blad{padding:14px 16px;border:1px solid var(--red-bg);background:var(--red-bg);border-radius:8px;color:var(--red-tx);font-size:14px;margin-bottom:12px}
+
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.chip{background:var(--surface);border:1px solid var(--line);border-radius:9999px;padding:7px 15px;font-family:var(--sans);
+  font-size:12.5px;color:var(--ink-2);cursor:pointer;transition:all .2s}
+.chip:hover{border-color:#D6D6D4}
+.chip.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.searchrow{display:flex;gap:10px;margin-bottom:32px;flex-wrap:wrap}
+.search{flex:1;min-width:260px;position:relative}
+.search input{width:100%;padding:12px 14px 12px 40px;border:1px solid var(--line);border-radius:8px;font-family:var(--sans);font-size:15px;background:var(--surface)}
+.search input:focus{outline:none;border-color:#B9B9B6}
+.search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);opacity:.35}
+.count{font-family:var(--mono);font-size:11.5px;color:var(--muted);align-self:center;letter-spacing:.06em}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.grid{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px;text-decoration:none;
+  display:flex;flex-direction:column;transition:box-shadow .2s,border-color .2s}
+.card:hover{box-shadow:0 2px 8px rgba(0,0,0,.04);border-color:#DDDDDA}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px}
+.tag{display:inline-block;border-radius:9999px;padding:4px 10px;font-size:10px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.t-prawo{background:var(--red-bg);color:var(--red-tx)}
+.t-biuro{background:var(--blue-bg);color:var(--blue-tx)}
+.t-finanse{background:var(--green-bg);color:var(--green-tx)}
+.t-kadry{background:var(--yellow-bg);color:var(--yellow-tx)}
+.t-marketing,.t-dane{background:var(--surface-2);color:var(--ink-2)}
+.dot{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted);font-family:var(--mono);letter-spacing:.04em}
+.dot i{width:7px;height:7px;border-radius:50%;display:block}
+.d-gotowy i{background:#4F8A55}.d-wkrotce i{background:#C4C4C1}
+.d-platny{color:#B5791E}.d-platny i{background:#C79A2E}
+.card h3{font-family:var(--sans);font-size:17px;font-weight:600;letter-spacing:-.01em;margin-bottom:8px}
+.card p{font-size:14px;color:var(--ink-2);line-height:1.55;flex:1}
+.compat{display:flex;gap:6px;flex-wrap:wrap;margin-top:16px}
+.pf{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:9999px;
+  padding:3px 9px;font-size:10.5px;font-family:var(--mono);color:var(--muted);background:var(--surface)}
+.pf i{width:5px;height:5px;border-radius:50%;display:block;flex:0 0 auto}
+.pf.ok i{background:#4F8A55}.pf.format i{background:#C79A2E}.pf.brak i{background:#C0605E}
+.pf.ok{color:var(--green-tx);background:var(--green-bg);border-color:transparent}
+.legend{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:26px;font-size:12.5px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend i{width:6px;height:6px;border-radius:50%;display:block}
+/* Pole „poziom” zniknęło z karty: wszystkie skille działają bez konfiguracji,
+   więc powtarzanie tego trzydzieści razy było szumem. Zostaje na podstronie. */
+.card-foot{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.card-foot .wer{font-size:12px;color:var(--muted)}
+.card-foot em{font-style:normal;font-size:13px;font-weight:500}
+
+/* strona skilla */
+.art{max-width:760px;margin:0 auto;padding:60px 0 40px}
+.krusz{font-size:13px;color:var(--muted);margin-bottom:26px}
+.krusz a{text-decoration:none}
+.krusz a:hover{color:var(--ink)}
+.art h1{font-size:clamp(34px,5vw,52px);margin-bottom:18px}
+.art .meta{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:30px}
+.art .skrot{font-size:19px;color:var(--ink-2);background:var(--surface-2);border:1px solid var(--line);
+  border-radius:10px;padding:22px 24px;margin-bottom:8px;line-height:1.6}
+.blok{border-top:1px solid var(--line);padding:28px 0}
+.blok h3{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;font-weight:400}
+.blok p{font-size:16.5px;color:var(--ink-2);line-height:1.7;margin-bottom:14px}
+.blok p:last-child{margin-bottom:0}
+.blok ul,.blok ol{list-style:none;display:flex;flex-direction:column;gap:12px}
+.blok li{padding-left:20px;position:relative;font-size:16px;color:var(--ink-2);line-height:1.65}
+.blok li:before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:#C9C9C6}
+.blok ol{counter-reset:n}
+.blok ol li{counter-increment:n}
+.blok ol li:before{content:counter(n);background:none;font-family:var(--mono);font-size:12px;color:var(--muted);top:2px;width:auto;height:auto}
+.blok strong{color:var(--ink);font-weight:600}
+.blok code{font-family:var(--mono);font-size:13.5px;background:var(--surface-2);border:1px solid var(--line);border-radius:4px;padding:2px 6px}
+.blok blockquote{border-left:2px solid var(--line);padding-left:20px;color:var(--muted)}
+.tabela{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line)}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:400;background:var(--surface-2)}
+tr:last-child td{border-bottom:0}
+.gdzie{display:flex;flex-direction:column;gap:14px}
+.gdzie div{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--ink-2);line-height:1.6}
+.gdzie .pf{flex:0 0 auto;margin-top:2px}
+.steps{display:flex;flex-direction:column;gap:14px}
+.step{display:flex;gap:14px;align-items:flex-start;font-size:15.5px;color:var(--ink-2)}
+.step b{font-family:var(--mono);font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:4px;
+  width:22px;height:22px;display:grid;place-items:center;flex:0 0 auto;margin-top:3px;background:var(--surface-2)}
+kbd{font-family:var(--mono);font-size:12.5px;border:1px solid var(--line);background:var(--surface-2);border-radius:4px;padding:2px 6px}
+.dl{display:flex;align-items:center;justify-content:space-between;gap:16px;border:1px solid var(--line);
+  border-radius:10px;padding:22px 24px;background:var(--surface-2);margin:30px 0}
+.dl b{display:block;font-family:var(--mono);font-size:13px;margin-bottom:3px}
+.dl span{font-size:12.5px;color:var(--muted)}
+.dl-form{display:flex;gap:10px;flex-wrap:wrap}
+.dl-form input{padding:11px 13px;font-size:14px;border:1px solid var(--line);border-radius:8px;
+  min-width:210px;background:#fff;font-family:inherit}
+.dl-ok{border-color:#9dc3b4;background:#eef6f2}
+.dl-rodo{font-size:12px;color:var(--muted);margin:-18px 0 30px}
+.dl-rodo a{color:inherit}
+.oferta-akcje{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:26px 0 6px}
+.oferta-akcje .dl-rodo{margin:0;max-width:340px}
+.disc{font-size:13px;color:var(--muted);line-height:1.6;font-style:italic;border-top:1px solid var(--line);padding-top:24px;margin-top:8px}
+.powrot{margin:50px 0 0;display:flex;gap:12px;flex-wrap:wrap}
+
+.cta{background:var(--ink);border-radius:14px;padding:64px 56px;color:#fff;position:relative;overflow:hidden}
+.cta:before{content:"";position:absolute;width:520px;height:520px;right:-140px;top:-180px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.10),transparent 62%)}
+.cta h2{color:#fff;max-width:600px;position:relative}
+.cta p{color:rgba(255,255,255,.66);max-width:520px;margin:14px 0 30px;font-size:17px;position:relative}
+.cta .btn{background:#fff;color:var(--ink);position:relative}
+.cta .btn:hover{background:#EFEFED}
+@media(max-width:680px){.cta{padding:44px 28px}}
+
+/* filtr platnosci obok kategorii */
+.chip-sep{flex:0 0 1px;align-self:stretch;background:var(--line);margin:2px 6px}
+.chip.chip-p.on{background:#B5791E;border-color:#B5791E;color:#fff}
+
+/* ---------- strona oferty (platny skill) ---------- */
+/* Akcent bursztynowy = tozsamosc platnych (spojne ze znacznikiem .d-platny). */
+.oferta{--akc:#B5791E;--akc-bg:#FBF3DB}
+.stawka-box{background:var(--yellow-bg);border:1px solid #EBD9A6;border-radius:12px;padding:26px 24px}
+.stawka-duze{font-family:var(--serif);font-size:clamp(24px,4vw,34px);line-height:1.15;color:#8A6412}
+.stawka-box p{margin-top:12px;margin-bottom:0}
+
+.zakres2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.zakres2 h4{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;font-weight:400}
+.zakres2 ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.zakres2 li{position:relative;padding-left:24px;font-size:15.5px;color:var(--ink-2);line-height:1.6}
+.zakres2 li:before{content:"";position:absolute}
+.zakres2 .tak-lista li:before{content:"\2713";left:0;top:0;color:#4F8A55;font-weight:700;width:auto;height:auto;background:none}
+.zakres2 .nie-lista li:before{content:"\2717";left:0;top:0;color:var(--muted);width:auto;height:auto;background:none}
+
+.pakiety{display:flex;gap:16px;align-items:stretch;margin-top:6px}
+.pakiet{flex:1 1 0;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;position:relative}
+.pakiet.wyroz{border:2px solid #B5791E;box-shadow:0 6px 24px rgba(140,100,20,.10)}
+.pakiet .pakiet-kup{margin-top:auto;align-self:flex-start;margin-top:16px}
+.pakiet .badge{position:absolute;top:-11px;left:20px;right:20px;text-align:center;background:#B5791E;color:#fff;font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;padding:5px 10px;border-radius:9999px;line-height:1.3}
+.pakiet-nazwa{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.pakiet-dla{font-size:13px;color:var(--muted);line-height:1.5;margin-bottom:16px;min-height:2.8em}
+.pakiet-cena{font-family:var(--serif);font-size:34px;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+.pakiet-cena-sub{font-size:12px;color:var(--muted);margin:4px 0 16px}
+.pakiet ul{list-style:none;display:flex;flex-direction:column;gap:12px;margin:0 0 4px;flex:1}
+.pakiet li{position:relative;padding-left:22px;font-size:14px;color:var(--ink-2);line-height:1.5}
+.pakiet li:before{content:"\2713";position:absolute;left:0;top:0;color:#4F8A55;font-weight:700;width:auto;height:auto;background:none}
+.pakiet li.nie:before{content:"\2717";color:var(--muted)}
+.pakiet li .powod{display:block;font-size:12px;color:var(--muted);line-height:1.45;margin-top:2px}
+.pakiety-nota{font-size:13px;color:var(--muted);margin-top:16px}
+@media(max-width:680px){.pakiety{flex-direction:column}.pakiet.wyroz{order:-1}.zakres2{grid-template-columns:1fr}.kafle{grid-template-columns:1fr}}
+
+.kafle{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:4px}
+.kafel{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:22px}
+.kafel.po{background:var(--green-bg);border-color:#CBDFC9}
+.kafel-et{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.kafel.po .kafel-et{color:var(--green-tx)}
+.kafel-liczba{font-family:var(--serif);font-size:clamp(34px,6vw,52px);line-height:1.1;color:var(--ink)}
+.kafel-opis{font-size:13.5px;color:var(--muted);margin-top:4px}
+
+.os{list-style:none;display:flex;flex-direction:column}
+.os li{position:relative;padding:0 0 22px 26px;font-size:15.5px}
+.os li:before{content:"";position:absolute;left:5px;top:8px;bottom:-4px;width:2px;background:var(--line)}
+.os li:last-child:before{display:none}
+.os li:after{content:"";position:absolute;left:0;top:5px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:3px solid #B5791E}
+.os-czas{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#B5791E}
+.os b{display:block;color:var(--ink);font-weight:600;margin:2px 0 2px}
+.os span.o{display:block;font-size:14.5px;color:var(--muted);line-height:1.55}
+
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-of-type{border-top:1px solid var(--line)}
+.faq summary{cursor:pointer;font-weight:600;color:var(--ink);padding:16px 30px 16px 0;position:relative;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:4px;top:13px;font-size:20px;font-weight:400;color:#B5791E}
+.faq details[open] summary:after{content:"\2013"}
+.faq details>p{padding:0 0 16px;color:var(--ink-2);font-size:15.5px;line-height:1.65}
+
+.oferta-cta{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:34px 28px;text-align:center}
+.oferta-cta h3{font-family:var(--sans);font-size:22px;letter-spacing:0;text-transform:none;color:var(--ink);margin-bottom:8px}
+.oferta-cta .lead{font-size:16px;color:var(--ink-2);margin-bottom:20px}
+.formalnosci{margin-top:26px;padding-top:22px;border-top:1px solid var(--line);text-align:left}
+.formalnosci .naglowek-f{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.formalnosci ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.formalnosci li{font-size:13.5px;color:var(--muted);line-height:1.55}
+.formalnosci strong{color:var(--ink-2)}
+
+footer{border-top:1px solid var(--line);padding:44px 0;margin-top:96px}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--ink)}
+codex
+Koncepcja przewodnia: „Punkt wyjścia: Polska”.
+
+Motyw podkreśla, że polskie warunki nie są warstwą językową dodaną na końcu. Są częścią konstrukcji każdego skilla.
+
+## A. HERO strony głównej
+
+Eyebrow:
+
+> Punkt wyjścia: Polska · aktualizacja [data]
+
+H1:
+
+> Polskie realia to nie dopisek.  
+> *To punkt wyjścia.*
+
+Lede:
+
+> Każdy skill piszemy ręcznie od zera dla pracy ze złotymi, VAT-em, NIP-em, fakturami oraz polskimi urzędami i konwencjami pism. Testujemy go sami w Claude i ChatGPT, a od 20 sierpnia 2026 prowadzimy także rundę Gemini. Gdy zadanie dotyka prawa, skill pomaga zrozumieć dokument, ale nie orzeka i nie udaje prawnika.
+
+Po prawej stronie proponuję redakcyjną kartę dowodową „Co uwzględniamy od początku”. Nie jest ilustracją dekoracyjną. Pokazuje konkrety, na których opiera się główna teza.
+
+Staty zmieniłbym na:
+
+- `33`: umiejętności napisane ręcznie od zera
+- `3`: płatne umiejętności z audytami jakości
+- `Status`: raporty Claude i ChatGPT, runda Gemini rozpoczęta 20 sierpnia 2026
+
+Liczbę `${gotowe}` warto przenieść nad katalog, ponieważ opisuje aktualny stan katalogu, a nie główną przewagę.
+
+## B. Motyw na podstronach skilli
+
+Bezpośrednio pod metadanymi, przed skróconym opisem, pojawia się wąski pasek:
+
+> Punkt wyjścia: Polska  
+> Pisany ręcznie od zera pod polskie realia. Uwzględnia polskie dokumenty, pojęcia i konwencje tam, gdzie dotyczą tego zadania. Status testów, ograniczenia i celowe wyłączenia są opisane niżej.  
+> wer. [numer]
+
+Pasek nie zastępuje sekcji „Gdzie działa”, „Na czym się wywala” ani „Czego nie robi celowo”. Kieruje do nich uwagę i łączy je z główną obietnicą serwisu.
+
+Na kartach katalogowych pozostawiłbym obecny numer wersji i statusy modeli. Nie dodawałbym kolejnej plakietki, aby nie przeciążyć siatki.
+
+## C. Motyw w ofertach płatnych
+
+Nie dodawałbym dwunastej sekcji. Pod wprowadzeniem oferty, przed pierwszą z 11 sekcji, umieściłbym wyróżniony blok redakcyjny:
+
+> Punkt wyjścia: Polska · wer. [numer]
+>
+> **Lokalne realia są częścią zakresu.**
+>
+> Ten skill uwzględnia zł, VAT, NIP, faktury, polskie urzędy, konwencje pism i polszczyznę biurową wszędzie tam, gdzie wiąże się to z jego zadaniem. Rozumie dokumenty, ale nie orzeka i nie udaje prawnika.
+>
+> To jedna z 3 płatnych umiejętności z audytem jakości obejmującym panele ekspertów i sędziów. Aktualny status modeli znajduje się w sekcji „Gdzie działa”.
+
+Bursztynowa krawędź łączy ten element z istniejącą identyfikacją ofert płatnych. Układ 11 sekcji pozostaje bez zmian.
+
+## D. Gotowe teksty i implementacja
+
+### Nowe HERO
+
+```html
+<section class="hero hero-pl">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          Punkt wyjścia: Polska &middot;
+          aktualizacja <strong>${dataPoPolsku(new Date())}</strong>
+        </p>
+
+        <h1>
+          Polskie realia to nie dopisek.<br>
+          <em>To punkt wyjścia.</em>
+        </h1>
+
+        <p class="lede">
+          Każdy skill piszemy ręcznie od zera dla pracy ze złotymi,
+          VAT-em, NIP-em, fakturami oraz polskimi urzędami i konwencjami
+          pism. Testujemy go sami w Claude i ChatGPT, a od 20 sierpnia
+          2026 prowadzimy także rundę Gemini. Gdy zadanie dotyka prawa,
+          skill pomaga zrozumieć dokument, ale nie orzeka i nie udaje
+          prawnika.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#test" class="btn">Dobierz skille dla siebie</a>
+          <a href="#katalog" class="btn ghost">Przeglądaj katalog</a>
+        </div>
+
+        <p class="hero-note">
+          Test zajmuje minutę. Nie musisz nic instalować, żeby zobaczyć wynik.
+        </p>
+      </div>
+
+      <aside class="pl-proof-card" aria-label="Co uwzględniamy od początku">
+        <p class="pl-proof-kicker">Zbudowane na polskie realia</p>
+        <h2>Co uwzględniamy od początku</h2>
+
+        <dl class="pl-proof-list">
+          <div>
+            <dt>Rozliczenia i dane</dt>
+            <dd>zł, VAT, NIP, faktury</dd>
+          </div>
+          <div>
+            <dt>Instytucje</dt>
+            <dd>polskie urzędy i konwencje pism</dd>
+          </div>
+          <div>
+            <dt>Język</dt>
+            <dd>polszczyzna biurowa</dd>
+          </div>
+          <div>
+            <dt>Granice</dt>
+            <dd>wyjaśnia, nie orzeka</dd>
+          </div>
+        </dl>
+
+        <p class="pl-proof-note">
+          Tam, gdzie te elementy dotyczą konkretnego zadania.
+        </p>
+
+        <p class="pl-proof-foot">
+          „Gdzie działa” &middot; jawne ograniczenia &middot; numer wersji
+        </p>
+      </aside>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <b>${skille.length}</b>
+        <span>umiejętności napisanych ręcznie od zera</span>
+      </div>
+
+      <div class="stat">
+        <b>3</b>
+        <span>
+          płatne umiejętności z audytami jakości prowadzonymi przez
+          panele ekspertów i sędziów
+        </span>
+      </div>
+
+      <div class="stat">
+        <b>Status</b>
+        <span>
+          raporty z Claude i ChatGPT; runda Gemini rozpoczęta
+          20 sierpnia 2026
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+### Pasek na stronie skilla
+
+Wstawić po `.meta`, przed `.skrot`:
+
+```html
+<aside class="pl-origin-strip">
+  <span class="pl-origin-label">Punkt wyjścia: Polska</span>
+
+  <p>
+    Pisany ręcznie od zera pod polskie realia. Uwzględnia polskie
+    dokumenty, pojęcia i konwencje tam, gdzie dotyczą tego zadania.
+    Status testów, ograniczenia i celowe wyłączenia są opisane niżej.
+  </p>
+
+  ${s.wersja
+    ? `<span class="pl-origin-version">wer. ${esc(s.wersja)}</span>`
+    : ""}
+</aside>
+```
+
+### Blok w ofercie płatnej
+
+Wstawić przed pierwszym elementem `.blok`:
+
+```html
+<aside class="offer-origin">
+  <p class="offer-origin-label">
+    Punkt wyjścia: Polska
+    ${s.wersja ? `&middot; wer. ${esc(s.wersja)}` : ""}
+  </p>
+
+  <h3>Lokalne realia są częścią zakresu.</h3>
+
+  <p>
+    Ten skill uwzględnia zł, VAT, NIP, faktury, polskie urzędy,
+    konwencje pism i polszczyznę biurową wszędzie tam, gdzie wiąże się
+    to z jego zadaniem. Rozumie dokumenty, ale nie orzeka i nie udaje
+    prawnika.
+  </p>
+
+  <p class="offer-origin-note">
+    To jedna z 3 płatnych umiejętności z audytem jakości obejmującym
+    panele ekspertów i sędziów. Aktualny status modeli znajduje się
+    w sekcji „Gdzie działa”.
+  </p>
+</aside>
+```
+
+### Liczba gotowych nad katalogiem
+
+```html
+<span class="count">
+  ${gotowe} gotowych do pobrania &middot; ${skille.length} łącznie
+</span>
+```
+
+### CSS do dopisania
+
+```css
+/* Motyw przewodni: Punkt wyjścia Polska */
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.45fr) minmax(300px,.75fr);
+  gap:clamp(36px,6vw,80px);
+  align-items:end;
+}
+
+.hero-copy{
+  min-width:0;
+}
+
+.pl-proof-card{
+  background:linear-gradient(180deg,var(--surface),var(--surface-2));
+  border:1px solid var(--line);
+  border-top:3px solid var(--ink);
+  border-radius:12px;
+  padding:28px;
+  box-shadow:0 2px 8px rgba(0,0,0,.03);
+}
+
+.pl-proof-kicker,
+.offer-origin-label{
+  font-family:var(--mono);
+  font-size:10.5px;
+  line-height:1.4;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:12px;
+}
+
+.pl-proof-card h2{
+  font-family:var(--serif);
+  font-size:28px;
+  line-height:1.1;
+  letter-spacing:-.02em;
+  margin-bottom:22px;
+}
+
+.pl-proof-list{
+  display:flex;
+  flex-direction:column;
+}
+
+.pl-proof-list > div{
+  display:grid;
+  grid-template-columns:130px 1fr;
+  gap:16px;
+  padding:11px 0;
+  border-top:1px solid var(--line);
+}
+
+.pl-proof-list dt{
+  font-family:var(--mono);
+  font-size:10px;
+  line-height:1.5;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+.pl-proof-list dd{
+  font-size:14px;
+  line-height:1.5;
+  color:var(--ink-2);
+}
+
+.pl-proof-note{
+  margin-top:16px;
+  font-size:12px;
+  line-height:1.5;
+  color:var(--muted);
+}
+
+.pl-proof-foot{
+  margin-top:18px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+  font-family:var(--mono);
+  font-size:10px;
+  line-height:1.6;
+  letter-spacing:.04em;
+  color:var(--green-tx);
+}
+
+.pl-origin-strip{
+  display:grid;
+  grid-template-columns:160px 1fr auto;
+  gap:18px;
+  align-items:start;
+  background:var(--surface-2);
+  border:1px solid var(--line);
+  border-left:3px solid var(--ink);
+  border-radius:9px;
+  padding:18px 20px;
+  margin-bottom:18px;
+}
+
+.pl-origin-label,
+.pl-origin-version{
+  font-family:var(--mono);
+  font-size:10.5px;
+  line-height:1.5;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.pl-origin-label{
+  color:var(--ink);
+}
+
+.pl-origin-version{
+  color:var(--muted);
+  white-space:nowrap;
+}
+
+.pl-origin-strip p{
+  font-size:13.5px;
+  line-height:1.6;
+  color:var(--ink-2);
+}
+
+.offer-origin{
+  background:var(--surface-2);
+  border:1px solid var(--line);
+  border-left:3px solid var(--akc);
+  border-radius:12px;
+  padding:26px 24px;
+  margin:8px 0 30px;
+}
+
+.offer-origin-label{
+  color:var(--akc);
+}
+
+.offer-origin h3{
+  font-family:var(--serif);
+  font-size:27px;
+  font-weight:400;
+  line-height:1.15;
+  color:var(--ink);
+  margin-bottom:12px;
+}
+
+.offer-origin > p:not(.offer-origin-label){
+  font-size:15.5px;
+  line-height:1.65;
+  color:var(--ink-2);
+}
+
+.offer-origin-note{
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+  font-size:13px !important;
+  color:var(--muted) !important;
+}
+
+@media(max-width:900px){
+  .hero-grid{
+    grid-template-columns:1fr;
+    align-items:start;
+  }
+
+  .pl-proof-card{
+    max-width:660px;
+  }
+}
+
+@media(max-width:680px){
+  .pl-origin-strip{
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+
+  .pl-proof-list > div{
+    grid-template-columns:1fr;
+    gap:3px;
+  }
+
+  .offer-origin{
+    padding:22px 20px;
+  }
+}
+```
+tokens used
+32 471
+Koncepcja przewodnia: „Punkt wyjścia: Polska”.
+
+Motyw podkreśla, że polskie warunki nie są warstwą językową dodaną na końcu. Są częścią konstrukcji każdego skilla.
+
+## A. HERO strony głównej
+
+Eyebrow:
+
+> Punkt wyjścia: Polska · aktualizacja [data]
+
+H1:
+
+> Polskie realia to nie dopisek.  
+> *To punkt wyjścia.*
+
+Lede:
+
+> Każdy skill piszemy ręcznie od zera dla pracy ze złotymi, VAT-em, NIP-em, fakturami oraz polskimi urzędami i konwencjami pism. Testujemy go sami w Claude i ChatGPT, a od 20 sierpnia 2026 prowadzimy także rundę Gemini. Gdy zadanie dotyka prawa, skill pomaga zrozumieć dokument, ale nie orzeka i nie udaje prawnika.
+
+Po prawej stronie proponuję redakcyjną kartę dowodową „Co uwzględniamy od początku”. Nie jest ilustracją dekoracyjną. Pokazuje konkrety, na których opiera się główna teza.
+
+Staty zmieniłbym na:
+
+- `33`: umiejętności napisane ręcznie od zera
+- `3`: płatne umiejętności z audytami jakości
+- `Status`: raporty Claude i ChatGPT, runda Gemini rozpoczęta 20 sierpnia 2026
+
+Liczbę `${gotowe}` warto przenieść nad katalog, ponieważ opisuje aktualny stan katalogu, a nie główną przewagę.
+
+## B. Motyw na podstronach skilli
+
+Bezpośrednio pod metadanymi, przed skróconym opisem, pojawia się wąski pasek:
+
+> Punkt wyjścia: Polska  
+> Pisany ręcznie od zera pod polskie realia. Uwzględnia polskie dokumenty, pojęcia i konwencje tam, gdzie dotyczą tego zadania. Status testów, ograniczenia i celowe wyłączenia są opisane niżej.  
+> wer. [numer]
+
+Pasek nie zastępuje sekcji „Gdzie działa”, „Na czym się wywala” ani „Czego nie robi celowo”. Kieruje do nich uwagę i łączy je z główną obietnicą serwisu.
+
+Na kartach katalogowych pozostawiłbym obecny numer wersji i statusy modeli. Nie dodawałbym kolejnej plakietki, aby nie przeciążyć siatki.
+
+## C. Motyw w ofertach płatnych
+
+Nie dodawałbym dwunastej sekcji. Pod wprowadzeniem oferty, przed pierwszą z 11 sekcji, umieściłbym wyróżniony blok redakcyjny:
+
+> Punkt wyjścia: Polska · wer. [numer]
+>
+> **Lokalne realia są częścią zakresu.**
+>
+> Ten skill uwzględnia zł, VAT, NIP, faktury, polskie urzędy, konwencje pism i polszczyznę biurową wszędzie tam, gdzie wiąże się to z jego zadaniem. Rozumie dokumenty, ale nie orzeka i nie udaje prawnika.
+>
+> To jedna z 3 płatnych umiejętności z audytem jakości obejmującym panele ekspertów i sędziów. Aktualny status modeli znajduje się w sekcji „Gdzie działa”.
+
+Bursztynowa krawędź łączy ten element z istniejącą identyfikacją ofert płatnych. Układ 11 sekcji pozostaje bez zmian.
+
+## D. Gotowe teksty i implementacja
+
+### Nowe HERO
+
+```html
+<section class="hero hero-pl">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          Punkt wyjścia: Polska &middot;
+          aktualizacja <strong>${dataPoPolsku(new Date())}</strong>
+        </p>
+
+        <h1>
+          Polskie realia to nie dopisek.<br>
+          <em>To punkt wyjścia.</em>
+        </h1>
+
+        <p class="lede">
+          Każdy skill piszemy ręcznie od zera dla pracy ze złotymi,
+          VAT-em, NIP-em, fakturami oraz polskimi urzędami i konwencjami
+          pism. Testujemy go sami w Claude i ChatGPT, a od 20 sierpnia
+          2026 prowadzimy także rundę Gemini. Gdy zadanie dotyka prawa,
+          skill pomaga zrozumieć dokument, ale nie orzeka i nie udaje
+          prawnika.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#test" class="btn">Dobierz skille dla siebie</a>
+          <a href="#katalog" class="btn ghost">Przeglądaj katalog</a>
+        </div>
+
+        <p class="hero-note">
+          Test zajmuje minutę. Nie musisz nic instalować, żeby zobaczyć wynik.
+        </p>
+      </div>
+
+      <aside class="pl-proof-card" aria-label="Co uwzględniamy od początku">
+        <p class="pl-proof-kicker">Zbudowane na polskie realia</p>
+        <h2>Co uwzględniamy od początku</h2>
+
+        <dl class="pl-proof-list">
+          <div>
+            <dt>Rozliczenia i dane</dt>
+            <dd>zł, VAT, NIP, faktury</dd>
+          </div>
+          <div>
+            <dt>Instytucje</dt>
+            <dd>polskie urzędy i konwencje pism</dd>
+          </div>
+          <div>
+            <dt>Język</dt>
+            <dd>polszczyzna biurowa</dd>
+          </div>
+          <div>
+            <dt>Granice</dt>
+            <dd>wyjaśnia, nie orzeka</dd>
+          </div>
+        </dl>
+
+        <p class="pl-proof-note">
+          Tam, gdzie te elementy dotyczą konkretnego zadania.
+        </p>
+
+        <p class="pl-proof-foot">
+          „Gdzie działa” &middot; jawne ograniczenia &middot; numer wersji
+        </p>
+      </aside>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <b>${skille.length}</b>
+        <span>umiejętności napisanych ręcznie od zera</span>
+      </div>
+
+      <div class="stat">
+        <b>3</b>
+        <span>
+          płatne umiejętności z audytami jakości prowadzonymi przez
+          panele ekspertów i sędziów
+        </span>
+      </div>
+
+      <div class="stat">
+        <b>Status</b>
+        <span>
+          raporty z Claude i ChatGPT; runda Gemini rozpoczęta
+          20 sierpnia 2026
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+### Pasek na stronie skilla
+
+Wstawić po `.meta`, przed `.skrot`:
+
+```html
+<aside class="pl-origin-strip">
+  <span class="pl-origin-label">Punkt wyjścia: Polska</span>
+
+  <p>
+    Pisany ręcznie od zera pod polskie realia. Uwzględnia polskie
+    dokumenty, pojęcia i konwencje tam, gdzie dotyczą tego zadania.
+    Status testów, ograniczenia i celowe wyłączenia są opisane niżej.
+  </p>
+
+  ${s.wersja
+    ? `<span class="pl-origin-version">wer. ${esc(s.wersja)}</span>`
+    : ""}
+</aside>
+```
+
+### Blok w ofercie płatnej
+
+Wstawić przed pierwszym elementem `.blok`:
+
+```html
+<aside class="offer-origin">
+  <p class="offer-origin-label">
+    Punkt wyjścia: Polska
+    ${s.wersja ? `&middot; wer. ${esc(s.wersja)}` : ""}
+  </p>
+
+  <h3>Lokalne realia są częścią zakresu.</h3>
+
+  <p>
+    Ten skill uwzględnia zł, VAT, NIP, faktury, polskie urzędy,
+    konwencje pism i polszczyznę biurową wszędzie tam, gdzie wiąże się
+    to z jego zadaniem. Rozumie dokumenty, ale nie orzeka i nie udaje
+    prawnika.
+  </p>
+
+  <p class="offer-origin-note">
+    To jedna z 3 płatnych umiejętności z audytem jakości obejmującym
+    panele ekspertów i sędziów. Aktualny status modeli znajduje się
+    w sekcji „Gdzie działa”.
+  </p>
+</aside>
+```
+
+### Liczba gotowych nad katalogiem
+
+```html
+<span class="count">
+  ${gotowe} gotowych do pobrania &middot; ${skille.length} łącznie
+</span>
+```
+
+### CSS do dopisania
+
+```css
+/* Motyw przewodni: Punkt wyjścia Polska */
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.45fr) minmax(300px,.75fr);
+  gap:clamp(36px,6vw,80px);
+  align-items:end;
+}
+
+.hero-copy{
+  min-width:0;
+}
+
+.pl-proof-card{
+  background:linear-gradient(180deg,var(--surface),var(--surface-2));
+  border:1px solid var(--line);
+  border-top:3px solid var(--ink);
+  border-radius:12px;
+  padding:28px;
+  box-shadow:0 2px 8px rgba(0,0,0,.03);
+}
+
+.pl-proof-kicker,
+.offer-origin-label{
+  font-family:var(--mono);
+  font-size:10.5px;
+  line-height:1.4;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:12px;
+}
+
+.pl-proof-card h2{
+  font-family:var(--serif);
+  font-size:28px;
+  line-height:1.1;
+  letter-spacing:-.02em;
+  margin-bottom:22px;
+}
+
+.pl-proof-list{
+  display:flex;
+  flex-direction:column;
+}
+
+.pl-proof-list > div{
+  display:grid;
+  grid-template-columns:130px 1fr;
+  gap:16px;
+  padding:11px 0;
+  border-top:1px solid var(--line);
+}
+
+.pl-proof-list dt{
+  font-family:var(--mono);
+  font-size:10px;
+  line-height:1.5;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+.pl-proof-list dd{
+  font-size:14px;
+  line-height:1.5;
+  color:var(--ink-2);
+}
+
+.pl-proof-note{
+  margin-top:16px;
+  font-size:12px;
+  line-height:1.5;
+  color:var(--muted);
+}
+
+.pl-proof-foot{
+  margin-top:18px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+  font-family:var(--mono);
+  font-size:10px;
+  line-height:1.6;
+  letter-spacing:.04em;
+  color:var(--green-tx);
+}
+
+.pl-origin-strip{
+  display:grid;
+  grid-template-columns:160px 1fr auto;
+  gap:18px;
+  align-items:start;
+  background:var(--surface-2);
+  border:1px solid var(--line);
+  border-left:3px solid var(--ink);
+  border-radius:9px;
+  padding:18px 20px;
+  margin-bottom:18px;
+}
+
+.pl-origin-label,
+.pl-origin-version{
+  font-family:var(--mono);
+  font-size:10.5px;
+  line-height:1.5;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.pl-origin-label{
+  color:var(--ink);
+}
+
+.pl-origin-version{
+  color:var(--muted);
+  white-space:nowrap;
+}
+
+.pl-origin-strip p{
+  font-size:13.5px;
+  line-height:1.6;
+  color:var(--ink-2);
+}
+
+.offer-origin{
+  background:var(--surface-2);
+  border:1px solid var(--line);
+  border-left:3px solid var(--akc);
+  border-radius:12px;
+  padding:26px 24px;
+  margin:8px 0 30px;
+}
+
+.offer-origin-label{
+  color:var(--akc);
+}
+
+.offer-origin h3{
+  font-family:var(--serif);
+  font-size:27px;
+  font-weight:400;
+  line-height:1.15;
+  color:var(--ink);
+  margin-bottom:12px;
+}
+
+.offer-origin > p:not(.offer-origin-label){
+  font-size:15.5px;
+  line-height:1.65;
+  color:var(--ink-2);
+}
+
+.offer-origin-note{
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+  font-size:13px !important;
+  color:var(--muted) !important;
+}
+
+@media(max-width:900px){
+  .hero-grid{
+    grid-template-columns:1fr;
+    align-items:start;
+  }
+
+  .pl-proof-card{
+    max-width:660px;
+  }
+}
+
+@media(max-width:680px){
+  .pl-origin-strip{
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+
+  .pl-proof-list > div{
+    grid-template-columns:1fr;
+    gap:3px;
+  }
+
+  .offer-origin{
+    padding:22px 20px;
+  }
+}
+```

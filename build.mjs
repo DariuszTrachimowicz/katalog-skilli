@@ -193,13 +193,16 @@ function stronaSkilla(s) {
     <span class="dot d-${gotowy ? "gotowy" : "wkrotce"}"><i></i>${gotowy ? "Gotowy" : "W przygotowaniu"}</span>
     <span class="dot"><i style="background:#C9C9C6"></i>${esc(s.poziom || "")}</span>
     ${s.wersja ? `<span class="dot" title="wersja skilla"><i style="background:#C9C9C6"></i>wersja ${esc(s.wersja)}</span>` : ""}
+    ${s.sekcja("Jak po polsku")
+      ? `<a class="pl-znak" href="#po-polsku" title="Pisany od zera pod polskie realia"><b>PL</b> na polskie realia</a>`
+      : `<span class="pl-znak" title="Pisany od zera pod polskie realia"><b>PL</b> na polskie realia</span>`}
   </div>
   <p class="skrot">${esc(s.skrot)}</p>
   <h2 class="sr-only">Szczegóły umiejętności</h2>
 
   ${["Dla kogo", "Ile Ci to oszczędza", "Przykład z życia", "Jak po polsku", "Czego potrzebujesz"]
     .filter((t) => s.sekcja(t))
-    .map((t) => `<section class="blok"><h3>${t}</h3>${s.sekcja(t)}</section>`)
+    .map((t) => `<section class="blok"${t === "Jak po polsku" ? ` id="po-polsku"` : ""}><h3>${t}</h3>${s.sekcja(t)}</section>`)
     .join("")}
 
   ${sekcjaGdzieDziala(s)}
@@ -218,7 +221,8 @@ function stronaSkilla(s) {
   </section>
 
   ${gotowy
-    ? formularzPobrania(s.id, `${s.id}.skill`)
+    ? `<p class="motyw-pasek">Pisany od zera pod polskie realia &middot; testowany przez nas${s.wersja ? ` &middot; wersja ${esc(s.wersja)}` : ""}</p>
+  ${formularzPobrania(s.id, `${s.id}.skill`)}`
     : `<div class="dl"><div><b>W przygotowaniu</b><span>Zrób test doboru, napiszemy, gdy będzie gotowa</span></div>
        <a class="btn ghost" href="/#test">Powiadom mnie</a></div>`}
 
@@ -294,17 +298,19 @@ function stronaOferty(s) {
 <article class="art oferta">
   <p class="krusz"><a href="/">Katalog</a> &rarr; <a href="/#katalog">${esc(s.kategoria)}</a></p>
   <h1>${esc(s.nazwa)}</h1>
+  <div class="pl-pasek" role="presentation"></div>
   <div class="meta">
     <span class="tag ${klasaKat(s.kategoria)}">${esc(s.kategoria)}</span>
     <span class="dot d-platny"><i></i>${esc(s.cena || "Płatny")}</span>
     <span class="dot"><i style="background:#C9C9C6"></i>${esc(s.poziom || "")}</span>
     ${s.wersja ? `<span class="dot" title="wersja skilla"><i style="background:#C9C9C6"></i>wersja ${esc(s.wersja)}</span>` : ""}
+    <span class="pl-znak" title="Pisany od zera pod polskie realia"><b>PL</b> na polskie realia</span>
   </div>
   <p class="skrot">${esc(s.skrot)}</p>
   <h2 class="sr-only">Oferta</h2>
   <div class="oferta-akcje">
     <a class="btn" href="https://licencje.aixperts.pl/zamow/${s.id}" data-umami-event="zakup" data-umami-event-skill="${s.id}">Kup teraz (${esc(s.cena || "cena w ofercie")})</a>
-    <span class="dl-rodo">Płatność online (BLIK, przelew, karta) albo faktura proforma. Klucz licencji i paczka przychodzą mailem.</span>
+    <span class="dl-rodo">Skill napisany od zera pod polskie realia i audytowany po polsku. Płatność online (BLIK, przelew, karta) albo faktura proforma. Klucz licencji i paczka przychodzą mailem.</span>
   </div>
   ${existsSync(join(KORZEN, "paczki-zewnetrzne", `${s.id}-trial.skill`))
     ? formularzPobrania(`${s.id}-trial`, "Wypróbuj za darmo: wersja trialowa", { trial: true })
@@ -361,18 +367,18 @@ function stronaGlowna(skille) {
   const tresc = `
 <section class="hero">
   <div class="wrap">
-    <p class="eyebrow">Katalog kuratorowany &middot; aktualizacja <strong>${dataPoPolsku(new Date())}</strong></p>
-    <h1>Co sztuczna inteligencja<br>może zrobić <em>za Ciebie</em><br>w Twojej pracy.</h1>
-    <p class="lede">Gotowe umiejętności do pobrania, opisane językiem, którym mówi się w biurze, a nie w dokumentacji technicznej. Jeden plik działa w Claude i ChatGPT. Każdą uruchomiliśmy sami na polskich dokumentach, a jeśli gdzieś nie zadziała, piszemy o tym wprost.</p>
+    <p class="eyebrow">PL &middot; pisane od zera pod polskie realia &middot; aktualizacja <strong>${dataPoPolsku(new Date())}</strong></p>
+    <h1>Pisane od zera<br>pod <span class="pl-kreska">polskie realia</span>.<br><em>Nie tłumaczone.</em></h1>
+    <p class="lede">Złotówki, VAT, NIP, polskie urzędy i biurowa polszczyzna są tu od pierwszej linijki, a nie doklejone do cudzego szablonu. Każdą umiejętność uruchomiliśmy sami na polskich dokumentach. Jeśli coś gdzieś nie działa, piszemy o tym wprost na karcie.</p>
     <div class="hero-cta">
       <a href="#test" class="btn">Dobierz skille dla siebie</a>
       <a href="#katalog" class="btn ghost">Przeglądaj katalog</a>
     </div>
     <p class="hero-note">Test zajmuje minutę. Nie musisz nic instalować, żeby zobaczyć wynik.</p>
     <div class="stats">
-      <div class="stat"><b>${skille.length}</b><span>umiejętności opisanych ręcznie, nie zescrapowanych z GitHuba</span></div>
-      <div class="stat"><b>${gotowe}</b><span>gotowych do pobrania i sprawdzonych na polskich dokumentach</span></div>
-      <div class="stat"><b>2 modele</b><span>każdy skill działa i w Claude, i w ChatGPT</span></div>
+      <div class="stat"><b>${skille.length}</b><span>umiejętności napisanych od zera pod polskie dokumenty, żadna nie jest tłumaczeniem</span></div>
+      <div class="stat"><b>${gotowe}</b><span>gotowych do pobrania, każda sprawdzona przez nas przed publikacją</span></div>
+      <div class="stat"><b>3 platformy</b><span>w testach Claude i ChatGPT, wyniki rundy Gemini z 20 sierpnia przy każdym skillu</span></div>
     </div>
   </div>
 </section>
@@ -394,9 +400,9 @@ function stronaGlowna(skille) {
   <div class="wrap">
     <div class="sec-head"><h2>Katalog</h2><p>Podzielony według tego, czym się zajmujesz, nie według tego, jak działa od środka.</p></div>
     <div class="legend">
-      <span><i style="background:#4F8A55"></i>przetestowane przez nas</span>
-      <span><i style="background:#C79A2E"></i>format zgodny, nietestowane</span>
-      <span><i style="background:#C0605E"></i>niedostępne w Polsce</span>
+      ${Object.entries(cfg.statusy)
+        .map(([k, v]) => `<span><i style="background:${{ ok: "#4F8A55", format: "#C79A2E", brak: "#C0605E" }[k] || "#C9C9C6"}"></i>${esc(v)}</span>`)
+        .join("\n      ")}
     </div>
     <div class="filters" id="filters"></div>
     <div class="searchrow">
