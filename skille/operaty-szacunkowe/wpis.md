@@ -49,7 +49,7 @@ Własnych danych rynkowych (transakcje, stawki, stopy z Twojego badania rynku), 
 - Faza 1 liczy porównywanie parami, zużycie, kapitalizację prostą i statystykę próby; korygowanie ceny średniej, DCF, metoda pozostałościowa i kalkulatory opłat są poza tym wydaniem, a cele o reżimach szczególnych (wywłaszczenia, opłaty, aktualizacja UW) prowadzisz według przepisów właściwych, skill wspiera tylko część warsztatową.
 - Kalkulator porównywania parami rozkłada poprawki liniowo między stopniami skali ocen; przy cechach o nieliniowym wpływie korekty per stopień robisz poza skryptem i opisujesz w operacie.
 - Skrypty wymagają Pythona 3.10+ (XLSX dodatkowo openpyxl); bez tego zostaje prowadzenie metodyczne bez obliczeń.
-- Licencja jest roczna, jak w całym katalogu: aktualne wydanie paczki (w tym referencje stanu prawnego) pobierasz kluczem z panelu licencji przez okres licencji; stan prawny referencji ma jawną datę i skill sam przypomina o weryfikacji po 6 miesiącach.
+- Kupiona wersja jest Twoja bezterminowo, a klucz licencji daje dostęp do aktualizacji paczki (w tym referencji stanu prawnego) przez 12 miesięcy od zakupu; stan prawny referencji ma jawną datę i skill sam przypomina o weryfikacji po 6 miesiącach.
 - Nie łączy się z księgami wieczystymi ani rejestrami: dane z KW wchodzą tylko jako pliki, które sam wgrasz.
 
 ## Czego ten skill nie robi celowo
