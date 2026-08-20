@@ -11,7 +11,7 @@ opisSeo: Wklej wezwanie z urzędu albo opisz sprawę, a dostaniesz gotowe pismo 
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

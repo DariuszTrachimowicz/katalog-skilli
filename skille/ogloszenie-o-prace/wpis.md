@@ -11,7 +11,7 @@ opisSeo: Sprawdź, czego brakuje w ogłoszeniu o pracę: informacja o wynagrodze
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: format
 ---
 
 ## Co robi

@@ -11,7 +11,7 @@ opisSeo: Napisz mail do listy klientów, który ludzie otworzą, a filtry przepu
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: format
 ---
 
 ## Co robi

@@ -11,7 +11,7 @@ opisSeo: Wpisz, kogo szukasz, i dostań gotowy opis stanowiska, obowiązki, wyma
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: format
 ---
 
 ## Co robi

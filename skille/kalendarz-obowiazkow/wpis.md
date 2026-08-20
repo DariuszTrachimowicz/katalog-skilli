@@ -11,7 +11,7 @@ opisSeo: Zbuduj kalendarz obowiązków małej firmy. ZUS, podatek, VAT, sprawozd
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: format
 ---
 
 ## Co robi

@@ -11,7 +11,7 @@ opisSeo: Wrzuć zestawienie z Excela i zobacz, co z niego wynika, kierunki, wart
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: format
 ---
 
 ## Co robi

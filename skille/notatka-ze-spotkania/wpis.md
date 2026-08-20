@@ -11,7 +11,7 @@ opisSeo: Wklej transkrypcję albo notatki i dostań ustalenia, zadania i terminy
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

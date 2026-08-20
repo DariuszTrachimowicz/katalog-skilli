@@ -11,7 +11,7 @@ opisSeo: Wklej notatkę albo wnioski z projektu i dostań gotowy post na LinkedI
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: format
 ---
 
 ## Co robi

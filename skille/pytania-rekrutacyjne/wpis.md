@@ -11,7 +11,7 @@ opisSeo: Wklej opis stanowiska i dostań pytania na rozmowę z kandydatem, kart�
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

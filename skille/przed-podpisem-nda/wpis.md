@@ -11,7 +11,7 @@ opisSeo: Wgraj umowę o zachowaniu poufności i zobacz prostym językiem, co obj
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: format
 ---
 
 ## Co robi

@@ -1,0 +1,173 @@
+Warning: True color (24-bit) support not detected. Using a terminal with true color enabled will result in a better visual experience.
+Ripgrep is not available. Falling back to GrepTool.
+Error executing tool list_directory: Path not in workspace: Attempted path "C:\Users\CP24\AiXperts - projekty\katalog-skilli\skille" resolves outside the allowed workspace directories: C:\Users\CP24\AiXperts - projekty\katalog-skilli\skille\regulamin-pod-lupa or the project temp directory: C:\Users\CP24\.gemini\tmp\regulamin-pod-lupa
+(node:40664) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Error executing tool run_shell_command: Tool "run_shell_command" not found. Did you mean one of: "update_topic", "grep_search", "invoke_agent"?
+Attempt 1 failed with status 500. Retrying with backoff... _ApiError: {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+    at throwErrorIfNotOK (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:267240:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:266991:7
+    at async Models.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:268050:16)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:310352:26
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:287277:23
+    at async retryWithBackoff (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:307272:23)
+    at async GeminiClient.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:345295:23)
+    at async WebSearchToolInvocation.execute (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:329674:24)
+    at async executeToolWithHooks (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:340435:22) {
+  status: 500
+}
+Attempt 2 failed. Retrying with backoff... Error: exception TypeError: fetch failed sending request
+    at file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:267078:13
+    at async Models.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:268050:16)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:310352:26
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:287277:23
+    at async retryWithBackoff (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:307272:23)
+    at async GeminiClient.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:345295:23)
+    at async WebSearchToolInvocation.execute (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:329674:24)
+    at async executeToolWithHooks (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:340435:22)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:345579:28
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:287277:23
+Attempt 3 failed with status 500. Retrying with backoff... _ApiError: {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+    at throwErrorIfNotOK (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:267240:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:266991:7
+    at async Models.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:268050:16)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:310352:26
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:287277:23
+    at async retryWithBackoff (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:307272:23)
+    at async GeminiClient.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:345295:23)
+    at async WebSearchToolInvocation.execute (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:329674:24)
+    at async executeToolWithHooks (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:340435:22) {
+  status: 500
+}
+Attempt 4 failed with status 500. Retrying with backoff... _ApiError: {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+    at throwErrorIfNotOK (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:267240:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:266991:7
+    at async Models.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:268050:16)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:310352:26
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:287277:23
+    at async retryWithBackoff (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:307272:23)
+    at async GeminiClient.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:345295:23)
+    at async WebSearchToolInvocation.execute (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:329674:24)
+    at async executeToolWithHooks (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:340435:22) {
+  status: 500
+}
+Attempt 5 failed with status 500. Retrying with backoff... _ApiError: {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+    at throwErrorIfNotOK (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:267240:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:266991:7
+    at async Models.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:268050:16)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:310352:26
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:287277:23
+    at async retryWithBackoff (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:307272:23)
+    at async GeminiClient.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:345295:23)
+    at async WebSearchToolInvocation.execute (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:329674:24)
+    at async executeToolWithHooks (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:340435:22) {
+  status: 500
+}
+Attempt 6 failed with status 500. Retrying with backoff... _ApiError: {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+    at throwErrorIfNotOK (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:267240:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:266991:7
+    at async Models.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:268050:16)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:310352:26
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:287277:23
+    at async retryWithBackoff (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:307272:23)
+    at async GeminiClient.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:345295:23)
+    at async WebSearchToolInvocation.execute (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:329674:24)
+    at async executeToolWithHooks (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:340435:22) {
+  status: 500
+}
+Attempt 7 failed with status 500. Retrying with backoff... _ApiError: {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+    at throwErrorIfNotOK (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:267240:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:266991:7
+    at async Models.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:268050:16)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:310352:26
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:287277:23
+    at async retryWithBackoff (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:307272:23)
+    at async GeminiClient.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:345295:23)
+    at async WebSearchToolInvocation.execute (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:329674:24)
+    at async executeToolWithHooks (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:340435:22) {
+  status: 500
+}
+Attempt 8 failed with status 500. Retrying with backoff... _ApiError: {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+    at throwErrorIfNotOK (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:267240:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:266991:7
+    at async Models.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:268050:16)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:310352:26
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:287277:23
+    at async retryWithBackoff (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:307272:23)
+    at async GeminiClient.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:345295:23)
+    at async WebSearchToolInvocation.execute (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:329674:24)
+    at async executeToolWithHooks (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:340435:22) {
+  status: 500
+}
+Attempt 9 failed with status 500. Retrying with backoff... _ApiError: {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+    at throwErrorIfNotOK (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:267240:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:266991:7
+    at async Models.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:268050:16)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:310352:26
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:287277:23
+    at async retryWithBackoff (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:307272:23)
+    at async GeminiClient.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:345295:23)
+    at async WebSearchToolInvocation.execute (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:329674:24)
+    at async executeToolWithHooks (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:340435:22) {
+  status: 500
+}
+Attempt 10 failed: {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}. Max attempts reached
+Attempt 1 failed with status 500. Retrying with backoff... _ApiError: {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+    at throwErrorIfNotOK (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:267240:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:266991:7
+    at async Models.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:268050:16)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:310352:26
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:287277:23
+    at async retryWithBackoff (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:307272:23)
+    at async GeminiClient.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:345295:23)
+    at async WebSearchToolInvocation.execute (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:329674:24)
+    at async executeToolWithHooks (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:340435:22) {
+  status: 500
+}
+Attempt 2 failed with status 500. Retrying with backoff... _ApiError: {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+    at throwErrorIfNotOK (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:267240:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:266991:7
+    at async Models.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:268050:16)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:310352:26
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:287277:23
+    at async retryWithBackoff (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:307272:23)
+    at async GeminiClient.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:345295:23)
+    at async WebSearchToolInvocation.execute (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:329674:24)
+    at async executeToolWithHooks (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:340435:22) {
+  status: 500
+}
+Attempt 3 failed with status 500. Retrying with backoff... _ApiError: {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+    at throwErrorIfNotOK (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:267240:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:266991:7
+    at async Models.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:268050:16)
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:310352:26
+    at async file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:287277:23
+    at async retryWithBackoff (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:307272:23)
+    at async GeminiClient.generateContent (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:345295:23)
+    at async WebSearchToolInvocation.execute (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:329674:24)
+    at async executeToolWithHooks (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:340435:22) {
+  status: 500
+}
+Error executing tool read_file: File size exceeds the 20MB limit.
+[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'write_file' is not available to this agent.
+Error adding tool call to message in chat history. RangeError: Invalid string length
+    at JSON.stringify (<anonymous>)
+    at ChatRecordingService.appendRecord (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:285565:25)
+    at ChatRecordingService.pushMessage (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:285637:10)
+    at ChatRecordingService.recordToolCalls (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:285771:14)
+    at GeminiChat.recordCompletedToolCalls (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/chunk-LZUWGCRJ.js:331301:31)
+    at file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/gemini-KK7AERSF.js:11703:36
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async main (file:///C:/Users/CP24/AppData/Local/npm-cache/_npx/d07ada7b4a99c96e/node_modules/@google/gemini-cli/bundle/gemini-KK7AERSF.js:16951:5)
+Error recording completed tool call information: RangeError: Invalid string length

@@ -11,7 +11,7 @@ opisSeo: Opisz sytuację i dostań gotowe zdania do wypowiedzenia, listę reakcj
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

@@ -11,7 +11,7 @@ opisSeo: Opisz sytuację i dostań gotowe przypomnienie, wezwanie albo ostateczn
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: format
 ---
 
 ## Co robi

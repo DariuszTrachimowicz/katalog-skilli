@@ -11,7 +11,7 @@ opisSeo: Wgraj umowę i zobacz prostym językiem, które zapisy są ryzykowne. K
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

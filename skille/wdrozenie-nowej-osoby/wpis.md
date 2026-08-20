@@ -11,7 +11,7 @@ opisSeo: Wklej opis stanowiska i dostań plan pierwszych dwóch tygodni, dzień 
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

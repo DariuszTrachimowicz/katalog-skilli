@@ -11,7 +11,7 @@ opisSeo: Wpisz, o co chodzi, i dostań gotowego maila po polsku. Właściwy ton 
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

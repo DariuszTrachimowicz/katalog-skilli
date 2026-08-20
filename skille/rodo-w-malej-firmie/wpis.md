@@ -11,7 +11,7 @@ opisSeo: Odpowiedz na sześć pytań o dane w swojej firmie i zobacz, co gdzie l
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: format
 ---
 
 ## Co robi

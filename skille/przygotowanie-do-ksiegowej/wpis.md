@@ -11,7 +11,7 @@ opisSeo: Kompletna lista dokumentów do księgowej, typowe braki i gotowe opisy 
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

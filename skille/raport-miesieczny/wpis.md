@@ -11,7 +11,7 @@ opisSeo: Wrzuć dane za miesiąc i dostań gotowy raport dla szefa albo zarządu
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: format
 ---
 
 ## Co robi

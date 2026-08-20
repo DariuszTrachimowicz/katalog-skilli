@@ -11,7 +11,7 @@ opisSeo: Wklej regulamin sklepu, aplikacji albo subskrypcji i zobacz po ludzku, 
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

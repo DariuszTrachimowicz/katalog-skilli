@@ -11,7 +11,7 @@ opisSeo: Nowa firma chce zaliczkę? Zobacz, co sprawdzić i gdzie. KRS, CEIDG, b
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

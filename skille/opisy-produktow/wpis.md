@@ -11,7 +11,7 @@ opisSeo: Wklej tabelę parametrów, dostań gotowy opis produktu po polsku. Bez 
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: format
 ---
 
 ## Co robi

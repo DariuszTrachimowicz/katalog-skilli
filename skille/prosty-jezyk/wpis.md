@@ -11,7 +11,7 @@ opisSeo: Wklej pismo, regulamin albo mail do klienta i dostań wersję po ludzku
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

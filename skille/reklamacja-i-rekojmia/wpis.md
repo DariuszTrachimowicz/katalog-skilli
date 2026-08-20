@@ -11,7 +11,7 @@ opisSeo: Czego można żądać przy reklamacji, w jakiej kolejności, ile jest d
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

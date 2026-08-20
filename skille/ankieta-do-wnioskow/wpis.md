@@ -11,7 +11,7 @@ opisSeo: Wrzuć wyniki ankiety i zobacz, co się powtarza, gdzie odpowiedzi się
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

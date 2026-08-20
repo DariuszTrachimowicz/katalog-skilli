@@ -11,7 +11,7 @@ opisSeo: Wgraj umowę, polisę, leasing albo aneks i zobacz w kilkunastu punktac
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

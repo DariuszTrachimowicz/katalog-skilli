@@ -1,0 +1,5 @@
+Warning: True color (24-bit) support not detected. Using a terminal with true color enabled will result in a better visual experience.
+Ripgrep is not available. Falling back to GrepTool.
+Error executing tool grep_search: Invalid regular expression pattern provided: (?i)todo. Error: Invalid regular expression: /(?i)todo/: Invalid group
+(node:24600) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)

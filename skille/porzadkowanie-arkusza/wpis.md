@@ -11,7 +11,7 @@ opisSeo: Scalone komórki, trzy formaty daty, kwoty jako tekst, krzaczki zamiast
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

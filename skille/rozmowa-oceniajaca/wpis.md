@@ -11,7 +11,7 @@ opisSeo: Masz jutro ocenę roczną i nie wiesz, jak zacząć. Dostajesz plan roz
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

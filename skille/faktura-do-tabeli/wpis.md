@@ -11,7 +11,7 @@ opisSeo: Wrzuć faktury PDF lub skany i dostań tabelę do księgowania: numery,
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi

@@ -1,0 +1,6 @@
+Warning: True color (24-bit) support not detected. Using a terminal with true color enabled will result in a better visual experience.
+Ripgrep is not available. Falling back to GrepTool.
+Error executing tool list_directory: Path not in workspace: Attempted path "C:\Users\CP24\AiXperts - projekty\katalog-skilli\skille" resolves outside the allowed workspace directories: C:\Users\CP24\AiXperts - projekty\katalog-skilli\skille\co-wlasciwie-podpisuje or the project temp directory: C:\Users\CP24\.gemini\tmp\co-wlasciwie-podpisuje
+Error executing tool grep_search: Invalid regular expression pattern provided: (?i)todo|fix|bug|gemini|brak. Error: Invalid regular expression: /(?i)todo|fix|bug|gemini|brak/: Invalid group
+(node:16480) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)

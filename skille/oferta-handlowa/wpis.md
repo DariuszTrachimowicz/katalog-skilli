@@ -11,7 +11,7 @@ opisSeo: "Ułóż ofertę dla klienta B2B: zakres, cena netto czy brutto, termin
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: format
 ---
 
 ## Co robi
