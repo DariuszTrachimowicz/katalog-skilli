@@ -131,7 +131,8 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
       <img src="/ikona.png" width="40" height="40" alt="" aria-hidden="true">
       <span class="brand-txt">${esc(cfg.nazwaSerwisu)}<img class="brand-wordmark" src="/logo-wordmark-czarny.png" width="42" height="10" alt="AI Xperts"></span>
     </a>
-    <nav class="nav-links">
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-linki"><i></i><i></i><i></i></button>
+    <nav class="nav-links" id="nav-linki">
       <a href="https://aixperts.pl/">Strona główna</a>
       <a href="${cfg.linkSzkolenia}">Warsztaty</a>
       <a href="/#katalog">Skille</a>
@@ -139,6 +140,7 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
     </nav>
   </div>
 </header>
+<script>(function(){var b=document.querySelector(".burger");if(!b)return;b.addEventListener("click",function(){var h=document.querySelector("header");var o=h.classList.toggle("otwarte");b.setAttribute("aria-expanded",o)});document.querySelectorAll(".nav-links a").forEach(function(a){a.addEventListener("click",function(){document.querySelector("header").classList.remove("otwarte");b.setAttribute("aria-expanded","false")})})})();</script>
 ${tresc}
 <footer>
   <div class="wrap foot">
