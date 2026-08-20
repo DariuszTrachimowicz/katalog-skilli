@@ -135,6 +135,7 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
     <nav class="nav-links" id="nav-linki">
       <a href="https://aixperts.pl/">Strona główna</a>
       <a href="${cfg.linkSzkolenia}">Warsztaty</a>
+      <a href="https://aixperts.pl/wiedza/">Wiedza</a>
       <a href="/#katalog">Skille</a>
       <a href="/#test" class="btn">Zacznij od testu</a>
     </nav>
