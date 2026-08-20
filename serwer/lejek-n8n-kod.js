@@ -44,6 +44,7 @@ try {
   fs.readFileSync('/licencje/zamowienia.jsonl', 'utf8').split('\n').filter(Boolean).forEach(function (l) {
     let r; try { r = JSON.parse(l); } catch (e) { return; }
     if (r.typ === 'zamowienie') wgId[r.id] = r;
+    else if (r.typ === 'zamowienie-usuniete') delete wgId[r.id];
     else if ((r.typ === 'zamowienie-oplacone' || r.typ === 'zamowienie-zrealizowane') && wgId[r.id]) wgId[r.id].zamkniete = true;
   });
   for (const id in wgId) {
