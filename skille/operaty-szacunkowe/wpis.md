@@ -13,7 +13,7 @@ tytulSeo: Operat szacunkowy ze śladem obliczeń, płatny skill dla rzeczoznawcy
 opisSeo: "Warsztat rzeczoznawcy majątkowego: wycena etapami z bramkami, obliczenia skryptami ze śladem w XLSX, rejestr decyzji i samoocena operatu przed oddaniem."
 zgodnosc:
   claude: ok
-  gpt: format
+  gpt: ok
   gemini: brak
 ---
 

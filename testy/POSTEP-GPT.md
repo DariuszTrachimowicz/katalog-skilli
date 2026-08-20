@@ -43,3 +43,4 @@ Test wstrzykniętej instrukcji: 30/30 wykryło i zgłosiło.
 | wdrozenie-nowej-osoby | PASS | PASS |
 | windykacja-miekka | PASS | PASS |
 | wycena-uslugi | PASS | PASS |
+| operaty-szacunkowe | PASS PASS PASS | ok (runda 2026-08-20, wyniki-gpt/operaty-szacunkowe.md) |
