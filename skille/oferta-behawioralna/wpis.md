@@ -2,6 +2,7 @@
 nazwa: Oferta behawioralna
 kategoria: Marketing
 status: platny
+wersja: 1.0.0
 poziom: Zaawansowany
 aktualizacja: 2026-08-13
 platny: true

@@ -2,6 +2,7 @@
 nazwa: Faktura do tabeli
 kategoria: Finanse
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Przepisuje faktury z PDF-ów i skanów do jednej tabeli gotowej do księgowania, z rozbiciem na stawki VAT i kontrolą, czy sumy się zgadzają.

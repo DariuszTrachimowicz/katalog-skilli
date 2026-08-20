@@ -2,6 +2,7 @@
 nazwa: Polityka AI i rejestr zastosowań
 kategoria: Prawo
 status: platny
+wersja: 1.1.0
 platny: true
 cena: od 890 zł netto
 poziom: Zaawansowany

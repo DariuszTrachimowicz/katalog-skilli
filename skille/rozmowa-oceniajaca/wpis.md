@@ -2,6 +2,7 @@
 nazwa: Rozmowa oceniająca
 kategoria: Kadry
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Przygotowuje kierownika do rozmowy oceniającej albo rozwojowej: plan spotkania, konkretne zdania na trudny moment i lista rzeczy, których nie mówić.

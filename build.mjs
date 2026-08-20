@@ -75,6 +75,7 @@ function wczytajSkille() {
         ...dane,
         szukaj: lista(dane.szukaj),
         zgodnosc: dane.zgodnosc || {},
+        wersja: dane.wersja || "",
         sekcje,
         sekcja: (t) => sekcje.find((s) => s.tytul.toLowerCase() === t.toLowerCase())?.html || "",
         pliki,
@@ -191,6 +192,7 @@ function stronaSkilla(s) {
     <span class="tag ${klasaKat(s.kategoria)}">${esc(s.kategoria)}</span>
     <span class="dot d-${gotowy ? "gotowy" : "wkrotce"}"><i></i>${gotowy ? "Gotowy" : "W przygotowaniu"}</span>
     <span class="dot"><i style="background:#C9C9C6"></i>${esc(s.poziom || "")}</span>
+    ${s.wersja ? `<span class="dot" title="wersja skilla"><i style="background:#C9C9C6"></i>wersja ${esc(s.wersja)}</span>` : ""}
   </div>
   <p class="skrot">${esc(s.skrot)}</p>
   <h2 class="sr-only">Szczegóły umiejętności</h2>
@@ -296,6 +298,7 @@ function stronaOferty(s) {
     <span class="tag ${klasaKat(s.kategoria)}">${esc(s.kategoria)}</span>
     <span class="dot d-platny"><i></i>${esc(s.cena || "Płatny")}</span>
     <span class="dot"><i style="background:#C9C9C6"></i>${esc(s.poziom || "")}</span>
+    ${s.wersja ? `<span class="dot" title="wersja skilla"><i style="background:#C9C9C6"></i>wersja ${esc(s.wersja)}</span>` : ""}
   </div>
   <p class="skrot">${esc(s.skrot)}</p>
   <h2 class="sr-only">Oferta</h2>

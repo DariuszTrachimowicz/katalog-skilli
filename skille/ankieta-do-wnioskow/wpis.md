@@ -2,6 +2,7 @@
 nazwa: Ankieta do wniosków
 kategoria: Dane
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Czyta surowe wyniki ankiety razem z odpowiedziami otwartymi i mówi, co się powtarza, gdzie odpowiedzi się rozjeżdżają i czego z tych danych powiedzieć nie można.

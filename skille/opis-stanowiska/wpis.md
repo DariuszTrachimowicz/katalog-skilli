@@ -2,6 +2,7 @@
 nazwa: Opis stanowiska
 kategoria: Kadry
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Zamienia „potrzebuję kogoś do pomocy” w konkretny opis stanowiska, zakres obowiązków, wymagania konieczne i mile widziane, sposób sprawdzenia każdego z nich.

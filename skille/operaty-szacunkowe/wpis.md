@@ -2,6 +2,7 @@
 nazwa: Operaty szacunkowe, warsztat rzeczoznawcy
 kategoria: Finanse
 status: platny
+wersja: 1.0.0
 platny: true
 cena: od 890 zł netto
 poziom: Zaawansowany

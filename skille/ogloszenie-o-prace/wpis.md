@@ -2,6 +2,7 @@
 nazwa: Ogłoszenie o pracę
 kategoria: Kadry
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Układa ogłoszenie rekrutacyjne i pokazuje, czego w nim brakuje, od informacji o wynagrodzeniu po neutralną nazwę stanowiska.

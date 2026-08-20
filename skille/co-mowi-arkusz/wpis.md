@@ -2,6 +2,7 @@
 nazwa: Co mówi arkusz
 kategoria: Dane
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Czyta zestawienie z Excela i mówi po ludzku, co z niego wynika, bez formuł i tabel przestawnych, z wyraźnym podziałem na fakty i domysły.

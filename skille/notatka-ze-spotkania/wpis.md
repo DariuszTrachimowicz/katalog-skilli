@@ -2,6 +2,7 @@
 nazwa: Notatka ze spotkania
 kategoria: Biuro
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Zamienia transkrypcję albo notatki z kartki w ustalenia, zadania z odpowiedzialnymi i terminy. Nie dopisuje niczego, czego na spotkaniu nie było.

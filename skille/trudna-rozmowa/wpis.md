@@ -2,6 +2,7 @@
 nazwa: Trudna rozmowa
 kategoria: Biuro
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Przygotowuje do rozmowy, którą odkładasz, odmowy, podwyżki stawki, złej wiadomości. Daje zdania do wypowiedzenia i odpowiedzi na to, co usłyszysz.

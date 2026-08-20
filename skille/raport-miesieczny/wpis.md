@@ -2,6 +2,7 @@
 nazwa: Raport miesięczny
 kategoria: Dane
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Z liczb za miesiąc albo kwartał pisze gotowy raport dla przełożonego, zarządu albo właściciela, z wyraźną granicą między tym, co pokazują liczby, a tym, co jest domysłem.

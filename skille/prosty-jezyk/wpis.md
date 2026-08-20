@@ -2,6 +2,7 @@
 nazwa: Prosty język
 kategoria: Biuro
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Przepisuje urzędowe pismo na prosty polski, nie gubiąc ani jednej informacji. Pokazuje, co zmienił i czego nie ruszył.

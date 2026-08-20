@@ -2,6 +2,7 @@
 nazwa: Wycena usługi
 kategoria: Finanse
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Pokazuje rachunek pod Twoją ceną, ile naprawdę kosztuje Cię zlecenie, razem z tym, o czym się zapomina. Ceny nie podaje.

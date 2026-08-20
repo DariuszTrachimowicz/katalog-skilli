@@ -2,6 +2,7 @@
 nazwa: Windykacja miękka
 kategoria: Finanse
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Układa komunikację przy nieopłaconej fakturze, od przypomnienia po ostatnie pismo przed przekazaniem sprawy. Mówi też, kiedy przejść dalej.

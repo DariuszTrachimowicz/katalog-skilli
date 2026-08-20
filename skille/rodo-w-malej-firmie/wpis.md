@@ -2,6 +2,7 @@
 nazwa: RODO w małej firmie
 kategoria: Prawo
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Przeprowadza Cię przez pytania o dane w Twojej firmie i pokazuje, co gdzie leży i kto ma do tego dostęp. Na koniec daje pytania do specjalisty.

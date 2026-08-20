@@ -2,6 +2,7 @@
 nazwa: Pytania rekrutacyjne
 kategoria: Kadry
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Z opisu stanowiska robi gotowy zestaw pytań na rozmowę i prostą kartę oceny. Pokazuje też, o co lepiej nie pytać i czym to zastąpić.

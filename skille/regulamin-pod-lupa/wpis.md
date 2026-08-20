@@ -2,6 +2,7 @@
 nazwa: Regulamin pod lupą
 kategoria: Prawo
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Czyta regulamin, na który masz się zgodzić, i mówi po ludzku, na co się zgadzasz, od zmian cennika po to, co dzieje się z Twoimi danymi i treściami.

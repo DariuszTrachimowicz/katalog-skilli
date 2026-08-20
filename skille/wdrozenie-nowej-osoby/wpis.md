@@ -2,6 +2,7 @@
 nazwa: Wdrożenie nowej osoby
 kategoria: Kadry
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Układa plan pierwszych dwóch tygodni nowej osoby, dzień po dniu, z konkretną osobą przy każdym zadaniu i wyznaczonymi rozmowami o postępach.

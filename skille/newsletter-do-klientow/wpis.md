@@ -2,6 +2,7 @@
 nazwa: Newsletter do klientów
 kategoria: Marketing
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Pomaga napisać wiadomość do własnej listy klientów: o czym napisać, jaki dać temat i co musi znaleźć się w stopce, żeby mail nie skończył w spamie.

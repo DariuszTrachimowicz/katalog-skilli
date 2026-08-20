@@ -2,6 +2,7 @@
 nazwa: Czerwone flagi w umowie
 kategoria: Prawo
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Czyta umowę, którą masz podpisać, i mówi po ludzku, na co uważać. Na koniec daje gotowe pytania do prawnika.

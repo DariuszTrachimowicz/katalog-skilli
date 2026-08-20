@@ -2,6 +2,7 @@
 nazwa: Mail po polsku
 kategoria: Biuro
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Zamienia trzy zdania szkicu w gotową wiadomość służbową, z właściwym tonem, poprawnym zwrotem i strukturą, którą odbiorca zrozumie od razu.

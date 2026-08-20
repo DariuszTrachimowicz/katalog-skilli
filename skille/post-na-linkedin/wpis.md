@@ -2,6 +2,7 @@
 nazwa: Post na LinkedIn
 kategoria: Marketing
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Z notatki albo wniosków z projektu robi post na LinkedIna po polsku i pokazuje, które zdania są faktem, a które interpretacją.

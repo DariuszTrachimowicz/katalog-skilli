@@ -2,6 +2,7 @@
 nazwa: Oferta handlowa
 kategoria: Marketing
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Układa treść oferty dla firmowego klienta, zakres, cena, warunki płatności, termin ważności. Nie dopisuje niczego, czego mu nie podałeś.

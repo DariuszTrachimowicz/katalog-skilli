@@ -2,6 +2,7 @@
 nazwa: Przygotowanie do księgowej
 kategoria: Finanse
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Prowadzi przez comiesięczne zebranie dokumentów dla biura rachunkowego, co wysłać, czego zwykle brakuje, jak opisać nietypowy wydatek i o co zapytać księgową.

@@ -2,6 +2,7 @@
 nazwa: Porządkowanie arkusza
 kategoria: Dane
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Doprowadza rozjechany arkusz do porządku i pokazuje dziennik każdej zmiany. Nic nie poprawia po cichu.

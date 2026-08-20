@@ -2,6 +2,7 @@
 nazwa: Opisy produktów
 kategoria: Marketing
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Z tabeli parametrów robi gotowy opis produktu po polsku. Pokazuje, skąd wzięło się każde zdanie oraz czego w danych brakuje.

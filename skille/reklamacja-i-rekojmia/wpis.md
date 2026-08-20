@@ -2,6 +2,7 @@
 nazwa: Reklamacja i rękojmia
 kategoria: Prawo
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Tłumaczy, jak naprawdę działa reklamacja w Polsce. Porządkuje kolejne kroki, po stronie kupującego albo po stronie sklepu.

@@ -2,6 +2,7 @@
 nazwa: Pismo do urzędu
 kategoria: Prawo
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Układa pismo do urzędu we właściwej formie i mówi, czego w nim brakuje, zanim urząd wezwie Cię do uzupełnienia braków.

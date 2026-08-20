@@ -2,6 +2,7 @@
 nazwa: Przed podpisem NDA
 kategoria: Prawo
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu
 aktualizacja: 2026-08-10
 skrot: Tłumaczy umowę o zachowaniu poufności po ludzku, co objęto tajemnicą, na jak długo, ile kosztuje wpadka i co jeszcze ukryto w dokumencie poza poufnością.

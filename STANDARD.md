@@ -78,6 +78,7 @@ Frontmatter:
 nazwa: Nazwa czytelna dla człowieka
 kategoria: Biuro | Finanse | Kadry | Prawo | Marketing | Dane
 status: gotowy
+wersja: 1.0.0
 poziom: Działa od razu | Wymaga ustawienia | Dla technicznych
 aktualizacja: 2026-08-10
 skrot: Jedno zdanie o tym, co robi, pokazuje się na karcie i w wynikach testu.
@@ -96,6 +97,8 @@ Sekcje, dokładnie w tej kolejności i pod tymi nagłówkami:
 `## Co robi` · `## Dla kogo` · `## Ile Ci to oszczędza` · `## Przykład z życia` · `## Jak po polsku` · `## Czego potrzebujesz` · `## Na czym się wywala` · `## Czego ten skill nie robi celowo`
 
 Dwie ostatnie są obowiązkowe i najważniejsze, to one odróżniają ten katalog od katalogów scrapujących GitHuba. „Na czym się wywala” to uczciwa lista ograniczeń, minimum trzy pozycje, wynikające z tego, jak skill naprawdę działa. „Czego nie robi celowo” zamienia ograniczenie w deklarację jakości.
+
+Wersjonowanie: `wersja` w zapisie x.y.z; podbij ją przy KAŻDEJ zmianie treści skilla (poprawka tekstu = z, nowa funkcja albo zmiana zachowania = y, przebudowa = x) razem z polem `aktualizacja`; dla płatnych wersja musi zgadzać się z produkty.json serwera licencji.
 
 Zgodność: `claude: ok` wpisujemy tylko po faktycznym uruchomieniu. Domyślnie `gpt: format`, `gemini: brak`.
 
