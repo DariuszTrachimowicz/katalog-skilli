@@ -294,3 +294,21 @@ footer{border-top:1px solid var(--line);padding:44px 0;margin-top:96px}
 a.pl-znak:hover{color:var(--ink)}
 .pl-pasek{border:0;height:2px;margin:2px 0 22px;background:linear-gradient(90deg,var(--red-tx) 0 56px,var(--line) 56px)}
 .motyw-pasek{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--muted);border-left:2px solid var(--red-tx);padding:2px 0 2px 10px;margin:26px 0 12px}
+
+/* nadawca "Skille AI" (runda 2 motywu): winieta na glownej, winietka podstron, podpis ofert */
+.winieta-row{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:12px}
+.winieta{font-family:var(--serif);font-size:clamp(26px,3.2vw,38px);letter-spacing:-.015em;color:var(--ink)}
+.winieta span{color:var(--red-tx)}
+.winieta-data{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--muted);white-space:nowrap}
+.winieta-linia{border-top:4px double var(--ink);margin-bottom:40px}
+.nadawca{display:flex;align-items:baseline;gap:14px;margin:0 0 18px}
+.nadawca .n-nazwa{font-family:var(--serif);font-size:24px;letter-spacing:-.015em;color:var(--ink);white-space:nowrap}
+.nadawca .n-nazwa b{font-weight:400;color:var(--red-tx)}
+.nadawca i{flex:1;height:1px;background:var(--line)}
+.nadawca .n-haslo{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+@media(max-width:640px){.nadawca .n-haslo{display:none}}
+.podpis-oferty{display:flex;align-items:center;justify-content:flex-end;margin:44px 0 4px}
+.podpis-oferty::before{content:"";flex:1;height:1px;background:var(--line);margin-right:28px}
+.podpis-oferty .p-nazwa{font-family:var(--serif);font-size:34px;letter-spacing:-.02em;color:var(--ink)}
+.podpis-oferty .p-nazwa b{font-weight:400;color:var(--red-tx)}
+.podpis-oferty .p-stempel{width:96px;height:96px;transform:rotate(-9deg);opacity:.9;margin:-10px 0 -14px -12px;flex:0 0 auto}

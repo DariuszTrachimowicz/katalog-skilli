@@ -174,6 +174,35 @@ function sekcjaGdzieDziala(s) {
   </section>`;
 }
 
+/* ---------- nadawca: winietka i podpis (motyw, runda 2) ---------- */
+
+// Winietka nadawcy na górze każdej podstrony (koncept D, docs/motyw-pl/napis/e2-brand.md).
+const NADAWCA = `<div class="nadawca"><span class="n-nazwa">Skille <b>AI</b></span><i></i><span class="n-haslo">Pisane od zera pod polskie realia</span></div>`;
+
+// Mała pieczątka do bloku podpisu na ofertach (koncept B, e4-artdirector.md).
+const STEMPEL_OFERTY = `<svg class="p-stempel" viewBox="0 0 200 200" aria-hidden="true">
+  <defs>
+    <path id="pkrag" d="M 100,100 m -70,0 a 70,70 0 1,1 140,0 a 70,70 0 1,1 -140,0"/>
+    <filter id="ptusz" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" seed="11" result="szum"/>
+      <feColorMatrix in="szum" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1.6 -0.25" result="maska"/>
+      <feComposite in="SourceGraphic" in2="maska" operator="in"/>
+    </filter>
+  </defs>
+  <g filter="url(#ptusz)" fill="none" stroke="#9F2F2D">
+    <circle cx="100" cy="100" r="94" stroke-width="4"/>
+    <circle cx="100" cy="100" r="87" stroke-width="1.6"/>
+    <circle cx="100" cy="100" r="50" stroke-width="1.6"/>
+    <text fill="#9F2F2D" stroke="none" font-family="'IBM Plex Mono',monospace" font-size="13" font-weight="500" letter-spacing="2.6">
+      <textPath href="#pkrag">ORYGINAŁ · PISANE OD ZERA · ORYGINAŁ ·</textPath>
+    </text>
+    <text x="100" y="110" fill="#9F2F2D" stroke="none" text-anchor="middle" font-family="'Instrument Serif',Georgia,serif" font-size="50">PL</text>
+    <path d="M78,124 C90,120.5 112,120 122,122" stroke-width="3.2" stroke-linecap="round"/>
+  </g>
+</svg>`;
+
+const PODPIS_OFERTY = `<div class="podpis-oferty"><span class="p-nazwa">Skille <b>AI</b></span>${STEMPEL_OFERTY}</div>`;
+
 /* ---------- strona skilla ---------- */
 
 function stronaSkilla(s) {
@@ -186,6 +215,7 @@ function stronaSkilla(s) {
   const tresc = `
 <main class="wrap">
 <article class="art">
+  ${NADAWCA}
   <p class="krusz"><a href="/">Katalog</a> &rarr; <a href="/#katalog">${esc(s.kategoria)}</a></p>
   <h1>${esc(s.nazwa)}</h1>
   <div class="meta">
@@ -296,6 +326,7 @@ function stronaOferty(s) {
   const tresc = `
 <main class="wrap">
 <article class="art oferta">
+  ${NADAWCA}
   <p class="krusz"><a href="/">Katalog</a> &rarr; <a href="/#katalog">${esc(s.kategoria)}</a></p>
   <h1>${esc(s.nazwa)}</h1>
   <div class="pl-pasek" role="presentation"></div>
@@ -317,6 +348,7 @@ function stronaOferty(s) {
     : ""}
   ${cialo}
   ${sekcjaGdzieDziala(s)}
+  ${PODPIS_OFERTY}
   <p class="disc">Materiał informacyjny. Nie zastępuje porady prawnej, podatkowej ani kadrowej.</p>
   <div class="powrot">
     <a class="btn ghost" href="/#katalog">&larr; Wróć do katalogu</a>
@@ -367,7 +399,11 @@ function stronaGlowna(skille) {
   const tresc = `
 <section class="hero">
   <div class="wrap">
-    <p class="eyebrow">PL &middot; pisane od zera pod polskie realia &middot; aktualizacja <strong>${dataPoPolsku(new Date())}</strong></p>
+    <div class="winieta-row">
+      <p class="winieta">Skille <span>AI</span></p>
+      <span class="winieta-data">aktualizacja <strong>${dataPoPolsku(new Date())}</strong></span>
+    </div>
+    <div class="winieta-linia" role="presentation"></div>
     <h1>Pisane od zera<br>pod <span class="pl-kreska">polskie realia</span>.<br><em>Nie tłumaczone.</em></h1>
     <p class="lede">Złotówki, VAT, NIP, polskie urzędy i biurowa polszczyzna są tu od pierwszej linijki, a nie doklejone do cudzego szablonu. Każdą umiejętność uruchomiliśmy sami na polskich dokumentach. Jeśli coś gdzieś nie działa, piszemy o tym wprost na karcie.</p>
     <div class="hero-cta">
@@ -452,9 +488,11 @@ ${readFileSync(join(KORZEN, "szablony", "strona.js"), "utf8")}
 
 function stronaRegulaminu() {
   const tresc = `<main class="wrap"><article class="art">
+  ${NADAWCA}
   <p class="krusz"><a href="/">Katalog</a> &rarr; Regulamin</p>
   <h1>Regulamin</h1>
   <p class="skrot">Krótko i po ludzku, bo w tym serwisie naprawdę niewiele się dzieje. Obowiązuje od 12 sierpnia 2026.</p>
+  <h2 class="sr-only">Treść regulaminu</h2>
   <section class="blok"><h3>Kto prowadzi ten serwis</h3>
     <p>Serwis ${esc(cfg.nazwaSerwisu)} (${esc(cfg.domena)}) prowadzi <strong>D-X.PL Michał Jaśkiewicz</strong>, ul. Więckowskiego 32 lok. 8, 90-728 Łódź, NIP 7262533563, REGON 362247556. Kontakt: <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>.</p></section>
   <section class="blok"><h3>Co oferuje serwis</h3>
@@ -480,9 +518,11 @@ function stronaRegulaminu() {
 
 function stronaPrywatnosci() {
   const tresc = `<main class="wrap"><article class="art">
+  ${NADAWCA}
   <p class="krusz"><a href="/">Katalog</a> &rarr; Prywatność</p>
   <h1>Prywatność</h1>
   <p class="skrot">Krótko, bo naprawdę niewiele tu się dzieje.</p>
+  <h2 class="sr-only">Treść polityki prywatności</h2>
   <section class="blok"><h3>Kto odpowiada za Twoje dane</h3>
     <p>Administratorem danych jest <strong>D-X.PL Michał Jaśkiewicz</strong>, ul. Więckowskiego 32 lok. 8, 90-728 Łódź, NIP 7262533563. W każdej sprawie dotyczącej danych napisz na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>.</p></section>
   <section class="blok"><h3>Co zbieramy</h3>
