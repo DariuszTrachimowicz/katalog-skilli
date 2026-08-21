@@ -48,7 +48,7 @@
     "gemini": {
       "nazwa": "Gemini",
       "instalacja": "Skills &rarr; wgraj plik",
-      "uwaga": "Status przy tym skillu mówi, czy przeszedł nasz test na modelach Gemini (runda z 20 sierpnia 2026; przy „działa z zastrzeżeniami” szczegóły w raporcie testu). Wbudowana obsługa plików skill w aplikacji Gemini nie została udostępniona w Europejskim Obszarze Gospodarczym, więc w Polsce trzeba wkleić instrukcje do rozmowy albo Gema; Google zapowiada zmianę, bez potwierdzonej daty."
+      "uwaga": "Status przy tym skillu mówi, czy przeszedł nasz test na modelach Gemini (rundy z 20 i 21 sierpnia 2026; przy „działa z zastrzeżeniami” szczegóły w raporcie testu). Wbudowana obsługa plików skill w aplikacji Gemini nie została udostępniona w Europejskim Obszarze Gospodarczym, więc w Polsce trzeba wkleić instrukcje do rozmowy albo Gema; Google zapowiada zmianę, bez potwierdzonej daty."
     }
   },
   "statusy": {
