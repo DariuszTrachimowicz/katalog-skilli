@@ -15,7 +15,7 @@ opisSeo: "Zaawansowany, płatny skill do pisania ofert B2B jak architektura decy
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: format
 ---
 
 ## Co robi

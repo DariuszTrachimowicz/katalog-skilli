@@ -15,7 +15,7 @@ opisSeo: "Warsztat rzeczoznawcy majątkowego: wycena etapami z bramkami, oblicze
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: format
 ---
 
 ## Co robi

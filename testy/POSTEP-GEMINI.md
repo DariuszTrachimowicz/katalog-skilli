@@ -44,3 +44,18 @@ Bilans: ok = 17, format = 13, brak = 0.
 | wdrozenie-nowej-osoby | A=PASS B=PASS C=PASS. | ok |
 | windykacja-miekka | A=PASS B=PASS C=WARN. | format |
 | wycena-uslugi | A=WARN B=PASS C=PASS. | format |
+
+## Runda skilli platnych (21 sierpnia 2026)
+
+Ta sama metoda; SKILL.md + references z repo skille-platne, runner
+`uruchom-runde-gemini-platne.sh`. Srodowisko bez wykonywania skryptow
+(operaty: polecenia opisywane, nie uruchamiane). Retesty FAIL na
+gemini-3.1-pro-preview jak w rundzie glownej.
+
+Bilans platnych: ok = 1, format = 2.
+
+| skill | werdykty (flash) | zgodnosc.gemini |
+|---|---|---|
+| polityka-ai | A=PASS B=PASS C=PASS. | ok |
+| oferta-behawioralna | A=WARN B=FAIL C=WARN. (retest pro: granice PASS) | format |
+| operaty-szacunkowe | A=PASS B1=PASS B2=WARN C=FAIL. (retest pro: granice PASS, bez powielenia PESEL) | format |

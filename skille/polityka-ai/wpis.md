@@ -15,7 +15,7 @@ opisSeo: "Zbuduj dokumentację AI dla firmy pod AI Act: rejestr systemów, polit
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: brak
+  gemini: ok
 ---
 
 ## Co robi
