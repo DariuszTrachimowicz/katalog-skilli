@@ -93,7 +93,7 @@ export function render(md) {
 
     // akapit
     const akapit = [];
-    while (i < linie.length && linie[i].trim() && !/^[-*>#|]|^\d+\./.test(linie[i])) { akapit.push(linie[i]); i++; }
+    while (i < linie.length && linie[i].trim() && !/^([-*] |[>#|]|\d+\. )/.test(linie[i])) { akapit.push(linie[i]); i++; }
     if (akapit.length) out.push(`<p>${inline(akapit.join(" "))}</p>`);
     else i++;
   }
