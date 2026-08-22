@@ -2,7 +2,7 @@
 nazwa: Procedury AML dla instytucji obowiązanych
 kategoria: Prawo
 status: platny
-wersja: 1.0.1
+wersja: 1.0.2
 platny: true
 kotwice: instytucja obowiązana AML, biuro rachunkowe AML
 cena: od 890 zł netto

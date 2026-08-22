@@ -2,12 +2,12 @@
 nazwa: Polityka AI i rejestr zastosowań
 kategoria: Prawo
 status: platny
-wersja: 1.1.0
+wersja: 1.1.1
 platny: true
 kotwice: polityka AI, AI Act
 cena: od 890 zł netto
 poziom: Zaawansowany
-aktualizacja: 2026-08-13
+aktualizacja: 2026-08-22
 skrot: Prowadzi firmę przez zbudowanie własnej dokumentacji AI pod obowiązki AI Act, rejestr systemów, politykę dla pracowników, klauzulę do umów, listę praktyk zakazanych, ścieżkę incydentu. Strukturyzuje, nie orzeka zgodności.
 szukaj: polityka AI, AI Act, rejestr systemów AI, obowiązki AI Act, kompetencje AI, klauzula AI do umowy, praktyki zakazane AI, zasady korzystania z AI w firmie, dokumentacja AI, incydent AI, skill płatny, prawo
 tytulSeo: Polityka AI i rejestr zastosowań w firmie pod AI Act, płatny skill
