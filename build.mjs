@@ -297,20 +297,41 @@ function stronaSkilla(s) {
 // Nic nie schodzi z katalogu bez adresu; link w mailu weryfikuje adres.
 const SKRYPT_POBRANIA = `<script>window.poprosOPaczke||(window.poprosOPaczke=async function(f,skill){
 var b=f.querySelector("button");b.disabled=true;b.textContent="Wysyłam…";
-try{var o=await fetch("/api/pobranie",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:f.email.value,skill:skill})});
+var dane={email:f.email.value,skill:skill};
+if(f.nazwa)dane.nazwa=f.nazwa.value;
+if(f.osoba)dane.osoba=f.osoba.value;
+if(f.telefon)dane.telefon=f.telefon.value;
+if(f.zgodaMarketing)dane.zgodaMarketing=f.zgodaMarketing.checked;
+try{var o=await fetch("/api/pobranie",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(dane)});
 var d=await o.json().catch(function(){return{}});
 if(o.ok){f.closest(".dl").outerHTML='<div class="dl dl-ok"><div><b>Sprawdź skrzynkę</b><span>Link do pobrania poleciał na Twój adres. Nie widzisz go po minucie? Zajrzyj do spamu.</span></div></div>';}
-else{b.disabled=false;b.textContent="Wyślij link";f.querySelector("input").setCustomValidity(d.blad||"Nie udało się wysłać");f.reportValidity();setTimeout(function(){f.querySelector("input").setCustomValidity("")},2500);}
+else{b.disabled=false;b.textContent="Wyślij link";var pole=f.querySelector("input");pole.setCustomValidity(d.blad||"Nie udało się wysłać");f.reportValidity();setTimeout(function(){pole.setCustomValidity("")},2500);}
 }catch(e){b.disabled=false;b.textContent="Spróbuj ponownie";}
 return false;});</script>`;
 
 function formularzPobrania(idPaczki, etykieta, { trial = false } = {}) {
-  return `<div class="dl"><div><b>${esc(etykieta)}</b><span>Podaj e-mail, wyślemy link do pobrania${trial ? " wersji trialowej" : ""}</span></div>
-    <form class="dl-form" onsubmit="return poprosOPaczke(this,'${idPaczki}')">
+  // Trial wymaga pelnych danych (lead). Telefon opcjonalny we wszystkich
+  // formularzach. Zgoda marketingowa DOBROWOLNA (zero couplingu), z zacheta.
+  const poleNazwa = trial
+    ? `<input type="text" name="nazwa" required placeholder="Imię i nazwisko albo nazwa firmy" autocomplete="name" aria-label="Imię i nazwisko albo nazwa firmy">
+      <input type="text" name="osoba" placeholder="Osoba do kontaktu (jeśli podałeś firmę)" autocomplete="name" aria-label="Osoba do kontaktu, jeśli firma">`
+    : "";
+  const poleTelefon = `<input type="tel" name="telefon" placeholder="Telefon (opcjonalnie)" autocomplete="tel" aria-label="Telefon, opcjonalnie">`;
+  const zgoda = trial
+    ? `<label class="dl-zgoda"><input type="checkbox" name="zgodaMarketing"> <span>Chcę dostawać newsletter AiXperts (dobrowolne). Zostaw zgodę, a w mailu z trialem dostaniesz kod rabatowy na wersję płatną.</span></label>`
+    : "";
+  const podpis = trial
+    ? "Podaj dane, wyślemy link do pobrania wersji trialowej na e-mail"
+    : "Podaj e-mail, wyślemy link do pobrania";
+  return `<div class="dl"><div><b>${esc(etykieta)}</b><span>${podpis}</span></div>
+    <form class="dl-form${trial ? " dl-form-pelny" : ""}" onsubmit="return poprosOPaczke(this,'${idPaczki}')">
+      ${poleNazwa}
       <input type="email" name="email" required placeholder="twoj@adres.pl" autocomplete="email" aria-label="Adres e-mail do wysyłki linku">
+      ${poleTelefon}
       <button class="btn" data-umami-event="prosba-o-paczke" data-umami-event-skill="${idPaczki}">Wyślij link</button>
+      ${zgoda}
     </form></div>
-  <p class="dl-rodo">Adres posłuży do dostarczenia pliku i odnotowania pobrania, szczegóły w <a href="/prywatnosc/">polityce prywatności</a>.</p>
+  <p class="dl-rodo">Dane posłużą do dostarczenia pliku i odnotowania pobrania. Zapis do newslettera tylko za Twoją zgodą, szczegóły w <a href="/prywatnosc/">polityce prywatności</a>.</p>
   ${SKRYPT_POBRANIA}`;
 }
 
@@ -468,13 +489,54 @@ function stronaGlowna(skille) {
   </div>
 </section>
 
+<section class="sec" id="newsletter">
+  <div class="wrap">
+    <div class="news-baner">
+      <div class="news-txt">
+        <h2>Prawo się zmienia. Niech Twoje skille zmieniają się razem z nim.</h2>
+        <p>Raz na jakiś czas jeden mail: nowa umiejętność, aktualizacja pod zmianę przepisów (KSeF, AML, AI Act, RODO) albo konkretna porada. Zero spamu, wypiszesz się jednym kliknięciem w stopce.</p>
+      </div>
+      <form class="news-form" onsubmit="return zapiszNewsletter(this)">
+        <div class="news-in">
+          <input type="email" name="email" required placeholder="twoj@adres.pl" autocomplete="email" aria-label="Adres e-mail do newslettera">
+          <button class="btn" data-umami-event="newsletter-zapis">Zapisz się</button>
+        </div>
+        <label class="news-zgoda"><input type="checkbox" name="zgoda" required> <span>Chcę dostawać newsletter AiXperts. Podany adres potwierdzę kliknięciem w link, mogę wypisać się w każdej chwili.</span></label>
+        <p class="news-info" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
 <section class="sec">
   <div class="wrap"><div class="cta">
     <h2>Możesz to wdrożyć sam. Albo zrobimy to razem.</h2>
     <p>Samo pobranie albo kupno skilla to dopiero początek. Najwięcej zmienia się wtedy, gdy zespół wie, kiedy go użyć, a kiedy nie.</p>
     <a href="${cfg.linkSzkolenia}" class="btn">Zobacz terminy szkoleń</a>
   </div></div>
-</section>`;
+</section>
+
+<style>
+.news-baner{background:linear-gradient(120deg,var(--akc-tlo,#eef3ee),var(--karta,#fff));border:1px solid var(--linia,#e2ddce);border-radius:16px;padding:1.6rem 1.8rem;display:grid;gap:1rem}
+@media(min-width:760px){.news-baner{grid-template-columns:1.25fr 1fr;align-items:center}}
+.news-txt h2{margin:0 0 .4rem}
+.news-txt p{margin:0;color:var(--mut,#5f5a4e)}
+.news-in{display:flex;gap:.5rem;flex-wrap:wrap}
+.news-in input{flex:1;min-width:12rem;padding:.65rem .8rem;border:1px solid var(--linia,#e2ddce);border-radius:9px;font-size:1rem;font-family:inherit}
+.news-zgoda{display:flex;gap:.55rem;align-items:flex-start;margin:.7rem 0 0;font-size:.85rem;color:var(--mut,#5f5a4e)}
+.news-zgoda input{margin-top:.2rem;flex:0 0 auto}
+.news-info{font-size:.85rem;margin:.5rem 0 0;min-height:1.1rem}
+</style>
+<script>window.zapiszNewsletter||(window.zapiszNewsletter=async function(f){
+var b=f.querySelector("button"),info=f.querySelector(".news-info");
+if(!f.zgoda.checked){info.textContent="Zaznacz zgodę, żeby się zapisać.";return false;}
+b.disabled=true;b.textContent="Zapisuję…";
+try{var o=await fetch("/api/newsletter",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:f.email.value,zgoda:f.zgoda.checked})});
+var d=await o.json().catch(function(){return{}});
+if(o.ok){f.outerHTML='<p class="news-info" style="font-size:1rem">Dziękujemy. Wysłaliśmy link potwierdzający na Twój adres, kliknij go, żeby dokończyć zapis.</p>';}
+else{b.disabled=false;b.textContent="Zapisz się";info.textContent=d.blad||"Nie udało się zapisać, spróbuj ponownie.";}
+}catch(e){b.disabled=false;b.textContent="Spróbuj ponownie";}
+return false;});</script>`;
 
   const skrypt = `<script>
 const SKILLE=${JSON.stringify(daneQuizu)};

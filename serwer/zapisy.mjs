@@ -396,6 +396,26 @@ const serwer = createServer(async (req, res) => {
       return odpowiedz(res, 200, { ok: true });
     }
 
+    /* Zapis do newslettera z bannera: dedykowany opt-in, wymaga zgody. Podwojny
+       opt-in (potwierdzenie mailem), ta sama sciezka potwierdzenia co test. */
+    if (url.pathname === "/api/newsletter" && req.method === "POST") {
+      if (przekroczonyLimit(ip)) return odpowiedz(res, 429, { blad: "Za dużo prób z tego adresu." });
+      let ciało;
+      try { ciało = JSON.parse(await czytajCialo(req)); }
+      catch { return odpowiedz(res, 400, { blad: "Nieprawidłowe dane." }); }
+      const email = String(ciało.email || "").trim().toLowerCase();
+      if (!POPRAWNY_MAIL.test(email) || email.length > 254)
+        return odpowiedz(res, 400, { blad: "Nieprawidłowy adres e-mail." });
+      if (!ciało.zgoda) return odpowiedz(res, 400, { blad: "Zaznacz zgodę na newsletter." });
+      const obecne = stan().get(email);
+      if (obecne?.potwierdzony) return odpowiedz(res, 200, { ok: true });
+      const token = randomBytes(24).toString("hex");
+      dopisz({ typ: "zapis", email, wynik: [], premium: null, zrodlo: "newsletter",
+        token, kiedy: new Date().toISOString(), ip });
+      await wyslijMail({ do: email, ...mailPotwierdzajacy(token) });
+      return odpowiedz(res, 200, { ok: true });
+    }
+
     /* potwierdzenie */
     if (url.pathname === "/api/potwierdz") {
       const rekord = znajdzPoTokenie(url.searchParams.get("t") || "");
@@ -465,8 +485,17 @@ const serwer = createServer(async (req, res) => {
       const skill = String(ciało.skill || "").trim();
       if (!plikPaczki(skill)) return odpowiedz(res, 404, { blad: "Nie ma takiej paczki." });
 
+      // Trial to lead: pelne dane. Telefon opcjonalny, zgoda marketingowa
+      // DOBROWOLNA (zero couplingu, pobranie dziala bez zgody). Osoba do
+      // kontaktu, gdy podano nazwe firmy.
+      const nazwa = String(ciało.nazwa || "").trim().slice(0, 200) || null;
+      const osoba = String(ciało.osoba || "").trim().slice(0, 120) || null;
+      const telefon = String(ciało.telefon || "").replace(/[^0-9+ ]/g, "").trim().slice(0, 20) || null;
+      const zgodaMarketing = ciało.zgodaMarketing ? new Date().toISOString() : null;
+
       const token = randomBytes(24).toString("hex");
-      dopisz({ typ: "pobranie-prosba", email, skill, token, kiedy: new Date().toISOString(), ip });
+      dopisz({ typ: "pobranie-prosba", email, skill, nazwa, osoba, telefon,
+        zgodaMarketing, token, kiedy: new Date().toISOString(), ip });
 
       const trial = skill.endsWith("-trial");
       const s = nazwaSkilla(trial ? skill.replace(/-trial$/, "") : skill);
