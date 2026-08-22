@@ -5,7 +5,7 @@ status: platny
 wersja: 1.1.1
 platny: true
 kotwice: polityka AI, AI Act
-cena: od 890 zł netto
+cena: od 149 zł/mies
 poziom: Zaawansowany
 aktualizacja: 2026-08-22
 skrot: Prowadzi firmę przez zbudowanie własnej dokumentacji AI pod obowiązki AI Act, rejestr systemów, politykę dla pracowników, klauzulę do umów, listę praktyk zakazanych, ścieżkę incydentu. Strukturyzuje, nie orzeka zgodności.

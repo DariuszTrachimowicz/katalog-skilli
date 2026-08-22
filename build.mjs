@@ -364,7 +364,7 @@ function stronaOferty(s) {
   <p class="skrot">${esc(s.skrot)}</p>
   <h2 class="sr-only">Oferta</h2>
   <div class="oferta-akcje">
-    <a class="btn" href="https://licencje.aixperts.pl/zamow/${s.id}" data-umami-event="zakup" data-umami-event-skill="${s.id}">Kup teraz (${esc(s.cena || "cena w ofercie")})</a>
+    <a class="btn" href="https://licencje.aixperts.pl/zamow/${s.id}" data-umami-event="zakup" data-umami-event-skill="${s.id}">Zamów subskrypcję (${esc(s.cena || "cena w ofercie")})</a>
     <span class="dl-rodo">Skill napisany od zera pod polskie realia i audytowany po polsku. Płatność online (BLIK, przelew, karta) albo faktura proforma. Klucz licencji i paczka przychodzą mailem.</span>
   </div>
   ${existsSync(join(KORZEN, "paczki-zewnetrzne", `${s.id}-trial.skill`))

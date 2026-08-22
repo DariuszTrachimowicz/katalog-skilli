@@ -7,7 +7,7 @@ poziom: Zaawansowany
 aktualizacja: 2026-08-22
 platny: true
 kotwice: sprzedaż, oferta B2B
-cena: od 490 zł
+cena: od 99 zł/mies
 skrot: Buduje ofertę B2B jak architekturę decyzji: pakiety, kotwica ceny, odwrócenie ryzyka, kolejność czytania. Skill premium, po pięciu rundach niezależnego audytu.
 szukaj: oferta behawioralna, oferta B2B, pakiety, kotwica ceny, wabik, odwrócenie ryzyka, konwersja oferty, wycena, propozycja współpracy, skill płatny, premium, sprzedaż
 tytulSeo: Oferta behawioralna, płatny skill AI do ofert B2B po polsku

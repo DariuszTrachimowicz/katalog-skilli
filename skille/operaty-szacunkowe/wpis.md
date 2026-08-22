@@ -5,7 +5,7 @@ status: platny
 wersja: 1.0.1
 platny: true
 kotwice: rzeczoznawca majątkowy, operat szacunkowy
-cena: od 890 zł netto
+cena: od 199 zł/mies
 poziom: Zaawansowany
 aktualizacja: 2026-08-22
 skrot: Prowadzi rzeczoznawcę majątkowego przez wycenę nieruchomości etapami z twardymi bramkami, liczy skryptami ze śladem obliczeń w XLSX, pilnuje rejestru decyzji i samooceny operatu przed oddaniem.
