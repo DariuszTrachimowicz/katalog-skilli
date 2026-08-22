@@ -2,12 +2,12 @@
 nazwa: Procedury AML dla instytucji obowiązanych
 kategoria: Prawo
 status: platny
-wersja: 1.0.0
+wersja: 1.0.1
 platny: true
 kotwice: instytucja obowiązana AML, biuro rachunkowe AML
 cena: od 890 zł netto
 poziom: Zaawansowany
-aktualizacja: 2026-08-21
+aktualizacja: 2026-08-22
 skrot: Buduje z instytucją obowiązaną jej dokumentację AML dopasowaną do realnej działalności, ocenę ryzyka instytucji, procedurę wewnętrzną, ocenę ryzyka klienta liczoną skryptem ze śladem obliczeń, ewidencje i checklisty środków bezpieczeństwa finansowego.
 szukaj: AML, pranie pieniędzy, instytucja obowiązana, GIIF, procedura wewnętrzna AML, ocena ryzyka klienta, środki bezpieczeństwa finansowego, beneficjent rzeczywisty, CRBR, biuro rachunkowe, pośrednik nieruchomości, biuro wirtualne, kontrola GIIF, skill płatny, prawo
 tytulSeo: Procedura AML dla biura rachunkowego i instytucji obowiązanej, płatny skill
