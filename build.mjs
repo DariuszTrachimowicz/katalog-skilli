@@ -318,7 +318,7 @@ function formularzPobrania(idPaczki, etykieta, { trial = false } = {}) {
     : "";
   const poleTelefon = `<input type="tel" name="telefon" placeholder="Telefon (opcjonalnie)" autocomplete="tel" aria-label="Telefon, opcjonalnie">`;
   const zgoda = trial
-    ? `<label class="dl-zgoda"><input type="checkbox" name="zgodaMarketing"> <span>Chcę dostawać newsletter AiXperts (dobrowolne). Zostaw zgodę, a w mailu z trialem dostaniesz kod rabatowy na wersję płatną.</span></label>`
+    ? `<label class="dl-zgoda"><input type="checkbox" name="zgodaMarketing"> <span>Chcę dostawać newsletter AiXperts (dobrowolne). Jako subskrybent dostaniesz kod rabatowy na wersję płatną.</span></label>`
     : "";
   const podpis = trial
     ? "Podaj dane, wyślemy link do pobrania wersji trialowej na e-mail"
