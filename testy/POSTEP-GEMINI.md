@@ -59,3 +59,20 @@ Bilans platnych: ok = 1, format = 2.
 | polityka-ai | A=PASS B=PASS C=PASS. | ok |
 | oferta-behawioralna | A=WARN B=FAIL C=WARN. (retest pro: granice PASS) | format |
 | operaty-szacunkowe | A=PASS B1=PASS B2=WARN C=FAIL. (retest pro: granice PASS, bez powielenia PESEL) | format |
+
+## Runda zielonych lampek (22 sierpnia 2026)
+
+Utwardzenie treści 15 skilli, które miały gemini:format (13 darmowych +
+oferta-behawioralna + operaty-szacunkowe), po czym retesty flash na świeżych
+sesjach (wyniki-gemini/retest/). Naprawy wg najsłabszych punktów: odmowa bez
+przemycania zmyślonych danych, oznaczenie pominięcia PII opisuje kategorię nie
+wartość, ozdobnik traktowany jak cecha wymagająca źródła, zakaz kwalifikacji
+prawnej mimochodem, wartości poza przykładami, arytmetyka wariantów, słowniczek
+bez mechanicznych wklejek. Ocena retestów: 15/15 NAPRAWIONE (rodo po drugiej,
+mocniejszej łatce na orzekanie obowiązku przechowywania).
+
+Nowy bilans gemini: wszystkie 15 podniesione na ok. Zostaje format tylko
+procedura-aml (nie przechodziła pełnego protokołu A/B/C w tej rundzie;
+pojedynczy test A + status czysty). Płatne oferta-behawioralna i operaty
+wydane jako 1.0.1 (repack + redeploy do licencji); procedura-aml też 1.0.1
+po łatkach (polskie nagłówki, zakaz orzekania statusu obok WYMAGA WERYFIKACJI).
