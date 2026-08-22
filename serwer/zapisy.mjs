@@ -243,13 +243,23 @@ async function wyslijMail({ do: adresat, temat, tresc }) {
 async function zglosDoCrm(rekord) {
   const crm = C.crm;
   if (!crm?.formularz) return;
+  // Marker zrodla: n8n rozdziela to na newsletter (silnik) i odbicie do Perfexa
+  // (grupa "Newsletter"). Test doboru i newsletter ida tym samym webhookiem,
+  // rozroznione polem `zrodlo`.
+  const newsletter = rekord.zrodlo === "newsletter";
+  const opis = newsletter
+    ? `Potwierdzony zapis do newslettera (${cfg.domena}).`
+    : `Potwierdzony zapis z testu doboru (${cfg.domena}). Dobrane skille: ${
+        (rekord.wynik || []).map((id) => nazwaSkilla(id).nazwa).join(", ") || "brak"
+      }.${rekord.premium ? ` Dopasowanie premium (PŁATNY): ${nazwaSkilla(rekord.premium).nazwa}${nazwaSkilla(rekord.premium).cena ? `, ${nazwaSkilla(rekord.premium).cena}` : ""}.` : ""}`;
   const dane = new URLSearchParams({
     key: crm.formularz.split("/").pop(),
-    name: rekord.email,
+    name: rekord.nazwa || rekord.email,
     email: rekord.email,
-    description: `Potwierdzony zapis z testu doboru (${cfg.domena}). Dobrane skille: ${
-      (rekord.wynik || []).map((id) => nazwaSkilla(id).nazwa).join(", ") || "brak"
-    }.${rekord.premium ? ` Dopasowanie premium (PŁATNY): ${nazwaSkilla(rekord.premium).nazwa}${nazwaSkilla(rekord.premium).cena ? `, ${nazwaSkilla(rekord.premium).cena}` : ""}.` : ""}`,
+    zrodlo: newsletter ? "newsletter" : "test-doboru",
+    newsletter: newsletter ? "tak" : "nie",
+    telefon: rekord.telefon || "",
+    description: opis,
   });
   const odp = await fetch(crm.formularz, { method: "POST", body: dane, signal: AbortSignal.timeout(8000) });
   if (!odp.ok) throw new Error(`CRM odpowiedział ${odp.status}`);
@@ -496,6 +506,13 @@ const serwer = createServer(async (req, res) => {
       const token = randomBytes(24).toString("hex");
       dopisz({ typ: "pobranie-prosba", email, skill, nazwa, osoba, telefon,
         zgodaMarketing, token, kiedy: new Date().toISOString(), ip });
+
+      // Zgoda marketingowa przy pobraniu = explicit opt-in; do n8n (newsletter
+      // + odbicie w Perfexie). Bez zgody nie zglaszamy nic marketingowego.
+      if (zgodaMarketing) {
+        zglosDoCrm({ email, nazwa: osoba || nazwa, telefon, zrodlo: "newsletter" })
+          .catch((e) => console.error("Newsletter (pobranie) do n8n nieudane:", e.message));
+      }
 
       const trial = skill.endsWith("-trial");
       const s = nazwaSkilla(trial ? skill.replace(/-trial$/, "") : skill);
