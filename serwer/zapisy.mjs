@@ -265,13 +265,17 @@ async function zglosDoCrm(rekord) {
   if (!odp.ok) throw new Error(`CRM odpowiedział ${odp.status}`);
 }
 
-const mailPotwierdzajacy = (token) => ({
-  temat: "Potwierdź zapis, zestaw umiejętności",
+const mailPotwierdzajacy = (token, zrodlo = "test") => {
+  const newsletter = zrodlo === "newsletter";
+  return {
+  temat: newsletter ? "Potwierdź zapis na newsletter" : "Potwierdź zapis, zestaw umiejętności",
   tresc: `Cześć,
 
-ktoś (mamy nadzieję, że Ty) poprosił o zestaw umiejętności AI dobrany w teście na ${cfg.domena}.
+${newsletter
+  ? `ktoś (mamy nadzieję, że Ty) zapisał ten adres na newsletter „${cfg.nazwaSerwisu}" na ${cfg.domena}.`
+  : `ktoś (mamy nadzieję, że Ty) poprosił o zestaw umiejętności AI dobrany w teście na ${cfg.domena}.`}
 
-Potwierdź kliknięciem, a wyślemy go od razu:
+Potwierdź kliknięciem, a ${newsletter ? "dopiszemy Cię do listy" : "wyślemy go od razu"}:
 ${BAZA}/api/potwierdz?t=${token}
 
 Jeśli to nie Ty, po prostu zignoruj tę wiadomość. Bez potwierdzenia nie wyślemy nic więcej i nie zapiszemy Cię na żadną listę.
@@ -280,7 +284,8 @@ Mały bonus na start: jako subskrybent masz kod NEWSLETTER10, który daje 10% ra
 
 ${cfg.nazwaSerwisu}
 ${BAZA}`,
-});
+  };
+};
 
 const mailZZestawem = (wynik, token, premium = null) => ({
   temat: "Twój zestaw umiejętności AI",
@@ -424,7 +429,7 @@ const serwer = createServer(async (req, res) => {
       const token = randomBytes(24).toString("hex");
       dopisz({ typ: "zapis", email, wynik: [], premium: null, zrodlo: "newsletter",
         token, kiedy: new Date().toISOString(), ip });
-      await wyslijMail({ do: email, ...mailPotwierdzajacy(token) });
+      await wyslijMail({ do: email, ...mailPotwierdzajacy(token, "newsletter") });
       return odpowiedz(res, 200, { ok: true });
     }
 
