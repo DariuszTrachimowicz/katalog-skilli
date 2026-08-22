@@ -276,6 +276,8 @@ ${BAZA}/api/potwierdz?t=${token}
 
 Jeśli to nie Ty, po prostu zignoruj tę wiadomość. Bez potwierdzenia nie wyślemy nic więcej i nie zapiszemy Cię na żadną listę.
 
+Mały bonus na start: jako subskrybent masz kod NEWSLETTER10, który daje 10% rabatu na każdy płatny skill.
+
 ${cfg.nazwaSerwisu}
 ${BAZA}`,
 });
@@ -440,7 +442,7 @@ const serwer = createServer(async (req, res) => {
       }
       return stronaHtml(res, "Potwierdzone",
         `<p class="skrot">Zestaw poleciał na <strong>${rekord.email}</strong>. Powinien być w skrzynce w ciągu minuty, jeśli go nie ma, zajrzyj do spamu.</p>
-         <section class="blok"><h3>Co dalej</h3><p>Będziemy pisać o nowościach w katalogu, a od czasu do czasu o naszych szkoleniach i usługach. Wypisujesz się jednym kliknięciem ze stopki każdej wiadomości.</p></section>`);
+         <section class="blok"><h3>Co dalej</h3><p>Będziemy pisać o nowościach w katalogu, a od czasu do czasu o naszych szkoleniach i usługach. Wypisujesz się jednym kliknięciem ze stopki każdej wiadomości.</p><p>Twój kod dla subskrybentów: <strong>NEWSLETTER10</strong> to 10% rabatu na każdy płatny skill.</p></section>`);
     }
 
     /* feedback z ankiety, rozwiązuje token→e-mail, zapisuje do pliku dla automatu (n8n),
