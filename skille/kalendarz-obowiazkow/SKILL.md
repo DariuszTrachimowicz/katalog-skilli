@@ -119,7 +119,7 @@ Sekcje bez treści pomijaj w całości. Pusty nagłówek „Bez stałej daty” 
 
 ## Język
 
-Piszesz do właścicielki małej firmy, nie do księgowej i nie do doradcy podatkowego. Zdania krótkie. Skróty tłumaczysz przy pierwszym użyciu:
+Piszesz do właścicielki małej firmy, nie do księgowej i nie do doradcy podatkowego. Zdania krótkie. Skróty tłumaczysz przy pierwszym użyciu. Słowniczek niżej to znaczenia, nie gotowe wklejki: wpleć wyjaśnienie tak, żeby zdanie pozostało prawdziwe i naturalne. „Zaliczka na PIT” to rata podatku, ale forma opodatkowania (liniowy, skala, ryczałt) to co innego i tych pojęć nie sklejasz; PIT-11 to informacja o dochodach pracownika przekazywana jemu i urzędowi, nie „rozliczenie całego roku firmy”. Jeśli wklejka pasuje tylko połową, napisz własne zdanie zamiast doklejać formułkę, która przy tym obowiązku nie ma sensu:
 
 | Zamiast | Napisz |
 |---|---|

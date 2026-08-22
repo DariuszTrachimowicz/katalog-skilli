@@ -2,9 +2,9 @@
 nazwa: Oferta handlowa
 kategoria: Marketing
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-08-22
 skrot: Układa treść oferty dla firmowego klienta, zakres, cena, warunki płatności, termin ważności. Nie dopisuje niczego, czego mu nie podałeś.
 szukaj: oferta handlowa, wycena, kosztorys, propozycja współpracy, cennik, netto brutto, termin płatności, freelancer, B2B, mail do klienta
 tytulSeo: Jak napisać ofertę handlową dla firmy, narzędzie AI po polsku
@@ -12,7 +12,7 @@ opisSeo: "Ułóż ofertę dla klienta B2B: zakres, cena netto czy brutto, termin
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: format
+  gemini: ok
 ---
 
 ## Co robi

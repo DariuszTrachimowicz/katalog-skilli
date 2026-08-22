@@ -2,9 +2,9 @@
 nazwa: Oferta behawioralna
 kategoria: Marketing
 status: platny
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Zaawansowany
-aktualizacja: 2026-08-13
+aktualizacja: 2026-08-22
 platny: true
 kotwice: sprzedaż, oferta B2B
 cena: od 490 zł
@@ -15,7 +15,7 @@ opisSeo: "Zaawansowany, płatny skill do pisania ofert B2B jak architektura decy
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: format
+  gemini: ok
 ---
 
 ## Co robi

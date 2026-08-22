@@ -2,9 +2,9 @@
 nazwa: Co mówi arkusz
 kategoria: Dane
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-08-22
 skrot: Czyta zestawienie z Excela i mówi po ludzku, co z niego wynika, bez formuł i tabel przestawnych, z wyraźnym podziałem na fakty i domysły.
 szukaj: excel, arkusz, csv, analiza danych, zestawienie sprzedaży, zestawienie z Optimy, rejestr sprzedaży, wyciąg, co wynika z danych, spadek sprzedaży, Subiekt, trend
 tytulSeo: Co wynika z tego zestawienia, analiza arkusza Excel po polsku
@@ -12,7 +12,7 @@ opisSeo: Wrzuć zestawienie z Excela i zobacz, co z niego wynika, kierunki, wart
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: format
+  gemini: ok
 ---
 
 ## Co robi

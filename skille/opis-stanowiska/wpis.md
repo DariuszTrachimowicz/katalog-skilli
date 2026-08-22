@@ -2,9 +2,9 @@
 nazwa: Opis stanowiska
 kategoria: Kadry
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-08-22
 skrot: Zamienia „potrzebuję kogoś do pomocy” w konkretny opis stanowiska, zakres obowiązków, wymagania konieczne i mile widziane, sposób sprawdzenia każdego z nich.
 szukaj: opis stanowiska, zakres obowiązków, karta stanowiska, rekrutacja, wymagania, kandydat, kadry, mała firma, nazwa stanowiska, kryteria oceny
 tytulSeo: Opis stanowiska pracy, jak go napisać. Narzędzie AI po polsku
@@ -12,7 +12,7 @@ opisSeo: Wpisz, kogo szukasz, i dostań gotowy opis stanowiska, obowiązki, wyma
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: format
+  gemini: ok
 ---
 
 ## Co robi

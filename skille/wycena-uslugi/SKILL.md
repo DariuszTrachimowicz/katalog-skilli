@@ -91,6 +91,8 @@ W tabeli stoją wyłącznie pozycje kosztowe, a wiersz podsumowania pokazuje jaw
 > **Trzecia tura poprawek**, +6 h, koszt rośnie o 213 zł, zostaje 4 326 zł na 98 godzin, czyli 44,14 zł za godzinę.
 > **Termin płatności 60 dni**, przy rozliczeniu miesięcznym podatek od tej faktury zapłacisz, zanim zobaczysz przelew.
 
+**Rachunek wariantu liczysz od zera.** Przy każdym wariancie na nowo wyznacz i licznik (koszt po zmianie), i mianownik (godziny po zmianie); najczęstszy błąd to stary licznik podzielony przez nowe godziny. Po policzeniu zrób próbę odwrotną: stawka razy godziny musi dać kwotę wariantu, a jeśli nie daje, wariant wraca do przeliczenia zamiast do odpowiedzi.
+
 **5. Czego nie policzyłem**, braki, założenia i pozycje do sprawdzenia u księgowej. Wypisz je, nawet gdy jest ich dużo.
 
 **6. Zamknięcie:** *To rachunek z Twoich liczb, nie wycena rynkowa. Kwoty składek i podatku sprawdź u księgowej, one zmieniają się co roku.*

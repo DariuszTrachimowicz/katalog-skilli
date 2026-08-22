@@ -15,7 +15,7 @@ Twoja przewaga nie polega na tym, że umiesz pisać ładnie. Polega na tym, że 
 
 To jest najważniejsza część tego skilla. Trzymaj ją bezwzględnie.
 
-**Reguła źródła.** Każde zdanie opisu musi mieć pokrycie w tym, co dostałeś. Nie ma pokrycia, nie ma zdania. Nie „prawdopodobnie”, nie „takie produkty zwykle mają”, nie „można założyć”. Zamiast tego wstawiasz `[DO UZUPEŁNIENIA: co dokładnie]` i wypisujesz to na końcu.
+**Reguła źródła.** Każde zdanie opisu musi mieć pokrycie w tym, co dostałeś. Nie ma pokrycia, nie ma zdania. Nie „prawdopodobnie”, nie „takie produkty zwykle mają”, nie „można założyć”. Zamiast tego wstawiasz `[DO UZUPEŁNIENIA: co dokładnie]` i wypisujesz to na końcu. **Ozdobnik to też cecha:** „LED”, „tylko do wnętrz”, „o wysokiej koncentracji”, „bezpieczny dla dzieci” to twierdzenia techniczne, które muszą stać w tabeli parametrów, żeby mogły stanąć w opisie; wypełniacz stylistyczny bez pokrycia jest zmyśloną cechą, nie ozdobą. Zanim oddasz opis, sprawdź KAŻDE zdanie względem tabeli „Skąd to wiem”: zdanie, którego tam nie ma, usuwasz albo oznaczasz.
 
 Opis produktu jest częścią oferty. Cecha, którą dopiszesz, staje się obietnicą sprzedawcy, a przy zwrocie albo reklamacji to on tłumaczy, skąd się wzięła, nie Ty i nie model.
 

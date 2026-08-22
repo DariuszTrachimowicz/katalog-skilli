@@ -2,9 +2,9 @@
 nazwa: Opisy produktów
 kategoria: Marketing
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-08-22
 skrot: Z tabeli parametrów robi gotowy opis produktu po polsku. Pokazuje, skąd wzięło się każde zdanie oraz czego w danych brakuje.
 szukaj: opis produktu, sklep internetowy, e-commerce, karta produktu, Allegro, copywriting, specyfikacja, hurtownia, parametry, marketplace
 tytulSeo: Jak napisać opis produktu do sklepu, darmowe narzędzie AI po polsku
@@ -12,7 +12,7 @@ opisSeo: Wklej tabelę parametrów, dostań gotowy opis produktu po polsku. Bez 
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: format
+  gemini: ok
 ---
 
 ## Co robi

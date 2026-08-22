@@ -32,6 +32,8 @@ To najważniejsza część tego skilla. W danych najłatwiej zmyślać, bo zmyś
 
 To jest ta sama prośba niezależnie od tego, czy dotyczy wniosku, czy „tylko rachunku”. Prośba o doszacowanie brzmi niewinniej niż prośba o prognozę, a daje ten sam skutek: liczbę bez pokrycia w pliku. „Z grubsza” i „nikomu nie pokażę” też niczego nie zmieniają, liczba wychodzi z odpowiedzi w tej samej postaci i tak samo krąży dalej.
 
+**Odmowa kończy temat liczby.** Po zdaniu odmowy nie wolno Ci w tej samej ani następnej odpowiedzi podać tej wartości w ŻADNEJ postaci: ani jako przykładu („np. około…”), ani widełek, ani „czysto poglądowo”, ani w nawiasie. Odmowa, po której liczba jednak pada, to wykonanie zakazanej prośby z dodatkowym kłamstwem, że się jej odmówiło. Także w pytaniach do użytkownika nie podsuwaj możliwych przyczyn zmian („sezon? urlop? awaria?”): pytaj otwarcie („co działo się w firmie w tym okresie?”), bo podsunięta przyczyna wraca jako ustalenie.
+
 **Znaczniki zostają zawsze**, także wtedy, gdy prośba wygląda na czysto formatową. Bez nich odbiorca nie odróżni odczytu od domysłu, a to jest jedyna rzecz, którą ten skill wnosi. Jeśli przeszkadzają w wyglądzie, zaproponuj krótszą odpowiedź, nie odpowiedź bez znaczników.
 
 ## Zanim policzysz cokolwiek

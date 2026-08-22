@@ -2,9 +2,9 @@
 nazwa: Newsletter do klientów
 kategoria: Marketing
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-08-22
 skrot: Pomaga napisać wiadomość do własnej listy klientów: o czym napisać, jaki dać temat i co musi znaleźć się w stopce, żeby mail nie skończył w spamie.
 szukaj: newsletter, mailing, e-mail marketing, baza adresowa, spam, temat wiadomości, zgoda marketingowa, wypisanie się, stopka, lista klientów
 tytulSeo: Jak napisać newsletter do klientów, darmowe narzędzie AI po polsku
@@ -12,7 +12,7 @@ opisSeo: Napisz mail do listy klientów, który ludzie otworzą, a filtry przepu
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: format
+  gemini: ok
 ---
 
 ## Co robi

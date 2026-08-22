@@ -2,12 +2,12 @@
 nazwa: Operaty szacunkowe, warsztat rzeczoznawcy
 kategoria: Finanse
 status: platny
-wersja: 1.0.0
+wersja: 1.0.1
 platny: true
 kotwice: rzeczoznawca majątkowy, operat szacunkowy
 cena: od 890 zł netto
 poziom: Zaawansowany
-aktualizacja: 2026-08-20
+aktualizacja: 2026-08-22
 skrot: Prowadzi rzeczoznawcę majątkowego przez wycenę nieruchomości etapami z twardymi bramkami, liczy skryptami ze śladem obliczeń w XLSX, pilnuje rejestru decyzji i samooceny operatu przed oddaniem.
 szukaj: operat szacunkowy, wycena nieruchomości, rzeczoznawca majątkowy, podejście porównawcze, porównywanie parami, podejście dochodowe, stopa kapitalizacji, zużycie techniczne, analiza rynku, wagi cech, rejestr decyzji, ocena operatu, skill płatny, finanse
 tytulSeo: Operat szacunkowy ze śladem obliczeń, płatny skill dla rzeczoznawcy
@@ -15,7 +15,7 @@ opisSeo: "Warsztat rzeczoznawcy majątkowego: wycena etapami z bramkami, oblicze
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: format
+  gemini: ok
 ---
 
 ## Co robi

@@ -2,9 +2,9 @@
 nazwa: Kalendarz obowiązków
 kategoria: Finanse
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-08-22
 skrot: Układa jedną listę tego, co w Twojej firmie wraca co miesiąc, co kwartał i raz w roku, z opisem, czego każda pozycja dotyczy i kto ją robi.
 szukaj: terminy, ZUS, VAT, podatki, kalendarz, obowiązki firmy, deklaracje, JPK, KSeF, BDO, kasa fiskalna, mała firma
 tytulSeo: Terminy w firmie, co trzeba zrobić co miesiąc, co kwartał i raz w roku
@@ -12,7 +12,7 @@ opisSeo: Zbuduj kalendarz obowiązków małej firmy. ZUS, podatek, VAT, sprawozd
 zgodnosc:
   claude: ok
   gpt: ok
-  gemini: format
+  gemini: ok
 ---
 
 ## Co robi
