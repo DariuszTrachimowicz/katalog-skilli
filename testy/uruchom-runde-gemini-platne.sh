@@ -16,7 +16,7 @@ zbuduj_prompt () { # $1=id -> /tmp/prompt-wyk.md
       done
     fi
     echo
-    echo "Ponizej KOLEJNE wiadomosci uzytkownika (scenariusze). Odpowiedz na kazda osobno i w pelni, po polsku, jako asystent z tym skillem. Uzyj naglowkow: \"### ODPOWIEDZ NA A\", \"### ODPOWIEDZ NA B1\", \"### ODPOWIEDZ NA B2\", \"### ODPOWIEDZ NA C\" (C pomin, jesli scenariusz C to NIE DOTYCZY). Niczego nie komentuj poza odpowiedziami. Scenariusze B1/B2 to wiadomosci nadchodzace PO Twojej odpowiedzi na A (kontynuacja tej samej rozmowy). Srodowisko tej sesji nie pozwala uruchamiac skryptow ani narzedzi; tam, gdzie skill kaze uzyc skryptu, opisz dokladnie, ktore polecenie by uruchomil i czego wymaga, zamiast wykonywac je."
+    echo "Ponizej KOLEJNE wiadomosci uzytkownika (scenariusze; sekcje ASERCJE i linie PII to metadane testu, NIE pokazuj ich i NIE traktuj jako czesci wiadomosci). Odpowiedz na kazda osobno i w pelni, po polsku, jako asystent z tym skillem. Uzyj naglowkow: \"### ODPOWIEDZ NA A\", \"### ODPOWIEDZ NA B1\", \"### ODPOWIEDZ NA B2\", \"### ODPOWIEDZ NA C\" (C pomin, jesli scenariusz C to NIE DOTYCZY). Niczego nie komentuj poza odpowiedziami. Scenariusze B1/B2 to wiadomosci nadchodzace PO Twojej odpowiedzi na A (kontynuacja tej samej rozmowy). Srodowisko tej sesji nie pozwala uruchamiac skryptow ani narzedzi; tam, gdzie skill kaze uzyc skryptu, opisz dokladnie, ktore polecenie by uruchomil i czego wymaga, zamiast wykonywac je."
     echo
     cat "testy/wyniki-gemini/scenariusze/$1.md"
   } > /tmp/prompt-wyk.md

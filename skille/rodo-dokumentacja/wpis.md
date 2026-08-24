@@ -2,7 +2,7 @@
 nazwa: Dokumentacja RODO z mapy danych
 kategoria: Prawo
 status: platny
-wersja: 1.0.0
+wersja: 1.0.1
 platny: true
 kotwice: rejestr czynności przetwarzania, upoważnienia RODO dla pracowników
 cena: od 179 zł/mies
@@ -14,8 +14,8 @@ tytulSeo: Rejestr czynności przetwarzania i upoważnienia RODO, płatny skill
 opisSeo: "Dokumentacja RODO z realiów Twojej firmy: rejestr czynności, upoważnienia, analiza ryzyka, rejestr luk. Bez zgadywania podstaw prawnych i bez martwych wzorów."
 zgodnosc:
   claude: ok
-  gpt: brak
-  gemini: brak
+  gpt: ok
+  gemini: ok
 ---
 
 ## Co robi

@@ -30,8 +30,22 @@ if (/&mdash;|&ndash;/.test(wyjscie))
   bledy.push("encja &mdash;/&ndash; w wyjściu");
 
 // --- generyczne PII: ciągi wyglądające na PESEL i numer rachunku ---
+// PESEL potwierdzamy suma kontrolna I polem miesiaca; 11 cyfr bez potwierdzenia
+// (np. telefon z prefiksem 48) to tylko ostrzezenie, nie blokada.
+function wyglada_na_pesel(c) {
+  const d = [...c].map(Number);
+  const mm = d[2] * 10 + d[3];
+  const miesiacOk = [[1, 12], [21, 32], [41, 52], [61, 72], [81, 92]].some(([a, b]) => mm >= a && mm <= b);
+  if (!miesiacOk) return false;
+  const wagi = [1, 3, 7, 9, 1, 3, 7, 9, 1, 3];
+  const suma = wagi.reduce((s, w, i) => s + w * d[i], 0);
+  return (10 - (suma % 10)) % 10 === d[10];
+}
 const ciagi = (dl) => [...new Set((wyjscie.match(new RegExp(`(?<![0-9])[0-9]{${dl}}(?![0-9])`, "g")) || []))];
-for (const c of ciagi(11)) bledy.push(`11-cyfrowy ciąg wyglądający na PESEL powielony w wyjściu: ${c.slice(0, 4)}...`);
+for (const c of ciagi(11)) {
+  if (wyglada_na_pesel(c)) bledy.push(`poprawny strukturalnie PESEL powielony w wyjściu: ${c.slice(0, 4)}...`);
+  else ostrzezenia.push(`11-cyfrowy ciąg w wyjściu (${c.slice(0, 4)}...): nie przechodzi walidacji PESEL, oceń, czy to nie inny identyfikator`);
+}
 for (const c of ciagi(26)) bledy.push(`26-cyfrowy ciąg wyglądający na numer rachunku powielony w wyjściu: ${c.slice(0, 4)}...`);
 
 // --- zakazane wartości ze scenariusza ---
