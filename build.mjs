@@ -760,12 +760,89 @@ function stronaSpisuPoradnikow(poradniki) {
 <section class="sec"><div class="wrap poradnik">
   <h1>Poradniki: KSeF w praktyce firmy</h1>
   <p class="por-meta">Konkretne odpowiedzi na sytuacje, w których firmy naprawdę utykają: awaria systemu, odrzucona faktura, uprawnienia dla biura. Pisane od zera pod polskie realia, ze źródłami i datą stanu.</p>
+  <div class="por-cta"><div class="por-cta-eyebrow">Zacznij od narzędzia</div><h3>Sprawdzian gotowości na awarię KSeF</h3><p>10 pytań, wynik od razu w przeglądarce, luki z linkami do poradników.</p><a class="btn" href="/sprawdzian-ksef/" data-umami-event="sprawdzian-wejscie">Zrób sprawdzian</a></div>
   <ul class="por-lista">
     ${poradniki.map((p) => `<li><a href="/poradniki/${p.slug}/"><strong>${esc(p.tytul)}</strong><span>${esc(p.zajawka || p.opis)}</span></a></li>`).join("\n    ")}
   </ul>
 </div></section>
 </main>`;
   return strona({ tytul: "Poradniki KSeF dla firm", opis: "Awaria KSeF, odrzucona faktura, uprawnienia biura rachunkowego, numer KSeF w przelewach: praktyczne poradniki ze źródłami i datą stanu.", tresc, sciezka: "/poradniki/" });
+}
+
+/* ---------- sprawdzian gotowosci na awarie KSeF (darmowe narzedzie klastra) ---------- */
+
+function stronaSprawdzianu() {
+  // Pytania mapuja sie 1:1 na obszary poradnikow; "tak" = obszar domkniety.
+  // Wynik NIE jest ocena zgodnosci: liczy domkniete obszary wedlug deklaracji
+  // odpowiadajacego i wskazuje luki z linkiem do wlasciwego poradnika.
+  const PYTANIA = [
+    { p: "Czy w firmie jest spisane, kto wystawia faktury w KSeF i kto go zastępuje podczas urlopu albo choroby?", luka: "Nie ma spisanego podziału ról przy wystawianiu.", por: "ksef-procedura-awaryjna-firmy" },
+    { p: "Czy ktoś codziennie sprawdza, że wystawione faktury dostały numer KSeF (a odrzucone są wyłapywane)?", luka: "Nikt nie pilnuje statusów i odrzuceń na bieżąco.", por: "faktura-odrzucona-w-ksef" },
+    { p: "Czy prowadzicie rejestr odrzuconych faktur (kto, kiedy, przyczyna, co zrobiono)?", luka: "Odrzucenia nie zostawiają śladu, po którym można działać.", por: "faktura-odrzucona-w-ksef" },
+    { p: "Czy macie zapisane, gdzie sprawdza się ogłoszenia o awarii i niedostępności KSeF, i wiecie, że są cztery różne tryby pracy bez dostępu?", luka: "W dniu awarii nikt nie będzie wiedział, który tryb obowiązuje.", por: "awaria-ksef-co-robic" },
+    { p: "Czy wiadomo, kto podejmuje decyzję o wystawianiu offline, także w piątek po godzinach?", luka: "Brak osoby decyzyjnej poza godzinami pracy to najczęstsza luka.", por: "awaria-ksef-co-robic" },
+    { p: "Czy osoba wystawiająca wie, że fakturę z trybu offline24 trzeba przesłać do systemu najpóźniej następnego dnia roboczego, i jest wyznaczona do tego dosłania?", luka: "Termin dosłania offline24 nie ma właściciela.", por: "tryb-offline24" },
+    { p: "Czy wiecie, kiedy wizualizacja faktury ma jeden kod QR, a kiedy dwa, i czy macie certyfikat właściwego typu?", luka: "Reguła kodów QR i certyfikat typu 2 są nierozpoznane.", por: "kody-qr-ksef" },
+    { p: "Czy istnieje aktualny spis, kto ma jakie uprawnienia w KSeF, łącznie z biurem rachunkowym i jego pracownikami?", luka: "Nie wiadomo, kto naprawdę ma dostęp do faktur firmy.", por: "uprawnienia-ksef-biuro-rachunkowe" },
+    { p: "Czy jest lista czynności na odejście osoby z dostępem do KSeF (odebranie uprawnień w dniu zakończenia pracy, los certyfikatu)?", luka: "Odejście pracownika zostawi otwarte dostępy.", por: "odejscie-pracownika-ksef" },
+    { p: "Czy wiecie, co zmienia się w przelewach od 1 stycznia 2027 roku i kto w firmie będzie za to odpowiadał?", luka: "Numer KSeF w płatnościach nie ma jeszcze właściciela.", por: "numer-ksef-w-przelewach" },
+  ];
+  const tresc = `<main>
+<section class="sec"><div class="wrap poradnik">
+  <p class="por-sciezka"><a href="/poradniki/">Poradniki</a> &raquo; Narzędzie</p>
+  <h1>Sprawdzian gotowości na awarię KSeF</h1>
+  <p class="por-meta">10 pytań o to, jak Twoja firma naprawdę pracuje z KSeF. Wynik liczy się w Twojej przeglądarce i nigdzie nie jest wysyłany. To nie jest audyt ani ocena zgodności z przepisami: sprawdzasz sam siebie, według własnych odpowiedzi.</p>
+  <div id="spr"></div>
+  <noscript><p>Sprawdzian wymaga włączonej obsługi JavaScript. Wszystkie tematy znajdziesz też w <a href="/poradniki/">poradnikach</a>.</p></noscript>
+  <p class="por-stopka">Sprawdzian porządkuje obszary operacyjne i nie jest poradą podatkową ani prawną; o stawkach, odliczeniach i kwalifikacji transakcji decyduje Twoja księgowa albo doradca podatkowy.</p>
+</div></section>
+</main>`;
+  const skrypt = `<script>
+(function(){
+  var PYT=${JSON.stringify(PYTANIA.map((x) => ({ p: x.p, luka: x.luka, por: x.por })))};
+  var el=document.getElementById("spr");if(!el)return;
+  var odp=new Array(PYT.length).fill(null);
+  function rys(){
+    var n=odp.filter(function(x){return x!==null}).length;
+    var html='<div class="spr-pasek"><i style="width:'+(n/PYT.length*100)+'%"></i></div>';
+    PYT.forEach(function(q,i){
+      html+='<div class="spr-pyt"><div class="spr-tresc">'+(i+1)+'. '+q.p+'</div><div class="spr-odp">'
+        +'<button type="button" data-i="'+i+'" data-v="1" class="'+(odp[i]===1?"aktywna":"")+'">Tak</button>'
+        +'<button type="button" data-i="'+i+'" data-v="0" class="'+(odp[i]===0?"aktywna":"")+'">Nie / nie wiem</button>'
+      +'</div></div>';
+    });
+    if(n===PYT.length){
+      var tak=odp.reduce(function(a,b){return a+b},0);
+      var luki=PYT.filter(function(q,i){return odp[i]===0});
+      html+='<div class="spr-wynik" data-umami-event="sprawdzian-wynik" data-umami-event-domkniete="'+tak+'">';
+      html+='<h2>Domknięte obszary według Twoich odpowiedzi: '+tak+' z '+PYT.length+'</h2>';
+      if(!luki.length){
+        html+='<p>Na tej liście nie widać luk. To dobry moment, żeby spisane zasady przetestować na sucho: awaria sprawdzona w spokojny wtorek boli mniej niż w piątkowy szczyt.</p>';
+      }else{
+        html+='<p>Obszary do domknięcia (każdy z poradnikiem, jak to zrobić):</p><ul>';
+        luki.forEach(function(q){html+='<li>'+q.luka+' <a href="/poradniki/'+q.por+'/">Jak to domknąć</a></li>'});
+        html+='</ul>';
+      }
+      html+='<div class="por-cta"><div class="por-cta-eyebrow">Narzędzie do domknięcia całości</div><h3>Procedury operacyjne KSeF</h3><p>Skill buduje z Tobą komplet: macierz ról, kartę postępowania na cztery tryby, matrycę uprawnień, rejestr odrzuceń i zasady płatności. Porządkuje pracę, nie orzeka zgodności z przepisami.</p><a class="btn" href="/skill/ksef-procedury/" data-umami-event="poradnik-cta" data-umami-event-skill="ksef-procedury">Zobacz, jak działa</a></div>';
+      html+='</div>';
+    }
+    el.innerHTML=html;
+  }
+  el.addEventListener("click",function(e){
+    var b=e.target.closest("button[data-i]");if(!b)return;
+    odp[Number(b.dataset.i)]=Number(b.dataset.v);
+    if(window.umami&&odp.filter(function(x){return x!==null}).length===1){try{umami.track("sprawdzian-start")}catch(_){}}
+    rys();
+    var w=document.querySelector(".spr-wynik");if(w)w.scrollIntoView({behavior:"smooth",block:"nearest"});
+  });
+  rys();
+})();
+</script>`;
+  return strona({
+    tytul: "Sprawdzian gotowości na awarię KSeF",
+    opis: "10 pytań o realną gotowość firmy: kto decyduje przy awarii KSeF, kto dosyła faktury offline24, kto pilnuje odrzuceń i uprawnień. Wynik w przeglądarce.",
+    tresc, sciezka: "/sprawdzian-ksef/", skrypt,
+  });
 }
 
 // strony
@@ -783,6 +860,8 @@ for (const s of skille) {
 }
 const poradniki = wczytajPoradniki();
 if (poradniki.length) {
+  zapisz(join(WY, "sprawdzian-ksef", "index.html"), stronaSprawdzianu());
+  console.log("  strona  /sprawdzian-ksef/");
   zapisz(join(WY, "poradniki", "index.html"), stronaSpisuPoradnikow(poradniki));
   console.log("  strona  /poradniki/");
   for (const p of poradniki) {
@@ -822,7 +901,7 @@ zapisz(
 
 // sitemap i robots
 const adresy = ["/", "/prywatnosc/", "/regulamin/",
-  ...(poradniki.length ? ["/poradniki/", ...poradniki.map((p) => `/poradniki/${p.slug}/`)] : []),
+  ...(poradniki.length ? ["/poradniki/", "/sprawdzian-ksef/", ...poradniki.map((p) => `/poradniki/${p.slug}/`)] : []),
   ...skille.filter(maStroneWKatalogu).map((s) => `/skill/${s.id}/`)];
 zapisz(
   join(WY, "sitemap.xml"),

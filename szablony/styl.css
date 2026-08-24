@@ -361,3 +361,17 @@ a.pl-znak:hover{color:var(--ink)}
 .por-lista a:hover{background:rgba(0,0,0,.03)}
 .por-lista strong{display:block;margin-bottom:4px}
 .por-lista span{font-size:14px;color:var(--muted)}
+
+/* ---------- sprawdzian gotowosci ---------- */
+.spr-pasek{height:6px;border-radius:9999px;background:var(--line);margin:0 0 22px;overflow:hidden}
+.spr-pasek i{display:block;height:100%;background:var(--accent,#1f6f4a);transition:width .25s}
+.spr-pyt{border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.spr-tresc{margin-bottom:10px;line-height:1.5}
+.spr-odp{display:flex;gap:10px;flex-wrap:wrap}
+.spr-odp button{border:1px solid var(--line);background:transparent;border-radius:9999px;padding:7px 16px;cursor:pointer;font:inherit;font-size:14px;color:inherit}
+.spr-odp button:hover{background:rgba(0,0,0,.04)}
+.spr-odp button.aktywna{background:var(--ink,#111);color:var(--bg,#fff);border-color:var(--ink,#111)}
+.spr-wynik{border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin-top:22px}
+.spr-wynik h2{margin:0 0 10px;font-size:20px}
+.spr-wynik ul{margin:0 0 6px 20px;line-height:1.6}
+.spr-wynik li{margin-bottom:6px}
