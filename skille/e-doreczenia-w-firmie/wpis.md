@@ -2,7 +2,7 @@
 nazwa: e-Doręczenia w firmie
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-08-24
 skrot: Przeprowadza firmę przez e-Doręczenia, od ustalenia grupy harmonogramu i miejsca potwierdzenia terminu, przez założenie adresu, po firmowy rytm pilnowania skrzynki.
@@ -11,8 +11,8 @@ tytulSeo: e-Doręczenia dla firmy krok po kroku, zanim minie termin
 opisSeo: "e-Doręczenia w firmie krok po kroku: grupa harmonogramu, założenie adresu i skrzynki oraz firmowy rytm pilnowania, żeby nie przegapić pisma z urzędu."
 zgodnosc:
   claude: ok
-  gpt: format
-  gemini: brak
+  gpt: ok
+  gemini: ok
 ---
 
 ## Co robi

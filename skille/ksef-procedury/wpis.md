@@ -2,7 +2,7 @@
 nazwa: Procedury operacyjne KSeF
 kategoria: Finanse
 status: platny
-wersja: 1.0.0
+wersja: 1.0.1
 platny: true
 kotwice: procedury KSeF w firmie, awaria KSeF co robić
 cena: od 149 zł/mies
@@ -14,8 +14,8 @@ tytulSeo: Procedury KSeF dla firmy i biura rachunkowego, płatny skill
 opisSeo: "Dokumentacja operacyjna KSeF z realiów Twojej firmy: kto wystawia, co robić przy braku dostępu, uprawnienia, odrzucenia, płatności. Bez martwych wzorów."
 zgodnosc:
   claude: ok
-  gpt: brak
-  gemini: brak
+  gpt: ok
+  gemini: ok
 ---
 
 ## Co robi
