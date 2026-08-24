@@ -1,0 +1,27 @@
+Miernik wyzwalania: ksef-procedury
+Zestaw: 20 zapytan (+9 / -9 / 0:2), powtorzenia: 3, tlo: 39 opisow
+OK          [1/20] oczekiwani=ksef-procedury glosy=ksef-procedury,ksef-procedury,ksef-procedury :: ogarnij nam temat ksef, bo w piatek system padl i pani Ewa n
+OK          [2/20] oczekiwani=ksef-procedury glosy=ksef-procedury,ksef-procedury,ksef-procedury :: biuro rachunkowe prosi zeby im nadac uprawnienia do naszych 
+OK          [3/20] oczekiwani=ksef-procedury glosy=ksef-procedury,ksef-procedury,ksef-procedury :: okazalo sie ze faktura z zeszlego tygodnia sie odrzucila w k
+OK          [4/20] oczekiwani=ksef-procedury glosy=ksef-procedury,ksef-procedury,ksef-procedury :: prosze o przygotowanie macierzy odpowiedzialnosci w zakresie
+OK          [5/20] oczekiwani=ksef-procedury glosy=ksef-procedury,ksef-procedury,ksef-procedury :: ksef nam sie wywalil wczoraj na pol dnia i byl totalny chaos
+OK          [6/20] oczekiwani=ksef-procedury glosy=ksef-procedury,ksef-procedury,ksef-procedury :: od kwietnia wystawiamy faktury w tym rzadowym systemie i wsz
+OK          [7/20] oczekiwani=ksef-procedury glosy=ksef-procedury,ksef-procedury,ksef-procedury :: pani ktora ogarniala u nas e-faktury odchodzi z koncem miesi
+OK          [8/20] oczekiwani=ksef-procedury glosy=ksef-procedury,ksef-procedury,ksef-procedury :: podobno od 2027 trzeba bedzie podawac jakis numer w przelewa
+OK          [9/20] oczekiwani=ksef-procedury glosy=ksef-procedury,ksef-procedury,ksef-procedury :: zarzad chce wiedziec na jakim etapie jest u nas wdrozenie ks
+OK          [10/20] oczekiwani=faktura-do-tabeli glosy=faktura-do-tabeli,faktura-do-tabeli,faktura-do-tabeli :: przepisz mi te trzy faktury z pdf do tabeli, netto vat brutt
+OK          [11/20] oczekiwani=przygotowanie-do-ksiegowej glosy=przygotowanie-do-ksiegowej,przygotowanie-do-ksiegowej,przygotowanie-do-ksiegowej :: co mamy wysylac ksiegowej co miesiac? chce liste dokumentow 
+OK          [12/20] oczekiwani=e-doreczenia-w-firmie glosy=e-doreczenia-w-firmie,e-doreczenia-w-firmie,e-doreczenia-w-firmie :: musimy ogarnac te obowiazkowe skrzynki do pism z urzedow, po
+OK          [13/20] oczekiwani=kalendarz-obowiazkow glosy=kalendarz-obowiazkow,kalendarz-obowiazkow,kalendarz-obowiazkow :: chce spisac wszystkie terminy podatkowe i zusowskie ktore wr
+OK          [14/20] oczekiwani=windykacja-miekka glosy=windykacja-miekka,windykacja-miekka,windykacja-miekka :: klient nie zaplacil faktury od dwoch miesiecy i unika telefo
+OK          [15/20] oczekiwani=procedura-aml glosy=procedura-aml,procedura-aml,procedura-aml :: jestesmy biurem rachunkowym i podobno musimy miec procedury 
+OK          [16/20] oczekiwani=sprawdz-kontrahenta glosy=sprawdz-kontrahenta,sprawdz-kontrahenta,sprawdz-kontrahenta :: nowy kontrahent chce odroczony termin platnosci na duza kwot
+OK          [17/20] oczekiwani=pismo-urzedowe glosy=pismo-urzedowe,pismo-urzedowe,pismo-urzedowe :: urzad skarbowy wezwal nas do zlozenia wyjasnien w sprawie je
+ROZJAZD     [18/20] oczekiwani=prosty-jezyk glosy=ZADEN,ZADEN,ZADEN :: dostalem z urzedu pismo o ksef czy cos takiego, pelno paragr
+OK          [19/20] oczekiwani=ZADEN glosy=ZADEN,ZADEN,ZADEN :: od kiedy ksef jest obowiazkowy dla malych firm?
+OK          [20/20] oczekiwani=ZADEN glosy=ZADEN,ZADEN,ZADEN :: czym sie rozni faktura ustrukturyzowana od zwyklej faktury e
+
+Wynik: 19/20 zgodnych.
+  ROZJAZD: oczekiwani=prosty-jezyk, glosy=ZADEN,ZADEN,ZADEN :: dostalem z urzedu pismo o ksef czy cos takiego, pelno paragrafow, przetlumacz mi
+
+Kolizje do rozstrzygniecia ruchami z komendy terytorium.
