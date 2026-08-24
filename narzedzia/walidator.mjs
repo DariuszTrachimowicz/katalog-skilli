@@ -121,6 +121,31 @@ for (const p of wszystkie) {
   if (waluta) ostrzez(`${b}: możliwy przeciek obcej waluty (${[...new Set(waluta)].slice(0,4).join(", ")}), oceń ręcznie`);
 }
 
+// --- anatomia: progi linii, spis tresci, odsylacze (ostrzezenia) ---
+// Wzorzec progressive disclosure ze skill-creatora: SKILL.md zwiezly, duze
+// references z nawigacja, kazdy odsylacz prowadzi do istniejacego pliku.
+{
+  const linie = (t) => t.split("\n").length;
+  const skillP2 = wszystkie.find((p) => basename(p) === "SKILL.md");
+  if (skillP2) {
+    const t = readFileSync(skillP2, "utf8");
+    const n = linie(t);
+    if (n > 500) ostrzez(`SKILL.md ma ${n} linii (>500): wydziel warstwe do references/ z jasnym wskaznikiem, kiedy ja czytac`);
+    else if (n > 400) ostrzez(`SKILL.md ma ${n} linii (>400): blisko progu, pilnuj rozrostu`);
+    for (const m of t.matchAll(/references\/([\w-]+\.md)/g)) {
+      if (!wszystkie.some((p) => p.replace(/\\/g, "/").endsWith(`references/${m[1]}`)))
+        ostrzez(`SKILL.md odsyła do references/${m[1]}, którego nie ma w paczce`);
+    }
+  }
+  for (const p of wszystkie.filter((p) => p.replace(/\\/g, "/").includes("references/") && p.endsWith(".md"))) {
+    const t = readFileSync(p, "utf8");
+    const n = linie(t);
+    if (n > 300 && (t.match(/^## /gm) || []).length < 3)
+      ostrzez(`${basename(p)}: ${n} linii bez struktury nagłówków (min. 3 sekcje ## przy >300 liniach ułatwiają nawigację)`);
+    if (n > 500) ostrzez(`${basename(p)}: ${n} linii (>500): rozważ podział na warianty domenowe`);
+  }
+}
+
 // --- swiezosc migawki KONTEKST.md kreatora (ostrzezenie, nie blokuje) ---
 // Migawka katalogu w ~/.claude/skills/skill-kreator-pl/KONTEKST.md deklaruje
 // liczbe skilli; gdy rozjezdza sie z realnym stanem skille/, bramki terytorium
