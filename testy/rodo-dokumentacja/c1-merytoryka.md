@@ -89,4 +89,201 @@ Weryfikacja pokrycia poszczególnych bloków wypadła czysto i warto to zapisać
 
 Dwa blokery, oba z tanią naprawą redakcyjną, bez potrzeby ruszania konstrukcji skilla ani wracania do źródeł. Jedenaście usterek drobnych, z czego D1, D7 i D8 podnoszą realną wartość produktu dla praktyka i warto je wziąć w tym samym cyklu, a D3 i D10 to sprzeczności wewnętrzne, które i tak wyjdą przy pierwszym użyciu.
 
-WERDYKT: blokery do wydania TAK
+WERDYKT cyklu 1: blokery do wydania TAK
+
+---
+
+# Weryfikacja cyklu 2
+
+Data: 24 sierpnia 2026. Sprawdzone na aktualnych plikach w
+`skille-platne/rodo-dokumentacja/` (SKILL.md, references/stan-prawny.md,
+references/komponenty.md, references/granice.md,
+assets/przyklady/rejestr-czynnosci-przyklad.md, DANE-I-PRYWATNOSC.md,
+INSTALACJA.md) wobec `weryfikacja-zrodlowa.md` i dyspozycji z
+`c1-adjudykacja.md` (T2, T4, T13, T14, T18, T19, T21, T23).
+
+## Werdykt per znalezisko cyklu 1
+
+**BLOKER 1 (upoważnienie jako obowiązek): ZAMKNIĘTY.** Naprawa jest głębsza niż
+sama zamiana słów i idzie przez wszystkie warstwy: `references/stan-prawny.md:278-284`
+dopisuje wprost, że źródło mówi „może", nie „musi", i zakazuje zamiany tego na
+normę oraz sugerowania niezgodności firmy, która wykazuje kontrolę inaczej;
+`references/komponenty.md:698-703` otwiera komponent 4 akapitem „środek
+organizacyjny, którym firma MOŻE się posłużyć; ten skill go PROJEKTUJE";
+`references/komponenty.md:705` zmienia nagłówek na warunkowy („Kogo obejmuje się
+upoważnieniem, jeżeli firma stosuje ten środek"); `references/komponenty.md:887-891`
+przerabia pułapkę o praktykancie na zdanie warunkowe („Jeżeli firma prowadzi
+upoważnienia, obejmuje nimi..."); `references/granice.md:330-334` i `SKILL.md:379-382`
+dokładają osobną granicę na pytanie „czy musimy nadawać upoważnienia";
+`SKILL.md:179` niesie to samo w tabeli komponentów. Zgodne z Faktem 7
+(weryfikacja-zrodlowa.md:119). Bez nowego rozjazdu.
+
+**BLOKER 2 (wiersz gotowy do przeklejenia): ZAMKNIĘTY.** Wybrano wariant A,
+mocniejszy: `assets/przyklady/rejestr-czynnosci-przyklad.md:130` to teraz wiersz
+opisowy, w którym każda komórka niesie opis TYPU zawartości
+(„[UZUPEŁNIJ: kategorie osób wymienione przez firmę, po jednej frazie...]"),
+a nie treść dla sklepu; zniknął fikcyjny nagłówek z nazwą spółki, a poziom
+szczegółowości przeniesiono do prozy pod tabelą (`przyklad:133-140`), żeby nie
+stał w komórkach. Deklaracje o pliku są dziś prawdziwe: `przyklad:10-15`
+i `references/granice.md:239-243`. Domknięte kontrolą: `references/komponenty.md:1061-1062`
+(„Czy w żadnym dokumencie nie ma ani jednej wartości przeniesionej z pliku
+przykładu"). Treść nadal bezpieczna: zero danych osobowych, osoby wyłącznie
+rolami.
+
+**D1 podpowierzenia: ZAMKNIĘTE.** Pytanie 7a w wywiadzie
+(`references/komponenty.md:240-242`), kolumna „Dalsi podwykonawcy odbiorcy"
+w tabeli inwentaryzacji (`komponenty.md:258-260`) z domyślnym „nie ustalono"
+zamiast pustki, oraz stała pozycja w Rejestrze luk (`komponenty.md:968`).
+
+**D2 nazwa elementu przekazań: ZAMKNIĘTE.** Nagłówek kolumny brzmi dziś
+„Przekazanie do państwa trzeciego lub organizacji międzynarodowej"
+(`komponenty.md:436`, `komponenty.md:517`, `przyklad:115`, `przyklad:128`),
+a skrót EOG jest jawnie zdegradowany do rozmowy i pytań wywiadu
+(`komponenty.md:440-443`, `przyklad:115`). Użycia EOG w wywiadzie
+(`komponenty.md:243`, `komponenty.md:360`, `SKILL.md:262`) są zgodne z tą regułą.
+
+**D3 sprzeczność listy kontrolnej: ZAMKNIĘTE.** `komponenty.md:1013-1018` zawęża
+zakaz do jednostek redakcyjnych i dopisuje jeden wyjątek dla obowiązkowego
+odesłania w sprawie oceny skutków (tytuł komunikatu i Monitor Polski) oraz dla
+sekcji „Źródła i data sprawdzenia". Odesłanie z `komponenty.md:657-663` nie
+koliduje już z własną kontrolą.
+
+**D4 „wystarczy jedna z okoliczności": ZAMKNIĘTE.** Zdanie jest przypisane do
+źródła i osadzone w streszczeniu wskazówek z adresem
+(`stan-prawny.md:104-111`, `komponenty.md:411-423`, `przyklad:83-95`), a ramka
+jest wprost oznaczona jako STRESZCZENIE wskazówek, nie brzmienie przepisu.
+Uwaga marginalna, bez wagi: w źródle jest to „praktyczny wniosek dla skilla"
+wyprowadzony z lektury wskazówek, więc najściślejsze byłoby „wniosek z lektury
+wskazówek, przyjęty w tym dokumencie"; obecne „Wniosek ze wskazówek" mieści się
+w granicy, bo nie przypisuje organowi zdania, którego organ nie napisał.
+
+**D5 reguły upoważnień bez pokrycia: ZAMKNIĘTE.** `komponenty.md:846-849`
+poprzedza blok zdaniem, że są to zasady przyjęte w tym pakiecie, a nie norma
+prawna, i powtarza, że samo stosowanie upoważnień jest środkiem, o którym
+decyduje firma.
+
+**D6 liczba kategorii wykazu: ZAMKNIĘTE.** `stan-prawny.md:421-423` usuwa liczbę
+i wprost mówi, że ani liczby, ani treści nie podajesz; `stan-prawny.md:546-549`
+rozszerza pozycję zakazową o liczbę („zero liczb").
+
+**D7 puste kolumny ocen: ZAMKNIĘTE.** `komponenty.md:626-636` wprowadza
+propozycje wyprowadzone wyłącznie z faktów rozmowy, z uzasadnieniem i statusem
+`[DO ZATWIERDZENIA przez firmę]`, oraz zdanie „dokument bez ani jednej oceny to
+praca domowa, nie analiza"; kontrola dopilnowuje tego w `komponenty.md:1045-1047`.
+Furtka odwrotna zamknięta osobno: poziom „wysoki" nie rozstrzyga o wymogu oceny
+skutków (`komponenty.md:638-642`, `stan-prawny.md:385-393`, `granice.md:121-126`,
+`SKILL.md:146-151`). Patrz jednak N2 niżej.
+
+**D8 ewidencja upoważnień: ZAMKNIĘTE.** `komponenty.md:826-838` dokłada
+„Obowiązuje do", „Status", „Zwrot nośników i kluczy (data, kto)" i „Miejsce
+przechowywania oryginału", z uzasadnieniem obu ostatnich; kontrola w
+`komponenty.md:1035-1037`.
+
+**D9 zdublowana deklaracja poniżej 250 osób: ZAMKNIĘTE.** Ramka mieszka wyłącznie
+w Rejestrze czynności (`komponenty.md:404-406`, `przyklad:76-78`), Inwentaryzacja
+ma jednozdaniowe odesłanie z numerem wersji i datą (`komponenty.md:282-290`).
+
+**D10 adresy spoza tabeli: ZAMKNIĘTE i sprawdzone maszynowo.** Wyciągnąłem
+wszystkie adresy występujące w pakiecie (35 unikalnych) i zestawiłem z tabelą
+`stan-prawny.md:577-612`: każdy ma swoją pozycję, żaden nie jest spoza tabeli,
+wszystkie z przedrostkiem `https://`. Deklaracja kompletności z
+`stan-prawny.md:614-618` jest prawdziwa.
+
+**D11 współadministrowanie: ZAMKNIĘTE.** `komponenty.md:445-449` nakazuje
+oznaczyć wiersz uwagą o pozycji objętej ewentualnym współadministrowaniem
+i osobno wpisać ją do Rejestru luk, bez orzekania o podziale odpowiedzialności.
+Zgodne z Faktem 1 (weryfikacja-zrodlowa.md:13).
+
+## Kontrola nowych rozjazdów ze źródłem w miejscach przepisanych
+
+**Rejestr źródeł, 34 pozycje.** Sprawdzone wyrywkowo siedem nowych adresów wobec
+źródła prawdy, wszystkie potwierdzone: poz. 28 https://uodo.gov.pl/pl/615
+(weryfikacja-zrodlowa.md:224), poz. 29 https://uodo.gov.pl/pl/645
+(weryfikacja-zrodlowa.md:225), poz. 30
+https://monitorpolski.gov.pl/MP/2019/666/M2019000066601.pdf
+(weryfikacja-zrodlowa.md:183), poz. 31 https://archiwum.uodo.gov.pl, poz. 32
+https://bip.uodo.gov.pl, poz. 33 https://orzeczenia.uodo.gov.pl i poz. 34
+https://uodo.gov.pl (wszystkie cztery: weryfikacja-zrodlowa.md:217, Fakt 13).
+Opisy w kolumnie „Źródło" nie przypisują tym adresom treści, których źródło nie
+potwierdza. Zero adresów zmyślonych.
+
+**Upoważnienie jako środek nieobowiązkowy.** Bez nadkorekty w drugą stronę:
+nigdzie nie pojawiło się zdanie, że upoważnień nie trzeba wydawać ani że są
+zbędne; skill nadal je projektuje i nadal odmawia rozstrzygania o obowiązku
+(`granice.md:330-334`). Znacznik deregulacyjny nietknięty i nadal poprawny wobec
+Niepotwierdzonego nr 1 (`stan-prawny.md:315-330`). Usunięto przy okazji
+zapewnienia „bezpieczny", „zgodny z wymogami sektorowymi", „daje rozliczalność
+w każdym wariancie" (`stan-prawny.md:334-339`, `komponenty.md:736-740`), co było
+osobną dyspozycją i nie psuje pokrycia źródłowego.
+
+**Propozycje ocen w Prostej analizie ryzyka.** Wobec źródła czysto: Fakt 10
+(weryfikacja-zrodlowa.md:164) mówi, że każdy podmiot musi samodzielnie oceniać
+ryzyko, a propozycja ze statusem do zatwierdzenia przez firmę tego nie narusza;
+metody nadal nie udajemy (brak punktacji, brak iloczynów, pole decyzji puste).
+
+**Relacje z odbiorcami bez klasyfikowania.** Wdrożone spójnie w sześciu miejscach
+(`stan-prawny.md:169-173`, `komponenty.md:236-239`, `komponenty.md:707-714`,
+`komponenty.md:868-872`, `przyklad:162-167`, kontrola `komponenty.md:1063-1065`).
+Sprawdziłem, czy zdanie „odbiorcami są podmioty zewnętrzne" nie wykracza poza
+źródło: nie wykracza, bo element obowiązkowy w brzmieniu źródłowym to „kategorie
+odbiorców, którym dane zostały lub zostaną ujawnione"
+(weryfikacja-zrodlowa.md:46), więc ujęcie wszystkich podmiotów zewnętrznych
+w tej kolumnie jest wykonaniem elementu, a nie klasyfikacją relacji.
+
+## Nowe usterki (wszystkie DROBNE, żadna nie blokuje wydania)
+
+**N1. `SKILL.md:276` opisuje wzór nieaktualnie.** Zdanie „To wzór
+z placeholderami i objaśnieniem każdej kolumny, **oparty na fikcyjnej firmie**"
+zostało z poprzedniej wersji pliku; fikcyjnej firmy już w nim nie ma. To ten sam
+gatunek usterki co BLOKER 2, tyle że nieszkodliwy (zdanie obok nadal zakazuje
+przenoszenia wartości). Propozycja: „...objaśnieniem każdej kolumny; w każdej
+komórce stoi opis typu zawartości, a nie treść jakiejkolwiek firmy".
+
+**N2. Rozjazd wewnętrzny wokół propozycji ocen.** `stan-prawny.md:410-411` nadal
+mówi „Nie orzekasz też o poziomie ryzyka za firmę. Wypełnia go firma", a
+`SKILL.md:157-159` wymienia „czy ryzyko jest wysokie" wśród decyzji, przy których
+„pole decyzji zostaje puste". Nowy mechanizm z `komponenty.md:626-636` każe te
+komórki wypełnić propozycją. Plik stan-prawny czyta się na starcie każdej pracy,
+więc asystent może zostawić tabelę pustą i cofnąć T19. Propozycja: w
+`stan-prawny.md:410-411` dopisać rozdział poziomów, „poziom ryzyka proponujesz
+wyłącznie z faktów rozmowy, ze statusem do zatwierdzenia przez firmę; werdyktu
+nie wydajesz, a pole decyzji o postępowaniu z ryzykiem zostaje puste", i w
+`SKILL.md:157-159` zawęzić przykład do decyzji o postępowaniu z ryzykiem.
+
+**N3. „Osoby spoza firmy" wypycha zleceniobiorcę.** `granice.md:335` mówi
+„Upoważnień nie nadaje się osobom spoza firmy", podczas gdy `komponenty.md:887-891`
+każe objąć upoważnieniem zleceniobiorcę, praktykanta i osobę pomagającą w sezonie,
+czyli osoby formalnie spoza etatu. Informatyk na własnej działalności to
+najczęstszy przypadek graniczny w małej firmie i granice.md może go wypchnąć
+z ewidencji. Propozycja: „upoważnień nie nadaje się podmiotom zewnętrznym ani
+ich pracownikom; osoby współpracujące z firmą osobiście obejmuje się jak
+w komponencie 4, niezależnie od podstawy współpracy".
+
+**N4. `SKILL.md:285-287` nie dostał reguły nieklasyfikowania.** Zdanie „podmiot,
+któremu firma powierza przetwarzanie, wpisujesz" przesądza charakter relacji,
+czyli dokładnie to, czego zakazuje T21 wdrożony w pozostałych plikach.
+Propozycja: „podmiot zewnętrzny, któremu dane są ujawniane, wpisujesz;
+charakteru relacji, powierzenie czy odrębne administrowanie, nie klasyfikujesz".
+
+**N5. Niedomknięta konwencja znaczników w dwóch listach braków.**
+`SKILL.md:352-353` (punkt kontrolny 10) i `przyklad:181` wymieniają tylko
+`[UZUPEŁNIJ]` i `[WYMAGA WERYFIKACJI]`, bez `[UZUPEŁNIJ LOKALNIE]`, choć
+`komponenty.md:182-184` i `komponenty.md:1072-1074` obejmują wszystkie trzy.
+Propozycja: dopisać trzeci znacznik w obu miejscach.
+
+**N6. Kolejność kolumn ewidencji do sprawdzenia przy składzie.**
+`komponenty.md:826-828` ma czternaście kolumn i wiersz przykładowy kończy się
+czterema pustymi komórkami w środku tabeli. Merytorycznie poprawne, ale przy
+wklejeniu do arkusza łatwo o przesunięcie; warto rozważyć podział na dwie tabele
+(nadanie i zamknięcie) albo pozostawienie kresek zamiast pustek. To uwaga
+redakcyjna, nie merytoryczna.
+
+## Podsumowanie cyklu 2
+
+Oba blokery merytoryczne zamknięte realnie, nie deklaratywnie; jedenaście usterek
+drobnych zamkniętych w całości, część z naprawą szerszą niż proponowana (D7, D9,
+D10). Nowe rozjazdy ze źródłem prawdy: brak. Sześć nowych usterek drobnych, z
+czego N2 warto wziąć w tym samym wydaniu, bo dotyka mechanizmu wprowadzonego
+w tym cyklu, a N1, N3 i N4 to trzy zdania do przeredagowania.
+
+WERDYKT: blokery do wydania NIE

@@ -2,9 +2,9 @@
 nazwa: RODO w małej firmie
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.1
+wersja: 1.0.2
 poziom: Działa od razu
-aktualizacja: 2026-08-22
+aktualizacja: 2026-08-24
 skrot: Przeprowadza Cię przez pytania o dane w Twojej firmie i pokazuje, co gdzie leży i kto ma do tego dostęp. Na koniec daje pytania do specjalisty.
 szukaj: RODO, dane osobowe, UODO, wyciek danych, umowa powierzenia, mała firma, JDG, monitoring, CV, newsletter, naruszenie
 tytulSeo: RODO w małej firmie, od czego zacząć, gdy nie masz inspektora

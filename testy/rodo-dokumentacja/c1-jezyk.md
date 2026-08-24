@@ -143,3 +143,64 @@ nimi warstwa językowa skilla jest na wysokim poziomie, z wzorcową dyscypliną
 rejestru i nazw.
 
 WERDYKT: blokery do wydania TAK
+
+## Weryfikacja cyklu 2
+
+Data: 24 sierpnia 2026. Zweryfikowano na aktualnych plikach skilla po naprawie
+wg adjudykacji (temat T22 i pokrewne). Werdykt per znalezisko:
+
+- **B1 NAPRAWIONE.** Kubełki wszędzie „DOMKNIĘTE / NIEDOMKNIĘTE / DO DECYZJI /
+  POZA ZAKRESEM TEJ SESJI": SKILL.md:355-356, granice.md:140-141,
+  komponenty.md:933-944 (szablon Rejestru luk) i komponenty.md:1079-1080
+  (wynik kontroli). Dawne „brakuje" i „DO DECYZJI FIRMY LUB SPECJALISTY" nie
+  występują (skan grep czysty; dopisek „firmy albo specjalisty" żyje w nawiasie
+  za liczbą, nie w nazwie kubełka).
+- **B2 NAPRAWIONE.** Kanon rozdzielony i nazwany wprost: „upoważnienie się
+  ODWOŁUJE (dokument), dostępy się ODBIERA (systemy)" (komponenty.md:841-844).
+  SKILL.md:179 „ewidencja nadań i odwołań", SKILL.md:341-342 kontrola sprawdza
+  „kolumnę odwołania upoważnienia, osobną kolumnę odebrania dostępów
+  w systemach". Fraza „odebranie upoważnienia" nie występuje w żadnym pliku.
+- **D1 NAPRAWIONE.** stan-prawny.md:553 „Osobny poradnik UODO wyłącznie dla
+  małych i średnich firm"; skan czarnej listy kalk w całej paczce: zero trafień.
+- **D2 NAPRAWIONE.** Brzmienia kanoniczne tłumaczeń w SKILL.md:299-305
+  i komponenty.md:64-74; powierzenie („ustalenie na piśmie, kto za co
+  odpowiada") i naruszenie („sytuacja, w której dane wypłynęły, zginęły albo
+  zobaczył je ktoś niepowołany") IDENTYCZNE z darmowym rodo-w-malej-firmie,
+  do tego odbiorca i rozliczalność z jednym brzmieniem w obu plikach.
+- **D3 NAPRAWIONE.** Wszędzie „bez imion, nazwisk i inicjałów" (SKILL.md:106,
+  komponenty.md:121, granice.md:262-263, DANE-I-PRYWATNOSC.md:43); reguła
+  wzmocniona konwencją U-XX plus [UZUPEŁNIJ LOKALNIE], spójną w pięciu plikach.
+- **D4 NAPRAWIONE.** Adnotacja pod kolumną podstawy prawnej ma jedno, dłuższe
+  brzmienie (ze zdaniem o niepotwierdzaniu podstaw) identyczne
+  w komponenty.md:454-462 i rejestr-czynnosci-przyklad.md:144-152, plus jawna
+  reguła „jedno brzmienie w całym pakiecie" (komponenty.md:464-466).
+- **D5 NAPRAWIONE.** SKILL.md:178 „ogólna, uproszczona analiza ryzyka po
+  czynnościach"; nazwa kanoniczna „Prosta analiza ryzyka" konsekwentna.
+
+Kontrola zmienionych fragmentów pod kątem NOWYCH usterek (zasady naczelne
+SKILL.md, sekcje 0/2/3/4/5 komponenty.md, przepisany przykład, granice,
+DANE-I-PRYWATNOSC, INSTALACJA):
+
+- Skan bajtowy wszystkich 7 plików: zero pauz (U+2014), zero półpauz (U+2013),
+  zero dat ISO; daty słownie zachowane w nowych fragmentach.
+- Description po zmianie T5/T24: 1019/1024 znaków, w limicie (blisko sufitu:
+  każda kolejna zmiana description wymaga ponownego pomiaru); skrót DPIA raz,
+  przy pełnej nazwie, spójnie z wyjątkiem opisanym w komponenty.md:43-47.
+- Nowe terminy wprowadzone naprawą są spójne między plikami: [UZUPEŁNIJ
+  LOKALNIE] (SKILL, komponenty, przykład, granice, DANE-I-PRYWATNOSC), nazwa
+  kolumny „Przekazanie do państwa trzeciego lub organizacji międzynarodowej"
+  (komponenty:436 i 517, przykład:115 i 128), nowe kolumny Ewidencji i Rejestru
+  luk zgodne między szablonem a listą kontrolną. Kalk w nowych fragmentach nie
+  znalazłem.
+- NOWE DROBNE (jedno): rejestr-czynnosci-przyklad.md:181 zdanie wprowadzające
+  sekcji „Braki do domknięcia" wymienia tylko `[UZUPEŁNIJ]`
+  i `[WYMAGA WERYFIKACJI]`, bez `[UZUPEŁNIJ LOKALNIE]`, niespójnie
+  z komponenty.md:181-183 i z listą kontrolną komponenty.md:1072-1074;
+  proponowane brzmienie: „Wypisujesz tu wszystkie [UZUPEŁNIJ], [UZUPEŁNIJ
+  LOKALNIE] i [WYMAGA WERYFIKACJI] z dokumentu". Wiersz tabeli i lista
+  kontrolna i tak wymuszają właściwe zachowanie, więc to nie bloker.
+
+Wszystkie znaleziska cyklu 1 tej roli są naprawione w całości; naprawa nie
+wprowadziła blokerów językowych.
+
+WERDYKT: blokery do wydania TAK

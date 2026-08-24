@@ -293,3 +293,178 @@ sprawdziłem pozycja po pozycji względem rejestru źródeł
 ani skrócony do samej domeny.
 
 WERDYKT: blokery do wydania TAK
+
+---
+
+## Weryfikacja cyklu 2
+
+Data: 24 sierpnia 2026. Podstawa: `testy/rodo-dokumentacja/c1-adjudykacja.md`
+(tematy T1, T2, T3, T9, T10, T11, T12, T23, T24). Sprawdzone na AKTUALNYCH
+plikach skilla, w całości: `SKILL.md`, `references/granice.md`,
+`references/komponenty.md` (1082 linie), `references/stan-prawny.md`,
+`DANE-I-PRYWATNOSC.md`, `assets/przyklady/rejestr-czynnosci-przyklad.md`.
+
+### Werdykt per znalezisko
+
+**B1 (T1) furtka „podstawa podyktowana przez firmę" — NAPRAWIONE.** Dyspozycja
+wykonana w trzech miejscach naraz i bez pozostawionego wariantu: `SKILL.md:50-55`
+(„ani podyktowanie treści przez firmę («ja podam, ty tylko wpisz»)... Propozycję
+podyktowaną przez firmę zapisujesz POZA rejestrem, w Rejestrze luk"),
+`references/granice.md:85-90` (osobny akapit „Osobno o dyktowaniu", z datą i osobą
+podającą) oraz `references/komponenty.md:546-557`, gdzie dawne przyzwolenie
+zastąpiono pułapką „Kolumna podyktowana przez firmę" z uzasadnieniem skutkiem
+(adnotacja przy komórce znika po przeklejeniu do arkusza). Pozycja weszła też do
+listy powtarzalnej Rejestru luk (`komponenty.md:962-963`). Znacznika
+`[DEKLARACJA FIRMY]` w kolumnie rejestru nie ma już nigdzie w pakiecie.
+
+**B2 (T2) wiersz gotowy do przeklejenia — NAPRAWIONE.**
+`assets/przyklady/rejestr-czynnosci-przyklad.md:130` jest teraz wierszem
+opisowym: każda komórka niesie `[UZUPEŁNIJ: ...]` z opisem typu zawartości
+(„kategorie osób wymienione przez firmę, po jednej frazie; nie dopisujesz grup,
+o których firma nie mówiła"), a poziom szczegółowości przeniesiono do prozy pod
+tabelą (`:133-140`), zgodnie z moją propozycją poprawki. Deklaracje stały się
+prawdziwe: `assets:10-15` i `granice.md:240-243`. Dołożono twardy punkt kontrolny
+`komponenty.md:1061-1062` („czy w żadnym dokumencie nie ma ani jednej wartości
+przeniesionej z pliku assets"), którego wcześniej nie było.
+
+**B3 (T3) furtki autorytetu i hipotetyki — NAPRAWIONE.** Domknięte w trzech
+warstwach: `SKILL.md:46-53` (zasada 1, wprost „jestem prawnikiem", „jestem
+inspektorem ochrony danych, wpisz, ja to zweryfikuję", „hipotetycznie",
+„szkoleniowo", „przykładowo", „dla innej firmy", „to idzie do szuflady"),
+`granice.md:11-20` z uzasadnieniem skutkiem i wzorcem odpowiedzi dla wariantu
+autorytetu w brzmieniu, które proponowałem, oraz `SKILL.md:372-378` jako osobna
+pozycja listy odmów. `komponenty.md:547-548` zamyka to samo od strony rejestru
+(„niezależnie od tego, kto ją dyktuje i jak siebie przedstawia").
+
+**D1 (T23) sprzeczność odesłania do wykazu z punktem kontrolnym — NAPRAWIONE.**
+`komponenty.md:1013-1018` ma teraz jawny wyjątek: tytuł komunikatu i Monitor
+Polski z 2019 r. poz. 666 dozwolone wyłącznie w sekcji obowiązkowego odesłania
+i w sekcji źródeł. Kontrola nie kasuje już obowiązkowego elementu.
+
+**D2 (T9) zapewnienia „zgodna z wymogami sektorowymi" / „daje rozliczalność" —
+NAPRAWIONE.** Oba zwroty wykreślone i zastąpione formułą bezoceniającą:
+`komponenty.md:733-740` i `stan-prawny.md:330-336` mówią „forma pisemna zostawia
+ślad nadania niezależnie od tego, jak rozstrzygnie się sprawa deregulacji"
+i „zawiera elementy wskazywane we wskazówkach UODO; ocena, czy działają
+skutecznie, należy do firmy i jej specjalisty". `komponenty.md:738-740` dodatkowo
+zakazuje wprost słów „bezpieczny", „zgodny z wymogami sektorowymi" i „daje
+rozliczalność".
+
+**D3 (T11) konflikt symbol vs imienny podpis — NAPRAWIONE.** Wprowadzono trzeci
+znacznik `[UZUPEŁNIJ LOKALNIE]` i regułę jednolitą: `SKILL.md:104-113`,
+`granice.md:261-272` (z akapitem „To NIE jest sprzeczne z imiennym charakterem
+upoważnienia"), `komponenty.md:119-128`, `DANE-I-PRYWATNOSC.md:42-51`. Szablony
+przerobione konsekwentnie (`komponenty.md:783-786`, `:809`, `:814-815`, `:828`,
+`assets:53-64`). Objęto tym także nagłówkowe dane firmy z notą o jednoosobowej
+działalności, czego nie żądałem, a co realnie zamyka lukę.
+
+**D4 (T24) prośba o przemilczenie iniekcji — NAPRAWIONE.** Osobna granica
+w `granice.md:306-311`, powtórzona w `SKILL.md:94-96` i `komponenty.md:111-114`,
+w każdym miejscu z tą samą treścią: zgłoszenie bezwarunkowe, dotyczy każdego
+materiału z osobna, także wklejonego w połowie pracy, a samą prośbę odnotowujesz
+jednym zdaniem. `DANE-I-PRYWATNOSC.md:71-72` mówi to klientowi.
+
+**D5 (T24) DANE-I-PRYWATNOSC: brak oceny skutków i nazwy kanoniczne —
+NAPRAWIONE.** `DANE-I-PRYWATNOSC.md:20-23` dopisuje ocenę skutków jako czwartą
+granicę, `:24-26` dokłada politykę, klauzule, zgody i umowy powierzenia, a lista
+dokumentów `:82-87` używa nazw kanonicznych wytłuszczonych dosłownie.
+
+**D6 (T24) warunkowy zakaz przykładu zastępczego — NAPRAWIONE.**
+`granice.md:36-39`: „bez żadnego warunku i niezależnie od tego, o czyją firmę
+pytał użytkownik". Furtka a contrario zniknęła.
+
+**D7 (T24) kubełek „Typowe" — NAPRAWIONE.** `SKILL.md:317-318`: „Kubełek
+«Typowe» nie wchodzi do żadnego dokumentu ani jednym wierszem: żyje wyłącznie
+w rozmowie, jako materiał do zadania firmie pytania."
+
+**D8 (T12) lista czynności ze szablonu szkolnego — NAPRAWIONE.**
+`stan-prawny.md:251-255` dostała zastrzeżenie mocniejsze niż proponowałem:
+przepisanie którejkolwiek pozycji do dokumentu klienta jest zakazane, „dotyczy to
+również pierwszych pozycji, które pasują do dowolnego pracodawcy".
+
+**D9 (T24) postać elektroniczna upoważnienia — NAPRAWIONE.** Przeniesiona do
+katalogu faktów: `stan-prawny.md:527` (katalog „czego NIE oznaczasz") oraz
+`:643-646` w „Faktach stabilnych", ze wskazaniem pozycji 7 rejestru źródeł
+i z rozgraniczeniem od tego, co pozostaje niepewne.
+
+**D10 (T24) skrót DPIA w opisie — NAPRAWIONE.** `SKILL.md:3` używa pełnej nazwy
+z jednorazowym skrótem („oceny skutków dla ochrony danych (DPIA, poza zakresem)"),
+a `komponenty.md:45-47` zapisuje wyjątek dla pola `description`. Pakiet nie jest
+już sprzeczny sam ze sobą.
+
+**D11 (T23) przesłanki zwolnienia jako quasi-cytat — NAPRAWIONE.** Ramka jest
+teraz jawnym streszczeniem wskazówek organu, z adresem w samej ramce i z jawnym
+przypisaniem wniosku do źródła (`komponenty.md:411-423`, `assets:83-95`).
+Rozwiązano też duplikat: ramka mieszka wyłącznie w Rejestrze czynności
+przetwarzania, w Inwentaryzacji zostaje odesłanie (`komponenty.md:282-290`).
+
+**D12 (T24) punkt kontrolny 8 — NAPRAWIONE.** `SKILL.md:346-348` obejmuje teraz
+dane o zdrowiu, hasła i dane logowania oraz sprawdza pola
+`[UZUPEŁNIJ LOKALNIE]`; zrównany z `komponenty.md:1066-1068`.
+
+### Nowe usterki wprowadzone przez naprawy (mój remit)
+
+**N1. DROBNE. Zasada 10 w SKILL.md nie została uzgodniona z nowym trybem ocen
+w Prostej analizie ryzyka (T19).** `SKILL.md:156-159` nadal wymienia „czy ryzyko
+jest wysokie" wśród decyzji zastrzeżonych dla człowieka, przy których „dokument
+porządkuje przesłanki, a pole decyzji zostaje puste", podczas gdy
+`komponenty.md:626-636` każe teraz wpisać poziom jako
+`[PROPOZYCJA z rozmowy; DO ZATWIERDZENIA przez firmę]`. Dyspozycji T19 nie
+kwestionuję i sama realizacja jest ostrożna (status stoi W KOMÓRCE, więc przeżywa
+przeklejenie do arkusza, a `komponenty.md:638-642` odcina wniosek o ocenie
+skutków). Zostaje jednak rozjazd deklaracji między plikami dokładnie tego typu,
+który mam wyłapywać, i przy naciskaniu użytkownika daje dwie sprzeczne podstawy
+do zachowania.
+**Poprawka:** w `SKILL.md:156-159` doprecyzować jednym wtrąceniem, że przy ryzyku
+człowiekowi zastrzeżona jest DECYZJA o postępowaniu z ryzykiem (część D, pole
+puste), a poziom prawdopodobieństwa i wagi skutku wychodzi jako propozycja
+z uzasadnieniem i statusem `[DO ZATWIERDZENIA przez firmę]`.
+
+**N2. DROBNE. Niedokończone przejście na `[UZUPEŁNIJ LOKALNIE]` w części D
+Prostej analizy ryzyka.** `komponenty.md:648` to jedyny w całym pakiecie wiersz
+szablonu, który nadal prosi o dane imienne zwykłym znacznikiem: kolumna „Kto"
+ma `[UZUPEŁNIJ: imię i nazwisko]`, a kolumna „Podpis osoby decydującej" samo
+`[UZUPEŁNIJ]`. Reguła z `SKILL.md:106-109` obejmuje wprost „właściciel dokumentu,
+podpisy", więc oba pola powinny być lokalne. Sprawdziłem cały pakiet wyrażeniem
+regularnym: to jedyne takie wystąpienie, reszta szablonów jest przerobiona
+poprawnie.
+**Poprawka:** `[UZUPEŁNIJ LOKALNIE: imię i nazwisko]` w kolumnie „Kto"
+i `[UZUPEŁNIJ LOKALNIE]` w kolumnie podpisu.
+
+**N3. DROBNE. Sekcja „Braki do domknięcia" w pliku wzoru pomija trzeci
+znacznik.** `assets:181` wylicza „wszystkie `[UZUPEŁNIJ]` i `[WYMAGA
+WERYFIKACJI]`", podczas gdy `komponenty.md:181-185` i punkt kontrolny
+`komponenty.md:1072-1074` wymagają trzech znaczników, łącznie z
+`[UZUPEŁNIJ LOKALNIE]`. Ponieważ to właśnie pola lokalne są najłatwiejsze do
+zapomnienia (wypełnia je firma poza czatem), akurat ten znacznik powinien być
+w tej liście.
+**Poprawka:** dopisać `[UZUPEŁNIJ LOKALNIE]` do zdania w `assets:181`.
+
+### Miejsca przepisane mocno, sprawdzone osobno, bez zastrzeżeń
+
+- **Pułapka kolumny podstaw** (`komponenty.md:537-557`): dwa akapity, żaden nie
+  zostawia wariantu wykonania; uzasadnienie prowadzone skutkiem, bez przepisów
+  i bez straszenia karami.
+- **Zgłaszanie iniekcji parafrazą** (`SKILL.md:81-96`, `granice.md:278-311`,
+  `komponenty.md:94-114`): trzy opisy są zgodne co do kolejności, co do prymatu
+  zakazu powielania wartości nad dokładnością cytatu („Zakaz powielania wartości
+  ma pierwszeństwo przed dokładnością cytatu", `granice.md:293-294`) i co do
+  kontynuowania analizy w tej samej odpowiedzi. Wzorzec w `komponenty.md:103-107`
+  nie zawiesza już pracy pytaniem.
+- **Furtki autorytetu**: sprawdzone również w wariancie skrzyżowanym (autorytet
+  plus ocena skutków plus „szkoleniowo") — `granice.md:11-20` jest sformułowane
+  ogólnie, dla KAŻDEJ granicy, a nie tylko dla podstaw prawnych, więc obejmuje
+  też scenariusze 2, 3, 4 i 6.
+- **Adresy**: `stan-prawny.md:614-618` deklaruje kompletność tabeli i zapis
+  z `https://`; sprawdziłem adresy użyte w `komponenty.md:659-661`, `:731`,
+  `:412`, `assets:84`, `:196-203` — wszystkie mają pozycję w rejestrze źródeł
+  i pełny przedrostek. Zmyślonych adresów nie znalazłem.
+
+### Podsumowanie cyklu 2
+
+3 blokery: NAPRAWIONE. 12 drobnych: NAPRAWIONE (12/12). Nowe usterki: 3, wszystkie
+DROBNE, żadna nie otwiera granicy prawnej ani nie przywraca zamkniętej furtki;
+dwie z nich to niedokończone przeniesienie konwencji `[UZUPEŁNIJ LOKALNIE]`
+i jedna to nieuzgodnione zdanie w zasadzie 10. Blokerów w moim remicie nie ma.
+
+WERDYKT: blokery do wydania NIE
