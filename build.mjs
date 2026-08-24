@@ -692,6 +692,82 @@ for (const s of skille) {
   console.log(`  paczka  paczki/${s.id}.skill  (${pliki.length} plików, ${(zip.length / 1024).toFixed(1)} KB)`);
 }
 
+/* ---------- poradniki (klaster tresci pod platne skille) ---------- */
+
+function wczytajPoradniki() {
+  const dir = join(KORZEN, "poradniki");
+  if (!existsSync(dir)) return [];
+  const out = [];
+  for (const f of readdirSync(dir)) {
+    if (!f.endsWith(".md")) continue;
+    const tekst = readFileSync(join(dir, f), "utf8");
+    const { dane, tresc } = frontmatter(tekst);
+    out.push({ slug: f.replace(/\.md$/, ""), tresc, ...dane });
+  }
+  out.sort((a, b) => Number(a.kolejnosc || 99) - Number(b.kolejnosc || 99));
+  return out;
+}
+
+// render() wspolnego parsera celowo nie zna "## " (sekcje wpisow obsluguje
+// naglowkiPoziom2); poradniki maja wlasna hierarchie, wiec tniemy po h2 tutaj.
+function renderPoradnik(md) {
+  const czesci = md.split(/^## (.+)$/m);
+  let html = czesci[0].trim() ? render(czesci[0]) : "";
+  for (let i = 1; i < czesci.length; i += 2) {
+    html += `\n<h2>${esc(czesci[i].trim())}</h2>\n` + render(czesci[i + 1] || "");
+  }
+  return html;
+}
+
+function ctaPoradnika(p, skille) {
+  const s = skille.find((x) => x.id === p.skill);
+  if (!s) return "";
+  const platny = String(s.platny) === "true";
+  return `<div class="por-cta">
+    <div class="por-cta-eyebrow">Narzędzie do tego tematu</div>
+    <h3>${esc(s.nazwa)}</h3>
+    <p>${esc(s.skrot || "")}</p>
+    <p class="por-cta-nota">Skill porządkuje pracę i buduje dokumenty z realiów Twojej firmy; nie orzeka zgodności z przepisami i nie zastępuje doradcy podatkowego.</p>
+    <a class="btn" href="/skill/${s.id}/" data-umami-event="poradnik-cta" data-umami-event-skill="${s.id}">${platny ? `Zobacz, jak działa (${esc(s.cena || "płatny")})` : "Pobierz za darmo"}</a>
+  </div>`;
+}
+
+function stronaPoradnika(p, poradniki) {
+  const powiazane = poradniki.filter((x) => x.slug !== p.slug).slice(0, 4);
+  const jsonld = {
+    "@context": "https://schema.org", "@type": "Article",
+    headline: p.tytul, description: p.opis, inLanguage: "pl-PL",
+    datePublished: p.data, dateModified: p.aktualizacja || p.data,
+    mainEntityOfPage: `${BAZA}/poradniki/${p.slug}/`,
+    author: { "@type": "Person", name: cfg.autor },
+  };
+  const tresc = `<main>
+<section class="sec"><div class="wrap poradnik">
+  <p class="por-sciezka"><a href="/poradniki/">Poradniki</a> &raquo; ${esc(p.temat || "KSeF")}</p>
+  <h1>${esc(p.tytul)}</h1>
+  <p class="por-meta">Stan na ${esc(p.dataSlownie || p.data)}. Terminy i progi weryfikuj u źródła, adresy na końcu tekstu.</p>
+  <article>${renderPoradnik(p.tresc)}</article>
+  ${ctaPoradnika(p, skille)}
+  ${powiazane.length ? `<div class="por-powiazane"><h2>Z tej serii</h2><ul>${powiazane.map((x) => `<li><a href="/poradniki/${x.slug}/">${esc(x.tytul)}</a></li>`).join("")}</ul></div>` : ""}
+  <p class="por-stopka">Ten poradnik porządkuje wiedzę operacyjną i nie jest poradą podatkową ani prawną; w sprawach stawek, odliczeń i kwalifikacji transakcji decyduje Twoja księgowa albo doradca podatkowy.</p>
+</div></section>
+</main>`;
+  return strona({ tytul: p.tytul, opis: p.opis, tresc, sciezka: `/poradniki/${p.slug}/`, jsonld });
+}
+
+function stronaSpisuPoradnikow(poradniki) {
+  const tresc = `<main>
+<section class="sec"><div class="wrap poradnik">
+  <h1>Poradniki: KSeF w praktyce firmy</h1>
+  <p class="por-meta">Konkretne odpowiedzi na sytuacje, w których firmy naprawdę utykają: awaria systemu, odrzucona faktura, uprawnienia dla biura. Pisane od zera pod polskie realia, ze źródłami i datą stanu.</p>
+  <ul class="por-lista">
+    ${poradniki.map((p) => `<li><a href="/poradniki/${p.slug}/"><strong>${esc(p.tytul)}</strong><span>${esc(p.zajawka || p.opis)}</span></a></li>`).join("\n    ")}
+  </ul>
+</div></section>
+</main>`;
+  return strona({ tytul: "Poradniki KSeF dla firm", opis: "Awaria KSeF, odrzucona faktura, uprawnienia biura rachunkowego, numer KSeF w przelewach: praktyczne poradniki ze źródłami i datą stanu.", tresc, sciezka: "/poradniki/" });
+}
+
 // strony
 zapisz(join(WY, "index.html"), stronaGlowna(skille));
 console.log("  strona  /");
@@ -703,6 +779,15 @@ for (const s of skille) {
   } else {
     zapisz(join(WY, "skill", s.id, "index.html"), stronaSkilla(s));
     console.log(`  strona  /skill/${s.id}/`);
+  }
+}
+const poradniki = wczytajPoradniki();
+if (poradniki.length) {
+  zapisz(join(WY, "poradniki", "index.html"), stronaSpisuPoradnikow(poradniki));
+  console.log("  strona  /poradniki/");
+  for (const p of poradniki) {
+    zapisz(join(WY, "poradniki", p.slug, "index.html"), stronaPoradnika(p, poradniki));
+    console.log(`  strona  /poradniki/${p.slug}/`);
   }
 }
 zapisz(join(WY, "prywatnosc", "index.html"), stronaPrywatnosci());
@@ -736,7 +821,9 @@ zapisz(
 );
 
 // sitemap i robots
-const adresy = ["/", "/prywatnosc/", "/regulamin/", ...skille.filter(maStroneWKatalogu).map((s) => `/skill/${s.id}/`)];
+const adresy = ["/", "/prywatnosc/", "/regulamin/",
+  ...(poradniki.length ? ["/poradniki/", ...poradniki.map((p) => `/poradniki/${p.slug}/`)] : []),
+  ...skille.filter(maStroneWKatalogu).map((s) => `/skill/${s.id}/`)];
 zapisz(
   join(WY, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +

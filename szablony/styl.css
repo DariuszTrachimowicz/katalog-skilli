@@ -331,3 +331,33 @@ a.pl-znak:hover{color:var(--ink)}
 .rpremium .rp-item{border:1px solid var(--line);border-radius:8px;margin:0 0 10px}
 .rpremium .rp-cena{font-family:var(--mono);font-size:11.5px;color:#956400;background:var(--yellow-bg);border-radius:9999px;padding:3px 10px;margin-left:8px;white-space:nowrap;vertical-align:1px}
 .rpremium .rp-nota{font-size:12px;color:var(--muted)}
+
+/* ---------- poradniki (klaster tresci) ---------- */
+.poradnik{max-width:760px}
+.poradnik h1{margin-bottom:8px}
+.poradnik .por-sciezka{font-size:13px;color:var(--muted);margin-bottom:14px}
+.poradnik .por-sciezka a{color:inherit}
+.poradnik .por-meta{font-size:14px;color:var(--muted);margin-bottom:26px}
+.poradnik article h2{margin:30px 0 12px;font-size:22px}
+.poradnik article h3{margin:22px 0 10px;font-size:17px}
+.poradnik article p{margin:0 0 14px;line-height:1.65}
+.poradnik article ul,.poradnik article ol{margin:0 0 14px 22px;line-height:1.6}
+.poradnik article li{margin-bottom:6px}
+.poradnik article table{border-collapse:collapse;width:100%;margin:0 0 16px;font-size:14px}
+.poradnik article th,.poradnik article td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.poradnik article blockquote{border-left:3px solid var(--line);margin:0 0 14px;padding:4px 0 4px 14px;color:var(--ink-2)}
+.por-cta{border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:30px 0;background:var(--card,rgba(0,0,0,.02))}
+.por-cta-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.por-cta h3{margin:0 0 8px}
+.por-cta p{margin:0 0 10px;font-size:14.5px}
+.por-cta-nota{font-size:12.5px;color:var(--muted)}
+.por-powiazane{margin:26px 0}
+.por-powiazane h2{font-size:16px;margin-bottom:10px}
+.por-powiazane ul{margin:0 0 0 20px}
+.por-stopka{font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:26px}
+.por-lista{list-style:none;margin:0;padding:0}
+.por-lista li{border:1px solid var(--line);border-radius:10px;margin-bottom:12px}
+.por-lista a{display:block;padding:16px 18px;text-decoration:none;color:inherit}
+.por-lista a:hover{background:rgba(0,0,0,.03)}
+.por-lista strong{display:block;margin-bottom:4px}
+.por-lista span{font-size:14px;color:var(--muted)}
