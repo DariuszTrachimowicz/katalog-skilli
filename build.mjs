@@ -468,6 +468,17 @@ function stronaGlowna(skille) {
   </div>
 </section>
 
+<section class="sec">
+  <div class="wrap">
+    <div class="por-cta" style="margin:0">
+      <div class="por-cta-eyebrow">Nowość: KSeF w praktyce</div>
+      <h3>Poradniki KSeF i sprawdzian gotowości na awarię</h3>
+      <p>Dwanaście konkretnych odpowiedzi (awaria, odrzucona faktura, uprawnienia biura, przelewy od 2027) i darmowy sprawdzian: 10 pytań, wynik od razu w przeglądarce.</p>
+      <p><a class="btn" href="/sprawdzian-ksef/" data-umami-event="sprawdzian-wejscie">Zrób sprawdzian</a> &nbsp; <a href="/poradniki/">Przejrzyj poradniki &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
 <section class="sec" id="katalog">
   <div class="wrap">
     <div class="sec-head"><h2>Katalog</h2><p>Podzielony według tego, czym się zajmujesz, nie według tego, jak działa od środka.</p></div>
