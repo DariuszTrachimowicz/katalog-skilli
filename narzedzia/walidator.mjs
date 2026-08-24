@@ -121,6 +121,22 @@ for (const p of wszystkie) {
   if (waluta) ostrzez(`${b}: możliwy przeciek obcej waluty (${[...new Set(waluta)].slice(0,4).join(", ")}), oceń ręcznie`);
 }
 
+// --- swiezosc migawki KONTEKST.md kreatora (ostrzezenie, nie blokuje) ---
+// Migawka katalogu w ~/.claude/skills/skill-kreator-pl/KONTEKST.md deklaruje
+// liczbe skilli; gdy rozjezdza sie z realnym stanem skille/, bramki terytorium
+// i walidacja pracuja na nieaktualnych opisach. Odswiezenie: komenda `rejestr`.
+try {
+  const dom = process.env.USERPROFILE || process.env.HOME || "";
+  const kontekstP = join(dom, ".claude", "skills", "skill-kreator-pl", "KONTEKST.md");
+  const skilleP = existsSync("skille") ? "skille" : (existsSync(join("..", "katalog-skilli", "skille")) ? join("..", "katalog-skilli", "skille") : null);
+  if (dom && existsSync(kontekstP) && skilleP) {
+    const zadeklarowane = readFileSync(kontekstP, "utf8").match(/Skilli w katalogu:\s*(\d+)/)?.[1];
+    const realne = readdirSync(skilleP).filter((w) => existsSync(join(skilleP, w, "wpis.md"))).length;
+    if (zadeklarowane && Number(zadeklarowane) !== realne)
+      ostrzez(`KONTEKST.md kreatora nieświeży: deklaruje ${zadeklarowane} skilli, katalog ma ${realne}; odśwież komendą rejestr`);
+  }
+} catch { /* kontrola pomocnicza, brak dostepu nie moze psuc walidacji */ }
+
 // --- raport ---
 console.log(`Walidator skilla: ${id}  (${wszystkie.length} plików)`);
 for (const m of bledy) console.log(`  BŁĄD: ${m}`);
