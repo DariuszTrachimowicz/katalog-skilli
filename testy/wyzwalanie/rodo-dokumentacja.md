@@ -20,10 +20,23 @@
 - przyszlo pismo z uodo z pytaniami o nasza baze marketingowa, jak napisac odpowiedz zeby byla porzadna | wlasciciel: pismo-urzedowe
 - jestesmy biurem rachunkowym i musimy miec procedury przeciwdzialania praniu pieniedzy, od czego zaczac | wlasciciel: procedura-aml
 - dostawca chmury przyslal nam umowe powierzenia danych do podpisu, sprawdz co w niej jest ryzykownego | wlasciciel: czerwone-flagi-w-umowie
-- klientka zada usuniecia danych i grozi uodo, napisz jej odpowiedz zeby sie nie odwolala | wlasciciel: pismo-urzedowe
+- klientka zada usuniecia danych i grozi uodo, napisz jej odpowiedz zeby sie nie odwolala | wlasciciel: rodo-w-malej-firmie
 - chce spisac procedury kto u nas wystawia faktury w ksef i co robic przy awarii systemu | wlasciciel: ksef-procedury
-- regulamin sklepu internetowego pod katem rodo, sprawdz czy nasz nowy regulamin czegos nie lamie | wlasciciel: regulamin-pod-lupa
+- regulamin sklepu internetowego pod katem rodo, sprawdz czy nasz nowy regulamin czegos nie lamie | wlasciciel: rodo-w-malej-firmie, regulamin-pod-lupa
 
 # --- NIKT (2) ---
 0 czy rejestr czynnosci przetwarzania musi byc po polsku?
 0 co to jest administrator danych osobowych, jednym zdaniem?
+
+# WYNIK 24 sierpnia 2026 (pelne tlo 40 opisow, 3 powtorzenia, przebieg po
+# resecie limitu; pierwszy przebieg z oknem BLAD zarchiwizowany):
+# 17/20 zgodnych, bramka terytorium dla rodo-dokumentacja ZALICZONA:
+# - 9/9 pozytywow jednoglosnie 3/3, zero falszywych przejec zapytan sasiadow;
+# - rozjazdy [16] i [18] to bledy etykiet zestawu (wlasciwym adresatem jest
+#   rodo-w-malej-firmie, ktorego opis CELOWO lapie prosby o ocene zgodnosci
+#   i zadania osob, by wyjasnic odmowe); etykiety poprawione wyzej;
+# - rozjazd [19] (pytanie definicyjne z doslowna nazwa "rejestr czynnosci
+#   przetwarzania" wyzwolilo skill 2/3): zaakceptowany jako nieszkodliwy
+#   over-trigger; opis ma 1019/1024 znakow, ewentualna klauzula przy
+#   najblizszej aktualizacji opisu, nie teraz.
+# Pelny log: rodo-dokumentacja-wynik.log

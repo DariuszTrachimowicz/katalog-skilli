@@ -1,2 +1,29 @@
 Miernik wyzwalania: rodo-dokumentacja
 Zestaw: 20 zapytan (+9 / -9 / 0:2), powtorzenia: 3, tlo: 40 opisow
+OK          [1/20] oczekiwani=rodo-dokumentacja glosy=rodo-dokumentacja,rodo-dokumentacja,rodo-dokumentacja :: mamy zrobiona mape danych w firmie, teraz chce z tego porzad
+OK          [2/20] oczekiwani=rodo-dokumentacja glosy=rodo-dokumentacja,rodo-dokumentacja,rodo-dokumentacja :: kontrahent na audycie zazyczyl sobie naszego rejestru czynno
+OK          [3/20] oczekiwani=rodo-dokumentacja glosy=rodo-dokumentacja,rodo-dokumentacja,rodo-dokumentacja :: uporzadkujmy w koncu rodo na papierze, wiem co zbieramy i gd
+OK          [4/20] oczekiwani=rodo-dokumentacja glosy=rodo-dokumentacja,rodo-dokumentacja,rodo-dokumentacja :: przejmuje po ojcu zaklad produkcyjny 12 osob i nie ma zadnej
+OK          [5/20] oczekiwani=rodo-dokumentacja glosy=rodo-dokumentacja,rodo-dokumentacja,rodo-dokumentacja :: potrzebuje upowaznien do przetwarzania danych dla dwoch prac
+OK          [6/20] oczekiwani=rodo-dokumentacja glosy=rodo-dokumentacja,rodo-dokumentacja,rodo-dokumentacja :: ktore z naszych przetwarzan sa ryzykowne? chcialbym miec pro
+OK          [7/20] oczekiwani=rodo-dokumentacja glosy=rodo-dokumentacja,rodo-dokumentacja,rodo-dokumentacja :: ubezpieczyciel przy polisie cyber pyta o wykaz przetwarzan i
+OK          [8/20] oczekiwani=rodo-dokumentacja glosy=rodo-dokumentacja,rodo-dokumentacja,rodo-dokumentacja :: prowadze gabinet fizjoterapii, mam spisane jakie dane zbiera
+OK          [9/20] oczekiwani=rodo-dokumentacja glosy=rodo-dokumentacja,rodo-dokumentacja,rodo-dokumentacja :: audytorka kazala nam pokazac rejestr kategorii czynnosci bo 
+OK          [10/20] oczekiwani=rodo-w-malej-firmie glosy=rodo-w-malej-firmie,rodo-w-malej-firmie,rodo-w-malej-firmie :: chyba wyciekly nam dane klientow, mail z baza poszedl nie do
+OK          [11/20] oczekiwani=rodo-w-malej-firmie glosy=rodo-w-malej-firmie,rodo-w-malej-firmie,rodo-w-malej-firmie :: co my wlasciwie zbieramy o ludziach? chce zmapowac jakie dan
+OK          [12/20] oczekiwani=polityka-ai glosy=polityka-ai,polityka-ai,polityka-ai :: potrzebujemy polityki uzywania sztucznej inteligencji w firm
+OK          [13/20] oczekiwani=pismo-urzedowe glosy=pismo-urzedowe,rodo-w-malej-firmie,pismo-urzedowe :: przyszlo pismo z uodo z pytaniami o nasza baze marketingowa,
+OK          [14/20] oczekiwani=procedura-aml glosy=procedura-aml,procedura-aml,procedura-aml :: jestesmy biurem rachunkowym i musimy miec procedury przeciwd
+OK          [15/20] oczekiwani=czerwone-flagi-w-umowie glosy=czerwone-flagi-w-umowie,czerwone-flagi-w-umowie,czerwone-flagi-w-umowie :: dostawca chmury przyslal nam umowe powierzenia danych do pod
+ROZJAZD     [16/20] oczekiwani=pismo-urzedowe glosy=rodo-w-malej-firmie,rodo-w-malej-firmie,rodo-w-malej-firmie :: klientka zada usuniecia danych i grozi uodo, napisz jej odpo
+OK          [17/20] oczekiwani=ksef-procedury glosy=ksef-procedury,ksef-procedury,ksef-procedury :: chce spisac procedury kto u nas wystawia faktury w ksef i co
+ROZJAZD     [18/20] oczekiwani=regulamin-pod-lupa glosy=rodo-w-malej-firmie,rodo-w-malej-firmie,rodo-w-malej-firmie :: regulamin sklepu internetowego pod katem rodo, sprawdz czy n
+ROZJAZD     [19/20] oczekiwani=ZADEN glosy=ZADEN,rodo-dokumentacja,rodo-dokumentacja :: czy rejestr czynnosci przetwarzania musi byc po polsku?
+OK          [20/20] oczekiwani=ZADEN glosy=ZADEN,ZADEN,ZADEN :: co to jest administrator danych osobowych, jednym zdaniem?
+
+Wynik: 17/20 zgodnych.
+  ROZJAZD: oczekiwani=pismo-urzedowe, glosy=rodo-w-malej-firmie,rodo-w-malej-firmie,rodo-w-malej-firmie :: klientka zada usuniecia danych i grozi uodo, napisz jej odpowiedz zeby sie nie o
+  ROZJAZD: oczekiwani=regulamin-pod-lupa, glosy=rodo-w-malej-firmie,rodo-w-malej-firmie,rodo-w-malej-firmie :: regulamin sklepu internetowego pod katem rodo, sprawdz czy nasz nowy regulamin c
+  ROZJAZD: oczekiwani=ZADEN, glosy=ZADEN,rodo-dokumentacja,rodo-dokumentacja :: czy rejestr czynnosci przetwarzania musi byc po polsku?
+
+Kolizje do rozstrzygniecia ruchami z komendy terytorium.
