@@ -69,7 +69,7 @@ if (!existsSync(wpisP)) {
   else {
     if (!fm.nazwa) blad("wpis.md: brak pola nazwa");
     if (!KATEGORIE.includes(fm.kategoria)) blad(`wpis.md: kategoria "${fm.kategoria}" spoza listy ${KATEGORIE.join("|")}`);
-    if (!/^d+.d+.d+$/.test(String(fm.wersja || ""))) ostrzez(`wpis.md: brak pola wersja w zapisie x.y.z`);
+    if (!/^\d+\.\d+\.\d+$/.test(String(fm.wersja || ""))) ostrzez(`wpis.md: brak pola wersja w zapisie x.y.z`);
     if (fm.poziom && !POZIOMY.includes(fm.poziom)) ostrzez(`wpis.md: poziom "${fm.poziom}" spoza listy`);
     if (!fm.skrot) blad("wpis.md: brak pola skrot");
     for (const p of ["claude", "gpt", "gemini"]) {
