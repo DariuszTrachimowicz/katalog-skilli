@@ -39,7 +39,7 @@ zamiast zmyślać.
 Każde narzędzie ma na stronie prawdziwy przykład do obejrzenia przed zakupem:
 https://skille.aixperts.pl/pracownia/
 
-99 zł netto/mies, 20 jednostek, bez zobowiązań (abonament nie odnawia się sam).
+Kredyty od 10 zł netto: 1 na spróbowanie, 5 za 30 zł, 20 za 99 zł. Ważne 30 dni, bez automatycznego odnawiania.
 
 ## Mail ogłoszeniowy (wysłać, gdy baza newslettera urośnie)
 
@@ -57,8 +57,8 @@ z rozmowy. Wybierasz narzędzie, odpowiadasz na pytania, pobierasz gotowy plik.
 Siedem narzędzi na start, każde z prawdziwym przykładem do obejrzenia:
 https://skille.aixperts.pl/pracownia/
 
-99 zł netto miesięcznie, 20 jednostek na dokumenty, bez automatycznego
-odnawiania.
+Kredyty od 10 zł netto (1 kredyt na spróbowanie), 5 za 30 zł, 20 za 99 zł.
+Ważne 30 dni, bez automatycznego odnawiania.
 
 Pozdrawiam,
 Dariusz Trachimowicz, AiXperts

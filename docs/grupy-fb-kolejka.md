@@ -46,7 +46,7 @@ Odpowiadasz na pytania, a narzędzie składa gotowy plik: ofertę B2B, procedury
 
 Każde narzędzie ma na stronie prawdziwy przykład do obejrzenia przed zakupem: https://skille.aixperts.pl/pracownia/
 
-99 zł netto/mies, 20 jednostek, bez zobowiązań (abonament nie odnawia się sam).
+Kredyty od 10 zł netto: 1 na spróbowanie, 5 za 30 zł, 20 za 99 zł. Ważne 30 dni, bez automatycznego odnawiania.
 
 ### Wariant ciekawostka (grupy ogólne o AI)
 
