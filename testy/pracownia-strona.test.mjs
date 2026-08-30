@@ -44,13 +44,13 @@ test("publikuje Pracownię, ale pokazuje ją w katalogu i sitemapie tylko za fla
     assert.match(strona, /DOCX, PDF i HTML/);
 
     const narzedzia = [
-      ["Oferta behawioralna", "Sprzedaż", "1 jednostka", "oferta-behawioralna"],
-      ["Procedury KSeF", "Zgodność", "3 jednostki", "ksef-procedury"],
-      ["Polityka AI", "Zgodność", "5 jednostek", "polityka-ai"],
-      ["Procedura AML", "Zgodność", "5 jednostek", "procedura-aml"],
-      ["Opisy produktów", "Treści", "1 jednostka", "opisy-produktow"],
-      ["Pismo urzędowe", "Urzędy", "1 jednostka", "pismo-urzedowe"],
-      ["Ogłoszenie o pracę", "HR", "1 jednostka", "ogloszenie-o-prace"],
+      ["Oferta behawioralna", "Sprzedaż", "1 kredyt", "oferta-behawioralna"],
+      ["Procedury KSeF", "Zgodność", "3 kredyty", "ksef-procedury"],
+      ["Polityka AI", "Zgodność", "5 kredytów", "polityka-ai"],
+      ["Procedura AML", "Zgodność", "5 kredytów", "procedura-aml"],
+      ["Opisy produktów", "Treści", "1 kredyt", "opisy-produktow"],
+      ["Pismo urzędowe", "Urzędy", "1 kredyt", "pismo-urzedowe"],
+      ["Ogłoszenie o pracę", "HR", "1 kredyt", "ogloszenie-o-prace"],
     ];
 
     for (const [nazwa, kategoria, koszt, slug] of narzedzia) {
@@ -65,13 +65,17 @@ test("publikuje Pracownię, ale pokazuje ją w katalogu i sitemapie tylko za fla
     assert.equal(policz(strona, ">Zobacz przykład</a>"), 7);
 
     for (const fragment of [
-      "99 zł netto miesięcznie",
+      "10 zł netto",
+      "30 zł netto",
+      "99 zł netto",
       "121,77 zł brutto",
-      "20 jednostek",
-      "Poprawki i audyt w ramach tej samej sesji nie zużywają dodatkowych jednostek",
-      "https://licencje.aixperts.pl/zamow/pracownia?okres=miesiac",
+      "ważny 30 dni",
+      "Poprawki i audyt w ramach tej samej sesji nie zużywają dodatkowych kredytów",
+      "https://licencje.aixperts.pl/zamow/pracownia?pakiet=1",
+      "https://licencje.aixperts.pl/zamow/pracownia?pakiet=5",
+      "https://licencje.aixperts.pl/zamow/pracownia?pakiet=20",
       "data-umami-event=\"zakup\"",
-      "data-umami-event-skill=\"pracownia\"",
+      "data-umami-event-skill=\"pracownia-5\"",
       "href=\"/#katalog\"",
       "BLIK, kartą lub przelewem",
       "Montonio",
