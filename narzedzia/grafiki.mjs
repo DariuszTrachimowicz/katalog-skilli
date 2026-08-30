@@ -28,7 +28,7 @@ if (!CHROME) { console.error("Nie znalazłem Chrome, ustaw zmienną CHROME."); p
 // Kolory kategorii jak na stronie, dobrane pod ciemne tło karty.
 const KOLORY = {
   Prawo: "#E8938F", Biuro: "#7FC4EE", Finanse: "#8FC493",
-  Kadry: "#E3B65C", Marketing: "#C9C9C6", Dane: "#C9C9C6",
+  Kadry: "#E3B65C", Marketing: "#C9C9C6", Dane: "#C9C9C6", Pracownia: "#8FC493",
 };
 
 const fontUrl = (n) => pathToFileURL(join(KORZEN, "szablony", "fonty", n)).href;
@@ -98,13 +98,16 @@ const zadania = [
   { plik: "katalog.png", html: karta({ tytul: "Pisane od zera pod polskie realia. Nie tłumaczone.", opis: cfg.opisSerwisu, stopka: `${skille.length} umiejętności · za darmo · Claude i ChatGPT` }) },
   { plik: "regulamin.png", html: karta({ tytul: "Regulamin", opis: "Zasady korzystania z katalogu, pobierania skilli i newslettera.", stopka: cfg.nazwaSerwisu }) },
   { plik: "prywatnosc.png", html: karta({ tytul: "Prywatność", opis: "Jakie dane zbiera katalog i co się z nimi dzieje. Bez śledzenia, bez profilowania.", stopka: cfg.nazwaSerwisu }) },
+  { plik: "pracownia.png", html: karta({ kategoria: "Pracownia", tytul: "Dokument firmowy z rozmowy. Bez instalowania.", opis: "Odpowiadasz na pytania, a Pracownia składa gotowy plik: DOCX, PDF i HTML. Siedem narzędzi na start.", stopka: "99 zł netto/mies · 20 jednostek na dokumenty" }) },
   ...skille.map((s) => ({
     plik: `${s.id}.png`,
     html: karta({ kategoria: s.kategoria, tytul: s.nazwa, opis: s.skrot, stopka: "Do pobrania za darmo · Claude i ChatGPT" }),
   })),
 ];
 
-for (const z of zadania) {
+const filtr = process.argv[2];
+const doZrobienia = filtr ? zadania.filter((z) => z.plik.startsWith(filtr)) : zadania;
+for (const z of doZrobienia) {
   const html = join(ROBOCZY, z.plik.replace(/\.png$/, ".html"));
   writeFileSync(html, z.html);
 
@@ -137,7 +140,7 @@ for (const z of zadania) {
 }
 
 // Kontrola całości przed sprzątaniem: żadna karta nie może być stroną błędu.
-const zepsute = zadania.filter((z) => statSync(join(CEL, z.plik)).size <= 30_000);
+const zepsute = doZrobienia.filter((z) => statSync(join(CEL, z.plik)).size <= 30_000);
 if (zepsute.length) { console.error(`BŁĄD: uszkodzone karty: ${zepsute.map((z) => z.plik).join(", ")}`); process.exit(1); }
 
 rmSync(ROBOCZY, { recursive: true, force: true });

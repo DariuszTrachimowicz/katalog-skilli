@@ -407,7 +407,7 @@ function stronaPracowni() {
     tytul: "Pracownia AiXperts, dokumenty z rozmowy",
     opis: "Twórz gotowe dokumenty w rozmowie, bez instalowania skilli. Pracownia AiXperts prowadzi wywiad i przygotowuje pliki DOCX, PDF i HTML.",
     sciezka: "/pracownia/",
-    obrazek: "katalog.png",
+    obrazek: "pracownia.png",
     tresc,
   });
 }
