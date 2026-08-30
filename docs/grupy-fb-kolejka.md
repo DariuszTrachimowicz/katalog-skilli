@@ -73,3 +73,27 @@ Mały eksperyment z praktyki: zamiast dawać ludziom prompty do dokumentów, dal
 Różnica wobec zwykłego czatu: narzędzie ma listę informacji krytycznych i bez nich nie wygeneruje pliku, a braki uzupełniające jawnie oznacza w treści. Zero zmyślania danych.
 
 Przykłady wygenerowane naprawdę (na fikcyjnych danych) do obejrzenia: https://skille.aixperts.pl/pracownia/
+
+
+## Porcja: pisma rozwodowe (od 1 września 2026)
+
+### Wariant case study (grupy o AI i agentach)
+
+Studium przypadku z naszej pracy: jak zmusić model do pisania pism sądowych bez halucynacji.
+
+Zbudowaliśmy narzędzie AI do pism rozwodowych za porozumieniem (16 ścieżek: pozwy, pisma w toku, formalności po wyroku). Najciekawsze były granice, nie generowanie: model nie może cytować artykułów z pamięci, kwot i dat nie wolno mu zgadywać (wszystko od użytkownika albo jawne pole do uzupełnienia), zmienne wartości typu opłaty sądowe zawsze każe potwierdzić na stronie sądu, a przy jakimkolwiek sporze odmawia i układa teczkę na spotkanie z pełnomocnikiem. Świeże orzecznictwo dokleja wyłącznie 1:1 z oficjalnych baz (SAOS i portal orzeczeń MS), po filtrze odsiewającym sprawy proceduralne.
+
+QA: dwa niezależne werdykty innego modelu jako sędziego plus pełna macierz testów na żywo, każda ścieżka z obejrzanym dokumentem.
+
+Do obejrzenia przykład wygenerowany na fikcyjnych danych: https://pracownia.aixperts.pl/public/przyklady/pisma-rozwodowe.html
+A darmowa część (sprawdzanie własnego pozwu) jest w katalogu: https://skille.aixperts.pl/skill/rozwod-za-porozumieniem/
+
+Chętnie opowiem, jak wymuszamy te granice w instrukcjach i testach.
+
+### Wariant praktyczny (grupy poradnikowe)
+
+Praktyczna nowość dla osób, które piszą pisma same: darmowy skill, który tłumaczy przebieg rozwodu za porozumieniem i sprawdza kompletność napisanego samodzielnie pozwu (mediacja, właściwość sądu, załączniki, typowe braki formalne). Niczego nie pisze za Ciebie i nie ocenia szans, wskazuje braki i układa teczkę na rozmowę z prawnikiem.
+
+https://skille.aixperts.pl/skill/rozwod-za-porozumieniem/
+
+A jeżeli ktoś woli gotowy projekt pisma z rozmowy po polsku, to robi to nasza Pracownia (projekt zawsze do własnego sprawdzenia i podpisu): https://skille.aixperts.pl/pracownia/
