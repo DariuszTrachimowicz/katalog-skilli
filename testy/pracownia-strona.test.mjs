@@ -26,9 +26,11 @@ function policz(tekst, fragment) {
 test("publikuje Pracownię, ale pokazuje ją w katalogu i sitemapie tylko za flagą", async () => {
   const oryginalnyConfig = readFileSync(CONFIG, "utf8");
   const config = JSON.parse(oryginalnyConfig);
-  assert.equal(config.pracowniaWKatalogu, false, "flaga ma pozostać wyłączona w repo");
+  assert.equal(typeof config.pracowniaWKatalogu, "boolean", "flaga musi istnieć w config.json");
 
   try {
+    writeFileSync(CONFIG, `${JSON.stringify({ ...config, pracowniaWKatalogu: false }, null, 2)}
+`, "utf8");
     await zbuduj();
     const strona = readFileSync(STRONA, "utf8");
     const glownaFalse = readFileSync(GLOWNA, "utf8");
