@@ -390,6 +390,28 @@ function stronaOferty(s) {
   });
 }
 
+/* ---------- Pracownia AiXperts ---------- */
+
+function stronaPracowni() {
+  const fragment = readFileSync(join(KORZEN, "szablony", "pracownia.html"), "utf8");
+  const tresc = `
+<main class="wrap">
+<article class="art oferta">
+  ${NADAWCA}
+  <p class="krusz"><a href="/">Katalog</a> &rarr; Pracownia AiXperts</p>
+  ${fragment}
+</article>
+</main>`;
+
+  return strona({
+    tytul: "Pracownia AiXperts, dokumenty z rozmowy",
+    opis: "Twórz gotowe dokumenty w rozmowie, bez instalowania skilli. Pracownia AiXperts prowadzi wywiad i przygotowuje pliki DOCX, PDF i HTML.",
+    sciezka: "/pracownia/",
+    obrazek: "katalog.png",
+    tresc,
+  });
+}
+
 /* ---------- strona główna ---------- */
 
 function stronaGlowna(skille) {
@@ -479,7 +501,18 @@ function stronaGlowna(skille) {
   </div>
 </section>
 
-<section class="sec" id="katalog">
+${cfg.pracowniaWKatalogu ? `<section class="sec">
+  <div class="wrap">
+    <div class="por-cta" style="margin:0">
+      <div class="por-cta-eyebrow">Pracownia AiXperts</div>
+      <h3>Dokumenty z rozmowy, bez instalowania</h3>
+      <p>Nie chcesz instalować skilli? Pracownia robi te dokumenty w przeglądarce, z rozmowy.</p>
+      <a class="btn" href="/pracownia/">Zobacz Pracownię</a>
+    </div>
+  </div>
+</section>
+
+` : ""}<section class="sec" id="katalog">
   <div class="wrap">
     <div class="sec-head"><h2>Katalog</h2><p>Podzielony według tego, czym się zajmujesz, nie według tego, jak działa od środka.</p></div>
     <div class="legend">
@@ -869,6 +902,8 @@ for (const s of skille) {
     console.log(`  strona  /skill/${s.id}/`);
   }
 }
+zapisz(join(WY, "pracownia", "index.html"), stronaPracowni());
+console.log("  strona  /pracownia/");
 const poradniki = wczytajPoradniki();
 if (poradniki.length) {
   zapisz(join(WY, "sprawdzian-ksef", "index.html"), stronaSprawdzianu());
@@ -912,6 +947,7 @@ zapisz(
 
 // sitemap i robots
 const adresy = ["/", "/prywatnosc/", "/regulamin/",
+  ...(cfg.pracowniaWKatalogu ? ["/pracownia/"] : []),
   ...(poradniki.length ? ["/poradniki/", "/sprawdzian-ksef/", ...poradniki.map((p) => `/poradniki/${p.slug}/`)] : []),
   ...skille.filter(maStroneWKatalogu).map((s) => `/skill/${s.id}/`)];
 zapisz(
