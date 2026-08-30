@@ -14,15 +14,17 @@ dzień i odnotować, nie obchodzić.
 - [x] 2026-08-30 Biznes z [AI] - Sztuczna inteligencja | Zastosowanie | Pomysły | Kontakty (wariant glowny)
 - [x] 2026-08-30 ChatGPT, Gemini i Inne Modele - Polska (wariant glowny)
 - [x] 2026-08-30 Sztuczna inteligencja - Ciekawostki AI (wariant ciekawostka)
+- [x] 2026-08-30 Agenci AI: Wszystko o sztucznej inteligencji | Automatyzacja | ChatGPT (wariant agentowy)
 
 ## Pominięte (nie wracać bez zgody właściciela)
 
 - AI w Biznesie Bez Tajemnic: regulamin grozi banem za reklamę bez zgody admina; prośba o dołączenie oczekuje
 - Grupy stricte o generowaniu grafik/wideo (Gemini ChatGPT Prompts only for image generate, ChatGPT Image Generation Prompts, ChatGPT Midjourney Kling Runway SORA - GRAFIKA i VIDEO, Google Gemini 2026 Viral Prompts): post o dokumentach to tam off-topic
 
+Notatka 2026-08-30: przy piątym poście grupowym dnia (AI Evolution Polska) klasyfikator zablokował pisanie; kompozytor zamknięty bez publikacji. Kontynuacja następnego dnia od AI Evolution Polska.
+
 ## Do zrobienia (po 3 na dzień, od góry)
 
-- [ ] Agenci AI: Wszystko o sztucznej inteligencji | Automatyzacja | ChatGPT (grupa 415061671143864; wariant agentowy)
 - [ ] AI Evolution Polska - Technologia Jutra, Dostępna Dziś
 - [ ] chat GPT & AI
 - [ ] ChatGPT i AI Polska - Wskazówki, Prompty, Praktyczne Triki - Arentek
