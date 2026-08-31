@@ -136,6 +136,7 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
       <a href="https://aixperts.pl/">Strona główna</a>
       <a href="${cfg.linkSzkolenia}">Warsztaty</a>
       <a href="https://aixperts.pl/wiedza/">Wiedza</a>
+      <a href="/wdrozenia/">Wdrożenia</a>
       <a href="/#katalog">Skille</a>
       <a href="/#test" class="btn">Zacznij od testu</a>
     </nav>
@@ -408,6 +409,27 @@ function stronaPracowni() {
     opis: "Twórz gotowe dokumenty w rozmowie, bez instalowania skilli. Pracownia AiXperts prowadzi wywiad i przygotowuje pliki DOCX, PDF i HTML.",
     sciezka: "/pracownia/",
     obrazek: "pracownia.png",
+    tresc,
+  });
+}
+
+/* ---------- Wdrożenia (referencje) ---------- */
+
+function stronaWdrozen() {
+  const fragment = readFileSync(join(KORZEN, "szablony", "wdrozenia.html"), "utf8");
+  const tresc = `
+<main class="wrap">
+<article class="art oferta">
+  ${NADAWCA}
+  <p class="krusz"><a href="/">Katalog</a> &rarr; Wdrożenia</p>
+  ${fragment}
+</article>
+</main>`;
+
+  return strona({
+    tytul: "Wdrożenia AiXperts, narzędzia AI szyte na miarę",
+    opis: "Systemy łączące dane firmy z warstwą AI: analityka magazynowa z asystentem AI, portale wewnętrzne, obieg pracy zespołu. Dane zostają u klienta.",
+    sciezka: "/wdrozenia/",
     tresc,
   });
 }
@@ -903,6 +925,7 @@ for (const s of skille) {
   }
 }
 zapisz(join(WY, "pracownia", "index.html"), stronaPracowni());
+zapisz(join(WY, "wdrozenia", "index.html"), stronaWdrozen());
 console.log("  strona  /pracownia/");
 const poradniki = wczytajPoradniki();
 if (poradniki.length) {
@@ -946,7 +969,7 @@ zapisz(
 );
 
 // sitemap i robots
-const adresy = ["/", "/prywatnosc/", "/regulamin/",
+const adresy = ["/", "/prywatnosc/", "/regulamin/", "/wdrozenia/",
   ...(cfg.pracowniaWKatalogu ? ["/pracownia/"] : []),
   ...(poradniki.length ? ["/poradniki/", "/sprawdzian-ksef/", ...poradniki.map((p) => `/poradniki/${p.slug}/`)] : []),
   ...skille.filter(maStroneWKatalogu).map((s) => `/skill/${s.id}/`)];
