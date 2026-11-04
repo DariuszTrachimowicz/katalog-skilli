@@ -199,12 +199,13 @@ ${tresc}
   <div class="wrap">
     <div class="stopka">
       <div><b>${esc(cfg.nazwaSerwisu)}</b><p>Darmowe skille AI pod polskie realia, na licencji <a href="${cfg.urlLicencji}" rel="license">${esc(cfg.licencja)}</a>. Twórca: ${esc(cfg.autor)}. Kontakt: <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a></p><p style="margin-top:10px">AiXperts: narzędzia i edukacja AI. <a href="https://d-x.pl/szkolenia-i-wdrozenia-ai/">Pilotaże, integracje i rozwój rozwiązań z Digital Xperts</a>.</p></div>
-      <div><b>Katalog</b><a href="/#katalog">Wszystkie skille</a><a href="/#test">Test dopasowania</a><a href="/poradniki/">Poradniki KSeF</a><a href="/sprawdzian-ksef/">Sprawdzian KSeF</a></div>
+      <div><b>Katalog</b><a href="/#katalog">Wszystkie skille</a><a href="/#test">Test dopasowania</a><a href="/poradniki/">Poradniki KSeF</a><a href="/sprawdzian-ksef/">Sprawdzian KSeF</a><a href="/github/">Kod na GitHubie</a></div>
       <div><b>AiXperts</b><a href="${cfg.linkSzkolenia}">Warsztaty</a><a href="https://aixperts.pl/wiedza/">Wiedza</a><a href="/wdrozenia/">Wdrożenia</a><a href="https://aixperts.pl/">aixperts.pl</a></div>
     </div>
     <p class="prawne"><a href="/regulamin/">Regulamin</a> · <a href="/prywatnosc/">Prywatność</a> · <a href="/llms.txt">llms.txt</a> · Katalog nie jest powiązany z Anthropic, OpenAI ani Google.</p>
   </div>
 </footer>
+${tresc.includes('class="polec"') ? SKRYPT_POLEC : ""}
 ${skrypt}
 </body>
 </html>`;
@@ -229,6 +230,33 @@ const faqLd = (faq) => ({
   mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: czystyTekst(f.a) } })),
 });
 const speakable = { "@type": "SpeakableSpecification", cssSelector: ["#lede", ".faq-o"] };
+
+/* ---------- przyciski „Poleć” ---------- */
+
+// Zwykłe linki do okien udostępniania (bez skryptów i ciasteczek serwisów społecznościowych)
+// plus natywne „Udostępnij” w telefonie i kopiowanie linku. Zdarzenie Umami: polec + kanał.
+const REPO = "https://github.com/DariuszTrachimowicz/katalog-skilli";
+function polec({ sciezka, tytul, naglowek = "Poleć ten skill", tekst = "" }) {
+  const url = BAZA + sciezka;
+  const e = encodeURIComponent;
+  const kanal = (k, href, t) => `<a class="polec-b" href="${href}" target="_blank" rel="noopener" data-umami-event="polec" data-umami-event-kanal="${k}">${t}</a>`;
+  return `<div class="polec" data-polec-url="${esc(url)}" data-polec-tytul="${esc(tytul)}">
+    <p class="polec-t">${esc(naglowek)}</p>
+    <div class="polec-l">
+      <button type="button" class="polec-b polec-nat" hidden data-umami-event="polec" data-umami-event-kanal="natywny">Udostępnij</button>
+      ${kanal("linkedin", `https://www.linkedin.com/sharing/share-offsite/?url=${e(url)}`, "LinkedIn")}
+      ${kanal("facebook", `https://www.facebook.com/sharer/sharer.php?u=${e(url)}`, "Facebook")}
+      ${kanal("whatsapp", `https://wa.me/?text=${e(`${tytul}: ${url}`)}`, "WhatsApp")}
+      <a class="polec-b" href="mailto:?subject=${e(tytul)}&amp;body=${e(`${tekst ? tekst + "\n\n" : ""}${url}`)}" data-umami-event="polec" data-umami-event-kanal="email">E-mail</a>
+      <button type="button" class="polec-b polec-kop" data-umami-event="polec" data-umami-event-kanal="kopiuj">Kopiuj link</button>
+    </div>
+    <p class="polec-s" role="status" aria-live="polite"></p>
+  </div>`;
+}
+// Jeden skrypt na stronę: natywne udostępnianie tam, gdzie przeglądarka je ma, i kopiowanie linku.
+const SKRYPT_POLEC = `<script>(function(){document.querySelectorAll(".polec").forEach(function(p){var u=p.dataset.polecUrl,t=p.dataset.polecTytul,s=p.querySelector(".polec-s"),n=p.querySelector(".polec-nat");
+if(navigator.share&&n){n.hidden=false;n.addEventListener("click",function(){navigator.share({title:t,url:u}).catch(function(){})})}
+p.querySelector(".polec-kop").addEventListener("click",function(){(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){s.textContent="Link skopiowany. Wklej go w wiadomości."},function(){s.textContent="Skopiuj adres: "+u})})})})();</script>`;
 
 /* ---------- zgodność ---------- */
 
@@ -345,6 +373,7 @@ function stronaSkilla(s, skille) {
   <aside class="bok" aria-label="Pobieranie i zgodność">
     <div class="pudlo" id="pobierz">${gotowy ? formularzPobrania(s.id) : `<div class="dl"><b>W przygotowaniu</b><span>Zrób test doboru, napiszemy, gdy skill będzie gotowy.</span><a class="btn pelny" href="/#test">Powiadom mnie</a></div>`}</div>
     ${gdzieDziala(s)}
+    <div class="pudlo">${polec({ sciezka: `/skill/${s.id}/`, tytul: `${s.nazwa}, darmowy skill AI po polsku`, tekst: s.korzysc || s.skrot })}</div>
   </aside>
 </div>`;
 
@@ -382,6 +411,82 @@ function stronaWdrozen() {
     sekcja: "wdrozenia",
     tresc: readFileSync(join(KORZEN, "szablony", "wdrozenia.html"), "utf8"),
     jsonld: { "@context": "https://schema.org", "@graph": [{ "@type": "WebPage", url: `${BAZA}/wdrozenia/`, name: "Wdrożenia AiXperts", inLanguage: "pl-PL", breadcrumb: okruszkiLd([["Katalog", "/"], ["Wdrożenia", "/wdrozenia/"]]) }] },
+  });
+}
+
+/* ---------- repozytorium na GitHubie ---------- */
+
+const FAQ_GITHUB = [
+  { q: "Czy mogę używać skilli z GitHuba w swojej firmie?", a: "Tak. Skille są na licencji GPL w wersji 3 lub nowszej, która pozwala używać ich w dowolnym celu, także w firmie. Jeśli zmienione skille przekazujesz dalej, robisz to na tej samej licencji i z dostępem do ich treści." },
+  { q: "Czy repozytorium to ta sama wersja, co strona i pliki do pobrania?", a: "Tak. Strona katalogu i pliki .skill powstają z tego samego repozytorium, z tych samych folderów skilli. Numer wersji skilla znajdziesz w pliku wpis.md i na jego karcie." },
+  { q: "Czy muszę mieć konto na GitHubie?", a: "Nie. Repozytorium jest publiczne: przeglądasz je i pobierasz jako ZIP bez konta. Konto przydaje się dopiero wtedy, gdy chcesz zgłosić błąd w zakładce Issues albo zaproponować zmianę." },
+  { q: "Jak najszybciej zainstalować jeden skill?", a: "Najprościej pobierz gotowy plik .skill linkiem z karty skilla w katalogu. Z GitHuba korzystasz, gdy chcesz przejrzeć instrukcje skilla, porównać wersje albo przygotować własną, zmienioną wersję." },
+];
+
+function stronaGithub(skille, poradniki) {
+  const sciezka = [["Katalog", "/"], ["Skille na GitHubie", "/github/"]];
+  const tresc = `
+<section class="gora"><div class="wrap">
+  ${okruszkiHtml(sciezka)}
+  <h1>Skille po polsku na GitHubie</h1>
+  <p class="lede" id="lede">Cały katalog jest otwarty: każdy skill, standard, według którego go piszemy, i generator tej strony. Możesz przeczytać, sprawdzić i zmienić każdą linijkę na licencji GPL.</p>
+  <div class="cta"><a class="btn" href="${REPO}" rel="noopener" data-umami-event="github-wejscie">Otwórz repozytorium na GitHubie</a><a class="btn line" href="/#katalog">Pobierz skill z karty</a></div>
+</div></section>
+
+<div class="wrap uklad">
+  <article class="tresc">
+    <section id="co-jest"><h2>Co jest w repozytorium</h2>
+      <ul>
+        <li><strong>Foldery skilli</strong> w <code>skille/</code>: ${skille.length} skilli, każdy z plikiem <code>SKILL.md</code> (instrukcje dla modelu), materiałami w <code>references/</code> i opisem karty w <code>wpis.md</code>.</li>
+        <li><strong>Standard</strong> w <code>STANDARD.md</code>: reguły, według których piszemy każdy skill, od uzasadniania skutkiem zamiast przepisem po zakaz orzekania.</li>
+        <li><strong>Poradniki KSeF</strong> w <code>poradniki/</code>: ${poradniki.length} tekstów ze źródłami i datą stanu.</li>
+        <li><strong>Generator strony i paczek</strong> (<code>build.mjs</code>, <code>narzedzia/</code>): bez zależności zewnętrznych, sam Node.</li>
+        <li><strong>Testy</strong> w <code>testy/</code>: między innymi zgodność FAQ z danymi strukturalnymi i brak długich myślników w tym, co trafia na stronę.</li>
+      </ul>
+    </section>
+    <section id="jak-wziac"><h2>Jak wziąć skill z GitHuba</h2>
+      <ol class="kroki3">
+        <li><span>Otwórz folder <code>skille/</code> i wybierz skill; jego nazwa to adres karty w katalogu, np. <code>czerwone-flagi-w-umowie</code>.</span></li>
+        <li><span>Pobierz całe repozytorium przyciskiem Code › Download ZIP albo sklonuj je poleceniem <code>git clone ${REPO}.git</code>.</span></li>
+        <li><span>Gotowy plik do wgrania w Claude albo ChatGPT najprościej dostaniesz linkiem z karty skilla; folder z GitHuba przydaje się, gdy chcesz go przejrzeć albo zmienić.</span></li>
+      </ol>
+    </section>
+    <section id="licencja"><h2>Licencja i zgłoszenia</h2>
+      <p>Skille i generator są na licencji <a href="${cfg.urlLicencji}" rel="license">GPL-3.0-or-later</a>. Autor: ${esc(cfg.autor)}. Możesz używać ich w dowolnym celu, kopiować, zmieniać i rozpowszechniać; zmienione wersje przekazujesz dalej na tej samej licencji.</p>
+      <p>Błąd w skillu albo pomysł na poprawkę zgłoś w zakładce <a href="${REPO}/issues">Issues</a> na GitHubie albo mailem na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>. Każdą zmianę skilla przepuszczamy przez ten sam standard i testy, zanim trafi do katalogu.</p>
+    </section>
+    <section id="dlaczego"><h2>Dlaczego katalog jest otwarty</h2>
+      <p>Skill, który ma pomóc przy umowie, fakturze albo piśmie do urzędu, powinien dać się sprawdzić. W repozytorium widzisz dokładnie, co model dostaje w instrukcjach, czego ma odmówić i na czym się wywala, zamiast wierzyć opisowi na stronie.</p>
+    </section>
+    ${faqHtml(FAQ_GITHUB)}
+  </article>
+  <aside class="bok">
+    <div class="pudlo">
+      <h2>Repozytorium</h2>
+      <ul class="gdzie" style="list-style:none">
+        <li><div><b class="ok">Publiczne</b><span>przeglądasz i pobierasz bez konta</span></div></li>
+        <li><div><b class="ok">Licencja</b><span>GPL-3.0-or-later</span></div></li>
+        <li><div><b class="ok">Zawartość</b><span>${skille.length} skilli, ${poradniki.length} poradników, standard, generator i testy</span></div></li>
+      </ul>
+      <a class="btn pelny" style="margin-top:14px" href="${REPO}" rel="noopener" data-umami-event="github-wejscie">Otwórz na GitHubie</a>
+    </div>
+    <div class="pudlo">${polec({ sciezka: "/github/", tytul: "Skille po polsku na GitHubie", naglowek: "Poleć repozytorium", tekst: "Otwarty katalog skilli AI po polsku, licencja GPL." })}</div>
+  </aside>
+</div>`;
+  return strona({
+    tytul: "Skille po polsku na GitHubie: otwarte repozytorium skilli AI",
+    opis: `Otwarte repozytorium katalogu: ${skille.length} skilli AI po polsku, standard pisania, poradniki KSeF i generator strony. Licencja GPL, bez konta do przeglądania.`,
+    sciezka: "/github/",
+    obrazek: "github.png",
+    tresc,
+    jsonld: {
+      "@context": "https://schema.org",
+      "@graph": [
+        { "@type": "WebPage", url: `${BAZA}/github/`, name: "Skille po polsku na GitHubie", inLanguage: "pl-PL", speakable, breadcrumb: okruszkiLd(sciezka) },
+        { "@type": "SoftwareSourceCode", name: "katalog-skilli", codeRepository: REPO, license: cfg.urlLicencji, programmingLanguage: ["JavaScript", "Markdown"], inLanguage: "pl-PL", author: { "@type": "Person", name: cfg.autor } },
+        faqLd(FAQ_GITHUB),
+      ],
+    },
   });
 }
 
@@ -543,6 +648,7 @@ function stronaGlowna(skille) {
 </section>
 
 <div class="wrap dolny" id="digital-xperts">
+  <div class="pudlo nieb" style="margin-bottom:22px">${polec({ sciezka: "/", tytul: `${cfg.nazwaSerwisu}: darmowe skille AI pod polskie realia`, naglowek: "Znasz firmę, której to oszczędzi czas? Poleć katalog", tekst: "Darmowe skille AI po polsku: umowy, faktury, KSeF, RODO, kadry i biuro." })}</div>
   <div class="ciemny">
     <div>
       <h2>Możesz wdrożyć to sam. Albo zrobimy to razem.</h2>
@@ -777,6 +883,7 @@ function stronaPoradnika(p, poradniki) {
   <aside class="bok">
     <nav class="pudlo" aria-label="Spis treści"><h2>W tym poradniku</h2><ol class="spis">${spis.map(([id, t]) => `<li><a href="#${id}">${esc(t)}</a></li>`).join("")}${p.faq.length ? `<li><a href="#pytania">${FAQ_TYTUL}</a></li>` : ""}</ol></nav>
     ${ctaPoradnika(p, skille)}
+    <div class="pudlo">${polec({ sciezka: `/poradniki/${p.slug}/`, tytul: p.tytul, naglowek: "Poleć ten poradnik", tekst: p.zajawka || p.opis || "" })}</div>
   </aside>
 </div>`;
   return strona({
@@ -852,6 +959,7 @@ function stronaSprawdzianu() {
   <noscript><p>Sprawdzian wymaga włączonej obsługi JavaScript. Wszystkie tematy znajdziesz też w <a href="/poradniki/">poradnikach</a>.</p></noscript>
   <div class="wynik-spr" id="spr-wynik" aria-live="polite"><h2>Wynik pojawi się po dziesiątej odpowiedzi</h2><p>Każda odpowiedź „Nie / nie wiem” trafi tu jako obszar do domknięcia, z linkiem do poradnika.</p></div>
   <p class="zastrz" style="margin-top:18px">Sprawdzian porządkuje obszary operacyjne i nie jest poradą podatkową ani prawną; o stawkach, odliczeniach i kwalifikacji transakcji decyduje Twoja księgowa albo doradca podatkowy.</p>
+  <div class="pudlo nieb" style="margin-top:22px">${polec({ sciezka: "/sprawdzian-ksef/", tytul: "Sprawdzian gotowości na awarię KSeF", naglowek: "Poleć sprawdzian księgowej albo wspólnikowi", tekst: "10 pytań o gotowość firmy na awarię KSeF, wynik od razu w przeglądarce." })}</div>
 </div></div>`;
   const skrypt = `<script>
 (function(){
@@ -915,6 +1023,7 @@ function llmsTxt(skille, poradniki) {
     `- [Sprawdzian gotowości na awarię KSeF](${BAZA}/sprawdzian-ksef/): 10 pytań, wynik w przeglądarce, luki z linkami do poradników`,
     "", "## Informacje", "",
     `- [Regulamin](${BAZA}/regulamin/)`, `- [Prywatność](${BAZA}/prywatnosc/)`, `- [Wdrożenia AiXperts](${BAZA}/wdrozenia/)`,
+    `- [Repozytorium na GitHubie (GPL)](${REPO}): treść wszystkich skilli, standard i generator; opis: ${BAZA}/github/`,
     `- [Katalog dla agentów (ARD)](${BAZA}/.well-known/ard.json)`, "");
   return linie.join("\n");
 }
@@ -973,6 +1082,8 @@ console.log("  strona  /prywatnosc/");
 zapisz(join(WY, "regulamin", "index.html"), stronaPrawna({ plik: "regulamin-tresc.html", sciezka: "/regulamin/", nazwa: "Regulamin", tytul: `Regulamin, ${cfg.nazwaSerwisu}`, opis: "Zasady katalogu, pobierania skilli, newslettera, reklamacji i odstąpienia.", obrazek: "regulamin.png" }));
 console.log("  strona  /regulamin/");
 zapisz(join(WY, "404.html"), strona404());
+zapisz(join(WY, "github", "index.html"), stronaGithub(skille, poradniki));
+console.log("  strona  /github/");
 
 // zasoby
 for (const f of ["styl.css", "ekosystem.js", "subskrypcje-ui.js", "subskrypcje-ui.css", "ikona.png", "fonty.css"]) cpSync(join(KORZEN, "szablony", f), join(WY, f));
@@ -997,7 +1108,7 @@ zapisz(
 );
 
 // sitemap i robots
-const adresy = [["/", ""], ["/wdrozenia/", ""], ["/prywatnosc/", ""], ["/regulamin/", ""],
+const adresy = [["/", ""], ["/wdrozenia/", ""], ["/github/", ""], ["/prywatnosc/", ""], ["/regulamin/", ""],
   ...(poradniki.length ? [["/poradniki/", ""], ["/sprawdzian-ksef/", ""], ...poradniki.map((p) => [`/poradniki/${p.slug}/`, p.aktualizacja || p.data])] : []),
   ...skille.map((s) => [`/skill/${s.id}/`, s.aktualizacja])];
 zapisz(

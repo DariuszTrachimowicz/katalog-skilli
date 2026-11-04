@@ -431,3 +431,10 @@ footer{border-top:1px solid var(--line);padding:40px 0 48px;font-size:14px;color
 .pudlo .dl:has(.dl-form){padding:0}
 .pudlo .dl .dl-form{grid-template-columns:1fr;margin-top:0}
 .pudlo .dl .dl-form .btn{grid-row:auto;justify-self:stretch;width:100%}
+
+/* przyciski „Poleć” */
+.polec-t{font-family:var(--display);font-weight:700;font-size:16px;margin-bottom:10px}
+.polec-l{display:flex;flex-wrap:wrap;gap:8px}
+.polec-b{font:inherit;font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px;border:1.5px solid #c5d4ee;background:#fff;color:var(--ink);text-decoration:none;cursor:pointer}
+.polec-b:hover{border-color:var(--accent);color:var(--accent-ink)}
+.polec-s{font-size:13px;color:var(--ok);min-height:1em;margin-top:8px;overflow-wrap:anywhere}

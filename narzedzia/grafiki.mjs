@@ -91,6 +91,7 @@ mkdirSync(CEL, { recursive: true });
 
 const zadania = [
   { plik: "katalog.png", html: karta({ tytul: "Skille AI pisane pod polskie realia", opis: "Umowy, faktury, KSeF, RODO, kadry i biuro. Wgrywasz do Claude albo ChatGPT i pracujesz po polsku.", stopka: `${skille.length} skilli · za darmo · licencja GPL` }) },
+  { plik: "github.png", html: karta({ tytul: "Skille po polsku na GitHubie", opis: "Otwarte repozytorium: każdy skill, standard pisania i generator strony. Licencja GPL.", stopka: "github.com/DariuszTrachimowicz/katalog-skilli" }) },
   { plik: "regulamin.png", html: karta({ tytul: "Regulamin", opis: "Zasady korzystania z katalogu, pobierania skilli i newslettera.", stopka: cfg.nazwaSerwisu }) },
   { plik: "prywatnosc.png", html: karta({ tytul: "Prywatność", opis: "Jakie dane zbiera katalog i co się z nimi dzieje. Bez śledzenia, bez profilowania.", stopka: cfg.nazwaSerwisu }) },
   ...skille.map((s) => ({
