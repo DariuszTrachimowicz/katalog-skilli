@@ -2,9 +2,9 @@
 nazwa: Pismo do urzędu
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-11-04
 skrot: Układa pismo do urzędu we właściwej formie i mówi, czego w nim brakuje, zanim urząd wezwie Cię do uzupełnienia braków.
 szukaj: pismo do urzędu, wniosek, podanie, odwołanie od decyzji, znak sprawy, braki formalne, e-Doręczenia, ZUS, urząd skarbowy, ponaglenie
 tytulSeo: Jak napisać pismo do urzędu, wzór i kontrola braków formalnych

@@ -2,9 +2,9 @@
 nazwa: Notatka ze spotkania
 kategoria: Biuro
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-11-04
 skrot: Zamienia transkrypcję albo notatki z kartki w ustalenia, zadania z odpowiedzialnymi i terminy. Nie dopisuje niczego, czego na spotkaniu nie było.
 szukaj: notatka, spotkanie, transkrypcja, minutki, podsumowanie, zadania, ustalenia, terminy, Teams, Meet, notatka zamiast protokołu
 tytulSeo: Notatka ze spotkania z transkrypcji, po polsku, za darmo

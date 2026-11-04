@@ -2,9 +2,9 @@
 nazwa: Rozwód za porozumieniem
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-30
+aktualizacja: 2026-11-04
 skrot: Tłumaczy przebieg rozwodu za porozumieniem, sprawdza kompletność napisanego samodzielnie pozwu i przygotowuje teczkę na spotkanie z adwokatem.
 szukaj: rozwód, separacja, pozew rozwodowy, rozwód bez orzekania o winie, ile kosztuje rozwód, odpowiedź na pozew, sprawa rozwodowa, adwokat rozwód, rozwód za porozumieniem stron
 tytulSeo: Rozwód za porozumieniem, od czego zacząć i co sprawdzić w pozwie

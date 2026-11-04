@@ -2,9 +2,9 @@
 nazwa: Ogłoszenie o pracę
 kategoria: Kadry
 status: gotowy
-wersja: 1.0.1
+wersja: 1.0.2
 poziom: Działa od razu
-aktualizacja: 2026-08-22
+aktualizacja: 2026-11-04
 skrot: Układa ogłoszenie rekrutacyjne i pokazuje, czego w nim brakuje, od informacji o wynagrodzeniu po neutralną nazwę stanowiska.
 szukaj: ogłoszenie o pracę, oferta pracy, rekrutacja, widełki, jawność wynagrodzeń, wynagrodzenie w ogłoszeniu, neutralne nazwy stanowisk, kadry, HR, ogłoszenie rekrutacyjne
 tytulSeo: Jak napisać ogłoszenie o pracę z wynagrodzeniem, narzędzie AI po polsku

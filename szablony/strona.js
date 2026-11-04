@@ -13,9 +13,8 @@ const PLATNOSC = [["Dowolne", "dowolne"], ["Darmowe", "darmowe"], ["Płatne", "p
 
 const filtry = $("filters");
 filtry.innerHTML =
-  KATEGORIE.map((c) => `<button class="chip${c === kat ? " on" : ""}" data-c="${c}">${c}</button>`).join("") +
-  `<span class="chip-sep" aria-hidden="true"></span>` +
-  PLATNOSC.map(([label, v]) => `<button class="chip chip-p${v === platnosc ? " on" : ""}" data-p="${v}">${label}</button>`).join("");
+  KATEGORIE.map((c) => `<button class="chip${c === kat ? " on" : ""}" data-c="${c}">${c}</button>`).join("");
+// Od 4 XI 2026 wszystkie skille sa darmowe: filtr platnosci zostaje w kodzie (data-platny), ale bez przyciskow.
 
 filtry.addEventListener("click", (e) => {
   const b = e.target.closest(".chip");

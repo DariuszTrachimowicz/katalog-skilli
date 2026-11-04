@@ -2,7 +2,7 @@
 nazwa: Humanizer PL
 kategoria: Biuro
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Zdejmuje z gotowego polskiego tekstu ślady pisania przez AI, nie zmieniając ani jednego faktu. Pokazuje, co znalazł, co zmienił i czego celowo nie ruszył.

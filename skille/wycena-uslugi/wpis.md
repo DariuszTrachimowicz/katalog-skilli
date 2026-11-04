@@ -2,9 +2,9 @@
 nazwa: Wycena usługi
 kategoria: Finanse
 status: gotowy
-wersja: 1.0.1
+wersja: 1.0.2
 poziom: Działa od razu
-aktualizacja: 2026-08-22
+aktualizacja: 2026-11-04
 skrot: Pokazuje rachunek pod Twoją ceną, ile naprawdę kosztuje Cię zlecenie, razem z tym, o czym się zapomina. Ceny nie podaje.
 szukaj: wycena, stawka godzinowa, cennik, ile wziąć za zlecenie, koszty firmy, freelancer, JDG, B2B, rentowność, marża, poprawki
 tytulSeo: Ile naprawdę kosztuje Cię zlecenie, rachunek wyceny usługi po polsku

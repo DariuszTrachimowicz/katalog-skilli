@@ -2,9 +2,9 @@
 nazwa: Kalendarz obowiązków
 kategoria: Finanse
 status: gotowy
-wersja: 1.0.1
+wersja: 1.0.2
 poziom: Działa od razu
-aktualizacja: 2026-08-22
+aktualizacja: 2026-11-04
 skrot: Układa jedną listę tego, co w Twojej firmie wraca co miesiąc, co kwartał i raz w roku, z opisem, czego każda pozycja dotyczy i kto ją robi.
 szukaj: terminy, ZUS, VAT, podatki, kalendarz, obowiązki firmy, deklaracje, JPK, KSeF, BDO, kasa fiskalna, mała firma
 tytulSeo: Terminy w firmie, co trzeba zrobić co miesiąc, co kwartał i raz w roku

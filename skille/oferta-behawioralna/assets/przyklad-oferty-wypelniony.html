@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Faktury obsłużone w 2 dni, przykład oferty dla NordVent Serwis</title>
+<!-- Kompletny przykład demonstracyjny z fikcyjnymi danymi. -->
+<style>
+  :root {
+    --tlo: #ffffff;
+    --tlo-sekcja: #f6f7f9;
+    --tlo-karta: #ffffff;
+    --tekst: #1a2027;
+    --tekst-2: #545e6b;
+    --linia: #dde2e8;
+    --akcent: #0d6e5f;
+    --akcent-tlo: #e7f2ef;
+    --akcent-tekst: #ffffff;
+    --uwaga: #8a4b08;
+    --uwaga-tlo: #faf3ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --tlo: #14181d;
+      --tlo-sekcja: #1b2129;
+      --tlo-karta: #1f262f;
+      --tekst: #e8ecf1;
+      --tekst-2: #9aa5b1;
+      --linia: #323b46;
+      --akcent: #4fbfa8;
+      --akcent-tlo: #1c3630;
+      --akcent-tekst: #0f1613;
+      --uwaga: #e0a05e;
+      --uwaga-tlo: #2b2118;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--tlo); color: var(--tekst); font: 16px/1.6 Arial, sans-serif; }
+  main { width: min(1080px, calc(100% - 2rem)); margin: 0 auto; }
+  section { padding: 2.75rem 0; border-bottom: 1px solid var(--linia); }
+  h1, h2, h3, p { margin-top: 0; }
+  h1 { max-width: 850px; font-size: clamp(2rem, 5vw, 3.6rem); line-height: 1.08; letter-spacing: -.03em; }
+  h2 { font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.2; }
+  h3 { font-size: 1.1rem; margin-bottom: .45rem; }
+  ul, ol { padding-left: 1.3rem; }
+  li + li { margin-top: .45rem; }
+  .baner { background: #8a4b08; color: #fff; padding: .65rem 1rem; font-weight: 700; text-align: center; }
+  .etykieta, .badge { display: inline-block; margin-bottom: .75rem; color: var(--akcent); font-size: .85rem; font-weight: 700; letter-spacing: normal; text-transform: none; }
+  .naglowek .etykieta { color: var(--tekst-2); font-weight: 400; }
+  .naglowek { padding-top: 4rem; }
+  .adresat, .drugi-plan, .waznosc, .formalnosci { color: var(--tekst-2); }
+  .stawka { padding: 1.5rem; border-radius: .9rem; background: var(--uwaga-tlo); }
+  .stawka-liczba { color: var(--uwaga); font-size: clamp(2rem, 5vw, 3.1rem); font-weight: 800; line-height: 1.1; }
+  .stawka-rachunek { margin: .8rem 0 0; }
+  .zakres-kolumny, .kafle { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+  .zakres-kolumny > div, .kafel { padding: 1.25rem; border: 1px solid var(--linia); border-radius: .75rem; background: var(--tlo-karta); }
+  .tak::marker { color: var(--akcent); }
+  .nie { color: var(--tekst-2); }
+  .pakiety { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-items: stretch; }
+  .pakiet { padding: 1.4rem; border: 1px solid var(--linia); border-radius: .9rem; background: var(--tlo-karta); }
+  .pakiet.wyrozniony { border: 2px solid var(--akcent); background: var(--akcent-tlo); }
+  .pakiet-nazwa { font-size: 1.35rem; font-weight: 800; line-height: 1.2; }
+  .pakiet-dla { min-height: 4.6rem; margin: .6rem 0; color: var(--tekst-2); }
+  .pakiet-cena { margin: .8rem 0 .15rem; font-size: 1.8rem; font-weight: 800; }
+  .pakiet-cena-dopisek, .powod, .maly { font-size: .88rem; color: var(--tekst-2); }
+  .streszczenie-decyzyjne { background: var(--tlo-sekcja); border: 1px solid var(--linia); border-radius: .9rem; padding: 1.5rem 1.75rem; }
+  .streszczenie-decyzyjne p { margin-bottom: 0; }
+  .powod { display: block; margin-top: .15rem; }
+  .pakiety-przypis { margin-top: 1rem; }
+  .kafel-etykieta { color: var(--tekst-2); font-size: .85rem; }
+  .kafel-liczba { color: var(--akcent); font-size: 2.2rem; font-weight: 800; line-height: 1.1; }
+  .os { padding-left: 1.4rem; }
+  .os li { padding: 0 0 1.2rem .6rem; border-left: 2px solid var(--akcent); }
+  .os-czas { color: var(--akcent); font-size: .86rem; font-weight: 700; }
+  details { padding: 1rem 0; border-bottom: 1px solid var(--linia); }
+  summary { cursor: pointer; font-weight: 700; }
+  .stopka { margin: 2.75rem 0; padding: 2.25rem 1.75rem; border-radius: .9rem; background: var(--tlo-sekcja); text-align: center; }
+  .cta { display: inline-block; margin: 1rem 0 .75rem; padding: .9rem 1.5rem; border-radius: .6rem; background: var(--akcent); color: var(--akcent-tekst); font-weight: 700; text-decoration: none; }
+  .formalnosci { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--linia); text-align: left; font-size: .88rem; }
+  .cta-druk { display: none; font-weight: 700; }
+  @media (max-width: 760px) {
+    .pakiety, .zakres-kolumny, .kafle { grid-template-columns: 1fr; }
+    .pakiet-dla { min-height: 0; }
+  }
+  @media print {
+    body { font-size: 10.5pt; }
+    section { padding: 1.2rem 0; }
+    .baner { border: 1px solid #8a4b08; background: #fff; color: #8a4b08; }
+    .cta { display: none; }
+    .cta-druk { display: block; }
+    .pakiet, .kafel, .stawka, .stopka { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="baner">PRZYKŁAD DEMONSTRACYJNY, fikcyjne dane, NIE wysyłaj tego pliku klientowi</div>
+<main>
+  <section class="streszczenie-decyzyjne">
+    <span class="etykieta">Streszczenie, do przekazania dalej</span>
+    <p>Po wdrożeniu obsłużycie faktury w 2 dni zamiast 8, bez nowego etatu. Obecny proces kosztuje około 217 275 zł rocznie, czyli mniej więcej 18 106 zł na każdy miesiąc zwłoki. Cena za pakiet Wdrożenie kompleksowe: 61 400 zł netto, płatne w transzach po odbiorze kolejnych etapów. Pierwszy etap, przedumowny warsztat i mapa procesu, jest samodzielny i ma stałą cenę 9 800 zł płatną po odbiorze, jako pierwsza z trzech transz ceny pakietu 61 400 zł: dostajecie specyfikację i kryteria odbioru, dokumenty zostają u Was i możecie na nim zakończyć bez zobowiązań; do tego 90 dni gwarancji poprawek. Najbliższy krok: ustalenie terminu warsztatu, decyzja do 31 sierpnia 2026, start możliwy od 7 września 2026.</p>
+  </section>
+
+  <section class="naglowek">
+    <span class="etykieta">Propozycja dla NordVent Serwis sp. z o.o.</span>
+    <h1>Faktury obsłużone w 2 dni zamiast 8, bez nowego etatu</h1>
+    <p class="adresat">Przygotowane dla: <strong>Marty Zielińskiej, dyrektorki finansowej</strong><br>Rytm Danych sp. z o.o. · 12 sierpnia 2026 · oferta ważna do <strong>31 sierpnia 2026</strong></p>
+  </section>
+
+  <section>
+    <h2>Jak rozumiemy Waszą sytuację</h2>
+    <p>Zespół księgowości NordVent Serwis obsługuje około <strong>1 400 faktur miesięcznie</strong>. Zamówienia z Odoo Enterprise są ręcznie przepisywane do obiegu księgowego, a dane są później drugi raz sprawdzane przy płatnościach.</p>
+    <p>Na spotkaniu 5 sierpnia usłyszeliśmy: <em>„Nie chcemy kolejnego narzędzia, tylko przestać przepisywać te same dane trzy razy”.</em> Zamknięcie miesiąca trwa osiem dni roboczych, a 32 korekty miesięcznie wracają do zespołu jako dodatkowe telefony i uzgodnienia.</p>
+  </section>
+
+  <section>
+    <h2>Co kosztuje pozostawienie tego bez zmian</h2>
+    <div class="stawka">
+      <div class="stawka-liczba">217 275 zł rocznie</div>
+      <p class="stawka-rachunek">Rachunek dla tego przykładu: 3 osoby × 2,5 h dziennie × 249 dni roboczych × 58 zł/h pełnego kosztu pracy = 108 315 zł. Do tego 32 korekty miesięcznie × 190 zł obsługi × 12 miesięcy = 72 960 zł oraz 36 000 zł kosztu opóźnionych płatności. To razem 217 275 zł rocznie, czyli około 18 106 zł na każdy miesiąc zwłoki.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Co proponujemy</h2>
+    <p><strong>Po wdrożeniu faktury sprzedażowe będą tworzone z zamówień, a faktury zakupowe odczytywane i kierowane do właściwych reguł księgowych.</strong> Zespół zatwierdzi tylko wyjątki, a zamknięcie miesiąca skróci się z ośmiu do około dwóch dni roboczych.</p>
+    <p>Łączymy Odoo Enterprise z modułem automatyzacji przez udostępnione API, konfigurujemy reguły na próbce 600 faktur i przez trzy tygodnie porównujemy nowy obieg ze starym. Przełączenie nastąpi po osiągnięciu 98% zgodności wyników według spisanych kryteriów odbioru.</p>
+  </section>
+
+  <section>
+    <h2>Co obejmuje wdrożenie, a czego nie</h2>
+    <div class="zakres-kolumny">
+      <div>
+        <h3>W zakresie</h3>
+        <ul>
+          <li class="tak">Warsztat skopingowy i mapa procesu</li>
+          <li class="tak">Integracja z Odoo Enterprise przez API</li>
+          <li class="tak">Automatyczne wystawianie faktur sprzedażowych</li>
+          <li class="tak">Odczyt i księgowanie faktur zakupowych</li>
+          <li class="tak">Szkolenie sześcioosobowego zespołu księgowości</li>
+          <li class="tak">Trzytygodniowy okres równoległy i kryteria odbioru</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Poza zakresem</h3>
+        <ul>
+          <li class="nie">Migracja historycznych danych księgowych</li>
+          <li class="nie">Zmiany w Odoo Enterprise i licencje tego systemu</li>
+          <li class="nie">Faktury w walutach innych niż PLN</li>
+          <li class="nie">Sprzęt oraz infrastruktura serwerowa po stronie NordVent Serwis</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Trzy sposoby, żeby to zrobić</h2>
+    <p class="drugi-plan">To przykład wariantu pakietowego. Każdy pakiet daje użyteczny rezultat, a rekomendowany środek obejmuje cały opisany problem.</p>
+    <div class="pakiety">
+      <div class="pakiet">
+        <div class="pakiet-nazwa">Automatyzacja i utrzymanie</div>
+        <div class="pakiet-dla">Dla firmy, która chce objąć automatyzacją także obieg walutowy i rozwój procesu.</div>
+        <div class="pakiet-cena">94 700 zł</div>
+        <div class="pakiet-cena-dopisek">netto, płatne w trzech transzach po odbiorze etapów</div>
+        <ul>
+          <li class="tak">Wszystko z pakietu Wdrożenie kompleksowe</li>
+          <li class="tak">Faktury w EUR i GBP <span class="powod">ponieważ wymagają osobnych reguł kursowych i podatkowych</span></li>
+          <li class="tak">12 miesięcy utrzymania z reakcją do 8 godzin roboczych</li>
+          <li class="tak">Kwartalny przegląd i rozwój reguł</li>
+        </ul>
+      </div>
+      <div class="pakiet wyrozniony">
+        <span class="badge">Rekomendowany dla NordVent Serwis</span>
+        <div class="pakiet-nazwa">Wdrożenie kompleksowe</div>
+        <div class="pakiet-dla">Dla firmy, która chce zautomatyzować faktury sprzedażowe i zakupowe bez zmiany własnego ERP.</div>
+        <div class="pakiet-cena">61 400 zł</div>
+        <div class="pakiet-cena-dopisek">netto, 9 800 zł + 36 200 zł + 15 400 zł po odbiorze kolejnych etapów</div>
+        <ul>
+          <li class="tak">Automatyzacja faktur sprzedażowych i zakupowych</li>
+          <li class="tak">Okres równoległy z kryteriami odbioru <span class="powod">ponieważ przełączenie wymaga sprawdzenia wyników</span></li>
+          <li class="tak">Szkolenie, instrukcje i 90 dni gwarancji poprawek</li>
+          <li class="nie">Faktury walutowe, dostępne w pakiecie wyżej</li>
+        </ul>
+      </div>
+      <div class="pakiet">
+        <div class="pakiet-nazwa">Start sprzedażowy</div>
+        <div class="pakiet-dla">Dla firmy, która chce najpierw wyeliminować ręczne wystawianie faktur sprzedażowych.</div>
+        <div class="pakiet-cena">38 900 zł</div>
+        <div class="pakiet-cena-dopisek">netto, płatne w dwóch transzach po odbiorze etapów</div>
+        <ul>
+          <li class="tak">Warsztat i integracja z Odoo Enterprise</li>
+          <li class="tak">Automatyczne wystawianie faktur sprzedażowych</li>
+          <li class="tak">30 dni gwarancji poprawek</li>
+          <li class="nie">Faktury zakupowe pozostają procesem ręcznym</li>
+        </ul>
+      </div>
+    </div>
+    <p class="pakiety-przypis drugi-plan maly">Moduł faktur walutowych można dodać do pakietu Wdrożenie kompleksowe za 18 600 zł netto.</p>
+  </section>
+
+  <section>
+    <h2>Z czego wynika cena pakietu Wdrożenie kompleksowe</h2>
+    <ul>
+      <li><strong>58% pracy inżynierskiej:</strong> integracja API, reguły księgowania i testy na próbce faktur.</li>
+      <li><strong>27% okresu równoległego i stabilizacji:</strong> trzy tygodnie codziennego porównywania wyników przed przełączeniem.</li>
+      <li><strong>15% szkolenia i dokumentacji:</strong> zespół otrzymuje instrukcje obsługi wyjątków.</li>
+    </ul>
+    <p>Cenę obniżyłaby gotowa dokumentacja niestandardowych pól w Odoo Enterprise. Podniosłoby ją objęcie drugiej spółki lub dodatkowych szablonów faktur. W tym przykładzie pakiet ma stałą cenę 61 400 zł netto.</p>
+  </section>
+
+  <section>
+    <h2>Jak to wyglądało w podobnej firmie</h2>
+    <p><strong>BrukForma sp. z o.o.</strong> to fikcyjny producent elementów budowlanych, obsługujący 1 180 faktur miesięcznie w Odoo Enterprise. Fikcyjne wdrożenie odpowiadające pakietowi Wdrożenie kompleksowe zakończyło się w grudniu 2025.</p>
+    <div class="kafle">
+      <div class="kafel">
+        <div class="kafel-etykieta">Przed wdrożeniem</div>
+        <div class="kafel-liczba">8 dni</div>
+        <div>zamknięcia miesiąca oraz 41 korekt miesięcznie</div>
+      </div>
+      <div class="kafel">
+        <div class="kafel-etykieta">Sześć miesięcy po wdrożeniu</div>
+        <div class="kafel-liczba">2 dni</div>
+        <div>zamknięcia miesiąca oraz 7 korekt miesięcznie</div>
+      </div>
+    </div>
+    <p class="drugi-plan maly">„Największą zmianą było odzyskanie czasu na analizę wyjątków, zamiast przepisywania danych”. Joanna Król, fikcyjna dyrektorka finansowa BrukForma sp. z o.o.</p>
+  </section>
+
+  <section>
+    <h2>Co, jeśli to nie zadziała</h2>
+    <ul>
+      <li><strong>Etap 1 jest samodzielny.</strong> Po warsztacie NordVent Serwis otrzymuje mapę procesu, specyfikację i kryteria odbioru. Za etap płaci 9 800 zł po odbiorze, a dokumenty pozostają po stronie klienta.</li>
+      <li><strong>Po etapie 1 można zakończyć współpracę.</strong> Nie powstaje obowiązek zamówienia kolejnych etapów ani kara umowna.</li>
+      <li><strong>Płatność następuje po odbiorze każdego etapu.</strong> Przełączenie następuje po osiągnięciu 98% zgodności wyników w okresie równoległym.</li>
+      <li><strong>90 dni gwarancji poprawek.</strong> Błędy konfiguracji pakietu Wdrożenie kompleksowe są usuwane bez dodatkowej opłaty.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Jak to przebiega w czasie</h2>
+    <ol class="os">
+      <li><span class="os-czas">Tydzień 1</span><h3>Etap przedumowny: warsztat i mapa procesu</h3><p>Czterogodzinne spotkanie z zespołem księgowości. Do podpisania NDA, umowy powierzenia i umowy wykonawczej pracujemy wyłącznie na danych zanonimizowanych lub zredagowanych. Rezultat: specyfikacja i kryteria odbioru etapu 1.</p></li>
+      <li><span class="os-czas">Tygodnie 2 do 4</span><h3>Integracja i konfiguracja</h3><p>Rytm Danych przygotowuje integrację; NordVent Serwis zapewnia dostęp do API i dwie godziny konsultacji tygodniowo.</p></li>
+      <li><span class="os-czas">Tygodnie 5 do 7</span><h3>Okres równoległy</h3><p>Stary i nowy proces działają równolegle, a zespół porównuje wyniki każdego dnia roboczego.</p></li>
+      <li><span class="os-czas">Tydzień 8</span><h3>Przełączenie i szkolenie</h3><p>Po osiągnięciu kryteriów odbioru następuje start produkcyjny i szkolenie zespołu.</p></li>
+      <li><span class="os-czas">Najbliższy krok</span><h3>Ustalenie terminu warsztatu</h3><p>Warsztat można zaplanować od 7 września 2026.</p></li>
+    </ol>
+  </section>
+
+  <section class="faq">
+    <h2>Pytania, które zwykle padają</h2>
+    <details><summary>Czy księgowość może normalnie pracować podczas wdrożenia?</summary><p>Tak. W okresie równoległym zespół poświęca około 20 minut dziennie na potwierdzenie porównań.</p></details>
+    <details><summary>Co jeśli Odoo Enterprise ma niestandardowe modyfikacje?</summary><p>Warsztat w etapie 1 identyfikuje je przed zamówieniem dalszych etapów. Klient otrzymuje wynik analizy niezależnie od decyzji o kontynuacji.</p></details>
+    <details><summary>Dlaczego gotowy system OCR nie wystarcza?</summary><p>W tym przykładzie licencja narzędzia stanowi około 12% kosztu. Pozostała część to integracja, reguły księgowania, kontrola wyjątków i bezpieczne przełączenie procesu.</p></details>
+    <details><summary>Kto angażuje się po stronie NordVent Serwis?</summary><p>Główna księgowa bierze udział w czterogodzinnym warsztacie, a potem w dwóch godzinach konsultacji tygodniowo. Dział IT jednorazowo zapewnia dostęp do API.</p></details>
+    <details><summary>Co dzieje się po 90 dniach gwarancji?</summary><p>NordVent Serwis może pracować samodzielnie lub dokupić utrzymanie za 2 400 zł netto miesięcznie.</p></details>
+  </section>
+
+  <section>
+    <div class="stopka">
+      <h2>Najbliższy krok: ustal termin warsztatu</h2>
+      <p class="drugi-plan">W tym fikcyjnym przypadku warsztat jest pierwszym etapem pakietu Wdrożenie kompleksowe i kończy się mapą procesu oraz kryteriami odbioru.</p>
+      <a class="cta" href="mailto:kontakt@rytm-danych.example?subject=Warsztat%20NordVent">Napisz, aby ustalić termin warsztatu</a>
+      <p class="cta-druk">Kontakt: kontakt@rytm-danych.example</p>
+      <p class="waznosc">Oferta jest ważna do <strong>31 sierpnia 2026</strong>, ponieważ termin rozpoczęcia od 7 września 2026 jest zarezerwowany dla tego fikcyjnego przypadku.</p>
+      <div class="formalnosci">
+        <p><strong>Formalności tego fikcyjnego przypadku.</strong> Rytm Danych sp. z o.o. i NordVent Serwis sp. z o.o. są polskimi przedsiębiorcami B2B. Rytm Danych sp. z o.o. jest czynnym podatnikiem VAT, dlatego wszystkie wskazane ceny są kwotami netto powiększonymi o VAT 23%. Płatność następuje przelewem w terminie 14 dni od faktury wystawionej po odbiorze danego etapu. Po odbiorze etapu 1 NordVent Serwis może nie zamawiać kolejnych etapów, bez kary umownej. Ten fikcyjny dokument jest zaproszeniem do negocjacji w rozumieniu art. 71 KC, a realizacja wymaga podpisania umowy przez obie strony.</p>
+        <p>Przed przekazaniem dostępu do API lub faktur strony podpisują umowę o poufności (NDA), umowę wykonawczą oraz umowę powierzenia przetwarzania danych osobowych zgodną z art. 28 RODO. NordVent Serwis jest administratorem danych, a Rytm Danych podmiotem przetwarzającym wyłącznie na udokumentowane polecenie NordVent Serwis i tylko w celu realizacji tej integracji. Dane są przetwarzane wyłącznie w EOG, przez czas realizacji projektu oraz 30 dni po odbiorze końcowym, a następnie są zwracane NordVent Serwis albo trwale usuwane, zgodnie z jego udokumentowaną decyzją. Rytm Danych nie korzysta z podwykonawców przetwarzających dane NordVent Serwis; ich późniejsze włączenie wymaga uprzedniej, udokumentowanej zgody NordVent Serwis oraz ujęcia ich w umowie powierzenia.</p>
+        <p>Rytm Danych sp. z o.o. · NIP 555-010-23-44 · ul. Przykładowa 12, 00-001 Warszawa · kontakt@rytm-danych.example · Osoba prowadząca: Michał Wysocki</p>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

@@ -2,9 +2,9 @@
 nazwa: Przygotowanie do księgowej
 kategoria: Finanse
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-11-04
 skrot: Prowadzi przez comiesięczne zebranie dokumentów dla biura rachunkowego, co wysłać, czego zwykle brakuje, jak opisać nietypowy wydatek i o co zapytać księgową.
 szukaj: księgowa, biuro rachunkowe, dokumenty, faktury, koszty, JDG, zamknięcie miesiąca, JPK, VAT, ZUS, KSeF, opis faktury, paragon, wyciąg bankowy, braki
 tytulSeo: Co wysłać do biura rachunkowego co miesiąc, lista po polsku

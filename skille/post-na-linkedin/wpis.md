@@ -2,9 +2,9 @@
 nazwa: Post na LinkedIn
 kategoria: Marketing
 status: gotowy
-wersja: 1.0.1
+wersja: 1.0.2
 poziom: Działa od razu
-aktualizacja: 2026-08-22
+aktualizacja: 2026-11-04
 skrot: Z notatki albo wniosków z projektu robi post na LinkedIna po polsku i pokazuje, które zdania są faktem, a które interpretacją.
 szukaj: LinkedIn, post, marka osobista, social media, copywriting, korpomowa, employer branding, wpis, publikacja, B2B
 tytulSeo: Jak napisać post na LinkedIn po polsku, darmowe narzędzie AI

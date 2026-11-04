@@ -1,0 +1,40 @@
+{
+  "dochod": {
+    "pgi": 240000,
+    "pustostany_pct": 5,
+    "zaleglosci_pct": 1,
+    "koszty_operacyjne": 48000,
+    "podstawa_dochodu": "DEMO: umowy najmu i zestawienie kosztow operacyjnych wlasciciela za 2025"
+  },
+  "dochod_stabilny": {
+    "potwierdzenie": true,
+    "uzasadnienie": "DEMO: dwie umowy najmu na czas nieokreslony ze stawkami rynkowymi, najem ciagly od 4 lat"
+  },
+  "stopa": {
+    "transakcje": [
+      {
+        "id": "K1",
+        "noi": 120000,
+        "cena": 2000000,
+        "zrodlo": "DEMO: transakcja lokal uslugowy, ta sama dzielnica",
+        "data": "2026-03-01"
+      },
+      {
+        "id": "K2",
+        "noi": 90000,
+        "cena": 1200000,
+        "zrodlo": "DEMO: transakcja lokal uslugowy, segment porownywalny",
+        "data": "2026-05-10"
+      },
+      {
+        "id": "K3",
+        "noi": 200000,
+        "cena": 2500000,
+        "zrodlo": "DEMO: transakcja pawilon handlowy",
+        "data": "2026-06-20"
+      }
+    ],
+    "przyjeta_pct": 7.5,
+    "uzasadnienie": "DEMO: obiekt o ryzyku zblizonym do K2 (podobny najemca i stan techniczny); przyjeto mediane stop z rynku 7,5% z przedzialu 6,0-8,0%"
+  }
+}

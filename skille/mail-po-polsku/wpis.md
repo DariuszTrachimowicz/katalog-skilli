@@ -2,9 +2,9 @@
 nazwa: Mail po polsku
 kategoria: Biuro
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-11-04
 skrot: Zamienia trzy zdania szkicu w gotową wiadomość służbową, z właściwym tonem, poprawnym zwrotem i strukturą, którą odbiorca zrozumie od razu.
 szukaj: mail, e-mail, korespondencja, mail do urzędu, zwroty grzecznościowe, odmowa, przesunięcie terminu, wołacz, Witam, Szanowni Państwo, z poważaniem
 tytulSeo: Jak napisać maila służbowego po polsku, narzędzie AI

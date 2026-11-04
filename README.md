@@ -6,12 +6,10 @@ Statyczny serwis generowany z folderów ze skillami, plus mała usługa obsługu
 
 Produkcja chodzi w Dockerze: dwa kontenery (nginx ze zbudowanym serwisem + usługa zapisów), zbudowane z jednego `Dockerfile`. Build stron dzieje się w obrazie, więc serwer nie potrzebuje Node.
 
-Przed publikacją ze wspólnego katalogu AiXperts uruchom również
-`node --test testy/spojnosc-oferty.test.mjs`. To kontrola wydania obejmująca
-**dwa repozytoria**: wymaga sąsiedniego `../skille-platne/licencje/produkty.json`,
-czyli kanonicznych cen zamówień. Nie jest częścią budowania obrazu katalogu.
-Samodzielny klon katalogu bez drugiego repozytorium nie wystarcza do tej kontroli;
-braku źródła cen nie traktujemy jako udanego testu.
+Przed publikacją uruchom `node --test testy/*.test.mjs serwer/*.test.mjs`. Test
+`spojnosc-oferty` pilnuje, że każdy skill w katalogu jest darmowy i ma pełną treść
+(od 4 listopada 2026 katalog nie sprzedaje skilli; dawny tor płatny został wygaszony,
+a sześć dawniej płatnych skilli jest teraz w `skille/` na tych samych zasadach co reszta).
 
 Pomiar przejść jest w `szablony/ekosystem.js`; generator kopiuje go do `public`.
 Portal korzysta z identycznej kopii `../portal-tymczasowy/ekosystem.js`.

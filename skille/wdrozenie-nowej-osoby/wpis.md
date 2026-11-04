@@ -2,9 +2,9 @@
 nazwa: Wdrożenie nowej osoby
 kategoria: Kadry
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-11-04
 skrot: Układa plan pierwszych dwóch tygodni nowej osoby, dzień po dniu, z konkretną osobą przy każdym zadaniu i wyznaczonymi rozmowami o postępach.
 szukaj: wdrożenie, onboarding, nowy pracownik, pierwszy dzień w pracy, co przygotować przed startem, plan wdrożenia, opiekun wdrożenia, formalności przy zatrudnieniu, badania wstępne, szkolenie BHP
 tytulSeo: Plan wdrożenia nowego pracownika, rozpis pierwszych dwóch tygodni

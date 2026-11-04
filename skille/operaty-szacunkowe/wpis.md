@@ -1,16 +1,13 @@
 ---
 nazwa: Operaty szacunkowe, warsztat rzeczoznawcy
 kategoria: Finanse
-status: platny
-wersja: 1.0.1
-platny: true
-kotwice: rzeczoznawca majątkowy, operat szacunkowy
-cena: od 199 zł netto/mies
+status: gotowy
+wersja: 1.1.0
 poziom: Zaawansowany
-aktualizacja: 2026-08-22
+aktualizacja: 2026-11-04
 skrot: Prowadzi rzeczoznawcę majątkowego przez wycenę nieruchomości etapami z twardymi bramkami, liczy skryptami ze śladem obliczeń w XLSX, pilnuje rejestru decyzji i samooceny operatu przed oddaniem.
-szukaj: operat szacunkowy, wycena nieruchomości, rzeczoznawca majątkowy, podejście porównawcze, porównywanie parami, podejście dochodowe, stopa kapitalizacji, zużycie techniczne, analiza rynku, wagi cech, rejestr decyzji, ocena operatu, skill płatny, finanse
-tytulSeo: Operat szacunkowy ze śladem obliczeń, płatny skill dla rzeczoznawcy
+szukaj: operat szacunkowy, wycena nieruchomości, rzeczoznawca majątkowy, podejście porównawcze, porównywanie parami, podejście dochodowe, stopa kapitalizacji, zużycie techniczne, analiza rynku, wagi cech, rejestr decyzji, ocena operatu, finanse
+tytulSeo: Operat szacunkowy ze śladem obliczeń, darmowy skill dla rzeczoznawcy
 opisSeo: "Warsztat rzeczoznawcy majątkowego: wycena etapami z bramkami, obliczenia skryptami ze śladem w XLSX, rejestr decyzji i samoocena operatu przed oddaniem."
 zgodnosc:
   claude: ok
@@ -50,7 +47,7 @@ Własnych danych rynkowych (transakcje, stawki, stopy z Twojego badania rynku), 
 - Faza 1 liczy porównywanie parami, zużycie, kapitalizację prostą i statystykę próby; korygowanie ceny średniej, DCF, metoda pozostałościowa i kalkulatory opłat są poza tym wydaniem, a cele o reżimach szczególnych (wywłaszczenia, opłaty, aktualizacja UW) prowadzisz według przepisów właściwych, skill wspiera tylko część warsztatową.
 - Kalkulator porównywania parami rozkłada poprawki liniowo między stopniami skali ocen; przy cechach o nieliniowym wpływie korekty per stopień robisz poza skryptem i opisujesz w operacie.
 - Skrypty wymagają Pythona 3.10+ (XLSX dodatkowo openpyxl); bez tego zostaje prowadzenie metodyczne bez obliczeń.
-- Kupiona wersja jest Twoja bezterminowo, a klucz licencji daje dostęp do aktualizacji paczki (w tym referencji stanu prawnego) przez 12 miesięcy od zakupu; stan prawny referencji ma jawną datę i skill sam przypomina o weryfikacji po 6 miesiącach.
+- Stan prawny referencji ma jawną datę i skill sam przypomina o weryfikacji po 6 miesiącach; nowsze wydania paczki pobierasz z katalogu, sam decydujesz, kiedy podmienić.
 - Nie łączy się z księgami wieczystymi ani rejestrami: dane z KW wchodzą tylko jako pliki, które sam wgrasz.
 
 ## Czego ten skill nie robi celowo

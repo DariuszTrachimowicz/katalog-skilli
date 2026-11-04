@@ -2,9 +2,9 @@
 nazwa: Rozmowa oceniająca
 kategoria: Kadry
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-11-04
 skrot: Przygotowuje kierownika do rozmowy oceniającej albo rozwojowej: plan spotkania, konkretne zdania na trudny moment i lista rzeczy, których nie mówić.
 szukaj: rozmowa oceniająca, ocena roczna, ocena okresowa, feedback, informacja zwrotna, rozmowa rozwojowa, 1:1, kierownik, podwładny, trudna rozmowa
 tytulSeo: Jak przeprowadzić rozmowę oceniającą z pracownikiem, przygotowanie krok po kroku

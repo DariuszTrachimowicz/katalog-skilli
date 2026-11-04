@@ -1,16 +1,13 @@
 ---
 nazwa: Procedury operacyjne KSeF
 kategoria: Finanse
-status: platny
-wersja: 1.0.1
-platny: true
-kotwice: procedury KSeF w firmie, awaria KSeF co robić
-cena: od 149 zł netto/mies
+status: gotowy
+wersja: 1.1.0
 poziom: Zaawansowany
-aktualizacja: 2026-08-24
+aktualizacja: 2026-11-04
 skrot: "Buduje z firmą albo biurem rachunkowym jej własną dokumentację operacyjną KSeF: macierz odpowiedzialności firma-biuro, kartę postępowania przy braku dostępu do systemu, matrycę uprawnień i certyfikatów, rejestr odrzuceń, plan testów i zasady płatności z numerem KSeF."
-szukaj: KSeF, Krajowy System e-Faktur, faktura ustrukturyzowana, awaria KSeF, offline24, niedostępność KSeF, uprawnienia KSeF, certyfikat KSeF, biuro rachunkowe, faktura odrzucona, numer KSeF w przelewie, procedura awaryjna, FA(3), skill płatny, finanse
-tytulSeo: Procedury KSeF dla firmy i biura rachunkowego, płatny skill
+szukaj: KSeF, Krajowy System e-Faktur, faktura ustrukturyzowana, awaria KSeF, offline24, niedostępność KSeF, uprawnienia KSeF, certyfikat KSeF, biuro rachunkowe, faktura odrzucona, numer KSeF w przelewie, procedura awaryjna, FA(3), finanse
+tytulSeo: Procedury KSeF dla firmy i biura rachunkowego, darmowy skill
 opisSeo: "Dokumentacja operacyjna KSeF z realiów Twojej firmy: kto wystawia, co robić przy braku dostępu, uprawnienia, odrzucenia, płatności. Bez martwych wzorów."
 zgodnosc:
   claude: ok
@@ -46,7 +43,7 @@ w głowie jednej osoby.
 ## Ile Ci to oszczędza
 
 Dokumentacja operacyjna KSeF z zewnątrz to zwykle godziny doradcy albo wzór,
-który opisuje cudzą firmę i sypie się przy pierwszym pytaniu „a kto u nas?".
+który opisuje cudzą firmę i sypie się przy pierwszym pytaniu „a kto u nas?”.
 Tu dokumenty powstają z odpowiedzi o Twoją organizację pracy, a przy zmianie
 realiów (nowa osoba, zmiana biura, nowy program) aktualizujesz komplet sam.
 Największa oszczędność jest jednak w dniu zdarzenia: gdy system nie odpowiada
@@ -97,12 +94,12 @@ sprawdzić i gdzie zapisać wynik.
   jeśli oczekujesz gotowca z zaszytymi datami, ten skill celowo tak nie robi.
 - Nie przyjmuje tokenów, plików certyfikatów ani haseł; jeśli zaczniesz je
   wklejać, przerwie i każe uznać je za ujawnione.
-- Kupiona paczka jest Twoja, a subskrypcja daje dostęp do aktualizacji
-  (w tym referencji stanu prawnego) przez opłacony okres.
+- Referencje stanu prawnego mają jawną datę; nowsze wydania paczki pobierasz
+  z katalogu, sam decydujesz, kiedy podmienić.
 
 ## Czego ten skill nie robi celowo
 
-Nie orzeka, że firma jest „gotowa na KSeF” ani że procedura „spełnia wymogi":
+Nie orzeka, że firma jest „gotowa na KSeF” ani że procedura „spełnia wymogi”:
 protokół stanu wdrożenia to lista pozycji domkniętych i niedomkniętych, nie
 werdykt. Nie loguje się do systemu, nie nadaje uprawnień i nie sprawdza
 statusów faktur: opisuje, kto ma to zrobić i gdzie odnotować wynik. Nie

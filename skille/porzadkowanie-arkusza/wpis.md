@@ -2,9 +2,9 @@
 nazwa: Porządkowanie arkusza
 kategoria: Dane
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-11-04
 skrot: Doprowadza rozjechany arkusz do porządku i pokazuje dziennik każdej zmiany. Nic nie poprawia po cichu.
 szukaj: excel, arkusz, csv, dane, krzaczki, kodowanie, polskie znaki, Windows-1250, daty, kwoty, duplikaty, NIP, scalone komórki, porządkowanie, sortowanie, łączenie plików, wiersz razem, suma się nie zgadza, import, kod pocztowy, zera, tabela przestawna, średnik
 tytulSeo: Jak uporządkować rozjechany plik Excel, narzędzie AI po polsku

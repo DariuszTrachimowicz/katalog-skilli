@@ -1,0 +1,4 @@
+Rejestr: 19 wpisów, etap najdalszy: kontrola, podejście: porownawcze
+Wpisy wg typu: decyzja=2, kontrola=1, kryteria=1, material=1, obliczenie=1, odrzucenie=1, ostrzezenie=1, otwarcie=1, redakcja=1, transakcja=5, waga=3, zalozenie=1
+Łańcuch hashy, chronologia, kolejność i kompletność etapów: OK
+Skrót końcowy łańcucha (zanotuj w operacie jako kotwicę): 00672bc832f92ca1f2e61bfdf4aca413036d307cbd7849f2c0b67274678a0a5c

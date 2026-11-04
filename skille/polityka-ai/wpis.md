@@ -1,16 +1,13 @@
 ---
 nazwa: Polityka AI i rejestr zastosowań
 kategoria: Prawo
-status: platny
-wersja: 1.1.1
-platny: true
-kotwice: polityka AI, AI Act
-cena: od 149 zł netto/mies
+status: gotowy
+wersja: 1.2.0
 poziom: Zaawansowany
-aktualizacja: 2026-08-22
+aktualizacja: 2026-11-04
 skrot: Prowadzi firmę przez zbudowanie własnej dokumentacji AI pod obowiązki AI Act, rejestr systemów, politykę dla pracowników, klauzulę do umów, listę praktyk zakazanych, ścieżkę incydentu. Strukturyzuje, nie orzeka zgodności.
-szukaj: polityka AI, AI Act, rejestr systemów AI, obowiązki AI Act, kompetencje AI, klauzula AI do umowy, praktyki zakazane AI, zasady korzystania z AI w firmie, dokumentacja AI, incydent AI, skill płatny, prawo
-tytulSeo: Polityka AI i rejestr zastosowań w firmie pod AI Act, płatny skill
+szukaj: polityka AI, AI Act, rejestr systemów AI, obowiązki AI Act, kompetencje AI, klauzula AI do umowy, praktyki zakazane AI, zasady korzystania z AI w firmie, dokumentacja AI, incydent AI, prawo
+tytulSeo: Polityka AI i rejestr zastosowań w firmie pod AI Act, darmowy skill
 opisSeo: "Zbuduj dokumentację AI dla firmy pod AI Act: rejestr systemów, polityka dla pracowników, klauzula do umów, praktyki zakazane, ścieżka incydentu. Nie orzeka zgodności."
 zgodnosc:
   claude: ok
@@ -22,7 +19,7 @@ zgodnosc:
 
 Prowadzi polską firmę przez zbudowanie jej własnej dokumentacji korzystania z AI, pod obowiązki wynikające z AI Act. Powstaje pięć rzeczy: rejestr używanych systemów AI, polityka korzystania z AI dla pracowników, klauzula AI do umów w wariancie zamawiającego i dostawcy, lista praktyk zakazanych do samokontroli oraz ścieżka reakcji na incydent. Skill pyta o realia firmy i układa z nich gotowe robocze dokumenty.
 
-Strukturyzuje i edukuje na podstawie tego, co poda firma. Nie mówi „jesteście zgodni z AI Act" i nie zastępuje prawnika. Ostatni krok, prawną ocenę i podpis, zostawia człowiekowi.
+Strukturyzuje i edukuje na podstawie tego, co poda firma. Nie mówi „jesteście zgodni z AI Act” i nie zastępuje prawnika. Ostatni krok, prawną ocenę i podpis, zostawia człowiekowi.
 
 ## Dla kogo
 
@@ -30,7 +27,7 @@ Właściciele i menedżerowie małych oraz średnich firm, które zaczęły uży
 
 ## Ile Ci to oszczędza
 
-Zamiast szukać wzorów po internecie i zgadywać, co spisać, wychodzisz z kompletem roboczych dokumentów pod swoje realia, gotowych do domknięcia z prawnikiem albo doradcą. Skraca to drogę od „nie wiemy, od czego zacząć" do „mamy szkielet" z tygodni do godzin.
+Zamiast szukać wzorów po internecie i zgadywać, co spisać, wychodzisz z kompletem roboczych dokumentów pod swoje realia, gotowych do domknięcia z prawnikiem albo doradcą. Skraca to drogę od „nie wiemy, od czego zacząć” do „mamy szkielet” z tygodni do godzin.
 
 ## Przykład z życia
 
@@ -46,7 +43,7 @@ Wiedzy o własnej firmie, jakich narzędzi AI używacie i do czego, czy dotykaj�
 
 ## Na czym się wywala
 
-- Nie oceni za Ciebie, czy dany system jest „wysokiego ryzyka" ani czy firma jest zgodna z AI Act, poprowadzi Cię pytaniami i wskaże, co zweryfikować z prawnikiem.
+- Nie oceni za Ciebie, czy dany system jest „wysokiego ryzyka” ani czy firma jest zgodna z AI Act, poprowadzi Cię pytaniami i wskaże, co zweryfikować z prawnikiem.
 - Nie napisze wiążącej klauzuli do umowy gotowej do podpisu, klauzula wychodzi jako szkic z adnotacją do prawnika.
 - Nie zna aktualnych dat, progów i pełnej listy praktyk zakazanych na pewno, oznacza je do weryfikacji w źródłach urzędowych, bo się zmieniają.
 - Nie zastąpi prawnika, doradcy ani inspektora ochrony danych, domyka roboczą dokumentację, nie ostateczną ocenę.

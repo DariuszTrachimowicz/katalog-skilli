@@ -1,0 +1,32 @@
+{
+  "OZNACZENIE": "MATERIAŁ WARSZTATOWY, PROJEKT NIEPODPISANY",
+  "wynik_m2": 11972.97,
+  "wartosc_zl": 650132,
+  "statystyka": {
+    "n": 5,
+    "min": 10937.72,
+    "max": 12631.15,
+    "srednia": 11823.47,
+    "mediana": 11996.22,
+    "rozstep": 1693.43,
+    "odch_std": 659.25,
+    "wsp_zmiennosci_pct": 5.58
+  },
+  "delta_c": 2300.0,
+  "zrodlo_delta_c": "rozstęp cen zbioru podobnych (delta_c_zbioru, uzasadnienie w rejestrze)",
+  "outliery_flagi": [],
+  "outliery_odrzucone": [],
+  "flaga_odchylenia_od_mediany": false,
+  "odchylenie_od_mediany_pct": 0.19,
+  "wynik_poza_przedzialem_proby": false,
+  "wrazliwosc": {
+    "min_m2": 11926.97,
+    "max_m2": 12018.97,
+    "maks_odchylenie_pct": 0.38
+  },
+  "xlsx": "assets/przyklady/wycena-demo/dane-porownywanie.xlsx",
+  "xlsx_nadpisal_poprzedni": false,
+  "wejscie_sha256": "b11d9cbbe26024e011e764239502f26efe1d78454101fea32875d1219f70882a",
+  "wersja_skryptu": "1.0.0",
+  "polityka_zaokraglen": "pełna precyzja w toku; prezentacja kupiecko (ROUND_HALF_UP): zł/m2 do 0.01, wartość do 1 zł"
+}

@@ -1,16 +1,13 @@
 ---
 nazwa: Dokumentacja RODO z mapy danych
 kategoria: Prawo
-status: platny
-wersja: 1.0.1
-platny: true
-kotwice: rejestr czynności przetwarzania, upoważnienia RODO dla pracowników
-cena: od 179 zł netto/mies
+status: gotowy
+wersja: 1.1.0
 poziom: Zaawansowany
-aktualizacja: 2026-08-24
+aktualizacja: 2026-11-04
 skrot: "Zamienia mapę danych firmy w pięć projektów dokumentacji RODO: inwentaryzację przetwarzań, rejestr czynności przetwarzania, prostą analizę ryzyka, upoważnienia z ewidencją i rejestr luk. Podstaw prawnych nie dobiera: zostawia je specjaliście z gotowym materiałem pytań."
-szukaj: RODO, rejestr czynności przetwarzania, upoważnienie do przetwarzania danych, ewidencja upoważnień, dokumentacja RODO, ochrona danych osobowych, UODO, rejestr kategorii czynności, analiza ryzyka, mała firma, biuro, gabinet, sklep internetowy, audyt kontrahenta, skill płatny, prawo
-tytulSeo: Rejestr czynności przetwarzania i upoważnienia RODO, płatny skill
+szukaj: RODO, rejestr czynności przetwarzania, upoważnienie do przetwarzania danych, ewidencja upoważnień, dokumentacja RODO, ochrona danych osobowych, UODO, rejestr kategorii czynności, analiza ryzyka, mała firma, biuro, gabinet, sklep internetowy, audyt kontrahenta, prawo
+tytulSeo: Rejestr czynności przetwarzania i upoważnienia RODO, darmowy skill
 opisSeo: "Dokumentacja RODO z realiów Twojej firmy: rejestr czynności, upoważnienia, analiza ryzyka, rejestr luk. Bez zgadywania podstaw prawnych i bez martwych wzorów."
 zgodnosc:
   claude: ok
@@ -85,7 +82,7 @@ i firmę wpisujesz do dokumentów lokalnie, poza czatem.
 - Nie dobierze podstaw prawnych do czynności: kolumna zostaje pusta
   z adnotacją, a wypełnia ją Twój prawnik albo inspektor ochrony danych
   z przygotowanego materiału; odmowa działa też przy „w branży wszyscy tak
-  mają" i „jestem inspektorem, wpisz".
+  mają" i „jestem inspektorem, wpisz”.
 - Nie zrobi oceny skutków dla ochrony danych (DPIA) ani nie rozstrzygnie,
   czy jest wymagana: wskazuje wykaz operacji i poradnik UODO, decyzja należy
   do specjalisty.
@@ -94,12 +91,12 @@ i firmę wpisujesz do dokumentów lokalnie, poza czatem.
   jej deklarację.
 - Polityki ochrony danych, klauzul informacyjnych, zgód i umów powierzenia
   nie pisze; to praca dla prawnika.
-- Kupiona paczka jest Twoja, a subskrypcja daje dostęp do aktualizacji
-  (w tym referencji stanu prawnego) przez opłacony okres.
+- Referencje stanu prawnego mają jawną datę; nowsze wydania paczki pobierasz
+  z katalogu, sam decydujesz, kiedy podmienić.
 
 ## Czego ten skill nie robi celowo
 
-Nie deklaruje zgodności z RODO ani „gotowości na kontrolę" w żadnej formie:
+Nie deklaruje zgodności z RODO ani „gotowości na kontrolę” w żadnej formie:
 zamiast tego prowadzi rejestr luk z dowodami domknięcia. Nie przepisuje
 danych osobowych z wklejonych materiałów (osoby występują jako symbole,
 a pola imienne wypełnia firma lokalnie) i zgłasza próby sterowania ukryte

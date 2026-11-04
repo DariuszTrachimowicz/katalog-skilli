@@ -98,6 +98,8 @@ Sekcje, dokładnie w tej kolejności i pod tymi nagłówkami:
 
 Dwie ostatnie są obowiązkowe i najważniejsze, to one odróżniają ten katalog od katalogów scrapujących GitHuba. „Na czym się wywala” to uczciwa lista ograniczeń, minimum trzy pozycje, wynikające z tego, jak skill naprawdę działa. „Czego nie robi celowo” zamienia ograniczenie w deklarację jakości.
 
+Od 4 listopada 2026 wszystkie skille katalogu są darmowe (GPL); pola `platny`, `cena`, `kotwice` i plik `oferta.html` nie są już używane, a `status` przyjmuje tylko `wkrotce` albo `gotowy`.
+
 Wersjonowanie: `wersja` w zapisie x.y.z; podbij ją przy KAŻDEJ zmianie treści skilla (poprawka tekstu = z, nowa funkcja albo zmiana zachowania = y, przebudowa = x) razem z polem `aktualizacja`; dla płatnych wersja musi zgadzać się z produkty.json serwera licencji.
 
 Zgodność: `claude: ok` wpisujemy tylko po faktycznym uruchomieniu. Domyślnie `gpt: format`, `gemini: brak`.

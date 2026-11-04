@@ -2,9 +2,9 @@
 nazwa: Regulamin pod lupą
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-11-04
 skrot: Czyta regulamin, na który masz się zgodzić, i mówi po ludzku, na co się zgadzasz, od zmian cennika po to, co dzieje się z Twoimi danymi i treściami.
 szukaj: regulamin, warunki korzystania, terms of service, subskrypcja, abonament, rezygnacja, automatyczne przedłużenie, polityka prywatności, konto, dane osobowe, sklep internetowy, aplikacja
 tytulSeo: Co akceptujesz, klikając „Akceptuję regulamin”, sprawdź po polsku

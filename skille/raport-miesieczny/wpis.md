@@ -2,9 +2,9 @@
 nazwa: Raport miesięczny
 kategoria: Dane
 status: gotowy
-wersja: 1.0.1
+wersja: 1.0.2
 poziom: Działa od razu
-aktualizacja: 2026-08-22
+aktualizacja: 2026-11-04
 skrot: Z liczb za miesiąc albo kwartał pisze gotowy raport dla przełożonego, zarządu albo właściciela, z wyraźną granicą między tym, co pokazują liczby, a tym, co jest domysłem.
 szukaj: raport miesięczny, raport kwartalny, podsumowanie miesiąca, raport dla zarządu, raport sprzedaży, wyniki miesiąca, jak poszedł miesiąc, materiał dla właściciela, jedna strona dla zarządu, podsumowanie dla szefa, jak opisać spadek, r/r, m/m, odchylenie, plan wykonanie, controlling
 tytulSeo: Raport miesięczny dla zarządu, jak napisać z danych, po polsku

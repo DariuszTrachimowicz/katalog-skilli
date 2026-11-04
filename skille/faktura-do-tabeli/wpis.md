@@ -2,9 +2,9 @@
 nazwa: Faktura do tabeli
 kategoria: Finanse
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-11-04
 skrot: Przepisuje faktury z PDF-ów i skanów do jednej tabeli gotowej do księgowania, z rozbiciem na stawki VAT i kontrolą, czy sumy się zgadzają.
 szukaj: faktura, faktury, PDF, skan, OCR, księgowość, biuro rachunkowe, excel, CSV, zestawienie, VAT, NIP, stawki, termin płatności, KSeF, koszty
 tytulSeo: Jak przepisać faktury PDF do Excela, narzędzie AI po polsku

@@ -2,9 +2,9 @@
 nazwa: Przed podpisem NDA
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.1
+wersja: 1.0.2
 poziom: Działa od razu
-aktualizacja: 2026-08-22
+aktualizacja: 2026-11-04
 skrot: Tłumaczy umowę o zachowaniu poufności po ludzku, co objęto tajemnicą, na jak długo, ile kosztuje wpadka i co jeszcze ukryto w dokumencie poza poufnością.
 szukaj: NDA, umowa o zachowaniu poufności, klauzula poufności, tajemnica przedsiębiorstwa, kara umowna, zakaz konkurencji, portfolio, freelancer, przetarg, rekrutacja
 tytulSeo: Dostałeś NDA do podpisu? Sprawdź, co właściwie podpisujesz, po polsku

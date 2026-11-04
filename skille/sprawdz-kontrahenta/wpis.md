@@ -2,9 +2,9 @@
 nazwa: Sprawdź kontrahenta
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-11-04
 skrot: Prowadzi krok po kroku przez sprawdzenie nowej firmy przed umową i pierwszą płatnością, rejestry, kto może podpisać, biała lista VAT, zgodność danych.
 szukaj: kontrahent, weryfikacja firmy, KRS, CEIDG, biała lista VAT, NIP, zaliczka, reprezentacja spółki, oszustwo na fakturę, nowy klient
 tytulSeo: Jak sprawdzić kontrahenta przed umową, lista kroków po polsku

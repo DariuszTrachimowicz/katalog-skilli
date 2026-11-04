@@ -2,9 +2,9 @@
 nazwa: Co właściwie podpisuję
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-11-04
 skrot: Zamienia kilkadziesiąt stron umowy, polisy, leasingu albo aneksu w kilkanaście punktów: ile płacisz, jak długo, jak wyjść, co przy problemie.
 szukaj: umowa, polisa, OWU, leasing, kredyt, abonament, aneks, harmonogram, najem, streszczenie, prosty język, RRSO
 tytulSeo: Streszczenie umowy, polisy i leasingu po ludzku, darmowe narzędzie AI

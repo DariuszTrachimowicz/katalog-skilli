@@ -2,9 +2,9 @@
 nazwa: Ankieta do wniosków
 kategoria: Dane
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-11-04
 skrot: Czyta surowe wyniki ankiety razem z odpowiedziami otwartymi i mówi, co się powtarza, gdzie odpowiedzi się rozjeżdżają i czego z tych danych powiedzieć nie można.
 szukaj: ankieta, badanie satysfakcji, NPS, eNPS, CSAT, Google Forms, Webankieta, Microsoft Forms, pytania otwarte, ankieta pracownicza, badanie nastrojów, wyniki ankiety
 tytulSeo: Wyniki ankiety, co z nich naprawdę wynika, po polsku

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[REZULTAT DLA KLIENTA], oferta dla [NAZWA KLIENTA]</title>
+<!--
+  SZABLON OFERTY BEHAWIORALNEJ: JEDNA CENA
+
+  Użyj tylko, gdy bramka z SKILL.md, krok 2, daje odpowiedź "nie": klient nie
+  wybiera zakresu. Ten plik jest samodzielny i zawiera jedną cenę główną oraz
+  opcjonalny, osobny etap wejściowy. Podmieniaj wyłącznie tekst w nawiasach
+  kwadratowych. W renderowanej treści każda liczba, kwota i parametr muszą
+  pochodzić od użytkownika albo pozostać w nawiasie kwadratowym.
+-->
+<style>
+  :root {
+    --tlo: #ffffff; --tlo-sekcja: #f6f7f9; --tlo-karta: #ffffff;
+    --tekst: #1a2027; --tekst-2: #545e6b; --linia: #dde2e8;
+    --akcent: #0d6e5f; --akcent-tlo: #e7f2ef; --akcent-tekst: #ffffff;
+    --uwaga: #8a4b08; --uwaga-tlo: #faf3ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --tlo: #14181d; --tlo-sekcja: #1b2129; --tlo-karta: #1f262f;
+      --tekst: #e8ecf1; --tekst-2: #9aa5b1; --linia: #323b46;
+      --akcent: #4fbfa8; --akcent-tlo: #1c3630; --akcent-tekst: #0f1613;
+      --uwaga: #e0a05e; --uwaga-tlo: #2b2118;
+    }
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--tlo); color: var(--tekst);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem; line-height: 1.65;
+  }
+  main { max-width: 60rem; margin: 0 auto; padding: 0 1.25rem; }
+  section { padding: 3rem 0; border-bottom: 1px solid var(--linia); }
+  section:last-of-type { border-bottom: none; }
+  h1 { font-size: clamp(1.9rem, 5vw, 3rem); line-height: 1.15; letter-spacing: -.02em; font-weight: 750; }
+  h2 { font-size: clamp(1.35rem, 3vw, 1.75rem); line-height: 1.25; letter-spacing: -.01em; margin-bottom: 1.1rem; font-weight: 700; }
+  h3 { font-size: 1.05rem; margin-bottom: .5rem; font-weight: 650; }
+  p { margin-bottom: .9rem; max-width: 46rem; }
+  p:last-child { margin-bottom: 0; }
+  ul, ol { margin: 0 0 .9rem 1.25rem; max-width: 46rem; }
+  li { margin-bottom: .35rem; }
+  strong { font-weight: 650; }
+  .drugi-plan { color: var(--tekst-2); }
+  .maly { font-size: .875rem; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  .etykieta { display: inline-block; font-size: .78rem; font-weight: 650; letter-spacing: normal; text-transform: none; color: var(--akcent); margin-bottom: .6rem; }
+
+  .naglowek { padding: 3.5rem 0 3rem; }
+  .adresat { margin-top: 1.2rem; color: var(--tekst-2); font-size: 1.05rem; }
+  .adresat strong { color: var(--tekst); }
+  .streszczenie-decyzyjne { background: var(--tlo-sekcja); border: 1px solid var(--linia); border-radius: .9rem; padding: 1.5rem 1.75rem; }
+  .streszczenie-decyzyjne p { margin-bottom: 0; }
+  .stawka { background: var(--uwaga-tlo); border-radius: .75rem; padding: 2rem 1.75rem; margin-top: .5rem; }
+  .stawka-liczba { font-size: clamp(2.6rem, 8vw, 4.25rem); font-weight: 780; line-height: 1.05; letter-spacing: -.02em; color: var(--uwaga); font-variant-numeric: tabular-nums; }
+  .stawka-rachunek { margin-top: .8rem; color: var(--tekst-2); font-size: .95rem; max-width: 46rem; }
+  .zakres-kolumny { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .zakres-kolumny ul { list-style: none; margin-left: 0; }
+  .zakres-kolumny li { padding-left: 1.5rem; position: relative; }
+  li.tak::before { content: "✓"; position: absolute; left: 0; color: var(--akcent); font-weight: 700; }
+  li.nie::before { content: "\2717"; position: absolute; left: 0; color: var(--tekst-2); }
+
+  .cena-jedna { background: var(--tlo-karta); border: 1px solid var(--linia); border-radius: .9rem; padding: 2rem 1.75rem; margin-top: 1.5rem; max-width: 46rem; }
+  .cena-jedna-kwota { font-size: clamp(2.2rem, 6vw, 3.25rem); font-weight: 780; letter-spacing: -.02em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .cena-jedna-dopisek { font-size: .85rem; color: var(--tekst-2); margin-bottom: 1.2rem; }
+  .cena-jedna-uzasadnienie { list-style: none; margin: 1rem 0 0; }
+  .cena-jedna-uzasadnienie li { padding-left: 1.4rem; position: relative; font-size: .95rem; margin-bottom: .5rem; }
+  .cena-jedna-uzasadnienie li::before { content: "✓"; position: absolute; left: 0; color: var(--akcent); font-weight: 700; }
+  .cena-jedna-uzasadnienie li .powod { display: block; font-size: .8rem; color: var(--tekst-2); line-height: 1.45; }
+  .etap-wejsciowy { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px dashed var(--linia); font-size: .92rem; color: var(--tekst-2); }
+  .kafle { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 1.25rem 0; max-width: 46rem; }
+  .kafel { background: var(--tlo-sekcja); border: 1px solid var(--linia); border-radius: .9rem; padding: 1.5rem; }
+  .kafel.po { background: var(--akcent-tlo); border-color: var(--akcent); }
+  .kafel-etykieta { font-size: .78rem; font-weight: 650; letter-spacing: normal; text-transform: none; color: var(--tekst-2); }
+  .kafel.po .kafel-etykieta { color: var(--akcent); }
+  .kafel-liczba { font-size: clamp(1.9rem, 5vw, 2.75rem); font-weight: 780; letter-spacing: -.02em; line-height: 1.15; font-variant-numeric: tabular-nums; }
+  .kafel-opis { font-size: .9rem; color: var(--tekst-2); margin-top: .25rem; }
+  .os { list-style: none; margin: 1.25rem 0 0; max-width: 46rem; }
+  .os li { position: relative; padding: 0 0 1.6rem 2.1rem; margin: 0; }
+  .os li::before { content: ""; position: absolute; left: .42rem; top: .5rem; bottom: -.4rem; width: 2px; background: var(--linia); }
+  .os li:last-child::before { display: none; }
+  .os li::after { content: ""; position: absolute; left: 0; top: .32rem; width: 1rem; height: 1rem; border-radius: 50%; background: var(--akcent-tlo); border: 3px solid var(--akcent); }
+  .os-czas { font-size: .8rem; font-weight: 650; letter-spacing: normal; text-transform: none; color: var(--akcent); }
+  .os h3 { margin-bottom: .15rem; }
+  .os p { font-size: .92rem; color: var(--tekst-2); margin: 0; }
+  .faq details { border-bottom: 1px solid var(--linia); max-width: 46rem; }
+  .faq details:first-of-type { border-top: 1px solid var(--linia); }
+  .faq summary { cursor: pointer; font-weight: 650; padding: 1rem 2rem 1rem 0; position: relative; list-style: none; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; position: absolute; right: .25rem; top: .85rem; font-size: 1.3rem; font-weight: 400; color: var(--akcent); }
+  .faq details[open] summary::after { content: "-"; }
+  .faq details > p { padding: 0 0 1.1rem; color: var(--tekst-2); }
+  .stopka { background: var(--tlo-sekcja); border-radius: .9rem; padding: 2.25rem 1.75rem; text-align: center; }
+  .cta { display: inline-block; background: var(--akcent); color: var(--akcent-tekst); font-size: 1.05rem; font-weight: 700; padding: .9rem 2.2rem; border-radius: .6rem; text-decoration: none; margin: 1rem 0 .75rem; }
+  .cta:hover { filter: brightness(1.08); }
+  .waznosc { font-size: .92rem; color: var(--tekst-2); }
+  .formalnosci { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--linia); text-align: left; font-size: .85rem; color: var(--tekst-2); max-width: none; }
+  .formalnosci p { max-width: none; margin-bottom: .5rem; }
+  .cta-druk { display: none; font-weight: 650; margin: .75rem 0; }
+
+  @media (max-width: 47rem) {
+    section { padding: 2.25rem 0; }
+    .zakres-kolumny, .kafle { grid-template-columns: 1fr; }
+  }
+  @media print {
+    :root { --tlo: #ffffff; --tlo-sekcja: #f4f4f4; --tlo-karta: #ffffff; --tekst: #111111; --tekst-2: #444444; --linia: #cccccc; --akcent: #0d6e5f; --akcent-tlo: #eaf2f0; --akcent-tekst: #ffffff; --uwaga: #8a4b08; --uwaga-tlo: #f6efe6; }
+    body { font-size: 10.5pt; }
+    section { padding: 1.2rem 0; break-inside: auto; }
+    .naglowek, .streszczenie-decyzyjne, .stawka, .cena-jedna, .kafel, .stopka { break-inside: avoid; }
+    .cta { display: none; }
+    .cta-druk { display: block !important; }
+    .faq summary::after { display: none; }
+    ::details-content { content-visibility: visible; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<!-- SEKCJA 0: STRESZCZENIE DECYZYJNE -->
+<section class="streszczenie-decyzyjne">
+  <span class="etykieta">Streszczenie, do przekazania dalej</span>
+  <p>Po [UZUPEŁNIJ: czasie realizacji] [UZUPEŁNIJ: klient ma konkretny rezultat].
+  Obecny proces kosztuje [UZUPEŁNIJ: koszt bezczynności] rocznie, według
+  [UZUPEŁNIJ: krótki rachunek]. Cena za uzgodniony zakres: [UZUPEŁNIJ: kwota] zł.
+  [UZUPEŁNIJ: obowiązkowy mechanizm ograniczenia ryzyka, np. płatność po odbiorze
+  etapów, punkt wyjścia po etapie początkowym albo gwarancja poprawek].
+  [UZUPEŁNIJ: opcjonalny etap wejściowy, jego samodzielny rezultat, cena od kwoty
+  oraz zasada odjęcia tej kwoty od ceny całości, albo usuń to zdanie bez naruszania
+  pozostałej kolejności streszczenia].
+  [UZUPEŁNIJ: pojedynczy najbliższy krok, data decyzji i realny termin startu].</p>
+</section>
+
+<!-- SEKCJA 1: NAGŁÓWEK -->
+<section class="naglowek">
+  <span class="etykieta">Propozycja dla [NAZWA KLIENTA]</span>
+  <h1>[REZULTAT DLA KLIENTA]</h1>
+  <p class="adresat">Przygotowane dla: <strong>[IMIĘ I NAZWISKO DECYDENTA],
+  [STANOWISKO]</strong><br>[NAZWA FIRMY UŻYTKOWNIKA] · [DATA] · oferta ważna do
+  <strong>[DATA WAŻNOŚCI]</strong></p>
+</section>
+
+<!-- SEKCJA 2: JAK ROZUMIEMY SYTUACJĘ -->
+<section>
+  <h2>Jak rozumiemy Waszą sytuację</h2>
+  <p>[UZUPEŁNIJ: opis problemu słowami klienta, w tym dosłowny cytat za jego zgodą].</p>
+  <p>[UZUPEŁNIJ: konsekwencja problemu oraz kontekst, bez obietnicy niekontrolowanego rezultatu].</p>
+</section>
+
+<!-- SEKCJA 3: STAWKA -->
+<section>
+  <h2>Co kosztuje pozostawienie tego bez zmian</h2>
+  <div class="stawka">
+    <div class="stawka-liczba">[UZUPEŁNIJ: koszt bezczynności] rocznie</div>
+    <p class="stawka-rachunek">Rachunek z danych klienta: [UZUPEŁNIJ: składniki
+    rachunku i wynik].</p>
+  </div>
+</section>
+
+<!-- SEKCJA 4: CO PROPONUJEMY -->
+<section>
+  <h2>Co proponujemy</h2>
+  <p><strong>Po realizacji [UZUPEŁNIJ: klient ma stan docelowy].</strong>
+  [UZUPEŁNIJ: krótki opis sposobu dojścia, podany dopiero po rezultacie].</p>
+  <p>[UZUPEŁNIJ: warunki pracy na danych lub materiałach klienta, jeśli są istotne].</p>
+</section>
+
+<!-- SEKCJA 5: ZAKRES -->
+<section>
+  <h2>Co obejmuje realizacja, a czego nie</h2>
+  <div class="zakres-kolumny">
+    <div>
+      <h3>W zakresie</h3>
+      <ul>
+        <li class="tak">[UZUPEŁNIJ: element zakresu]</li>
+        <li class="tak">[UZUPEŁNIJ: element zakresu]</li>
+        <li class="tak">[UZUPEŁNIJ: element zakresu]</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Poza zakresem</h3>
+      <ul>
+        <li class="nie"><span class="sr-only">Poza zakresem: </span>[UZUPEŁNIJ: wyłączenie lub warunek osobnej wyceny]</li>
+        <li class="nie"><span class="sr-only">Poza zakresem: </span>[UZUPEŁNIJ: wyłączenie lub warunek osobnej wyceny]</li>
+        <li class="nie"><span class="sr-only">Poza zakresem: </span>[UZUPEŁNIJ: wyłączenie lub warunek osobnej wyceny]</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SEKCJA 6: JEDNA CENA -->
+<section>
+  <h2>[UZUPEŁNIJ: nagłówek opisujący rezultat]</h2>
+  <p class="drugi-plan">[UZUPEŁNIJ: jedno zdanie, dlaczego uzgodniony zakres ma
+  jedną cenę, nie widełki].</p>
+  <div class="cena-jedna">
+    <div class="cena-jedna-kwota">Cena za uzgodniony zakres: [UZUPEŁNIJ: kwota] zł</div>
+    <div class="cena-jedna-dopisek">[UZUPEŁNIJ: kwota netto czy brutto, status
+    VAT oraz warunki płatności, w tym liczba transz]</div>
+    <ul class="cena-jedna-uzasadnienie">
+      <li>[UZUPEŁNIJ: składnik ceny]<span class="powod">ponieważ [UZUPEŁNIJ: uzasadnienie]</span></li>
+      <li>[UZUPEŁNIJ: składnik ceny]<span class="powod">ponieważ [UZUPEŁNIJ: uzasadnienie]</span></li>
+      <li>[UZUPEŁNIJ: składnik ceny]<span class="powod">ponieważ [UZUPEŁNIJ: uzasadnienie]</span></li>
+    </ul>
+    <!-- Usuń cały blok, jeśli oferta nie ma osobnego etapu wejściowego. -->
+    <div class="etap-wejsciowy"><strong>Opcjonalny etap wejściowy, osobny od ceny głównej:</strong>
+    [UZUPEŁNIJ: nazwa etapu i samodzielny rezultat] od [UZUPEŁNIJ: kwota] zł.
+    Kwota etapu wejściowego zostaje odjęta od ceny całości, jeśli klient przechodzi dalej.</div>
+  </div>
+</section>
+
+<!-- SEKCJA 7: DLACZEGO TYLE -->
+<section>
+  <h2>Dlaczego tyle</h2>
+  <p>Cena wynika z uzgodnionego zakresu, nie jest punktem wyjścia do targowania.
+  Składa się z:</p>
+  <ul>
+    <li><strong>[UZUPEŁNIJ: składnik pracy]:</strong> [UZUPEŁNIJ: uzasadnienie].</li>
+    <li><strong>[UZUPEŁNIJ: składnik jakości lub ryzyka]:</strong> [UZUPEŁNIJ: uzasadnienie].</li>
+    <li><strong>[UZUPEŁNIJ: składnik wdrożenia lub stabilizacji]:</strong> [UZUPEŁNIJ: uzasadnienie].</li>
+  </ul>
+  <p>Co zmienia cenę: <strong>w dół</strong>, [UZUPEŁNIJ: warunek];
+  <strong>w górę</strong>, [UZUPEŁNIJ: warunek].</p>
+</section>
+
+<!-- SEKCJA 8: DOWÓD -->
+<section>
+  <h2>Jak to wyglądało w podobnej sytuacji</h2>
+  <p>[UZUPEŁNIJ: case study za zgodą lub dowód kompetencji, gdy nie ma case study].</p>
+  <div class="kafle">
+    <div class="kafel">
+      <div class="kafel-etykieta">Przed realizacją</div>
+      <div class="kafel-liczba">[UZUPEŁNIJ: wartość przed]</div>
+      <div class="kafel-opis">[UZUPEŁNIJ: opis stanu przed]</div>
+    </div>
+    <div class="kafel po">
+      <div class="kafel-etykieta">Po realizacji</div>
+      <div class="kafel-liczba">[UZUPEŁNIJ: wartość po]</div>
+      <div class="kafel-opis">[UZUPEŁNIJ: opis stanu po w tej samej mierze]</div>
+    </div>
+  </div>
+  <p class="drugi-plan maly">[UZUPEŁNIJ: cytat referencyjny wraz ze zgodą albo opis
+  dowodu kompetencji].</p>
+</section>
+
+<!-- SEKCJA 9: NASZE RYZYKO -->
+<section>
+  <h2>Co, jeśli to nie zadziała</h2>
+  <ul>
+    <li><strong>[UZUPEŁNIJ: etap początkowy] jest samodzielną całością.</strong>
+    [UZUPEŁNIJ: rezultat, który zostaje u klienta, gdy nie kontynuuje].</li>
+    <li><strong>[UZUPEŁNIJ: zasada płatności i odbioru].</strong> [UZUPEŁNIJ: kryteria odbioru].</li>
+    <li><strong>[UZUPEŁNIJ: sposób bezpiecznego przejścia].</strong> [UZUPEŁNIJ: warunek przełączenia].</li>
+    <li><strong>[UZUPEŁNIJ: gwarancja lub odpowiedzialność, którą kontrolujecie].</strong> [UZUPEŁNIJ: zasada].</li>
+  </ul>
+</section>
+
+<!-- SEKCJA 10: HARMONOGRAM -->
+<section>
+  <h2>Jak to przebiega w czasie</h2>
+  <ol class="os">
+    <li><span class="os-czas">[UZUPEŁNIJ: czas etapu początkowego]</span>
+    <h3>[UZUPEŁNIJ: nazwa etapu początkowego]</h3>
+    <p>[UZUPEŁNIJ: rezultat etapu].</p></li>
+    <li><span class="os-czas">[UZUPEŁNIJ: czas etapu realizacji]</span>
+    <h3>[UZUPEŁNIJ: nazwa etapu realizacji]</h3>
+    <p>[UZUPEŁNIJ: rezultat etapu oraz potrzebne współdziałanie klienta].</p></li>
+    <li><span class="os-czas">[UZUPEŁNIJ: czas przejścia]</span>
+    <h3>[UZUPEŁNIJ: nazwa etapu przejścia]</h3>
+    <p>[UZUPEŁNIJ: warunek odbioru i stan po etapie].</p></li>
+    <li><span class="os-czas">Najbliższy krok</span>
+    <h3>[UZUPEŁNIJ: nazwa pojedynczego kroku]</h3>
+    <p>[UZUPEŁNIJ: co klient robi po kliknięciu CTA].</p></li>
+  </ol>
+</section>
+
+<!-- SEKCJA 11: FAQ -->
+<section class="faq">
+  <h2>Pytania, które zwykle padają</h2>
+  <details><summary>[UZUPEŁNIJ: realna obiekcja klienta]</summary>
+  <p>[UZUPEŁNIJ: uczciwa odpowiedź oparta na uzgodnionym zakresie].</p></details>
+  <details><summary>[UZUPEŁNIJ: realna obiekcja klienta]</summary>
+  <p>[UZUPEŁNIJ: uczciwa odpowiedź oparta na uzgodnionym zakresie].</p></details>
+  <details><summary>[UZUPEŁNIJ: realna obiekcja klienta]</summary>
+  <p>[UZUPEŁNIJ: uczciwa odpowiedź oparta na uzgodnionym zakresie].</p></details>
+  <details><summary>[UZUPEŁNIJ: realna obiekcja klienta]</summary>
+  <p>[UZUPEŁNIJ: uczciwa odpowiedź oparta na uzgodnionym zakresie].</p></details>
+</section>
+
+<!-- SEKCJA 12: FORMALNOŚCI I JEDEN CTA -->
+<section>
+  <div class="stopka">
+    <h2>Najbliższy krok: [UZUPEŁNIJ: pojedyncza akcja]</h2>
+    <p class="drugi-plan">[UZUPEŁNIJ: rezultat najbliższego kroku oraz prawdziwy warunek czasowy].</p>
+    <a class="cta" href="[UZUPEŁNIJ: jeden link do kalendarza albo adres mailowy]">[UZUPEŁNIJ: tekst pojedynczego CTA]</a>
+    <p class="cta-druk">[UZUPEŁNIJ: adres e-mail do wydruku]</p>
+    <p class="waznosc">Oferta ważna do <strong>[UZUPEŁNIJ: data ważności]</strong>,
+    [UZUPEŁNIJ: prawdziwy powód ważności].</p>
+    <div class="formalnosci">
+      <p><strong>Formalności.</strong> [WYMAGA WERYFIKACJI PRZED WYSŁANIEM:
+      uzupełnij zgodnie z realnym stanem.]</p>
+      <ul>
+        <li><strong>Ceny i podatek:</strong> [UZUPEŁNIJ: kwoty netto czy brutto,
+        stawka albo zwolnienie VAT oraz podstawa].</li>
+        <li><strong>Typ nabywcy:</strong> [UZUPEŁNIJ: typ nabywcy oraz wymagane informacje].</li>
+        <li><strong>Płatność:</strong> [UZUPEŁNIJ: forma, termin i moment wymagalności].</li>
+        <li><strong>Odbiór i rezygnacja:</strong> [UZUPEŁNIJ: kryteria odbioru oraz zasady zakończenia współpracy].</li>
+        <li><strong>Dane poufne i osobowe:</strong> [UZUPEŁNIJ: NDA, role stron,
+        retencja, lokalizacja, podwykonawcy i ewentualna umowa powierzenia].</li>
+        <li><strong>Status dokumentu:</strong> [UZUPEŁNIJ: status prawny dokumentu
+        oraz warunek realizacji po weryfikacji prawnej].</li>
+      </ul>
+      <p>[NAZWA FIRMY UŻYTKOWNIKA] · NIP [NIP] · [ADRES] · [ADRES E-MAIL] ·
+      Osoba prowadząca: [IMIĘ I NAZWISKO]</p>
+    </div>
+  </div>
+</section>
+</main>
+</body>
+</html>

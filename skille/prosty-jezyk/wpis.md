@@ -2,9 +2,9 @@
 nazwa: Prosty język
 kategoria: Biuro
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-11-04
 skrot: Przepisuje urzędowe pismo na prosty polski, nie gubiąc ani jednej informacji. Pokazuje, co zmienił i czego nie ruszył.
 szukaj: prosty język, prosta polszczyzna, pismo urzędowe, regulamin, bełkot, urzędowy, zrozumiałość, obsługa klienta, bank, ubezpieczenia, dostępność, nieczytelne pismo, klienci nie rozumieją, standard prostego języka, napisz to po ludzku, nikt tego nie rozumie
 tytulSeo: Jak napisać pismo urzędowe prostym językiem, narzędzie AI po polsku

@@ -2,9 +2,9 @@
 nazwa: Czerwone flagi w umowie
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-11-04
 skrot: Czyta umowę, którą masz podpisać, i mówi po ludzku, na co uważać. Na koniec daje gotowe pytania do prawnika.
 szukaj: umowa, kontrakt, prawnik, ryzyko, kara umowna, zakaz konkurencji, freelancer, B2B, najem
 tytulSeo: Na co uważać w umowie B2B, darmowe narzędzie AI po polsku

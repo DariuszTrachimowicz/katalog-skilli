@@ -2,9 +2,9 @@
 nazwa: Pytania rekrutacyjne
 kategoria: Kadry
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-08-10
+aktualizacja: 2026-11-04
 skrot: Z opisu stanowiska robi gotowy zestaw pytań na rozmowę i prostą kartę oceny. Pokazuje też, o co lepiej nie pytać i czym to zastąpić.
 szukaj: rekrutacja, rozmowa kwalifikacyjna, pytania do kandydata, karta oceny, zatrudnianie, mała firma, HR, niedozwolone pytania, widełki, ogłoszenie o pracę
 tytulSeo: Pytania na rozmowę kwalifikacyjną, gotowy zestaw dla pracodawcy

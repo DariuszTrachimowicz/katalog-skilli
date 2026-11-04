@@ -1,16 +1,13 @@
 ---
 nazwa: Procedury AML dla instytucji obowiązanych
 kategoria: Prawo
-status: platny
-wersja: 1.0.3
-platny: true
-kotwice: instytucja obowiązana AML, biuro rachunkowe AML
-cena: od 149 zł netto/mies
+status: gotowy
+wersja: 1.1.0
 poziom: Zaawansowany
-aktualizacja: 2026-08-24
+aktualizacja: 2026-11-04
 skrot: Buduje z instytucją obowiązaną jej dokumentację AML dopasowaną do realnej działalności, ocenę ryzyka instytucji, procedurę wewnętrzną, ocenę ryzyka klienta liczoną skryptem ze śladem obliczeń, ewidencje i checklisty środków bezpieczeństwa finansowego.
-szukaj: AML, pranie pieniędzy, instytucja obowiązana, GIIF, procedura wewnętrzna AML, ocena ryzyka klienta, środki bezpieczeństwa finansowego, beneficjent rzeczywisty, CRBR, biuro rachunkowe, pośrednik nieruchomości, biuro wirtualne, kontrola GIIF, skill płatny, prawo
-tytulSeo: Procedura AML dla biura rachunkowego i instytucji obowiązanej, płatny skill
+szukaj: AML, pranie pieniędzy, instytucja obowiązana, GIIF, procedura wewnętrzna AML, ocena ryzyka klienta, środki bezpieczeństwa finansowego, beneficjent rzeczywisty, CRBR, biuro rachunkowe, pośrednik nieruchomości, biuro wirtualne, kontrola GIIF, prawo
+tytulSeo: Procedura AML dla biura rachunkowego i instytucji obowiązanej, darmowy skill
 opisSeo: "Dokumentacja AML z realiów Twojej firmy: ocena ryzyka instytucji, procedura wewnętrzna, punktowa ocena ryzyka klienta ze śladem obliczeń, ewidencje i checklisty. Bez martwych wzorów PDF."
 zgodnosc:
   claude: ok
@@ -101,9 +98,8 @@ sankcyjne): mówi, co i gdzie sprawdzić, wyniki wpisujesz sam.
   podejrzanych robi najwyżej wewnętrzną notatkę stanu faktycznego.
 - Skrypt punktacji wymaga Pythona 3.10+; bez niego zostaje budowa dokumentów
   bez liczenia ocen.
-- Kupiona wersja jest Twoja bezterminowo, a klucz licencji daje dostęp do
-  aktualizacji paczki (w tym referencji stanu prawnego) przez 12 miesięcy od
-  zakupu.
+- Referencje stanu prawnego mają jawną datę; nowsze wydania paczki pobierasz
+  z katalogu, sam decydujesz, kiedy podmienić.
 - Nie obsługuje grup kapitałowych i procedur grupowych w tym wydaniu.
 
 ## Czego ten skill nie robi celowo
