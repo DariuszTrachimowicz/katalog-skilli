@@ -1,4 +1,4 @@
-# sygnalisci-procedura: raport bramek QA (wydanie 1.0.0, 4 listopada 2026)
+# sygnalisci-procedura: raport bramek QA (wydania 1.0.0 i 1.0.1, 4 listopada 2026)
 
 Skill darmowy, kategoria Prawo (wysoka stawka), panel eskalacji z rozdzielonymi rolami obowiązkowy. Scenariusze z asercjami: `testy/wyniki-gemini/scenariusze/sygnalisci-procedura.md`. Drugi skill z listy 16 propozycji prawnych (artefakt z postępem: https://claude.ai/artifact/HoSaWYGLyRQnFVrhjrGXHF ); po nim decyzja Darka „stop”.
 
@@ -29,12 +29,12 @@ Cykl 1 (`skill-C.md`) i cykl 2 (`retest-C.md`): anomalia zgłoszona na wstępie 
 
 - Cykl 1, ekspert domeny (`codex-c1-ekspert.txt`): 4 blokery, 12 ważnych, werdykt TAK. Cykl 1, granice (`codex-c1-granice.txt`): 2 blokery, 16 ważnych, 4 kosmetyczne, werdykt TAK. Przyjęte m.in.: „ustnie lub pisemnie” jako wybór formy; działania następcze wewnątrz struktury; klauzula przy pozyskaniu danych; dokładne brzmienie przesłanki liczenia osób; sektory bez progu z zastrzeżeniem aktów unijnych; źródła DO WERYFIKACJI nie jako fakty; skill nie dobiera podstawy RODO; opis zawężony; kubełek „Typowe”; komponent 8 bez fałszywych alarmów; sankcje ze znamionami; przykład jako hipotetyczny. Odrzucone jako zbyt literalne: traktowanie nazwiska osoby przyjmującej jako wady.
 - Cykl 2 skoncentrowany (`codex-c2.txt`): 8 z 11 punktów naprawionych, 3 częściowo (przykład „w potwierdzeniu odczytu” przy klauzuli, karta obsługi skracająca zasady dokumentowania i zmieniająca uprawnienie w obowiązek, rozszerzenie etyczne bez warunków) plus jeden nowy bloker (sprzeczność § 1 ust. 3 z „w każdym przypadku” w § 8). Werdykt TAK. Wszystkie cztery naprawione.
-- Cykl 3 wąski (`codex-c3.txt`): [uzupełniane po zakończeniu]
+- Cykl 3 wąski (`codex-c3.txt`): cztery poprawki potwierdzone (rozszerzenie etyczne z warunkami i bez sprzeczności z § 8, klauzula przy pozyskaniu danych, dokumentowanie po kanale z dobrowolnym zatwierdzeniem, brak regresji w sąsiednich zapisach), werdykt „BLOKERY DO WYDANIA: NIE”. Trzy cykle łącznie.
 
 ## Bramka 5: skan paczki
 
-[uzupełniane po zbudowaniu paczki]
+`node build.mjs`: 41 skilli, 59 podstron; `paczki/sygnalisci-procedura.skill` 87 001 B; `skany.sh` na paczce: glify i encje czysto; `spojnosc-oferty.test.mjs` 42/42. Wydanie: commit 2bd806b, `serwer/wdroz.sh` 4 listopada 2026 ok. 21:09.
 
 ## Statusy
 
-`claude: ok` po realnych przebiegach na Claude Sonnet (A, B1, B2, C w dwóch cyklach). `gpt`: [po rundzie kompatybilnosc]. `gemini: brak` (nieużywane).
+`claude: ok` po realnych przebiegach na Claude Sonnet (A, B1, B2, C w dwóch cyklach). `gpt: ok` po rundzie `kompatybilnosc` 4 listopada 2026 (gpt-6.1-sol; A wymagał utwardzenia: pytania wywiadu i projekt z polami w jednej odpowiedzi, wersja 1.0.1; B1/B2/C PASS; raport `testy/wyniki-gpt/sygnalisci-procedura.md`). `gemini: brak` (nieużywane).

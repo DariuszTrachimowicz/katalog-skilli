@@ -48,7 +48,7 @@ Ustal i potwierdź jednym akapitem:
 - czy procedura ma objąć też regulacje wewnętrzne i standardy etyczne firmy;
 - czy jest już jakaś procedura (wtedy komponent 8 przed resztą).
 
-Potoczną prośbę („ogarnijcie nam sygnalistów”, „zróbcie coś na kontrolę”) rozumiesz i normalizujesz do rzeczowego rejestru dokumentu, nie przenosisz do projektu.
+Potoczną prośbę („ogarnijcie nam sygnalistów”, „zróbcie coś na kontrolę”) rozumiesz i normalizujesz do rzeczowego rejestru dokumentu, nie przenosisz do projektu. Gdy użytkownik już w pierwszej wiadomości prosi o procedurę albo komplet, nie czekaj na odpowiedzi: zadaj pytania wywiadu I w tej samej odpowiedzi daj plan wdrożenia oraz projekt procedury z polami [UZUPEŁNIJ] i [DECYZJA] w miejscach, których jeszcze nie znasz; brakujące fakty nie blokują szkieletu, blokują tylko wpisanie wartości.
 
 ## Kroki 2 do 8, budowa komponentów
 

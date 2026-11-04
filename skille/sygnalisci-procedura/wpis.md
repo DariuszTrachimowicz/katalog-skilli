@@ -2,7 +2,7 @@
 nazwa: Procedura dla sygnalistów
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Buduje z firmą projekt procedury zgłoszeń wewnętrznych dla sygnalistów wraz z rejestrem, upoważnieniami, klauzulą informacyjną, planem wdrożenia i kartą obsługi zgłoszenia, albo sprawdza procedurę, którą już macie.
@@ -11,7 +11,7 @@ tytulSeo: Procedura zgłoszeń wewnętrznych dla sygnalistów, co musi zawierać
 opisSeo: "Skill AI po polsku: projekt procedury dla sygnalistów z ośmioma elementami obowiązkowymi, rejestr, upoważnienia, plan wdrożenia z konsultacjami, karta obsługi zgłoszenia. Do domknięcia z prawnikiem."
 zgodnosc:
   claude: ok
-  gpt: brak
+  gpt: ok
   gemini: brak
 ---
 
