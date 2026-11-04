@@ -21,6 +21,7 @@ for (const id of readdirSync(new URL('../skille/', import.meta.url))) {
     assert.equal(dane.cena, undefined, 'pole cena bez sprzedaży');
     assert.ok(existsSync(new URL(`../skille/${id}/SKILL.md`, import.meta.url)), 'brak SKILL.md w katalogu');
     assert.ok(!existsSync(new URL(`../skille/${id}/oferta.html`, import.meta.url)), 'została strona oferty');
+    assert.ok(existsSync(new URL(`../szablony/og/${id}.png`, import.meta.url)), 'brak własnej grafiki OG (uruchom: node narzedzia/grafiki.mjs ' + id + ')');
     assert.match(String(dane.wersja), /^\d+\.\d+\.\d+$/, 'wersja x.y.z');
   });
 }

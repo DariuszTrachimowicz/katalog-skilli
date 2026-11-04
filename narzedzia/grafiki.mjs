@@ -98,7 +98,7 @@ const zadania = [
   { plik: "katalog.png", html: karta({ tytul: "Pisane od zera pod polskie realia. Nie tłumaczone.", opis: cfg.opisSerwisu, stopka: `${skille.length} umiejętności · za darmo · Claude i ChatGPT` }) },
   { plik: "regulamin.png", html: karta({ tytul: "Regulamin", opis: "Zasady korzystania z katalogu, pobierania skilli i newslettera.", stopka: cfg.nazwaSerwisu }) },
   { plik: "prywatnosc.png", html: karta({ tytul: "Prywatność", opis: "Jakie dane zbiera katalog i co się z nimi dzieje. Bez śledzenia, bez profilowania.", stopka: cfg.nazwaSerwisu }) },
-  { plik: "pracownia.png", html: karta({ kategoria: "Pracownia", tytul: "Dokument firmowy z rozmowy. Bez instalowania.", opis: "Odpowiadasz na pytania, a Pracownia składa gotowy plik: DOCX, PDF i HTML. Siedem narzędzi na start.", stopka: "99 zł netto/mies · 20 jednostek na dokumenty" }) },
+  { plik: "pracownia.png", html: karta({ kategoria: "Pracownia", tytul: "Dokument firmowy z rozmowy. Bez instalowania.", opis: "Odpowiadasz na pytania, a Pracownia składa gotowy plik: DOCX, PDF i HTML. Sprzedaż pakietów jest zawieszona.", stopka: "Projekt zawieszony od 4 listopada 2026" }) },
   ...skille.map((s) => ({
     plik: `${s.id}.png`,
     html: karta({ kategoria: s.kategoria, tytul: s.nazwa, opis: s.skrot, stopka: "Do pobrania za darmo · Claude i ChatGPT" }),
