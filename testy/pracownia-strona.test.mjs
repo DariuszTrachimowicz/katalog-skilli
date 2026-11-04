@@ -66,23 +66,10 @@ test("publikuje Pracownię, ale pokazuje ją w katalogu i sitemapie tylko za fla
     assert.equal(policz(strona, ">Zobacz przykład</a>"), narzedzia.length);
 
     for (const fragment of [
-      "10 zł netto",
-      "30 zł netto",
-      "99 zł netto",
-      "12,30 zł brutto (z VAT 23%)",
-      "36,90 zł brutto (z VAT 23%)",
-      "121,77 zł brutto (z VAT 23%)",
-      "ważny 30 dni",
+      "Sprzedaż pakietów zawieszona",
+      "Od 4 listopada 2026 projekt Pracownia AiXperts jest zawieszony",
       "Poprawki i audyt w ramach tej samej sesji nie zużywają dodatkowych kredytów",
-      "https://licencje.aixperts.pl/zamow/pracownia?pakiet=1",
-      "https://licencje.aixperts.pl/zamow/pracownia?pakiet=5",
-      "https://licencje.aixperts.pl/zamow/pracownia?pakiet=20",
-      "data-umami-event=\"zakup-klik\"",
-      "data-umami-event-skill=\"pracownia-5\"",
       "href=\"/#katalog\"",
-      "BLIK, kartą lub przelewem",
-      "Montonio",
-      "Faktura VAT jest wystawiana automatycznie",
       "fikcyjnymi danymi",
       "class=\"disc\"",
       "Wróć do katalogu",
@@ -90,6 +77,10 @@ test("publikuje Pracownię, ale pokazuje ją w katalogu i sitemapie tylko za fla
       assert.ok(strona.includes(fragment), `brakuje treści lub atrybutu: ${fragment}`);
     }
 
+    // Pracownia zawieszona 4 XI 2026: strona nie moze sprzedawac pakietow.
+    for (const zakazane of ["licencje.aixperts.pl/zamow/pracownia", "zł netto", "Montonio", "zakup-klik"]) {
+      assert.ok(!strona.includes(zakazane), `strona Pracowni nie moze zawierac: ${zakazane}`);
+    }
     const niedozwoloneZnaki = new RegExp(`[${String.fromCodePoint(0x2013)}${String.fromCodePoint(0x2014)}]`);
     assert.doesNotMatch(strona, niedozwoloneZnaki);
     assert.doesNotMatch(glownaFalse, /href="\/pracownia\/"/);
