@@ -1,0 +1,8 @@
+# Codex, cykl 4, 4 listopada 2026 (ostatnia odpowiedź)
+
+codex
+1. **OK** — zachowano warunek: wydajność staje się pułapką, gdy zespoły zapominają o ludziach; brak uogólnienia „nastawiony na wydajność”. `references/wzorce.md:70`
+2. **OK** — zachowano „aktywne konta” i „ponad 500 000 obserwujących”. `references/wzorce.md:231`
+3. **OK** — zachowano warunek przenoszenia elementu pod nowego rodzica, aktualizację `pipeline_id` razem z `parent_id`, 6 błędnych wierszy przy 123 scaleniach oraz odtworzenie z dziennika audytu. `references/wzorce.md:348`
+
+BLOKERY DO WYDANIA: NIE

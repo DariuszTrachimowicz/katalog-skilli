@@ -1,0 +1,50 @@
+# Codex, cykl 2, 4 listopada 2026 (ostatnia odpowiedź)
+
+codex
+## BLOKERY
+
+**1. Przykłady „Po” nadal zmieniają treść.** Pozostałe przypadki w `references/wzorce.md`:
+
+| Linie „Przed” → „Po” | Zmiana informacji |
+|---|---|
+| `references/wzorce.md:29` → `31` | Znika zastrzeżenie, że brak zewnętrznego potwierdzenia nie oznacza jednakowej wartości wyborów. |
+| `references/wzorce.md:42` → `44` | „Więc” dopisuje przyczynę ustania starych reguł. |
+| `references/wzorce.md:63` → `65` | „Czyli” utożsamia zdolność zespołów do dostosowania z gotowością organizacji. Oryginał nie stwierdza równoważności. |
+| `references/wzorce.md:67` → `69` | Dopisano „układ” i patrzenie **tylko** na wydajność; zmieniono zależność między wydajnością a pomijaniem ludzi. |
+| `references/wzorce.md:89` → `91` | Znikają ograniczenie znaczenia długości promptu i zastrzeżenie dotyczące dokumentacji. |
+| `references/wzorce.md:93` → `95` | Znika skutek restartu z crona: wyrzucenie wszystkich aktywnych sesji. |
+| `references/wzorce.md:110` → `112` | „Tak samo” zastępuje różne skutki. Znikają zakończenie związku i bezużyteczność umiejętności. |
+| `references/wzorce.md:155` → `157` | Dopisano sprawcę: „System”. Oryginał podaje tylko automatyczne zachowanie wyników. |
+| `references/wzorce.md:168` → `170` | Znika twierdzenie o wejściu dań do tradycyjnej diety. Powszechność nie oznacza tradycyjności. |
+| `references/wzorce.md:181` → `183` | Znikają położenie i bieżące inicjatywy jako przyczyny rozwoju oraz związek ze wzrostem Ćennaju. |
+| `references/wzorce.md:194` → `196` | „W związku z obchodami” zmieniono na mocniejsze „były częścią obchodów”. |
+| `references/wzorce.md:203` → `205` | „Pomalowana” dopisuje sposób uzyskania kolorów; znika symbolizowanie różnorodnych krajobrazów. |
+| `references/wzorce.md:221` → `223` | Twierdzenie o roli rzeki zastąpiono pytaniem w polu; znika określenie „regionalnym”. |
+| `references/wzorce.md:225` → `227` | Znika prowadzenie aktywnych kont. Sama liczba obserwujących tego nie zachowuje. |
+| `references/wzorce.md:235` → `237` | „Przestrzenie” zawężono do „sal”, choć oryginał nie określa ich rodzaju. |
+| `references/wzorce.md:251` → `255` | Dopisano wspólnego sprawcę „Aktualizacja”; poprawę doświadczenia dzięki nowemu interfejsowi zastąpiono poprawą interfejsu. |
+| `references/wzorce.md:300` → `302` | Brak publicznego dostępu do informacji zastąpiono brakiem udokumentowania w dostępnych źródłach. |
+| `references/wzorce.md:323` → `325` | Dopisano, że nowa funkcja unika kosztu O(n²). Samo zastąpienie wcześniejszego rozwiązania tego nie dowodzi. |
+| `references/wzorce.md:340` → `344` | Sześć błędnych **wierszy** zmieniono na sześć spośród 123 **scaleń**; znika warunek przenoszenia pod nowego rodzica. |
+
+**2. Dane osobowe: zakaz jest zapisany, ale pozostaje sprzeczny.** `SKILL.md:85` jednocześnie nakazuje pozostawić wartości w treści właściwej i zabrania powtarzać je w jakiejkolwiek sekcji odpowiedzi. „Wersja końcowa” również jest sekcją odpowiedzi (`SKILL.md:59`). Szablon „Co zostawiłem” nadal wymaga `[cytat]`, bez wariantu opisowego dla danych (`SKILL.md:63`).
+
+**3. Pauzy: pierwszeństwo reguł nadal nie jest jednoznaczne.** `SKILL.md:39` nakazuje zmieniać pauzę w cytacie, natomiast `SKILL.md:81` ponownie nakazuje dosłowne przepisywanie cytatów, tytułów i nazw własnych. Dla tytułów nie dopisano równie wyraźnego wyjątku interpunkcyjnego.
+
+**4. Niepoparte twierdzenia: trzy pliki nadal nie mówią tego samego.** `SKILL.md:23` wymaga zachowania twierdzenia, zdjęcia wzmacniacza i dodania pola. Reguła w `references/wzorce.md:219` jest z tym zgodna, lecz przykład w `references/wzorce.md:223` zastępuje twierdzenie polem. `wpis.md:36` idzie dalej: „Nie miała, zdanie wyleciało”, bez wskazania, że autorka zleciła usunięcie.
+
+**5. Kalki: pozostała sprzeczność między instrukcjami.** `references/wzorce.md:143` warunkuje poprawianie „dedykowany” i „adresować” znaczeniem, lecz `SKILL.md:41` nadal nakazuje zastępować te słowa bezwarunkowo.
+
+## UWAGI
+
+- **Znaki i wskazywanie pauz:** skan wszystkich trzech plików wykazał **0 U+2014, 0 U+2013 i 0 hybrydowych cudzysłowów**. Wskazywanie pauz miejscem jest zapisane w `SKILL.md:55` i `SKILL.md:57`.
+- **Szablon:** wariant pustego wyniku i zakaz całościowego uspokajania są w `SKILL.md:69`; rozróżnienie sprawdzania od zapisu oraz kolejna tura w `SKILL.md:71`; „Anomalia w tekście” w `SKILL.md:49`.
+- **Odmowy:** osobne formuły są w `SKILL.md:91`, `93`, `95`, dopasowanie rejestru w `89`. Zapisu „tym samym zdaniem” nie ma. Pozostała drobna sprzeczność: `SKILL.md:71` wymaga odmowy jednym zdaniem, a każda formuła ma dwa.
+- **Karta:** przykład oznaczono jako przykładowy (`wpis.md:34`); „bez próbki” jest zgodne z Głosem (`wpis.md:54`, `SKILL.md:33`). Nie ma liczbowej deklaracji oszczędności, ale pozostało niepoparte ilościowe uogólnienie „zwykle kończy się w połowie” (`wpis.md:30`).
+- **Listy:** zamienniki „na ten moment” i „finalnie” są w `references/wzorce.md:143`; błędnej pozycji „przesunięte na zamiast o” nie ma. §12 uzależnia ocenę od częstości i użycia (`references/wzorce.md:166`). Data nie rozstrzyga pochodzenia (`references/wzorce.md:348`).
+
+## POZA REMITEM
+
+`wpis.md:44`: „ta sama puenta po każdym z sześciu akapitów raportu to automat” kategorycznie orzeka o pochodzeniu. Przeczy `references/wzorce.md:348`. **Narusza granicę orzekania, więc również wpływa na werdykt.**
+
+BLOKERY DO WYDANIA: TAK

@@ -1,0 +1,18 @@
+# Codex, cykl 3, 4 listopada 2026 (ostatnia odpowiedź)
+
+codex
+**BLOKERY**
+
+1. **A, §3 — dopisane uogólnienie.** `references/wzorce.md:70`: „Zespół nastawiony na wydajność gubi z oczu ludzi”. W oryginale wydajność staje się pułapką **„gdy zespoły zapominają o warstwie ludzkiej”** (`:68`). Nastawienie na wydajność nie oznaczało samo w sobie pomijania ludzi. To zmiana twierdzenia, nie zdjęcie aforyzmu.
+
+2. **A, §17 — zgubiona informacja o aktywności kont.** `references/wzorce.md:229`: „Prowadzi **aktywne konta**” → `:231`: „Prowadzi konta”. Aktywność jest sprawdzalną cechą kont; samo ich prowadzenie jej nie zachowuje. Zapowiedziana poprawka nie została naniesiona.
+
+3. **A, §26 — zgubiony warunek działania.** `references/wzorce.md:344`: „**przy przenoszeniu elementu pod nowego rodzica** powinien aktualizować `pipeline_id` razem z `parent_id`”. W `:348` zostały nazwy pól, lecz zniknęła informacja, kiedy należy je aktualizować. To konkret techniczny, nie inscenizacja.
+
+**UWAGI**
+
+- **B, C i E naniesione, bez nowej sprzeczności:** komentarz bez wartości danych (`SKILL.md:64`, `:86`), wyjątek od dosłowności dla pauz (`:82`), znaczenie kalk i odesłanie do wyjątków (`:41`; `references/wzorce.md:145`).
+- **D i F naniesione:** twierdzenie o rzece zachowane z polem (`references/wzorce.md:227`), usunięcie zdania jest decyzją autorki (`wpis.md:36`), poprawione sformułowania (`wpis.md:30`, `:44`) i odmowa „formułą z Granic” (`SKILL.md:72`).
+- Pozostałe przykłady A nie wykazują blokerów według zadanej zasady. Odrzucenia w §5 i §13 przyjmuję w tym remicie (`references/wzorce.md:88`, `:97`, `:177`, `:186`).
+
+BLOKERY DO WYDANIA: TAK

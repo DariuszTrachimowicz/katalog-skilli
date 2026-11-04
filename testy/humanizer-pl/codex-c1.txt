@@ -1,0 +1,47 @@
+# Codex, cykl 1, 4 listopada 2026 (ostatnia odpowiedź, bez logu narzędzi)
+
+**BLOKERY**
+
+**Przykłady uczą dopisywania faktów**, wbrew `SKILL.md:23`, `SKILL.md:66` i obietnicy `wpis.md:20`. Dotyczy to następujących przeróbek w `references/wzorce.md`:
+
+- `:25-35`: pojawiają się ciepło, dobre dopasowanie swetra, różnice skutków wyborów i zmieniony podmiot „zgadywania”.
+- `:42-78`: dochodzą wyszukiwanie, symetria, zmiana nawyków, przewidywalność układów i konkretne mechanizmy Next.js.
+- `:105-107`, `:145-147`, `:167-169`, `:220-222`: dochodzą rozmowy między sesjami, raportowanie wyników, przysmak i południe kraju; zainteresowanie badaczy staje się prowadzeniem badań.
+- `:249-266`: wzrost wydajności staje się przyspieszeniem ładowania, wzmocnienie bezpieczeństwa staje się dodaniem szyfrowania; pojawiają się nieistniejące w oryginale „badania”.
+- `:321-344`: dochodzą mapa haszująca, O(1), dwóch dostawców niepublikujących cen, konieczność telefonowania oraz zakres jednego/każdego konta.
+
+**Przykłady usuwają informacje i zmieniają pewność twierdzeń.** `references/wzorce.md:93-95` usuwa skutek restartu dla sesji; `:109-111` zamienia możliwości w zdarzenia dokonane; `:180-182` usuwa przemysłowy rozwój miasta; `:224-226` usuwa dwa media i ponad 500 000 obserwujących; `:233-235` zmienia „ponad 300 m²” na dokładnie 300 i dopowiada łączną powierzchnię sal; `:245-247` usuwa rozwinięcia skrótów; `:294-296` zamienia ograniczoną dokumentację w brak dokumentacji; `:338-344` usuwa mechanizm błędu, źródło odtworzenia danych i liczby 123/6. To przeczy `SKILL.md:24`, `SKILL.md:68` i `SKILL.md:86`.
+
+**Ochrona danych nie obejmuje całego komentarza.** `SKILL.md:74` zabrania kopiowania wartości do przykładów i „Co znalazłem”, ale nakazuje omówić je w „Co zostawiłem”. Tymczasem `SKILL.md:56` wymaga tam cytatu. Słabszy model może ponownie wypisać PESEL, konto lub adres. Potrzebny jest zakaz cytowania wartości we wszystkich sekcjach komentarza.
+
+**Reguły zachowania tekstu mają nierozstrzygnięte pierwszeństwo.** `SKILL.md:35` i `references/wzorce.md:123` zakazują wszystkich pauz, ale `SKILL.md:70` nakazuje dosłownie zachowywać cytaty, tytuły i nazwy, a `SKILL.md:50` wymaga cytowania znalezionych śladów. Cytat zawierający pauzę wymusza złamanie jednej reguły. Podobnie „zero kalk” (`SKILL.md:38`) koliduje z zachowaniem cytatów oraz nadrzędnością próbki autora (`SKILL.md:29`).
+
+**Lista kalk może zepsuć poprawny tekst.** `references/wzorce.md:142` traktuje przesunięcie spotkania „na” zamiast „o” jako błąd, chociaż „na piątek” wskazuje termin, a „o godzinę” wielkość przesunięcia. Ten sam wiersz niejasno odwraca relację „mieć sens”/„robić sens”. Bezwarunkowe usuwanie „adresować” i „dedykowany” (`SKILL.md:38`) obejmuje również poprawne znaczenia, np. adresowanie koperty i dedykowaną komuś książkę.
+
+**Zwykłe polskie słowa zostają uznane za ślad zawsze.** `references/wzorce.md:165` mówi „są śladem wszędzie”, choć lista obejmuje „dodatkowo”, „umożliwia”, „należy” i „w ramach” (`:164`). Przeczy to warunkowym opisom na tej samej liście oraz dopuszczeniu celowych zabiegów (`:348`). Szczególnie krótki tekst może dostać fałszywą diagnozę na podstawie jednego zwyczajnego słowa.
+
+**Orzekanie o pochodzeniu tekstu wraca przez referencje.** `references/wzorce.md:348` stwierdza, że tekst sprzed 30 listopada 2022 nie jest napisany przez AI. Data uruchomienia ChatGPT nie wyznacza początku generowania tekstów przez AI. To kategoryczna diagnoza pochodzenia, sprzeczna z ostrożnością wymaganą w `SKILL.md:76`.
+
+**Szablon nie obsługuje wyniku pustego.** `SKILL.md:43-59` nie określa odpowiedzi przy braku śladów, celowo zachowanych fragmentów ani luk. „Tylko jeśli są” stoi przy pozycji, więc nie wiadomo, czy usuwać również nagłówek. Brakuje także zakazu całościowego „wszystko w porządku”. Dla krótkiego tekstu model może wymyślić znaleziska, żeby wypełnić szablon. Potrzebne są jawne warianty pustych sekcji i ograniczony komunikat o zakresie sprawdzenia.
+
+**Wskazanie pliku automatycznie uruchamia nadpisanie.** `SKILL.md:62` nie odróżnia pliku wejściowego od docelowego. Polecenie „sprawdź ten plik” może skończyć się zapisem do oryginału. Ten wariant pomija też osobną sekcję luk i nie wskazuje, gdzie zadać pytania wymagane przez `SKILL.md:66`.
+
+**Gotowa odmowa nie odpowiada części odmów.** `SKILL.md:78-80` każe odpowiadać zdaniem o dopisywaniu liczb również na żądanie deklaracji o detektorze albo ocieplenia odmowy. Dodatkowo narzuca „Pan/Pani”, mimo obowiązku zachowania rejestru (`SKILL.md:31`). Osobna odpowiedź prawna (`SKILL.md:82`) przeczy nakazowi używania zawsze tego samego zdania.
+
+**Karta obiecuje inny kontrakt niż instrukcja.** „Zachowuje każde twierdzenie” (`wpis.md:20`) przeczy zachowaniu wyłącznie twierdzeń popartych (`SKILL.md:23`) i poleceniu wycinania niepopartych (`references/wzorce.md:218`). Karta zapowiada oznaczenie niepopartego twierdzenia (`wpis.md:53`), podczas gdy referencje dopuszczają jego usunięcie. „Bez próbki […] tekst neutralny” (`wpis.md:54`) przeczy zachowywaniu humoru, niepewności i dygresji bez próbki (`SKILL.md:31`).
+
+**UWAGI**
+
+1. **Routing wymaga doprecyzowania.** `SKILL.md:3` jawnie wyklucza mail i upraszczanie urzędowego pisma, ale nie wymienia tekstów o skutku prawnym, `notatka-ze-spotkania` ani `trudna-rozmowa`. Komunikaty firmowe nakładają się na `../prosty-jezyk/SKILL.md:3`; rozdziel cel „usuń maniery AI” od „uprość do zrozumienia”. Samo uruchamianie oceniam statycznie, bez testu modelu.
+
+2. **Hierarchia wzorców przeczy sobie.** `references/wzorce.md:5` deklaruje kolejność od najsilniejszych, ale `:283` nazywa §22 „najpewniejszym”. `:278` nakazuje wszystko z rodziny E usuwać bez przepisywania, choć `:292` i `:319` przewidują redakcję i zachowanie części treści.
+
+3. **Typografia sama pokazuje błędny wzorzec.** „Polski cudzysłów” w `SKILL.md:36`, `references/wzorce.md:270`, przykładzie „Po” `:274` i `wpis.md:40` zamyka prosty znak `"`, zamiast `”`. Model może kopiować tę hybrydę. Pauz U+2014 i półpauz U+2013 w trzech plikach nie znalazłem; zapis `[pauza]` w `references/wzorce.md:126-127` nie niesie ryzyka skopiowania tych znaków.
+
+4. **Nieuzasadnione obietnice i niedopowiedzenia karty.** Pół godziny pracy ręcznej i wynik w kilka minut (`wpis.md:30`) nie mają podstawy w analizowanych plikach. Historia z dokładnymi wynikami (`:34-36`) nie jest oznaczona jako scenariusz; przykład biura rachunkowego dodatkowo sugeruje temat podatkowy. Obiecane zamienniki „na ten moment” i „finalnie” (`:42`, `SKILL.md:38`) nie występują w wskazanej liście `references/wzorce.md:142`.
+
+5. **Kontrola kończy się za wcześnie.** `SKILL.md:24` sprawdza szkic, po czym `:25` pozwala ponownie przepisać całe akapity. Brakuje kontroli faktów po tej ostatniej zmianie. Wzorców jest rzeczywiście 26; cen w obcych walutach ani odwołań do obcego prawa nie znalazłem. Bez wcześniejszej wersji nie przypisuję usterek do konkretnych regresji.
+
+Następny krok, 2 minuty: doprecyzuj w `SKILL.md:74`, że wartości danych osobowych nie mogą trafiać do żadnej sekcji komentarza.
+
+BLOKERY DO WYDANIA: TAK
