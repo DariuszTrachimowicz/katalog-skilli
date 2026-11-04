@@ -55,4 +55,4 @@ Pliki: czysto (bramka 1). Paczka `paczki/humanizer-pl.skill` (od bramki mailowej
 
 ## Statusy
 
-`status: gotowy`, `claude: ok` (realne przebiegi wyżej), `gpt: brak`, `gemini: brak` (podnosi wyłącznie komenda `kompatybilnosc`).
+`status: gotowy`, `claude: ok` (realne przebiegi wyżej), `gpt: ok` (runda `kompatybilnosc` 4 listopada 2026, gpt-6.1-sol przez Codex CLI, raport `testy/wyniki-gpt/humanizer-pl.md`: A/B1/B2/C PASS, jedna uwaga [M]), `gemini: brak` (Gemini nieużywane decyzją Darka z 13 października 2026).

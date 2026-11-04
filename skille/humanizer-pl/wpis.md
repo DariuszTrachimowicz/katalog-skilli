@@ -11,7 +11,7 @@ tytulSeo: Jak sprawić, żeby tekst z AI nie brzmiał jak z AI, narzędzie po po
 opisSeo: "Wklej tekst napisany przez asystenta i dostań wersję, która brzmi jak Ty. Bez dopisanych faktów, z listą znalezionych śladów i tego, co zostało celowo."
 zgodnosc:
   claude: ok
-  gpt: brak
+  gpt: ok
   gemini: brak
 ---
 
