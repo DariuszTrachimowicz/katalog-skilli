@@ -1,3 +1,24 @@
+// Shared by both marketing workflows: source proof AND current CRM permission.
+function allows(snapshot, rows, email, now) {
+  if (!snapshot || snapshot.version !== 1 || !Number.isSafeInteger(snapshot.collected_at)
+      || now - snapshot.collected_at > 180000 || snapshot.collected_at > now + 30000
+      || !snapshot.people || typeof snapshot.people !== 'object' || Array.isArray(snapshot.people)) {
+    throw new Error('CRM: brak aktualnego odczytu zgód. Marketing wstrzymany.');
+  }
+  const normalized = String(email || '').trim().toLowerCase();
+  const person = Object.hasOwn(snapshot.people, normalized) ? snapshot.people[normalized] : null;
+  if (!person || person.allowed !== true || !Number.isSafeInteger(person.grant_at)
+      || !Number.isSafeInteger(person.withdrawn_at) || person.grant_at <= 0
+      || person.grant_at > now || person.grant_at <= person.withdrawn_at) return false;
+  for (const row of rows) {
+    if (row.typ !== 'wypisanie' || String(row.email || '').trim().toLowerCase() !== normalized) continue;
+    const withdrawn = Date.parse(row.kiedy);
+    if (!Number.isFinite(withdrawn) || withdrawn >= person.grant_at) return false;
+  }
+  return true;
+}
+
+
 const fs = require('fs');
 const TRYB = 'live';
 const CUTOFF = '2026-08-12';
@@ -21,6 +42,7 @@ try {
     else if (r.typ === 'potwierdzenie') stan[r.email].confirmedAt = r.kiedy;
     else if (r.typ === 'wypisanie') stan[r.email].unsub = true;
     else if (r.typ === 'pobranie-prosba') {
+      if (r.zgodaMarketing) stan[r.email].marketingAt = r.zgodaMarketing;
       (pobrania[r.email] = pobrania[r.email] || { token: null, darmowe: [], triale: [] }).token = r.token;
     } else if (r.typ === 'pobranie' && r.skill) {
       const p0 = (pobrania[r.email] = pobrania[r.email] || { token: null, darmowe: [], triale: [] });
@@ -121,7 +143,7 @@ function tresc(etap, s, fb, ctx) {
       p('zacząłeś/aś zamawiać skill <b>' + esc(ctx.produkt) + '</b> (zamówienie ' + esc(ctx.id) + '), ale płatność nie została dokończona.') +
       p('Nic nie przepadło: dokończysz w 2 minuty, a klucz licencji i paczka przyjdą mailem od razu po opłacie.') +
       przycisk(wroc, 'Dokończ zamówienie') +
-      p('Jeśli coś poszło nie tak przy płatności albo masz pytanie, po prostu odpisz na tego maila.') + podpisAX, t, true);
+      p('Jeśli coś poszło nie tak przy płatności albo masz pytanie, po prostu odpisz na tego maila.') + podpisAX, t);
     const text = 'Cześć,\n\nzacząłeś/aś zamawiać skill ' + ctx.produkt + ' (zamówienie ' + ctx.id + '), ale płatność nie została dokończona.\n\nDokończysz w 2 minuty: ' + wroc + '\nKlucz licencji i paczka przyjdą mailem od razu po opłacie.\n\nPytania? Odpisz na tego maila.\nZespół AI Xperts';
     return { temat: temat, html: html, text: text };
   }
@@ -189,6 +211,12 @@ for (const email in adresy) {
   const zam = zamowienia[email] || { kupil: false, otwarte: null };
   const token = s.token || pob.token;
   if (s.unsub) continue;
+  // Samo pobranie, trial, ankieta ani rozpoczęty zakup nie są zgodą na oferty.
+  // Wypis ma pierwszeństwo; wiadomości transakcyjne wysyłają osobne usługi.
+  if (!token) continue;
+  const crmSnapshot = JSON.parse(fs.readFileSync('/lejek/crm/zgody.json', 'utf8'));
+  const crmWithdrawals = fs.readFileSync('/katalog/zapisy.jsonl', 'utf8').split('\n').filter(Boolean).map(line => JSON.parse(line));
+  if (!allows(crmSnapshot, crmWithdrawals, email, now)) continue;
   if (zam.kupil) continue; // klient: zadnych ofert z lejka
   const e = etapy[email] || {};
   const fb = feedback[email];
@@ -220,6 +248,7 @@ for (const email in adresy) {
   if (!akcja) continue;
 
   const tr = tresc(akcja, { token: token }, fb || {}, ctx);
+  if (akcja === 'porzucone') tr.text += '\n\nWypis: ' + wypisU(token);
   let to, subject, html, text;
   if (TRYB === 'podglad') {
     to = PODGLAD_DO;

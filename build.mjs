@@ -120,7 +120,10 @@ function strona({ tytul, opis, tresc, sciezka, jsonld = null, skrypt = "", obraz
 <link rel="stylesheet" href="/styl.css?v=${W_STYL}">
 <link rel="icon" href="/ikona.png" type="image/png">
 <link rel="apple-touch-icon" href="/ikona.png">
-${cfg.analityka ? `<script defer src="${cfg.analityka.skrypt}" data-website-id="${cfg.analityka.idSerwisu}"></script>` : ""}
+<link rel="stylesheet" href="/subskrypcje-ui.css?v=${wersja("subskrypcje-ui.css")}">
+<script defer src="/subskrypcje-ui.js?v=${wersja("subskrypcje-ui.js")}"></script>
+${cfg.analityka ? `<script defer src="/ekosystem.js?v=${wersja("ekosystem.js")}"></script>
+<script defer src="${cfg.analityka.skrypt}" data-website-id="${cfg.analityka.idSerwisu}" data-domains="${cfg.domena}" data-exclude-search="true" data-exclude-hash="true" data-do-not-track="true" data-before-send="aixEcosystemBeforeSend"></script>` : ""}
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ""}
 </head>
 <body>
@@ -147,6 +150,7 @@ ${tresc}
 <footer>
   <div class="wrap foot">
     <div>${esc(cfg.nazwaSerwisu)} &middot; <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a></div>
+    <div>AiXperts: narzędzia i edukacja AI. <a href="https://d-x.pl/szkolenia-i-wdrozenia-ai/">Pilotaże, integracje i rozwój rozwiązań z Digital Xperts</a>.</div>
     <div>Twórca: ${esc(cfg.autor)} &middot; Skille na licencji <a href="${cfg.urlLicencji}" rel="license">${esc(cfg.licencja)}</a></div>
     <div><a href="/regulamin/">Regulamin</a> &middot; <a href="/prywatnosc/">Prywatność</a> &middot; Katalog nie jest powiązany z Anthropic, OpenAI ani Google.</div>
   </div>
@@ -182,6 +186,11 @@ function sekcjaGdzieDziala(s) {
 
 // Winietka nadawcy na górze każdej podstrony (koncept D, docs/motyw-pl/napis/e2-brand.md).
 const NADAWCA = `<div class="nadawca"><span class="n-nazwa">Skille <b>AI</b></span><i></i><span class="n-haslo">Pisane od zera pod polskie realia</span></div>`;
+
+const WDROZENIE_ZESPOLOWE = `<section class="blok"><h3>Ten skill ma pracować w całym zespole?</h3>
+    <p>Jeśli zadanie powtarza się u kilku osób, warto uzgodnić dane wejściowe, sposób sprawdzania wyniku i odpowiedzialność. Digital Xperts pomoże ocenić, czy wystarczy wspólny szablon, czy potrzebne jest dopasowanie narzędzia albo integracja.</p>
+    <p><a href="https://d-x.pl/szkolenia-i-wdrozenia-ai/#dxaif-wdrozenie">Sprawdź możliwość wdrożenia w firmie z Digital Xperts</a></p>
+  </section>`;
 
 // Mała pieczątka do bloku podpisu na ofertach (koncept B, e4-artdirector.md).
 const STEMPEL_OFERTY = `<svg class="p-stempel" viewBox="0 0 200 200" aria-hidden="true">
@@ -260,6 +269,8 @@ function stronaSkilla(s) {
     : `<div class="dl"><div><b>W przygotowaniu</b><span>Zrób test doboru, napiszemy, gdy będzie gotowa</span></div>
        <a class="btn ghost" href="/#test">Powiadom mnie</a></div>`}
 
+  ${WDROZENIE_ZESPOLOWE}
+
   ${sekcjeDodatkowe.map((x) => `<section class="blok"><h3>${esc(x.tytul)}</h3>${x.html}</section>`).join("")}
 
   <p class="disc">Materiał informacyjny. Nie zastępuje porady prawnej, podatkowej ani kadrowej.</p>
@@ -303,9 +314,11 @@ if(f.nazwa)dane.nazwa=f.nazwa.value;
 if(f.osoba)dane.osoba=f.osoba.value;
 if(f.telefon)dane.telefon=f.telefon.value;
 if(f.zgodaMarketing)dane.zgodaMarketing=f.zgodaMarketing.checked;
+if(f.zgodaSms){dane.zgodaSms=f.zgodaSms.checked;dane.wersjaZgodySms="2026-09-09";}
+var podpis=JSON.stringify(dane);if(f._pobraniePodpis!==podpis){f._pobraniePodpis=podpis;f._pobranieId=crypto.randomUUID();}dane.requestId=f._pobranieId;
 try{var o=await fetch("/api/pobranie",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(dane)});
 var d=await o.json().catch(function(){return{}});
-if(o.ok){f.closest(".dl").outerHTML='<div class="dl dl-ok"><div><b>Sprawdź skrzynkę</b><span>Link do pobrania poleciał na Twój adres. Nie widzisz go po minucie? Zajrzyj do spamu.</span></div></div>';}
+if(o.ok){var sms=dane.zgodaSms?(d.subskrypcje&&d.subskrypcje.sms==='oczekuje_potwierdzenia_numeru'?' Wybór SMS zapisany. Wysyłka reklam pozostaje nieaktywna do potwierdzenia numeru.':' Nie potwierdzono zapisu SMS. Możesz ponowić wybór w formularzu newslettera.') : '';f.closest(".dl").outerHTML='<div class="dl dl-ok"><div><b>Sprawdź skrzynkę</b><span>Link do pobrania wysłaliśmy na Twój adres. Nie widzisz go po minucie? Zajrzyj do spamu.'+sms+'</span></div></div>';}
 else{b.disabled=false;b.textContent="Wyślij link";var pole=f.querySelector("input");pole.setCustomValidity(d.blad||"Nie udało się wysłać");f.reportValidity();setTimeout(function(){pole.setCustomValidity("")},2500);}
 }catch(e){b.disabled=false;b.textContent="Spróbuj ponownie";}
 return false;});</script>`;
@@ -317,7 +330,7 @@ function formularzPobrania(idPaczki, etykieta, { trial = false } = {}) {
     ? `<input type="text" name="nazwa" required placeholder="Imię i nazwisko albo nazwa firmy" autocomplete="name" aria-label="Imię i nazwisko albo nazwa firmy">
       <input type="text" name="osoba" placeholder="Osoba do kontaktu (jeśli podałeś firmę)" autocomplete="name" aria-label="Osoba do kontaktu, jeśli firma">`
     : "";
-  const poleTelefon = `<input type="tel" name="telefon" placeholder="Telefon (opcjonalnie)" autocomplete="tel" aria-label="Telefon, opcjonalnie">`;
+  const poleTelefon = `<input type="tel" name="telefon" id="dl-phone-${idPaczki}" placeholder="Telefon, np. +48 500 100 200 (opcjonalnie)" autocomplete="tel" aria-label="Telefon z prefiksem kraju, opcjonalnie">`;
   const zgoda = trial
     ? `<label class="dl-zgoda"><input type="checkbox" name="zgodaMarketing"> <span>Chcę dostawać newsletter AiXperts (dobrowolne). Jako subskrybent dostaniesz kod rabatowy na wersję płatną.</span></label>`
     : "";
@@ -331,8 +344,9 @@ function formularzPobrania(idPaczki, etykieta, { trial = false } = {}) {
       ${poleTelefon}
       <button class="btn" data-umami-event="prosba-o-paczke" data-umami-event-skill="${idPaczki}">Wyślij link</button>
       ${zgoda}
+      <label class="dl-zgoda aix-sub-choice" data-aix-sms-phone="#dl-phone-${idPaczki}" hidden><input type="checkbox" name="zgodaSms" disabled> <span>Chcę otrzymywać od D-X.PL Michał Jaśkiewicz wiadomości SMS o ofertach, nowościach i promocjach AiXperts i Digital Xperts na podany numer telefonu. Zgodę mogę wycofać w każdej chwili.</span></label>
     </form></div>
-  <p class="dl-rodo">Dane posłużą do dostarczenia pliku i odnotowania pobrania. Zapis do newslettera tylko za Twoją zgodą, szczegóły w <a href="/prywatnosc/">polityce prywatności</a>.</p>
+  <p class="dl-rodo">Dane posłużą do dostarczenia pliku i odnotowania pobrania, również w naszym CRM. Zapis do newslettera tylko za Twoją zgodą, szczegóły w <a href="/prywatnosc/">polityce prywatności</a>.</p>
   ${SKRYPT_POBRANIA}`;
 }
 
@@ -365,7 +379,7 @@ function stronaOferty(s) {
   <p class="skrot">${esc(s.skrot)}</p>
   <h2 class="sr-only">Oferta</h2>
   <div class="oferta-akcje">
-    <a class="btn" href="https://licencje.aixperts.pl/zamow/${s.id}" data-umami-event="zakup" data-umami-event-skill="${s.id}">Zamów subskrypcję (${esc(s.cena || "cena w ofercie")})</a>
+    <a class="btn" href="https://licencje.aixperts.pl/zamow/${s.id}" data-umami-event="zakup-klik" data-umami-event-skill="${s.id}">Zamów subskrypcję (${esc(s.cena || "cena w ofercie")})</a>
     <span class="dl-rodo">Skill napisany od zera pod polskie realia i audytowany po polsku. Płatność online (BLIK, przelew, karta) albo faktura proforma. Klucz licencji i paczka przychodzą mailem.</span>
   </div>
   ${existsSync(join(KORZEN, "paczki-zewnetrzne", `${s.id}-trial.skill`))
@@ -374,6 +388,7 @@ function stronaOferty(s) {
   ${cialo}
   ${sekcjaGdzieDziala(s)}
   ${PODPIS_OFERTY}
+  ${WDROZENIE_ZESPOLOWE}
   <p class="disc">Materiał informacyjny. Nie zastępuje porady prawnej, podatkowej ani kadrowej.</p>
   <div class="powrot">
     <a class="btn ghost" href="/#katalog">&larr; Wróć do katalogu</a>
@@ -555,6 +570,10 @@ ${cfg.pracowniaWKatalogu ? `<section class="sec">
   </div>
 </section>
 
+<section class="sec" id="digital-xperts">
+  <div class="wrap">${WDROZENIE_ZESPOLOWE}</div>
+</section>
+
 <section class="sec" id="newsletter">
   <div class="wrap">
     <div class="news-baner">
@@ -562,14 +581,7 @@ ${cfg.pracowniaWKatalogu ? `<section class="sec">
         <h2>Prawo się zmienia. Niech Twoje skille zmieniają się razem z nim.</h2>
         <p>Raz na jakiś czas jeden mail: nowa umiejętność, aktualizacja pod zmianę przepisów (KSeF, AML, AI Act, RODO) albo konkretna porada. Zero spamu, wypiszesz się jednym kliknięciem w stopce.</p>
       </div>
-      <form class="news-form" onsubmit="return zapiszNewsletter(this)">
-        <div class="news-in">
-          <input type="email" name="email" required placeholder="twoj@adres.pl" autocomplete="email" aria-label="Adres e-mail do newslettera">
-          <button class="btn" data-umami-event="newsletter-zapis">Zapisz się</button>
-        </div>
-        <label class="news-zgoda"><input type="checkbox" name="zgoda" required> <span>Chcę dostawać newsletter AiXperts. Podany adres potwierdzę kliknięciem w link, mogę wypisać się w każdej chwili.</span></label>
-        <p class="news-info" aria-live="polite"></p>
-      </form>
+      <div data-aix-subskrypcje="katalog-newsletter"><p>Formularz zapisu wymaga JavaScript. Możesz też napisać do kontakt@aixperts.pl.</p></div>
     </div>
   </div>
 </section>
@@ -593,16 +605,7 @@ ${cfg.pracowniaWKatalogu ? `<section class="sec">
 .news-zgoda input{margin-top:.2rem;flex:0 0 auto}
 .news-info{font-size:.85rem;margin:.5rem 0 0;min-height:1.1rem}
 </style>
-<script>window.zapiszNewsletter||(window.zapiszNewsletter=async function(f){
-var b=f.querySelector("button"),info=f.querySelector(".news-info");
-if(!f.zgoda.checked){info.textContent="Zaznacz zgodę, żeby się zapisać.";return false;}
-b.disabled=true;b.textContent="Zapisuję…";
-try{var o=await fetch("/api/newsletter",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:f.email.value,zgoda:f.zgoda.checked})});
-var d=await o.json().catch(function(){return{}});
-if(o.ok){f.outerHTML='<p class="news-info" style="font-size:1rem">Dziękujemy. Wysłaliśmy link potwierdzający na Twój adres, kliknij go, żeby dokończyć zapis.</p>';}
-else{b.disabled=false;b.textContent="Zapisz się";info.textContent=d.blad||"Nie udało się zapisać, spróbuj ponownie.";}
-}catch(e){b.disabled=false;b.textContent="Spróbuj ponownie";}
-return false;});</script>`;
+`;
 
   const skrypt = `<script>
 const SKILLE=${JSON.stringify(daneQuizu)};
@@ -631,62 +634,25 @@ ${readFileSync(join(KORZEN, "szablony", "strona.js"), "utf8")}
 /* ---------- regulamin ---------- */
 
 function stronaRegulaminu() {
-  const tresc = `<main class="wrap"><article class="art">
-  ${NADAWCA}
-  <p class="krusz"><a href="/">Katalog</a> &rarr; Regulamin</p>
-  <h1>Regulamin</h1>
-  <p class="skrot">Krótko i po ludzku, bo w tym serwisie naprawdę niewiele się dzieje. Obowiązuje od 12 sierpnia 2026.</p>
-  <h2 class="sr-only">Treść regulaminu</h2>
-  <section class="blok"><h3>Kto prowadzi ten serwis</h3>
-    <p>Serwis ${esc(cfg.nazwaSerwisu)} (${esc(cfg.domena)}) prowadzi <strong>D-X.PL Michał Jaśkiewicz</strong>, ul. Więckowskiego 32 lok. 8, 90-728 Łódź, NIP 7262533563, REGON 362247556. Kontakt: <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>.</p></section>
-  <section class="blok"><h3>Co oferuje serwis</h3>
-    <p>Przeglądanie katalogu umiejętności AI oraz test doboru są bezpłatne i nie wymagają konta. Pobranie paczki .skill wymaga podania adresu e-mail, na który wysyłamy link do pliku. Część skilli pobierzesz za darmo na licencji GPL, część jest płatna, wtedy obowiązują warunki, licencja i cena podane w ofercie danego skilla; płatne skille mają też bezpłatne wersje trialowe pobierane tak samo, linkiem z maila.</p></section>
-  <section class="blok"><h3>Newsletter</h3>
-    <p>Zapis wymaga podania adresu e-mail i potwierdzenia go kliknięciem w link, bez potwierdzenia niczego więcej nie wysyłamy. Po potwierdzeniu dostajesz dobrany w teście zestaw umiejętności, a potem od czasu do czasu wiadomości o nowościach w katalogu oraz o szkoleniach i usługach prowadzącego serwis. Z listy wypisujesz się jednym kliknięciem w stopce każdej wiadomości, bez pytań i bez logowania.</p></section>
-  <section class="blok"><h3>Pliki .skill</h3>
-    <p>Darmowe umiejętności (licencja GPL) możesz używać w swojej pracy i w swojej firmie bez ograniczeń. Skille płatne obejmuje licencja komercyjna opisana w ich ofercie. Opisy są materiałem informacyjnym, nie zastępują porady prawnej, podatkowej ani kadrowej, a wyniki działania narzędzi AI zawsze warto sprawdzić przed użyciem.</p></section>
-  <section class="blok"><h3>Warunki techniczne</h3>
-    <p>Wystarczy przeglądarka internetowa z włączonym JavaScriptem, a do pobrania paczki i do newslettera, działający adres e-mail.</p></section>
-  <section class="blok"><h3>Reklamacje</h3>
-    <p>Coś nie działa albo masz zastrzeżenia? Napisz na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>, odpowiadamy najpóźniej w 14 dni.</p></section>
-  <section class="blok"><h3>Dane osobowe</h3>
-    <p>Wszystko o danych opisuje <a href="/prywatnosc/">polityka prywatności</a>, łącznie z tym, czego nie zbieramy.</p></section>
-  <section class="blok"><h3>Zmiany regulaminu</h3>
-    <p>O zmianach istotnych dla zapisanych na newsletter poinformujemy mailem. Data obowiązującej wersji jest zawsze na górze tej strony.</p></section>
-  <div class="powrot"><a class="btn ghost" href="/">&larr; Wróć do katalogu</a></div>
-</article></main>`;
-  return strona({ tytul: `Regulamin, ${cfg.nazwaSerwisu}`, opis: "Zasady korzystania z katalogu, pobierania skilli i newslettera.", sciezka: "/regulamin/", obrazek: "regulamin.png", tresc });
+  const dokument = readFileSync(join(KORZEN, "docs", "prawne", "regulamin-tresc.html"), "utf8");
+  const tresc = `<main class="wrap"><article class="art">${NADAWCA}
+    <p class="krusz"><a href="/">Katalog</a> &rarr; Regulamin</p>
+    ${dokument}
+    <div class="powrot"><a class="btn ghost" href="/">Wróć do katalogu</a></div>
+  </article></main>`;
+  return strona({ tytul: `Regulamin, ${cfg.nazwaSerwisu}`, opis: "Zasady katalogu, sprzedaży skilli, licencji, reklamacji i odstąpienia.", sciezka: "/regulamin/", obrazek: "regulamin.png", tresc });
 }
 
 /* ---------- strona prywatności ---------- */
 
 function stronaPrywatnosci() {
-  const tresc = `<main class="wrap"><article class="art">
-  ${NADAWCA}
-  <p class="krusz"><a href="/">Katalog</a> &rarr; Prywatność</p>
-  <h1>Prywatność</h1>
-  <p class="skrot">Krótko, bo naprawdę niewiele tu się dzieje.</p>
-  <h2 class="sr-only">Treść polityki prywatności</h2>
-  <section class="blok"><h3>Kto odpowiada za Twoje dane</h3>
-    <p>Administratorem danych jest <strong>D-X.PL Michał Jaśkiewicz</strong>, ul. Więckowskiego 32 lok. 8, 90-728 Łódź, NIP 7262533563. W każdej sprawie dotyczącej danych napisz na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>.</p></section>
-  <section class="blok"><h3>Co zbieramy</h3>
-    <p>Wyłącznie adres e-mail, w dwóch sytuacjach: gdy podasz go na końcu testu doboru (razem z listą umiejętności z wyniku, żeby wysłać Ci właściwy zestaw) oraz gdy prosisz o pobranie paczki .skill (razem z informacją, o którą paczkę chodzi, żeby wysłać Ci link do pliku i odnotować pobranie).</p>
-    <p>Samo przeglądanie katalogu nie wymaga podania żadnych danych.</p></section>
-  <section class="blok"><h3>Gdzie to trafia</h3>
-    <p>Na nasz własny serwer w Unii Europejskiej. Nie korzystamy z zewnętrznej platformy do zarządzania listą adresową, więc Twój adres nie jest przekazywany żadnej firmie trzeciej w celach marketingowych. Po potwierdzeniu zapisu adres trafia też do naszego systemu CRM, działającego na tym samym serwerze, u tego samego administratora.</p>
-    <p>Do samego wysłania wiadomości używamy dostawcy poczty, inaczej maile trafiałyby do spamu.</p></section>
-  <section class="blok"><h3>Potwierdzenie zapisu</h3>
-    <p>Po podaniu adresu dostajesz wiadomość z linkiem potwierdzającym. Dopóki w niego nie klikniesz, nie wyślemy Ci nic więcej. Jeśli ktoś wpisał Twój adres przez pomyłkę, wystarczy zignorować tę jedną wiadomość.</p></section>
-  <section class="blok"><h3>Jak się wypisać</h3>
-    <p>Link do wypisania jest w stopce każdej wiadomości i działa od razu, bez pytań i bez logowania. Możesz też napisać na <a href="mailto:${cfg.mailKontaktowy}">${cfg.mailKontaktowy}</a>, usuwamy adres wraz z całą historią.</p></section>
-  <section class="blok"><h3>Twoje prawa</h3>
-    <p>Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania i sprzeciwu, wystarczy mail na adres wyżej, bez formalności. Masz też prawo złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych, gdyby coś tu było nie tak.</p></section>
-  <section class="blok"><h3>Ciasteczka i statystyki</h3>
-    <p>Nie używamy ciasteczek śledzących ani narzędzi analitycznych firm trzecich. Wyniki testu trzymamy w pamięci Twojej przeglądarki, żeby nie znikały przy przewijaniu strony, nie wychodzą one nigdzie poza Twoje urządzenie, dopóki sam nie klikniesz „wyślij".</p>
-    <p>Oglądalność mierzymy własnym narzędziem (Umami) uruchomionym na tym samym serwerze co strona. Działa bez ciasteczek i nie buduje profilu: widzimy, które podstrony są odwiedzane, skąd przychodzą wejścia i ile osób kończy test lub pobiera plik, nie wiemy, kim jesteś, a dane nie są nikomu przekazywane. Dlatego nie wyświetlamy banera zgody: nie ma tu nic, na co trzeba by jej udzielać.</p></section>
-  <div class="powrot"><a class="btn ghost" href="/">&larr; Wróć do katalogu</a></div>
-</article></main>`;
-  return strona({ tytul: `Prywatność, ${cfg.nazwaSerwisu}`, opis: "Jakie dane zbiera katalog i co się z nimi dzieje.", sciezka: "/prywatnosc/", obrazek: "prywatnosc.png", tresc });
+  const dokument = readFileSync(join(KORZEN, "docs", "prawne", "prywatnosc-tresc.html"), "utf8");
+  const tresc = `<main class="wrap"><article class="art">${NADAWCA}
+    <p class="krusz"><a href="/">Katalog</a> &rarr; Prywatność</p>
+    ${dokument}
+    <div class="powrot"><a class="btn ghost" href="/">Wróć do katalogu</a></div>
+  </article></main>`;
+  return strona({ tytul: `Prywatność, ${cfg.nazwaSerwisu}`, opis: "Dane, odbiorcy, przechowywanie i prawa w serwisach AiXperts.", sciezka: "/prywatnosc/", obrazek: "prywatnosc.png", tresc });
 }
 
 /* ---------- build ---------- */
@@ -945,6 +911,9 @@ console.log("  strona  /regulamin/");
 
 // zasoby
 cpSync(join(KORZEN, "szablony", "styl.css"), join(WY, "styl.css"));
+cpSync(join(KORZEN, "szablony", "ekosystem.js"), join(WY, "ekosystem.js"));
+cpSync(join(KORZEN, "szablony", "subskrypcje-ui.js"), join(WY, "subskrypcje-ui.js"));
+cpSync(join(KORZEN, "szablony", "subskrypcje-ui.css"), join(WY, "subskrypcje-ui.css"));
 cpSync(join(KORZEN, "szablony", "ikona.png"), join(WY, "ikona.png"));
 cpSync(join(KORZEN, "szablony", "logo-wordmark-czarny.png"), join(WY, "logo-wordmark-czarny.png"));
 cpSync(join(KORZEN, "szablony", "fonty.css"), join(WY, "fonty.css"));

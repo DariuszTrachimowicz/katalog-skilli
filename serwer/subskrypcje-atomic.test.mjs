@@ -1,0 +1,12 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {spawn} from 'node:child_process';import {mkdtempSync,readFileSync,writeFileSync,existsSync} from 'node:fs';import {tmpdir} from 'node:os';import {join} from 'node:path';import {randomUUID} from 'node:crypto';import {fileURLToPath,pathToFileURL} from 'node:url';
+test('awaria centralnego wypisu po fsync legacy nadal blokuje marketing przed następnym importem',async t=>{
+const dir=mkdtempSync(join(tmpdir(),'sub-atomic-')),port=22000+Math.floor(Math.random()*10000),base=`http://127.0.0.1:${port}`,marker=join(dir,'fail-write'),pre=join(dir,'fault.mjs');
+writeFileSync(pre,`import fs from 'node:fs';import{syncBuiltinESMExports}from'node:module';const open=fs.openSync;fs.openSync=(path,flags,...args)=>{if(String(path).endsWith('subskrypcje.jsonl')&&flags==='a'&&fs.existsSync(${JSON.stringify(marker)}))throw new Error('Synthetic durable-write failure');return open(path,flags,...args);};syncBuiltinESMExports();`);
+const child=spawn(process.execPath,['--import',pathToFileURL(pre).href,fileURLToPath(new URL('./zapisy.mjs',import.meta.url))],{env:{...process.env,ZAPISY_HOST:'127.0.0.1',ZAPISY_PORT:String(port),ZAPISY_PLIK:join(dir,'zapisy.jsonl'),ZAPISY_TRYB:'log'},stdio:'ignore'});t.after(()=>child.kill());for(let i=0;i<80;i++){try{if((await fetch(base+'/api/zdrowie')).ok)break;}catch{}await new Promise(r=>setTimeout(r,50));}
+const email='atomic@example.invalid';const r=await fetch(base+'/api/subskrypcje',{method:'POST',headers:{Origin:'https://skille.aixperts.pl','Content-Type':'application/json'},body:JSON.stringify({email,telefon:'',zgodaEmail:true,zgodaSms:false,wersja:'2026-09-09',zrodlo:'katalog-newsletter',requestId:randomUUID()})});assert.equal(r.status,200);
+const log=readFileSync(join(dir,'wyslane-maile.log'),'utf8'),token=log.match(/subskrypcje\/wypisz\?t=([a-f0-9]{64})/)[1];writeFileSync(marker,'fail');
+const out=await fetch(base+'/api/subskrypcje/wypisz',{method:'POST',body:new URLSearchParams({t:token,kanal:'all'})});assert.equal(out.status,503);assert.equal(existsSync(join(dir,'zapisy.jsonl')),true);
+const legacy=readFileSync(join(dir,'zapisy.jsonl'),'utf8').trim().split('\n').filter(Boolean).map(JSON.parse);assert.ok(legacy.some(r=>r.typ==='wypisanie'&&r.email===email));
+const {default:guard}=await import('../../skille-platne/crm-centrum/marketing-guard.cjs');
+const now=Date.now();assert.equal(guard.allows({version:1,collected_at:now,people:{[email]:{allowed:true,grant_at:now-10000,withdrawn_at:0}}},legacy,email,now),false);
+});

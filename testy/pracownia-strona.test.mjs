@@ -45,6 +45,7 @@ test("publikuje Pracownię, ale pokazuje ją w katalogu i sitemapie tylko za fla
 
     const narzedzia = [
       ["Oferta behawioralna", "Sprzedaż", "1 kredyt", "oferta-behawioralna"],
+      ["Pisma rozwodowe", "Prawo", "5 kredytów", "pisma-rozwodowe"],
       ["Procedury KSeF", "Zgodność", "3 kredyty", "ksef-procedury"],
       ["Polityka AI", "Zgodność", "5 kredytów", "polityka-ai"],
       ["Procedura AML", "Zgodność", "5 kredytów", "procedura-aml"],
@@ -62,19 +63,21 @@ test("publikuje Pracownię, ale pokazuje ją w katalogu i sitemapie tylko za fla
         `brakuje przykładu: ${slug}`,
       );
     }
-    assert.equal(policz(strona, ">Zobacz przykład</a>"), 7);
+    assert.equal(policz(strona, ">Zobacz przykład</a>"), narzedzia.length);
 
     for (const fragment of [
       "10 zł netto",
       "30 zł netto",
       "99 zł netto",
-      "121,77 zł brutto",
+      "12,30 zł brutto (z VAT 23%)",
+      "36,90 zł brutto (z VAT 23%)",
+      "121,77 zł brutto (z VAT 23%)",
       "ważny 30 dni",
       "Poprawki i audyt w ramach tej samej sesji nie zużywają dodatkowych kredytów",
       "https://licencje.aixperts.pl/zamow/pracownia?pakiet=1",
       "https://licencje.aixperts.pl/zamow/pracownia?pakiet=5",
       "https://licencje.aixperts.pl/zamow/pracownia?pakiet=20",
-      "data-umami-event=\"zakup\"",
+      "data-umami-event=\"zakup-klik\"",
       "data-umami-event-skill=\"pracownia-5\"",
       "href=\"/#katalog\"",
       "BLIK, kartą lub przelewem",

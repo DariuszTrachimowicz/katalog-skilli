@@ -1,7 +1,7 @@
 {
   "domena": "skille.aixperts.pl",
   "nazwaSerwisu": "Skille po polsku",
-  "opisSerwisu": "Kuratorowany katalog umiejętności AI opisanych prostym językiem. Każda sprawdzona na polskich dokumentach, każda do pobrania za darmo.",
+  "opisSerwisu": "Skille AI po polsku do pracy z dokumentami: bezpłatne narzędzia oraz płatne subskrypcje. Porównaj zastosowania, wymagania i ceny w katalogu.",
   "pracowniaWKatalogu": true,
   "autor": "Dariusz Trachimowicz",
   "mailKontaktowy": "kontakt@aixperts.pl",
@@ -33,7 +33,8 @@
       "nadawca": "Skille po polsku <katalog@aixperts.pl>",
       "url": "https://api.resend.com/emails",
       "naglowekAutoryzacji": "Bearer WSTAW_KLUCZ_API"
-    }
+    },
+    "subskrypcjeBazaUrl": "https://newsletter.aixperts.pl"
   },
   "platformy": {
     "claude": {

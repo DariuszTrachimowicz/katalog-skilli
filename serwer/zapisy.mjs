@@ -16,6 +16,10 @@ import { readFileSync, appendFileSync, existsSync, mkdirSync } from "node:fs";
 import { randomBytes, timingSafeEqual, createHash } from "node:crypto";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import {createSubscriptions, appendDurable, ORIGINS} from './subskrypcje.mjs';
+import {createEventInbox} from './crm-events.mjs';
+import {newsletterConfirmation,mailMimeBody} from './mail-design.mjs';
+import {subscriptionPage,subscriptionForm,subscriptionResult,sendSubscriptionPage} from './subscription-pages.mjs';
 
 const KORZEN = join(dirname(fileURLToPath(import.meta.url)), "..");
 const cfg = JSON.parse(readFileSync(join(KORZEN, "config.json"), "utf8"));
@@ -25,6 +29,20 @@ if (process.env.ZAPISY_PLIK) C.plikDanych = process.env.ZAPISY_PLIK;
 if (process.env.ZAPISY_TRYB) C.wysylka = { ...C.wysylka, tryb: process.env.ZAPISY_TRYB };
 if (process.env.ZAPISY_PORT) C.port = parseInt(process.env.ZAPISY_PORT, 10);
 const BAZA = `https://${cfg.domena}`;
+const BAZA_SUBSKRYPCJI = C.subskrypcjeBazaUrl || BAZA;
+
+// Zachowujemy rzeczywisty wariant pokazany przy wyborze. Nie dopisujemy dowodów
+// do historycznych zapisów, które nie zawierały takiej informacji.
+const ZGODA_WERSJA = "2026-09-07";
+const TRESCI_ZGOD = {
+  "test-doboru": "Chcę też dostawać newsletter AiXperts z nowościami, szkoleniami i usługami (dobrowolne). Mogę wypisać się w każdej chwili.",
+  newsletter: "Chcę dostawać newsletter AiXperts. Podany adres potwierdzę kliknięciem w link, mogę wypisać się w każdej chwili.",
+  "pobranie-triala": "Chcę dostawać newsletter AiXperts (dobrowolne). Jako subskrybent dostaniesz kod rabatowy na wersję płatną.",
+};
+const dowodZgody = (zrodlo, udzielona, kiedy = new Date().toISOString()) => ({
+  wersja: ZGODA_WERSJA, tresc: TRESCI_ZGOD[zrodlo], kiedy, zrodlo,
+  udzielona: udzielona === true, kanal: "email",
+});
 
 const SKILLE = (() => {
   const p = join(KORZEN, "public", "dane", "skille.json");
@@ -47,6 +65,16 @@ function plikPaczki(id) {
 
 mkdirSync(dirname(C.plikDanych), { recursive: true });
 const DZIENNIK_MAILI = join(dirname(C.plikDanych), "wyslane-maile.log");
+const subskrypcje = createSubscriptions(join(dirname(C.plikDanych), 'subskrypcje.jsonl'),{publicBase:BAZA_SUBSKRYPCJI});
+const crmInbox=createEventInbox({dir:dirname(C.plikDanych),keyFile:process.env.AIX_CRM_EVENT_KEY_FILE||join(dirname(C.plikDanych),'crm-event.key')});
+
+async function mailSubskrypcji(requestId) {
+  const r=subskrypcje.reserveMail(requestId);
+  if (!r) return;
+  let accepted=false;
+  try { accepted=await wyslijMail({do:r.email,...newsletterConfirmation({base:BAZA_SUBSKRYPCJI,delivery:r.delivery})}); }
+  finally { subskrypcje.finishMail(requestId,accepted); }
+}
 
 // Ta sama wersja arkuszy co na stronach z builda, bez niej wracający
 // użytkownik dostaje stronę potwierdzenia ze starym CSS-em z cache.
@@ -68,7 +96,7 @@ function wczytaj() {
     .filter(Boolean);
 }
 
-const dopisz = (rekord) => appendFileSync(C.plikDanych, JSON.stringify(rekord) + "\n");
+const dopisz = (rekord) => appendDurable(C.plikDanych, rekord);
 
 // Stan wyliczamy z pełnej historii: ostatni wpis dla danego adresu wygrywa.
 // Dzięki temu plik jest dziennikiem zdarzeń, a nie stanem do nadpisywania -
@@ -86,6 +114,12 @@ function stan() {
 function znajdzPoTokenie(token) {
   for (const [email, r] of stan()) {
     if (r.token && bezpieczneRowne(r.token, token)) return { email, ...r };
+  }
+  const historia = wczytaj();
+  for (const r of historia) {
+    if (r.typ === "wynik-prosba" && r.token && bezpieczneRowne(r.token, token)) {
+      return { ...r, potwierdzony: historia.some((x) => x.typ === "wynik-potwierdzenie" && x.token === r.token) };
+    }
   }
   // Tokeny z prosb o paczke tez identyfikuja adres (wypis, feedback z ankiety).
   for (const r of wczytaj()) {
@@ -120,7 +154,7 @@ function przekroczonyLimit(ip) {
 // Minimalny klient SMTP (STARTTLS + AUTH PLAIN) na czystej bibliotece Node -
 // dokładnie tyle protokołu, ile potrzebuje ta usługa, i ani linijki zależności.
 // Obsługuje wyłącznie nasz przypadek: jeden odbiorca, tekst, UTF-8.
-function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy, adresat, temat, tresc }) {
+function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy, adresat, temat, tresc, html }) {
   return new Promise((zrobione, blad) => {
     let gniazdo = createConnection(port, host);
     let zakonczone = false;
@@ -160,7 +194,8 @@ function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy,
     // Nagłówki z polskimi znakami idą jako RFC 2047, treść jako base64 -
     // to zdejmuje wszystkie problemy 8-bitowych znaków w protokole.
     const slowo = (t) => (/[^\x20-\x7E]/.test(t) ? `=?UTF-8?B?${Buffer.from(t, "utf8").toString("base64")}?=` : t);
-    const cialo = Buffer.from(tresc, "utf8").toString("base64").replace(/(.{76})/g, "$1\r\n");
+    const mime = mailMimeBody(tresc,html);
+    const cialo = mime.body;
     const naglowki = [
       `From: ${slowo(nazwaNadawcy)} <${adresNadawcy}>`,
       `To: <${adresat}>`,
@@ -168,8 +203,7 @@ function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy,
       `Date: ${new Date().toUTCString()}`,
       `Message-ID: <${randomBytes(12).toString("hex")}@${cfg.domena}>`,
       "MIME-Version: 1.0",
-      'Content-Type: text/plain; charset=utf-8',
-      "Content-Transfer-Encoding: base64",
+      ...mime.headers,
     ].join("\r\n");
 
     (async () => {
@@ -198,7 +232,7 @@ function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy,
   });
 }
 
-async function wyslijMail({ do: adresat, temat, tresc }) {
+async function wyslijMail({ do: adresat, temat, tresc, html }) {
   const w = C.wysylka;
 
   if (w.tryb === "smtp") {
@@ -208,7 +242,7 @@ async function wyslijMail({ do: adresat, temat, tresc }) {
     try {
       await smtpWyslij({
         host: w.host, port: w.port || 587, uzytkownik: w.uzytkownik, haslo,
-        adresNadawcy: adres, nazwaNadawcy: nazwa, adresat, temat, tresc,
+        adresNadawcy: adres, nazwaNadawcy: nazwa, adresat, temat, tresc, html,
       });
       return true;
     } catch (e) {
@@ -229,7 +263,7 @@ async function wyslijMail({ do: adresat, temat, tresc }) {
   const odp = await fetch(w.url, {
     method: "POST",
     headers: { "Content-Type": "application/json", Authorization: w.naglowekAutoryzacji },
-    body: JSON.stringify({ from: w.nadawca, to: [adresat], subject: temat, text: tresc }),
+    body: JSON.stringify({ from: w.nadawca, to: [adresat], subject: temat, text: tresc, ...(html ? {html} : {}) }),
   });
   if (!odp.ok) {
     console.error(`Wysyłka nieudana (${odp.status}):`, await odp.text().catch(() => ""));
@@ -265,7 +299,7 @@ async function zglosDoCrm(rekord) {
   if (!odp.ok) throw new Error(`CRM odpowiedział ${odp.status}`);
 }
 
-const mailPotwierdzajacy = (token, zrodlo = "test") => {
+const mailPotwierdzajacy = (token, zrodlo = "test", marketing = true) => {
   const newsletter = zrodlo === "newsletter";
   return {
   temat: newsletter ? "Potwierdź zapis na newsletter" : "Potwierdź zapis, zestaw umiejętności",
@@ -279,15 +313,14 @@ Potwierdź kliknięciem, a ${newsletter ? "dopiszemy Cię do listy" : "wyślemy 
 ${BAZA}/api/potwierdz?t=${token}
 
 Jeśli to nie Ty, po prostu zignoruj tę wiadomość. Bez potwierdzenia nie wyślemy nic więcej i nie zapiszemy Cię na żadną listę.
-
-Mały bonus na start: jako subskrybent masz kod NEWSLETTER10, który daje 10% rabatu na każdy płatny skill.
+${marketing ? "\nPo potwierdzeniu zapiszemy Cię także na wybrany newsletter AiXperts. Wypis jest dostępny w każdej wiadomości." : "\nPotwierdzasz wyłącznie wysłanie wyniku testu. Nie zapisujemy Cię do newslettera."}
 
 ${cfg.nazwaSerwisu}
 ${BAZA}`,
   };
 };
 
-const mailZZestawem = (wynik, token, premium = null) => ({
+const mailZZestawem = (wynik, token, premium = null, marketing = true) => ({
   temat: "Twój zestaw umiejętności AI",
   tresc: `Oto zestaw dobrany na podstawie Twoich odpowiedzi.
 
@@ -324,9 +357,9 @@ JAK TO ZAINSTALOWAĆ
    ChatGPT: Skills → Upload from your computer (wymaga planu Business lub wyższego)
 3. Otwórz nową rozmowę i opisz, czego potrzebujesz. Umiejętność uruchomi się sama.
 
-Będziemy pisać o nowościach w katalogu, a od czasu do czasu o naszych szkoleniach
-i usługach. Nic częściej, niż trzeba, i zawsze z wypisem jednym kliknięciem:
-${BAZA}/api/wypisz?t=${token}
+${marketing ? `Będziemy pisać o nowościach w katalogu, a od czasu do czasu o naszych szkoleniach
+i usługach. Wypisujesz się jednym kliknięciem:
+${BAZA}/api/wypisz?t=${token}` : "To zamówiony przez Ciebie wynik testu. Ta prośba nie zapisuje Cię do newslettera."}
 
 ${cfg.nazwaSerwisu}
 ${BAZA}`,
@@ -359,23 +392,138 @@ function stronaHtml(res, tytul, tresc) {
 function czytajCialo(req, limit = 4096) {
   return new Promise((ok, blad) => {
     let dane = "";
+    let rozmiar = 0, przekroczono = false;
     req.on("data", (c) => {
+      if (przekroczono) return;
+      rozmiar += c.length;
       dane += c;
-      if (dane.length > limit) { blad(new Error("za duże żądanie")); req.destroy(); }
+      if (rozmiar > limit) { przekroczono = true; dane = ""; blad(new Error("za duże żądanie")); }
     });
-    req.on("end", () => ok(dane));
+    req.on("end", () => { if (!przekroczono) ok(dane); });
     req.on("error", blad);
   });
 }
 
 /* ---------- trasy ---------- */
 
+// Stałe formularze publiczne. Klient nie wybiera URL, klucza CRM ani pól leada.
+const FORMULARZE_CRM = new Map([
+  ["/api/formularze/kontakt", "87e5882626066318a1a971647a7f5dd6"],
+  ["/api/formularze/ankieta-warsztatowa", "c7149ad2caa50c335e10ebc746482192"],
+]);
+const POLA_CRM = { name: 200, email: 254, company: 200, phonenumber: 30, description: 8000, skad: 100 };
+const POLA_SUBSKRYPCJI={zgodaEmail:5,zgodaSms:5,wersjaZgodySms:10,requestId:36};
+const BLAD_FORMULARZA = "Nie możemy potwierdzić przyjęcia formularza. Skontaktuj się z nami: kontakt@aixperts.pl.";
+const potwierdzeniaWToku = new Map();
+
+async function formularzDoCrm(req, res, klucz) {
+  let pola;
+  try { pola = new URLSearchParams(await czytajCialo(req, 16384)); }
+  catch { return odpowiedz(res, 413, { ok: false, blad: "Formularz jest za duży." }); }
+  const widziane = new Set();
+  for (const [nazwa, wartosc] of pola) {
+    if ((!Object.hasOwn(POLA_CRM, nazwa)&&!Object.hasOwn(POLA_SUBSKRYPCJI,nazwa)) || widziane.has(nazwa) || wartosc.length > (POLA_CRM[nazwa]??POLA_SUBSKRYPCJI[nazwa])) {
+      return odpowiedz(res, 400, { ok: false, blad: "Nieprawidłowe pola formularza." });
+    }
+    widziane.add(nazwa);
+  }
+  const wybor={email:pola.get('email'),telefon:pola.get('phonenumber'),zgodaEmail:pola.get('zgodaEmail')==='true',zgodaSms:pola.get('zgodaSms')==='true',wersjaZgodySms:pola.get('wersjaZgodySms'),requestId:pola.get('requestId')};
+  for(const key of Object.keys(POLA_SUBSKRYPCJI))pola.delete(key);
+  pola.set("key", klucz);
+  try {
+    const odp = await fetch(`https://crm.aixperts.pl/forms/wtl/${klucz}`, {
+      method: "POST", redirect: "error", signal: AbortSignal.timeout(8000),
+      headers: { "Content-Type": "application/x-www-form-urlencoded", Accept: "application/json", "X-Requested-With": "XMLHttpRequest" },
+      body: pola.toString(),
+    });
+    if (!odp.ok) return odpowiedz(res, odp.status === 422 ? 422 : odp.status === 429 ? 429 : 502,
+      { ok: false, blad: odp.status === 422 ? "Uzupełnij wymagane pola formularza." : BLAD_FORMULARZA });
+    let bajty = 0;
+    const fragmenty = [];
+    for await (const fragment of odp.body) {
+      bajty += fragment.byteLength;
+      if (bajty > 16384) throw new Error("Nieprawidłowa odpowiedź formularza");
+      fragmenty.push(Buffer.from(fragment));
+    }
+    const wynik = JSON.parse(Buffer.concat(fragmenty).toString("utf8"));
+    if (wynik?.success !== true) return odpowiedz(res, 502, { ok: false, blad: BLAD_FORMULARZA });
+    const source=klucz===FORMULARZE_CRM.get('/api/formularze/kontakt')?'portal-kontakt':'portal-warsztaty';
+    const subscriptions=subskrypcje.subscribeOptional(wybor,'https://aixperts.pl',source);
+    if(subscriptions.requestId)try{await mailSubskrypcji(subscriptions.requestId);}catch{console.error('Nie potwierdzono maila subskrypcji formularza.');}
+    return odpowiedz(res, 200, { ok: true,...(wybor.zgodaEmail||wybor.zgodaSms?{subskrypcje:subscriptions}:{}) });
+  } catch (e) {
+    return odpowiedz(res, e.name === "TimeoutError" || e.name === "AbortError" ? 504 : 502,
+      { ok: false, blad: BLAD_FORMULARZA });
+  }
+}
+
 const serwer = createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
   const ip = (req.headers["x-forwarded-for"] || "").split(",")[0].trim() || req.socket.remoteAddress || "?";
 
   try {
+    if(url.pathname==='/api/crm-zdarzenia'){
+      if(req.method!=='POST')return odpowiedz(res,405,{ok:false});
+      if(!req.headers['content-type']?.startsWith('application/json'))return odpowiedz(res,415,{ok:false});
+      let raw;try{raw=await czytajCialo(req,32768);}catch{return odpowiedz(res,413,{ok:false});}
+      const result=crmInbox.accept(raw,req.headers);return odpowiedz(res,result.status,result.body);
+    }
     if (url.pathname === "/api/zdrowie") return odpowiedz(res, 200, { ok: true, zapisow: stan().size });
+
+    if (url.pathname === '/api/subskrypcje') {
+      const origin=req.headers.origin;
+      if (!Object.values(ORIGINS).includes(origin)) return odpowiedz(res,403,{ok:false,blad:'Niedozwolone źródło formularza.'});
+      res.setHeader('Access-Control-Allow-Origin',origin);res.setHeader('Vary','Origin');
+      if (req.method==='OPTIONS') {res.setHeader('Access-Control-Allow-Methods','POST, OPTIONS');res.setHeader('Access-Control-Allow-Headers','Content-Type');res.writeHead(204);return res.end();}
+      if(req.method!=='POST')return odpowiedz(res,405,{ok:false,blad:'Niedozwolona metoda.'});
+      if(!/^application\/json(?:;|$)/i.test(req.headers['content-type']||''))return odpowiedz(res,415,{ok:false,blad:'Wymagany JSON.'});
+      if(przekroczonyLimit(ip))return odpowiedz(res,429,{ok:false,blad:'Za dużo prób. Spróbuj później.'});
+      let body;try{body=JSON.parse(await czytajCialo(req));}catch{return odpowiedz(res,400,{ok:false,blad:'Nieprawidłowe dane.'});}
+      try {const accepted=subskrypcje.subscribe(body,origin);
+        // Write-ahead attempt: an ambiguous SMTP outcome is never blindly retried.
+        try {await mailSubskrypcji(accepted.result.requestId);}catch {console.error('Nie potwierdzono wysłania maila subskrypcji.');}
+        return odpowiedz(res,200,accepted.result);
+      }catch(e){return odpowiedz(res,e.status||503,{ok:false,blad:e.status?e.message:'Nie potwierdzono trwałego zapisu. Ponów z tym samym identyfikatorem.'});}
+    }
+    if(['/api/subskrypcje/potwierdz','/api/subskrypcje/wypisz'].includes(url.pathname)) {
+      res.setHeader('Referrer-Policy','no-referrer');
+      const confirm=url.pathname.endsWith('/potwierdz');
+      if(!['GET','POST'].includes(req.method))return odpowiedz(res,405,{ok:false});
+      try {
+        const form=req.method==='POST'?new URLSearchParams(await czytajCialo(req)):url.searchParams;
+        const token=form.get('t')||'';
+        const preference=subskrypcje.find(token,confirm?'confirm_hash':'unsubscribe_hash');
+        if(req.method==='GET')return sendSubscriptionPage(res,subscriptionForm({confirm,preference,token,statuses:{email:subskrypcje.status(preference.request_id,'email'),sms:subskrypcje.status(preference.request_id,'sms')}}));
+        if(confirm){const status=subskrypcje.confirm(token);return sendSubscriptionPage(res,subscriptionResult({confirm:true,status,hasSms:!!preference.consent_sms}));}
+        const channel=form.get('kanal');
+        // Legacy guard reads this file immediately before SMTP. Persist its block first;
+        // a failed second write returns 503 but cannot leave a fresh legacy permission.
+        if(channel==='all'&&!preference.request_only&&preference.email)appendDurable(C.plikDanych,{typ:'wypisanie',email:preference.email,kiedy:new Date().toISOString(),zrodlo:'subskrypcje-calosc'});
+        const r=subskrypcje.withdraw(token,channel);
+        return sendSubscriptionPage(res,subscriptionResult({confirm:false,requestOnly:r.request_only,channel}));
+      }catch(e){
+        const message=e.status?e.message:'Nie potwierdzono zapisu. Spróbuj ponownie.';
+        if((req.headers.accept||'').includes('text/html'))return sendSubscriptionPage(res,subscriptionPage({title:e.status===400||e.status===410?'Sprawdź link do subskrypcji':'Nie udało się zapisać zmiany',intro:message,body:'<div class="note">Otwórz pełny link z otrzymanej wiadomości. Jeśli problem się powtarza, skontaktuj się z nami: <a href="mailto:kontakt@aixperts.pl">kontakt@aixperts.pl</a>.</div><a class="button" href="https://aixperts.pl/">Przejdź do AiXperts</a>'}),e.status||503);
+        return odpowiedz(res,e.status||503,{ok:false,blad:message});
+      }
+    }
+
+    if (url.pathname.startsWith("/api/formularze/")) {
+      if (!FORMULARZE_CRM.has(url.pathname) && url.pathname !== "/api/formularze/feedback")
+        return odpowiedz(res, 404, { ok: false, blad: "Nie znaleziono formularza." });
+      if (req.method !== "POST") return odpowiedz(res, 405, { ok: false, blad: "Niedozwolona metoda." });
+      if (req.headers.origin !== "https://aixperts.pl") return odpowiedz(res, 403, { ok: false, blad: "Niedozwolone źródło formularza." });
+      if (!/^application\/x-www-form-urlencoded(?:;|$)/i.test(req.headers["content-type"] || ""))
+        return odpowiedz(res, 415, { ok: false, blad: "Nieprawidłowy format formularza." });
+      if (Number(req.headers["content-length"] || 0) > 16384)
+        return odpowiedz(res, 413, { ok: false, blad: "Formularz jest za duży." });
+      if (FORMULARZE_CRM.has(url.pathname)) {
+        if (przekroczonyLimit(ip)) return odpowiedz(res, 429, { ok: false, blad: "Za dużo prób z tego adresu." });
+        return await formularzDoCrm(req, res, FORMULARZE_CRM.get(url.pathname));
+      }
+      // Ten sam trwały zapis feedbacku co w API katalogu, bez pętli HTTP.
+      url.pathname = "/api/feedback";
+    }
 
     /* zapis */
     if (url.pathname === "/api/zapis" && req.method === "POST") {
@@ -399,17 +547,13 @@ const serwer = createServer(async (req, res) => {
         && SKILLE.some((s) => s.id === ciało.premium && s.platny)
         ? ciało.premium : null;
 
-      const obecne = stan().get(email);
-      // Adres już potwierdzony, nie zakładamy nowego wpisu, ale odpowiadamy
-      // tak samo jak przy nowym, żeby formularz nie zdradzał, kto jest na liście.
-      if (obecne?.potwierdzony) {
-        await wyslijMail({ do: email, ...mailZZestawem(wynik.length ? wynik : obecne.wynik, obecne.token, premium ?? obecne.premium) });
-        return odpowiedz(res, 200, { ok: true });
-      }
-
       const token = randomBytes(24).toString("hex");
-      dopisz({ typ: "zapis", email, wynik, premium, token, kiedy: new Date().toISOString(), ip });
-      await wyslijMail({ do: email, ...mailPotwierdzajacy(token) });
+      const kiedy = new Date().toISOString();
+      const zgoda = dowodZgody("test-doboru", ciało.zgodaMarketing === true, kiedy);
+      dopisz({ typ: "wynik-prosba", email, wynik, premium, token, kiedy, ip,
+        zgodaMarketing: zgoda.udzielona, zgoda, zrodlo: "test-doboru" });
+      if (!await wyslijMail({ do: email, ...mailPotwierdzajacy(token, "test", zgoda.udzielona) }))
+        return odpowiedz(res, 502, { blad: "Nie udało się wysłać wiadomości potwierdzającej." });
       return odpowiedz(res, 200, { ok: true });
     }
 
@@ -423,31 +567,59 @@ const serwer = createServer(async (req, res) => {
       const email = String(ciało.email || "").trim().toLowerCase();
       if (!POPRAWNY_MAIL.test(email) || email.length > 254)
         return odpowiedz(res, 400, { blad: "Nieprawidłowy adres e-mail." });
-      if (!ciało.zgoda) return odpowiedz(res, 400, { blad: "Zaznacz zgodę na newsletter." });
+      if (ciało.zgoda !== true) return odpowiedz(res, 400, { blad: "Zaznacz zgodę na newsletter." });
       const obecne = stan().get(email);
       if (obecne?.potwierdzony) return odpowiedz(res, 200, { ok: true });
       const token = randomBytes(24).toString("hex");
+      const kiedy = new Date().toISOString();
       dopisz({ typ: "zapis", email, wynik: [], premium: null, zrodlo: "newsletter",
-        token, kiedy: new Date().toISOString(), ip });
-      await wyslijMail({ do: email, ...mailPotwierdzajacy(token, "newsletter") });
+        token, kiedy, ip, zgoda: dowodZgody("newsletter", true, kiedy) });
+      if (!await wyslijMail({ do: email, ...mailPotwierdzajacy(token, "newsletter") }))
+        return odpowiedz(res, 502, { blad: "Nie udało się wysłać wiadomości potwierdzającej." });
       return odpowiedz(res, 200, { ok: true });
     }
 
     /* potwierdzenie */
     if (url.pathname === "/api/potwierdz") {
-      const rekord = znajdzPoTokenie(url.searchParams.get("t") || "");
-      if (!rekord)
+      const token = url.searchParams.get("t") || "";
+      while (potwierdzeniaWToku.has(token)) await potwierdzeniaWToku.get(token);
+      let zwolnij;
+      potwierdzeniaWToku.set(token, new Promise((resolve) => { zwolnij = resolve; }));
+      try {
+      const rekord = znajdzPoTokenie(token);
+      if (!rekord || !["wynik-prosba", "zapis"].includes(rekord.typ))
         return stronaHtml(res, "Link wygasł albo jest nieprawidłowy",
           "<p class='skrot'>Nie znaleźliśmy tego zapisu. Zrób test jeszcze raz, zajmie minutę.</p>");
 
+      if (rekord.typ === "wynik-prosba") {
+        const marketing = rekord.zgodaMarketing === true && rekord.zgoda?.udzielona === true;
+        if (!rekord.potwierdzony) {
+          if (!await wyslijMail({ do: rekord.email, ...mailZZestawem(rekord.wynik, rekord.token, rekord.premium, marketing) }))
+            return stronaHtml(res, "Nie udało się wysłać zestawu", "<p class='skrot'>Spróbuj otworzyć ten link ponownie później albo napisz na kontakt@aixperts.pl.</p>");
+          const kiedy = new Date().toISOString();
+          dopisz({ typ: "wynik-potwierdzenie", email: rekord.email, token: rekord.token, kiedy, zrodlo: "test-doboru" });
+          if (marketing) {
+            dopisz({ ...rekord, typ: "zapis", zrodlo: "newsletter", potwierdzony: undefined });
+            dopisz({ typ: "potwierdzenie", email: rekord.email, token: rekord.token, kiedy, zgoda: rekord.zgoda, zrodlo: "test-doboru" });
+            // Both the result and optional consent are imported from this journal; no parallel lead producer.
+          }
+        }
+        return stronaHtml(res, "Wynik testu wysłany", `<p class="skrot">Wysłaliśmy zamówiony zestaw na Twój e-mail.</p><p>${marketing ? "Potwierdziliśmy również wybrany newsletter. Wypis znajdziesz w wiadomościach." : "Nie zapisaliśmy Cię do newslettera. Ta prośba dotyczy tylko wyniku testu."}</p>`);
+      }
+
       if (!rekord.potwierdzony) {
-        dopisz({ typ: "potwierdzenie", email: rekord.email, kiedy: new Date().toISOString() });
+        dopisz({ typ: "potwierdzenie", email: rekord.email, kiedy: new Date().toISOString(),
+          ...(rekord.zgoda ? { zgoda: rekord.zgoda, token: rekord.token, zrodlo: rekord.zgoda.zrodlo } : {}) });
         await wyslijMail({ do: rekord.email, ...mailZZestawem(rekord.wynik, rekord.token, rekord.premium) });
         zglosDoCrm(rekord).catch((e) => console.error("Zgłoszenie do CRM nieudane:", e.message));
       }
       return stronaHtml(res, "Potwierdzone",
         `<p class="skrot">Zestaw poleciał na <strong>${rekord.email}</strong>. Powinien być w skrzynce w ciągu minuty, jeśli go nie ma, zajrzyj do spamu.</p>
          <section class="blok"><h3>Co dalej</h3><p>Będziemy pisać o nowościach w katalogu, a od czasu do czasu o naszych szkoleniach i usługach. Wypisujesz się jednym kliknięciem ze stopki każdej wiadomości.</p><p>Twój kod dla subskrybentów: <strong>NEWSLETTER10</strong> to 10% rabatu na każdy płatny skill.</p></section>`);
+      } finally {
+        potwierdzeniaWToku.delete(token);
+        zwolnij();
+      }
     }
 
     /* feedback z ankiety, rozwiązuje token→e-mail, zapisuje do pliku dla automatu (n8n),
@@ -508,18 +680,15 @@ const serwer = createServer(async (req, res) => {
       const nazwa = String(ciało.nazwa || "").trim().slice(0, 200) || null;
       const osoba = String(ciało.osoba || "").trim().slice(0, 120) || null;
       const telefon = String(ciało.telefon || "").replace(/[^0-9+ ]/g, "").trim().slice(0, 20) || null;
-      const zgodaMarketing = ciało.zgodaMarketing ? new Date().toISOString() : null;
+      const kiedy = new Date().toISOString();
+      const zgodaMarketing = ciało.zgodaMarketing === true ? kiedy : null;
 
       const token = randomBytes(24).toString("hex");
       dopisz({ typ: "pobranie-prosba", email, skill, nazwa, osoba, telefon,
-        zgodaMarketing, token, kiedy: new Date().toISOString(), ip });
+        zgodaMarketing, token, kiedy, ip, zgoda: dowodZgody("pobranie-triala", ciało.zgodaMarketing === true, kiedy), zrodlo: "pobranie-paczki" });
+      const dodatkoweSubskrypcje=subskrypcje.subscribeOptional({...ciało,email,zgodaEmail:false},'https://skille.aixperts.pl','katalog-pobranie');
 
-      // Zgoda marketingowa przy pobraniu = explicit opt-in; do n8n (newsletter
-      // + odbicie w Perfexie). Bez zgody nie zglaszamy nic marketingowego.
-      if (zgodaMarketing) {
-        zglosDoCrm({ email, nazwa: osoba || nazwa, telefon, zrodlo: "newsletter" })
-          .catch((e) => console.error("Newsletter (pobranie) do n8n nieudane:", e.message));
-      }
+      // Centrum imports the durable request independently of optional marketing consent.
 
       const trial = skill.endsWith("-trial");
       const s = nazwaSkilla(trial ? skill.replace(/-trial$/, "") : skill);
@@ -547,8 +716,8 @@ Jeśli to nie Ty prosiłeś o paczkę, po prostu zignoruj tę wiadomość.
 ${cfg.nazwaSerwisu}
 ${BAZA}`,
       });
-      if (!wyslany) return odpowiedz(res, 502, { blad: "Nie udało się wysłać maila, spróbuj za chwilę." });
-      return odpowiedz(res, 200, { ok: true });
+      if (!wyslany) return odpowiedz(res, 502, { blad: "Nie udało się wysłać maila, spróbuj za chwilę.",subskrypcje:dodatkoweSubskrypcje });
+      return odpowiedz(res, 200, { ok: true,subskrypcje:dodatkoweSubskrypcje });
     }
 
     /* pobranie paczki z linku w mailu */
@@ -562,24 +731,13 @@ ${BAZA}`,
           "<p class='skrot'>Nie znaleźliśmy tej paczki. Wejdź na stronę skilla i poproś o link jeszcze raz.</p>");
       }
 
-      // Pierwsze pobranie z tego linku: odnotuj i zgłoś lead (raz na token).
-      if (!wszystkie.some((r) => r.typ === "pobranie" && r.token === prosba.token)) {
-        dopisz({ typ: "pobranie", email: prosba.email, skill: prosba.skill, token: prosba.token, kiedy: new Date().toISOString() });
-        if (C.crm?.formularz) {
-          const trial = prosba.skill.endsWith("-trial");
-          const s = nazwaSkilla(trial ? prosba.skill.replace(/-trial$/, "") : prosba.skill);
-          const dane = new URLSearchParams({
-            key: C.crm.formularz.split("/").pop(),
-            name: prosba.email,
-            email: prosba.email,
-            description: `Pobranie paczki „${s.nazwa}${trial ? ", TRIAL płatnego skilla" : ""}" z ${cfg.domena}.`,
-          });
-          fetch(C.crm.formularz, { method: "POST", body: dane, signal: AbortSignal.timeout(8000) })
-            .catch((e) => console.error("Pobranie→CRM nieudane:", e.message));
-        }
-      }
-
       const dane = readFileSync(plik);
+      res.once('finish',()=>{
+        try{
+          if(!wczytaj().some(r=>r.typ==='pobranie'&&r.token===prosba.token))
+            dopisz({typ:'pobranie',email:prosba.email,skill:prosba.skill,token:prosba.token,kiedy:new Date().toISOString()});
+        }catch{console.error('Nie potwierdzono zapisu wydania paczki.');}
+      });
       res.writeHead(200, {
         "Content-Type": "application/zip",
         "Content-Disposition": `attachment; filename="${prosba.skill}.skill"`,
@@ -592,10 +750,13 @@ ${BAZA}`,
     /* wypisanie */
     if (url.pathname === "/api/wypisz") {
       const rekord = znajdzPoTokenie(url.searchParams.get("t") || "");
-      if (rekord) dopisz({ typ: "wypisanie", email: rekord.email, kiedy: new Date().toISOString() });
+      if (rekord) {
+        appendDurable(C.plikDanych,{ typ: "wypisanie", email: rekord.email, kiedy: new Date().toISOString(), zrodlo: "link-wypisu" });
+        subskrypcje.withdrawEmail(rekord.email);
+      }
       // Odpowiadamy tak samo niezależnie od tego, czy adres był na liście.
       return stronaHtml(res, "Wypisane",
-        "<p class='skrot'>Twój adres został usunięty razem z całą historią. Nie wyślemy Ci już nic.</p>");
+        "<p class='skrot'>Zakończyliśmy wysyłkę newslettera i wiadomości marketingowych na ten adres.</p><p>Wypis nie usuwa automatycznie danych zamówień ani historii. W sprawie usunięcia danych napisz na kontakt@aixperts.pl. Wiadomości potrzebne do obsługi zamówionej usługi mogą nadal przychodzić.</p>");
     }
 
     odpowiedz(res, 404, { blad: "Nie znaleziono." });

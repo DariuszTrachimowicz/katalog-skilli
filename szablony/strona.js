@@ -204,11 +204,13 @@ function pokazWynik() {
         <h3>Wysłać Ci ten zestaw na maila?</h3>
         <p>Dostaniesz go jako jedną kartkę, z instrukcją instalacji i krótkim opisem, kiedy której umiejętności użyć.</p>
         <div id="blad"></div>
-        <input type="email" id="mail" placeholder="twoj@adres.pl" autocomplete="email">
+        <input type="email" id="mail" placeholder="twoj@adres.pl" autocomplete="email" aria-label="Adres e-mail do wysłania zestawu">
+        <label class="consent" style="display:flex;gap:8px;align-items:flex-start;margin:4px 0 14px"><input type="checkbox" id="marketing" style="flex:none;width:18px;height:18px;margin:1px 0 0"><span>Chcę też dostawać newsletter AiXperts z nowościami, szkoleniami i usługami (dobrowolne). Mogę wypisać się w każdej chwili.</span></label>
         <button class="btn" id="wyslij" style="width:100%;justify-content:center">Wyślij mi zestaw</button>
-        <p class="consent">Wyślemy jedną wiadomość z prośbą o potwierdzenie, dopiero po kliknięciu linku dopiszemy Cię do listy. Potem będziemy pisać o nowościach w katalogu i od czasu do czasu o naszych szkoleniach. Wypisujesz się jednym kliknięciem. Szczegóły: <a href="/regulamin/">regulamin</a> i <a href="/prywatnosc/">prywatność</a>.</p>
+        <p class="consent">Wyślemy link potwierdzający adres, a po jego kliknięciu zamówiony zestaw. Otrzymasz go także bez zapisu do newslettera. Jeśli wybierzesz newsletter, to samo kliknięcie potwierdzi również ten dobrowolny zapis. Szczegóły: <a href="/regulamin/">regulamin</a> i <a href="/prywatnosc/">prywatność</a>.</p>
       </div>
     </div>
+    <p class="q-help">Chcesz używać tych skilli z zespołem? <a href="https://d-x.pl/szkolenia-i-wdrozenia-ai/#dxaif-wdrozenie">Sprawdź możliwość wdrożenia z Digital Xperts</a>.</p>
     <div class="quiz-foot"><button class="link-btn" id="odnowa">&larr; Zacznij test od nowa</button><span></span></div>`;
 
   $("wyslij").addEventListener("click", wyslij);
@@ -240,11 +242,11 @@ async function wyslij() {
     const odp = await fetch("/api/zapis", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: adres, wynik: wynik.map((s) => s.id), premium: premium ? premium.id : undefined }),
+      body: JSON.stringify({ email: adres, wynik: wynik.map((s) => s.id), premium: premium ? premium.id : undefined, zgodaMarketing: $("marketing").checked === true }),
     });
     const dane = await odp.json().catch(() => ({}));
 
-    if (!odp.ok) throw new Error(dane.blad || "Nie udało się zapisać.");
+    if (!odp.ok || dane.ok !== true) throw new Error(dane.blad || "Nie udało się potwierdzić przyjęcia prośby.");
 
     window.umami?.track("zapis"); // sam fakt zapisu, adres nie trafia do statystyk
     $("cap").innerHTML = `<div class="sent"><strong>Sprawdź skrzynkę.</strong><br>

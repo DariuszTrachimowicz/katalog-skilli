@@ -5,7 +5,7 @@ status: platny
 wersja: 1.0.1
 platny: true
 kotwice: procedury KSeF w firmie, awaria KSeF co robić
-cena: od 149 zł/mies
+cena: od 149 zł netto/mies
 poziom: Zaawansowany
 aktualizacja: 2026-08-24
 skrot: "Buduje z firmą albo biurem rachunkowym jej własną dokumentację operacyjną KSeF: macierz odpowiedzialności firma-biuro, kartę postępowania przy braku dostępu do systemu, matrycę uprawnień i certyfikatów, rejestr odrzuceń, plan testów i zasady płatności z numerem KSeF."

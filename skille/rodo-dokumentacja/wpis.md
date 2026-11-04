@@ -5,7 +5,7 @@ status: platny
 wersja: 1.0.1
 platny: true
 kotwice: rejestr czynności przetwarzania, upoważnienia RODO dla pracowników
-cena: od 179 zł/mies
+cena: od 179 zł netto/mies
 poziom: Zaawansowany
 aktualizacja: 2026-08-24
 skrot: "Zamienia mapę danych firmy w pięć projektów dokumentacji RODO: inwentaryzację przetwarzań, rejestr czynności przetwarzania, prostą analizę ryzyka, upoważnienia z ewidencją i rejestr luk. Podstaw prawnych nie dobiera: zostawia je specjaliście z gotowym materiałem pytań."

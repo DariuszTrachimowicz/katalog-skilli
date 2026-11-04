@@ -5,7 +5,7 @@ status: platny
 wersja: 1.0.3
 platny: true
 kotwice: instytucja obowiązana AML, biuro rachunkowe AML
-cena: od 149 zł/mies
+cena: od 149 zł netto/mies
 poziom: Zaawansowany
 aktualizacja: 2026-08-24
 skrot: Buduje z instytucją obowiązaną jej dokumentację AML dopasowaną do realnej działalności, ocenę ryzyka instytucji, procedurę wewnętrzną, ocenę ryzyka klienta liczoną skryptem ze śladem obliczeń, ewidencje i checklisty środków bezpieczeństwa finansowego.
