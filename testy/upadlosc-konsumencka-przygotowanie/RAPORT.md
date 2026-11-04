@@ -41,4 +41,4 @@ Cykl 1 (`skill-C.md`) i cykl 2 (`retest-C.md`): anomalia zgłoszona przed analiz
 
 ## Statusy
 
-`claude: ok` po realnych przebiegach na Claude Sonnet (A, B1, B2, C w dwóch cyklach). `gpt: brak`, `gemini: brak` do czasu komendy `kompatybilnosc`.
+`claude: ok` po realnych przebiegach na Claude Sonnet (A, B1, B2, C w dwóch cyklach). `gpt: ok` po rundzie `kompatybilnosc` 4 listopada 2026 wieczorem (gpt-6.1-sol, A/B1/B2/C PASS, raport `testy/wyniki-gpt/upadlosc-konsumencka-przygotowanie.md`). `gemini: brak` (nieużywane).

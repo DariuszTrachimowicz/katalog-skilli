@@ -11,7 +11,7 @@ tytulSeo: Upadłość konsumencka krok po kroku, co przygotować przed wnioskiem
 opisSeo: "Skill AI po polsku: przebieg upadłości konsumenckiej, teczka pod wniosek do KRZ (wierzyciele, majątek, przychody i koszty), sprawdzenie kompletności. Bez pisania wniosku za Ciebie."
 zgodnosc:
   claude: ok
-  gpt: brak
+  gpt: ok
   gemini: brak
 ---
 
