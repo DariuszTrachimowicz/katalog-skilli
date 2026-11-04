@@ -41,6 +41,7 @@ test('formularze i zgody: rzeczywisty lokalny HTTP, dziennik i fikcyjne odbiorni
   await mkdir(join(dir, 'data'));
   await copyFile(join(root, 'serwer', 'zapisy.mjs'), join(dir, 'serwer', 'zapisy.mjs'));
   await copyFile(join(root, 'serwer', 'subskrypcje.mjs'), join(dir, 'serwer', 'subskrypcje.mjs'));
+  for (const m of ['crm-events.mjs', 'mail-design.mjs', 'subscription-pages.mjs']) await copyFile(join(root, 'serwer', m), join(dir, 'serwer', m));
   await writeFile(join(dir, 'paczki', 'sample-trial.skill'), 'synthetic package');
   await writeFile(join(dir, 'config.json'), JSON.stringify({ domena:'skille.aixperts.pl', nazwaSerwisu:'Synthetic', zapisy:{port,limitNaGodzine:10000,plikDanych:join(dir,'data','zapisy.jsonl'),wysylka:{tryb:'http',url:`http://127.0.0.1:${upPort}/mail`,nadawca:'synthetic@example.invalid',naglowekAutoryzacji:'synthetic-test-only'},crm:{formularz:`http://127.0.0.1:${upPort}/crm`,feedback:`http://127.0.0.1:${upPort}/feedback`}} }));
   await writeFile(join(dir, 'network.mjs'), `const f=globalThis.fetch; globalThis.fetch=(url,opts)=>{const u=new URL(url); if(u.hostname==='crm.aixperts.pl'){return f('http://127.0.0.1:${upPort}'+u.pathname,opts);} if(u.origin==='http://127.0.0.1:${upPort}')return f(url,opts); throw new Error('External network forbidden');};`);

@@ -23,7 +23,7 @@ function prepare(fixture, reply) {
   form.querySelector=selector=>selector.includes(':checked')?{value:'synthetic'}:null;
   let request,completion;
   const window={location:{search:''},scrollTo(){}};
-  const context={window,document:{getElementById:node,querySelectorAll:()=>[]},URLSearchParams,AbortController,setTimeout,clearTimeout,console,
+  const context={window,document:{getElementById:node,querySelectorAll:()=>[]},URLSearchParams,AbortController,setTimeout,clearTimeout,console,crypto,
     fetch:(url,opts)=>{request={url,opts}; const p=reply instanceof Error?Promise.reject(reply):Promise.resolve(reply);completion=p;return p;}};
   const scripts=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)].map(x=>x[1]);
   const code=scripts.find(x=>x.includes('var ADRES ='));
