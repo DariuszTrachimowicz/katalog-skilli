@@ -31,8 +31,8 @@ Trzecie naruszenie ma istotne zastrzeżenie, opisane niżej.
 
 ## Wysokość kar
 
-- do **100% kwoty podatku** wykazanego na fakturze;
-- przy fakturze **bez wykazanego podatku**: do **18,7% kwoty należności ogółem**.
+- do **100 % kwoty podatku** wykazanego na fakturze;
+- przy fakturze **bez wykazanego podatku**: do **18,7 % kwoty należności ogółem**.
 
 Obie wartości są górnymi granicami, a nie kwotami naliczanymi automatycznie w pełnej wysokości. Skala jest jednak taka, że przy jednej większej fakturze mówimy o kwocie, która przewyższa roczny koszt uporządkowania procesu w firmie.
 
@@ -74,3 +74,21 @@ Ocena skutków konkretnego dokumentu w rozliczeniu, w tym pytania o odliczenie i
 - Cztery tryby szczególne, awaria całkowita i zwolnienie z obowiązku przesłania: ksef.podatki.gov.pl/wyjasnienia/co-warto-wiedziec-przed-startem-ii-etapu-wdrozenia-krajowego-systemu-e-faktur/ (sprawdzono 24 sierpnia 2026)
 - Tryb offline24: warunki i termin przesłania: ksef.podatki.gov.pl/informacje-ogolne-ksef-20/tryb-offline24/ (sprawdzono 24 sierpnia 2026)
 - Ogłoszenia o awarii i niedostępności: Biuletyn Informacji Publicznej Ministerstwa Finansów (sprawdzono 24 sierpnia 2026)
+
+## Najczęstsze pytania
+
+### Od kiedy obowiązują kary za KSeF?
+
+Przepisy o karach za KSeF stosuje się do naruszeń dokonanych od 1 stycznia 2027 roku. Nie działają wstecz i nie obejmują naruszeń z 2026 roku. Znaczenie ma data samego naruszenia, dlatego rok 2026 to czas na uporządkowanie procesu fakturowania w firmie.
+
+### Jakie są kary za KSeF?
+
+Kara wynosi do 100 % kwoty podatku wykazanego na fakturze, a przy fakturze bez wykazanego podatku do 18,7 % kwoty należności ogółem. To górne granice, a nie kwoty naliczane automatycznie w pełnej wysokości. Aktualność katalogu naruszeń i wysokości kar sprawdź na ksef.podatki.gov.pl.
+
+### Za co grozi kara w KSeF?
+
+Kara dotyczy trzech naruszeń: niewystawienia faktury w KSeF mimo obowiązku, wystawienia faktury w okresie awarii albo niedostępności niezgodnie z udostępnionym wzorem oraz nieprzesłania w terminie faktury z trybu offline24, trybu awaryjnego albo okresu niedostępności. Przepisy stosuje się do naruszeń dokonanych od 1 stycznia 2027 roku.
+
+### Czy brak numeru KSeF po awarii całkowitej jest naruszeniem?
+
+Nie, brak numeru KSeF przy fakturze zwolnionej z przesłania przez ogłoszoną awarię całkowitą jest skutkiem trybu, a nie naruszeniem. Firma musi jednak umieć to wykazać, czyli mieć zapisane, która faktura powstała w którym trybie i kiedy ogłoszono awarię całkowitą. Bez ewidencji taki dokument wygląda jak zapomniany.

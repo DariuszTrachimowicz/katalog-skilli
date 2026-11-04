@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Zamienia trzy zdania szkicu w gotową wiadomość służbową, z właściwym tonem, poprawnym zwrotem i strukturą, którą odbiorca zrozumie od razu.
+korzysc: Masz gotowego maila z właściwym tonem i zwrotem i wiesz, gdzie odbiorca może go odczytać inaczej, niż zakładasz.
 szukaj: mail, e-mail, korespondencja, mail do urzędu, zwroty grzecznościowe, odmowa, przesunięcie terminu, wołacz, Witam, Szanowni Państwo, z poważaniem
 tytulSeo: Jak napisać maila służbowego po polsku, narzędzie AI
 opisSeo: Wpisz, o co chodzi, i dostań gotowego maila po polsku. Właściwy ton do urzędu, klienta i szefa. Odmowa, przypomnienie, przeprosiny. Za darmo.
@@ -73,3 +74,25 @@ Nie pisze treści, która sama z siebie coś przesądza, i nie ma znaczenia, czy
 Nie wstawia też do maili podstaw prawnych. Jeśli podasz znak sprawy albo numer decyzji, przeniesie dokładnie to, co napisałaś, i nic nie dopisze od siebie. Mail powołujący się na przepis, którego autor nie sprawdził, potrafi zaszkodzić bardziej niż mail bez żadnego przepisu.
 
 I nie przepisuje do treści numerów PESEL, kont bankowych ani adresów zamieszkania, nawet jeśli znajdzie je w wątku, który wkleisz. Zostawia nawias, żeby wpisał je człowiek, który wie, komu je wysyła.
+
+## Najczęstsze pytania
+
+### Czy AI napisze mi maila służbowego po polsku ze szkicu?
+
+Tak, wystarczy szkic, wklejony wątek albo dwa zdania opisu sytuacji. Skill dobiera stopień formalności do odbiorcy, pilnuje zwrotów grzecznościowych i układa treść tak, żeby prośba była widoczna od razu. Do tego mówi, czego w mailu brakuje i gdzie może zostać odebrany inaczej, niż zakładasz.
+
+### Czy AI napisze mi wypowiedzenie albo wezwanie do zapłaty mailem?
+
+Nie. Skill nie pisze treści, która sama coś przesądza: wypowiedzenia, odstąpienia od umowy, odwołania od decyzji, wezwania do zapłaty ani wiadomości o nieprzedłużeniu umowy, także jako wzoru czy szkieletu. Napisze za to maila, którym prześlesz dalej pismo przygotowane przez specjalistę.
+
+### Czy w mailu służbowym wypada zacząć od „Witam”?
+
+Lepiej nie, bo tak wita gospodarz gości, a do przełożonego i nieznajomego brzmi to protekcjonalnie. To najczęstszy błąd w polskiej skrzynce. Skill pilnuje też wołacza, czyli „Panie Marku”, a nie „Panie Marek”, przecinka po zwrocie i wielkiej litery w „Pan”, „Pani” i „Państwo”.
+
+### Czy mogę wysłać wniosek do urzędu zwykłym mailem?
+
+Może to nie wystarczyć, bo przy wniosku wysłanym zwykłym mailem urząd może uznać, że sprawa w ogóle się nie zaczęła. Skill o tym ostrzeże i podpowie, żeby sprawdzić skrzynkę do e-Doręczeń, ale nie rozstrzygnie, czy pismo złożono skutecznie. Samych wniosków i odwołań nie pisze, od tego jest osobny skill.
+
+### Czego potrzebuję i czy muszę podłączać skrzynkę pocztową?
+
+Nie musisz, bo skill niczego nie wysyła i nie widzi skrzynki, tylko oddaje tekst do skopiowania. Jest darmowy, na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. Działa na dowolnym płatnym planie Claude, a w ChatGPT na planach Business, Enterprise, Edu i Healthcare.

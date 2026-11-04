@@ -81,3 +81,21 @@ Spisanie tych ról, wyzwalaczy i terminów w jeden dokument, według którego da
 - Certyfikaty KSeF typu 1 i typu 2: ksef.podatki.gov.pl/informacje-ogolne-ksef-20/certyfikaty-ksef/ (sprawdzono 24 sierpnia 2026)
 - Struktura logiczna FA(3): ksef.podatki.gov.pl/informacje-ogolne-ksef-20/struktura-logiczna-fa-3/ (sprawdzono 24 sierpnia 2026)
 - Ogłoszenia o awarii i niedostępności: Biuletyn Informacji Publicznej Ministerstwa Finansów (sprawdzono 24 sierpnia 2026)
+
+## Najczęstsze pytania
+
+### Do kiedy trzeba dosłać fakturę z trybu offline24?
+
+Fakturę z trybu offline24 przesyła się do KSeF nie później niż następnego dnia roboczego po dniu wystawienia. Faktura wystawiona w piątek wieczorem musi więc trafić do systemu w poniedziałek. Sobota i niedziela terminu nie konsumują, ale też go nie przedłużają.
+
+### Czy z trybu offline24 można korzystać bez awarii KSeF?
+
+Tak, tryb offline24 jest dobrowolny i decyzja należy do wystawcy, bez żadnego ogłoszenia. Nie ma ograniczenia co do kręgu podatników ani częstotliwości korzystania z niego. Warunki dotyczą dokumentu: faktura musi powstać według struktury FA(3), w postaci elektronicznej, i trafić do systemu w terminie.
+
+### Ile kodów QR ma faktura wystawiona w trybie offline24?
+
+Faktura z trybu offline24 ma dwa kody QR, jeśli jej wizualizację udostępniasz uprawnionemu odbiorcy poza systemem przed przesłaniem do KSeF, a jeden KOD I z numerem KSeF po przesłaniu. Do utworzenia KODU II potrzebny jest certyfikat KSeF typu 2, a nie certyfikat typu 1 służący do uwierzytelniania.
+
+### Czym tryb offline24 różni się od trybu awaryjnego?
+
+Tryb offline24 uruchamia sam wystawca, a tryb awaryjny wynika z awarii ogłoszonej przez Ministerstwo Finansów. Różnią się też terminy: fakturę z offline24 przesyła się następnego dnia roboczego po wystawieniu, a z trybu awaryjnego w ciągu 7 dni roboczych od zakończenia awarii. Przy awarii całkowitej faktur nie przesyła się wcale.

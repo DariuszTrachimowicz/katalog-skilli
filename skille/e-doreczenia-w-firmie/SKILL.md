@@ -53,9 +53,10 @@ Rama do przedstawienia (całość
 [WYMAGA WERYFIKACJI: https://www.gov.pl/web/e-doreczenia/harmonogram]):
 nowe wpisy do rejestru przedsiębiorców KRS i do CEIDG dostają obowiązek przy
 rejestracji; podmioty z rejestru przedsiębiorców KRS sprzed 2025 zostały
-objęte w trakcie 2025 roku; firmy z CEIDG sprzed 2025 mają termin
+objęte w trakcie 2025 roku; firmy z CEIDG sprzed 2025 miały termin
 1 października 2026, chyba że wcześniej złożyły wniosek o zmianę wpisu (wtedy
-obowiązek powstał przy zmianie); zawody zaufania publicznego mają własne,
+obowiązek powstał przy zmianie); ten termin już minął, więc firmie z tej grupy
+bez adresu mów rzeczowo, że adres zakłada się teraz, bez straszenia skutkami; zawody zaufania publicznego mają własne,
 wcześniejsze terminy i bywa, że odrębny ADE zawodowy. Zawieszenie
 działalności obowiązku nie zdejmuje. Przy sytuacji naprawdę spornej (likwidacja, przekształcenia) wskaż
 pytania do doradcy i harmonogram jako źródło; nie mów ogólnikowo, że „urząd

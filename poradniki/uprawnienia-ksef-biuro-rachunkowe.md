@@ -62,3 +62,21 @@ Spisanie tego jako ról, kroków i terminów, żeby działało niezależnie od t
 
 - Model uprawnień, biuro jako podmiot uprawniony, zakresy uprawnień, zgłoszenie pierwszej osoby uprawnionej: ksef.podatki.gov.pl/modul-certyfikatow-i-uprawnien-mcu/ (sprawdzono 24 sierpnia 2026)
 - Zakres obowiązku i daty wejścia obowiązków: ksef.podatki.gov.pl/informacje-ogolne-ksef-20/zakres-obowiazkowego-ksef/ (sprawdzono 24 sierpnia 2026)
+
+## Najczęstsze pytania
+
+### Jak nadać biuru rachunkowemu dostęp do KSeF?
+
+Klient nadaje biuru jako podmiotowi uprawnienie bezpośrednie do wystawiania faktur, do dostępu do faktur albo do obu, opcjonalnie z prawem dalszego przekazywania. Dopiero potem biuro nadaje swoim pracownikom uprawnienia pośrednie. Robi się to w Aplikacji Podatnika KSeF 2.0 albo w programie księgowym zintegrowanym z KSeF.
+
+### Czy trzeba nadawać uprawnienia KSeF każdej księgowej z biura osobno?
+
+Nie, klient nie nadaje uprawnień pracownikom biura z osobna i nie musi znać ich nazwisk. Biuro dostaje uprawnienie jako podmiot, a swoim ludziom nadaje uprawnienia pośrednie, jeśli ma prawo dalszego przekazywania. Klient nie widzi w systemie uprawnień pośrednich nadanych wewnątrz biura, więc warto o nie pytać.
+
+### Czy można dać komuś takie samo uprawnienie jak właściciel w KSeF?
+
+Nie, uprawnienie właścicielskie jest systemowe, wynika z numeru identyfikacji podatkowej podatnika i nie nadaje się go drugiej osobie. Zaufanej osobie można natomiast nadać szerokie uprawnienie do zarządzania uprawnieniami i do pracy w systemie. Z takich nadanych uprawnień buduje się zastępstwo w firmie.
+
+### Czy umowa z biurem rachunkowym wystarczy do pracy w KSeF?
+
+Nie, samo podpisanie umowy o księgowość nie tworzy żadnego uprawnienia w KSeF. Dopóki klient nie nada biuru uprawnienia bezpośredniego, biuro nie wystawi ani nie pobierze faktury. Przed nadaniem warto ustalić na piśmie zakres uprawnienia i to, czy biuro dostaje prawo dalszego przekazywania.

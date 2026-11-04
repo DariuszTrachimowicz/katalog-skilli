@@ -6,6 +6,7 @@ wersja: 1.0.2
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Pokazuje rachunek pod Twoją ceną, ile naprawdę kosztuje Cię zlecenie, razem z tym, o czym się zapomina. Ceny nie podaje.
+korzysc: Wiesz, ile naprawdę kosztuje Cię zlecenie i poniżej jakiej kwoty zaczynasz do niego dokładać.
 szukaj: wycena, stawka godzinowa, cennik, ile wziąć za zlecenie, koszty firmy, freelancer, JDG, B2B, rentowność, marża, poprawki
 tytulSeo: Ile naprawdę kosztuje Cię zlecenie, rachunek wyceny usługi po polsku
 opisSeo: Rozłóż cenę usługi na czynniki. Czas, koszty stałe, materiały, poprawki i koszty niewidoczne jednoosobowej działalności. Po polsku, za darmo.
@@ -68,3 +69,29 @@ Dowolny płatny plan Claude i swoje liczby: mniej więcej ile godzin zajmie robo
 Nie podaje ceny. Ani stawki, ani widełek, ani „orientacyjnie”. Nie mówi „to się opłaca” i nie ocenia, czy jesteś za tani. Nie doradza formy opodatkowania, nie liczy podatku do zapłaty i nie pisze oferty do klienta. Jeśli poprosisz, odmówi tym samym zdaniem i wróci do liczenia.
 
 To granica postawiona świadomie. Cena zależy od Twojej pozycji na rynku, kolejki zleceń i tego, jak bardzo chcesz akurat tę robotę, czyli od rzeczy, których model nie widzi. Liczba podana mimo to brzmi jak wynik pomiaru, a jest zgadywaniem, i ląduje w Twojej ofercie. Narzędzie robi więc rzecz uczciwszą: pokazuje rachunek, żebyś to Ty postawił cyfrę, wiedząc, co się pod nią kryje.
+
+## Najczęstsze pytania
+
+### Ile wziąć za zlecenie, żeby do niego nie dokładać?
+
+Skill nie poda ceny, ale policzy próg, czyli kwotę, poniżej której zlecenie dokłada do Twoich kosztów. Rozkłada cenę na czas pracy, godziny nierozliczalne, koszty stałe przypadające na zlecenie, materiały i ryzyko poprawek, a potem pokazuje trzy warianty z konsekwencjami.
+
+### Czy AI poda mi stawkę godzinową albo widełki cenowe?
+
+Nie, ani ceny, ani stawki, ani widełek, nawet orientacyjnie. Cena zależy od Twojej pozycji na rynku, kolejki zleceń i tego, jak bardzo chcesz akurat tę robotę, a tego model nie widzi. Skill pokaże za to, ile zostaje Ci przy każdej kwocie, którą rozważasz.
+
+### Jakie liczby muszę przygotować do wyceny?
+
+Wystarczą Twoje liczby w przybliżeniu: ile godzin zajmie praca, ile wynoszą koszty firmy w miesiącu i ile godzin miesięcznie faktycznie sprzedajesz. Jeśli czegoś nie wiesz, skill policzy resztę i wypisze, czego zabrakło. Kwot ZUS, składki zdrowotnej i podatku nie podaje z pamięci, tylko o nie pyta.
+
+### Ile tracę na rabacie albo dodatkowej turze poprawek?
+
+Skill pokazuje to na Twoich liczbach: ile zostaje Ci na godzinę pracy przy cenie z rabatem i bez niego oraz po dodatkowej turze poprawek, której nie było w ofercie. Dzięki temu widzisz skutek ustępstwa, zanim się na nie zgodzisz.
+
+### Czy cenę dla klienta podawać netto czy brutto?
+
+To trzeba ustalić zawsze i skill o to pyta, bo pomylenie netto z brutto to najczęstsza strata kilkunastu procent w całej wycenie. Pyta też, kim jest klient: dla firmy rozliczającej VAT podatek jest sprawą techniczną, a dla osoby prywatnej, fundacji czy firmy zwolnionej z VAT to realna podwyżka ceny.
+
+### Ile kosztuje skill do wyceny usług i gdzie działa?
+
+Nic, skill jest darmowy i udostępniony na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. W Claude działa na dowolnym płatnym planie, w ChatGPT wymaga planu Business, Enterprise, Edu lub Healthcare, a w Gemini w Polsce instrukcje wkleja się do rozmowy albo Gema.

@@ -6,6 +6,7 @@ wersja: 1.0.2
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Tłumaczy umowę o zachowaniu poufności po ludzku, co objęto tajemnicą, na jak długo, ile kosztuje wpadka i co jeszcze ukryto w dokumencie poza poufnością.
+korzysc: Wiesz, co obejmuje tajemnica, ile kosztuje wpadka i co doklejono do NDA, zanim odeślesz podpisany skan.
 szukaj: NDA, umowa o zachowaniu poufności, klauzula poufności, tajemnica przedsiębiorstwa, kara umowna, zakaz konkurencji, portfolio, freelancer, przetarg, rekrutacja
 tytulSeo: Dostałeś NDA do podpisu? Sprawdź, co właściwie podpisujesz, po polsku
 opisSeo: Wgraj umowę o zachowaniu poufności i zobacz prostym językiem, co objęto tajemnicą, na jak długo i ile kosztuje naruszenie. Po polsku, bez konfiguracji.
@@ -67,3 +68,29 @@ Dowolny płatny plan Claude i dokument w PDF, w Wordzie albo wklejony jako zwyk�
 Nie pisze NDA, nie proponuje poprawek, nie układa listy zapisów do wykreślenia, nie pisze maila do drugiej strony i nie odpowiada na pytanie „czy ten zapis jest ważny”. Nie mówi też „możesz podpisać”. Jeśli poprosisz, odmówi i wróci do wyjaśniania.
 
 Ta granica jest postawiona świadomie. Narzędzie, które generuje klauzule poufności, wchodzi w buty prawnika i zostawia Ci odpowiedzialność za skutki. To narzędzie robi coś węższego i uczciwszego: sprawia, że wiesz, co podpisujesz, i wiesz, o co zapytać, zanim odeślesz skan.
+
+## Najczęstsze pytania
+
+### Czy AI sprawdzi mi NDA przed podpisaniem?
+
+Tak, odpowiada na siedem pytań: w którą stronę płynie tajemnica, co jest poufne, po co wolno tego używać, co poufne nie jest, jak długo to obowiązuje, ile kosztuje naruszenie i co jeszcze ukryto w dokumencie. Na koniec dostajesz gotowe pytania do prawnika i do drugiej strony.
+
+### Czy skill powie mi, czy podpisać to NDA?
+
+Nie, decyzja o podpisie zostaje przy Tobie. Skill nie pisze NDA ani poprawek, nie układa listy zapisów do wykreślenia, nie pisze maila do drugiej strony i nie rozstrzyga o ważności zapisów. Tłumaczy za to, co dany zapis oznacza w praktyce, i przygotowuje pytanie, które zadasz.
+
+### Czy przez NDA nie będę mógł pokazać projektu w portfolio?
+
+Może tak być, jeśli definicja informacji poufnych obejmuje sam fakt współpracy, i skill mówi to wprost jako osobną konsekwencję. Sprawdza też, jak długo poufność trwa po zakończeniu rozmów, bo od tego zależy, przez ile lat nie wpiszesz klienta do portfolio ani nie wspomnisz o nim rekruterowi.
+
+### Czy w NDA może być ukryty zakaz konkurencji?
+
+Tak, NDA to dokument, do którego najczęściej dokleja się rzeczy niemające nic wspólnego z poufnością. Skill sprawdza, czy pod nagłówkiem o poufności nie siedzi zakaz konkurencji, zakaz podbierania ludzi i klientów albo przeniesienie praw do pomysłów pokazanych na spotkaniu.
+
+### Czy mogę wkleić NDA do AI, skoro dokument jest poufny?
+
+To zależy od dokumentu, bo wiele NDA obejmuje tajemnicą własną treść i sam fakt rozmów. Skill ostrzeże Cię o tym jednym zdaniem, ale dopiero po wklejeniu treści, dlatego przy poważnej sprawie przeczytaj dokument najpierw sam i wklej tylko fragment, który Cię niepokoi.
+
+### Czy to darmowe i na jakim planie działa?
+
+Tak, skill jest darmowy na licencji GPL, a plik `.skill` dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. W Claude działa na dowolnym płatnym planie, w ChatGPT wymaga planu Business, Enterprise, Edu lub Healthcare, a w Gemini w Polsce instrukcje wkleja się do rozmowy albo Gema.

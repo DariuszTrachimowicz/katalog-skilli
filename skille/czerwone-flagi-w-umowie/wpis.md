@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Czyta umowę, którą masz podpisać, i mówi po ludzku, na co uważać. Na koniec daje gotowe pytania do prawnika.
+korzysc: Wiesz, na co uważać w umowie, zanim ją podpiszesz, i idziesz do prawnika z gotowymi pytaniami.
 szukaj: umowa, kontrakt, prawnik, ryzyko, kara umowna, zakaz konkurencji, freelancer, B2B, najem
 tytulSeo: Na co uważać w umowie B2B, darmowe narzędzie AI po polsku
 opisSeo: Wgraj umowę i zobacz prostym językiem, które zapisy są ryzykowne. Kary umowne, zakaz konkurencji, prawa autorskie, ukryty etat. Za darmo, po polsku.
@@ -67,3 +68,29 @@ Pierwsza wersja zawierała błąd. Napisaliśmy w niej, że termin płatności p
 Wyszło to przy teście, w którym osobny model dostał zadanie obalić każde twierdzenie w pliku. Ten sam test wykrył trzy miejsca, w których dało się obejść granicę „nie piszę klauzul”, wystarczyło poprosić drugi raz.
 
 Stąd zasada, która obowiązuje teraz w całym katalogu: **skill uzasadnia skutkiem, nigdy przepisem.** Nie „przekracza ustawową granicę”, tylko „to bardzo długo jak na płatność między firmami, zapytaj prawnika, czy taki termin jest tu dopuszczalny”. Dzięki temu narzędzie nie dezaktualizuje się przy każdej nowelizacji i nie wkłada w usta użytkownika twierdzeń, których nie da się obronić.
+
+## Najczęstsze pytania
+
+### Czy AI sprawdzi mi umowę przed podpisaniem?
+
+Tak, czyta umowę i dzieli ryzyka na poważne, warte negocjacji i typowe. Przy każdym podaje miejsce w dokumencie, krótki cytat, wyjaśnienie po ludzku i pytanie do zadania, a na samej górze odpowiedzi dostajesz 3-5 gotowych pytań do prawnika, które skopiujesz w mail.
+
+### Czy napisze mi poprawki do umowy albo maila do kontrahenta?
+
+Nie, nie pisze umów, klauzul ani poprawek, nie układa listy rzeczy do wykreślenia i nie pisze maili do kontrahenta, także gdy poprosisz drugi raz. Zamiast tego tłumaczy, co dany zapis oznacza w praktyce, i przygotowuje pytanie, które zadasz prawnikowi albo drugiej stronie.
+
+### Jakie umowy mogę w ten sposób sprawdzić?
+
+Umowy między firmami, w tym B2B, umowy zlecenia i o dzieło, umowy z freelancerami i najem. Umowy konsumenckie i regulaminy są poza zakresem, a samodzielne NDA obsługuje osobny skill „Przed podpisem NDA”. Umowę wgrywasz w PDF, w Wordzie albo wklejasz jako zwykły tekst.
+
+### Czy sprawdzi umowę, która podlega prawu obcemu?
+
+Nie przeanalizuje jej, ale rozpozna to i powie w pierwszym zdaniu. Lista ryzyk jest zbudowana pod polskie realia, takie jak weksel in blanco, dobrowolne poddanie się egzekucji czy znamiona ukrytego etatu przy współpracy B2B, więc przy innym prawie może nie mieć zastosowania.
+
+### Co, jeśli umowa odsyła do załącznika, którego nie dostałem?
+
+Skill zgłosi, że załącznika brakuje, ale nie wymyśli, co w nim było. Gdy umowa wypycha większość treści do załączników, analiza wyjdzie powierzchowna i zostanie to wprost zaznaczone. Przy słabym skanie, na przykład zdjęciu kartki, lepiej wkleić tekst ręcznie.
+
+### Czy to darmowe i na jakim planie działa?
+
+Tak, skill jest darmowy na licencji GPL, a plik `.skill` dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. W Claude działa na dowolnym płatnym planie, w ChatGPT wymaga planu Business, Enterprise, Edu lub Healthcare, a w Gemini w Polsce instrukcje wkleja się do rozmowy albo Gema.

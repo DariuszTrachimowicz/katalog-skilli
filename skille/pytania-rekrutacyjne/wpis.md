@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Z opisu stanowiska robi gotowy zestaw pytań na rozmowę i prostą kartę oceny. Pokazuje też, o co lepiej nie pytać i czym to zastąpić.
+korzysc: Zadajesz wszystkim kandydatom te same pytania i po rozmowach porównujesz odpowiedzi, a nie wrażenia.
 szukaj: rekrutacja, rozmowa kwalifikacyjna, pytania do kandydata, karta oceny, zatrudnianie, mała firma, HR, niedozwolone pytania, widełki, ogłoszenie o pracę
 tytulSeo: Pytania na rozmowę kwalifikacyjną, gotowy zestaw dla pracodawcy
 opisSeo: Wklej opis stanowiska i dostań pytania na rozmowę z kandydatem, kartę oceny i listę pytań, których w Polsce lepiej nie zadawać. Za darmo, po polsku.
@@ -74,3 +75,29 @@ Ocena wystawiona przez model wygląda na obiektywną, a jest zgadywaniem z drugi
 Testy osobowości robią to samo w gorszej wersji. Rzetelne narzędzia psychologiczne mają autorów, normy i wymagają uprawnień do stosowania. Test wymyślony na poczekaniu mierzy głównie to, jak kandydat chce wypaść, a decyzja zapada o czyimś życiu zawodowym.
 
 Zostaje rzecz, którą to narzędzie robi uczciwie: daje Ci pytania, które faktycznie sprawdzają pracę, i kartę, na której sam zapiszesz, co usłyszysz.
+
+## Najczęstsze pytania
+
+### Jak przygotować się do rozmowy kwalifikacyjnej z kandydatem?
+
+Wklejasz opis stanowiska albo ogłoszenie, a skill oddaje zestaw pytań z dopytaniami i sygnałami mocnej i słabej odpowiedzi. Do tego dostajesz plan rozmowy z podziałem na minuty i pustą kartę oceny w skali od 1 do 4, którą wypełniasz sam po rozmowie.
+
+### Czy AI powie mi, którego kandydata zatrudnić?
+
+Nie. Skill nie punktuje CV, nie mówi, kto wypadł lepiej, i nie wypełni karty oceny, nawet gdy wkleisz notatki z rozmowy. Rozmowę prowadzisz Ty i Ty odpowiadasz za wybór. Nie układa też pytań pod konkretne CV, bo zestaw ma być jeden dla wszystkich kandydatów.
+
+### O co lepiej nie pytać kandydata na rozmowie o pracę?
+
+Skill nie odpowiada „tak” ani „nie”, tylko mówi, czym dane pytanie grozi i czym je zastąpić. Zna pytania, które w małych firmach padają nieświadomie, o dzieci, zdrowie, karalność czy poprzednią pensję, i dla każdego ma zamiennik oparty na wymaganiach stanowiska, na przykład na godzinach pracy.
+
+### Jak rozmawiać z kandydatem o pieniądzach?
+
+Dziś to firma podaje kandydatowi początkową kwotę albo przedział, a sama wybiera moment: w ogłoszeniu, przed rozmową albo przed zawarciem umowy. Pytanie o poprzednie zarobki wypadło z gry i kandydat może na nie nie odpowiedzieć. Skill dopyta, kto w Twojej firmie wykona ten krok.
+
+### Czy skill ułoży pytania sprawdzające wiedzę fachową?
+
+Tylko częściowo. Poprowadzi rozmowę o doświadczeniu, ale pytań merytorycznych dla spawacza, programisty czy farmaceuty nie zbuduje lepiej niż osoba, która tę pracę wykonuje. Przy pracy, którą widać na produkcie, więcej powie trzydzieści minut zadania praktycznego przy Was.
+
+### Ile to kosztuje i na czym działa?
+
+Skill jest darmowy, na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. Działa na dowolnym płatnym planie Claude, a w ChatGPT na planach Business, Enterprise, Edu i Healthcare. Poza tym potrzebujesz tylko opisu stanowiska, choćby trzech zdań.

@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Tłumaczy, jak naprawdę działa reklamacja w Polsce. Porządkuje kolejne kroki, po stronie kupującego albo po stronie sklepu.
+korzysc: Wiesz, czego możesz żądać i do kiedy masz czas, zanim napiszesz do sklepu albo odpiszesz klientowi.
 szukaj: reklamacja, rękojmia, gwarancja, zwrot towaru, niezgodność towaru z umową, wada, odstąpienie od umowy, sklep internetowy, rzecznik konsumentów, 14 dni na odpowiedź
 tytulSeo: Reklamacja towaru i usługi, jak to działa w Polsce, krok po kroku
 opisSeo: Czego można żądać przy reklamacji, w jakiej kolejności, ile jest dni na odpowiedź i co realnie decyduje w sporze. Po polsku, za darmo.
@@ -64,3 +65,29 @@ Dowolny płatny plan Claude. Opis sytuacji albo wklejony mail, regulamin czy zg�
 Nie rozstrzyga, czy reklamacja jest zasadna. Nie pisze zgłoszeń, odpowiedzi na reklamacje, odwołań ani wezwań, także wtedy, gdy prośba brzmi „napisz tylko krótkiego maila do klientki”. Nie szacuje szans w sporze ani kwot odszkodowania. Nie powołuje się na artykuły i ustawy. Jeśli poprosisz o gotowe pismo, odmówi i wróci do porządkowania sprawy.
 
 To granica postawiona świadomie. Pismo reklamacyjne wygląda niewinnie, a przesądza o tym, czego można potem żądać: wybór między naprawą a zwrotem pieniędzy zamyka pewne drogi na kilka tygodni, a jedno nieostrożne zdanie w odpowiedzi sklepu potrafi zostać odczytane jako uznanie zgłoszenia. Narzędzie, które generuje taki tekst, bierze decyzję na siebie i zostawia Ci skutki. To narzędzie robi coś uczciwszego: sprawia, że wiesz, co podpisujesz swoim nazwiskiem, zanim to napiszesz.
+
+## Najczęstsze pytania
+
+### Czy AI pomoże mi z reklamacją w sklepie?
+
+Tak, uporządkuje Twoją sprawę krok po kroku. Powie, czego można żądać i w jakiej kolejności, jakie terminy biegną od którego dnia i co realnie zaważy w sporze. Działa po obu stronach lady: kupującemu porządkuje zgłoszenie, a sklepowi cudzą reklamację, która właśnie wpłynęła.
+
+### Czy napisze mi reklamację albo odpowiedź dla klienta?
+
+Nie. Skill nie pisze zgłoszeń, odpowiedzi, odwołań ani wezwań, nawet krótkiego maila do klientki. Od treści takiego pisma zależy Twoja pozycja w sporze, więc pokazuje, co musisz w nim rozstrzygnąć i czego w takich odpowiedziach najczęściej brakuje, a samo pismo piszesz Ty.
+
+### Czy powie mi, kto ma rację w sporze ze sklepem?
+
+Nie, nie rozstrzyga, czy reklamacja jest zasadna, i nie szacuje szans. Słyszy tylko Twoją wersję i nie obejrzy rzeczy, a spór o wadę albo zużycie rozstrzygają oględziny i opinia rzeczoznawcy. Powie za to, kto co musi wykazać i kiedy warto iść do rzecznika konsumentów.
+
+### Ile sklep ma czasu na odpowiedź na reklamację?
+
+Wobec konsumenta sklep ma 14 dni na stanowisko, także przy usłudze. Odpowiedź „przekazujemy do rozpatrzenia” tego terminu nie zatrzymuje, a po jego upływie milczenie działa przeciwko sklepowi. Skill liczy datę graniczną tylko z dat, które podasz, i pokazuje działanie, żeby było widać, od którego dnia liczy.
+
+### Czym się różni reklamacja od zwrotu towaru?
+
+Reklamacja dotyczy wady, a zwrot zmiany zdania. Zwrot bez podania powodu działa przy zakupach przez internet i poza sklepem, a sklep stacjonarny przyjmuje zwroty z własnej polityki, nie z obowiązku. Mylenie tych dwóch dróg to najczęstszy powód, dla którego rozmowa ze sklepem grzęźnie.
+
+### Czego potrzebuję, żeby zacząć, i ile to kosztuje?
+
+Wystarczy opis sytuacji albo wklejony mail, regulamin czy zgłoszenie, najlepiej z datą wydania rzeczy i datą wpływu reklamacji. Skill jest darmowy, na licencji GPL, a plik dostajesz linkiem na e-mail z karty skilla. Działa na każdym płatnym planie Claude, w ChatGPT na planach Business, Enterprise, Edu i Healthcare.

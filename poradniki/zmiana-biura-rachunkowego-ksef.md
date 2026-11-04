@@ -64,3 +64,21 @@ Ułożenie tego w jedną listę czynności z datami i osobami odpowiedzialnymi, 
 - Certyfikaty KSeF i zasady operacji na certyfikatach: ksef.podatki.gov.pl/informacje-ogolne-ksef-20/certyfikaty-ksef/ (sprawdzono 24 sierpnia 2026)
 - Obowiązek odbierania faktur w systemie: ksef.podatki.gov.pl/informacje-ogolne-ksef-20/zakres-obowiazkowego-ksef/ (sprawdzono 24 sierpnia 2026)
 - Przechowywanie faktur i obowiązki archiwalne: ksef.podatki.gov.pl/ksef-news/zasady-obowiazywania-ksef-i-przepisy-prawne/ (sprawdzono 24 sierpnia 2026)
+
+## Najczęstsze pytania
+
+### W jakiej kolejności zmienić biuro rachunkowe w KSeF?
+
+Najpierw ustal datę graniczną i poproś stare biuro o wykaz osób z uprawnieniami pośrednimi do Twojej firmy. Potem sprawdź wpisy imienne w rejestrze, nadaj uprawnienie nowemu biuru i dopiero w dacie granicznej odbierz je staremu. Na końcu porównaj rejestr z wykazem, żeby nic nie zostało otwarte.
+
+### Czy po odebraniu uprawnienia biuru jego pracownicy tracą dostęp do KSeF?
+
+Tak, odebranie uprawnienia biuru dezaktywuje możliwość pracy jego pracowników dla tego klienta, choć ich uprawnienia pośrednie pozostają zapisane w systemie. Nie dotyczy to uprawnień nadanych przez firmę imiennie konkretnej księgowej. Takie wpisy zostają aktywne po zakończeniu współpracy i trzeba je usunąć osobno.
+
+### Czy firma może unieważnić certyfikat KSeF księgowej ze starego biura?
+
+Nie, firma nie unieważni certyfikatu wydanego na numer PESEL innej osoby, bo operacje wykonuje się wyłącznie na własnych certyfikatach. Może odebrać uprawnienia i zażądać, żeby właściciel certyfikatu sam go unieważnił. Certyfikat wydany na numer identyfikacji podatkowej firmy unieważnia osoba uprawniona po stronie firmy.
+
+### Czy w przerwie między biurami trzeba odbierać faktury w KSeF?
+
+Tak, obowiązek odbierania faktur zakupowych w KSeF działa od 1 lutego 2026 roku i dotyczy wszystkich podatników. Luka w dostępie między biurami nie zawiesza tego obowiązku. Dlatego uprawnienie nowemu biuru nadaje się przed odebraniem go staremu, żeby nie powstał okres, w którym nikt nie może pracować.

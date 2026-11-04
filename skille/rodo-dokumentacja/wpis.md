@@ -6,6 +6,7 @@ wersja: 1.1.0
 poziom: Zaawansowany
 aktualizacja: 2026-11-04
 skrot: "Zamienia mapę danych firmy w pięć projektów dokumentacji RODO: inwentaryzację przetwarzań, rejestr czynności przetwarzania, prostą analizę ryzyka, upoważnienia z ewidencją i rejestr luk. Podstaw prawnych nie dobiera: zostawia je specjaliście z gotowym materiałem pytań."
+korzysc: Masz projekty rejestru czynności i upoważnień z realiów swojej firmy, a do prawnika idziesz z pytaniami.
 szukaj: RODO, rejestr czynności przetwarzania, upoważnienie do przetwarzania danych, ewidencja upoważnień, dokumentacja RODO, ochrona danych osobowych, UODO, rejestr kategorii czynności, analiza ryzyka, mała firma, biuro, gabinet, sklep internetowy, audyt kontrahenta, prawo
 tytulSeo: Rejestr czynności przetwarzania i upoważnienia RODO, darmowy skill
 opisSeo: "Dokumentacja RODO z realiów Twojej firmy: rejestr czynności, upoważnienia, analiza ryzyka, rejestr luk. Bez zgadywania podstaw prawnych i bez martwych wzorów."
@@ -104,3 +105,29 @@ w cudzych dokumentach, zanim zacznie analizę. Robi tak, bo dokument z wpisaną
 na ślepo podstawą prawną albo z deklaracją zgodności wygląda lepiej tylko do
 pierwszej kontroli; wartość narzędzia siedzi w jawnych lukach, których nikt
 nie zamiata pod dywan.
+
+## Najczęstsze pytania
+
+### Czy AI zrobi mi rejestr czynności przetwarzania RODO?
+
+Tak, jako projekt zbudowany z mapy danych Twojej firmy. Dostajesz pięć projektów: inwentaryzację przetwarzań, rejestr czynności przetwarzania, prostą analizę ryzyka, upoważnienia z ewidencją nadań i odwołań oraz rejestr luk. Każdy dokument ma metryczkę i rejestr źródeł z uodo.gov.pl z datą sprawdzenia.
+
+### Czy wpisze mi podstawy prawne do rejestru?
+
+Nie. Kolumna podstaw prawnych zostaje pusta z adnotacją, także przy prośbie „w branży wszyscy tak mają” albo „jestem inspektorem, wpisz”. Źle dobrana podstawa podważa wiarygodność całego rejestru, więc skill przygotowuje materiał i po jednym pytaniu na czynność dla Twojego prawnika albo inspektora ochrony danych.
+
+### Czy po tych dokumentach firma będzie zgodna z RODO?
+
+Skill tego nie oceni i nie deklaruje zgodności ani „gotowości na kontrolę” w żadnej formie. Zamiast werdyktu prowadzi rejestr luk, czyli listę pozycji domkniętych i niedomkniętych z właścicielem i terminem. Polityk ochrony danych, klauzul informacyjnych, zgód i umów powierzenia nie pisze, to praca dla prawnika.
+
+### Czy moja mała firma w ogóle musi prowadzić rejestr czynności?
+
+Skill tego za Ciebie nie rozstrzygnie. Pokazuje trzy okoliczności ze wskazówek UODO, które decydują o zwolnieniu z rejestru, i zapisuje rozstrzygnięcie firmy jako jej własną deklarację. Gdy w grę wchodzą na przykład dane o zdrowiu w kartach klientów, podnosi tę okoliczność wprost, ale decyzję zostawia Tobie i specjaliście.
+
+### Czy zrobi mi ocenę skutków dla ochrony danych, czyli DPIA?
+
+Nie, ocena skutków jest poza zakresem w każdej formie, także jako szkic. Skill nie rozstrzyga też, czy dana operacja jej wymaga. Wskazuje wykaz operacji wymagających takiej oceny i poradnik UODO, a decyzja należy do prawnika albo inspektora ochrony danych.
+
+### Co muszę mieć, żeby zacząć, i ile to kosztuje?
+
+Wystarczy mapa danych z darmowego skilla RODO w małej firmie albo opis, co firma robi z danymi, bo o brakujące fakty skill dopyta. Skill jest darmowy, na licencji GPL, plik dostajesz linkiem na e-mail z karty skilla. Działa na każdym płatnym planie Claude, a w ChatGPT na planach Business, Enterprise, Edu i Healthcare.

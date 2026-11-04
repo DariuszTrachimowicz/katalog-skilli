@@ -6,6 +6,7 @@ wersja: 1.0.2
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Układa treść oferty dla firmowego klienta, zakres, cena, warunki płatności, termin ważności. Nie dopisuje niczego, czego mu nie podałeś.
+korzysc: Wysyłasz ofertę z jasną ceną, terminem płatności i datą ważności, bez zdań, których nie obronisz.
 szukaj: oferta handlowa, wycena, kosztorys, propozycja współpracy, cennik, netto brutto, termin płatności, freelancer, B2B, mail do klienta
 tytulSeo: Jak napisać ofertę handlową dla firmy, narzędzie AI po polsku
 opisSeo: "Ułóż ofertę dla klienta B2B: zakres, cena netto czy brutto, termin płatności, data ważności. Bez wymyślonych referencji i liczb. Za darmo, po polsku."
@@ -65,3 +66,29 @@ Dowolny płatny plan Claude i materiały, na których ma pracować, notatka z ro
 Nie doradza wysokości ceny, ani kwoty, ani widełek, ani „ile się zwykle bierze”. Dostaje kwotę gotową i układa tylko sposób jej podania; od rozkładania ceny na czynniki jest osobny skill, Wycena usługi. Nie wymyśla referencji, liczby klientów, lat na rynku, certyfikatów, parametrów ani procentowych efektów. Nie obiecuje w Twoim imieniu, że klientowi wzrośnie sprzedaż. Nie pisze klauzul prawnych, zastrzeżeń, gwarancji, kar, zapisów o prawach autorskich, i nie odpowiada na pytanie, czy Twoja oferta jest „wiążąca”. Nie obsługuje przetargów publicznych ani postępowań z formularzem zamawiającego, tam decyduje poprawne wypełnienie dokumentu, nie treść pisma; skill to rozpozna i powie od razu.
 
 To są granice postawione świadomie i to one są tu produktem. Model, który zapełni każdą lukę czymś, co brzmi profesjonalnie, wygeneruje Ci ofertę w dziesięć sekund, razem z certyfikatem, którego nie masz, i liczbą klientów, której nie sprawdzisz przed wysyłką. Ta oferta wyjdzie od Ciebie i to Ty będziesz ją tłumaczyć na spotkaniu. Skill, który zamiast tego dopisuje `[DO UZUPEŁNIENIA]` i zadaje pytanie, jest wolniejszy i uczciwszy.
+
+## Najczęstsze pytania
+
+### Czy AI napisze mi ofertę handlową dla firmy?
+
+Tak, ułoży treść oferty do wysłania mailem: otwarcie, zakres i jego granicę, cenę, warunki płatności, termin ważności i kolejny krok. Dostajesz też krótką wersję do treści maila i listę rzeczy do sprawdzenia przed wysłaniem. Pracuje na Twojej notatce z rozmowy, starej ofercie albo zapytaniu od klienta.
+
+### Czy AI podpowie mi, ile policzyć za usługę?
+
+Nie, nie podaje kwot, widełek ani tego, ile się zwykle bierze w branży. Dostaje od Ciebie gotową cenę i układa tylko sposób jej podania, z oznaczeniem, czy to netto, czy kwota do zapłaty. Do rozkładania ceny na czynniki jest w katalogu osobny skill, Wycena usługi.
+
+### Czy w ofercie dla firmy podać cenę netto czy brutto?
+
+To zależy od tego, czy odbiorca odlicza VAT od tego zakupu, i skill o to zapyta, zamiast zgadywać z formy prawnej firmy. Dla odbiorcy, który odlicza, liczy się netto, a dla tego, który nie odlicza, kwota do zapłaty. Stawki VAT sam nie dopisze, a w razie wątpliwości odeśle Cię do księgowej.
+
+### Czy AI wymyśli referencje albo liczbę klientów do mojej oferty?
+
+Nie, każda liczba i nazwa w ofercie pochodzi od Ciebie, a brak zostaje oznaczony jako luka do uzupełnienia z pytaniem. Gdy materiału jest za mało, skill powie to wprost i zatrzyma się na pytaniach, zamiast zapełniać ofertę treścią, która tylko brzmi wiarygodnie.
+
+### Czy skill pomoże mi przy przetargu publicznym?
+
+Nie, przetargów publicznych ani postępowań z formularzem zamawiającego nie obsługuje i powie to od razu. Tam o wyniku decyduje poprawne wypełnienie cudzego dokumentu i dochowanie terminu, a nie treść pisma. Nie pisze też klauzul prawnych, kar umownych ani zapisów o prawach autorskich.
+
+### Ile kosztuje skill do ofert handlowych i czego potrzebuję?
+
+Skill jest darmowy, na licencji GPL, a do pracy wystarczą Twoje materiały: notatka z rozmowy, stara oferta albo zapytanie od klienta. Plik .skill przychodzi linkiem na e-mail. Działa na dowolnym płatnym planie Claude, w ChatGPT na planie Business, Enterprise, Edu lub Healthcare (na Plus i darmowym nie), a w Gemini w Polsce wklejasz instrukcje do rozmowy albo Gema.

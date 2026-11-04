@@ -75,3 +75,21 @@ Sposób liczenia limitu miesięcznego należy do wartości, które w tym obszarz
 
 - Limit 10 tys. zł, zakres obowiązku, obowiązek odbierania faktur, wyłączenia stałe: ksef.podatki.gov.pl/informacje-ogolne-ksef-20/zakres-obowiazkowego-ksef/ (sprawdzono 24 sierpnia 2026)
 - Status dokumentu wystawionego poza systemem, pytania i odpowiedzi: ksef.podatki.gov.pl/ksef-news/najczestsze-pytania/ (sprawdzono 24 sierpnia 2026)
+
+## Najczęstsze pytania
+
+### Czy przy małej sprzedaży można wystawiać faktury poza KSeF?
+
+Tak, do 31 grudnia 2026 roku faktury można wystawiać poza KSeF, dopóki wartość brutto faktur wystawionych w danym miesiącu nie przekracza 10 tys. zł. Liczy się wartość faktur razem z podatkiem, a nie ogólny obrót firmy. Limit jest miesięczny, więc nie sumuje się go od początku roku.
+
+### Od której faktury trzeba przejść na KSeF po przekroczeniu 10 tys. zł?
+
+Obowiązek wystawiania w KSeF powstaje od tej faktury, którą limit 10 tys. zł zostaje przekroczony, a nie od kolejnego miesiąca. Nie ma okresu przejściowego ani dnia karencji. Dlatego zestawienie wartości faktur w miesiącu prowadzi się przed wystawieniem kolejnej faktury, a nie po zamknięciu miesiąca.
+
+### Czy przy wyjątku 10 tys. zł trzeba odbierać faktury w KSeF?
+
+Tak, wyjątek dotyczy wyłącznie wystawiania faktur. Obowiązek odbierania faktur w KSeF działa od 1 lutego 2026 roku i obejmuje wszystkich podatników, także korzystających z wyjątku. Jeżeli nikt w firmie nie ma uprawnienia do dostępu do faktur, faktury zakupowe od dostawców leżą w systemie niezauważone.
+
+### Co się zmienia w KSeF od 1 stycznia 2027 roku dla małych firm?
+
+Od 1 stycznia 2027 roku nie można już wystawiać faktur poza KSeF z powołaniem się na niską miesięczną wartość sprzedaży fakturowanej. Stałe wyłączenia zostają, w tym faktury dla konsumentów. Z końcem 2026 roku wygasa też rozwiązanie przejściowe dla faktur z kas rejestrujących i paragonów z numerem identyfikacji podatkowej.

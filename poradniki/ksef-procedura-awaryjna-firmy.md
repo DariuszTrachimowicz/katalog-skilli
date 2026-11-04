@@ -88,3 +88,21 @@ Złożenie tych sześciu składników w jeden spójny dokument z rolami, termina
 - Numer KSeF i identyfikator zbiorczy w płatnościach: ksef.podatki.gov.pl/informacje-ogolne-ksef-20/numer-ksef-i-zbiorczy-identyfikator/ (sprawdzono 24 sierpnia 2026)
 - Odrzucenie pliku i status dokumentu wystawionego poza systemem: ksef.podatki.gov.pl/ksef-news/najczestsze-pytania/ (sprawdzono 24 sierpnia 2026)
 - Ogłoszenia o awarii i niedostępności: Biuletyn Informacji Publicznej Ministerstwa Finansów (sprawdzono 24 sierpnia 2026)
+
+## Najczęstsze pytania
+
+### Co powinna zawierać procedura awaryjna KSeF w firmie?
+
+Procedura awaryjna KSeF powinna mieć sześć składników: macierz ról firmy i biura rachunkowego, kartę postępowania na cztery tryby, matrycę uprawnień, rejestr odrzuceń, zasady płatności od 2027 roku i protokół stanu wdrożenia. Każdy z nich opisuje firmę, a nie system, dlatego sam wzór tego nie załatwi.
+
+### Dlaczego wzór procedury KSeF z internetu nie wystarcza?
+
+Wzór opisuje system, a procedura ma opisywać firmę: kto podejmuje decyzje, jak zachowuje się program i jak praca jest podzielona z biurem rachunkowym. Wiele szablonów ma też wspólny krok „po powrocie systemu wyślij wszystko”, który jest fałszywy dla awarii całkowitej, bo wtedy faktur się nie dosyła.
+
+### Kto powinien być wpisany w macierzy ról procedury KSeF?
+
+W macierzy ról każda czynność ma imiennie wskazanego wykonawcę po stronie firmy, wykonawcę po stronie biura rachunkowego oraz zastępstwo. Chodzi o decyzję o trybie offline24, sprawdzanie ogłoszeń, przesyłanie faktur po powrocie systemu, obsługę odrzuceń, uprawnienia i ważność certyfikatów. Bez zastępstw macierz działa tylko do pierwszego urlopu.
+
+### Czy biuro rachunkowe może działać w KSeF na podstawie samej umowy?
+
+Nie, samo podpisanie umowy o księgowość nie tworzy uprawnienia w KSeF, a biuro działa w imieniu klienta dopiero po jego nadaniu. Kolejność jest sztywna: najpierw klient nadaje biuru jako podmiotowi uprawnienie bezpośrednie, a potem biuro nadaje swoim pracownikom uprawnienia pośrednie.

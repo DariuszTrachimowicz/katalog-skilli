@@ -61,3 +61,21 @@ Spisanie tych ról, kroków i terminów tak, żeby działały bez konkretnego cz
 - Model uprawnień, zakresy uprawnień, zarządzanie uprawnieniami: ksef.podatki.gov.pl/modul-certyfikatow-i-uprawnien-mcu/ (sprawdzono 24 sierpnia 2026)
 - Tryb offline24, termin przesłania faktury: ksef.podatki.gov.pl/informacje-ogolne-ksef-20/tryb-offline24/ (sprawdzono 24 sierpnia 2026)
 - Kody weryfikujące na wizualizacji faktury: ksef.podatki.gov.pl/informacje-ogolne-ksef-20/kody-weryfikujace-qr/ (sprawdzono 24 sierpnia 2026)
+
+## Najczęstsze pytania
+
+### Kiedy odebrać uprawnienia KSeF odchodzącemu pracownikowi?
+
+Uprawnienia w KSeF odbiera się w dacie zakończenia pracy, a nie przy zamykaniu miesiąca. Robi to osoba zarządzająca uprawnieniami w firmie, w Aplikacji Podatnika KSeF 2.0 albo w programie zintegrowanym z systemem. Jeżeli pracownik sam nadawał komuś uprawnienia, te wpisy trzeba przejrzeć osobno.
+
+### Czy firma może unieważnić certyfikat KSeF byłego pracownika?
+
+Nie, certyfikatu wydanego na numer PESEL pracownika firma nie unieważni, bo operacje wykonuje się wyłącznie na własnych certyfikatach. Firma może odebrać tej osobie uprawnienia i zażądać na piśmie unieważnienia certyfikatu. Odebranie uprawnień jest skuteczne, bo bez nich nikt nie wystawi ani nie pobierze faktury.
+
+### Co sprawdzić przed unieważnieniem certyfikatu KSeF firmy?
+
+Przed unieważnieniem certyfikatu wydanego na numer identyfikacji podatkowej firmy ustal, komu był udostępniony i co przestanie działać. Jeśli obsługuje wystawianie faktur w programie albo tworzenie drugiego kodu na wizualizacjach z trybu offline24, unieważnienie bez przygotowania zatrzyma fakturowanie całej firmy.
+
+### Czy odchodzący pracownik mógł mieć uprawnienie właścicielskie w KSeF?
+
+Nie, uprawnienie właścicielskie jest systemowe i wynika z numeru identyfikacji podatkowej podatnika. Nie nadaje się go ani nie odbiera drugiej osobie. Pracownik, o którym mówiło się, że „prowadził KSeF”, miał uprawnienia nadane i to je odbiera się w dniu zakończenia pracy.

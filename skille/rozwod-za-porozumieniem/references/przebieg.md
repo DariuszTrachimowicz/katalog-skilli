@@ -25,4 +25,4 @@ Skutki majątkowe i alimentacyjne rozwodu (w tym czasowe granice obowiązku alim
 
 ## Gdzie powstaje projekt pisma
 
-Ty pisma nie piszesz. Poinformuj: projekt pozwu albo odpowiedzi w sprawie za porozumieniem użytkownik może przygotować w usłudze Pracownia AiXperts (pracownia.aixperts.pl). Pismo w sprawie spornej przygotowuje pełnomocnik, a na spotkanie z nim użytkownika przygotuje Twoja teczka (tryb 3).
+Ty pisma nie piszesz. Poinformuj: projekt pozwu albo odpowiedzi w sprawie za porozumieniem użytkownik pisze sam (skill sprawdzi jego kompletność w trybie 2) albo zleca adwokatowi lub radcy prawnemu. Pismo w sprawie spornej przygotowuje pełnomocnik, a na spotkanie z nim użytkownika przygotuje Twoja teczka (tryb 3).

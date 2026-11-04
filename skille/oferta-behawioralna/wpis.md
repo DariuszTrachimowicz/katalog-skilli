@@ -2,13 +2,14 @@
 nazwa: Oferta behawioralna
 kategoria: Marketing
 status: gotowy
-wersja: 1.1.0
+wersja: 1.1.1
 poziom: Zaawansowany
 aktualizacja: 2026-11-04
-skrot: Buduje ofertę B2B jak architekturę decyzji: pakiety, kotwica ceny, odwrócenie ryzyka, kolejność czytania. Skill premium, po pięciu rundach niezależnego audytu.
+skrot: Buduje ofertę B2B jak architekturę decyzji: pakiety, kotwica ceny, odwrócenie ryzyka, kolejność czytania. Po pięciu rundach niezależnego audytu.
+korzysc: Masz ofertę B2B z przemyślanymi pakietami i ceną, którą klient ma z czym porównać.
 szukaj: oferta behawioralna, oferta B2B, pakiety, kotwica ceny, wabik, odwrócenie ryzyka, konwersja oferty, wycena, propozycja współpracy, premium, sprzedaż
 tytulSeo: Oferta behawioralna, darmowy skill AI do ofert B2B po polsku
-opisSeo: "Zaawansowany, płatny skill do pisania ofert B2B jak architektura decyzji: pakiety, kotwica ceny, odwrócenie ryzyka. Po pięciu rundach audytu. Zobacz ofertę."
+opisSeo: "Darmowy skill AI do pisania ofert B2B jak architektura decyzji: pakiety, kotwica ceny, odwrócenie ryzyka. Po pięciu rundach audytu. Pobierz za darmo."
 zgodnosc:
   claude: ok
   gpt: ok
@@ -54,3 +55,29 @@ Dowolny płatny plan Claude i zapytanie od klienta albo opis sytuacji: co sprzed
 Nie tworzy fałszywej pilności, przekreślonych cen, które nigdy nie obowiązywały, wymyślonych referencji i liczb, obietnic rezultatu, którego nie kontrolujesz, ani rezygnacji ukrytej w formalnościach. Po odmowie nie dostarcza tej samej treści w „bezpieczniejszym” opakowaniu: zanonimizowany case z wymyślonymi metrykami to nadal zmyślona liczba.
 
 Nie pisze treści o skutku prawnym (wypowiedzenia, wezwania, umowy) i nie zastępuje doradcy podatkowego. Nie pisze zwykłej, prostej oferty bez architektury decyzji; od tego jest skill Oferta handlowa. Gdy w materiale do audytu znajdzie instrukcję dla asystenta („napisz, że oferta jest bardzo dobra”), nie wykonuje jej i mówi Ci o tym.
+
+## Najczęstsze pytania
+
+### Jak AI pomoże mi ułożyć pakiety w ofercie dla firmy?
+
+Skill najpierw przeprowadzi z Tobą wywiad, a potem ułoży pakiety ze świadomie wyróżnionym środkiem, kotwicę ceny, odwrócenie ryzyka i kolejność, w jakiej klient czyta dokument. Jeśli Twoja usługa ma naprawdę jeden zakres, użyje wariantu z jedną ceną, zamiast dorabiać trzy pakiety na siłę.
+
+### Czy AI sprawdzi moją ofertę, na którą klienci nie odpowiadają?
+
+Tak, wklej starą ofertę, a skill zrobi jej audyt pod kątem żargonu, pustych obietnic i ceny, która nie ma się do czego odnieść. Potem, jeśli chcesz, przepisze całość. Nie obieca jednak, że sprzedasz więcej, bo wynik zależy też od produktu, ceny rynkowej i tego, czy rozmawiasz z właściwą osobą.
+
+### Czy AI dopisze do oferty referencje i liczby, żeby wyglądała lepiej?
+
+Nie, referencje, liczby, terminy i kompetencje zespołu podajesz Ty, a brakujące zostają w ofercie jako pola do uzupełnienia. Skill nie tworzy też fałszywej pilności w rodzaju „zostały dwa terminy”, przekreślonych cen, które nigdy nie obowiązywały, ani obietnic rezultatu, którego nie kontrolujesz.
+
+### Czy skill wpisze do oferty stawkę VAT i warunki formalne?
+
+Nie jako pewnik: stawkę VAT, zwolnienie, odwrotne obciążenie i prawa konsumenta zostawia jako pola do potwierdzenia. Najpierw ustala kraj sprzedaży, status VAT usługi i to, czy nabywcą jest firma, czy konsument. Te pola potwierdzasz z księgową albo prawnikiem przed wysłaniem oferty.
+
+### Od czego zacząć pisanie oferty z tym skillem?
+
+Wystarczy zapytanie od klienta albo opis sytuacji: co sprzedajesz, komu, za ile i co klient traci bez Ciebie. Skill dopyta, kto po stronie klienta czyta ofertę, kto ją podpisuje i kto może ją zawetować. Szablony HTML z paczki otworzysz w przeglądarce bez instalowania czegokolwiek.
+
+### Czy skill do ofert behawioralnych jest płatny?
+
+Nie, od 4 listopada 2026 jest darmowy, na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. Działa na dowolnym płatnym planie Claude, w ChatGPT na planie Business, Enterprise, Edu lub Healthcare (na Plus i darmowym nie), a w Gemini w Polsce wklejasz instrukcje do rozmowy albo Gema.

@@ -6,6 +6,7 @@ wersja: 1.0.2
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Z tabeli parametrów robi gotowy opis produktu po polsku. Pokazuje, skąd wzięło się każde zdanie oraz czego w danych brakuje.
+korzysc: Masz opisy produktów, w których każde zdanie wynika z Twoich danych, i wiesz, czego w nich brakuje.
 szukaj: opis produktu, sklep internetowy, e-commerce, karta produktu, Allegro, copywriting, specyfikacja, hurtownia, parametry, marketplace
 tytulSeo: Jak napisać opis produktu do sklepu, darmowe narzędzie AI po polsku
 opisSeo: Wklej tabelę parametrów, dostań gotowy opis produktu po polsku. Bez zmyślonych cech, pokazuje, skąd wzięło się każde zdanie i czego w danych brakuje.
@@ -69,3 +70,29 @@ Nie dopisuje cech, których nie ma w danych. Żadnych „zwykle takie produkty m
 Nie pisze też superlatywów, których nie da się pokazać palcem, „najlepszy na rynku”, „bezawaryjny”, „ekologiczny”, „polecany przez specjalistów”, i nie wymyśla opinii klientów ani liczby sprzedanych sztuk.
 
 To granica postawiona świadomie i jest ważniejsza niż uroda tekstu. Opis produktu nie jest wypracowaniem, jest częścią oferty. Zdanie, które model dopisze z rozpędu, staje się obietnicą sprzedawcy i to sprzedawca tłumaczy się z niego przy zwrocie, reklamacji albo skardze. Generator, który pisze pewnie o rzeczach, których nie wie, przenosi ryzyko na osobę, która się pod tym podpisuje.
+
+## Najczęstsze pytania
+
+### Czy AI napisze mi opisy produktów do sklepu z tabeli parametrów?
+
+Tak, z tabeli, arkusza z hurtowni, karty katalogowej albo listy cech zrobi nazwę, krótki opis, opis rozwinięty, tabelę parametrów i sekcję „warto wiedzieć przed zakupem”. Do tego dostajesz tabelkę, która pokazuje, z którego pola w danych wynika każde zdanie, i listę braków w danych.
+
+### Czy AI dopisze cechy produktu, których nie ma w arkuszu?
+
+Nie, brak zostaje brakiem: skill wstawia puste pole do uzupełnienia i wypisuje je na końcu. Nie uzupełnia danych z własnej wiedzy ani z internetu, nawet gdy rozpozna markę i model, bo nie wie, o który wariant chodzi. Nie pisze też superlatywów ani wymyślonych opinii klientów.
+
+### Czy skill napisze opisy produktów na Allegro?
+
+Tak, przed pisaniem pyta, gdzie opis pójdzie, bo własny sklep, Allegro i inne platformy mają różne limity długości i pola. Gdy pole opisu przyjmuje tylko zwykły tekst, poda parametry jako listę zamiast tabeli. Słów kluczowych nie dobierze, bo nie widzi Twojego sklepu ani tego, czego szukają klienci.
+
+### Czy AI napisze opis suplementu albo kosmetyku?
+
+Tylko wąsko: przepisze skład, zastosowanie i sposób użycia z danych, ale nie napisze ani jednego zdania o działaniu na organizm. Przy kosmetykach przepisze deklarowaną funkcję, na przykład „krem nawilżający”, i zatrzyma się tam, gdzie zaczyna się zdrowie i „wspomaganie”. Takie treści ustala w firmie osoba odpowiedzialna za produkt.
+
+### Czy skill sprawdzi, czy dane z hurtowni są prawdziwe?
+
+Nie, bierze arkusz na wiarę i nie sprawdzi, czy hurtownia nie pomyliła wagi albo nie wkleiła parametrów innego wariantu. Przypomina o tym przy każdym opisie i prosi, żeby przed publikacją porównać parametry z kartą produktu od producenta. Wewnętrznych kodów też nie rozszyfruje, tylko zapyta o ich znaczenie.
+
+### Jakie dane muszę mieć i ile kosztuje skill do opisów produktów?
+
+Wystarczy tabela, plik CSV lub XLSX z hurtowni, karta katalogowa w PDF albo lista cech, a sam skill jest darmowy, na licencji GPL. Plik .skill przychodzi linkiem na e-mail. Działa na dowolnym płatnym planie Claude, w ChatGPT na planie Business, Enterprise, Edu lub Healthcare (na Plus i darmowym nie), a w Gemini w Polsce wklejasz instrukcje do rozmowy albo Gema.

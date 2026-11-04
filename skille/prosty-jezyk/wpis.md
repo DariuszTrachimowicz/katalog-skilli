@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Przepisuje urzędowe pismo na prosty polski, nie gubiąc ani jednej informacji. Pokazuje, co zmienił i czego nie ruszył.
+korzysc: Masz pismo napisane prostym polskim, z każdą kwotą, terminem i warunkiem oryginału na swoim miejscu.
 szukaj: prosty język, prosta polszczyzna, pismo urzędowe, regulamin, bełkot, urzędowy, zrozumiałość, obsługa klienta, bank, ubezpieczenia, dostępność, nieczytelne pismo, klienci nie rozumieją, standard prostego języka, napisz to po ludzku, nikt tego nie rozumie
 tytulSeo: Jak napisać pismo urzędowe prostym językiem, narzędzie AI po polsku
 opisSeo: Wklej pismo, regulamin albo mail do klienta i dostań wersję po ludzku. Bez gubienia treści, z listą zmian i fragmentami, których nie wolno ruszać.
@@ -70,3 +71,29 @@ Nie tyka pism procesowych do sądu, pozwu, sprzeciwu, apelacji, zażalenia, ani 
 Nie orzeka też, że gotowa wersja „spełnia wymogi dostępności”, „jest na poziomie B2” albo „przejdzie audyt”. Takiego zdania nie da się obronić na podstawie samego tekstu, a instytucja, która je powtórzy swojemu klientowi, zostaje z tym sama.
 
 To granica postawiona świadomie. Narzędzie, które przy okazji upraszczania wygładza treść, jest groźniejsze od urzędowego bełkotu, bo bełkot człowiek przeczyta drugi raz, a wygładzoną odmowę zrozumie opacznie za pierwszym.
+
+## Najczęstsze pytania
+
+### Jak przerobić urzędowe pismo na prosty język?
+
+Wklejasz pismo, decyzję, wezwanie albo regulamin, a skill przepisuje je na prosty polski bez wyrzucania treści: każda kwota, termin i warunek zostają na miejscu. Dostajesz też listę zmian z uzasadnieniem, fragmenty celowo nieruszone, bo mają skutek prawny, i miejsca, w których oryginał był niejasny.
+
+### Czy AI skróci albo streści mi pismo?
+
+Nie. Skill nie streszcza, nie skraca przez wyrzucanie treści i nie robi wersji łatwej do czytania, bo decyzję, co wolno z pisma usunąć, podejmuje instytucja. Nie zmienia też decyzji zawartej w piśmie: odmowa zostaje odmową, a wezwanie do zapłaty wezwaniem.
+
+### Czy pomoże mi zrozumieć pismo, które dostałem z urzędu?
+
+Tak, skill obsługuje też drugą stronę, czyli osobę, która dostała decyzję albo wezwanie i chce po prostu wiedzieć, co w nim jest napisane. Przepisze je prostszym językiem, a pouczenia i podstawy prawne zostawi dosłownie i oznaczy, żeby było widać, których słów nie ruszał.
+
+### Czy po przepisaniu pismo spełni wymogi dostępności?
+
+Skill tego nie potwierdza, bo takiego zdania nie da się obronić na podstawie samego tekstu. Policzy długość zdań i formy bezosobowe przed zmianą i po niej, ale wskaźnika trudności, jak indeks mglistości, nie poda. Jeśli rozliczasz się z konkretnego wskaźnika, przepuść tekst przez osobne narzędzie.
+
+### Czy przepisze mi pozew albo urzędowy formularz?
+
+Nie. Pism procesowych do sądu, czyli pozwu, sprzeciwu, apelacji i zażalenia, ani urzędowych formularzy skill nie przepisuje nawet fragmentami. Tam zmienione zdanie nie jest zmianą stylu, tylko zmianą treści, która trafia do akt i wiąże stronę.
+
+### Ile to kosztuje i na czym działa?
+
+Skill jest darmowy, na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. Działa na dowolnym płatnym planie Claude, a w ChatGPT na planach Business, Enterprise, Edu i Healthcare. Tekst możesz wkleić albo wgrać w Wordzie lub PDF-ie.

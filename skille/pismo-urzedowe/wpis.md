@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Układa pismo do urzędu we właściwej formie i mówi, czego w nim brakuje, zanim urząd wezwie Cię do uzupełnienia braków.
+korzysc: Wiesz, czego brakuje w piśmie do urzędu, zanim je wyślesz, a nie dopiero z wezwania do uzupełnienia.
 szukaj: pismo do urzędu, wniosek, podanie, odwołanie od decyzji, znak sprawy, braki formalne, e-Doręczenia, ZUS, urząd skarbowy, ponaglenie
 tytulSeo: Jak napisać pismo do urzędu, wzór i kontrola braków formalnych
 opisSeo: Wklej wezwanie z urzędu albo opisz sprawę, a dostaniesz gotowe pismo z poprawnym adresatem, znakiem sprawy i listą załączników. Za darmo, po polsku.
@@ -66,3 +67,29 @@ Kończy się na urzędzie. Skargi do sądu administracyjnego, pozwu ani żadnego
 Nie ocenia, czy masz rację ani jakie są Twoje szanse. Nie buduje uzasadnienia prawnego, nie powołuje przepisów i nie tłumaczy, co decyzja „znaczy prawnie”. Nie pisze za Ciebie opisu okoliczności, bo w odwołaniu to właśnie on jest uzasadnieniem. Nie mówi, czy urząd postąpił słusznie. Jeśli o to poprosisz, odmówi, także za drugim i trzecim razem, i wróci do pracy nad formą.
 
 To granica postawiona świadomie. Pismo przegrywa najczęściej nie dlatego, że argument był słaby, tylko dlatego, że poszło do złego organu, bez podpisu albo bez znaku sprawy, i wróciło po trzech tygodniach. Tę część da się zrobić rzetelnie bez prawnika. Ocena sprawy to już inna robota i inna odpowiedzialność.
+
+## Najczęstsze pytania
+
+### Czy AI napisze mi pismo do urzędu?
+
+Tak, układa formę pisma: organ w adresie, Twoje dane, znak sprawy przepisany dosłownie, żądanie w pierwszym zdaniu, listę załączników i miejsce na podpis. Czego nie wie na pewno, na przykład nazwy urzędu, numeru konta albo liczby dni, zostawia jako pole do uzupełnienia i mówi, gdzie to sprawdzić.
+
+### Czy napisze mi uzasadnienie odwołania?
+
+Nie, opis okoliczności piszesz sam, swoimi słowami, bo w odwołaniu, zażaleniu i ponagleniu to właśnie on jest uzasadnieniem. Skill zostawi na niego puste pole, nie powoła przepisów i nie oceni, czy masz rację ani jakie są Twoje szanse. Dopilnuje za to całej formy pisma.
+
+### Czy sprawdzi pismo, które już napisałem?
+
+Tak, wklejasz własne pismo albo wezwanie z urzędu i zamiast gotowego tekstu dostajesz listę: czego brakuje, co jest nie na swoim miejscu i co urząd może zrozumieć dwojako. Wystarczy treść wklejona do rozmowy, w PDF-ie albo w Wordzie, bez żadnych kont i konfiguracji.
+
+### Do którego urzędu wysłać odwołanie od decyzji?
+
+Nazwę urzędu, który rozpatruje odwołanie, przepisujesz z pouczenia na końcu decyzji, a samo odwołanie składasz za pośrednictwem urzędu, który decyzję wydał. Skill nie obstawia tego adresu, bo od decyzji tego samego urzędu odwołanie idzie raz w jedno miejsce, raz w drugie, zależnie od rodzaju sprawy.
+
+### Czy napisze mi skargę do sądu albo pełnomocnictwo?
+
+Nie, skill kończy się na urzędzie. Skargi do sądu administracyjnego, pozwu ani pisma procesowego nie napisze, bo tam błąd formalny kończy się odrzuceniem pisma. Pełnomocnictwa też nie, bo daje ono innej osobie prawo działania w Twojej sprawie, ale powie, czego urząd przy nim wymaga i gdzie szukać wzoru.
+
+### Czy to darmowe i na czym działa?
+
+Tak, skill jest darmowy na licencji GPL, a plik `.skill` dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. W Claude działa na dowolnym płatnym planie, w ChatGPT wymaga planu Business, Enterprise, Edu lub Healthcare, a w Gemini w Polsce instrukcje wkleja się do rozmowy albo Gema.

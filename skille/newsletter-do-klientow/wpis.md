@@ -6,6 +6,7 @@ wersja: 1.0.2
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Pomaga napisać wiadomość do własnej listy klientów: o czym napisać, jaki dać temat i co musi znaleźć się w stopce, żeby mail nie skończył w spamie.
+korzysc: Masz gotowy mail do swojej listy i wiesz, co sprawdzić, zanim wyślesz go do wszystkich klientów.
 szukaj: newsletter, mailing, e-mail marketing, baza adresowa, spam, temat wiadomości, zgoda marketingowa, wypisanie się, stopka, lista klientów
 tytulSeo: Jak napisać newsletter do klientów, darmowe narzędzie AI po polsku
 opisSeo: Napisz mail do listy klientów, który ludzie otworzą, a filtry przepuszczą. Temat, treść, stopka, zgoda i wypisanie, pod polskie realia. Za darmo.
@@ -64,3 +65,29 @@ Nie wysyła. Nie łączy się z żadnym narzędziem do mailingu. Nie pisze treś
 Ta ostatnia granica jest najważniejsza i postawiona świadomie. Największym ryzykiem w tekstach marketingowych nie jest zły styl, tylko zmyślanie: model poproszony o mail sprzedażowy dopisze produktowi cenę, liczbę miejsc i zdanie o zadowolonych klientach, wszystko będzie brzmiało wiarygodnie i nic nie będzie pochodziło od Ciebie. Narzędzie, które ładnie wypełnia luki, tworzy tekst wyglądający na skończony, a użytkownik wysyła go do ośmiuset osób bez czytania i dopiero z odpowiedzi dowiaduje się, że obiecał rabat, którego nie ma. Nawias kwadratowy w środku maila jest niewygodny. O to właśnie chodzi.
 
 Skill nie tłumaczy też niczego przepisami i nie podaje dat ani opisów stanu prawnego. Taki tekst dezaktualizuje się przy każdej nowelizacji i wkłada użytkownikowi w usta twierdzenia, których nie umie obronić. Każda reguła jest zamiast tego uzasadniona skutkiem: co robi odbiorca, co robi filtr, czego nie da się później pokazać.
+
+## Najczęstsze pytania
+
+### Czy AI napisze mi newsletter do klientów?
+
+Tak, ułoży treść maila, trzy warianty tematu i pierwszą linijkę widoczną w podglądzie, a do tego stopkę i listę rzeczy do sprawdzenia przed wysyłką. Najpierw wypisze, co wie od Ciebie i czego nie wie. Brakującą cenę, termin czy nazwę produktu zostawi w nawiasie kwadratowym, zamiast wpisywać przykładową wartość.
+
+### Dlaczego mój newsletter trafia do spamu?
+
+Często winny jest adres nadawcy albo kliknięcia „to jest spam” od odbiorców, a nie sama treść. Skill nie widzi Twojej skrzynki ani historii wysyłek, ale z tego, co mu powiesz, rozpozna wysyłkę setek maili z darmowego adresu, brak potwierdzeń domeny albo pierwszy mail po długiej przerwie. Samych ustawień domeny za Ciebie nie zrobi.
+
+### Czy mogę wysłać newsletter na kupioną bazę adresów?
+
+Tego skill nie rozstrzygnie, a przy liście kupionej albo pobranej z internetu nie napisze treści maila. Pokaże, co w takiej wysyłce zwykle idzie nie tak, i zapyta, czy potrafisz pokazać, kto, kiedy i na co się zgodził. Jeśli nie masz pewności, sprawdź to z prawnikiem albo z osobą odpowiedzialną w firmie za dane osobowe.
+
+### Czy AI napisze mi treść zgody marketingowej albo klauzuli RODO?
+
+Nie, treści zgody ani klauzuli o danych osobowych nie pisze, bo to dokumenty o skutkach prawnych. Powie za to, z jakich elementów są zbudowane i o co zapytać osobę, która je dla Ciebie przygotuje. Pokaże też, co powinno znaleźć się w stopce maila, żeby odbiorca wiedział, od kogo jest wiadomość i jak się wypisać.
+
+### Czy skill sam wyśle newsletter do moich klientów?
+
+Nie, niczego nie wysyła i nie łączy się z żadnym narzędziem do mailingu. Dostajesz gotowy tekst, który kopiujesz do swojego programu do wysyłki. Przed wysłaniem sprawdź w podglądzie, czy pola z bazy, takie jak imię odbiorcy, podstawiają się poprawnie, bo każdy program zapisuje je po swojemu.
+
+### Czy ten skill do newslettera jest darmowy i na czym działa?
+
+Tak, jest darmowy, na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. Działa na dowolnym płatnym planie Claude, w ChatGPT na planie Business, Enterprise, Edu lub Healthcare (na Plus i darmowym nie), a w Gemini w Polsce wklejasz instrukcje do rozmowy albo Gema. Poza tym potrzebujesz tylko wiedzy o swojej firmie i liście.

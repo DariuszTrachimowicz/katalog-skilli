@@ -6,6 +6,7 @@ wersja: 1.1.0
 poziom: Zaawansowany
 aktualizacja: 2026-11-04
 skrot: "Buduje z firmą albo biurem rachunkowym jej własną dokumentację operacyjną KSeF: macierz odpowiedzialności firma-biuro, kartę postępowania przy braku dostępu do systemu, matrycę uprawnień i certyfikatów, rejestr odrzuceń, plan testów i zasady płatności z numerem KSeF."
+korzysc: Wiesz, kto w firmie co robi w KSeF i co zrobić, gdy system nie działa, zamiast szukać rady w internecie.
 szukaj: KSeF, Krajowy System e-Faktur, faktura ustrukturyzowana, awaria KSeF, offline24, niedostępność KSeF, uprawnienia KSeF, certyfikat KSeF, biuro rachunkowe, faktura odrzucona, numer KSeF w przelewie, procedura awaryjna, FA(3), finanse
 tytulSeo: Procedury KSeF dla firmy i biura rachunkowego, darmowy skill
 opisSeo: "Dokumentacja operacyjna KSeF z realiów Twojej firmy: kto wystawia, co robić przy braku dostępu, uprawnienia, odrzucenia, płatności. Bez martwych wzorów."
@@ -106,3 +107,29 @@ statusów faktur: opisuje, kto ma to zrobić i gdzie odnotować wynik. Nie
 generuje samej faktury ani nie objaśnia pojedynczych pól struktury. Robi tak,
 bo dokumentacja operacyjna ma chronić firmę w dniu zdarzenia, a każdy z tych
 skrótów zamienia ją w papier, którego nikt nie może obronić.
+
+## Najczęstsze pytania
+
+### Co zrobić, gdy KSeF nie działa i nie mogę wysłać faktury?
+
+Działasz według karty postępowania przy braku dostępu do systemu, którą ten skill buduje z Tobą zawczasu. Karta mówi, po czym rozpoznać tryb, od offline24 po awarię całkowitą, co wolno zrobić, w jakim terminie dosłać fakturę i kto za to odpowiada, a terminy oznacza do sprawdzenia na ksef.podatki.gov.pl.
+
+### Czy skill powie mi, że firma jest gotowa na KSeF?
+
+Nie, skill nie orzeka gotowości ani tego, że procedura spełnia wymogi. Protokół stanu wdrożenia to lista pozycji domkniętych i niedomkniętych, bez werdyktu. Nie rozstrzyga też stawek VAT, prawa do odliczenia ani kwalifikacji transakcji, takie pytania kieruje do doradcy podatkowego albo księgowej.
+
+### Jakie dokumenty KSeF przygotuję z tym skillem?
+
+Przygotujesz siedem dokumentów z realiów własnej firmy: macierz odpowiedzialności firma-biuro, kartę postępowania przy braku dostępu, matrycę uprawnień i certyfikatów, rejestr odrzuceń, plan testów, protokół stanu wdrożenia i zasady płatności z numerem KSeF. Każdy wychodzi jako projekt z metryczką, do zatwierdzenia przez osobę odpowiedzialną.
+
+### Jak podzielić obowiązki KSeF między firmę a biuro rachunkowe?
+
+Pomaga w tym macierz odpowiedzialności, którą skill buduje z Twoich odpowiedzi: kto wystawia faktury, kto pilnuje statusów i kto reaguje na odrzucenie. Matryca uprawnień dokłada, kto ma jaki zakres, na jakiej podstawie i do kiedy, więc wiedza przestaje siedzieć w głowie jednej osoby.
+
+### Czy skill loguje się do KSeF albo potrzebuje mojego certyfikatu?
+
+Nie, skill nie łączy się z KSeF i nie przyjmuje tokenów, plików certyfikatów ani haseł. Jeśli zaczniesz je wklejać, przerwie i każe uznać je za ujawnione. Potrzebuje tylko wiedzy o firmie: kto wystawia faktury, w jakim programie, ile ich jest i co robi biuro rachunkowe.
+
+### Ile kosztuje skill do procedur KSeF i gdzie z niego skorzystam?
+
+Nic, skill jest darmowy i udostępniony na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. W Claude działa na dowolnym płatnym planie, w ChatGPT wymaga planu Business, Enterprise, Edu lub Healthcare, a w Gemini w Polsce instrukcje wkleja się do rozmowy albo Gema.

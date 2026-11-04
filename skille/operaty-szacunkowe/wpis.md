@@ -6,6 +6,7 @@ wersja: 1.1.0
 poziom: Zaawansowany
 aktualizacja: 2026-11-04
 skrot: Prowadzi rzeczoznawcę majątkowego przez wycenę nieruchomości etapami z twardymi bramkami, liczy skryptami ze śladem obliczeń w XLSX, pilnuje rejestru decyzji i samooceny operatu przed oddaniem.
+korzysc: Masz operat ze śladem obliczeń, który da się sprawdzić liczba po liczbie, i zapis każdej swojej decyzji.
 szukaj: operat szacunkowy, wycena nieruchomości, rzeczoznawca majątkowy, podejście porównawcze, porównywanie parami, podejście dochodowe, stopa kapitalizacji, zużycie techniczne, analiza rynku, wagi cech, rejestr decyzji, ocena operatu, finanse
 tytulSeo: Operat szacunkowy ze śladem obliczeń, darmowy skill dla rzeczoznawcy
 opisSeo: "Warsztat rzeczoznawcy majątkowego: wycena etapami z bramkami, obliczenia skryptami ze śladem w XLSX, rejestr decyzji i samoocena operatu przed oddaniem."
@@ -31,7 +32,7 @@ Godziny składania arkuszy obliczeniowych od zera i pilnowania, czy nic nie umkn
 
 ## Przykład z życia
 
-Marek wycenia mieszkanie 54 m2 pod kredyt. Skill nie pozwala mu wrzucić transakcji, zanim nie zadeklaruje kryteriów doboru próby, wychwytuje, że wagi cech sumują się do 105%, wstrzymuje obliczenia przy odstającej transakcji do czasu decyzji z uzasadnieniem, a po obliczeniach flaguje, że wynik odbiega od mediany próby o 24% i wymaga akapitu uzasadnienia. Do banku idzie operat z XLSX, w którym kluczowe wielkości mają wskazane źródło w tablicy wiązań.
+Marek wycenia mieszkanie 54 m2 pod kredyt. Skill nie pozwala mu wrzucić transakcji, zanim nie zadeklaruje kryteriów doboru próby, wychwytuje, że wagi cech sumują się do 105 %, wstrzymuje obliczenia przy odstającej transakcji do czasu decyzji z uzasadnieniem, a po obliczeniach flaguje, że wynik odbiega od mediany próby o 24 % i wymaga akapitu uzasadnienia. Do banku idzie operat z XLSX, w którym kluczowe wielkości mają wskazane źródło w tablicy wiązań.
 
 ## Jak po polsku
 
@@ -53,3 +54,29 @@ Własnych danych rynkowych (transakcje, stawki, stopy z Twojego badania rynku), 
 ## Czego ten skill nie robi celowo
 
 Nie wymyśla transakcji ani wartości, nie dobiera wag pod oczekiwany wynik nawet na wyraźną prośbę, nie wybiera za Ciebie stopy kapitalizacji, nie podpisuje operatu i nie orzeka, że operat jest zgodny z przepisami: samoocena wskazuje punkty do poprawy, ocena należy do rzeczoznawcy i organizacji zawodowej. Każdy generowany fragment jest oznaczony jako materiał warsztatowy do weryfikacji. Robi tak, bo operat z dobranym wynikiem to ryzyko odpowiedzialności zawodowej autora, a wartość tego narzędzia siedzi w śladzie obliczeń, który da się sprawdzić liczba po liczbie.
+
+## Najczęstsze pytania
+
+### Jak AI pomoże rzeczoznawcy przy operacie szacunkowym?
+
+Prowadzi przez wycenę w pięciu etapach z bramkami: założenia, analiza rynku, obliczenia, redakcja i kontrola. Każdą decyzję zapisuje z uzasadnieniem w rejestrze, obliczenia wykonują skrypty, a nie model, z arkuszem XLSX ze śladem, a na koniec przechodzisz z nim arkusz samooceny operatu przed oddaniem.
+
+### Czy AI wyceni mi mieszkanie?
+
+Nie, to narzędzie pracy rzeczoznawcy majątkowego, a nie wycena dla właściciela. Osobie spoza zawodu skill wyjaśni, że wynik rozmowy nie jest operatem ani wyceną, i nie poprowadzi jej przez obliczenia. Nie wymyśla też transakcji, cen ani innych wartości rynkowych.
+
+### Co muszę mieć, żeby zacząć pracę ze skillem?
+
+Potrzebujesz własnych danych rynkowych z badania rynku, dokumentów nieruchomości i komputera z Pythonem 3.10 lub nowszym, a do arkusza XLSX z porównywania parami biblioteki openpyxl. W paczce jest instrukcja pierwszego uruchomienia i pokazowa wycena od A do Z, a pliki wejściowe asystent buduje z Twoich danych.
+
+### Czy skill dobierze wagi cech albo stopę kapitalizacji?
+
+Nie, nie dobiera wag pod oczekiwany wynik i nie wybiera za Ciebie stopy kapitalizacji, nawet na wyraźną prośbę. Parametry wyprowadzasz z własnego badania rynku lokalnego, a skill pilnuje, żeby suma wag się zgadzała i żeby każda decyzja trafiła do rejestru z uzasadnieniem.
+
+### Jakie metody wyceny liczy ten skill?
+
+To wydanie liczy porównywanie parami z analizą wrażliwości, zużycie techniczne, kapitalizację prostą i statystykę próby. Korygowanie ceny średniej, DCF i metoda pozostałościowa są poza jego zakresem obliczeń, więc przy nich skill prowadzi metodycznie, a liczysz własnym narzędziem i opisujesz to w operacie.
+
+### Ile kosztuje warsztat do operatów szacunkowych?
+
+Nic, skill jest darmowy i udostępniony na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. W Claude działa na dowolnym płatnym planie, w ChatGPT wymaga planu Business, Enterprise, Edu lub Healthcare. Pamiętaj, że obliczenia wykonują skrypty w Pythonie na Twoim komputerze.

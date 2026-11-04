@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Prowadzi krok po kroku przez sprawdzenie nowej firmy przed umową i pierwszą płatnością, rejestry, kto może podpisać, biała lista VAT, zgodność danych.
+korzysc: Wiesz, co sprawdzić w rejestrach przed pierwszym przelewem, i widzisz, co w danych nowej firmy się nie zgadza.
 szukaj: kontrahent, weryfikacja firmy, KRS, CEIDG, biała lista VAT, NIP, zaliczka, reprezentacja spółki, oszustwo na fakturę, nowy klient
 tytulSeo: Jak sprawdzić kontrahenta przed umową, lista kroków po polsku
 opisSeo: Nowa firma chce zaliczkę? Zobacz, co sprawdzić i gdzie. KRS, CEIDG, biała lista VAT, kto może podpisać za spółkę. Lista do odklikania, po polsku.
@@ -75,3 +76,29 @@ Nie wystawia werdyktu o firmie. Nie pisze pełnomocnictw, umów ani wezwań do z
 To granica postawiona świadomie. Narzędzie, które na podstawie kilku pól z rejestru orzeka „firma wiarygodna”, produkuje fałszywe poczucie bezpieczeństwa, a ono kosztuje więcej niż brak sprawdzenia, bo wyłącza czujność. To narzędzie robi coś skromniejszego i uczciwszego: pilnuje, żebyś przeszedł przez bezpłatne rejestry, w kwadrans i po kolei, i pokazuje, co się nie zgadza. Tam, gdzie sprawdzenie kosztuje, raporty biur informacji gospodarczej, Rejestr Zastawów, powie o tym z góry i podpowie, przy jakiej kwocie w ogóle warto.
 
 Nie zbiera też i nie zapisuje danych kontrahenta. W podsumowaniach nie przepisuje pełnych numerów rachunków, PESEL-i ani adresów zamieszkania, bo takie podsumowanie zwykle ląduje wklejone w mail.
+
+## Najczęstsze pytania
+
+### Jak sprawdzić nową firmę przed umową albo wysłaniem zaliczki?
+
+Skill ułoży Ci listę kroków pod Twoją sytuację: w którym rejestrze kliknąć, czego tam szukać i z czym porównać dane w umowie i na fakturze. Gdy wkleisz wyniki, na przykład odpis z rejestru albo zrzut z białej listy, wypisze rozbieżności i pytania do zadania kontrahentowi.
+
+### Czy AI samo sprawdzi kontrahenta w KRS i na białej liście?
+
+Nie. Skill nie ma dostępu do rejestrów i nie szuka firmy na własną rękę, bo wynik z wyszukiwarki nie jest odpisem i nie daje identyfikatora zapytania z białej listy, czyli jedynej rzeczy, którą można potem komuś pokazać. Klikanie zostaje po Twojej stronie, a skill czyta to, co mu wkleisz.
+
+### Czy skill powie mi, że firma to oszust albo że mogę zapłacić?
+
+Nie. Skill nie napisze „to oszust” ani „można im ufać” i nie podpowiada, czy płacić. Wypisuje fakty, rozbieżności i pytania, a decyzja o pieniądzach zostaje po Twojej stronie, bo ocena postawiona z kilku pól rejestru wyłącza czujność skuteczniej niż jej brak.
+
+### Od jakiej kwoty sprawdzanie konta na białej liście VAT ma znaczenie?
+
+Od kwoty powyżej 15 000 zł brutto, liczonej dla całej transakcji, a nie dla pojedynczej faktury. Wtedy przez niesprawdzony rachunek można stracić koszt podatkowy. Rachunek sprawdza się na dzień zlecenia przelewu, a dowodem jest identyfikator zapytania. Ta sama granica dotyczy płatności gotówką między firmami.
+
+### Jak sprawdzić, kto może podpisać umowę za spółkę?
+
+Trzeba zajrzeć do sposobu reprezentacji w KRS, a skill pokaże, jak go czytać. Wyjaśni reprezentację łączną, przy której podpisać muszą co najmniej dwie osoby naraz, oraz prokurę samoistną i łączną. Przypomni, że pełnomocnictw w KRS nie ma wcale, ale nie oceni, czy umowa podpisana przez daną osobę jest ważna.
+
+### Czego potrzebuję, żeby zacząć, i ile to kosztuje?
+
+Wystarczy umowa, faktura albo sama nazwa i NIP firmy wpisane w rozmowie oraz przeglądarka, bo po rejestrach klikasz sam. Skill jest darmowy, na licencji GPL, a plik dostajesz linkiem na e-mail z karty skilla. Działa na każdym płatnym planie Claude i w ChatGPT na planach Business, Enterprise, Edu i Healthcare.

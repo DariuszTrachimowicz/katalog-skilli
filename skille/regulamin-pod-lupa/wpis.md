@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Czyta regulamin, na który masz się zgodzić, i mówi po ludzku, na co się zgadzasz, od zmian cennika po to, co dzieje się z Twoimi danymi i treściami.
+korzysc: Wiesz, na co się zgadzasz, klikając „Akceptuję”, i do kiedy zrezygnować, zanim abonament sam się odnowi.
 szukaj: regulamin, warunki korzystania, terms of service, subskrypcja, abonament, rezygnacja, automatyczne przedłużenie, polityka prywatności, konto, dane osobowe, sklep internetowy, aplikacja
 tytulSeo: Co akceptujesz, klikając „Akceptuję regulamin”, sprawdź po polsku
 opisSeo: Wklej regulamin sklepu, aplikacji albo subskrypcji i zobacz po ludzku, co firma może zmienić sama, co z Twoimi danymi, jak zrezygnować i kiedy się odnawia.
@@ -64,3 +65,29 @@ Dowolny płatny plan Claude i regulamin, wklejony jako tekst, w PDF albo w Wordz
 Nie pisze regulaminów ani polityk prywatności dla Twojej firmy. Nie pisze rezygnacji, odstąpień, reklamacji ani maili do obsługi. Nie proponuje, jak zapis „powinien brzmieć”. Nie odpowiada na pytanie „czy to jest legalne” i nie mówi „możesz spokojnie akceptować”. Jeśli poprosisz, odmówi i wróci do wyjaśniania.
 
 Powód jest prosty. Pismo do firmy uruchamia terminy, a zdanie „to jest nieważne” brzmi jak rozstrzygnięcie, którego nikt w tej rozmowie nie może wydać, a to Ty poniesiesz skutki, jeśli okaże się nietrafione. To narzędzie robi rzecz węższą i uczciwszą: sprawia, że rozumiesz, na co się zgadzasz, i wiesz, kiedy zareagować.
+
+## Najczęstsze pytania
+
+### Czy AI przeczyta regulamin i powie mi, na co się zgadzam?
+
+Tak, na początku dostajesz pięć zdań: ile płacisz i co może podnieść cenę, co firma może zmienić sama, co dzieje się z Twoimi danymi i treściami, jak wyjść z umowy oraz gdzie zgłasza się reklamację. Potem idą zapisy warte uwagi, od poważnych do typowych, każdy z cytatem i miejscem w dokumencie.
+
+### Czy skill powie mi, do kiedy muszę zrezygnować z subskrypcji?
+
+Tak, jeśli regulamin podaje terminy: wyciąga do tabeli termin rezygnacji, dzień odnowienia, cenę po odnowieniu i okres wypowiedzenia, każdy z miejscem w dokumencie. To zwykle najcenniejsza część analizy, bo datę wpisujesz do kalendarza przed terminem, a nie po nim.
+
+### Czy powie mi, czy ten zapis w regulaminie jest legalny?
+
+Nie, nie ocenia legalności zapisów, bo rozstrzyga o tym rzecznik konsumentów albo sąd w konkretnej sprawie. Może najwyżej powiedzieć, że zapisy tego rodzaju bywają kwestionowane, i pokazać, co dany zapis dla Ciebie oznacza. Nie napisze też rezygnacji, reklamacji ani maila do obsługi.
+
+### Co zrobić z mailem o zmianie regulaminu?
+
+Wklej go, a skill powie, co się zmienia, od kiedy, co się stanie, jeśli nic nie zrobisz, i do kiedy możesz odejść. Gdy masz tylko nową wersję bez poprzedniej, usłyszysz wprost, że porównanie jest niemożliwe, zamiast zgadywania, co było wcześniej.
+
+### Czy przy zakupie na firmę regulamin działa inaczej?
+
+Często tak, bo polskie regulaminy mają zwykle osobny rozdział dla przedsiębiorców, który wyłącza część uprawnień klientów prywatnych. Skill sprawdza, czy taki rozdział jest, i dopyta, do czego narzędzie służy w Twojej firmie, bo przy jednoosobowej działalności liczy się związek zakupu z Twoim zawodem, a nie sam NIP na fakturze.
+
+### Co muszę mieć i ile to kosztuje?
+
+Wystarczy regulamin wklejony jako tekst, w PDF albo w Wordzie, najlepiej razem z cennikiem i polityką prywatności. Skill jest darmowy na licencji GPL, plik `.skill` dostajesz linkiem na e-mail po podaniu adresu na karcie skilla, a działa w Claude na dowolnym płatnym planie i w ChatGPT na planach Business, Enterprise, Edu lub Healthcare.

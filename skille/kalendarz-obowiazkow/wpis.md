@@ -6,6 +6,7 @@ wersja: 1.0.2
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Układa jedną listę tego, co w Twojej firmie wraca co miesiąc, co kwartał i raz w roku, z opisem, czego każda pozycja dotyczy i kto ją robi.
+korzysc: Masz jedną listę obowiązków firmy na cały rok i idziesz do księgowej z gotowymi pytaniami.
 szukaj: terminy, ZUS, VAT, podatki, kalendarz, obowiązki firmy, deklaracje, JPK, KSeF, BDO, kasa fiskalna, mała firma
 tytulSeo: Terminy w firmie, co trzeba zrobić co miesiąc, co kwartał i raz w roku
 opisSeo: Zbuduj kalendarz obowiązków małej firmy. ZUS, podatek, VAT, sprawozdania, kasa fiskalna, BHP. Lista do potwierdzenia z księgową. Po polsku, bez ustawiania.
@@ -62,3 +63,29 @@ Dowolny płatny plan Claude i pięć minut na opisanie firmy: forma rozliczenia,
 Nie liczy kwot składek i zaliczek, nie wypełnia i nie wysyła deklaracji, nie mówi, co grozi za spóźnienie, nie doradza formy opodatkowania ani momentu wejścia w VAT, nie robi gotowych wpisów do kalendarza, ani pliku, ani listy do przeklejenia. Jeśli poprosisz o samą listę dat albo o orientacyjną kwotę, bez zastrzeżeń, odmówi tym samym zdaniem za każdym razem i wróci do budowania listy.
 
 To granica postawiona świadomie. Kalendarz z jedną błędną datą jest gorszy niż jego brak, bo przestaje się go sprawdzać, a odpowiedzialność za spóźnienie i tak zostaje po Twojej stronie. To narzędzie robi coś skromniejszego i uczciwszego: pokazuje pełen zestaw rzeczy, które w Twojej firmie wracają, i pilnuje, żebyś potwierdził je u kogoś, kto może za to odpowiadać.
+
+## Najczęstsze pytania
+
+### Jak nie zapominać o terminach ZUS, VAT i innych obowiązkach firmy?
+
+Pomaga jedna lista, którą układa ten skill: co w Twojej firmie wraca co miesiąc, co kwartał i raz w roku, czego dotyczy i kto to robi, Ty czy biuro rachunkowe. Na końcu dostajesz gotowe pytania do księgowej, żeby potwierdzić listę zamiast pytać, czy o czymś nie zapomniałeś.
+
+### Czy poda mi dokładne daty i zrobi wpisy do kalendarza?
+
+Nie, podaje tylko terminy orientacyjne do potwierdzenia z księgową. Gotowych wpisów do kalendarza, pliku ani listy do przeklejenia nie robi, bo wpis oderwany od listy gubi zastrzeżenie i zaczyna wyglądać jak data sprawdzona. Nie liczy też kwot składek ani zaliczek.
+
+### Co muszę powiedzieć, żeby zbudował kalendarz mojej firmy?
+
+Wystarczy pięć minut na opisanie firmy: forma rozliczenia, VAT, czy są pracownicy, co robi biuro rachunkowe oraz czy jest lokal, auto albo kasa fiskalna. Nie potrzebujesz dokumentów, konektorów ani logowania, a to, czego nie wiesz, trafia jako pierwsze pytanie do księgowej.
+
+### Czy przypomni o obowiązkach spoza podatków, na przykład o kasie fiskalnej albo BDO?
+
+Tak, lista obejmuje też rzeczy, których biuro rachunkowe zwykle nie pilnuje: przegląd kasy fiskalnej, badania okresowe, sprawozdanie w BDO, lutowy raport o emisjach przy firmowym aucie czy oświadczenie o sprzedaży alkoholu. Daty takich pozycji leżą w Twoich dokumentach i u serwisu, więc skill mówi, gdzie ich szukać.
+
+### Co się zmienia w obowiązkach, gdy przenoszę działalność do spółki albo zatrudniam pierwszą osobę?
+
+Zmienia się sporo i skill pokazuje to na liście. Wie, że dzień płatności składek ZUS zależy od tego, czym jest firma, a zatrudnienie dokłada osobny strumień obowiązków i terminów. Każdą taką zmianę zapisuje jako pozycję do potwierdzenia z księgową, bez orzekania, co Cię dotyczy.
+
+### Ile kosztuje kalendarz obowiązków i na jakich platformach działa?
+
+Nic, skill jest darmowy i udostępniony na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. W Claude działa na dowolnym płatnym planie, w ChatGPT wymaga planu Business, Enterprise, Edu lub Healthcare, a w Gemini w Polsce instrukcje wkleja się do rozmowy albo Gema.

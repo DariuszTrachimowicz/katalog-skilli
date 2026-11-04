@@ -74,3 +74,21 @@ Zebranie tego w jedną kartę wraz z rolami i listą osób z certyfikatami to os
 - Certyfikaty KSeF, typ 1 i typ 2, ważność: ksef.podatki.gov.pl/informacje-ogolne-ksef-20/certyfikaty-ksef/ (sprawdzono 24 sierpnia 2026)
 - Tryb offline24: warunki, termin, udostępnianie faktury: ksef.podatki.gov.pl/informacje-ogolne-ksef-20/tryb-offline24/ (sprawdzono 24 sierpnia 2026)
 - Cztery tryby szczególne i skutki awarii całkowitej: ksef.podatki.gov.pl/wyjasnienia/co-warto-wiedziec-przed-startem-ii-etapu-wdrozenia-krajowego-systemu-e-faktur/ (sprawdzono 24 sierpnia 2026)
+
+## Najczęstsze pytania
+
+### Ile kodów QR powinna mieć faktura z KSeF?
+
+Faktura już przesłana do systemu ma na wizualizacji jeden kod, KOD I, z numerem KSeF. Dwa kody są potrzebne, gdy wizualizację faktury z trybu offline24, z okresu niedostępności albo z trybu awaryjnego udostępnia się poza systemem przed jej przesłaniem. Decyduje moment przekazania wizualizacji, a nie samo wystawienie poza systemem.
+
+### Do czego służy KOD II na fakturze?
+
+KOD II potwierdza aktywność certyfikatu wystawcy i jego uprawnienie do wystawienia faktury w imieniu podatnika. KOD I prowadzi do faktury w KSeF i pozwala zweryfikować jej dane. KOD II jest potrzebny tam, gdzie faktury jeszcze nie ma w systemie, a do jego utworzenia trzeba mieć certyfikat KSeF typu 2.
+
+### Czym różni się certyfikat KSeF typu 1 od typu 2?
+
+Certyfikat typu 1 służy do uwierzytelniania w KSeF, czyli do logowania, wysyłania i pobierania faktur. Certyfikat typu 2 służy do utworzenia KODU II na wizualizacji faktury z trybu offline udostępnianej przed przesłaniem. Bez typu 2 firma nie wystawi prawidłowej wizualizacji tam, gdzie obowiązuje reguła dwóch kodów.
+
+### Czy faktura z jednym kodem QR jest błędna?
+
+Nie, jeśli faktura była już przesłana do systemu, jeden KOD I z numerem KSeF jest właściwy. Reguła „każda faktura poza systemem ma dwa kody” jest za szeroka i prowadzi do odsyłania poprawnych dokumentów. Przy awarii całkowitej struktura FA(3) nie obowiązuje, więc reguła dwóch kodów nie ma tam zastosowania.

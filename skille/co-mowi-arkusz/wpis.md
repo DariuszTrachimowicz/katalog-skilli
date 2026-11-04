@@ -6,6 +6,7 @@ wersja: 1.0.2
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Czyta zestawienie z Excela i mówi po ludzku, co z niego wynika, bez formuł i tabel przestawnych, z wyraźnym podziałem na fakty i domysły.
+korzysc: Wiesz, co naprawdę mówią Twoje liczby, i odróżniasz to, co widać w danych, od domysłu.
 szukaj: excel, arkusz, csv, analiza danych, zestawienie sprzedaży, zestawienie z Optimy, rejestr sprzedaży, wyciąg, co wynika z danych, spadek sprzedaży, Subiekt, trend
 tytulSeo: Co wynika z tego zestawienia, analiza arkusza Excel po polsku
 opisSeo: Wrzuć zestawienie z Excela i zobacz, co z niego wynika, kierunki, wartości do sprawdzenia. Oddziela fakty od domysłów. Po polsku, na Twoim planie Claude.
@@ -41,9 +42,9 @@ Marek prowadzi hurtownię materiałów budowlanych. Dostaje z Optimy zestawienie
 
 Skill pokazuje trzy rzeczy, wszystkie liczone na jednej podstawie, na dzień roboczy.
 
-Lipiec ma 23 dni robocze, czerwiec 21. Po przeliczeniu to 13 565 zł na dzień wobec 12 762 zł, czyli wzrost o 6%, nie o 16%.
+Lipiec ma 23 dni robocze, czerwiec 21. Po przeliczeniu to 13 565 zł na dzień wobec 12 762 zł, czyli wzrost o 6 %, nie o 16 %.
 
-Jedna faktura dla jednego klienta to 41 000 zł, więcej niż cały wzrost, jaki po tej poprawce zostaje (803 zł na dzień × 23 dni to około 18 500 zł). Bez tej faktury lipiec to 271 000 zł, czyli 11 783 zł na dzień roboczy wobec 12 762 zł w czerwcu, po korekcie kalendarzowej lipiec jest nie wyżej, tylko o 8% niżej niż czerwiec.
+Jedna faktura dla jednego klienta to 41 000 zł, więcej niż cały wzrost, jaki po tej poprawce zostaje (803 zł na dzień × 23 dni to około 18 500 zł). Bez tej faktury lipiec to 271 000 zł, czyli 11 783 zł na dzień roboczy wobec 12 762 zł w czerwcu, po korekcie kalendarzowej lipiec jest nie wyżej, tylko o 8 % niżej niż czerwiec.
 
 A w całym pliku, od stycznia do lipca, jest 38 wierszy z kwotami ujemnymi na łącznie 24 300 zł, korekty, których podsumowanie Marka w ogóle nie odejmowało. Na sam lipiec przypada z nich 6 100 zł, więc lipcowe 312 000 zł stopnieje jeszcze bardziej, gdy je uwzględnić.
 
@@ -55,7 +56,7 @@ Cała wartość siedzi w tym, że skill zna polskie zestawienia, a nie tabelki z
 
 Rozpoznaje przecinek dziesiętny i spację w tysiącach, łącznie ze spacją nierozdzielającą, przez którą kolumna z kwotami cicho przestaje się sumować. Wie, że `03.04.2026` to 3 kwietnia, a nie 4 marca. Zna nagłówki z Optimy, Subiekta, WAPRO, Symfonii i wFirmy: różnicę między datą wystawienia a datą sprzedaży, między netto a brutto, między marżą a narzutem, między stroną Wn a Ma. Wie, że wiersz „Razem dla kontrahenta” w środku danych podwaja wynik, a faktura zaliczkowa policzona razem z końcową liczy tę samą sprzedaż dwa razy.
 
-Zna też polski kalendarz. Lipiec 2026 ma 23 dni robocze, a styczeń, luty, maj, sierpień, listopad i grudzień po 20, porównanie miesiąc do miesiąca bez tej poprawki myli o kilkanaście procent. Marzec do lutego wygląda na wzrost o 10%, choć różnią się wyłącznie liczbą dni. W handlu detalicznym dokłada niedziele handlowe: luty, maj, lipiec, wrzesień, październik i listopad nie mają w 2026 ani jednej, a grudzień ma trzy pod rząd.
+Zna też polski kalendarz. Lipiec 2026 ma 23 dni robocze, a styczeń, luty, maj, sierpień, listopad i grudzień po 20, porównanie miesiąc do miesiąca bez tej poprawki myli o kilkanaście procent. Marzec do lutego wygląda na wzrost o 10 %, choć różnią się wyłącznie liczbą dni. W handlu detalicznym dokłada niedziele handlowe: luty, maj, lipiec, wrzesień, październik i listopad nie mają w 2026 ani jednej, a grudzień ma trzy pod rząd.
 
 W zestawieniach z 2026 roku rozpoznaje kolumnę z numerem z Krajowego Systemu e-Faktur (KSeF), po myślnikach i literach, nie po długości, i wie, że wiersze bez niego z początku roku to nie luka w danych.
 
@@ -77,6 +78,32 @@ Na starcie skill zada Ci kilka pytań, skąd jest plik, jaki okres obejmuje, czy
 
 Nie prognozuje. Nie mówi, czy podnieść ceny, zrezygnować z klienta albo kogoś zwolnić. Nie podaje przyczyny zmiany jako faktu i nie pisze, że jedna rzecz „przełożyła się” na drugą, bo z arkusza tego nie widać, widać tylko, że zdarzyły się w tym samym czasie.
 
-Nie nazywa też trendem czegoś, co ma cztery punkty, i nie podaje procentu bez liczb bezwzględnych obok. „Wzrost o 200%” przy dwóch sztukach to nie wzrost, to dwie sztuki.
+Nie nazywa też trendem czegoś, co ma cztery punkty, i nie podaje procentu bez liczb bezwzględnych obok. „Wzrost o 200 %” przy dwóch sztukach to nie wzrost, to dwie sztuki.
 
 To granica postawiona świadomie. Model, który dostaje tabelkę i pytanie „co z tego wynika”, potrafi napisać płynne, pewne siebie wyjaśnienie, którego w danych nie ma ani śladu, i to jest najdroższy błąd w tej kategorii, bo brzmi dokładnie tak samo jak prawda. Ten skill zamiast tego pokazuje, gdzie kończą się dane, i oddaje decyzję osobie, która zna firmę.
+
+## Najczęstsze pytania
+
+### Czy AI przeanalizuje mi zestawienie sprzedaży z Excela?
+
+Tak, skill czyta arkusz albo eksport z systemu i mówi prostym językiem, co z niego wynika: kierunki, wartości, które się wyróżniają, i rzeczy warte sprawdzenia. Każdy punkt oznacza jako odczyt z danych, hipotezę albo rzecz do sprawdzenia, więc ustalenie nie miesza się z domysłem.
+
+### Czy powie mi, dlaczego spadła sprzedaż?
+
+Nie jako fakt, bo przyczyny nie ma w arkuszu. Na pytanie „dlaczego spadło” skill odpowie hipotezami do sprawdzenia i powie, czego trzeba dodatkowo, żeby to ustalić. Nie prognozuje też i nie rekomenduje decyzji w rodzaju podwyżki cen czy rezygnacji z klienta.
+
+### Dlaczego porównanie miesiąc do miesiąca bywa mylące?
+
+Bo miesiące mają różną liczbę dni roboczych, a skill zna polski kalendarz i przelicza wynik na dzień roboczy. Wyłapuje też pojedyncze duże faktury, które zawyżają wzrost, oraz korekty z kwotami ujemnymi, których zwykłe podsumowanie nie odejmuje.
+
+### Czy poradzi sobie z eksportem z Optimy albo Subiekta?
+
+Tak, zna nagłówki z Optimy, Subiekta, WAPRO, Symfonii i wFirmy oraz polski zapis kwot z przecinkiem i spacją w tysiącach. Rozróżnia datę wystawienia i datę sprzedaży, netto i brutto, marżę i narzut, a wiersz „Razem dla kontrahenta” w środku danych rozpoznaje jako taki, który podwaja wynik.
+
+### Czego potrzebuję, żeby przeanalizować arkusz?
+
+Wystarczy plik xlsx, csv albo tabela wklejona jako tekst, bez znajomości Excela i bez konektorów. Na starcie skill zapyta, skąd jest plik, jaki okres obejmuje, czy ostatni miesiąc jest zamknięty i o którą kolumnę chodzi, a bez odpowiedzi wypisze, na jakich założeniach pracował.
+
+### Ile kosztuje skill do czytania arkuszy i czy zadziała w ChatGPT?
+
+Nic, skill jest darmowy i udostępniony na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. W Claude działa na dowolnym płatnym planie, w ChatGPT wymaga planu Business, Enterprise, Edu lub Healthcare, a w Gemini w Polsce instrukcje wkleja się do rozmowy albo Gema.

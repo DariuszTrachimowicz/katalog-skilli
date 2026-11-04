@@ -6,6 +6,7 @@ wersja: 1.2.0
 poziom: Zaawansowany
 aktualizacja: 2026-11-04
 skrot: Prowadzi firmę przez zbudowanie własnej dokumentacji AI pod obowiązki AI Act, rejestr systemów, politykę dla pracowników, klauzulę do umów, listę praktyk zakazanych, ścieżkę incydentu. Strukturyzuje, nie orzeka zgodności.
+korzysc: Masz roboczy komplet dokumentów AI swojej firmy do domknięcia z prawnikiem, zamiast pustej kartki.
 szukaj: polityka AI, AI Act, rejestr systemów AI, obowiązki AI Act, kompetencje AI, klauzula AI do umowy, praktyki zakazane AI, zasady korzystania z AI w firmie, dokumentacja AI, incydent AI, prawo
 tytulSeo: Polityka AI i rejestr zastosowań w firmie pod AI Act, darmowy skill
 opisSeo: "Zbuduj dokumentację AI dla firmy pod AI Act: rejestr systemów, polityka dla pracowników, klauzula do umów, praktyki zakazane, ścieżka incydentu. Nie orzeka zgodności."
@@ -51,3 +52,29 @@ Wiedzy o własnej firmie, jakich narzędzi AI używacie i do czego, czy dotykaj�
 ## Czego ten skill nie robi celowo
 
 Nie orzeka zgodności ani kategorii ryzyka, nie pisze wiążących dokumentów, nie prowadzi zgłoszeń do organów i nie udaje, że sam spełnia obowiązek kompetencji AI. Robi to świadomie, bo pochopne zapewnienie o zgodności to realne ryzyko dla firmy, a nie pomoc. Układa dokumenty i uczciwie wskazuje, gdzie kończy się narzędzie, a zaczyna praca człowieka z odpowiedzialnością zawodową.
+
+## Najczęstsze pytania
+
+### Jak spisać zasady korzystania z AI w firmie?
+
+Odpowiadasz na pytania o swoją firmę, a skill układa z tego robocze dokumenty: rejestr używanych systemów AI, politykę dla pracowników, szkic klauzuli AI do umów, listę praktyk zakazanych do samokontroli i ścieżkę reakcji na incydent. Każdy dokument ma metryczkę wersji i miejsca oznaczone do potwierdzenia z prawnikiem.
+
+### Czy skill powie mi, czy firma spełnia wymogi AI Act?
+
+Nie, nie ocenia zgodności ani tego, czy dany system jest wysokiego ryzyka. Prowadzi Cię pytaniami, mówi, co wygląda na zastosowanie traktowane przez AI Act ostrzej, i wskazuje, co zweryfikować z prawnikiem. Klauzula do umów wychodzi jako szkic do prawnika, a nie gotowy zapis do podpisu.
+
+### Co muszę przygotować, zanim zacznę?
+
+Wystarczy wiedza o własnej firmie: jakich narzędzi AI używacie i do czego, czy dotykają danych osobowych albo decyzji o ludziach i kto za to odpowiada. Gdy czegoś nie wiesz, skill nie blokuje pracy, tylko zostawia jawne pola do uzupełnienia i wypisuje założenia do potwierdzenia.
+
+### Czy sama polityka AI załatwia szkolenie pracowników z AI?
+
+Nie, polityka i rejestr opisują zasady, a kompetencje AI pracowników to osobny obowiązek, który domyka przeszkolenie zespołu. Skill wskazuje ten obowiązek i mówi, że zakres szkolenia zależy od ról w firmie i używanych systemów, ale nie udaje, że dokument go spełnia.
+
+### Czy daty i terminy z AI Act podane przez skill są pewne?
+
+Nie, daty, progi i lista praktyk zakazanych zmieniają się, więc skill oznacza je do weryfikacji i wskazuje źródła urzędowe, na przykład Komisję Europejską i biznes.gov.pl. W metryczce dokumentu zapisuje datę stanu, a gdy sam dawno nie był aktualizowany, ostrzega o tym na górze odpowiedzi.
+
+### Czy to darmowe i gdzie zadziała?
+
+Tak, skill jest darmowy na licencji GPL, a plik `.skill` dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. W Claude działa na dowolnym płatnym planie, w ChatGPT wymaga planu Business, Enterprise, Edu lub Healthcare, a w Gemini w Polsce instrukcje wkleja się do rozmowy albo Gema.

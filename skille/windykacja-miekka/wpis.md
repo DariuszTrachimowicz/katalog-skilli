@@ -6,6 +6,7 @@ wersja: 1.0.2
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Układa komunikację przy nieopłaconej fakturze, od przypomnienia po ostatnie pismo przed przekazaniem sprawy. Mówi też, kiedy przejść dalej.
+korzysc: Wiesz, co napisać klientowi, który nie zapłacił, i kiedy wysłać kolejne pismo, bez psucia relacji.
 szukaj: niezapłacona faktura, wezwanie do zapłaty, monit, przeterminowana płatność, dłużnik, odsetki, windykacja, przypomnienie o płatności, kontrahent nie płaci
 tytulSeo: Klient nie zapłacił faktury, co napisać i kiedy. Narzędzie AI po polsku
 opisSeo: Opisz sytuację i dostań gotowe przypomnienie, wezwanie albo ostateczne pismo, z terminem, kanałem wysyłki i datą kolejnego kroku. Po polsku, za darmo.
@@ -78,3 +79,29 @@ Nie układa gróźb bez pokrycia, zapowiedzi zawiadomienia na policję, wpisu do
 Kończy się na czwartym stopniu: po ostatecznym wezwaniu nie napisze już nic i odeśle do prawnika, nawet jeśli poprosisz drugi raz. Zatrzymuje się też, gdy kontrahent zgłosił reklamację albo kwestionuje zakres prac, to już nie jest zaległość, tylko spór, a wezwanie w sporze zwykle pogarsza pozycję piszącego.
 
 Granica jest tu postawiona świadomie. Pismo z groźbą, której nikt nie wykona, załatwia jedno: następne pismo od tej samej osoby dłużnik już zignoruje. Narzędzie, które generuje mocno brzmiące straszaki, sprzedaje poczucie sprawczości, a odbiera skuteczność. To robi coś węższego i uczciwszego, pilnuje, żeby każde kolejne pismo było o stopień mocniejsze od poprzedniego i żeby zapowiedź, która w nim padnie, dała się wykonać.
+
+## Najczęstsze pytania
+
+### Co napisać klientowi, który nie zapłacił faktury?
+
+To zależy od liczby dni po terminie i historii współpracy, a skill sam ustala właściwy stopień: przypomnienie, ponowienie z datą, wezwanie do zapłaty albo ostateczne pismo przed przekazaniem sprawy. Do każdego pisma dokłada kanał wysyłki, listę załączników i datę, pod którą wrócić, jeśli pieniądze nie wpłyną.
+
+### Czy AI napisze mi pozew albo wniosek do komornika?
+
+Nie, skill nie pisze pism, które uruchamiają postępowanie albo wiążą strony: pozwu, sprzeciwu, wniosku do komornika, ugody, wypowiedzenia umowy ani wniosku o wpis do rejestru dłużników. Po ostatecznym wezwaniu odsyła do prawnika i może przygotować zestawienie, z którym pójdziesz do kancelarii.
+
+### Czy skill policzy odsetki i rekompensatę za koszty odzyskiwania należności?
+
+Nie, kwotę potwierdza księgowa, bo skill nie zna aktualnych stawek ani progów i nie może ich sprawdzić. Wskaże pozycję w piśmie i zostawi pole do uzupełnienia, a procentu odsetek nie wpisuje nigdy, bo błędna liczba daje dłużnikowi powód, żeby zakwestionować całe pismo.
+
+### Czy stałemu klientowi od razu wysłać wezwanie do zapłaty?
+
+Zwykle nie, przy kliencie, który latami płacił bez problemu, skill zaczyna od telefonu i krótkiego maila podsumowującego rozmowę. Wezwanie wysłane za wcześnie kosztuje relację i nie przyspiesza przelewu, a trzy identyczne uprzejme maile pod rząd uczą dłużnika, że nic się nie stanie.
+
+### Jakie dane podać, żeby dostać gotowe pismo do dłużnika?
+
+Wystarczą numer faktury, kwota, termin płatności i informacja, czy kontrahent w ogóle odpowiedział. Skill zapyta też, czy dłużnik to firma, czy osoba prywatna, jak wygląda historia współpracy i czy jest spór o wykonanie, bo przy sporze zamiast wezwania kieruje do prawnika.
+
+### Ile kosztuje skill do windykacji i czy zadziała w ChatGPT?
+
+Nic, skill jest darmowy i udostępniony na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. W Claude działa na dowolnym płatnym planie, w ChatGPT wymaga planu Business, Enterprise, Edu lub Healthcare, a w Gemini w Polsce instrukcje wkleja się do rozmowy albo Gema.

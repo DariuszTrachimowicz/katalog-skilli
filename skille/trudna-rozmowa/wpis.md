@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Przygotowuje do rozmowy, którą odkładasz, odmowy, podwyżki stawki, złej wiadomości. Daje zdania do wypowiedzenia i odpowiedzi na to, co usłyszysz.
+korzysc: Idziesz na rozmowę, którą odkładasz, z gotowym pierwszym zdaniem i odpowiedzią na to, co usłyszysz.
 szukaj: odmowa klientowi, podwyżka cen, trudna rozmowa, asertywność, zła wiadomość, zakończenie współpracy, granice, klient, negocjacje, kontrahent
 tytulSeo: Jak odmówić klientowi i podnieść ceny, przygotowanie do trudnej rozmowy
 opisSeo: Opisz sytuację i dostań gotowe zdania do wypowiedzenia, listę reakcji, których się spodziewać, i odpowiedź na każdą. Po polsku, za darmo.
@@ -66,3 +67,29 @@ Nie prowadzi rozmowy za Ciebie. Nie napisze wypowiedzenia, nagany, wezwania do z
 Jeśli w opisie pojawia się przemoc, groźby, uporczywe nękanie albo Twój własny kryzys, skill nie udaje doradcy. Mówi wprost, że tu potrzebne jest inne wsparcie: zapis zdarzeń i świadków, a przy groźbie, przemocy i nękaniu policja, 112, gdy dzieje się teraz, zawiadomienie na komisariacie, gdy ciągnie się od dawna. Ten adres działa niezależnie od tego, czy druga strona jest Twoim pracodawcą, klientem czy zleceniodawcą. Jeśli to pracodawca, dochodzi do tego wewnętrzna procedura zgłoszeń, o ile w firmie jest, i bezpłatna porada w okręgowym inspektoracie pracy. Przy kryzysie osobistym skill podaje całodobowe Centrum Wsparcia, 800 70 2222, a przy przemocy w domu Niebieską Linię, 800 120 002.
 
 To granica postawiona świadomie. Narzędzie, które w takiej sytuacji ćwiczy z Tobą asertywne zdanie, nie tylko nie pomaga, potrafi zaszkodzić.
+
+## Najczęstsze pytania
+
+### Jak powiedzieć klientowi, że podnoszę stawkę?
+
+Skill przygotuje Cię do tej jednej rozmowy: daje zdanie otwierające, trzy rzeczy, które muszą paść, zwroty, których lepiej unikać, i tabelę odpowiedzi na typowe reakcje. Przy podwyżce pilnuje konkretnej daty wejścia nowej stawki i każe ustalić próg, poniżej którego kończysz współpracę.
+
+### Czy AI napisze mi maila albo SMS-a z odmową do klienta?
+
+Nie. Skill nie pisze gotowej wiadomości do wysłania, ani maila, ani SMS-a, ani szkicu, tylko punkty, które mają się w niej znaleźć. Nie napisze też wypowiedzenia, nagany ani wezwania do zapłaty, bo takie pismo uruchamia terminy i skutki, które sprawdza kadrowa albo prawnik.
+
+### Jak odmówić klientowi tak, żeby odmowa była jasna?
+
+Powiedz „nie” wprost, bo miękkie „zobaczymy” czy „postaram się” jest u nas czytane jako zgoda i rozmówca zaczyna pod to planować. Skill pilnuje też, żeby nie zaczynać od „przepraszam, ale”, podpowiada przeniesienie trudnej sprawy z WhatsAppa na telefon i krótki mail z podsumowaniem po rozmowie.
+
+### Czy przygotuje mnie do rozmowy z szefem o podwyżkę?
+
+Tak, skill obejmuje rozmowy z osobami spoza Twojej podległości, także z własnym szefem, na przykład prośbę o podwyżkę albo rozmowę o własnej ocenie. Rozmowę z Twoim podwładnym przygotowuje osobny skill z katalogu, Rozmowa oceniająca.
+
+### Czy skill pomoże, gdy ktoś mi grozi albo mnie nęka?
+
+Nie jako trener rozmowy, bo ćwiczenie asertywnych zdań w takiej sytuacji potrafi zaszkodzić. Skill mówi wprost, że potrzebne jest inne wsparcie: zapis zdarzeń i świadków, a przy groźbie, przemocy i nękaniu policja, 112, gdy dzieje się to teraz. Przy kryzysie osobistym podaje całodobowe Centrum Wsparcia, 800 70 2222.
+
+### Ile to kosztuje i na czym działa?
+
+Skill jest darmowy, na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. Działa na dowolnym płatnym planie Claude, a w ChatGPT na planach Business, Enterprise, Edu i Healthcare. Wystarczy opis sytuacji własnymi słowami, korespondencję możesz dołożyć.

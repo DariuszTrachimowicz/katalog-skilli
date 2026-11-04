@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Doprowadza rozjechany arkusz do porządku i pokazuje dziennik każdej zmiany. Nic nie poprawia po cichu.
+korzysc: Masz uporządkowany arkusz i dokładnie wiesz, co w nim zmieniono, bo nic nie dzieje się po cichu.
 szukaj: excel, arkusz, csv, dane, krzaczki, kodowanie, polskie znaki, Windows-1250, daty, kwoty, duplikaty, NIP, scalone komórki, porządkowanie, sortowanie, łączenie plików, wiersz razem, suma się nie zgadza, import, kod pocztowy, zera, tabela przestawna, średnik
 tytulSeo: Jak uporządkować rozjechany plik Excel, narzędzie AI po polsku
 opisSeo: Scalone komórki, trzy formaty daty, kwoty jako tekst, krzaczki zamiast polskich znaków. Skill sprząta arkusz i pokazuje, co dokładnie zmienił.
@@ -78,3 +79,29 @@ Nie uzupełnia braków, nie usuwa wierszy bez zgody, nie scala podobnych nazw z 
 Pustej komórki nie wypełni ani średnią, ani wartością z wiersza wyżej, ani niczym znalezionym poza plikiem. Jeśli podasz konkretną wartość i konkretne wiersze, wpisze ją w nowej kolumnie „Uzupełnione ręcznie”, obok pustej komórki, nie zamiast niej. Po trzech miesiącach nikt już nie odróżni wstawionej średniej od prawdziwej liczby i to jest cały powód tej reguły.
 
 Nie orzeka też, czy dane są poprawne w rozumieniu przepisów. Mówi, co się stanie w praktyce: że przelew na numer o 25 cyfrach nie przejdzie, a faktura z błędnym NIP wróci do poprawki.
+
+## Najczęstsze pytania
+
+### Jak uporządkować rozjechany plik Excel?
+
+Wrzuć plik, a skill rozłączy scalone komórki, oddzieli nagłówki i sumy ze środka tabeli od danych, ujednolici daty i kwoty, odzyska polskie znaki i zbierze warianty nazw kontrahentów. Do pliku dokłada arkusz „Dziennik zmian”, a w odpowiedzi podaje liczbę wierszy i sumę kwot przed i po.
+
+### Czy AI samo poprawi błędne NIP-y i uzupełni puste komórki?
+
+Nie, skill nie poprawia numerów, które nie przechodzą kontroli, tylko je zgłasza. Pustej komórki nie wypełni średnią ani wartością z wiersza wyżej, a wierszy nie usunie bez Twojej zgody. Wszystko, czego nie da się rozstrzygnąć z samego pliku, trafia na listę „Do Twojej decyzji”.
+
+### Jak naprawić krzaczki zamiast polskich znaków w pliku CSV?
+
+Skill rozpoznaje po objawach, czy plik jest w kodowaniu Windows-1250, ISO-8859-2 czy UTF-8, i odzyskuje polskie znaki. Gdy ogonków nie da się już odzyskać, mówi to wprost, zamiast zgadywać, czy „Lacki” to „Łącki”.
+
+### Czy połączy pliki od kilku osób w jedno zestawienie?
+
+Tak, i pilnuje przy tym liczb kontrolnych, czyli liczby wierszy i sumy kwot przed sklejeniem i po nim. Nie zgadnie jednak, że „Wartość netto” w jednym pliku i „Kwota” w drugim to to samo, więc zapyta. Na starcie musi też wiedzieć, która kolumna identyfikuje wiersz, bo inaczej nie rozpozna duplikatów.
+
+### Co zrobi z datami zapisanymi w kolumnie na różne sposoby?
+
+Ujednolici je tam, gdzie da się to rozstrzygnąć na podstawie całej kolumny, na przykład gdy pojawia się dzień większy niż 12. Jeśli każdy dzień w kolumnie jest mniejszy niż 13, nie wybierze za Ciebie kolejności dnia i miesiąca, tylko odda całą kolumnę do Twojej decyzji.
+
+### Ile kosztuje skill do porządkowania arkuszy i gdzie działa?
+
+Nic, skill jest darmowy i udostępniony na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. W Claude działa na dowolnym płatnym planie, w ChatGPT wymaga planu Business, Enterprise, Edu lub Healthcare, a w Gemini w Polsce instrukcje wkleja się do rozmowy albo Gema.

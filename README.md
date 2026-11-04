@@ -40,7 +40,9 @@ public/
   pobierz/<id>.skill          paczka do pobrania
   prywatnosc/index.html
   dane/skille.json            używane przez usługę zapisów
-  styl.css  sitemap.xml  robots.txt
+  styl.css  sitemap.xml  robots.txt  404.html
+  llms.txt                    opis katalogu dla modeli językowych
+  .well-known/ard.json        katalog dla agentów (ARD v0.91, ta sama treść w ai-catalog.json)
 ```
 
 ## Dodanie nowego skilla
@@ -64,7 +66,8 @@ kategoria: Prawo              # Biuro, Finanse, Kadry, Prawo, Marketing, Dane
 status: gotowy                # gotowy | wkrotce
 poziom: Działa od razu
 aktualizacja: 2026-08-10
-skrot: Jedno zdanie o tym, co robi, pokazuje się na karcie i w wynikach testu.
+skrot: Jedno zdanie o tym, co robi (opis SEO, llms.txt, ARD).
+korzysc: Jedno zdanie korzyści dla użytkownika, karta i nagłówek strony skilla.
 szukaj: umowa, kontrakt, NDA  # słowa kluczowe po przecinku, zasilają wyszukiwarkę i test
 tytulSeo: ...                 # opcjonalne, inaczej powstaje z nazwy
 opisSeo: ...                  # opcjonalne, inaczej używany jest skrót
@@ -75,7 +78,7 @@ zgodnosc:
 ---
 ```
 
-Sekcje `## Co robi`, `## Dla kogo`, `## Ile Ci to oszczędza`, `## Przykład z życia`, `## Jak po polsku`, `## Czego potrzebujesz`, `## Na czym się wywala`, `## Czego ten skill nie robi celowo` trafiają w ustalone miejsca szablonu. **Każda inna sekcja `##` wyląduje na dole strony**, tak dokłada się rzeczy nietypowe, na przykład historię powstania skilla.
+Sekcje `## Co robi`, `## Dla kogo`, `## Ile Ci to oszczędza`, `## Przykład z życia`, `## Jak po polsku`, `## Czego potrzebujesz`, `## Na czym się wywala`, `## Czego ten skill nie robi celowo` trafiają w ustalone miejsca szablonu. Sekcja `## Najczęstsze pytania` (4 do 6 pytań `### …?` z akapitem odpowiedzi, zasady w STANDARD.md) daje widoczne FAQ, dane FAQPage i speakable oraz przykładowe zapytania w ARD; ten sam format działa w poradnikach. **Każda inna sekcja `##` wyląduje na dole strony**, tak dokłada się rzeczy nietypowe, na przykład historię powstania skilla.
 
 Statusy zgodności znaczą dokładnie tyle:
 

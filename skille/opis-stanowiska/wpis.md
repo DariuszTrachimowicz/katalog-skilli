@@ -6,6 +6,7 @@ wersja: 1.0.2
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Zamienia „potrzebuję kogoś do pomocy” w konkretny opis stanowiska, zakres obowiązków, wymagania konieczne i mile widziane, sposób sprawdzenia każdego z nich.
+korzysc: Wiesz, kogo naprawdę szukasz, i sprawdzasz każdego kandydata według tej samej listy wymagań.
 szukaj: opis stanowiska, zakres obowiązków, karta stanowiska, rekrutacja, wymagania, kandydat, kadry, mała firma, nazwa stanowiska, kryteria oceny
 tytulSeo: Opis stanowiska pracy, jak go napisać. Narzędzie AI po polsku
 opisSeo: Wpisz, kogo szukasz, i dostań gotowy opis stanowiska, obowiązki, wymagania konieczne i mile widziane, sposób sprawdzenia. Po polsku, za darmo.
@@ -69,3 +70,25 @@ Nie rozstrzyga wymagań formalnych w branżach regulowanych, transport, ochrona,
 Nie układa pytań na rozmowę kwalifikacyjną, karty oceny ani planu rozmowy. Podaje sposób sprawdzenia każdego wymagania, zadanie próbne, dokument, referencje, obserwowalny próg, a samą rozmowę przygotowuje osobne narzędzie.
 
 Nie pisze też ogłoszenia rekrutacyjnego, umowy o pracę, aneksu, regulaminu ani zakresu obowiązków do podpisu. To dokumenty, które rodzą zobowiązania po obu stronach, więc powstają u kadr albo u prawnika. Ten skill przygotowuje materiał, z którego one się biorą, i mówi wprost, czego w nim jeszcze brakuje.
+
+## Najczęstsze pytania
+
+### Jak napisać opis stanowiska, gdy szukam po prostu „kogoś do biura”?
+
+Skill zadaje kilka pytań i zamienia ogólną potrzebę w dokument: po co stanowisko istnieje, co ta osoba ma robić, co decyduje sama i czego naprawdę trzeba wymagać. Do każdego wymagania podaje sposób sprawdzenia, na przykład zadanie próbne, dokument, referencje albo obserwowalny próg.
+
+### Czy AI przeczyta CV i oceni moich kandydatów?
+
+Nie. Skill nie czyta CV, nie punktuje i nie mówi, kogo zaprosić na rozmowę. Kryteria układa przed rekrutacją, bo kryterium napisane po zobaczeniu kandydatów staje się uzasadnieniem decyzji już podjętej. Nie podaje też kwot ani widełek wynagrodzenia, zostawia na nie puste pole.
+
+### Jakich wymagań lepiej nie wpisywać do opisu stanowiska?
+
+Skill wyłapuje te oczywiste, jak wiek czy stan cywilny, i te w przebraniu: „pełna dyspozycyjność”, „native speaker” albo „minimum 10 lat doświadczenia” przy pracy dla początkującego. Wymaganie, którego nie da się przypisać do konkretnego zadania, wypada albo zamienia się w konkret, na przykład w godziny pracy.
+
+### Czy skill wpisze kod zawodu do dokumentów kadrowych?
+
+Nie. Poda nazwę stanowiska i powie, że kod z klasyfikacji zawodów będzie potrzebny, ale cyfr nie zgadnie. Kod sprawdzasz w kadrach albo u księgowej, bo wpisany na oko trafia do zgłoszenia do ZUS i wraca jako korekta.
+
+### Czego potrzebuję i ile to kosztuje?
+
+Skill jest darmowy, na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. Działa na dowolnym płatnym planie Claude, a w ChatGPT na planach Business, Enterprise, Edu i Healthcare. Wystarczy kilka minut na odpowiedzi albo opis, który już masz, w Wordzie, PDF-ie lub jako tekst.

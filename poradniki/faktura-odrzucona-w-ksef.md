@@ -69,3 +69,21 @@ Ułożenie tego w jeden dokument z rolami, rejestrem i punktami styku z księgow
 
 - Odrzucenie pliku, status dokumentu wystawionego poza systemem, data wystawienia przy ponownym przesłaniu: ksef.podatki.gov.pl/ksef-news/najczestsze-pytania/ (sprawdzono 24 sierpnia 2026)
 - Cztery tryby szczególne i brak dosyłania przy awarii całkowitej: ksef.podatki.gov.pl/wyjasnienia/co-warto-wiedziec-przed-startem-ii-etapu-wdrozenia-krajowego-systemu-e-faktur/ (sprawdzono 24 sierpnia 2026)
+
+## Najczęstsze pytania
+
+### Co oznacza odrzucenie faktury w KSeF?
+
+Dokument odrzucony przez KSeF w systemie nie istnieje: nie ma numeru KSeF i nabywca nie pobierze go z systemu. Nie ma stanu pośredniego, dokument jest albo przyjęty z numerem, albo go tam nie ma. Odrzucenie ustala jednak tylko status dokumentu w systemie, a nie jego skutki w rozliczeniu podatku.
+
+### Czy faktura odrzucona przez KSeF jest nieważna?
+
+Z samego odrzucenia nie wynika, że faktury nie ma ani że płatność jest bez podstawy. Dokument wystawiony poza systemem może nadal być fakturą w rozumieniu przepisów o VAT, jeżeli spełnia przesłanki materialne. Ocena konkretnego przypadku należy do księgowej albo doradcy podatkowego, dlatego wstrzymywanie płatności z tego powodu bywa błędem.
+
+### Jak poprawić odrzuconą fakturę w KSeF?
+
+Sposób poprawienia zależy od tego, czy dokument w tej postaci trafił już do nabywcy. Przy błędzie technicznym, gdy nikt dokumentu nie dostał, poprawia się plik i wysyła ponownie. Jeżeli dokument został już wydany kontrahentowi, zmiana danych może wymagać korekty i decyzję podejmuje się razem z księgową.
+
+### Jaka jest data wystawienia faktury po ponownym przesłaniu do KSeF?
+
+Po poprawieniu i skutecznym przesłaniu faktura ustrukturyzowana ma za datę wystawienia dzień przesłania do systemu. Plik odrzucony w piątek i przyjęty w poniedziałek ma więc datę poniedziałkową. Tryb offline24, niedostępność i tryb awaryjny mają własne zasady daty, które sprawdzisz na ksef.podatki.gov.pl.

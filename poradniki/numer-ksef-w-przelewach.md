@@ -66,3 +66,21 @@ Sprawy ujęcia płatności w rozliczeniu, stawek i odliczeń zostaw księgowej a
 - Tryby pracy bez dostępu do systemu i skutki awarii całkowitej: ksef.podatki.gov.pl/wyjasnienia/co-warto-wiedziec-przed-startem-ii-etapu-wdrozenia-krajowego-systemu-e-faktur/ (sprawdzono 24 sierpnia 2026)
 - Tryb offline24 i termin przesłania faktury do systemu: ksef.podatki.gov.pl/informacje-ogolne-ksef-20/tryb-offline24/ (sprawdzono 24 sierpnia 2026)
 - Zachowanie programu do fakturowania i bankowości: dostawca programu, kanał wsparcia (potwierdź u dostawcy)
+
+## Najczęstsze pytania
+
+### Od kiedy trzeba wpisywać numer KSeF w tytule przelewu?
+
+Obowiązek podawania numeru KSeF w tytule płatności zaczyna się 1 stycznia 2027 roku. Wcześniej go nie ma, także przy mechanizmie podzielonej płatności. Przed tą datą warto przygotować ustalenia i przepływ danych między programem księgowym a bankowością, zamiast wpisywać numer w przelewy na próbę.
+
+### Czy numer KSeF trzeba podawać przy każdym przelewie?
+
+Nie, obowiązek dotyczy płatności, w których kilka warunków występuje razem. Czynny podatnik VAT płaci innemu czynnemu podatnikowi VAT za fakturę ustrukturyzowaną albo za fakturę z trybu offline24 lub okresu niedostępności, która dostała numer KSeF, przelewem albo innym instrumentem pozwalającym podać tytuł płatności.
+
+### Jak zapłacić jednym przelewem za kilka faktur z KSeF?
+
+Przy płatności za więcej niż jedną fakturę objętą obowiązkiem stosuje się identyfikator zbiorczy. Generuje go system dla zbioru faktur, więc nie jest to numer paczki z programu księgowego ani własny format firmy. Jak program i bank przenoszą taki identyfikator do przelewu, potwierdź u ich dostawców.
+
+### Co zrobić z przelewem, gdy faktura nie ma numeru KSeF?
+
+Faktury bez numeru KSeF wskutek ogłoszonej awarii całkowitej nie są objęte obowiązkiem podawania numeru w tytule płatności. Podobnie zaliczka jeszcze nieudokumentowana fakturą nie ma numeru do podania. Instrukcja firmowa powinna wskazywać takie przypadki wprost, żeby nikt nie wstrzymywał przelewu w poszukiwaniu numeru, którego nie ma.

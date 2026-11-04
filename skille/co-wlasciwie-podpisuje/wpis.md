@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Zamienia kilkadziesiąt stron umowy, polisy, leasingu albo aneksu w kilkanaście punktów: ile płacisz, jak długo, jak wyjść, co przy problemie.
+korzysc: Wiesz, ile płacisz, na jak długo się wiążesz i jak z umowy wyjść, bez czytania kilkudziesięciu stron.
 szukaj: umowa, polisa, OWU, leasing, kredyt, abonament, aneks, harmonogram, najem, streszczenie, prosty język, RRSO
 tytulSeo: Streszczenie umowy, polisy i leasingu po ludzku, darmowe narzędzie AI
 opisSeo: Wgraj umowę, polisę, leasing albo aneks i zobacz w kilkunastu punktach, ile to kosztuje, jak długo trwa i jak z tego wyjść. Po polsku, za darmo.
@@ -76,3 +77,25 @@ Nie porówna też dwóch ofert. Streszcza jeden dokument, bo zestawienie dwóch 
 Do oceny ryzyk służy osobny skill: **Czerwone flagi w umowie**. Ten podział jest celowy. Streszczenie i ocena to dwie różne prace, a narzędzie, które robi obie naraz, kończy jednym zdaniem w rodzaju „w sumie wygląda w porządku”, czyli dokładnie tym, po czym ludzie podpisują rzeczy, których nie przeczytali.
 
 Tutaj dostajesz coś węższego i uczciwszego: pewność, że wiesz, co w dokumencie jest.
+
+## Najczęstsze pytania
+
+### Czy AI streści mi umowę albo polisę prostym językiem?
+
+Tak, dostajesz kilkanaście punktów: ile płacisz, jak długo to trwa, co masz robić, jak z tego wyjść, co się stanie przy problemie i co druga strona może zmienić sama. Przy każdym punkcie stoi miejsce w dokumencie, więc sprawdzisz go u źródła.
+
+### Czy powie mi, czy warto podpisać tę umowę?
+
+Nie, ten skill streszcza, a nie ocenia. Nie powie, czy zapis jest ryzykowny albo uczciwy, i nie napisze wypowiedzenia ani reklamacji. Do sprawdzenia, na co uważać, służy osobny skill „Czerwone flagi w umowie”, a przy dużych kwotach decyzję warto skonsultować z prawnikiem.
+
+### Co muszę wgrać, żeby streszczenie było pełne?
+
+Wgraj umowę razem ze wszystkimi załącznikami, na przykład tabelą opłat i harmonogramem, w PDF, w Wordzie albo jako wklejony tekst. Koszty często siedzą w osobnych plikach, a skill streszcza tylko to, co dostanie, i wprost napisze, do jakich brakujących dokumentów umowa odsyła.
+
+### Czy policzy mi całkowity koszt leasingu albo kredytu?
+
+Tak, jeśli da się go wyliczyć z samego dokumentu, i pokazuje przy tym działanie: ratę razy liczbę miesięcy plus opłatę wstępną i wykup. Gdy kwota zależy od zmiennego oprocentowania, waloryzacji albo „aktualnego cennika”, podaje regułę zmiany i mówi, że tej pozycji wyliczyć się nie da.
+
+### Czy to darmowe i czy zadziała w ChatGPT?
+
+Tak, skill jest darmowy na licencji GPL, a plik `.skill` dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. W Claude działa na dowolnym płatnym planie, w ChatGPT wymaga planu Business, Enterprise, Edu lub Healthcare, a w Gemini w Polsce instrukcje wkleja się do rozmowy albo Gema.

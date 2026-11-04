@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Układa plan pierwszych dwóch tygodni nowej osoby, dzień po dniu, z konkretną osobą przy każdym zadaniu i wyznaczonymi rozmowami o postępach.
+korzysc: Masz plan pierwszych dwóch tygodni nowej osoby, z gospodarzem każdego punktu i listą formalności dla kadrowej.
 szukaj: wdrożenie, onboarding, nowy pracownik, pierwszy dzień w pracy, co przygotować przed startem, plan wdrożenia, opiekun wdrożenia, formalności przy zatrudnieniu, badania wstępne, szkolenie BHP
 tytulSeo: Plan wdrożenia nowego pracownika, rozpis pierwszych dwóch tygodni
 opisSeo: Wklej opis stanowiska i dostań plan pierwszych dwóch tygodni, dzień po dniu, kto za co odpowiada, plus lista formalności do potwierdzenia u kadrowej.
@@ -66,3 +67,29 @@ Dowolny płatny plan Claude i opis stanowiska, z ogłoszenia, z notatki, wklejon
 Nie pisze umowy o pracę, aneksu, zakresu obowiązków do akt osobowych ani żadnego dokumentu do podpisu. Nie liczy wynagrodzenia, urlopu, stażu pracy ani składek. Nie orzeka, że formalności są załatwione. Nie robi z planu wdrożenia arkusza oceny, po którym łatwiej rozstać się z człowiekiem w okresie próbnym.
 
 Te granice są postawione świadomie. Narzędzie, które generuje dokumenty kadrowe, wchodzi w buty kadrowej, a odpowiedzialność za termin i treść zostawia Tobie. To narzędzie robi co innego: pilnuje, żeby pierwsze dwa tygodnie miały gospodarza, i pokazuje, o co zapytać osobę, która za papiery odpowiada.
+
+## Najczęstsze pytania
+
+### Jak zaplanować pierwszy tydzień nowego pracownika?
+
+Wklejasz opis stanowiska, a skill układa plan pierwszych dwóch tygodni dzień po dniu: kto wita nową osobę, kiedy dostaje pierwsze samodzielne zadanie, kto z nią rozmawia w piątek i o co pyta. Przy każdym punkcie stoi osoba i czas trwania, a brakujące imiona zostają jako role do uzupełnienia.
+
+### Czy AI napisze umowę o pracę albo zakres obowiązków dla nowej osoby?
+
+Nie. Skill nie pisze umowy, aneksu, zakresu obowiązków ani żadnego dokumentu do podpisu, także jako wzoru. Nie liczy też wynagrodzenia, urlopu, stażu pracy ani składek. Napisze za to krótką zapowiedź dla zespołu, plan spotkania wprowadzającego i pytania na rozmowę kontrolną.
+
+### Jakie formalności trzeba załatwić, zanim nowa osoba zacznie pracę?
+
+Skill wypisuje je jako osobną listę do potwierdzenia u kadrowej albo w biurze rachunkowym, na przykład badania wstępne, szkolenie BHP z instruktażem na stanowisku i zgłoszenie do ubezpieczeń. Nie rozstrzyga ich i żadnej nie skreśla jako zbędnej, tylko pilnuje, żeby nie zginęła, i mówi, co się stanie, gdy nie będzie gotowa.
+
+### Czy plan sprawdzi się przy pierwszej pracy albo powrocie z urlopu rodzicielskiego?
+
+Tak, skill zna warianty, które w polskich firmach zdarzają się najczęściej: pracę zmianową, pierwszą pracę, powrót po urlopie rodzicielskim i stanowisko po kimś, od kogo nie ma już jak przejąć wiedzy. Wymagania branżowe, na przykład uprawnienia na wózek widłowy, wychwyci tylko wtedy, gdy napiszesz, w czym pracujecie.
+
+### Czy skill pomoże mi ocenić nową osobę w okresie próbnym?
+
+Nie. Skill nie robi z planu wdrożenia arkusza oceny ani listy braków, po której łatwiej rozstać się z człowiekiem w okresie próbnym. Plan ma pomóc nowej osobie wejść w pracę. Skill przygotuje za to pytania na rozmowy kontrolne.
+
+### Czego potrzebuję i ile to kosztuje?
+
+Skill jest darmowy, na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. Działa na dowolnym płatnym planie Claude, a w ChatGPT na planach Business, Enterprise, Edu i Healthcare. Do tego opis stanowiska, a im więcej powiesz o dacie startu, przełożonym i sprzęcie, tym mniej plan zgaduje.

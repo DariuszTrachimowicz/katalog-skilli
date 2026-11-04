@@ -25,55 +25,50 @@ const CHROME = [
 ].filter(Boolean).find((p) => existsSync(p));
 if (!CHROME) { console.error("Nie znalazłem Chrome, ustaw zmienną CHROME."); process.exit(1); }
 
-// Kolory kategorii jak na stronie, dobrane pod ciemne tło karty.
+// Kolory dziedzin jak na stronie (szablony/styl.css, klasy k-*).
 const KOLORY = {
-  Prawo: "#E8938F", Biuro: "#7FC4EE", Finanse: "#8FC493",
-  Kadry: "#E3B65C", Marketing: "#C9C9C6", Dane: "#C9C9C6", Pracownia: "#8FC493",
+  Prawo: ["#1f4fd1", "#e5edff"], Finanse: ["#0b7a52", "#e1f4ea"], Kadry: ["#a14a06", "#fdf0df"],
+  Biuro: ["#6d36d9", "#efe8ff"], Marketing: ["#b53b0a", "#ffeae1"], Dane: ["#0d6b85", "#dff3f7"],
 };
 
 const fontUrl = (n) => pathToFileURL(join(KORZEN, "szablony", "fonty", n)).href;
-const logoUrl = pathToFileURL(join(KORZEN, "szablony", "logo-sygnet.png")).href;
-const wordmarkUrl = pathToFileURL(join(KORZEN, "szablony", "logo-wordmark.png")).href;
+const logoUrl = pathToFileURL(join(KORZEN, "szablony", "ai-xperts-sygnet-black.png")).href;
 const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
 
 function karta({ kategoria, tytul, opis, stopka }) {
-  const akcent = KOLORY[kategoria] || "#C9C9C6";
+  const [c, cb] = KOLORY[kategoria] || ["#0047c2", "#eef3fd"];
   return `<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><style>
-@font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;src:url(${fontUrl("instrument-serif-400-latin-ext.woff2")}) format('woff2');unicode-range:U+0100-02BA}
-@font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;src:url(${fontUrl("instrument-serif-400-latin.woff2")}) format('woff2')}
-@font-face{font-family:'Inter Tight';font-weight:400;src:url(${fontUrl("inter-tight-400-latin-ext.woff2")}) format('woff2');unicode-range:U+0100-02BA}
-@font-face{font-family:'Inter Tight';font-weight:400;src:url(${fontUrl("inter-tight-400-latin.woff2")}) format('woff2')}
-@font-face{font-family:'Inter Tight';font-weight:500;src:url(${fontUrl("inter-tight-500-latin-ext.woff2")}) format('woff2');unicode-range:U+0100-02BA}
-@font-face{font-family:'Inter Tight';font-weight:500;src:url(${fontUrl("inter-tight-500-latin.woff2")}) format('woff2')}
+@font-face{font-family:"Red Hat Display";font-weight:500 900;src:url(${fontUrl("red-hat-display-latin-ext.woff2")}) format("woff2");unicode-range:U+0100-02BA}
+@font-face{font-family:"Red Hat Display";font-weight:500 900;src:url(${fontUrl("red-hat-display-latin.woff2")}) format("woff2")}
+@font-face{font-family:"Red Hat Text";font-weight:400 700;src:url(${fontUrl("red-hat-text-latin-ext.woff2")}) format("woff2");unicode-range:U+0100-02BA}
+@font-face{font-family:"Red Hat Text";font-weight:400 700;src:url(${fontUrl("red-hat-text-latin.woff2")}) format("woff2")}
 *{margin:0;box-sizing:border-box}
-body{width:1200px;height:630px;background:#17181B;color:#F4F2EC;font-family:'Inter Tight',sans-serif;
-  padding:56px 64px;display:flex;flex-direction:column;position:relative;overflow:hidden}
-.blask{position:absolute;width:900px;height:900px;right:-300px;top:-420px;border-radius:50%;
-  background:radial-gradient(circle,rgba(31,108,159,.32),transparent 65%)}
-.gora{display:flex;align-items:center;gap:20px;position:relative}
-.gora img{width:76px;height:76px}
-.marka{font-size:28px;font-weight:500;letter-spacing:-.01em}
-.marka span{display:block;font-size:17px;font-weight:400;color:#9B9A96;letter-spacing:.01em}
-.tag{margin-left:auto;border:1.5px solid ${akcent};color:${akcent};border-radius:9999px;
-  padding:9px 22px;font-size:19px;font-weight:500;letter-spacing:.08em;text-transform:uppercase}
-.srodek{flex:1;display:flex;flex-direction:column;justify-content:center;position:relative;gap:22px}
-h1{font-family:'Instrument Serif',serif;font-weight:400;font-size:76px;line-height:1.06;letter-spacing:-.01em;
+body{width:1200px;height:630px;background:#fff;color:#0d2340;font-family:"Red Hat Text",sans-serif;
+  padding:54px 64px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.panel{position:absolute;right:-120px;top:-80px;width:520px;height:820px;background:#eef3fd;transform:skewX(-9deg);border-radius:0 0 0 60px}
+.plama{position:absolute;right:-70px;bottom:-110px;width:300px;height:300px;border-radius:60px;background:linear-gradient(135deg,#005eff,#18b4f0);transform:rotate(28deg);opacity:.9}
+.gora{display:flex;align-items:center;gap:18px;position:relative}
+.gora img{width:64px;height:64px;border-radius:12px}
+.marka{font-family:"Red Hat Display";font-size:28px;font-weight:800;letter-spacing:-.01em}
+.marka span{display:block;font-family:"Red Hat Text";font-size:17px;font-weight:500;color:#56657c}
+.tag{margin-left:auto;background:${cb};color:${c};border-radius:9999px;padding:10px 24px;font-family:"Red Hat Display";font-size:20px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.srodek{flex:1;display:flex;flex-direction:column;justify-content:center;position:relative;gap:20px;max-width:900px}
+h1{font-family:"Red Hat Display";font-weight:800;font-size:72px;line-height:1.04;letter-spacing:-.02em;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.opis{font-size:29px;line-height:1.42;color:#B9B8B4;max-width:960px;
+.kreska{width:120px;height:8px;border-radius:8px;background:${c}}
+.opis{font-size:30px;line-height:1.38;color:#3b4d68;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.dol{display:flex;align-items:center;justify-content:space-between;position:relative;
-  border-top:1px solid #2E2F33;padding-top:26px;font-size:22px;color:#9B9A96}
-.dol b{color:#F4F2EC;font-weight:500}
-.dol img{height:44px;margin:-8px 0}
+.dol{display:flex;align-items:center;gap:18px;position:relative;border-top:1px solid #dde5f1;padding-top:24px;font-size:22px;color:#56657c}
+.dol b{color:#0d2340;font-weight:700}
 </style></head><body>
-<div class="blask"></div>
+<div class="panel"></div><div class="plama"></div>
 <div class="gora">
   <img src="${logoUrl}" alt="">
-  <div class="marka">${esc(cfg.nazwaSerwisu)}<span>katalog umiejętności AI po polsku</span></div>
+  <div class="marka">${esc(cfg.nazwaSerwisu)}<span>darmowe skille AI pod polskie realia</span></div>
   ${kategoria ? `<div class="tag">${esc(kategoria)}</div>` : ""}
 </div>
-<div class="srodek"><h1>${esc(tytul)}</h1><p class="opis">${esc(opis)}</p></div>
-<div class="dol"><span><b>${esc(cfg.domena)}</b> &nbsp;·&nbsp; ${esc(stopka)}</span><img src="${wordmarkUrl}" alt="AI Xperts"></div>
+<div class="srodek"><div class="kreska"></div><h1>${esc(tytul)}</h1><p class="opis">${esc(opis)}</p></div>
+<div class="dol"><span><b>${esc(cfg.domena)}</b> &nbsp;·&nbsp; ${esc(stopka)}</span></div>
 </body></html>`;
 }
 
@@ -95,13 +90,12 @@ mkdirSync(ROBOCZY, { recursive: true });
 mkdirSync(CEL, { recursive: true });
 
 const zadania = [
-  { plik: "katalog.png", html: karta({ tytul: "Pisane od zera pod polskie realia. Nie tłumaczone.", opis: cfg.opisSerwisu, stopka: `${skille.length} umiejętności · za darmo · Claude i ChatGPT` }) },
+  { plik: "katalog.png", html: karta({ tytul: "Skille AI pisane pod polskie realia", opis: "Umowy, faktury, KSeF, RODO, kadry i biuro. Wgrywasz do Claude albo ChatGPT i pracujesz po polsku.", stopka: `${skille.length} skilli · za darmo · licencja GPL` }) },
   { plik: "regulamin.png", html: karta({ tytul: "Regulamin", opis: "Zasady korzystania z katalogu, pobierania skilli i newslettera.", stopka: cfg.nazwaSerwisu }) },
   { plik: "prywatnosc.png", html: karta({ tytul: "Prywatność", opis: "Jakie dane zbiera katalog i co się z nimi dzieje. Bez śledzenia, bez profilowania.", stopka: cfg.nazwaSerwisu }) },
-  { plik: "pracownia.png", html: karta({ kategoria: "Pracownia", tytul: "Dokument firmowy z rozmowy. Bez instalowania.", opis: "Odpowiadasz na pytania, a Pracownia składa gotowy plik: DOCX, PDF i HTML. Sprzedaż pakietów jest zawieszona.", stopka: "Projekt zawieszony od 4 listopada 2026" }) },
   ...skille.map((s) => ({
     plik: `${s.id}.png`,
-    html: karta({ kategoria: s.kategoria, tytul: s.nazwa, opis: s.skrot, stopka: "Do pobrania za darmo · Claude i ChatGPT" }),
+    html: karta({ kategoria: s.kategoria, tytul: s.nazwa, opis: s.korzysc || s.skrot, stopka: "Darmowy skill · Claude i ChatGPT" }),
   })),
 ];
 

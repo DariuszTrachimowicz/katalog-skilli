@@ -6,6 +6,7 @@ wersja: 1.1.0
 poziom: Zaawansowany
 aktualizacja: 2026-11-04
 skrot: Buduje z instytucją obowiązaną jej dokumentację AML dopasowaną do realnej działalności, ocenę ryzyka instytucji, procedurę wewnętrzną, ocenę ryzyka klienta liczoną skryptem ze śladem obliczeń, ewidencje i checklisty środków bezpieczeństwa finansowego.
+korzysc: Masz dokumentację AML opisującą Twoją firmę, z uzasadnieniami i śladem obliczeń, a nie martwy wzór.
 szukaj: AML, pranie pieniędzy, instytucja obowiązana, GIIF, procedura wewnętrzna AML, ocena ryzyka klienta, środki bezpieczeństwa finansowego, beneficjent rzeczywisty, CRBR, biuro rachunkowe, pośrednik nieruchomości, biuro wirtualne, kontrola GIIF, prawo
 tytulSeo: Procedura AML dla biura rachunkowego i instytucji obowiązanej, darmowy skill
 opisSeo: "Dokumentacja AML z realiów Twojej firmy: ocena ryzyka instytucji, procedura wewnętrzna, punktowa ocena ryzyka klienta ze śladem obliczeń, ewidencje i checklisty. Bez martwych wzorów PDF."
@@ -112,3 +113,29 @@ analizę, i nie wypełnia formularzy GIIF. Robi tak, bo dokumentacja AML ma
 chronić instytucję przy kontroli, a każdy z tych skrótów zamienia ją w dowód
 przeciwko niej; wartość narzędzia siedzi w uzasadnieniach i śladzie obliczeń,
 które da się obronić.
+
+## Najczęstsze pytania
+
+### Jak przygotować procedurę AML dla biura rachunkowego?
+
+Skill buduje ją z Tobą z realiów Twojej firmy: najpierw ocenę ryzyka instytucji, potem projekt procedury wewnętrznej, model oceny ryzyka klienta, wzory ewidencji i checklisty środków bezpieczeństwa finansowego. Każdy dokument wychodzi jako projekt z metryczką wersji, do zatwierdzenia przez kierownictwo i osobę odpowiedzialną za AML.
+
+### Czy skill potwierdzi, że jesteśmy gotowi na kontrolę GIIF?
+
+Nie, nie orzeka zgodności z ustawą ani gotowości na kontrolę i nie ocenia, czy transakcja jest podejrzana. Może za to przejść z Tobą checklistę spójności kompletu: czy procedura wynika z oceny ryzyka instytucji, czy ewidencje pokrywają obowiązki, czego brakuje i co czeka na decyzję osoby odpowiedzialnej za AML.
+
+### Skąd mam wiedzieć, czy moja firma podlega pod AML?
+
+Skill pomoże to ustalić pytaniami o Twoje usługi, ale sam tego nie rozstrzygnie, bo o statusie instytucji obowiązanej przesądza katalog ustawowy. Kwalifikację oznacza jako wymagającą weryfikacji i wskazuje, gdzie ją sprawdzić, a dokumenty pisze warunkowo, dopóki status się nie potwierdzi.
+
+### Jak skill liczy ocenę ryzyka klienta?
+
+Skryptem, na czynnikach, wagach i ocenach, które ustala Twoja instytucja, z uzasadnieniem przy każdej decyzji. W wyniku widać wkład każdego czynnika liczba po liczbie i poziom według Twoich progów. Skill nie dobierze ocen tak, żeby klient wyszedł nisko, także gdy poprosisz o to przy stałym kliencie.
+
+### Czy napisze klientowi wyjaśnienie, dlaczego wstrzymaliśmy przelew?
+
+Nie, nie pisze klientom tekstów, które ujawniałyby zgłoszenie albo analizę, i nie wypełnia zawiadomień do GIIF, bez wyjątków. Z podejrzanych okoliczności zrobi najwyżej wewnętrzną notatkę stanu faktycznego z adnotacją projektu i pustym polem decyzji dla osoby odpowiedzialnej za AML.
+
+### Czego potrzebuję i ile to kosztuje?
+
+Potrzebujesz wiedzy o własnej firmie: usługach, klientach, przepływach i tym, kto odpowiada za AML, a do liczenia ocen klienta Pythona 3.10 lub nowszego na komputerze, bez dodatkowych bibliotek. Sam skill jest darmowy na licencji GPL, a plik `.skill` dostajesz linkiem na e-mail po podaniu adresu na karcie skilla.

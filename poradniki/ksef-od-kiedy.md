@@ -67,3 +67,21 @@ Harmonogram i progi należą do wartości, które w tym obszarze zmieniały się
 
 - Harmonogram, próg i rok bazowy, obowiązek odbierania faktur, limit 10 tys. zł, wyłączenia stałe: ksef.podatki.gov.pl/informacje-ogolne-ksef-20/zakres-obowiazkowego-ksef/ (sprawdzono 24 sierpnia 2026)
 - Faktury dla nabywców zagranicznych, status dokumentów wystawionych poza systemem: ksef.podatki.gov.pl/ksef-news/najczestsze-pytania/ (sprawdzono 24 sierpnia 2026)
+
+## Najczęstsze pytania
+
+### Od kiedy moja firma musi wystawiać faktury w KSeF?
+
+Dla większości firm obowiązek wystawiania faktur w KSeF zaczął się 1 kwietnia 2026 roku. Wcześniej, od 1 lutego 2026 roku, objął podatników, u których wartość sprzedaży brutto za 2024 rok przekroczyła 200 mln zł. Wynik bliski progu warto potwierdzić u księgowej albo doradcy podatkowego.
+
+### Od kiedy trzeba odbierać faktury w KSeF?
+
+Obowiązek odbierania faktur w KSeF działa od 1 lutego 2026 roku i dotyczy wszystkich podatników. Obejmuje także firmy, które z wystawianiem w systemie zaczęły później, oraz te, które korzystają z wyjątku dla najmniejszej sprzedaży fakturowanej. Warto wyznaczyć osobę z uprawnieniem do dostępu do faktur, która regularnie je pobiera.
+
+### Czy od 2027 roku wszyscy będą wystawiać wszystkie faktury w KSeF?
+
+Nie, z końcem 2026 roku kończy się tylko wyjątek dla najmniejszej sprzedaży fakturowanej. Stałe wyłączenia zostają, w tym faktury wystawiane konsumentom oraz określone wyłączenia podmiotowe i przedmiotowe. Do końca 2026 roku trwa też rozwiązanie przejściowe dla faktur z kas rejestrujących i paragonów z numerem identyfikacji podatkowej.
+
+### Czy fakturę dla zagranicznego kontrahenta wystawia się poza KSeF?
+
+Sam zagraniczny nabywca nie przesądza, że faktura jest poza systemem. Polski wystawca zwykle wystawia ją w KSeF, a nabywcy udostępnia w sposób z nim uzgodniony. Harmonogram i zasady w tym obszarze zmieniały się często, więc aktualny stan sprawdź na ksef.podatki.gov.pl.

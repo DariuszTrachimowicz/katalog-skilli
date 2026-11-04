@@ -5,12 +5,12 @@
 const ESC = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" };
 export const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ESC[c]);
 
-// Polskie cudzysłowy i półpauzy — drobiazg, ale odróżnia tekst złożony od wklejonego.
+// Polskie cudzysłowy. Dawna zamiana " - " na pauzę usunięta 4 XI 2026:
+// reguła katalogu zakazuje długich myślników w tym, co widzi użytkownik.
 function typografia(s) {
   return s
     .replace(/(^|[\s(])"/g, "$1„")
-    .replace(/"/g, "”")
-    .replace(/(\s)-(\s)/g, "$1—$2");
+    .replace(/"/g, "”");
 }
 
 function inline(s) {

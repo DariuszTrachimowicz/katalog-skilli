@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Zamienia transkrypcję albo notatki z kartki w ustalenia, zadania z odpowiedzialnymi i terminy. Nie dopisuje niczego, czego na spotkaniu nie było.
+korzysc: Wiesz po spotkaniu, kto co ma zrobić i do kiedy, i nie mylisz rzuconych pomysłów z decyzjami.
 szukaj: notatka, spotkanie, transkrypcja, minutki, podsumowanie, zadania, ustalenia, terminy, Teams, Meet, notatka zamiast protokołu
 tytulSeo: Notatka ze spotkania z transkrypcji, po polsku, za darmo
 opisSeo: Wklej transkrypcję albo notatki i dostań ustalenia, zadania i terminy. Rozumie polskie skróty i zwroty typu „po majówce”. Nie robi protokołów formalnych.
@@ -37,7 +38,7 @@ Drugi zysk jest mniej widoczny: notatka pokazuje, ile z tego, co ludzie zapamię
 
 Marta prowadzi biuro w firmie produkcyjnej. Spotkanie trwało 70 minut, było dziewięć osób, transkrypcja z Teams ma 34 strony.
 
-Skill wyciąga z tego sześć ustaleń, jedenaście zadań i cztery sprawy bez rozstrzygnięcia. Pokazuje, że zamówienie na 12 400 zł zostało zaakceptowane, ale nikt nie powiedział, czy to netto czy brutto, przy stawce 23% to różnica prawie 2 900 zł. Że zadanie „Marek przygotuje zestawienie” padło z ust prezesa, a Marek w tym momencie w ogóle się nie odezwał, więc trafia na listę z dopiskiem „wskazany zaocznie, brak potwierdzenia”, który zostaje w notatce także po skróceniu do maila. I że przy terminie „do końca tygodnia” ustalonym na spotkaniu 2 czerwca proponuje środę 3 czerwca do potwierdzenia, bo czwartek to Boże Ciało, a w piątek pół firmy bierze urlop, proponuje, nie rozstrzyga.
+Skill wyciąga z tego sześć ustaleń, jedenaście zadań i cztery sprawy bez rozstrzygnięcia. Pokazuje, że zamówienie na 12 400 zł zostało zaakceptowane, ale nikt nie powiedział, czy to netto czy brutto, przy stawce 23 % to różnica prawie 2 900 zł. Że zadanie „Marek przygotuje zestawienie” padło z ust prezesa, a Marek w tym momencie w ogóle się nie odezwał, więc trafia na listę z dopiskiem „wskazany zaocznie, brak potwierdzenia”, który zostaje w notatce także po skróceniu do maila. I że przy terminie „do końca tygodnia” ustalonym na spotkaniu 2 czerwca proponuje środę 3 czerwca do potwierdzenia, bo czwartek to Boże Ciało, a w piątek pół firmy bierze urlop, proponuje, nie rozstrzyga.
 
 Trzy rzeczy, które wszyscy zapamiętali jako ustalone, trafiają do sekcji „Pomysły”, bo padły w trybie „można by”.
 
@@ -80,3 +81,29 @@ Nie pisze protokołów formalnych: rady pedagogicznej, zebrania wspólnoty miesz
 Nie robi notatki służbowej opisującej zachowanie konkretnego pracownika. To inny dokument, który bywa używany w sporze, i nie powinien powstawać jako produkt uboczny podsumowania spotkania.
 
 Powód jest jeden i praktyczny: notatka rozesłana po spotkaniu zaczyna żyć jak zapis zobowiązań. Narzędzie, które dla gładkości dopisuje jedno zdanie, tworzy komuś zadanie, na które ta osoba się nie umówiła, i wychodzi to dopiero przy terminie.
+
+## Najczęstsze pytania
+
+### Czy AI zrobi mi notatkę ze spotkania z transkrypcji Teams?
+
+Tak, wklejasz transkrypcję z Teams, Meet czy Zooma albo notatki z kartki, a skill dzieli je na cztery części: co ustalono, kto co ma zrobić i do kiedy, co zostało bez rozstrzygnięcia i co było tylko pomysłem. Przy każdym zadaniu jest dosłowny cytat, a na końcu skrócona wersja do maila.
+
+### Czy skill dopisze ustalenia, których nikt wprost nie powiedział?
+
+Nie. Jeśli w materiale nie padła decyzja, w notatce jej nie ma, a „zobaczymy” czy „chyba tak” trafiają do spraw bez rozstrzygnięcia, z cytatem i pytaniem. Zadanie wskazane komuś, kto go nie przyjął, dostaje adnotację, że przypisano je zaocznie, także w wersji do maila.
+
+### Czy mogę wgrać nagranie audio ze spotkania?
+
+Nie, skill przyjmuje tylko tekst: transkrypcję, plik tekstowy, PDF, zdjęcie notatek albo wklejony tekst. Nagranie trzeba najpierw przepisać na tekst, a Teams i Meet robią to same, więc wystarczy pobrać transkrypcję i ją wkleić.
+
+### Jak zamienić „do końca tygodnia” na konkretną datę?
+
+Skill zostawia oryginalny termin w cytacie i obok proponuje datę do potwierdzenia, ale jej nie rozstrzyga. Zna polskie dni wolne na 2026 rok, w tym Wigilię i Boże Ciało, więc uprzedzi, gdy termin wypada w święto albo w dzień masowych urlopów.
+
+### Czy zrobi protokół z zebrania wspólnoty albo zgromadzenia wspólników?
+
+Nie. Protokołów formalnych, takich jak rada pedagogiczna, zebranie wspólnoty, zgromadzenie wspólników, sesja rady gminy czy protokół odbioru, skill nie pisze, bo mają narzucone wymogi co do treści i podpisów. Zaproponuje notatkę roboczą, którą protokolant przepisze do własnego wzoru.
+
+### Ile to kosztuje i na czym działa?
+
+Skill jest darmowy, na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. Działa na dowolnym płatnym planie Claude, a w ChatGPT na planach Business, Enterprise, Edu i Healthcare. Nie wymaga konektorów ani podpinania kalendarza.

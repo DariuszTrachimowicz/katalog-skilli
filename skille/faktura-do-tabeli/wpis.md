@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Przepisuje faktury z PDF-ów i skanów do jednej tabeli gotowej do księgowania, z rozbiciem na stawki VAT i kontrolą, czy sumy się zgadzają.
+korzysc: Oszczędzasz godziny przepisywania faktur i od razu widzisz duplikaty oraz sumy, które się nie zgadzają.
 szukaj: faktura, faktury, PDF, skan, OCR, księgowość, biuro rachunkowe, excel, CSV, zestawienie, VAT, NIP, stawki, termin płatności, KSeF, koszty
 tytulSeo: Jak przepisać faktury PDF do Excela, narzędzie AI po polsku
 opisSeo: Wrzuć faktury PDF lub skany i dostań tabelę do księgowania: numery, daty, NIP-y, netto, VAT i brutto w rozbiciu na stawki. Po polsku, z kontrolą sum.
@@ -79,3 +80,25 @@ Nie dekretuje, czyli nie decyduje, na które konto w księgach trafia faktura, i
 I najważniejsze: **nie wpisuje pola, którego nie widzi.** Puste miejsce z adnotacją „do sprawdzenia” jest uczciwe. Wiarygodnie wyglądająca liczba wzięta z domysłu wchodzi do ksiąg i wychodzi z nich dopiero przy kontroli.
 
 To granica postawiona świadomie. Narzędzie, które uzupełnia braki i wygładza niezgodne sumy, daje ładniejszą tabelę i gorszą księgowość. To narzędzie robi odwrotnie: pokazuje dokładnie tam, gdzie trzeba spojrzeć własnymi oczami.
+
+## Najczęstsze pytania
+
+### Czy AI przepisze mi faktury z PDF-ów i skanów do Excela?
+
+Tak, skill układa faktury z PDF-ów, skanów i zdjęć w jedną tabelę z numerami, datami, NIP-ami oraz kwotami netto, VAT i brutto w rozbiciu na stawki. Na prośbę dostajesz plik CSV, który polski Excel otwiera bez żadnych ustawień.
+
+### Czy sprawdzi, czy mogę odliczyć VAT z faktury?
+
+Nie, to decyzja księgowa i tu skill się zatrzymuje. Nie dekretuje, nie przypisuje kodów GTU, nie ocenia, czy wydatek jest kosztem, i nie sprawdza kontrahenta w wykazie podatników VAT. Pokazuje za to, co dokładnie widać na dokumencie, i podpowiada, o co zapytać księgową.
+
+### Co się stanie, gdy skan jest nieczytelny albo suma na fakturze się nie zgadza?
+
+Skill nie zgaduje, tylko odkłada taką fakturę do osobnej sekcji z nazwą pliku i opisem problemu. Przy niezgodnej sumie pokazuje, co odczytał, co wychodzi z rachunku i ile brakuje, a decyzję, czy to błąd odczytu, czy błąd na fakturze, zostawia Tobie.
+
+### Czy wychwyci tę samą fakturę wysłaną dwa razy?
+
+Tak, w obrębie jednej rozmowy łapie powtórzone numery, także wtedy, gdy ta sama faktura przyszła mailem i jeszcze raz jako skan. Przy dużej teczce dzielonej na partie duplikat rozrzucony między partie umknie, dlatego na koniec warto posortować całość po numerze faktury we własnym arkuszu.
+
+### Ile kosztuje skill do przepisywania faktur i czy zadziała w ChatGPT?
+
+Nic, skill jest darmowy i udostępniony na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. W Claude działa na dowolnym płatnym planie, w ChatGPT wymaga planu Business, Enterprise, Edu lub Healthcare, a w Gemini w Polsce instrukcje wkleja się do rozmowy albo Gema.

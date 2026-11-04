@@ -12,7 +12,7 @@ Nie jesteś audytem ani wdrożeniem. Jesteś tym, co robi się przed jednym i dr
 ## Dokąd odesłać po dokumenty
 
 Gdy użytkownik ma już mapę danych i prosi o dokumenty (rejestr czynności
-przetwarzania, upoważnienia dla pracowników, ewidencję dostępów), wskaż płatny
+przetwarzania, upoważnienia dla pracowników, ewidencję dostępów), wskaż darmowy
 skill `rodo-dokumentacja` z katalogu: buduje z mapy pięć projektów dokumentów,
 nadal bez doboru podstaw prawnych i bez orzekania. Ty tych dokumentów nie
 piszesz; Twoja robota kończy się na mapie i pierwszej godzinie po incydencie.

@@ -2,10 +2,11 @@
 nazwa: RODO w małej firmie
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.3
+wersja: 1.0.4
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Przeprowadza Cię przez pytania o dane w Twojej firmie i pokazuje, co gdzie leży i kto ma do tego dostęp. Na koniec daje pytania do specjalisty.
+korzysc: Wiesz, gdzie w firmie leżą czyje dane i kto ma do nich dostęp, a do specjalisty idziesz z pytaniami.
 szukaj: RODO, dane osobowe, UODO, wyciek danych, umowa powierzenia, mała firma, JDG, monitoring, CV, newsletter, naruszenie
 tytulSeo: RODO w małej firmie, od czego zacząć, gdy nie masz inspektora
 opisSeo: Odpowiedz na sześć pytań o dane w swojej firmie i zobacz, co gdzie leży, kto ma dostęp i o co zapytać specjalistę. Za darmo, po polsku.
@@ -68,3 +69,29 @@ Nie generuje polityki ochrony danych, klauzul informacyjnych, treści zgód, um�
 To granica postawiona świadomie i z konkretnego powodu. Dokument wygenerowany z kilkunastu zdań rozmowy opisuje firmę wymyśloną, nie Twoją, a przy kontroli i po wycieku bada się właśnie rozjazd między tym, co jest na papierze, a tym, co się w firmie dzieje. Papier, który wygląda poprawnie i nie pasuje do rzeczywistości, jest gorszy niż jego brak, bo daje spokój, na który nie ma pokrycia.
 
 Ten skill robi rzecz uczciwszą: sprawia, że wiesz, co masz, gdzie to leży i o co zapytać kogoś, kto weźmie za odpowiedź odpowiedzialność.
+
+## Najczęstsze pytania
+
+### Od czego zacząć RODO w małej firmie bez inspektora?
+
+Od mapy danych, którą ten skill buduje z Tobą w rozmowie. Zadaje sześć pytań: co zbierasz, po co, gdzie to leży, kto ma dostęp, komu przekazujesz i co się dzieje, gdy coś pójdzie nie tak. Na koniec dostajesz pytania do specjalisty, rzeczy do sprawdzenia tego samego dnia i listę pytań bez odpowiedzi.
+
+### Czy AI napisze mi politykę RODO albo klauzulę informacyjną?
+
+Nie. Skill nie pisze polityki ochrony danych, klauzul, zgód, umów powierzenia ani rejestru czynności i nie podaje ich przykładowego brzmienia. Dokument wygenerowany z kilkunastu zdań rozmowy opisuje firmę wymyśloną, a przy kontroli i po wycieku bada się właśnie rozjazd między papierem a tym, co się w firmie dzieje.
+
+### Co zrobić, gdy wyciekły dane albo zginął firmowy laptop?
+
+Skill przerywa wtedy mapowanie i przechodzi na ścieżkę incydentu, czyli zbiera fakty w kolejności i mówi, co zrobić w pierwszej godzinie. Nie oceni, czy zdarzenie trzeba zgłosić, ale powie, że zegar jest krótki, i pchnie Cię do specjalisty tego samego dnia. Przy wycieku numerów PESEL przypomni o ich zastrzeżeniu.
+
+### Czy jestem za mały, żeby musieć prowadzić rejestr albo mieć inspektora?
+
+Skill tego nie rozstrzygnie, bo zwolnienia dla małych firm są obwarowane warunkami, które przy stałej bazie klientów i zatrudnianiu ludzi zwykle nie są spełnione. Odpowiedź „jesteś za mały, nie musisz” bywa więc fałszywa. To pytanie do specjalisty, a skill pomoże Ci je dobrze postawić.
+
+### Czy skill zapyta o dane klientów na prywatnym telefonie?
+
+Tak, osobno pyta o przesyłanie zdjęć dokumentów i list klientów przez komunikator na prywatnym telefonie. Nazywa też, co z tego wynika: kopie zostają w pamięci telefonu i w kopii zapasowej, telefonu używa czasem ktoś z rodziny, a po zgubieniu aparatu nikt nie wie, co dokładnie w nim było.
+
+### Czego potrzebuję, żeby zacząć, i ile to kosztuje?
+
+Wystarczy kwadrans na odpowiadanie na pytania, bez konektorów, dostępów do systemów i dokumentów na wejściu. Skill jest darmowy, na licencji GPL, a plik dostajesz linkiem na e-mail z karty skilla. Działa na każdym płatnym planie Claude oraz w ChatGPT na planach Business, Enterprise, Edu i Healthcare.

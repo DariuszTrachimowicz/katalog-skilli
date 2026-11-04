@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Buduje z firmą projekt procedury zgłoszeń wewnętrznych dla sygnalistów wraz z rejestrem, upoważnieniami, klauzulą informacyjną, planem wdrożenia i kartą obsługi zgłoszenia, albo sprawdza procedurę, którą już macie.
+korzysc: Masz projekt procedury dla sygnalistów z listą decyzji i idziesz do prawnika z materiałem, nie z pustą kartką.
 szukaj: sygnaliści, sygnalista, whistleblowing, procedura zgłoszeń wewnętrznych, ustawa o ochronie sygnalistów, kanał zgłoszeń, działania odwetowe, rejestr zgłoszeń, 50 pracowników, kontrola PIP sygnaliści, zgłoszenia anonimowe, Rzecznik Praw Obywatelskich zgłoszenie
 tytulSeo: Procedura zgłoszeń wewnętrznych dla sygnalistów, co musi zawierać i jak ją wdrożyć
 opisSeo: "Skill AI po polsku: projekt procedury dla sygnalistów z ośmioma elementami obowiązkowymi, rejestr, upoważnienia, plan wdrożenia z konsultacjami, karta obsługi zgłoszenia. Do domknięcia z prawnikiem."
@@ -50,3 +51,29 @@ Liczb na 1 stycznia albo 1 lipca (pełne etaty i osoby na innych umowach), infor
 ## Czego ten skill nie robi celowo
 
 Nie orzeka o zgodności z przepisami, nie pisze zapisów ograniczających ochronę sygnalisty ani kar za zgłoszenia, nie prowadzi postępowań wyjaśniających, nie podaje numerów artykułów ani tytułów ustaw w odpowiedzi (źródła ma spisane z datą i podaje je na pytanie), nie wylicza terminów na daty, nie powiela prywatnych danych z wklejonych dokumentów i nie przenosi treści konkretnych zgłoszeń do dokumentów. Te granice to warunek, żeby procedura chroniła ludzi, a nie była dokumentem na półkę albo narzędziem nacisku.
+
+## Najczęstsze pytania
+
+### Czy AI przygotuje procedurę zgłoszeń wewnętrznych dla sygnalistów?
+
+Tak, jako projekt do przeglądu prawnika, zbudowany z wywiadu o Twojej firmie. Procedura ma osiem elementów, których wymagają przepisy, a wokół niej powstają rejestr zgłoszeń, upoważnienia z poufnością, szkic klauzuli informacyjnej, plan wdrożenia, komunikat do pracowników i karta obsługi zgłoszenia. Każdy projekt ma datę stanu prawnego.
+
+### Czy moja firma musi mieć procedurę dla sygnalistów?
+
+Skill tego nie rozstrzygnie, ale pokaże, jak liczyć osoby. Liczy się je na 1 stycznia albo 1 lipca, razem z pełnymi etatami i osobami na innych umowach, które nie zatrudniają innych do tej pracy, a próg to 50 osób. Skill liczy z podanych liczb, a przypadki graniczne i sektory bez progu kieruje do prawnika.
+
+### Czy skill dopisze do procedury kary za fałszywe zgłoszenia?
+
+Nie. Skill nie pisze zapisów, które ograniczają ochronę sygnalisty albo karzą za zgłoszenie, także „hipotetycznie” czy „jako wzór”, bo takie zapisy mogą same być odwetem. Może za to neutralnie objaśnić odpowiedzialność za świadomie nieprawdziwe zgłoszenie i zbudować resztę procedury.
+
+### Czy sprawdzi procedurę, którą już mamy w firmie?
+
+Tak, wystarczy wkleić jej treść z załącznikami, najlepiej bez prywatnych danych osób. Skill wskaże, czego w niej brakuje, które zapisy kłócą się ze skutkiem przepisów, a czego z samego tekstu nie da się zweryfikować. Nie przepisuje dokumentu i nie orzeka o jego zgodności z przepisami.
+
+### Czy oceni konkretne zgłoszenie albo zwolnienie sygnalisty?
+
+Nie. Skill nie prowadzi postępowań wyjaśniających i nie ocenia, czy zgłoszenie jest prawdziwe ani czy zwolnienie osoby, która zgłosiła, było odwetem. To sprawa dla prawnika i sądu, więc konkretną sytuację zamienia w pytania do prawnika.
+
+### Czego potrzebuję, żeby zacząć, i ile to kosztuje?
+
+Potrzebujesz liczby osób na 1 stycznia albo 1 lipca, informacji o związkach zawodowych, wskazania, kto przyjmuje zgłoszenia i kto prowadzi sprawy, realnych kanałów oraz decyzji co do anonimów. Skill jest darmowy, na licencji GPL, plik dostajesz linkiem na e-mail z karty skilla. Działa na każdym płatnym planie Claude i w ChatGPT na planach Business, Enterprise, Edu i Healthcare.

@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Zdejmuje z gotowego polskiego tekstu ślady pisania przez AI, nie zmieniając ani jednego faktu. Pokazuje, co znalazł, co zmienił i czego celowo nie ruszył.
+korzysc: Wiesz, co w tekście zdradza pisanie przez AI, i dostajesz wersję bez tych śladów, z tymi samymi faktami.
 szukaj: brzmi jak chatgpt, tekst z ai, ślady ai, uczłowiecz, humanizer, humanizuj, za gładkie, plastikowy tekst, sztuczny tekst, wygładzić tekst, naturalny tekst, długie myślniki, kluczowy, warto zauważyć, nie x a y, trójki, tekst na stronę, wpis na blog, artykuł, raport, instrukcja, opis firmy, szef pozna, detektor ai, redakcja tekstu
 tytulSeo: Jak sprawić, żeby tekst z AI nie brzmiał jak z AI, narzędzie po polsku
 opisSeo: "Wklej tekst napisany przez asystenta i dostań wersję, która brzmi jak Ty. Bez dopisanych faktów, z listą znalezionych śladów i tego, co zostało celowo."
@@ -67,3 +68,29 @@ Nie przepisuje tekstów o skutku prawnym: umów, regulaminów, pouczeń, klauzul
 Nie zastępuje skilli gatunkowych. Mail służbowy, post na LinkedIna, opis produktu, oferta i newsletter mają własne reguły i własne skille w tym katalogu; Humanizer PL pracuje na tekstach, które własnego skilla nie mają.
 
 Nie pracuje na tekstach po angielsku ani nie tłumaczy. Jest zbudowany pod polskie ślady i polską interpunkcję; angielski tekst dostałby polskie reguły, czego nie chcesz.
+
+## Najczęstsze pytania
+
+### Jak sprawić, żeby tekst z ChatGPT nie brzmiał jak z automatu?
+
+Wklejasz gotowy tekst, a skill sprawdza go według 26 ponumerowanych wzorców, takich jak „warto zauważyć”, kontrast „to nie X, a Y” czy puenta po każdym akapicie. Dostajesz listę znalezionych śladów z cytatami, wersję końcową, fragmenty celowo nieruszone i luki do uzupełnienia.
+
+### Czy AI dopisze do tekstu brakujące liczby albo źródła?
+
+Nie. Skill nie dopisuje faktów, liczb, cytatów ani źródeł, nawet orientacyjnie, bo dopisana liczba to nowy ślad AI i nowe ryzyko pod Twoim podpisem. Brakujący konkret zostaje jako pole do uzupełnienia z pytaniem. Nie zmienia też treści ani wydźwięku tekstu.
+
+### Czy po poprawkach tekst przejdzie detektor AI?
+
+Skill tego nie obiecuje, bo takiego zdania nie da się obronić. Mówi za to, co usunął i co nadal może zdradzać automat. Sprawdza też, czy tekst sam popiera swoje twierdzenia, ale nie sprawdza, czy są prawdziwe.
+
+### Czy mogę w ten sposób poprawić umowę albo regulamin?
+
+Nie. Skill nie przepisuje tekstów o skutku prawnym, czyli umów, regulaminów, pouczeń, klauzul ani urzędowych formularzy, także fragmentami, bo tam przestawione słowo zmienia treść, nie styl. Do upraszczania pisma urzędowego służy w katalogu osobny skill, Prosty język.
+
+### Jak zrobić, żeby poprawiony tekst brzmiał jak ja?
+
+Dołóż próbkę własnego pisania, na przykład maila albo wcześniejszy wpis, a skill dopasuje do niej długość zdań i słownictwo. Bez próbki bierze ton z rodzaju tekstu: tekst firmowy wyjdzie neutralny i poprawny, ale to nie będzie jeszcze Twój głos. Z dwiema próbkami jest jeszcze lepiej.
+
+### Ile to kosztuje i na czym działa?
+
+Skill jest darmowy, na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. Działa na dowolnym płatnym planie Claude, a w ChatGPT na planach Business, Enterprise, Edu i Healthcare. Potrzebujesz gotowego tekstu po polsku, bo skill nie pisze od zera i nie pracuje na tekstach angielskich.

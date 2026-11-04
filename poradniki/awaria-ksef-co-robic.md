@@ -39,7 +39,7 @@ Awaria całkowita zdejmuje obowiązek przesłania także wstecz. Faktury wystawi
 
 Osobno działa nakładanie się trybów: jeśli termin przesłania faktury z trybu offline24 albo z okresu niedostępności przypada w czasie ogłoszonej awarii, obowiązuje reguła terminu trybu ogłoszonego w tym momencie, a nie pierwotna. Sam sposób liczenia terminów przy nakładających się trybach, w tym bieg dni roboczych, sprawdź na ksef.podatki.gov.pl/wyjasnienia/co-warto-wiedziec-przed-startem-ii-etapu-wdrozenia-krajowego-systemu-e-faktur/.
 
-Ma to bezpośrednie przełożenie na ryzyko. W katalogu naruszeń objętych karą jest nieprzesłanie w terminie faktury wystawionej w trybie offline24, w trybie awaryjnym albo w okresie niedostępności, z zastrzeżeniem faktur, z których obowiązek przesłania zdjęła ogłoszona awaria całkowita. Kara sięga 100% kwoty podatku wykazanego na fakturze, a przy fakturze bez wykazanego podatku 18,7% kwoty należności ogółem. Przepisy o karach stosuje się do naruszeń dokonanych od 1 stycznia 2027 roku i nie obejmują naruszeń z 2026 roku.
+Ma to bezpośrednie przełożenie na ryzyko. W katalogu naruszeń objętych karą jest nieprzesłanie w terminie faktury wystawionej w trybie offline24, w trybie awaryjnym albo w okresie niedostępności, z zastrzeżeniem faktur, z których obowiązek przesłania zdjęła ogłoszona awaria całkowita. Kara sięga 100 % kwoty podatku wykazanego na fakturze, a przy fakturze bez wykazanego podatku 18,7 % kwoty należności ogółem. Przepisy o karach stosuje się do naruszeń dokonanych od 1 stycznia 2027 roku i nie obejmują naruszeń z 2026 roku.
 
 ## Jak to wygląda w praktyce
 
@@ -63,3 +63,21 @@ Spisanie tego jako jednej karty postępowania z rolami i terminami to osobna rob
 - Tryb offline24: warunki, termin, udostępnianie faktury: ksef.podatki.gov.pl/informacje-ogolne-ksef-20/tryb-offline24/ (sprawdzono 24 sierpnia 2026)
 - Sankcje, katalog naruszeń, okres przejściowy: ksef.podatki.gov.pl/ksef-news/zasady-obowiazywania-ksef-i-przepisy-prawne/ (sprawdzono 24 sierpnia 2026)
 - Ogłoszenia o awarii i niedostępności: Biuletyn Informacji Publicznej Ministerstwa Finansów (sprawdzono 24 sierpnia 2026)
+
+## Najczęstsze pytania
+
+### Co zrobić, gdy KSeF nie działa?
+
+Najpierw sprawdź, czy Ministerstwo Finansów ogłosiło niedostępność albo awarię KSeF, bo od tego zależy tryb pracy i termin przesłania faktur. Ogłoszenia są w Biuletynie Informacji Publicznej Ministerstwa Finansów i w oprogramowaniu interfejsowym. Bez ogłoszenia pozostaje tryb offline24 z decyzji wystawcy. Zapisz, gdzie i o której sprawdzono ogłoszenia.
+
+### Ile jest dni na przesłanie faktur po awarii KSeF?
+
+W trybie awaryjnym przy ogłoszonej awarii KSeF na przesłanie faktur jest 7 dni roboczych od zakończenia awarii. Przy ogłoszonej niedostępności faktury przesyła się następnego dnia roboczego po jej zakończeniu. Sposób liczenia terminów przy nakładających się trybach sprawdź na ksef.podatki.gov.pl.
+
+### Czy po awarii całkowitej KSeF trzeba dosłać faktury do systemu?
+
+Nie, awaria całkowita to jedyny tryb, w którym faktur nie przesyła się później do systemu. Wystawia się je poza KSeF, bez obowiązku stosowania struktury FA(3), i nie otrzymują numeru KSeF. Dotyczy to także wcześniejszych, jeszcze nieprzesłanych faktur z trybu offline24, co warto odnotować w karcie zdarzenia.
+
+### Jaka kara grozi za nieprzesłanie faktury po awarii KSeF w terminie?
+
+Kara sięga 100 % kwoty podatku wykazanego na fakturze, a przy fakturze bez wykazanego podatku 18,7 % kwoty należności ogółem. Przepisy o karach stosuje się do naruszeń dokonanych od 1 stycznia 2027 roku. Nie obejmują one faktur, z których obowiązek przesłania zdjęła ogłoszona awaria całkowita.

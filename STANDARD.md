@@ -81,7 +81,8 @@ status: gotowy
 wersja: 1.0.0
 poziom: Działa od razu | Wymaga ustawienia | Dla technicznych
 aktualizacja: 2026-08-10
-skrot: Jedno zdanie o tym, co robi, pokazuje się na karcie i w wynikach testu.
+skrot: Jedno zdanie o tym, co robi (opis SEO, llms.txt, katalog dla agentów).
+korzysc: Jedno zdanie korzyści z perspektywy użytkownika, 60-115 znaków, pokazuje się na karcie, w nagłówku strony skilla i w wyniku testu.
 szukaj: słowa, kluczowe, po, przecinku
 tytulSeo: Tytuł pod realne zapytanie, nie nazwa produktu
 opisSeo: Opis do wyników wyszukiwania, do 155 znaków
@@ -97,6 +98,8 @@ Sekcje, dokładnie w tej kolejności i pod tymi nagłówkami:
 `## Co robi` · `## Dla kogo` · `## Ile Ci to oszczędza` · `## Przykład z życia` · `## Jak po polsku` · `## Czego potrzebujesz` · `## Na czym się wywala` · `## Czego ten skill nie robi celowo`
 
 Dwie ostatnie są obowiązkowe i najważniejsze, to one odróżniają ten katalog od katalogów scrapujących GitHuba. „Na czym się wywala” to uczciwa lista ograniczeń, minimum trzy pozycje, wynikające z tego, jak skill naprawdę działa. „Czego nie robi celowo” zamienia ograniczenie w deklarację jakości.
+
+Na końcu pliku obowiązkowa sekcja `## Najczęstsze pytania` (od 4 listopada 2026, pod wyszukiwanie głosowe i agentowe): 4 do 6 pytań w nagłówkach `### Pytanie?`, zadanych tak, jak człowiek pyta asystenta głosowego; pod każdym jeden akapit odpowiedzi, 25 do 60 słów, pierwsze zdanie odpowiada wprost. Fakty wyłącznie z wpis.md i SKILL.md, bez orzekania i numerów przepisów, najwyżej jedno pytanie o koszt i platformy. Generator robi z tej sekcji widoczne FAQ, dane FAQPage i speakable oraz przykładowe zapytania w `/.well-known/ard.json`; test `testy/strona-katalogu.test.mjs` pilnuje 4 do 6 pytań.
 
 Od 4 listopada 2026 wszystkie skille katalogu są darmowe (GPL); pola `platny`, `cena`, `kotwice` i plik `oferta.html` nie są już używane, a `status` przyjmuje tylko `wkrotce` albo `gotowy`.
 

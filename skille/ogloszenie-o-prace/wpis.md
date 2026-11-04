@@ -6,6 +6,7 @@ wersja: 1.0.2
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Układa ogłoszenie rekrutacyjne i pokazuje, czego w nim brakuje, od informacji o wynagrodzeniu po neutralną nazwę stanowiska.
+korzysc: Wiesz, czego brakuje w ogłoszeniu, zanim je opublikujesz, i nie poprawiasz go po pierwszych pytaniach kandydatów.
 szukaj: ogłoszenie o pracę, oferta pracy, rekrutacja, widełki, jawność wynagrodzeń, wynagrodzenie w ogłoszeniu, neutralne nazwy stanowisk, kadry, HR, ogłoszenie rekrutacyjne
 tytulSeo: Jak napisać ogłoszenie o pracę z wynagrodzeniem, narzędzie AI po polsku
 opisSeo: Sprawdź, czego brakuje w ogłoszeniu o pracę: informacja o wynagrodzeniu, neutralna nazwa stanowiska, warunki zatrudnienia. Po polsku, za darmo.
@@ -69,3 +70,25 @@ Dowolny płatny plan Claude oraz treść ogłoszenia, wklejona, w pliku albo w f
 Nie podaje kwot ani widełek, nie ocenia, czy Wasza stawka jest wysoka czy niska, nie porównuje z rynkiem. Jeden wyjątek: jeśli stawka wygląda na niższą niż obowiązujące w danym roku minimum, powie to wprost i odeśle do sprawdzenia w kadrach, to nie ocena rynkowa, tylko twarda dolna granica, o którą kandydaci upomną się pierwszego dnia. Nie orzeka, czy ogłoszenie jest „zgodne z prawem”. Nie pisze umowy o pracę, regulaminu wynagradzania, klauzuli o danych osobowych ani informacji o wynagrodzeniu wysyłanej kandydatowi, mówi, co ma się w niej znaleźć i kto ją u Was podpisuje. Nie ocenia kandydatów i nie czyta CV. Jeśli poprosisz, odmówi tym samym zdaniem i wróci do ogłoszenia.
 
 Ta granica jest postawiona świadomie. Narzędzie, które podpowiada wysokość wynagrodzenia, wygląda pomocnie, ale zdejmuje decyzję z osoby, która za nią odpowiada i zna budżet, a przy pierwszej rozmowie o pieniądzach zostawia ją z liczbą, której nie umie obronić. To narzędzie robi coś węższego i uczciwszego: pilnuje, żeby to, co ustaliliście, było w ogłoszeniu zapisane jednoznacznie i żeby nie brakowało w nim rzeczy, po które kandydaci i tak wrócą.
+
+## Najczęstsze pytania
+
+### Czy AI sprawdzi moje ogłoszenie o pracę przed publikacją?
+
+Tak, wklejasz tekst, a skill dzieli uwagi na trzy grupy: do uzupełnienia przed publikacją, warto poprawić i typowe. Przy każdej uwadze mówi, co dany zapis zrobi z rekrutacją, na przykład kto przestanie aplikować albo o co kandydaci zapytają w pierwszym mailu.
+
+### Czy AI podpowie mi, ile zapłacić na tym stanowisku?
+
+Nie. Skill nie podaje kwot ani widełek i nie porównuje Twojej stawki z rynkiem, bo to decyzja firmy, która zna budżet. Jedyny wyjątek: gdy stawka wygląda na niższą niż obowiązujące w danym roku minimum, powie to wprost i odeśle do sprawdzenia w kadrach.
+
+### Czy widełki muszą być w samym ogłoszeniu o pracę?
+
+Niekoniecznie, bo kandydat ma dostać informację o wynagrodzeniu, ale firma wybiera moment: w ogłoszeniu, przed rozmową albo przed zawarciem umowy. Skill pyta, którą drogę wybraliście, i sprawdza, czy ktoś zaplanował drugi krok. Uprzedza też, że część serwisów branżowych IT bez kwoty ogłoszenia nie przyjmie.
+
+### Jak zapisać nazwę stanowiska, żeby nie była tylko w rodzaju męskim?
+
+Skill pokazuje cztery drogi, którymi idą polskie firmy: ukośnik, nazwa opisowa, nazwa czynnościowa i forma z „osoba”. Pilnuje też, żeby reszta ogłoszenia zgadzała się z tytułem, bo najczęściej wykłada się to dwa akapity niżej, w zdaniu w rodzaju „będziesz odpowiedzialny za negocjacje”.
+
+### Czego potrzebuję i ile kosztuje ten skill?
+
+Skill jest darmowy, na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. Działa na dowolnym płatnym planie Claude, a w ChatGPT na planach Business, Enterprise, Edu i Healthcare. Do tego treść ogłoszenia albo notatka, co chcesz napisać, najlepiej z ustaloną już decyzją o wynagrodzeniu.

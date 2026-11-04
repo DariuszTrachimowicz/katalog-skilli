@@ -2,10 +2,11 @@
 nazwa: Rozwód za porozumieniem
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.1
+wersja: 1.0.2
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Tłumaczy przebieg rozwodu za porozumieniem, sprawdza kompletność napisanego samodzielnie pozwu i przygotowuje teczkę na spotkanie z adwokatem.
+korzysc: Wiesz, jak przebiega rozwód za porozumieniem, a do adwokata idziesz z poukładaną teczką faktów.
 szukaj: rozwód, separacja, pozew rozwodowy, rozwód bez orzekania o winie, ile kosztuje rozwód, odpowiedź na pozew, sprawa rozwodowa, adwokat rozwód, rozwód za porozumieniem stron
 tytulSeo: Rozwód za porozumieniem, od czego zacząć i co sprawdzić w pozwie
 opisSeo: "Skill AI po polsku: przebieg rozwodu za porozumieniem, sprawdzenie kompletności pozwu, teczka na spotkanie z adwokatem. Bez pisania pism za Ciebie."
@@ -41,7 +42,7 @@ Opisu swojej sytuacji własnymi słowami; do sprawdzenia pisma: wklejonej treśc
 
 ## Na czym się wywala
 
-- Nie napisze za Ciebie pozwu ani żadnego pisma do sądu; wskaże braki w Twoim, ale pustych miejsc nie wypełni. Projekt pisma za porozumieniem przygotujesz w usłudze Pracownia AiXperts, a pismo w sprawie spornej przygotuje Ci pełnomocnik.
+- Nie napisze za Ciebie pozwu ani żadnego pisma do sądu; wskaże braki w Twoim, ale pustych miejsc nie wypełni. Projekt pisma za porozumieniem napiszesz sam albo zlecisz adwokatowi, a pismo w sprawie spornej przygotuje Ci pełnomocnik.
 - Nie powie, jakie masz szanse ani czy sąd pismo przyjmie; sprawdza kompletność formy, nie przesądza wyniku.
 - Aktualnych wysokości opłat nie podaje jako pewnik; wskazuje, gdzie je potwierdzić, więc jedno sprawdzenie na stronie sądu i tak Cię czeka.
 - Sprawy z małoletnimi dziećmi (także zgodne), alimentów i podziału majątku tylko porządkuje do teczki na spotkanie z pełnomocnikiem; nie prowadzi ich, nie rozstrzyga i nie doradza strategii.
@@ -49,3 +50,29 @@ Opisu swojej sytuacji własnymi słowami; do sprawdzenia pisma: wklejonej treśc
 ## Czego ten skill nie robi celowo
 
 Nie generuje pism procesowych, nie ocenia szans, nie cytuje artykułów ani orzeczeń, nie wylicza terminów na daty, nie zbiera danych o zdrowiu i życiu intymnym, nie powiela numerów PESEL i adresów z wklejonych dokumentów. W sprawach z przemocą w tle nie dopytuje o szczegóły, tylko wskazuje bezpieczne kanały pomocy i kieruje do pełnomocnika. Te granice to warunek, żeby narzędzie AI było w tej sprawie pomocą, a nie ryzykiem.
+
+## Najczęstsze pytania
+
+### Jak wygląda rozwód za porozumieniem i od czego zacząć?
+
+Skill przeprowadzi Cię przez drogę od decyzji do wyroku i powie, jakie koszty przewidzieć. Najpierw ustala trzy fakty: czy jesteście zgodni, czy macie wspólne małoletnie dzieci i czy jest majątek do podziału. Tłumaczy po ludzku, co się wydarzy i jakie ma to skutki, bez cytowania przepisów.
+
+### Kto napisze mi pozew rozwodowy?
+
+Ty albo Twój pełnomocnik, bo skill pozwu ani żadnego pisma do sądu nie pisze i nie wypełnia w nim pustych miejsc. Może za to sprawdzić kompletność projektu, który przygotujesz samodzielnie, wskazać braki i czym grożą, a przy sprawie spornej przygotować teczkę na spotkanie z adwokatem.
+
+### Czy AI sprawdzi mój pozew rozwodowy przed złożeniem?
+
+Tak, sprawdza kompletność formy pozwu albo odpowiedzi na pozew, które napisałeś sam. Wypisuje braki punktami, na przykład brak oświadczenia o mediacji, i mówi, czym grożą. Nie przepisuje pisma, nie proponuje gotowych zdań i nie ocenia, czy sąd je przyjmie.
+
+### Ile kosztuje rozwód za porozumieniem?
+
+W sprawie rozwodowej płaci się opłatę stałą, a przy zgodnym żądaniu połowa wraca do tego, kto ją wniósł. Aktualnej kwoty skill nie podaje z pamięci, tylko każe ją potwierdzić na stronie sądu albo gov.pl. Wskaże też zgodny wniosek o separację jako tańszą drogę.
+
+### Czy skill pomoże, gdy mamy dzieci albo spór o mieszkanie?
+
+Tylko porządkując fakty do teczki na spotkanie z pełnomocnikiem. Sprawy z małoletnimi dziećmi, także zgodne, alimenty i podział majątku kieruje do adwokata, bo ich nie prowadzi, nie rozstrzyga i nie doradza strategii. Przy przemocy w tle nie dopytuje o szczegóły, tylko wskazuje bezpieczne kanały pomocy.
+
+### Czego potrzebuję, żeby zacząć, i czy skill jest darmowy?
+
+Wystarczy opis sytuacji własnymi słowami, do sprawdzenia pisma wklejona treść pozwu, a do teczki daty i fakty, które pamiętasz. Skill jest darmowy, na licencji GPL, a plik dostajesz linkiem na e-mail z karty skilla. Działa na każdym płatnym planie Claude i w ChatGPT na planach Business, Enterprise, Edu i Healthcare.

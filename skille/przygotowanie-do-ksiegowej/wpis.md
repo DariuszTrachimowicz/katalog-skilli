@@ -6,6 +6,7 @@ wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-04
 skrot: Prowadzi przez comiesięczne zebranie dokumentów dla biura rachunkowego, co wysłać, czego zwykle brakuje, jak opisać nietypowy wydatek i o co zapytać księgową.
+korzysc: Wysyłasz biuru rachunkowemu komplet dokumentów za jednym razem, zamiast dosyłać braki przez tydzień.
 szukaj: księgowa, biuro rachunkowe, dokumenty, faktury, koszty, JDG, zamknięcie miesiąca, JPK, VAT, ZUS, KSeF, opis faktury, paragon, wyciąg bankowy, braki
 tytulSeo: Co wysłać do biura rachunkowego co miesiąc, lista po polsku
 opisSeo: Kompletna lista dokumentów do księgowej, typowe braki i gotowe opisy wydatków. Plus pytania do zadania zamiast zgadywania. Za darmo, po polsku.
@@ -68,3 +69,29 @@ Nie mówi, czy coś jest kosztem. Nie liczy VAT do odliczenia, nie przypisuje st
 Ma to konkretny powód. Kwalifikacja wydatku zależy od rzeczy, których żaden model nie widzi: formy opodatkowania, historii firmy, ustaleń z urzędem, tego, jak faktycznie używasz sprzętu. Odpowiedź „chyba tak” kosztuje korektę i odsetki, a odpowiada za nią przedsiębiorca, nie narzędzie.
 
 Jest też druga granica, subtelniejsza: opis wydatku pisany jest z faktów, nie pod skutek. Skill nie ułoży Ci zdania, które ma księgową do czegoś przekonać. Opis, który dopisujesz na fakturze, jest Twoim oświadczeniem i to Ty się pod nim podpisujesz, więc ma być prawdziwy, nie skuteczny.
+
+## Najczęstsze pytania
+
+### Jakie dokumenty co miesiąc wysłać do księgowej?
+
+To zależy od firmy, dlatego skill najpierw pyta o formę działalności, VAT, pracowników i umowę z biurem, a potem przechodzi z Tobą przez wszystkie źródła dokumentów, nie tylko skrzynkę mailową. Na końcu dostajesz listę do wysłania, listę do sprawdzenia, opisy nietypowych wydatków i pytania do księgowej.
+
+### Czy AI powie mi, czy wydatek jest kosztem firmy?
+
+Nie, to decyzja księgowej i skill przy niej się zatrzymuje. Nie liczy VAT do odliczenia, nie przypisuje stawek ani kodów i nie tworzy dowodów wewnętrznych. Opisze za to wydatek samymi faktami, czyli co, kiedy, po co i dla kogo, i ułoży pytanie, które zadasz księgowej.
+
+### O czym najczęściej zapominam przy wysyłce dokumentów do biura?
+
+Najczęściej o fakturach z zagranicznych subskrypcji, których nikt nie pobiera z paneli, o dziurach w numeracji faktur sprzedaży, o wydatkach opłaconych prywatną kartą i o drugim rachunku firmowym. Skill pyta o każdą z tych rzeczy, a także o prowizje z Allegro i bramek płatniczych.
+
+### Czy przez KSeF nie muszę już wysyłać dokumentów do biura?
+
+Nie całkiem, bo poza systemem nadal zostają paragony, wyciągi, umowy i faktury zagraniczne. Skill przypomina też, że biuro potrzebuje osobno nadanych uprawnień w KSeF, bez których księgowa nic nie widzi, i że to, co wpadło do systemu, trzeba przejrzeć, zanim ktoś to zaksięguje.
+
+### Jak zacząć przygotowanie paczki dokumentów za miesiąc?
+
+Wystarczy opisać, co masz za dany miesiąc, albo wrzucić listę plików, zrzut folderu lub same faktury. Skill zada jedno zbiorcze pytanie o formę działalności, VAT, sposób rozliczenia, pracowników i umowę z biurem, a potem prowadzi dalej, bez konektorów, kont i konfiguracji.
+
+### Ile kosztuje skill do przygotowania dokumentów dla księgowej?
+
+Nic, skill jest darmowy i udostępniony na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. W Claude działa na dowolnym płatnym planie, w ChatGPT wymaga planu Business, Enterprise, Edu lub Healthcare, a w Gemini w Polsce instrukcje wkleja się do rozmowy albo Gema.
