@@ -2,7 +2,7 @@
 nazwa: Co właściwie podpisuję
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.2
+wersja: 1.0.3
 poziom: Działa od razu
 aktualizacja: 2026-11-05
 skrot: Zamienia kilkadziesiąt stron umowy, polisy, leasingu albo aneksu w kilkanaście punktów: ile płacisz, jak długo, jak wyjść, co przy problemie.
@@ -22,7 +22,7 @@ Czyta długi dokument i zamienia go w kilkanaście punktów ułożonych tak, jak
 
 Na koniec pokazuje, gdzie w tym konkretnym dokumencie schowano rzeczy, których normalny człowiek szukałby zupełnie gdzie indziej: koszt w tabeli opłat zamiast w umowie, kwotę wykupu na ostatniej stronie harmonogramu. Najwyżej pięć takich miejsc. Jeśli jest tylko jedno, pokaże jedno; jeśli nie ma żadnego, napisze to wprost, zamiast dopychać listę.
 
-Obsługuje umowy z firmami i instytucjami, aneksy i harmonogramy, polisy i ogólne warunki ubezpieczenia (OWU), leasing, kredyty i pożyczki, umowy abonamentowe oraz umowy najmu. Regulaminy serwisów, sklepów i aplikacji ma osobny skill: **Regulamin pod lupą**. Umowy o zachowaniu poufności, **Przed podpisem NDA**.
+Obsługuje umowy z firmami i instytucjami, aneksy i harmonogramy, polisy i ogólne warunki ubezpieczenia (OWU), leasing, kredyty i pożyczki, umowy abonamentowe oraz umowy najmu. Regulaminy serwisów, sklepów i aplikacji, na które się zgadzasz jako klient, ma osobny skill: **Regulamin pod lupą**, a regulamin własnego sklepu internetowego: **Regulamin sklepu, lista kontrolna**. Umowy o zachowaniu poufności, **Przed podpisem NDA**.
 
 ## Dla kogo
 

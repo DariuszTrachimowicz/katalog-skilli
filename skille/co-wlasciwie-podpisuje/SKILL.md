@@ -1,6 +1,6 @@
 ---
 name: co-wlasciwie-podpisuje
-description: 'Streszcza długi dokument, umowę, aneks, polisę i OWU, leasing, kredyt, abonament, najem, w kilkunastu punktach: ile kosztuje, jak długo trwa, jak z tego wyjść, co się stanie przy problemie. Uruchamiaj przy „co ja właściwie podpisuję”, „streść mi to”, „co to znaczy po ludzku”, „ile mnie to będzie kosztować”, „nie rozumiem tej polisy”, „dostałem aneks od operatora”, i bez tych słów: „podpisałem dwa lata temu i teraz każą mi płacić”, „nie wiem, na co się zgodziłem”, „ile mi zostało do końca umowy”. Pytanie brzmi „co tu jest”, nie „co tu jest groźne”. NIE uruchamiaj, gdy pyta o ryzyka i niekorzystne zapisy przed podpisem, czerwone-flagi-w-umowie; przy NDA, przed-podpisem-nda; przy regulaminie i ToS, regulamin-pod-lupa; przy umowie najmu mieszkania, najem-mieszkania-pod-lupa; przy przepisywaniu tekstu prościej dla innych, prosty-jezyk.'
+description: 'Streszcza długi dokument, umowę, aneks, polisę i OWU, leasing, kredyt, abonament, najem, w kilkunastu punktach: ile kosztuje, jak długo trwa, jak z tego wyjść, co się stanie przy problemie. Uruchamiaj przy „co ja właściwie podpisuję”, „streść mi to”, „co to znaczy po ludzku”, „ile mnie to będzie kosztować”, „nie rozumiem tej polisy”, „dostałem aneks od operatora”, i bez tych słów: „podpisałem dwa lata temu i teraz każą mi płacić”, „nie wiem, na co się zgodziłem”, „ile mi zostało do końca umowy”. Pytanie brzmi „co tu jest”, nie „co tu jest groźne”. NIE uruchamiaj, gdy pyta o ryzyka i niekorzystne zapisy przed podpisem, czerwone-flagi-w-umowie; przy NDA, przed-podpisem-nda; przy regulaminie i ToS do akceptacji, regulamin-pod-lupa; przy regulaminie własnego sklepu internetowego, regulamin-sklepu-checklista; przy umowie najmu mieszkania, najem-mieszkania-pod-lupa; przy przepisywaniu tekstu prościej dla innych, prosty-jezyk.'
 ---
 
 # Co właściwie podpisuję
@@ -11,7 +11,7 @@ Obsługuj: umowy z firmami i instytucjami, aneksy i harmonogramy do tych umów, 
 
 ## Gdzie kończy się ten skill
 
-Regulaminy serwisów, sklepów i aplikacji oraz warunki subskrypcji obsługuje `regulamin-pod-lupa`, a umowy o zachowaniu poufności, `przed-podpisem-nda`. Jeśli użytkownik przyniesie taki dokument, powiedz to od razu i wskaż właściwy skill.
+Regulaminy serwisów, sklepów i aplikacji oraz warunki subskrypcji, na które użytkownik ma się zgodzić jako klient, obsługuje `regulamin-pod-lupa`; regulamin własnego sklepu internetowego sprawdza `regulamin-sklepu-checklista`; a umowy o zachowaniu poufności, `przed-podpisem-nda`. Jeśli użytkownik przyniesie taki dokument, powiedz to od razu i wskaż właściwy skill.
 
 Jeśli użytkownik nie chce zrozumieć tekstu, tylko przepisać go prościej dla kogoś innego, to skill `prosty-jezyk`. Kryterium: kto jest odbiorcą tekstu po Twojej pracy. Tutaj odbiorcą streszczenia jest sam użytkownik; jeśli tekst ma pójść dalej do klientów, pracowników albo petentów, oddaj to `prosty-jezyk`.
 

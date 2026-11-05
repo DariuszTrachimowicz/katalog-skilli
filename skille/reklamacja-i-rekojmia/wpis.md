@@ -2,9 +2,9 @@
 nazwa: Reklamacja i rękojmia
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.1
+wersja: 1.0.2
 poziom: Działa od razu
-aktualizacja: 2026-11-04
+aktualizacja: 2026-11-05
 skrot: Tłumaczy, jak naprawdę działa reklamacja w Polsce. Porządkuje kolejne kroki, po stronie kupującego albo po stronie sklepu.
 korzysc: Wiesz, czego możesz żądać i do kiedy masz czas, zanim napiszesz do sklepu albo odpiszesz klientowi.
 szukaj: reklamacja, rękojmia, gwarancja, zwrot towaru, niezgodność towaru z umową, wada, odstąpienie od umowy, sklep internetowy, rzecznik konsumentów, 14 dni na odpowiedź

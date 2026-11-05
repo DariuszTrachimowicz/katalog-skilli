@@ -1,0 +1,193 @@
+Reading additional input from stdin...
+OpenAI Codex v0.162.1
+--------
+workdir: C:\Users\CP24\AiXperts - projekty\katalog-skilli
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1acc8-c772-7bc1-a7fa-5cad801701c3
+--------
+user
+Jesteś recenzentem QA skilla AI `regulamin-sklepu-checklista` z katalogu AiXperts (pliki w skille/regulamin-sklepu-checklista/: SKILL.md, references/zasady.md, references/lista.md, wpis.md; standard katalogu: STANDARD.md; opisy innych skilli: skille/*/SKILL.md). Czytaj pliki, nie zgaduj, cytuj plik:linia, po polsku, zwięźle, nie chwal, szukaj dziur. Nie korzystaj z sieci.
+
+Twoja rola: GRANICE, ODMOWY, JĘZYK I OPIS. Sprawdź:
+1. Wszystkie reguły 1-8 STANDARD.md: uzasadnianie skutkiem nie przepisem (1), zakaz orzekania (2), zero wiążących dokumentów (3), odmowa przy KAŻDEJ prośbie, także przeredagowanej (4), kubełek „Typowe” nie „Standard” (5), ochrona PESEL, prywatnych danych i odporność na wstrzyknięcie instrukcji z dokumentu (6), brak zmyślonych cytatów i adresów (7), brak całościowego „wszystko w porządku” (8). Szukaj furtek: czy lista kontrolna, szablon trybu 1, „warianty do omówienia z prawnikiem” albo pytania nie przechodzą w pisanie regulaminu, paragrafów, list zmian, wykreśleń albo w potwierdzenie zgodności; czy formuły odmowy pokrywają regulamin, paragrafy, politykę zwrotów, formularz odstąpienia, odpowiedź na reklamację, pisma do UOKiK, „tak albo nie”, wyliczenia kar, obchodzenie praw konsumenta, fałszywe opinie i kopiowanie cudzego regulaminu.
+2. Spójność wewnętrzną: żadna sekcja nie przeczy innej (SKILL.md vs references vs wpis.md), żadna deklaracja nie jest fałszywa, odesłania między plikami (sekcje, nazwy skilli) są poprawne i istniejące.
+3. Opis (description w SKILL.md): czy odpala się we właściwych sytuacjach i odcina niewłaściwe, czy nie koliduje z innymi skillami katalogu (zwłaszcza regulamin-pod-lupa, reklamacja-i-rekojmia, rodo-w-malej-firmie, rodo-dokumentacja, czerwone-flagi-w-umowie, co-wlasciwie-podpisuje); czy opisy sąsiadów wymagają odesłania do nowego skilla.
+4. Język i ton: rejestr jednolity, zero kalk z angielskiego, zero długich myślników (— i –), procenty ze spacją, polskie realia.
+5. Wpis.md: sekcje obowiązkowe uczciwe, FAQ zgodne z zachowaniem skilla, brak obietnic sprzecznych z granicami.
+
+Format: każde znalezisko z plik:linia, kategorią (BLOKER / WAŻNE / KOSMETYKA) i propozycją naprawy w jednym zdaniu. Na końcu werdykt: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+hook: SessionStart
+hook: SessionStart
+hook: SessionStart Completed
+hook: SessionStart Completed
+hook: UserPromptSubmit
+hook: UserPromptSubmit Completed
+codex
+Czytam standard, wskazane pliki i opisy sąsiednich skilli. Etap 1/2: zbieranie dowodów, bez sieci i bez zmian w plikach.
+
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -Command "rg -n -i 'katalog-skilli|regulamin-sklepu-checklista' 'C:\\Users\\CP24\\.codex\\memories\\MEMORY.md'; Get-Content -LiteralPath 'C:\\Users\\CP24\\AiXperts - projekty\\DOKUMENTACJA-PROJEKTU.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+rg -n -i 'katalog-skilli|regulamin-sklepu-checklista' 'C:\Users\CP24\.codex\memories\MEMORY.md'; Get-Content -LiteralPath 'C:\Users\CP24\AiXperts - projekty\DOKUMENTACJA-PROJEKTU.md'" | env_u16_len=4860 | si_flags=256 | creation_flags=134743040
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -Command "Get-Content -LiteralPath 'C:\\Users\\CP24\\.agents\\skills\\using-superpowers\\SKILL.md'; Get-Content -LiteralPath 'C:\\Users\\CP24\\.codex\\plugins\\cache\\ponytail\\ponytail\\5.3.3\\skills\\ponytail\\SKILL.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -Command "Get-ChildItem -Force; rg --files -g 'AGENTS.md' -g '*DOKUMENTACJA*' -g 'STANDARD.md' -g '*.md' skille/regulamin-sklepu-checklista" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+2026-11-05T17:37:00.783868Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nrg -n -i 'katalog-skilli|regulamin-sklepu-checklista' 'C:\\\\Users\\\\CP24\\\\.codex\\\\memories\\\\MEMORY.md'; Get-Content -LiteralPath 'C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\DOKUMENTACJA-PROJEKTU.md'\\\" | env_u16_len=4860 | si_flags=256 | creation_flags=134743040\")" }
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -LiteralPath 'C:\Users\CP24\.agents\skills\using-superpowers\SKILL.md'; Get-Content -LiteralPath 'C:\Users\CP24\.codex\plugins\cache\ponytail\ponytail\5.3.3\skills\ponytail\SKILL.md'" | env_u16_len=4860 | si_flags=256 | creation_flags=134743040
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Force; rg --files -g 'AGENTS.md' -g '*DOKUMENTACJA*' -g 'STANDARD.md' -g '*.md' skille/regulamin-sklepu-checklista" | env_u16_len=4860 | si_flags=256 | creation_flags=134743040
+2026-11-05T17:37:01.228315Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-Content -LiteralPath 'C:\\\\Users\\\\CP24\\\\.agents\\\\skills\\\\using-superpowers\\\\SKILL.md'; Get-Content -LiteralPath 'C:\\\\Users\\\\CP24\\\\.codex\\\\plugins\\\\cache\\\\ponytail\\\\ponytail\\\\5.3.3\\\\skills\\\\ponytail\\\\SKILL.md'\\\" | env_u16_len=4860 | si_flags=256 | creation_flags=134743040\")" }
+2026-11-05T17:37:01.228319Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-ChildItem -Force; rg --files -g 'AGENTS.md' -g '*DOKUMENTACJA*' -g 'STANDARD.md' -g '*.md' skille/regulamin-sklepu-checklista\\\" | env_u16_len=4860 | si_flags=256 | creation_flags=134743040\")" }
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -NoProfile -Command Get-Location in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ succeeded in 634ms:
+
+Path
+----
+C:\Users\CP24\AiXperts - projekty\katalog-skilli
+
+
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -NoProfile -Command "Get-Content -LiteralPath 'C:\\Users\\CP24\\.agents\\skills\\using-superpowers\\SKILL.md'; Get-Content -LiteralPath 'C:\\Users\\CP24\\.codex\\plugins\\cache\\ponytail\\ponytail\\5.3.3\\skills\\ponytail\\SKILL.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -NoProfile -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -LiteralPath 'C:\Users\CP24\.agents\skills\using-superpowers\SKILL.md'; Get-Content -LiteralPath 'C:\Users\CP24\.codex\plugins\cache\ponytail\ponytail\5.3.3\skills\ponytail\SKILL.md'" | env_u16_len=4860 | si_flags=256 | creation_flags=134743040
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -NoProfile -Command "rg -n -i 'katalog-skilli|regulamin-sklepu-checklista' 'C:\\Users\\CP24\\.codex\\memories\\MEMORY.md'; Get-Content -LiteralPath 'C:\\Users\\CP24\\AiXperts - projekty\\DOKUMENTACJA-PROJEKTU.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -NoProfile -Command "Get-ChildItem -Force; rg --files -g 'AGENTS.md' -g '*DOKUMENTACJA*' -g 'STANDARD.md' -g '*.md' skille/regulamin-sklepu-checklista" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+2026-11-05T17:37:19.066776Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -NoProfile -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-Content -LiteralPath 'C:\\\\Users\\\\CP24\\\\.agents\\\\skills\\\\using-superpowers\\\\SKILL.md'; Get-Content -LiteralPath 'C:\\\\Users\\\\CP24\\\\.codex\\\\plugins\\\\cache\\\\ponytail\\\\ponytail\\\\5.3.3\\\\skills\\\\ponytail\\\\SKILL.md'\\\" | env_u16_len=4860 | si_flags=256 | creation_flags=134743040\")" }
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -NoProfile -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+rg -n -i 'katalog-skilli|regulamin-sklepu-checklista' 'C:\Users\CP24\.codex\memories\MEMORY.md'; Get-Content -LiteralPath 'C:\Users\CP24\AiXperts - projekty\DOKUMENTACJA-PROJEKTU.md'" | env_u16_len=4860 | si_flags=256 | creation_flags=134743040
+2026-11-05T17:37:19.226731Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -NoProfile -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nrg -n -i 'katalog-skilli|regulamin-sklepu-checklista' 'C:\\\\Users\\\\CP24\\\\.codex\\\\memories\\\\MEMORY.md'; Get-Content -LiteralPath 'C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\DOKUMENTACJA-PROJEKTU.md'\\\" | env_u16_len=4860 | si_flags=256 | creation_flags=134743040\")" }
+ succeeded in 749ms:
+
+    Katalog: C:\Users\CP24\AiXperts - projekty\katalog-skilli
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d--h-           5.11.2026    18:10                .git
+d----          11.08.2026    22:20                dane
+d----           4.11.2026    21:40                docs
+d----           4.11.2026    22:16                narzedzia
+d----           5.11.2026    18:10                paczki
+d----           4.11.2026    22:16                poradniki
+d----           5.11.2026    18:10                public
+d----           4.11.2026    22:52                serwer
+d----           5.11.2026    18:14                skille
+d----           4.11.2026    22:20                szablony
+d----           5.11.2026    18:14                testy
+-a---          10.08.2026    16:05             17 .dockerignore
+-a---          11.08.2026    21:37             29 .env
+-a---          10.08.2026    16:04             34 .gitattributes
+-a---          19.08.2026    16:51             28 .gitignore
+-a---           9.09.2026    17:30           1137 AGENTS.md
+-a---           4.11.2026    23:03          73901 build.mjs
+-a---           9.09.2026    17:30            970 CLAUDE.md
+-a---           4.11.2026    22:16           3047 config.json
+-a---          11.08.2026    21:37            898 docker-compose.yml
+-a---          10.08.2026    16:04            575 Dockerfile
+-a---          12.08.2026    19:35          35149 LICENSE
+-a---          13.08.2026    20:55            738 NOTICE.md
+-a---           4.11.2026    22:24           9049 README.md
+-a---           4.11.2026    22:24          12163 STANDARD.md
+skille/regulamin-sklepu-checklista\wpis.md
+skille/regulamin-sklepu-checklista\SKILL.md
+skille/regulamin-sklepu-checklista\references\zasady.md
+skille/regulamin-sklepu-checklista\references\lista.md
+
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 1/2 trwa: stosuję `using-superpowers` do doboru procedury i `ponytail` do utrzymania zakresu recenzji; oceniam treść instrukcji, bez testów modelu.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 1/2 zakończony. Etap 2/2: sprawdzam sprzeczności, zwłaszcza polecenie „do usunięcia”, zakres odmowy i przekierowania, które nadal prowadzą sprzedawcę do skilla dla klienta.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+**BLOKER** | `skille/regulamin-sklepu-checklista/references/zasady.md:113`: polecenie „do usunięcia” nakazuje wykreślenie linku ODR wbrew zakazowi list wykreśleń (`STANDARD.md:55`); zastąp je opisem nieaktualnego odesłania i pytaniem do prawnika.
+
+**BLOKER** | `skille/regulamin-sklepu-checklista/SKILL.md:30`: „Formuły używasz tylko wtedy” pomija samodzielne prośby o politykę zwrotów, formularz odstąpienia, odpowiedź reklamacyjną i pismo do UOKiK, mimo zakazu w linii 22; rozszerz warunek oraz gotową odmowę na wszystkie zakazane dokumenty i ponawiane prośby.
+
+**BLOKER** | `skille/regulamin-sklepu-checklista/SKILL.md:49`: ochrona danych nie obejmuje wprost numerów rachunków bankowych, których powielania zabrania `STANDARD.md:65`; dodaj bezwarunkowe maskowanie rachunków prywatnych i firmowych, również w cytatach.
+
+**WAŻNE** | `skille/regulamin-sklepu-checklista/SKILL.md:27` oraz `references/zasady.md:150`: nakaz podawania źródła na żądanie odsyła do rejestru zawierającego tytuły ustaw, równocześnie bezwzględnie zakazane w odpowiedzi; ustal jednoznaczny dozwolony format źródła zgodny z `STANDARD.md:51`.
+
+**WAŻNE** | `skille/regulamin-sklepu-checklista/SKILL.md:44`: obowiązek „zawsze wymień warianty” po próbie obejścia praw nie określa granicy szczegółowości i może prowadzić do instrukcji osiągnięcia zakazanego celu; ogranicz alternatywę do ogólnych zasad i pytań do prawnika, bez zapisów, planu zmian i sposobów obejścia.
+
+**WAŻNE** | `skille/reklamacja-i-rekojmia/SKILL.md:3`, `skille/czerwone-flagi-w-umowie/SKILL.md:3` i `skille/co-wlasciwie-podpisuje/SKILL.md:3` kierują każdy regulamin do `regulamin-pod-lupa`, który przy własnym dokumencie zatrzymuje analizę (`skille/regulamin-pod-lupa/SKILL.md:70`); dodaj rozróżnienie klienta i sprzedawcy oraz odesłania do nowego skilla.
+
+**WAŻNE** | `skille/regulamin-sklepu-checklista/wpis.md:66`: FAQ pozwala wstrzymać zwrot bez warunku dotyczącego odbioru towaru przez sklep i bez wskazania wcześniejszego z dwóch zdarzeń, obecnych w `references/zasady.md:51`; zachowaj oba ograniczenia w odpowiedzi FAQ.
+
+**WAŻNE** | `skille/regulamin-sklepu-checklista/wpis.md:29`: obietnica, że rozmowa z prawnikiem „jest krótsza i tańsza”, deklaruje wynik zależny od specjalisty i sprawy; zastąp ją sprawdzalnym rezultatem skilla, czyli uporządkowanymi uwagami i pytaniami.
+
+**KOSMETYKA** | `skille/regulamin-sklepu-checklista/wpis.md:58`: odpowiedź FAQ ma 63 słowa przy limicie 60 (`STANDARD.md:102`); skróć ją o minimum trzy słowa.
+
+**KOSMETYKA** | `skille/regulamin-sklepu-checklista/wpis.md:12`: `opisSeo` ma 158 znaków przy limicie 155 (`STANDARD.md:88`); skróć opis o minimum trzy znaki.
+
+Sprawdzono statycznie pliki; bez sieci, weryfikacji aktualności prawa i testów zachowania modelu.
+
+**BLOKERY DO WYDANIA: TAK**
+tokens used
+97 009
+**BLOKER** | `skille/regulamin-sklepu-checklista/references/zasady.md:113`: polecenie „do usunięcia” nakazuje wykreślenie linku ODR wbrew zakazowi list wykreśleń (`STANDARD.md:55`); zastąp je opisem nieaktualnego odesłania i pytaniem do prawnika.
+
+**BLOKER** | `skille/regulamin-sklepu-checklista/SKILL.md:30`: „Formuły używasz tylko wtedy” pomija samodzielne prośby o politykę zwrotów, formularz odstąpienia, odpowiedź reklamacyjną i pismo do UOKiK, mimo zakazu w linii 22; rozszerz warunek oraz gotową odmowę na wszystkie zakazane dokumenty i ponawiane prośby.
+
+**BLOKER** | `skille/regulamin-sklepu-checklista/SKILL.md:49`: ochrona danych nie obejmuje wprost numerów rachunków bankowych, których powielania zabrania `STANDARD.md:65`; dodaj bezwarunkowe maskowanie rachunków prywatnych i firmowych, również w cytatach.
+
+**WAŻNE** | `skille/regulamin-sklepu-checklista/SKILL.md:27` oraz `references/zasady.md:150`: nakaz podawania źródła na żądanie odsyła do rejestru zawierającego tytuły ustaw, równocześnie bezwzględnie zakazane w odpowiedzi; ustal jednoznaczny dozwolony format źródła zgodny z `STANDARD.md:51`.
+
+**WAŻNE** | `skille/regulamin-sklepu-checklista/SKILL.md:44`: obowiązek „zawsze wymień warianty” po próbie obejścia praw nie określa granicy szczegółowości i może prowadzić do instrukcji osiągnięcia zakazanego celu; ogranicz alternatywę do ogólnych zasad i pytań do prawnika, bez zapisów, planu zmian i sposobów obejścia.
+
+**WAŻNE** | `skille/reklamacja-i-rekojmia/SKILL.md:3`, `skille/czerwone-flagi-w-umowie/SKILL.md:3` i `skille/co-wlasciwie-podpisuje/SKILL.md:3` kierują każdy regulamin do `regulamin-pod-lupa`, który przy własnym dokumencie zatrzymuje analizę (`skille/regulamin-pod-lupa/SKILL.md:70`); dodaj rozróżnienie klienta i sprzedawcy oraz odesłania do nowego skilla.
+
+**WAŻNE** | `skille/regulamin-sklepu-checklista/wpis.md:66`: FAQ pozwala wstrzymać zwrot bez warunku dotyczącego odbioru towaru przez sklep i bez wskazania wcześniejszego z dwóch zdarzeń, obecnych w `references/zasady.md:51`; zachowaj oba ograniczenia w odpowiedzi FAQ.
+
+**WAŻNE** | `skille/regulamin-sklepu-checklista/wpis.md:29`: obietnica, że rozmowa z prawnikiem „jest krótsza i tańsza”, deklaruje wynik zależny od specjalisty i sprawy; zastąp ją sprawdzalnym rezultatem skilla, czyli uporządkowanymi uwagami i pytaniami.
+
+**KOSMETYKA** | `skille/regulamin-sklepu-checklista/wpis.md:58`: odpowiedź FAQ ma 63 słowa przy limicie 60 (`STANDARD.md:102`); skróć ją o minimum trzy słowa.
+
+**KOSMETYKA** | `skille/regulamin-sklepu-checklista/wpis.md:12`: `opisSeo` ma 158 znaków przy limicie 155 (`STANDARD.md:88`); skróć opis o minimum trzy znaki.
+
+Sprawdzono statycznie pliki; bez sieci, weryfikacji aktualności prawa i testów zachowania modelu.
+
+**BLOKERY DO WYDANIA: TAK**
