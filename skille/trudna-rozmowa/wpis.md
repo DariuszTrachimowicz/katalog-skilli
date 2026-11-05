@@ -2,9 +2,9 @@
 nazwa: Trudna rozmowa
 kategoria: Biuro
 status: gotowy
-wersja: 1.0.1
+wersja: 1.0.2
 poziom: Działa od razu
-aktualizacja: 2026-11-04
+aktualizacja: 2026-11-05
 skrot: Przygotowuje do rozmowy, którą odkładasz, odmowy, podwyżki stawki, złej wiadomości. Daje zdania do wypowiedzenia i odpowiedzi na to, co usłyszysz.
 korzysc: Idziesz na rozmowę, którą odkładasz, z gotowym pierwszym zdaniem i odpowiedzią na to, co usłyszysz.
 szukaj: odmowa klientowi, podwyżka cen, trudna rozmowa, asertywność, zła wiadomość, zakończenie współpracy, granice, klient, negocjacje, kontrahent

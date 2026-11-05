@@ -1,0 +1,157 @@
+Reading additional input from stdin...
+OpenAI Codex v0.162.1
+--------
+workdir: C:\Users\CP24\AiXperts - projekty\katalog-skilli
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1aac0-026a-7bc3-a29d-c1eb4af9ee8a
+--------
+user
+Jesteś doświadczonym radcą prawnym od polskiego prawa pracy po stronie pracodawców i recenzentem QA. Recenzujesz skill AI `zwolnienie-pracownika-krok-po-kroku` z katalogu AiXperts. Pliki (czytaj je, nie zgaduj): skille/zwolnienie-pracownika-krok-po-kroku/SKILL.md, references/zasady.md, references/plan.md, wpis.md (karta publiczna). Materiał źródłowy researchu z datami i przepisami: testy/zwolnienie-pracownika-krok-po-kroku/research-stan-prawny.md. Dziś jest 5 listopada 2026 r.; stan prawny skilla to 5 listopada 2026 r. (tekst jednolity KP Dz.U. 2026 poz. 1245 i zmiany 2025-2026 opisane w researchu). Nie korzystaj z sieci.
+
+Twoja rola: POPRAWNOŚĆ MERYTORYCZNA. Sprawdź:
+1. Czy reguły w zasady.md i plan.md są zgodne z polskim prawem pracy (okresy wypowiedzenia, koniec okresu, przyczyna, konsultacja związkowa, forma i doręczenie, szczególna ochrona i jej wyjątki, art. 52 i 53, odprawa i zwolnienia grupowe, świadectwo, ekwiwalent, roszczenia z art. 45, 47, 47¹, 50, 56-58, terminy odwołania). Szukaj błędów, uproszczeń wprowadzających w błąd i brakujących wyjątków, które realnie zmieniają wynik dla małej firmy.
+2. Czy tezy orzeczeń SN w sekcji 10 są wiernie oddane i czy któraś teza jest przedstawiona mocniej niż orzeczenie.
+3. Czy plan.md (fakty do ustalenia, szablon, lista dokumentów, lista kontrolna sprawdzenia) nie zgłasza fałszywych braków i nie pomija istotnych kontroli.
+4. Czy wpis.md nie składa obietnic sprzecznych z SKILL.md i nie zawiera błędów merytorycznych.
+5. Czy oznaczenia DO WERYFIKACJI są tam, gdzie trzeba, i czy nie ma tez podanych jako pewnik bez podstawy.
+
+Format: po polsku, zwięźle, każde znalezisko z plik:linia, kategorią (BLOKER / WAŻNE / KOSMETYKA) i propozycją naprawy w jednym zdaniu. Nie chwal. Na końcu werdykt: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+2026-11-05T08:07:59.734765Z ERROR codex_memories_write::phase2: Phase 2 no changes
+hook: SessionStart
+hook: SessionStart
+hook: SessionStart Completed
+hook: SessionStart Completed
+hook: UserPromptSubmit
+hook: UserPromptSubmit Completed
+codex
+Sprawdzam wskazane pliki względem lokalnego researchu, bez sieci. Etap 1/3: odczyt dokumentacji i materiałów.
+
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -Command "Get-Content -LiteralPath 'C:\\Users\\CP24\\.agents\\skills\\using-superpowers\\SKILL.md'; Get-Content -LiteralPath 'C:\\Users\\CP24\\AiXperts - projekty\\DOKUMENTACJA-PROJEKTU.md'; rg -n 'katalog-skilli|zwolnienie-pracownika' 'C:\\Users\\CP24\\.codex\\memories\\MEMORY.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -LiteralPath 'C:\Users\CP24\.agents\skills\using-superpowers\SKILL.md'; Get-Content -LiteralPath 'C:\Users\CP24\AiXperts - projekty\DOKUMENTACJA-PROJEKTU.md'; rg -n 'katalog-skilli|zwolnienie-pracownika' 'C:\Users\CP24\.codex\memories\MEMORY.md'" | env_u16_len=4830 | si_flags=256 | creation_flags=134743040
+2026-11-05T08:08:11.084153Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-Content -LiteralPath 'C:\\\\Users\\\\CP24\\\\.agents\\\\skills\\\\using-superpowers\\\\SKILL.md'; Get-Content -LiteralPath 'C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\DOKUMENTACJA-PROJEKTU.md'; rg -n 'katalog-skilli|zwolnienie-pracownika' 'C:\\\\Users\\\\CP24\\\\.codex\\\\memories\\\\MEMORY.md'\\\" | env_u16_len=4830 | si_flags=256 | creation_flags=134743040\")" }
+mcp: codex_apps/remote_desktop_commander.read_file started
+mcp: codex_apps/remote_desktop_commander.read_file started
+mcp: codex_apps/remote_desktop_commander.read_file started
+mcp: codex_apps/remote_desktop_commander.read_file (failed)
+mcp: codex_apps/remote_desktop_commander.read_file (failed)
+mcp: codex_apps/remote_desktop_commander.read_file (failed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 1/3: pliki są dostępne przez odczyt bezpośredni. Stosuję `using-superpowers` do wyboru procedury; recenzja pozostaje wyłącznie merytoryczna, bez zmian w plikach.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 2/3: reguły i plan odczytane. Sprawdzam wyjątki, które mogą zmienić datę rozwiązania, zakres ochrony albo koszt sporu, oraz czy lista kontrolna nie traktuje porozumienia jak wypowiedzenia.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 3/3: potwierdzone problemy dotyczą m.in. przesłanek dyscyplinarki, wyjątków przy długiej nieobecności i brakujących danych o stażu od 2026 r. Kończę kontrolę tez SN i numerów linii; pełnych uzasadnień orzeczeń nie ma w przekazanym researchu.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+| Kategoria | Plik:linia | Znalezisko i naprawa |
+|---|---|---|
+| **BLOKER** | `references/zasady.md:28` | Przesłanka przestępstwa pomija popełnienie go podczas trwania umowy i prawomocność wyroku; dopisz oba warunki, pozostawiając oczywistość przestępstwa jako alternatywę dla prawomocnego skazania. |
+| **BLOKER** | `references/zasady.md:29` | Zakazy przy izolacji i powrocie są zbyt szerokie; ogranicz pierwszy do okresu pobierania wynagrodzenia i zasiłku, a drugi do stawienia się po ustaniu przyczyny nieobecności. |
+| **BLOKER** | `references/plan.md:19` | Wywiad pomija wcześniejsze zlecenia i działalność dla tego pracodawcy, mimo ich wpływu na wypowiedzenie od 2026 r.; dodaj okresy współpracy, dokumenty i kontrolę nakładania się okresów. |
+| **BLOKER** | `references/plan.md:53,67–73` | Lista może zgłaszać przy porozumieniu brak przyczyny, pouczenia lub wymaganej formy, a pomija odrębne kontrole wypowiedzenia zmieniającego i art. 53; rozdziel wymagania według trybu, uwzględniając przyczynę przy każdym rozwiązaniu bez wypowiedzenia. |
+| **WAŻNE** | `references/zasady.md:48` | Kategoryczne liczenie stażu na dzień złożenia wypowiedzenia może prowadzić do zbyt krótkiego okresu; usuń ten pewnik i wymagaj sprawdzenia przekroczenia progu podczas dalszego zatrudnienia. |
+| **WAŻNE** | `references/zasady.md:46` | „Biegną od niedzieli” myli sposób wyznaczania końca z początkiem pozostawania w okresie wypowiedzenia; zaznacz, że skutki wypowiedzenia powstają od doręczenia, także przed początkiem pełnych tygodni. |
+| **WAŻNE** | `references/zasady.md:61` | Zaświadczenie ZUS nie jest jedynym dowodem wszystkich zaliczanych okresów, a termin 24 miesięcy nie dotyczy bezwarunkowo każdego pracownika; dopisz inne dokumenty i zakres przepisu przejściowego wskazany w researchu. |
+| **WAŻNE** | `references/plan.md:22,72` | Brakuje kontroli przesłanek art. 53; dodaj daty i okresy świadczeń, ustalenie świadczenia rehabilitacyjnego, związek z wypadkiem lub chorobą zawodową oraz ustanie przyczyny nieobecności. |
+| **WAŻNE** | `references/zasady.md:82` | Ochrona od każdego dnia złożenia wniosku jest przedstawiona zbyt szeroko; dopisz ograniczenia początku ochrony przy wcześniejszych wnioskach i uwzględnij uzupełniający urlop macierzyński, obecne w researchu. |
+| **WAŻNE** | `references/zasady.md:82` | Ciężar dowodu opisano jako wykazywanie braku przygotowań; zastąp to obowiązkiem udowodnienia przesłanek dopuszczalnego rozwiązania z art. 177 § 1 pkt 2 i § 4. |
+| **WAŻNE** | `references/zasady.md:28,82` | Wymóg zgody związku może sugerować niemożność dyscyplinarki przy braku organizacji reprezentującej pracownika; wyraźnie uzależnij obowiązek uzyskania zgody od istnienia takiej reprezentacji. |
+| **WAŻNE** | `references/zasady.md:84` | Katalog wyjątków ochrony wychowawczej pomija UZG; dopisz odrębne zasady zwolnień grupowych i indywidualnych u pracodawców zatrudniających co najmniej 20 pracowników. |
+| **WAŻNE** | `references/zasady.md:87` | Pominięto ochronę działacza po okresie wskazanym uchwałą; dopisz dalszą ochronę przez połowę tego okresu, najwyżej rok, i pytanie o daty jej obowiązywania. |
+| **WAŻNE** | `references/zasady.md:86` | Sama fizyczna obecność w zakładzie nie wyłącza ochrony chorobowej; odróżnij wykonywanie pracy lub gotowość do niej od przyjścia wyłącznie w celu przekazania zwolnienia. |
+| **WAŻNE** | `references/zasady.md:70`; `references/plan.md:69` | Wyłączenie konsultacji opisano zbyt ogólnie, a lista sugeruje konieczność każdorazowego odczekania terminu; rozdziel konsultację z art. 38 od opiniowania i zgód oraz dopuść decyzję po otrzymaniu i rozpatrzeniu wcześniejszego stanowiska. |
+| **WAŻNE** | `references/zasady.md:114,117` | Roszczenia pomijają szczególne ograniczenia przy umowach terminowych i wadliwym rozwiązaniu podczas wypowiedzenia; dodaj reguły art. 47¹, 58–60, w tym przypadki wyłącznie odszkodowania i jego ograniczenie pozostałym czasem umowy. |
+| **WAŻNE** | `references/zasady.md:93,114` | Zakaz zastąpienia przywrócenia odszkodowaniem u chronionych przedstawiono bez wyjątków; dopisz wyjątek niemożności przywrócenia z powodu upadłości lub likwidacji oraz odróżnij szczególną ochronę przed rozwiązaniem od zakazu odwetu. |
+| **WAŻNE** | `references/zasady.md:25` | Porozumienia zaliczono do progu grupowego bez warunku liczby i inicjatywy; dopisz, że chodzi o co najmniej pięć porozumień z inicjatywy pracodawcy w badanym okresie. |
+| **WAŻNE** | `references/zasady.md:99` | „Rok pierwszeństwa” błędnie skraca mechanizm ponownego zatrudnienia; rozdziel roczny termin zgłoszenia zamiaru powrotu od obowiązku zatrudnienia w odpowiedniej grupie zawodowej w okresie 15 miesięcy. |
+| **WAŻNE** | `references/zasady.md:103` | Wyjątek kolejnej umowy pomija wydanie świadectwa na wniosek pracownika; dopisz obowiązek wydania w ciągu siedmiu dni od wniosku mimo kontynuowania zatrudnienia. |
+| **WAŻNE** | `references/zasady.md:104` | Reguła ekwiwalentu pomija wyjątek uzgodnionego wykorzystania urlopu przy kolejnej bezpośredniej umowie oraz wcześniejszą wypłatę przy dniu wolnym; dodaj oba zastrzeżenia zawarte w researchu. |
+| **WAŻNE** | `references/zasady.md:106` | Pewnik o zaprzestaniu wpłat PPK z chwilą odejścia jest mylący, ponieważ późniejsza wypłata wynagrodzenia może nadal rodzić obowiązek wpłat; usuń ten pewnik i obejmij weryfikacją również rozliczenia po ustaniu zatrudnienia. |
+| **WAŻNE** | `references/zasady.md:142` | Skrót II PK 171/04 może sugerować swobodę dodawania nowych podstaw utraty zaufania; przywróć zastrzeżenie o faktach ujętych ogólnie lub przykładowo i odróżnij rozwinięcie przyczyny od jej późniejszej zamiany. |
+| **WAŻNE** | `references/zasady.md:153` | I PK 199/03 przedstawiono tak, jakby sam zamiar uzyskania porozumienia wystarczał do uchylenia zgody; dopisz konieczność spełnienia przesłanek bezprawnej groźby, zamiast uznawać cel pracodawcy za rozstrzygający. |
+| **WAŻNE** | `references/zasady.md:156` | Teza I PKN 374/01 nadmiernie wyłącza kontrolę doboru pracowników; odróżnij swobodę decyzji gospodarczych od sądowej kontroli rzeczywistości przyczyny, kryteriów wyboru i dyskryminacji. |
+| **WAŻNE** | `references/zasady.md:135,139` | Deklaracja sprawdzenia wszystkich pozycji zaciera pośrednią weryfikację III PZP 10/85; oznacz przy tej pozycji, że pełnego tekstu nie odczytano, a potwierdzenie pochodzi z późniejszych orzeczeń. |
+| **WAŻNE** | `wpis.md:37`; `references/plan.md:72` | Miesiąc na dyscyplinarkę opisano bez właściwego podmiotu i jakości wiedzy; wskaż sprawdzoną wiedzę osoby uprawnionej oraz konieczność doręczenia oświadczenia przed upływem terminu. |
+
+Bez sieci; wierność tez SN oceniona względem lokalnego researchu, bez ponownego odczytu pełnych uzasadnień.
+
+**BLOKERY DO WYDANIA: TAK**
+tokens used
+141 413
+| Kategoria | Plik:linia | Znalezisko i naprawa |
+|---|---|---|
+| **BLOKER** | `references/zasady.md:28` | Przesłanka przestępstwa pomija popełnienie go podczas trwania umowy i prawomocność wyroku; dopisz oba warunki, pozostawiając oczywistość przestępstwa jako alternatywę dla prawomocnego skazania. |
+| **BLOKER** | `references/zasady.md:29` | Zakazy przy izolacji i powrocie są zbyt szerokie; ogranicz pierwszy do okresu pobierania wynagrodzenia i zasiłku, a drugi do stawienia się po ustaniu przyczyny nieobecności. |
+| **BLOKER** | `references/plan.md:19` | Wywiad pomija wcześniejsze zlecenia i działalność dla tego pracodawcy, mimo ich wpływu na wypowiedzenie od 2026 r.; dodaj okresy współpracy, dokumenty i kontrolę nakładania się okresów. |
+| **BLOKER** | `references/plan.md:53,67–73` | Lista może zgłaszać przy porozumieniu brak przyczyny, pouczenia lub wymaganej formy, a pomija odrębne kontrole wypowiedzenia zmieniającego i art. 53; rozdziel wymagania według trybu, uwzględniając przyczynę przy każdym rozwiązaniu bez wypowiedzenia. |
+| **WAŻNE** | `references/zasady.md:48` | Kategoryczne liczenie stażu na dzień złożenia wypowiedzenia może prowadzić do zbyt krótkiego okresu; usuń ten pewnik i wymagaj sprawdzenia przekroczenia progu podczas dalszego zatrudnienia. |
+| **WAŻNE** | `references/zasady.md:46` | „Biegną od niedzieli” myli sposób wyznaczania końca z początkiem pozostawania w okresie wypowiedzenia; zaznacz, że skutki wypowiedzenia powstają od doręczenia, także przed początkiem pełnych tygodni. |
+| **WAŻNE** | `references/zasady.md:61` | Zaświadczenie ZUS nie jest jedynym dowodem wszystkich zaliczanych okresów, a termin 24 miesięcy nie dotyczy bezwarunkowo każdego pracownika; dopisz inne dokumenty i zakres przepisu przejściowego wskazany w researchu. |
+| **WAŻNE** | `references/plan.md:22,72` | Brakuje kontroli przesłanek art. 53; dodaj daty i okresy świadczeń, ustalenie świadczenia rehabilitacyjnego, związek z wypadkiem lub chorobą zawodową oraz ustanie przyczyny nieobecności. |
+| **WAŻNE** | `references/zasady.md:82` | Ochrona od każdego dnia złożenia wniosku jest przedstawiona zbyt szeroko; dopisz ograniczenia początku ochrony przy wcześniejszych wnioskach i uwzględnij uzupełniający urlop macierzyński, obecne w researchu. |
+| **WAŻNE** | `references/zasady.md:82` | Ciężar dowodu opisano jako wykazywanie braku przygotowań; zastąp to obowiązkiem udowodnienia przesłanek dopuszczalnego rozwiązania z art. 177 § 1 pkt 2 i § 4. |
+| **WAŻNE** | `references/zasady.md:28,82` | Wymóg zgody związku może sugerować niemożność dyscyplinarki przy braku organizacji reprezentującej pracownika; wyraźnie uzależnij obowiązek uzyskania zgody od istnienia takiej reprezentacji. |
+| **WAŻNE** | `references/zasady.md:84` | Katalog wyjątków ochrony wychowawczej pomija UZG; dopisz odrębne zasady zwolnień grupowych i indywidualnych u pracodawców zatrudniających co najmniej 20 pracowników. |
+| **WAŻNE** | `references/zasady.md:87` | Pominięto ochronę działacza po okresie wskazanym uchwałą; dopisz dalszą ochronę przez połowę tego okresu, najwyżej rok, i pytanie o daty jej obowiązywania. |
+| **WAŻNE** | `references/zasady.md:86` | Sama fizyczna obecność w zakładzie nie wyłącza ochrony chorobowej; odróżnij wykonywanie pracy lub gotowość do niej od przyjścia wyłącznie w celu przekazania zwolnienia. |
+| **WAŻNE** | `references/zasady.md:70`; `references/plan.md:69` | Wyłączenie konsultacji opisano zbyt ogólnie, a lista sugeruje konieczność każdorazowego odczekania terminu; rozdziel konsultację z art. 38 od opiniowania i zgód oraz dopuść decyzję po otrzymaniu i rozpatrzeniu wcześniejszego stanowiska. |
+| **WAŻNE** | `references/zasady.md:114,117` | Roszczenia pomijają szczególne ograniczenia przy umowach terminowych i wadliwym rozwiązaniu podczas wypowiedzenia; dodaj reguły art. 47¹, 58–60, w tym przypadki wyłącznie odszkodowania i jego ograniczenie pozostałym czasem umowy. |
+| **WAŻNE** | `references/zasady.md:93,114` | Zakaz zastąpienia przywrócenia odszkodowaniem u chronionych przedstawiono bez wyjątków; dopisz wyjątek niemożności przywrócenia z powodu upadłości lub likwidacji oraz odróżnij szczególną ochronę przed rozwiązaniem od zakazu odwetu. |
+| **WAŻNE** | `references/zasady.md:25` | Porozumienia zaliczono do progu grupowego bez warunku liczby i inicjatywy; dopisz, że chodzi o co najmniej pięć porozumień z inicjatywy pracodawcy w badanym okresie. |
+| **WAŻNE** | `references/zasady.md:99` | „Rok pierwszeństwa” błędnie skraca mechanizm ponownego zatrudnienia; rozdziel roczny termin zgłoszenia zamiaru powrotu od obowiązku zatrudnienia w odpowiedniej grupie zawodowej w okresie 15 miesięcy. |
+| **WAŻNE** | `references/zasady.md:103` | Wyjątek kolejnej umowy pomija wydanie świadectwa na wniosek pracownika; dopisz obowiązek wydania w ciągu siedmiu dni od wniosku mimo kontynuowania zatrudnienia. |
+| **WAŻNE** | `references/zasady.md:104` | Reguła ekwiwalentu pomija wyjątek uzgodnionego wykorzystania urlopu przy kolejnej bezpośredniej umowie oraz wcześniejszą wypłatę przy dniu wolnym; dodaj oba zastrzeżenia zawarte w researchu. |
+| **WAŻNE** | `references/zasady.md:106` | Pewnik o zaprzestaniu wpłat PPK z chwilą odejścia jest mylący, ponieważ późniejsza wypłata wynagrodzenia może nadal rodzić obowiązek wpłat; usuń ten pewnik i obejmij weryfikacją również rozliczenia po ustaniu zatrudnienia. |
+| **WAŻNE** | `references/zasady.md:142` | Skrót II PK 171/04 może sugerować swobodę dodawania nowych podstaw utraty zaufania; przywróć zastrzeżenie o faktach ujętych ogólnie lub przykładowo i odróżnij rozwinięcie przyczyny od jej późniejszej zamiany. |
+| **WAŻNE** | `references/zasady.md:153` | I PK 199/03 przedstawiono tak, jakby sam zamiar uzyskania porozumienia wystarczał do uchylenia zgody; dopisz konieczność spełnienia przesłanek bezprawnej groźby, zamiast uznawać cel pracodawcy za rozstrzygający. |
+| **WAŻNE** | `references/zasady.md:156` | Teza I PKN 374/01 nadmiernie wyłącza kontrolę doboru pracowników; odróżnij swobodę decyzji gospodarczych od sądowej kontroli rzeczywistości przyczyny, kryteriów wyboru i dyskryminacji. |
+| **WAŻNE** | `references/zasady.md:135,139` | Deklaracja sprawdzenia wszystkich pozycji zaciera pośrednią weryfikację III PZP 10/85; oznacz przy tej pozycji, że pełnego tekstu nie odczytano, a potwierdzenie pochodzi z późniejszych orzeczeń. |
+| **WAŻNE** | `wpis.md:37`; `references/plan.md:72` | Miesiąc na dyscyplinarkę opisano bez właściwego podmiotu i jakości wiedzy; wskaż sprawdzoną wiedzę osoby uprawnionej oraz konieczność doręczenia oświadczenia przed upływem terminu. |
+
+Bez sieci; wierność tez SN oceniona względem lokalnego researchu, bez ponownego odczytu pełnych uzasadnień.
+
+**BLOKERY DO WYDANIA: TAK**
