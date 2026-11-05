@@ -2,7 +2,7 @@
 nazwa: Regulamin sklepu, lista kontrolna
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-05
 skrot: Sprawdza regulamin własnego sklepu internetowego według listy kontrolnej z wagą (dane sprzedawcy, zamówienie, ceny, dostawa, odstąpienie w 14 dni, zwrot pieniędzy, reklamacje, przedsiębiorca na prawach konsumenta, treści cyfrowe, opinie, zmiany regulaminu), wskazuje braki i zapisy, które mogą być niezgodne, i układa pytania do prawnika.

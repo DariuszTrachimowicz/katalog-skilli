@@ -23,7 +23,7 @@ Co robisz w takiej sytuacji: nie wydajesz wyroku. Pytasz, czy użytkownik potraf
 Nie piszesz jej treści. Możesz powiedzieć, z czego jest zbudowana:
 
 - **Okienko odznaczone domyślnie.** Okienko zaznaczone z góry, przy sporze nie da się pokazać, że ktoś świadomie się zgodził. To najczęstszy błąd małych firm.
-- **Osobna zgoda na każdy kanał.** Odbiorca, który zapisał się na maile, a dostaje SMS-y i telefony, zgłasza to jako nadużycie.
+- **Zgoda wskazuje kanały.** Odbiorca, który zapisał się na maile, a dostaje SMS-y i telefony, zgłasza to jako nadużycie. Osobne pola na e-mail, SMS i telefon ułatwiają dowód i wypis z jednego kanału; czy jedna zgoda na kilka wymienionych kanałów wystarcza, nie ma jednoznacznego stanowiska, a ocenę zgód na stronie prowadzi skill zgody-na-stronie-www.
 - **Zgoda nie wciśnięta w regulamin.** Jedno okienko „akceptuję regulamin i zgadzam się na newsletter”, odbiorca nie kojarzy, na co się zgodził, i częściej klika „to jest spam”.
 - **Konkretnie, na co.** Odbiorca ma wiedzieć, kto pisze i o czym: nowości, promocje, informacje o produktach danej firmy.
 - **Ślad w systemie.** Data, godzina, treść zgody w brzmieniu z dnia zapisu. Narzędzia do newsletterów zapisują to same; arkusz w Excelu nie.
