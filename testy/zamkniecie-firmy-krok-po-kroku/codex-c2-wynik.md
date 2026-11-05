@@ -1,0 +1,16 @@
+| Kategoria | Plik:linia | Znalezisko i naprawa |
+|---|---|---|
+| **BLOKER** | `references/zasady.md:62`, `references/plan.md:97` | Nadal nakazano pełną zdrowotną za ostatni miesiąc bez warunku podlegania ubezpieczeniu, co obejmuje także zamknięcie firmy po pełnym miesiącu zawieszenia; ogranicz nakaz do miesiąca faktycznego podlegania, zgodnie z `zasady.md:63`. |
+| **WAŻNE** | `references/plan.md:59`, `references/plan.md:60`, `references/zasady.md:96` | Dodanie pytania o rozliczenia kwartalne nie usunęło miesięcznego terminu ryczałtu ani przypisania całego JPK do terminu kwartalnego; rozdziel ryczałt miesięczny i kwartalny oraz miesięczną część ewidencyjną JPK_V7K od kwartalnej deklaracji i zapłaty. |
+| **WAŻNE** | `references/plan.md:61`, `references/plan.md:62`, `references/plan.md:99`, `wpis.md:67` | Pomimo dodanej gałęzi karty podatkowej kalendarz, lista kontrolna i FAQ nadal bezwarunkowo nakazują zeznanie albo roczne rozliczenie zdrowotnej; wyłącz kartę z tych reguł i zachowaj odrębną ścieżkę z `zasady.md:97`. |
+| **WAŻNE** | `references/zasady.md:99`, `references/plan.md:63`, `wpis.md:37` | Nadal brakuje odrębności nieruchomości mieszkalnych, a kalendarz i opis zachowują ogólną regułę sześciu lat mimo zastrzeżenia dotyczącego karty; dodaj rozgałęzienia albo oznaczenie wymaganej weryfikacji przed zastosowaniem ogólnej reguły. |
+| **WAŻNE** | `references/zasady.md:33` | Nadal zrównano liczenie okresu dla ulgi na start i preferencyjnych składek, chociaż `research-stan-prawny.md:101` rozróżnia okres od dnia zawieszenia lub zakończenia oraz ostatnie 60 miesięcy kalendarzowych prowadzenia działalności; zapisz osobne warunki obu ulg. |
+| **WAŻNE** | `references/zasady.md:177`, `references/plan.md:68` | Skrót „urlopy związane z rodzicielstwem” pomija urlop opiekuńczy, a tabela nadal pomija zakaz łączenia rodzicielskiego z pracą; odwołaj oba skróty do pełnego katalogu i wszystkich warunków z `zasady.md:28`. |
+| **WAŻNE** | `references/plan.md:72`, `references/zasady.md:111` | Usunięto zapewnienie o braku wszelkich obowiązków dotyczących kasy, ale nie dodano przyjętej kontroli przeglądu technicznego przed ponowną ewidencją; dodaj ten punkt, z oznaczeniem weryfikacji szczegółów nieustalonych w researchu. |
+| **WAŻNE** | `references/zasady.md:117` | Poprawiony opis limitu KSeF nadal nie wskazuje sposobu wystawienia samej faktury przekraczającej 10 000 zł; doprecyzuj moment utraty wyjątku i uzupełnij podstawę źródłową albo oznacz tę kwestię do weryfikacji. |
+| **WAŻNE** | `SKILL.md:29`, `STANDARD.md:61` | Zamknięta lista zastosowań formuły odmowy nadal pomija żądanie jednostkowego orzeczenia „tak czy nie”, np. „czy to bezpieczne podatkowo”; obejmij powtarzalną odmową każde żądanie orzeczenia, także niezwiązane z kompletnością planu. |
+| **WAŻNE** | `references/zasady.md:145` | Tabela przechowywania dokumentów nadal podaje bezwarunkowe trzy lata, mimo dodanych zastrzeżeń w `zasady.md:158`, co może prowadzić do przedwczesnego zniszczenia dowodów; uzależnij okres od rodzaju roszczenia, zmian biegu przedawnienia i orzeczenia. |
+
+Bez sieci i testów rozmowy z modelem; skuteczność odmów pozostaje niepotwierdzona.
+
+**BLOKERY DO WYDANIA: TAK**

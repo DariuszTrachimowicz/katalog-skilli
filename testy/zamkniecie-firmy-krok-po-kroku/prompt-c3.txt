@@ -1,0 +1,9 @@
+Jesteś doradcą podatkowym i radcą prawnym od obsługi małych firm oraz recenzentem QA granic skilla. CYKL 3 (wąski) skilla AI `zamkniecie-firmy-krok-po-kroku` z katalogu AiXperts: skille/zamkniecie-firmy-krok-po-kroku/SKILL.md, references/zasady.md, references/plan.md, wpis.md; STANDARD.md; research testy/zamkniecie-firmy-krok-po-kroku/research-stan-prawny.md. Dziś 5 listopada 2026 r. Nie korzystaj z sieci. Cytuj plik:linia.
+
+W cyklu 2 zgłosiłeś ustalenia zapisane w testy/zamkniecie-firmy-krok-po-kroku/codex-c2-wynik.md (1 bloker: pełna zdrowotna za ostatni miesiąc bez warunku podlegania; 9 ważnych: kwartalny ryczałt i JPK_V7K, karta w kalendarzu, liście i FAQ, nieruchomości mieszkalne przy 6 latach, dwie różne reguły 60 miesięcy, pełny katalog urlopów, przegląd techniczny kasy, faktura przekraczająca limit KSeF, odmowa dla każdego orzeczenia „tak albo nie”, 3 lata w tabeli przechowywania). Autor naniósł poprawki, w tym po wyszukaniu resztek w całym skillu.
+
+Zadanie:
+1. Dla każdego z 10 ustaleń cyklu 2 sprawdź, czy zostało usunięte poprawnie (także resztki w innych plikach); wypisz tylko nieusunięte albo usunięte błędnie.
+2. Zgłoś nowy BLOKER tylko, jeśli poprawki wprowadziły błąd merytoryczny, sprzeczność między plikami albo furtkę łamiącą reguły 1-8 STANDARD.md. Nie zgłaszaj kosmetyki ani nowych życzeń spoza ustaleń cykli 1 i 2 (pliki codex-c1-ekspert-wynik.md, codex-c1-granice-wynik.md), chyba że to realny bloker.
+
+Format: plik:linia, kategoria (BLOKER / WAŻNE), naprawa w jednym zdaniu. Na końcu: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.

@@ -1,0 +1,7 @@
+CYKL 5 (bardzo wąski) skilla AI `zamkniecie-firmy-krok-po-kroku` (skille/zamkniecie-firmy-krok-po-kroku/SKILL.md, references/zasady.md, references/plan.md, wpis.md). Jesteś doradcą podatkowym i recenzentem QA. Nie korzystaj z sieci, cytuj plik:linia.
+
+W cyklu 4 (testy/zamkniecie-firmy-krok-po-kroku/codex-c4-wynik.md) zostały: 1 bloker (pełna zdrowotna bez warunku podlegania ubezpieczeniu w wpis.md:37 i plan.md:42, 59, 97) i 1 ważne (karta podatkowa przy zeznaniu i rozliczeniu zdrowotnej w zasady.md:157 i plan.md:82). Autor ujednolicił sformułowanie we wszystkich plikach i dodał kartę w obu miejscach.
+
+Sprawdź tylko, czy te 2 ustalenia są usunięte w całym skillu. Nie zgłaszaj nowych życzeń ani kosmetyki.
+
+Format: plik:linia, kategoria (BLOKER / WAŻNE), naprawa w jednym zdaniu. Na końcu: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.

@@ -1,0 +1,7 @@
+CYKL 4 (bardzo wąski) skilla AI `zamkniecie-firmy-krok-po-kroku` z katalogu AiXperts (skille/zamkniecie-firmy-krok-po-kroku/SKILL.md, references/zasady.md, references/plan.md, wpis.md; STANDARD.md). Jesteś doradcą podatkowym i recenzentem QA. Nie korzystaj z sieci, cytuj plik:linia.
+
+W cyklu 3 (testy/zamkniecie-firmy-krok-po-kroku/codex-c3-wynik.md) zostały: 1 bloker (warunek faktycznego podlegania ubezpieczeniu przy pełnej zdrowotnej za ostatni miesiąc w wpis.md i tabeli tez zasady.md) i 3 ważne (rozdzielenie miesięcznej ewidencji od kwartalnej deklaracji w plan.md, wyłączenie karty z ogólnych nakazów zeznania i rozliczenia zdrowotnej, zastrzeżenia reguły 6 lat w skrótach). Po cyklu 3 autor dodał też do SKILL.md, że anomalię w dokumencie zgłasza się w pierwszym zdaniu odpowiedzi.
+
+Sprawdź tylko: (1) czy te 4 ustalenia są usunięte, także w innych miejscach tych plików, (2) czy dopisek o anomalii nie wprowadza sprzeczności. Nie zgłaszaj nowych życzeń ani kosmetyki.
+
+Format: plik:linia, kategoria (BLOKER / WAŻNE), naprawa w jednym zdaniu. Na końcu: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.

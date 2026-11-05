@@ -1,0 +1,10 @@
+Jesteś doświadczonym doradcą podatkowym i radcą prawnym od obsługi małych firm, a zarazem recenzentem QA granic skilla. Recenzujesz CYKL 2 skilla AI `zamkniecie-firmy-krok-po-kroku` z katalogu AiXperts: skille/zamkniecie-firmy-krok-po-kroku/SKILL.md, references/zasady.md, references/plan.md, wpis.md; standard STANDARD.md. Research źródłowy: testy/zamkniecie-firmy-krok-po-kroku/research-stan-prawny.md. Dziś 5 listopada 2026 r. Nie korzystaj z sieci. Czytaj pliki, nie zgaduj, cytuj plik:linia.
+
+W cyklu 1 dwie role zgłosiły ustalenia zapisane w testy/zamkniecie-firmy-krok-po-kroku/codex-c1-ekspert-wynik.md i testy/zamkniecie-firmy-krok-po-kroku/codex-c1-granice-wynik.md. Autor przyjął wszystkie poza jednym: bloker o zakresie przyspieszonego terminu PIT-11 został ODRZUCONY, bo art. 42g ust. 1 ustawy o PIT (t.j. Dz.U. 2026 poz. 592) wymienia wprost informacje z art. 34 ust. 8, art. 35 ust. 6, art. 39 ust. 1 i 3, art. 42 ust. 2 pkt 1, a ust. 2 stosuje termin „w dniu zaprzestania” do wszystkich informacji z ust. 1, więc obejmuje PIT-11 dla pracowników (płatnik z art. 32 w art. 39 ust. 1) i zleceniobiorców; skill opisuje to teraz jako PIT-11 dla pracowników i zleceniobiorców. Dodano też regułę przesunięcia terminu podatkowego z soboty i dnia wolnego (art. 12 § 5 Ordynacji, odczyt autora), przy ZUS oznaczoną DO WERYFIKACJI. Tych punktów nie zgłaszaj ponownie, chyba że tekst ustawy im przeczy.
+
+Twoje zadanie (wąskie):
+1. Dla każdego przyjętego ustalenia z cyklu 1 sprawdź, czy poprawka w obecnych plikach je usuwa; wypisz tylko te, które NIE zostały usunięte albo zostały usunięte błędnie (szukaj też resztek tej samej tezy w innym pliku).
+2. Sprawdź, czy poprawki nie wprowadziły nowych błędów merytorycznych, sprzeczności między plikami ani furtek w odmowach.
+3. Nowe BLOKERY zgłaszaj tylko, jeśli realnie zmieniają wynik dla użytkownika albo łamią reguły 1-8 STANDARD.md. Kosmetyki nie zgłaszaj.
+
+Format: każde znalezisko z plik:linia, kategorią (BLOKER / WAŻNE) i propozycją naprawy w jednym zdaniu. Nie chwal. Na końcu werdykt: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.
