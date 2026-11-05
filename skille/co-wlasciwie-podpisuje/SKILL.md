@@ -1,6 +1,6 @@
 ---
 name: co-wlasciwie-podpisuje
-description: 'Streszcza długi dokument, umowę, aneks, polisę i OWU, leasing, kredyt, abonament, najem, w kilkunastu punktach: ile kosztuje, jak długo trwa, jak z tego wyjść, co się stanie przy problemie. Uruchamiaj przy „co ja właściwie podpisuję”, „streść mi to”, „co to znaczy po ludzku”, „ile mnie to będzie kosztować”, „nie rozumiem tej polisy”, „dostałem aneks od operatora”, i bez tych słów: „podpisałem dwa lata temu i teraz każą mi płacić”, „nie wiem, na co się zgodziłem”, „ile mi zostało do końca umowy”. Pytanie brzmi „co tu jest”, nie „co tu jest groźne”. NIE uruchamiaj, gdy pyta o ryzyka i niekorzystne zapisy przed podpisem, czerwone-flagi-w-umowie (umowa z ekipą remontową: remont-umowa-i-odbior); przy NDA, przed-podpisem-nda; przy regulaminie i ToS do akceptacji, regulamin-pod-lupa; przy regulaminie własnego sklepu internetowego, regulamin-sklepu-checklista; przy umowie najmu mieszkania, najem-mieszkania-pod-lupa; przy upraszczaniu tekstu dla innych, prosty-jezyk; pełnomocnictwo i prokura, pelnomocnictwo-w-firmie.'
+description: 'Streszcza długi dokument, umowę, aneks, polisę i OWU, leasing, kredyt, abonament, najem, w kilkunastu punktach: ile kosztuje, jak długo trwa, jak z tego wyjść, co się stanie przy problemie. Uruchamiaj przy „co ja właściwie podpisuję”, „streść mi to”, „co to znaczy po ludzku”, „ile mnie to będzie kosztować”, „nie rozumiem tej polisy”, i bez tych słów: „podpisałem dwa lata temu i teraz każą mi płacić”, „nie wiem, na co się zgodziłem”. Pytanie brzmi „co tu jest”, nie „co tu jest groźne”. NIE uruchamiaj, gdy pyta o ryzyka i niekorzystne zapisy przed podpisem, czerwone-flagi-w-umowie (umowa z ekipą remontową: remont-umowa-i-odbior); przy NDA, przed-podpisem-nda; przy regulaminie i ToS do akceptacji, regulamin-pod-lupa; przy regulaminie własnego sklepu internetowego, regulamin-sklepu-checklista; przy umowie najmu mieszkania, najem-mieszkania-pod-lupa; przy upraszczaniu tekstu dla innych, prosty-jezyk; pełnomocnictwo i prokura, pelnomocnictwo-w-firmie; projekt umowy sp. z o.o., spolka-zoo-przygotowanie.'
 ---
 
 # Co właściwie podpisuję
@@ -15,9 +15,9 @@ Regulaminy serwisów, sklepów i aplikacji oraz warunki subskrypcji, na które u
 
 Jeśli użytkownik nie chce zrozumieć tekstu, tylko przepisać go prościej dla kogoś innego, to skill `prosty-jezyk`. Kryterium: kto jest odbiorcą tekstu po Twojej pracy. Tutaj odbiorcą streszczenia jest sam użytkownik; jeśli tekst ma pójść dalej do klientów, pracowników albo petentów, oddaj to `prosty-jezyk`.
 
-Granica z `czerwone-flagi-w-umowie` biegnie po pytaniu, nie po rodzaju dokumentu: „co tu jest”, „ile to kosztuje”, „na jak długo się wiążę” → zostajesz tutaj; „na co uważać”, „czy to bezpieczne”, „co tu jest nie tak”, „czy mogę to podpisać” → wskaż `czerwone-flagi-w-umowie`, a przy umowie osoby prywatnej z ekipą o remont albo budowę `remont-umowa-i-odbior`.
+Granica z `czerwone-flagi-w-umowie` biegnie po pytaniu, nie po rodzaju dokumentu: „co tu jest”, „ile to kosztuje”, „na jak długo się wiążę” → zostajesz tutaj; „na co uważać”, „czy to bezpieczne”, „co tu jest nie tak”, „czy mogę to podpisać” → wskaż `czerwone-flagi-w-umowie`, a przy umowie osoby prywatnej z ekipą o remont albo budowę `remont-umowa-i-odbior`, przy projekcie umowy spółki z o.o. przed rejestracją `spolka-zoo-przygotowanie`.
 
-Streszczaj dokument, nie sprawdzaj firmy, która go podsunęła (`sprawdz-kontrahenta`), i nie upominaj się o pieniądze wynikające z umowy (`windykacja-miekka`). Gdy dokument już zadziałał i zaczął się spór, odmówiona wypłata z polisy, wada towaru, niewykonana usługa, właściwy jest `reklamacja-i-rekojmia`. Wyjątek: umowa osoby prywatnej z ekipą o remont albo budowę, także ocena jej ryzyk, wady i odbiór prac, trafia do `remont-umowa-i-odbior`; tutaj zostaje samo streszczenie.
+Streszczaj dokument, nie sprawdzaj firmy, która go podsunęła (`sprawdz-kontrahenta`), i nie upominaj się o pieniądze wynikające z umowy (`windykacja-miekka`). Gdy dokument już zadziałał i zaczął się spór, odmówiona wypłata z polisy, wada towaru, niewykonana usługa, właściwy jest `reklamacja-i-rekojmia`. Wyjątek: umowa osoby prywatnej z ekipą o remont albo budowę, także ocena jej ryzyk, wady i odbiór prac, trafia do `remont-umowa-i-odbior`; tutaj zostaje samo streszczenie. Projekt umowy spółki z o.o. do sprawdzenia przed rejestracją trafia do `spolka-zoo-przygotowanie`; tutaj zostaje tylko jego streszczenie.
 
 ## Streść, nie oceniaj
 
@@ -27,7 +27,7 @@ To jest podział pracy, nie ostrożność. Streszczenie i ocena ryzyka to dwie r
 
 **Nie rób, przy każdej prośbie, nie tylko pierwszej:**
 
-- Nie oceniaj, czy zapis jest korzystny, ryzykowny, uczciwy czy nietypowy, od tego jest `czerwone-flagi-w-umowie` (przy prywatnej umowie z ekipą remontową `remont-umowa-i-odbior`), wskaż go zamiast wchodzić w jego rolę.
+- Nie oceniaj, czy zapis jest korzystny, ryzykowny, uczciwy czy nietypowy, od tego jest `czerwone-flagi-w-umowie` (przy prywatnej umowie z ekipą remontową `remont-umowa-i-odbior`, przy projekcie umowy spółki z o.o. `spolka-zoo-przygotowanie`), wskaż go zamiast wchodzić w jego rolę.
 - Nie mów „możesz to podpisać”, „nie podpisuj”, „to bezpieczne”, „to standardowa umowa”. Te cztery zdania człowiek zapamiętuje zamiast całego streszczenia i podpisuje na ich podstawie, a Ty nie znasz jego sytuacji, alternatyw ani tego, co usłyszał ustnie.
 - Nie stwierdzaj, że coś jest zgodne z prawem, nieważne, niedozwolone ani bezskuteczne. Rozstrzyga o tym sąd po ustaleniu okoliczności, których w dokumencie nie ma; z Twojego zdania użytkownik zrobi argument w rozmowie z drugą stroną i przegra go.
 - Nie pisz klauzul, poprawek, wersji alternatywnych ani „typowych zapisów”. Wklejona klauzula trafia do umowy, którą ktoś podpisze, a wtedy skutki wynikają z Twojego zdania, nie ze streszczenia. Jedna wersja przykładowa niczego nie zmienia w tej mechanice.
@@ -40,7 +40,7 @@ To jest podział pracy, nie ostrożność. Streszczenie i ocena ryzyka to dwie r
 
 **Gdy użytkownik naciska.** „Ale powiedz krótko, czy to dobre”, „tak czy nie”, „napisz mi tylko wypowiedzenie”, „wypisz, co kazać im wykreślić”, „pokaż typowy zapis”, „które z tych punktów są najważniejsze”, „na co najbardziej uważać”, „co byś zrobił na moim miejscu”, „to tylko dla mnie”, to wszystko jest ta sama prośba. Uszeregowanie punktów według wagi też nią jest: to ocena podana kolejnością zamiast słowami. Punkty zostają w kolejności bloków. Powiedz jedno zdanie i wróć do pracy:
 
-> *Tu się zatrzymuję, to streszczenie, nie ocena. Do sprawdzenia, na co uważać, jest osobny skill „Czerwone flagi w umowie” (przy umowie z ekipą remontową „Remont, umowa i odbiór”), a decyzję o podpisaniu warto skonsultować z prawnikiem.*
+> *Tu się zatrzymuję, to streszczenie, nie ocena. Do sprawdzenia, na co uważać, jest osobny skill „Czerwone flagi w umowie” (przy umowie z ekipą remontową „Remont, umowa i odbiór”, przy projekcie umowy spółki z o.o. „Spółka z o.o., przygotowanie”), a decyzję o podpisaniu warto skonsultować z prawnikiem.*
 
 ## Zanim zaczniesz czytać
 
@@ -110,7 +110,7 @@ Reguły do szablonu:
 - W bloku maksymalnie cztery punkty, każdy jedno zdanie.
 - Bloku, o którym dokument milczy, nie dopychaj zapisami wyjętymi z kontekstu, nagłówek bloku zostaje (szablon trzyma zawsze te same nagłówki), pod nim stawiasz jedno zdanie odsyłające niżej („dokument tego nie reguluje, patrz »Czego w tym dokumencie nie znalazłem«”), a sam brak wpisujesz jednym zdaniem właśnie tam.
 - „Gdzie schowano rzeczy…” to zapisy leżące daleko od miejsca, w którym człowiek by ich szukał: koszt w tabeli opłat zamiast w umowie, termin zgłoszenia szkody w OWU, kwota wykupu na ostatniej stronie harmonogramu. Kryterium jest czysto lokalizacyjne, liczy się to, gdzie zapis leży, a nie to, jak go oceniasz. Maksymalnie pięć pozycji, tylko te, które naprawdę są w tym dokumencie; jeśli znalazłeś jedną, podaj jedną, a jeśli żadnej, napisz, że nie widzisz w tym tekście zapisów schowanych poza oczywistym miejscem.
-- Zdanie zamykające trzymaj w tym duchu: *To streszczenie, a nie ocena. Mówi, co w dokumencie jest, nie czy warto go podpisywać. Jeśli chcesz wiedzieć, na co uważać i o co dopytać, użyj skilla „Czerwone flagi w umowie” (przy umowie z ekipą remontową skilla „Remont, umowa i odbiór”). Przy dużych kwotach i długich zobowiązaniach decyzję warto skonsultować z prawnikiem.*
+- Zdanie zamykające trzymaj w tym duchu: *To streszczenie, a nie ocena. Mówi, co w dokumencie jest, nie czy warto go podpisywać. Jeśli chcesz wiedzieć, na co uważać i o co dopytać, użyj skilla „Czerwone flagi w umowie” (przy umowie z ekipą remontową skilla „Remont, umowa i odbiór”, przy projekcie umowy spółki z o.o. przed rejestracją skilla „Spółka z o.o., przygotowanie”). Przy dużych kwotach i długich zobowiązaniach decyzję warto skonsultować z prawnikiem.*
 
 ### Podaj najdokładniejszy adres, jaki daje dokument
 

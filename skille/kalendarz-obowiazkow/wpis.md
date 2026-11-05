@@ -2,7 +2,7 @@
 nazwa: Kalendarz obowiązków
 kategoria: Finanse
 status: gotowy
-wersja: 1.0.4
+wersja: 1.0.5
 poziom: Działa od razu
 aktualizacja: 2026-11-05
 skrot: Układa jedną listę tego, co w Twojej firmie wraca co miesiąc, co kwartał i raz w roku, z opisem, czego każda pozycja dotyczy i kto ją robi.

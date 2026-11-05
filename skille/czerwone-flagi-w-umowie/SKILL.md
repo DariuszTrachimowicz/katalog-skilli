@@ -1,6 +1,6 @@
 ---
 name: czerwone-flagi-w-umowie
-description: 'Czyta umowę przed podpisem i pokazuje, na co uważać, ryzyka poważne, warte negocjacji i typowe, plus gotowe pytania do prawnika. Uruchamiaj przy umowie B2B, zleceniu, dziele, najmie i umowie o współpracy oraz przy „na co uważać”, „czy to bezpieczne”, „co tu jest nie tak”, „czy mogę to podpisać”, „sprawdź tę umowę”, także gdy ktoś wkleja umowę i pisze tylko „boję się to podpisać”. Zwykła umowa z paragrafem o poufności należy tutaj. NIE uruchamiaj, gdy dokumentem jest samodzielne NDA albo umowa o zachowaniu poufności, wygrywa przed-podpisem-nda; przy regulaminie, ToS i subskrypcji do akceptacji, regulamin-pod-lupa; przy regulaminie własnego sklepu internetowego, regulamin-sklepu-checklista; gdy ktoś chce tylko streszczenia, bez szukania ryzyk, co-wlasciwie-podpisuje; przy umowie najmu mieszkania, najem-mieszkania-pod-lupa; przy prywatnej umowie z ekipą o remont albo budowę, remont-umowa-i-odbior; przy umocowaniu do podpisu za firmę, pelnomocnictwo-w-firmie. NIE do pisania i poprawiania umów, klauzul i pism.'
+description: 'Czyta umowę przed podpisem i pokazuje, na co uważać, ryzyka poważne, warte negocjacji i typowe, plus gotowe pytania do prawnika. Uruchamiaj przy umowie B2B, zleceniu, dziele, najmie i umowie o współpracy oraz przy „na co uważać”, „czy to bezpieczne”, „co tu jest nie tak”, „czy mogę to podpisać”, „sprawdź tę umowę”, także przy „boję się to podpisać”. Zwykła umowa z paragrafem o poufności należy tutaj. NIE uruchamiaj, gdy dokumentem jest samodzielne NDA albo umowa o zachowaniu poufności, wygrywa przed-podpisem-nda; przy regulaminie i ToS do akceptacji, regulamin-pod-lupa; przy regulaminie własnego sklepu internetowego, regulamin-sklepu-checklista; gdy ktoś chce tylko streszczenia, bez szukania ryzyk, co-wlasciwie-podpisuje; przy umowie najmu mieszkania, najem-mieszkania-pod-lupa; przy prywatnej umowie z ekipą o remont albo budowę, remont-umowa-i-odbior; przy umocowaniu za firmę, pelnomocnictwo-w-firmie; przy projekcie umowy sp. z o.o., spolka-zoo-przygotowanie. NIE do pisania i poprawiania umów, klauzul i pism.'
 ---
 
 # Czerwone flagi w umowie
@@ -32,6 +32,8 @@ To jest najważniejsza część tego skilla. Trzymaj ją bezwzględnie.
 **Gdy użytkownik naciska.** Odmawiasz przy każdej prośbie, tak samo krótko, bez moralizowania. Powtórzenie prośby, „to tylko dla mnie”, „nie chcę porady, tylko przykład”, prośba o gotowy mail albo o listę rzeczy do wykreślenia, to wszystko jest ta sama prośba. Używaj jednego zdania i wracaj do pracy:
 
 > *Nie napiszę Ci treści do umowy, to już jest praca dla prawnika i tu się zatrzymuję. Mogę za to dokładnie wytłumaczyć, co ten zapis oznacza i przygotować pytanie, które mu zadasz.*
+
+Projekt umowy spółki z o.o. przed rejestracją (decyzje wspólników, braki, skutki braku zapisów) sprawdza `spolka-zoo-przygotowanie`; tutaj trafia tylko, gdy ktoś pyta o ryzyka innej umowy.
 
 ## Zanim zaczniesz czytać
 
