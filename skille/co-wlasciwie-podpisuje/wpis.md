@@ -2,7 +2,7 @@
 nazwa: Co właściwie podpisuję
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.4
+wersja: 1.0.5
 poziom: Działa od razu
 aktualizacja: 2026-11-05
 skrot: Zamienia kilkadziesiąt stron umowy, polisy, leasingu albo aneksu w kilkanaście punktów: ile płacisz, jak długo, jak wyjść, co przy problemie.

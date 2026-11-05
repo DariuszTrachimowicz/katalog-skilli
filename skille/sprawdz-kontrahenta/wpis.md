@@ -2,7 +2,7 @@
 nazwa: Sprawdź kontrahenta
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.2
+wersja: 1.0.3
 poziom: Działa od razu
 aktualizacja: 2026-11-05
 skrot: Prowadzi krok po kroku przez sprawdzenie nowej firmy przed umową i pierwszą płatnością, rejestry, kto może podpisać, biała lista VAT, zgodność danych.
