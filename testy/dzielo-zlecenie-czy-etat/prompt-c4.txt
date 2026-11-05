@@ -1,0 +1,7 @@
+CYKL 4 (bardzo wąski) skilla AI `dzielo-zlecenie-czy-etat` (skille/dzielo-zlecenie-czy-etat/SKILL.md, references/zasady.md, references/porownanie.md, wpis.md). Jesteś radcą prawnym od prawa pracy i recenzentem QA. Nie korzystaj z sieci, cytuj plik:linia.
+
+W cyklu 3 (testy/dzielo-zlecenie-czy-etat/codex-c3-wynik.md) zostały 3 blokery (RUD we wpisie: płatnik składek albo osoba fizyczna; wcześniejsza data przy zakończeniu współpracy w tabeli tez i wpisie z ograniczonymi skutkami i oboma końcami okresu; ulgi ZUS w tabeli tez) i 2 ważne (rodzaj polecenia w przykładzie wpisu; ryczałt do 200 zł a ulga dla młodych). Ustalenie o ryczałcie do 200 zł autor pozostawił jako DO WERYFIKACJI wyłączone z ogólnej odpowiedzi; nie zgłaszaj go ponownie.
+
+Sprawdź tylko, czy pozostałe 4 ustalenia są usunięte w całym skillu. Nie zgłaszaj nowych życzeń ani kosmetyki.
+
+Format: plik:linia, kategoria (BLOKER / WAŻNE), naprawa w jednym zdaniu. Na końcu: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.

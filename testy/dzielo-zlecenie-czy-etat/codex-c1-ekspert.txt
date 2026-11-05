@@ -1,0 +1,168 @@
+Reading additional input from stdin...
+OpenAI Codex v0.162.1
+--------
+workdir: C:\Users\CP24\AiXperts - projekty\katalog-skilli
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1ac96-a4eb-7120-bd01-05bc3f5dae00
+--------
+user
+Jesteś doświadczonym radcą prawnym od prawa pracy i ubezpieczeń społecznych oraz doradcą podatkowym (kwalifikacja umów: umowa o pracę, zlecenie i usługi, dzieło, B2B; reforma PIP od 8 lipca 2026 r.; minimalna stawka godzinowa; składki ZUS i zbiegi tytułów; PIT, ryczałt, VAT przy samozatrudnieniu; staż ze zleceń od 2026 r.; orzecznictwo SN) oraz recenzentem QA. Recenzujesz skill AI `dzielo-zlecenie-czy-etat` z katalogu AiXperts. Pliki (czytaj je, nie zgaduj): skille/dzielo-zlecenie-czy-etat/SKILL.md, references/zasady.md, references/porownanie.md, wpis.md (karta publiczna). Materiał źródłowy researchu z cytatami przepisów: testy/dzielo-zlecenie-czy-etat/research-stan-prawny.md. Dziś jest 5 listopada 2026 r.; stan prawny skilla to 5 listopada 2026 r. Nie korzystaj z sieci.
+
+Twoja rola: POPRAWNOŚĆ MERYTORYCZNA. Sprawdź:
+1. Czy reguły w zasady.md i porownanie.md są zgodne z polskim prawem: cechy stosunku pracy i przewaga cech, dzieło (rezultat, wady, powtarzalność), zlecenie i usługi, minimalna stawka (kogo dotyczy, wyjątki, kwoty 2026 i 2027, potwierdzanie godzin, sankcja), polecenie i decyzja PIP (data umowy, zakończenie współpracy w trakcie kontroli, skutki, odwołanie, interpretacja GIP, przepisy przejściowe, okno do 8 lipca 2027 r.), powództwo o ustalenie i przedawnienie, składki (zlecenie, student, zbiegi, dzieło z własnym pracodawcą, RUD, B2B i ulgi przy byłym pracodawcy), PIT (koszty 20 % i 50 %, ryczałt do 200 zł, ulga dla młodych, art. 5b, liniowy i ryczałt przy byłym pracodawcy), VAT, prawa osoby w wariantach, staż, ryzyka (wykroczenia, przestępstwa, roszczenia). Szukaj błędów, uproszczeń wprowadzających w błąd i brakujących wyjątków, które realnie zmieniają wynik dla firmy albo osoby.
+2. Czy tezy orzeczeń SN w rejestrze zasady.md są wiernie oddane i czy któraś jest przedstawiona mocniej niż orzeczenie.
+3. Czy porownanie.md (fakty, mapa sygnałów, porównanie wariantów, szablon, pytania, lista kontrolna umowy) nie zgłasza fałszywych sygnałów, nie pomija istotnych kontroli i nie podsuwa ryzykownych działań.
+4. Czy wpis.md nie składa obietnic sprzecznych z SKILL.md i nie zawiera błędów merytorycznych (zwłaszcza FAQ i przykład z życia).
+5. Czy oznaczenia DO WERYFIKACJI są tam, gdzie trzeba, i czy nie ma tez podanych jako pewnik bez podstawy w researchu.
+
+Format: po polsku, zwięźle, każde znalezisko z plik:linia, kategorią (BLOKER / WAŻNE / KOSMETYKA) i propozycją naprawy w jednym zdaniu. Nie chwal. Na końcu werdykt: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+hook: SessionStart
+hook: SessionStart
+hook: SessionStart Completed
+hook: SessionStart Completed
+hook: UserPromptSubmit
+hook: UserPromptSubmit Completed
+codex
+Sprawdzam wskazane pliki względem lokalnego researchu, bez sieci. Etap 1 z 3: odczyt dokumentacji i materiału prawnego.
+
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -Command "Get-Content -LiteralPath 'C:\\Users\\CP24\\.agents\\skills\\using-superpowers\\SKILL.md'; Get-Content -LiteralPath 'C:\\Users\\CP24\\.codex\\plugins\\cache\\ponytail\\ponytail\\5.3.3\\skills\\ponytail-review\\SKILL.md'; rg -n 'katalog-skilli|dzielo-zlecenie|reforma PIP' 'C:\\Users\\CP24\\.codex\\memories\\MEMORY.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -LiteralPath 'C:\Users\CP24\.agents\skills\using-superpowers\SKILL.md'; Get-Content -LiteralPath 'C:\Users\CP24\.codex\plugins\cache\ponytail\ponytail\5.3.3\skills\ponytail-review\SKILL.md'; rg -n 'katalog-skilli|dzielo-zlecenie|reforma PIP' 'C:\Users\CP24\.codex\memories\MEMORY.md'" | env_u16_len=4829 | si_flags=256 | creation_flags=134743040
+2026-11-05T16:42:12.531001Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-Content -LiteralPath 'C:\\\\Users\\\\CP24\\\\.agents\\\\skills\\\\using-superpowers\\\\SKILL.md'; Get-Content -LiteralPath 'C:\\\\Users\\\\CP24\\\\.codex\\\\plugins\\\\cache\\\\ponytail\\\\ponytail\\\\5.3.3\\\\skills\\\\ponytail-review\\\\SKILL.md'; rg -n 'katalog-skilli|dzielo-zlecenie|reforma PIP' 'C:\\\\Users\\\\CP24\\\\.codex\\\\memories\\\\MEMORY.md'\\\" | env_u16_len=4829 | si_flags=256 | creation_flags=134743040\")" }
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 1 z 3 zakończony: pliki są dostępne; odmowę uruchomienia PowerShella ominąłem odczytem plików przez Node. W recenzji stosuję `ponytail-review`: zgłaszam tylko ustalenia z konkretnym skutkiem i propozycją poprawki.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 2 z 3: znalazłem rozbieżności dotyczące RUD, stażu bez składek, VAT i zakończenia współpracy po kontroli PIP. Sprawdzam teraz, gdzie te uproszczenia powtarzają się w tabelach, FAQ i tezach orzeczeń.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 3 z 3: sprawdzam końcową listę uwag i usuwam duplikaty. Najpoważniejsze błędy zmieniają obowiązki wobec ZUS, prawo do stażu i skutki decyzji PIP; część pochodzi już z uproszczonych podsumowań researchu.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+**Popraw poniższe błędy przed wydaniem.** Ścieżki dotyczą `skille/dzielo-zlecenie-czy-etat/`.
+
+**Blokery**
+
+1. **BLOKER | `references/zasady.md:75`, `references/porownanie.md:105`, `wpis.md:62`**: obowiązek RUD nie obejmuje każdej umowy o dzieło; usuń uogólnienie i uwzględnij zakres podmiotowy oraz wyłączenia dotyczące własnych pracowników, pracy na rzecz pracodawcy i działalności wykonawcy, wskazane w researchu.
+2. **BLOKER | `references/zasady.md:88`**: brak zarejestrowanej firmy nie wyłącza podatnika VAT; uzależnij ocenę od samodzielności działalności i łącznego spełnienia warunków wyłączenia, szczególnie odpowiedzialności zlecającego wobec osób trzecich.
+3. **BLOKER | `references/zasady.md:101`, `references/zasady.md:104`**: opis stażu pomija ustawowo zaliczane okresy bez ubezpieczeń, w tym zlecenia studentów i ulgę na start; dodaj je zgodnie z cytowanymi w researchu przepisami, pozostawiając niepewność wyłącznie przy sposobie dokumentowania.
+4. **BLOKER | `references/zasady.md:55`, `wpis.md:66`**: wyjątek dotyczący zakończenia współpracy nie ogranicza się do trwania kontroli; opisz okres aż do upływu terminu odwołania albo prawomocnego wyroku oraz ograniczone skutki wcześniejszej daty, bez sugerowania pełnego wyrównania wynagrodzeń i składek od początku kontroli.
+5. **BLOKER | `references/zasady.md:76`**: cztery preferencje ZUS błędnie podporządkowano jednej regule „bieżący lub poprzedni rok”; rozdziel warunki każdej ulgi, wskazując właściwy rok odniesienia, zwłaszcza rok rozpoczęcia działalności oraz odrębne okresy badane przy wakacjach składkowych.
+
+**PIP, roszczenia i odpowiedzialność**
+
+6. **WAŻNE | `references/zasady.md:54`**: research uzależnia decyzję od niewykonania polecenia dotyczącego niezawarcia umowy o pracę, a nie dowolnego polecenia usunięcia naruszeń; zachowaj rozróżnienie dwóch rodzajów polecenia.
+7. **WAŻNE | `references/zasady.md:61`**: pominięto przerwanie przedawnienia roszczeń pracowniczych przez wszczęcie postępowania dotyczącego decyzji PIP; dodaj ten wyjątek obok prawidłowej informacji o skutkach samego pozwu o ustalenie.
+8. **WAŻNE | `references/zasady.md:110`**: „5 lat wstecz” i „roszczenia za 3 lata wstecz” tworzą fałszywe sztywne granice; opisz liczenie od wymagalności, zawieszenia i przerwy oraz odróżnij przedawnienie należności od ustalania historycznego stosunku pracy i terminów zaskarżenia zwolnienia.
+9. **WAŻNE | `references/zasady.md:113`, `references/porownanie.md:69`**: propozycja interpretacji GIP „przed decyzją” może kierować do niedostępnej już procedury; dopisz wyłączenie stanu objętego toczącym się postępowaniem PIP albo ZUS.
+10. **WAŻNE | `references/zasady.md:110`**: opis przestępstwa związanego z nieprawdziwymi danymi ZUS pomija ich wpływ na prawo do świadczeń albo wysokość świadczeń; przywróć przesłankę występującą w cytacie researchu.
+
+**Składki i podatki**
+
+11. **WAŻNE | `references/zasady.md:71`**: przy zbiegu etatu ze zleceniem pominięto przeliczenie podstawy na okres miesiąca; popraw regułę, aby obniżona wypłata za niepełny przepracowany miesiąc nie powodowała automatycznie dodatkowego oskładkowania.
+12. **WAŻNE | `references/zasady.md:130`**: wyjątek dotyczący własnego pracodawcy można odczytać jako utratę również ulgi dla młodych; rozdziel zasady ZUS od PIT, ponieważ własny pracodawca sam w sobie nie odbiera zwolnienia podatkowego.
+13. **WAŻNE | `references/zasady.md:83`**: pominięto pomniejszenie podstawy kosztów procentowych o odpowiednie składki społeczne oraz wspólny limit kosztów autorskich i wskazanych przychodów zwolnionych; uzupełnij oba warunki obecne w researchu.
+14. **WAŻNE | `references/zasady.md:84`, `references/zasady.md:85`**: opis drobnych umów nie rozróżnia należności określonej w umowie od pojedynczej wypłaty i nie rozstrzyga kolizji z ulgą dla młodych; doprecyzuj pierwszy warunek oraz uzupełnij research o wyłączenie ulgi przy tym ryczałcie.
+15. **WAŻNE | `references/zasady.md:87`**: pominięto odmienne skutki czasowe utraty formy opodatkowania; dopisz przeliczenie liniowego od początku roku z odsetkami oraz przejście z ryczałtu na zasady ogólne od dnia uzyskania wykluczającego przychodu.
+
+**Kwalifikacja i orzecznictwo**
+
+16. **WAŻNE | `references/zasady.md:27`, `references/zasady.md:160`**: tezę II PK 292/11 wzmocniono przez pominięcie przewagi pozostałych cech pracowniczych; zaznacz, że samo niewykorzystanie rzeczywistego prawa zastępstwa nie dowodzi jego pozorności.
+17. **WAŻNE | `references/zasady.md:163`**: motyw obniżenia składek z II PK 352/14 przedstawiono jako ogólną właściwość wymuszonego przejścia na działalność; przypisz ten wniosek do okoliczności rozpatrywanej sprawy.
+18. **WAŻNE | `references/zasady.md:36`, `references/porownanie.md:37`, `references/porownanie.md:101`**: reguły mogą nadmiernie kwalifikować cywilną współpracę jako etat; odróżnij podporządkowanie pracownicze od dopuszczalnej koordynacji oraz zaznacz, że miesięczne honorarium, płatne przerwy czy okres wypowiedzenia samodzielnie nie przesądzają kwalifikacji.
+19. **WAŻNE | `references/porownanie.md:41`, `wpis.md:33`**: powtarzalność i rozliczenie według czasu albo ilości przedstawiono zbyt kategorycznie, a wprowadzaniu faktur odmówiono sprawdzalnego wyniku; oprzyj rozróżnienie na oznaczonym z góry, samoistnym rezultacie zamiast samej powtarzalności lub możliwości kontroli poprawności.
+20. **WAŻNE | `wpis.md:29`, `wpis.md:37`**: zapowiedź, że ZUS „przekwalifikuje” umowę, oraz bezwarunkowy „brak ulg” przy byłym pracodawcy przeczą granicom skilla; zastąp pewność możliwością zakwestionowania i dodaj warunki dotyczące czynności oraz okresów.
+
+**Brakujące kontrole i oznaczenia**
+
+21. **WAŻNE | `references/zasady.md:88`**: zwolnienie VAT opisano tylko limitem rocznym; uwzględnij poprzedni i bieżący rok oraz uzupełnij research o proporcję limitu przy rozpoczęciu działalności w trakcie roku.
+22. **WAŻNE | `references/zasady.md:104`**: termin 24 miesięcy błędnie przypisano każdemu pracownikowi; ogranicz go do właściwej grupy przejściowej i dopisz zakaz podwójnego zaliczania nakładających się okresów.
+23. **WAŻNE | `references/porownanie.md:55`, `references/porownanie.md:57`, `wpis.md:70`**: skróty dotyczące B2B pomijają zleceniobiorców wykonawcy, wyjątki od stawki oraz potwierdzanie godzin i BHP; ujednolić je z pełnymi warunkami, obejmując kontrolą godzin także rozliczenia ryczałtowe.
+24. **WAŻNE | `wpis.md:33`**: niepełny etat zaproponowano przy codziennej pracy 8–16 bez zmiany założeń; dopisz, że wymaga rzeczywistego ograniczenia wymiaru pracy.
+25. **WAŻNE | `references/zasady.md:3`, `references/zasady.md:182`, `references/zasady.md:186`**: deklaracja aktualności nie ujawnia nieprzeczytanych nowelizacji wymienionych w researchu; oznacz odpowiednie obszary „DO WERYFIKACJI” i odróżnij odczytanie podstawowego przepisu od potwierdzenia jego aktualnego brzmienia.
+
+Ocena na podstawie lokalnego researchu; bez sieci i niezależnego odczytu pełnych aktów oraz uzasadnień SN.
+
+**BLOKERY DO WYDANIA: TAK**
+tokens used
+132 747
+**Popraw poniższe błędy przed wydaniem.** Ścieżki dotyczą `skille/dzielo-zlecenie-czy-etat/`.
+
+**Blokery**
+
+1. **BLOKER | `references/zasady.md:75`, `references/porownanie.md:105`, `wpis.md:62`**: obowiązek RUD nie obejmuje każdej umowy o dzieło; usuń uogólnienie i uwzględnij zakres podmiotowy oraz wyłączenia dotyczące własnych pracowników, pracy na rzecz pracodawcy i działalności wykonawcy, wskazane w researchu.
+2. **BLOKER | `references/zasady.md:88`**: brak zarejestrowanej firmy nie wyłącza podatnika VAT; uzależnij ocenę od samodzielności działalności i łącznego spełnienia warunków wyłączenia, szczególnie odpowiedzialności zlecającego wobec osób trzecich.
+3. **BLOKER | `references/zasady.md:101`, `references/zasady.md:104`**: opis stażu pomija ustawowo zaliczane okresy bez ubezpieczeń, w tym zlecenia studentów i ulgę na start; dodaj je zgodnie z cytowanymi w researchu przepisami, pozostawiając niepewność wyłącznie przy sposobie dokumentowania.
+4. **BLOKER | `references/zasady.md:55`, `wpis.md:66`**: wyjątek dotyczący zakończenia współpracy nie ogranicza się do trwania kontroli; opisz okres aż do upływu terminu odwołania albo prawomocnego wyroku oraz ograniczone skutki wcześniejszej daty, bez sugerowania pełnego wyrównania wynagrodzeń i składek od początku kontroli.
+5. **BLOKER | `references/zasady.md:76`**: cztery preferencje ZUS błędnie podporządkowano jednej regule „bieżący lub poprzedni rok”; rozdziel warunki każdej ulgi, wskazując właściwy rok odniesienia, zwłaszcza rok rozpoczęcia działalności oraz odrębne okresy badane przy wakacjach składkowych.
+
+**PIP, roszczenia i odpowiedzialność**
+
+6. **WAŻNE | `references/zasady.md:54`**: research uzależnia decyzję od niewykonania polecenia dotyczącego niezawarcia umowy o pracę, a nie dowolnego polecenia usunięcia naruszeń; zachowaj rozróżnienie dwóch rodzajów polecenia.
+7. **WAŻNE | `references/zasady.md:61`**: pominięto przerwanie przedawnienia roszczeń pracowniczych przez wszczęcie postępowania dotyczącego decyzji PIP; dodaj ten wyjątek obok prawidłowej informacji o skutkach samego pozwu o ustalenie.
+8. **WAŻNE | `references/zasady.md:110`**: „5 lat wstecz” i „roszczenia za 3 lata wstecz” tworzą fałszywe sztywne granice; opisz liczenie od wymagalności, zawieszenia i przerwy oraz odróżnij przedawnienie należności od ustalania historycznego stosunku pracy i terminów zaskarżenia zwolnienia.
+9. **WAŻNE | `references/zasady.md:113`, `references/porownanie.md:69`**: propozycja interpretacji GIP „przed decyzją” może kierować do niedostępnej już procedury; dopisz wyłączenie stanu objętego toczącym się postępowaniem PIP albo ZUS.
+10. **WAŻNE | `references/zasady.md:110`**: opis przestępstwa związanego z nieprawdziwymi danymi ZUS pomija ich wpływ na prawo do świadczeń albo wysokość świadczeń; przywróć przesłankę występującą w cytacie researchu.
+
+**Składki i podatki**
+
+11. **WAŻNE | `references/zasady.md:71`**: przy zbiegu etatu ze zleceniem pominięto przeliczenie podstawy na okres miesiąca; popraw regułę, aby obniżona wypłata za niepełny przepracowany miesiąc nie powodowała automatycznie dodatkowego oskładkowania.
+12. **WAŻNE | `references/zasady.md:130`**: wyjątek dotyczący własnego pracodawcy można odczytać jako utratę również ulgi dla młodych; rozdziel zasady ZUS od PIT, ponieważ własny pracodawca sam w sobie nie odbiera zwolnienia podatkowego.
+13. **WAŻNE | `references/zasady.md:83`**: pominięto pomniejszenie podstawy kosztów procentowych o odpowiednie składki społeczne oraz wspólny limit kosztów autorskich i wskazanych przychodów zwolnionych; uzupełnij oba warunki obecne w researchu.
+14. **WAŻNE | `references/zasady.md:84`, `references/zasady.md:85`**: opis drobnych umów nie rozróżnia należności określonej w umowie od pojedynczej wypłaty i nie rozstrzyga kolizji z ulgą dla młodych; doprecyzuj pierwszy warunek oraz uzupełnij research o wyłączenie ulgi przy tym ryczałcie.
+15. **WAŻNE | `references/zasady.md:87`**: pominięto odmienne skutki czasowe utraty formy opodatkowania; dopisz przeliczenie liniowego od początku roku z odsetkami oraz przejście z ryczałtu na zasady ogólne od dnia uzyskania wykluczającego przychodu.
+
+**Kwalifikacja i orzecznictwo**
+
+16. **WAŻNE | `references/zasady.md:27`, `references/zasady.md:160`**: tezę II PK 292/11 wzmocniono przez pominięcie przewagi pozostałych cech pracowniczych; zaznacz, że samo niewykorzystanie rzeczywistego prawa zastępstwa nie dowodzi jego pozorności.
+17. **WAŻNE | `references/zasady.md:163`**: motyw obniżenia składek z II PK 352/14 przedstawiono jako ogólną właściwość wymuszonego przejścia na działalność; przypisz ten wniosek do okoliczności rozpatrywanej sprawy.
+18. **WAŻNE | `references/zasady.md:36`, `references/porownanie.md:37`, `references/porownanie.md:101`**: reguły mogą nadmiernie kwalifikować cywilną współpracę jako etat; odróżnij podporządkowanie pracownicze od dopuszczalnej koordynacji oraz zaznacz, że miesięczne honorarium, płatne przerwy czy okres wypowiedzenia samodzielnie nie przesądzają kwalifikacji.
+19. **WAŻNE | `references/porownanie.md:41`, `wpis.md:33`**: powtarzalność i rozliczenie według czasu albo ilości przedstawiono zbyt kategorycznie, a wprowadzaniu faktur odmówiono sprawdzalnego wyniku; oprzyj rozróżnienie na oznaczonym z góry, samoistnym rezultacie zamiast samej powtarzalności lub możliwości kontroli poprawności.
+20. **WAŻNE | `wpis.md:29`, `wpis.md:37`**: zapowiedź, że ZUS „przekwalifikuje” umowę, oraz bezwarunkowy „brak ulg” przy byłym pracodawcy przeczą granicom skilla; zastąp pewność możliwością zakwestionowania i dodaj warunki dotyczące czynności oraz okresów.
+
+**Brakujące kontrole i oznaczenia**
+
+21. **WAŻNE | `references/zasady.md:88`**: zwolnienie VAT opisano tylko limitem rocznym; uwzględnij poprzedni i bieżący rok oraz uzupełnij research o proporcję limitu przy rozpoczęciu działalności w trakcie roku.
+22. **WAŻNE | `references/zasady.md:104`**: termin 24 miesięcy błędnie przypisano każdemu pracownikowi; ogranicz go do właściwej grupy przejściowej i dopisz zakaz podwójnego zaliczania nakładających się okresów.
+23. **WAŻNE | `references/porownanie.md:55`, `references/porownanie.md:57`, `wpis.md:70`**: skróty dotyczące B2B pomijają zleceniobiorców wykonawcy, wyjątki od stawki oraz potwierdzanie godzin i BHP; ujednolić je z pełnymi warunkami, obejmując kontrolą godzin także rozliczenia ryczałtowe.
+24. **WAŻNE | `wpis.md:33`**: niepełny etat zaproponowano przy codziennej pracy 8–16 bez zmiany założeń; dopisz, że wymaga rzeczywistego ograniczenia wymiaru pracy.
+25. **WAŻNE | `references/zasady.md:3`, `references/zasady.md:182`, `references/zasady.md:186`**: deklaracja aktualności nie ujawnia nieprzeczytanych nowelizacji wymienionych w researchu; oznacz odpowiednie obszary „DO WERYFIKACJI” i odróżnij odczytanie podstawowego przepisu od potwierdzenia jego aktualnego brzmienia.
+
+Ocena na podstawie lokalnego researchu; bez sieci i niezależnego odczytu pełnych aktów oraz uzasadnień SN.
+
+**BLOKERY DO WYDANIA: TAK**

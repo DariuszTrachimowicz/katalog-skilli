@@ -1,0 +1,9 @@
+Jesteś radcą prawnym od prawa pracy i ubezpieczeń oraz recenzentem QA granic skilla. CYKL 3 (wąski) skilla AI `dzielo-zlecenie-czy-etat` z katalogu AiXperts: skille/dzielo-zlecenie-czy-etat/SKILL.md, references/zasady.md, references/porownanie.md, wpis.md; STANDARD.md; research testy/dzielo-zlecenie-czy-etat/research-stan-prawny.md. Dziś 5 listopada 2026 r. Nie korzystaj z sieci. Cytuj plik:linia.
+
+W cyklu 2 zgłosiłeś ustalenia zapisane w testy/dzielo-zlecenie-czy-etat/codex-c2-wynik.md (4 blokery: „drogi zgodne z prawem” w SKILL.md, zakres RUD w skrótach, okres i zakres wyjątku zakończenia współpracy w skrótach, ulgi ZUS w tabeli tez; 6 ważnych: rodzaj polecenia PIP w skrótach i przykładzie, koszty 50 % od przychodu po składkach, ryczałt do 200 zł a ulga dla młodych, proporcjonalny limit VAT, stawka minimalna B2B w skrótach, „do złotówki” we wpisie). Autor naniósł poprawki. Proporcjonalny limit VAT opisano wprost z oznaczeniem DO WERYFIKACJI, bo podstawy nie odczytano w researchu; tego nie zgłaszaj ponownie jako blokera.
+
+Zadanie:
+1. Dla każdego z 10 ustaleń cyklu 2 sprawdź, czy zostało usunięte poprawnie (także resztki w innych plikach); wypisz tylko nieusunięte albo usunięte błędnie.
+2. Zgłoś nowy BLOKER tylko, jeśli poprawki wprowadziły błąd merytoryczny, sprzeczność między plikami albo furtkę łamiącą reguły 1-8 STANDARD.md. Nie zgłaszaj kosmetyki ani nowych życzeń spoza ustaleń cykli 1 i 2 (pliki codex-c1-ekspert-wynik.md, codex-c1-granice-wynik.md), chyba że to realny bloker.
+
+Format: plik:linia, kategoria (BLOKER / WAŻNE), naprawa w jednym zdaniu. Na końcu: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.
