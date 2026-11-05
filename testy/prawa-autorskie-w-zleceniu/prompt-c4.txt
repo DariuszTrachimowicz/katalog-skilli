@@ -1,0 +1,7 @@
+CYKL 4 (bardzo wąski) skilla AI `prawa-autorskie-w-zleceniu` z katalogu AiXperts (skille/prawa-autorskie-w-zleceniu/SKILL.md, references/zasady.md, references/klauzula.md, wpis.md; STANDARD.md). Jesteś radcą prawnym od prawa autorskiego i recenzentem QA. Nie korzystaj z sieci, cytuj plik:linia.
+
+W cyklu 3 (testy/prawa-autorskie-w-zleceniu/codex-c3-wynik.md) zostały 2 ważne: podpis twórcy zamiast uprawnionego w tabeli sytuacji klauzula.md i „napięcie” przy AI w zasady.md bez warunku zakresu przeniesienia. Po cyklu 3 autor dodał też do SKILL.md: zakaz linków do tekstów aktów w odpowiedzi (źródło tylko na pytanie) oraz zdanie, że przy „zrzeczeniu się” praw osobistych możliwe jest co najwyżej zobowiązanie do niewykonywania albo zgoda na określone zmiany lub anonimowość, do oceny prawnika.
+
+Sprawdź tylko: (1) czy te 2 ustalenia są usunięte, (2) czy 2 dopiski nie wprowadzają błędu ani sprzeczności z zasady.md i klauzula.md. Nie zgłaszaj nowych życzeń ani kosmetyki.
+
+Format: plik:linia, kategoria (BLOKER / WAŻNE), naprawa w jednym zdaniu. Na końcu: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.

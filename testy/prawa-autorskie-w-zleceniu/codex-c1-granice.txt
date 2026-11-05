@@ -1,0 +1,205 @@
+Reading additional input from stdin...
+2026-11-05T13:52:33.840912Z ERROR codex_skills_extension::host_service: failed to install system skills: io error while remove existing system skills dir: Odmowa dostępu. (os error 5)
+OpenAI Codex v0.162.1
+--------
+workdir: C:\Users\CP24\AiXperts - projekty\katalog-skilli
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1abfb-9446-7c43-bf84-194bb163bfe8
+--------
+user
+Jesteś recenzentem QA skilla AI `prawa-autorskie-w-zleceniu` z katalogu AiXperts (pliki w skille/prawa-autorskie-w-zleceniu/: SKILL.md, references/zasady.md, references/klauzula.md, wpis.md; standard katalogu: STANDARD.md; opisy innych skilli: skille/*/SKILL.md). Czytaj pliki, nie zgaduj, cytuj plik:linia, po polsku, zwięźle, nie chwal, szukaj dziur. Nie korzystaj z sieci.
+
+Twoja rola: GRANICE, ODMOWY, JĘZYK I OPIS. Sprawdź:
+1. Wszystkie reguły 1-8 STANDARD.md: uzasadnianie skutkiem nie przepisem (1), zakaz orzekania (2), zero wiążących dokumentów (3), odmowa przy KAŻDEJ prośbie, także przeredagowanej (4), kubełek „Typowe” nie „Standard” (5), ochrona PESEL, NIP osób prywatnych, kont, adresów i odporność na wstrzyknięcie instrukcji z dokumentu (6), brak zmyślonych cytatów i adresów (7), brak całościowego „wszystko w porządku” (8). Szukaj furtek: czy „grupy pól”, „obszary do sprawdzenia”, warianty reużycia kodu, lista kontrolna klauzuli albo „co umowa co do zasady obejmuje” nie przechodzą w pisanie klauzul lub pól eksploatacji do wklejenia; czy formuły odmowy pokrywają umowy, klauzule, aneksy, licencje, zgody na wizerunek, wezwania, ocenę utworu, naruszenia, szans i wynagrodzenia, wycenę praw, antydatowanie, podrabianie podpisu, ukrywanie użycia AI lub cudzego autorstwa; czy skill jest symetryczny wobec twórcy i zleceniodawcy.
+2. Spójność wewnętrzną: żadna sekcja nie przeczy innej (SKILL.md vs references vs wpis.md), żadna deklaracja nie jest fałszywa, odesłania między plikami (sekcje, nazwy) są poprawne.
+3. Opis (description w SKILL.md): czy odpala się we właściwych sytuacjach i odcina niewłaściwe (cała umowa, NDA, polityka AI w firmie, znaki towarowe, patenty), czy nie koliduje z innymi skillami katalogu (zwłaszcza czerwone-flagi-w-umowie, przed-podpisem-nda, polityka-ai, co-wlasciwie-podpisuje, rodo-dokumentacja).
+4. Język i ton: rejestr jednolity, zero kalk z angielskiego, zero długich myślników (— i –), procenty ze spacją, polskie realia.
+5. Wpis.md: sekcje obowiązkowe uczciwe, FAQ zgodne z zachowaniem skilla, brak obietnic sprzecznych z granicami.
+
+Format: każde znalezisko z plik:linia, kategorią (BLOKER / WAŻNE / KOSMETYKA) i propozycją naprawy w jednym zdaniu. Na końcu werdykt: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+hook: SessionStart
+hook: SessionStart
+hook: SessionStart Completed
+hook: SessionStart Completed
+hook: UserPromptSubmit
+hook: UserPromptSubmit Completed
+codex
+Sprawdzam wskazane pliki i opisy sąsiednich skilli wyłącznie lokalnie; wynik podam jako luki z numerami linii i poprawkami.
+
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -Command "Get-Content 'C:\\Users\\CP24\\.agents\\skills\\using-superpowers\\SKILL.md'; Get-Content 'C:\\Users\\CP24\\AiXperts - projekty\\DOKUMENTACJA-PROJEKTU.md'; rg -n 'katalog-skilli|prawa-autorskie|STANDARD.md' 'C:\\Users\\CP24\\.codex\\memories\\MEMORY.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content 'C:\Users\CP24\.agents\skills\using-superpowers\SKILL.md'; Get-Content 'C:\Users\CP24\AiXperts - projekty\DOKUMENTACJA-PROJEKTU.md'; rg -n 'katalog-skilli|prawa-autorskie|STANDARD.md' 'C:\Users\CP24\.codex\memories\MEMORY.md'" | env_u16_len=4862 | si_flags=256 | creation_flags=134743040
+2026-11-05T13:52:51.802863Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-Content 'C:\\\\Users\\\\CP24\\\\.agents\\\\skills\\\\using-superpowers\\\\SKILL.md'; Get-Content 'C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\DOKUMENTACJA-PROJEKTU.md'; rg -n 'katalog-skilli|prawa-autorskie|STANDARD.md' 'C:\\\\Users\\\\CP24\\\\.codex\\\\memories\\\\MEMORY.md'\\\" | env_u16_len=4862 | si_flags=256 | creation_flags=134743040\")" }
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -NoProfile -Command "Get-Content 'C:\\Users\\CP24\\.agents\\skills\\using-superpowers\\SKILL.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ succeeded in 602ms:
+---
+name: using-superpowers
+description: Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions
+---
+
+<SUBAGENT-STOP>
+If you were dispatched as a subagent to execute a specific task, ignore this skill.
+</SUBAGENT-STOP>
+
+<EXTREMELY-IMPORTANT>
+If you think there is even a 1% chance a skill might apply to what you are doing, you ABSOLUTELY MUST invoke the skill.
+
+IF A SKILL APPLIES TO YOUR TASK, YOU DO NOT HAVE A CHOICE. YOU MUST USE IT.
+
+This is not negotiable. You cannot rationalize your way out of this.
+</EXTREMELY-IMPORTANT>
+
+## The Rule
+
+**Invoke relevant or requested skills BEFORE any response or action** - including clarifying questions, exploring the codebase, or checking files. If it turns out wrong for the situation, you don't have to use it.
+
+**Before entering plan mode:** if you haven't already brainstormed, invoke the brainstorming skill first.
+
+Then announce "Using [skill] to [purpose]" and follow the skill exactly. If it has a checklist, create a todo per item.
+
+## Skill Priority
+
+When multiple skills apply, process skills come first - they set the approach, then implementation skills (frontend-design, etc.) carry it out. Brainstorming and systematic-debugging are Superpowers' most common process skills, but the rule holds for any of them.
+
+- "Let's build X"  superpowers:brainstorming first, then implementation skills.
+- "Fix this bug"  superpowers:systematic-debugging first, then domain skills.
+
+## Red Flags
+
+These thoughts mean STOP-you're rationalizing:
+
+| Thought | Reality |
+|---------|---------|
+| "This is just a simple question" | Questions are tasks. Check for skills. |
+| "I need more context first" | Skill check comes BEFORE clarifying questions. |
+| "Let me explore the codebase first" | Skills tell you HOW to explore. Check first. |
+| "I can check git/files quickly" | Files lack conversation context. Check for skills. |
+| "Let me gather information first" | Skills tell you HOW to gather information. |
+| "This doesn't need a formal skill" | If a skill exists, use it. |
+| "I remember this skill" | Skills evolve. Read current version. |
+| "This doesn't count as a task" | Action = task. Check for skills. |
+| "The skill is overkill" | Simple things become complex. Use it. |
+| "I'll just do this one thing first" | Check BEFORE doing anything. |
+| "This feels productive" | Undisciplined action wastes time. Skills prevent this. |
+| "I know what that means" | Knowing the concept ? using the skill. Invoke it. |
+
+## Platform Adaptation
+
+If your harness appears here, read its reference file for special instructions:
+
+- Codex: `references/codex-tools.md`
+- Pi: `references/pi-tools.md`
+- Antigravity: `references/antigravity-tools.md`
+- Hermes Agent: `references/hermes-tools.md`
+
+## User Instructions
+
+User instructions (CLAUDE.md, AGENTS.md, GEMINI.md, etc, direct requests) take precedence over skills, which in turn override default behavior. Only skip skill workflows or instructions when your human partner has explicitly told you to.
+
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -NoProfile -Command "Get-Content -Encoding UTF8 'C:\\Users\\CP24\\AiXperts - projekty\\DOKUMENTACJA-PROJEKTU.md'; Get-Content -Encoding UTF8 'C:\\Users\\CP24\\.agents\\skills\\using-superpowers\\references\\codex-tools.md'; Get-Content -Encoding UTF8 'C:\\Users\\CP24\\.codex\\plugins\\cache\\ponytail\\ponytail\\5.3.3\\skills\\ponytail\\SKILL.md'; rg -n 'katalog-skilli|prawa-autorskie|STANDARD.md' 'C:\\Users\\CP24\\.codex\\memories\\MEMORY.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -NoProfile -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -Encoding UTF8 'C:\Users\CP24\AiXperts - projekty\DOKUMENTACJA-PROJEKTU.md'; Get-Content -Encoding UTF8 'C:\Users\CP24\.agents\skills\using-superpowers\references\codex-tools.md'; Get-Content -Encoding UTF8 'C:\Users\CP24\.codex\plugins\cache\ponytail\ponytail\5.3.3\skills\ponytail\SKILL.md'; rg -n 'katalog-skilli|prawa-autorskie|STANDARD.md' 'C:\Users\CP24\.codex\memories\MEMORY.md'" | env_u16_len=4862 | si_flags=256 | creation_flags=134743040
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -NoProfile -Command 'Get-ChildItem -Force -Name; $files = @('"'STANDARD.md','skille/prawa-autorskie-w-zleceniu/SKILL.md','skille/prawa-autorskie-w-zleceniu/references/zasady.md','skille/prawa-autorskie-w-zleceniu/references/klauzula.md','skille/prawa-autorskie-w-zleceniu/wpis.md'); foreach ("'$file in $files) { Write-Output "PLIK: $file"; $i=0; Get-Content -Encoding UTF8 -LiteralPath $file | ForEach-Object { $i++; '"'{0}: {1}' -f "'$i,$_ } }' in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+2026-11-05T13:53:17.528484Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -NoProfile -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-Content -Encoding UTF8 'C:\\\\Users\\\\CP24\\\\A…48 chars truncated… Get-Content -Encoding UTF8 'C:\\\\Users\\\\CP24\\\\.agents\\\\skills\\\\using-superpowers\\\\references\\\\codex-tools.md'; Get-Content -Encoding UTF8 'C:\\\\Users\\\\CP24\\\\.codex\\\\plugins\\\\cache\\\\ponytail\\\\ponytail\\\\5.3.3\\\\skills\\\\ponytail\\\\SKILL.md'; rg -n 'katalog-skilli|prawa-autorskie|STANDARD.md' 'C:\\\\Users\\\\CP24\\\\.codex\\\\memories\\\\MEMORY.md'\\\" | env_u16_len=4862 | si_flags=256 | creation_flags=134743040\")" }
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -NoProfile -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Force -Name; $files = @('STANDARD.md','skille/prawa-autorskie-w-zleceniu/SKILL.md','skille/prawa-autorskie-w-zleceniu/references/zasady.md','skille/prawa-autorskie-w-zleceniu/references/klauzula.md','skille/prawa-autorskie-w-zleceniu/wpis.md'); foreach ($file in $files) { Write-Output \"PLIK: $file\"; $i=0; Get-Content -Encoding UTF8 -LiteralPath $file | ForEach-Object { $i++; '{0}: {1}' -f $i,$_ } }" | env_u16_len=4862 | si_flags=256 | creation_flags=134743040
+2026-11-05T13:53:17.760079Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -NoProfile -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-ChildItem -Force -Name; $files = @('STANDARD.md','skille/prawa-autorskie-w-zleceniu/SKILL.md','skille/prawa-autorskie-w-zleceniu/references/zasady.md','skille/prawa-autorskie-w-zleceniu/references/klauzula.md','skille/prawa-autorskie-w-zleceniu/wpis.md'); foreach ($file in $files) { Write-Output \\\\\\\"PLIK: $file\\\\\\\"; $i=0; Get-Content -Encoding UTF8 -LiteralPath $file | ForEach-Object { $i++; '{0}: {1}' -f $i,$_ } }\\\" | env_u16_len=4862 | si_flags=256 | creation_flags=134743040\")" }
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 1 z 3: odczyt lokalny działa przez czytnik plików. Stosuję `using-superpowers` do doboru procedury i `ponytail` do ograniczenia przeglądu do wskazanego zakresu.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 2 z 3: są sprzeczności z zakazem orzekania, m.in. polecenie wskazywania zapisów „sprzecznych z przepisami” i oznaczania ich jako „nieważne”. Sprawdzam jeszcze odmowy, obietnice wpisu i kolizje opisów, żeby oddzielić blokery od uwag językowych.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+**BLOKER** | [SKILL.md:12](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/SKILL.md:12>), [references/klauzula.md:98](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/references/klauzula.md:98>) i :104: polecenia wskazywania sprzeczności z przepisami i kwalifikowania zapisów jako „nieważne” przeczą zakazowi orzekania; zastąp je opisem możliwego skutku i pytaniem do prawnika.
+
+**BLOKER** | [references/klauzula.md:106](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/references/klauzula.md:106>), [SKILL.md:42](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/SKILL.md:42>): nakaz rozpoznania sprzeczności i „braku utworu” na podstawie deklaracji użycia AI przesądza ocenę konkretnego materiału przed ustaleniem wkładu człowieka; zamień rozstrzygnięcie na warunkowe ryzyko i pytania o proces tworzenia.
+
+**WAŻNE** | [references/zasady.md:75](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/references/zasady.md:75>): „grupy pól” zawierają rozbudowane wyliczenia nadające się do skopiowania, mimo etykiety „nie brzmienie do wklejenia”; zastąp je prostymi pytaniami o faktyczne korzystanie i zakaż składania odpowiedzi w indywidualną listę pól.
+
+**WAŻNE** | [SKILL.md:30](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/SKILL.md:30>): wycena praw nie ma jednoznacznego wyzwalacza odmowy, a gotowa formuła pomija ocenę naruszenia i godziwości wynagrodzenia; rozszerz wyzwalacze i treść odmowy na wszystkie zakazy z :22–25, również prośby o listę wykreśleń i mail zastępujący klauzulę.
+
+**WAŻNE** | [references/klauzula.md:90](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/references/klauzula.md:90>): przypisanie każdego punktu wyłącznie do „rozbieżności”, „braku” lub „do wyjaśnienia” wymusza zastrzeżenia także bez podstaw; dodaj „Typowe” z ograniczeniem do sprawdzonego fragmentu oraz formułę „nie widzę w tym tekście X”, bez całościowej aprobaty.
+
+**WAŻNE** | [SKILL.md:3](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/SKILL.md:3>) i :12: opis wyklucza całą umowę, lecz tryb 3 dopuszcza jej czytanie bez wyraźnego ograniczenia analizy do praw autorskich i bez odesłania do `co-wlasciwie-podpisuje`; dopisz zakres analizy pełnego dokumentu i rozdziel streszczenie od przeglądu ryzyk.
+
+**WAŻNE** | [SKILL.md:3](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/SKILL.md:3>), [przed-podpisem-nda/SKILL.md:3](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/przed-podpisem-nda/SKILL.md:3>): pytanie o portfolio uruchamia oba skille bez rozstrzygnięcia przypadku, gdy dokumentu jeszcze nie pokazano; dopisz rozróżnienie między prawami do publikacji a ograniczeniami poufności i regułę pierwszeństwa.
+
+**WAŻNE** | [wpis.md:47](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/wpis.md:47>) i :71 wobec [references/zasady.md:174](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/references/zasady.md:174>): ogólne „przepisu wprost o AI nie ma” przeczy własnemu opisowi przepisów o przejrzystości AI; zawęź stwierdzenie do autorskoprawnej ochrony wyników generowania i zakresu sprawdzonych źródeł.
+
+**WAŻNE** | [wpis.md:9](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/wpis.md:9>) i :29: „wiesz, czy masz prawa” obiecuje indywidualne rozstrzygnięcie, a „rozmowa […] jest krótsza i tańsza” gwarantuje niepotwierdzony rezultat; obiecaj uporządkowanie faktów i przygotowanie pytań.
+
+**WAŻNE** | [wpis.md:14](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/wpis.md:14>), [README.md:89](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/README.md:89>): `claude: brak` oznacza według dokumentacji niedostępność funkcji w Polsce, nie brak testu; dla nieprzetestowanego skilla użyj `format`, a `ok` dopiero po sprawdzeniu działania.
+
+**KOSMETYKA** | [references/klauzula.md:52](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/references/klauzula.md:52>), [SKILL.md:35](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/SKILL.md:35>): „reużyć/reużycie” miesza rejestr i kalkuje angielski, a „gdy pytający nie stać” ma błąd fleksyjny; wpisz „ponownie wykorzystać/ponowne wykorzystanie” oraz „gdy pytającego nie stać”.
+
+Nie uruchamiałem skilla ani nie sprawdzałem źródeł prawnych i adresów w sieci; to ocena instrukcji, bez potwierdzenia zachowania modelu.
+
+**BLOKERY DO WYDANIA: TAK**
+tokens used
+118 298
+**BLOKER** | [SKILL.md:12](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/SKILL.md:12>), [references/klauzula.md:98](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/references/klauzula.md:98>) i :104: polecenia wskazywania sprzeczności z przepisami i kwalifikowania zapisów jako „nieważne” przeczą zakazowi orzekania; zastąp je opisem możliwego skutku i pytaniem do prawnika.
+
+**BLOKER** | [references/klauzula.md:106](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/references/klauzula.md:106>), [SKILL.md:42](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/SKILL.md:42>): nakaz rozpoznania sprzeczności i „braku utworu” na podstawie deklaracji użycia AI przesądza ocenę konkretnego materiału przed ustaleniem wkładu człowieka; zamień rozstrzygnięcie na warunkowe ryzyko i pytania o proces tworzenia.
+
+**WAŻNE** | [references/zasady.md:75](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/references/zasady.md:75>): „grupy pól” zawierają rozbudowane wyliczenia nadające się do skopiowania, mimo etykiety „nie brzmienie do wklejenia”; zastąp je prostymi pytaniami o faktyczne korzystanie i zakaż składania odpowiedzi w indywidualną listę pól.
+
+**WAŻNE** | [SKILL.md:30](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/SKILL.md:30>): wycena praw nie ma jednoznacznego wyzwalacza odmowy, a gotowa formuła pomija ocenę naruszenia i godziwości wynagrodzenia; rozszerz wyzwalacze i treść odmowy na wszystkie zakazy z :22–25, również prośby o listę wykreśleń i mail zastępujący klauzulę.
+
+**WAŻNE** | [references/klauzula.md:90](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/references/klauzula.md:90>): przypisanie każdego punktu wyłącznie do „rozbieżności”, „braku” lub „do wyjaśnienia” wymusza zastrzeżenia także bez podstaw; dodaj „Typowe” z ograniczeniem do sprawdzonego fragmentu oraz formułę „nie widzę w tym tekście X”, bez całościowej aprobaty.
+
+**WAŻNE** | [SKILL.md:3](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/SKILL.md:3>) i :12: opis wyklucza całą umowę, lecz tryb 3 dopuszcza jej czytanie bez wyraźnego ograniczenia analizy do praw autorskich i bez odesłania do `co-wlasciwie-podpisuje`; dopisz zakres analizy pełnego dokumentu i rozdziel streszczenie od przeglądu ryzyk.
+
+**WAŻNE** | [SKILL.md:3](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/SKILL.md:3>), [przed-podpisem-nda/SKILL.md:3](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/przed-podpisem-nda/SKILL.md:3>): pytanie o portfolio uruchamia oba skille bez rozstrzygnięcia przypadku, gdy dokumentu jeszcze nie pokazano; dopisz rozróżnienie między prawami do publikacji a ograniczeniami poufności i regułę pierwszeństwa.
+
+**WAŻNE** | [wpis.md:47](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/wpis.md:47>) i :71 wobec [references/zasady.md:174](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/references/zasady.md:174>): ogólne „przepisu wprost o AI nie ma” przeczy własnemu opisowi przepisów o przejrzystości AI; zawęź stwierdzenie do autorskoprawnej ochrony wyników generowania i zakresu sprawdzonych źródeł.
+
+**WAŻNE** | [wpis.md:9](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/wpis.md:9>) i :29: „wiesz, czy masz prawa” obiecuje indywidualne rozstrzygnięcie, a „rozmowa […] jest krótsza i tańsza” gwarantuje niepotwierdzony rezultat; obiecaj uporządkowanie faktów i przygotowanie pytań.
+
+**WAŻNE** | [wpis.md:14](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/wpis.md:14>), [README.md:89](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/README.md:89>): `claude: brak` oznacza według dokumentacji niedostępność funkcji w Polsce, nie brak testu; dla nieprzetestowanego skilla użyj `format`, a `ok` dopiero po sprawdzeniu działania.
+
+**KOSMETYKA** | [references/klauzula.md:52](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/references/klauzula.md:52>), [SKILL.md:35](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/prawa-autorskie-w-zleceniu/SKILL.md:35>): „reużyć/reużycie” miesza rejestr i kalkuje angielski, a „gdy pytający nie stać” ma błąd fleksyjny; wpisz „ponownie wykorzystać/ponowne wykorzystanie” oraz „gdy pytającego nie stać”.
+
+Nie uruchamiałem skilla ani nie sprawdzałem źródeł prawnych i adresów w sieci; to ocena instrukcji, bez potwierdzenia zachowania modelu.
+
+**BLOKERY DO WYDANIA: TAK**

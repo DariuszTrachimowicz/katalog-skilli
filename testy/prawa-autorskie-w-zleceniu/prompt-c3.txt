@@ -1,0 +1,9 @@
+Jesteś doświadczonym radcą prawnym od polskiego prawa autorskiego i recenzentem QA granic skilla. CYKL 3 (bardzo wąski) skilla AI `prawa-autorskie-w-zleceniu` z katalogu AiXperts: skille/prawa-autorskie-w-zleceniu/SKILL.md, references/zasady.md, references/klauzula.md, wpis.md; standard STANDARD.md; research testy/prawa-autorskie-w-zleceniu/research-stan-prawny.md. Dziś 5 listopada 2026 r. Nie korzystaj z sieci. Czytaj pliki, cytuj plik:linia.
+
+W cyklu 2 zgłosiłeś ustalenia zapisane w testy/prawa-autorskie-w-zleceniu/codex-c2-wynik.md (1 bloker: kwalifikowanie zapisów jako „nieważne” i powoływanie się na ustawę w liście kontrolnej; 4 ważne: rozdzielenie regularnej informacji o przychodach od informacji przy wynagrodzeniu od przychodów, zbiorcze wyłączenie programów w tabeli zmian, podpis i roszczenia twórcy zamiast uprawnionego w SKILL.md i klauzula.md, automatyczne „napięcie” przy AI). Autor naniósł poprawki.
+
+Zadanie:
+1. Dla każdego z 5 ustaleń cyklu 2 sprawdź, czy zostało usunięte poprawnie; wypisz tylko nieusunięte albo usunięte błędnie.
+2. Zgłoś nowy BLOKER tylko, jeśli poprawki wprowadziły błąd merytoryczny, sprzeczność między plikami albo furtkę łamiącą reguły 1-8 STANDARD.md. Nie zgłaszaj kosmetyki ani nowych życzeń wykraczających poza ustalenia cykli 1 i 2 (pliki codex-c1-ekspert-wynik.md, codex-c1-granice-wynik.md w tym samym katalogu), chyba że to realny bloker.
+
+Format: plik:linia, kategoria (BLOKER / WAŻNE), naprawa w jednym zdaniu. Na końcu: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.
