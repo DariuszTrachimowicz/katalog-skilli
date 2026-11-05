@@ -1,0 +1,13 @@
+1. **BLOKER** · [wpis.md:33](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/decyzja-z-urzedu-co-dalej/wpis.md:33>): przykład wyprowadza konkretne daty z samego nieotwarcia pisma, choć [zasady.md:46](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/decyzja-z-urzedu-co-dalej/references/zasady.md:46>) dopuszcza wcześniejsze odebranie bez otwarcia; uzależnij obliczenie od dowodu otrzymania potwierdzającego brak wcześniejszego odbioru.
+
+2. **WAŻNE, pozostałość C1/3** · [lista.md:71](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/decyzja-z-urzedu-co-dalej/references/lista.md:71>) i [wpis.md:52](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/decyzja-z-urzedu-co-dalej/wpis.md:52>): ogólne odesłanie po napisanie pisma do `pismo-urzedowe` nadal obejmuje niewyłączony tutaj wniosek do sądu o uchylenie mandatu, mimo zakazu pism sądowych w [pismo-urzedowe/SKILL.md:10](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/pismo-urzedowe/SKILL.md:10>); ogranicz te odesłania do pism administracyjnych, a wszystkie pisma sądowe kieruj do prawnika.
+
+3. **WAŻNE** · [lista.md:49](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/decyzja-z-urzedu-co-dalej/references/lista.md:49>) przedstawia przesunięcie początku terminu po uzupełnieniu bez warunku, natomiast [zasady.md:29](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/decyzja-z-urzedu-co-dalej/references/zasady.md:29>) uzależnia je od uwzględnienia żądania; uzgodnij oba opisy, a do rozstrzygnięcia rozbieżności oznacz skutek jako wymagający weryfikacji.
+
+4. **WAŻNE, regresja poprawki C1/7** · [lista.md:56](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/decyzja-z-urzedu-co-dalej/references/lista.md:56>) skraca zdarzenia rozpoczynające terminy do „wyegzekwowania” i „umorzenia”, podczas gdy [zasady.md:94](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/decyzja-z-urzedu-co-dalej/references/zasady.md:94>) wskazuje pełne wyegzekwowanie oraz doręczenie postanowienia o umorzeniu; przywróć w tabeli dokładne zdarzenia, żeby nie skracała dostępnego czasu.
+
+5. **WAŻNE, pozostałość C1/10** · [pismo-urzedowe/SKILL.md:3](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/pismo-urzedowe/SKILL.md:3>) i [kalendarz-obowiazkow/SKILL.md:3](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/kalendarz-obowiazkow/SKILL.md:3>): nowe odesłania dotyczą tylko decyzji, więc pytanie o termin reakcji na upomnienie nadal wpada w ogólne rozumienie pisma kierowane do `prosty-jezyk`, który terminów nie liczy; rozszerz odesłania na postanowienia, upomnienia, tytuły wykonawcze i zajęcia.
+
+Nie uruchamiałem skilla na modelu ani nie sprawdzałem aktualności prawa; ocena dotyczy treści plików, bez sieci.
+
+**BLOKERY DO WYDANIA: TAK**

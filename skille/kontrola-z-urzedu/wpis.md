@@ -2,7 +2,7 @@
 nazwa: Kontrola z urzędu
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
 aktualizacja: 2026-11-05
 skrot: Przeprowadza firmę przez kontrolę ZUS, inspekcji pracy, urzędu skarbowego, UODO, sanepidu albo Inspekcji Handlowej, czyli terminy, prawa w trakcie, plan przygotowania i dnia kontroli, upoważnienie, protokół i termin na zastrzeżenia.

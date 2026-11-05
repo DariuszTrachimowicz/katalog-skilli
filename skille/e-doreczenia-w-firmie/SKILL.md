@@ -1,6 +1,6 @@
 ---
 name: e-doreczenia-w-firmie
-description: "Przeprowadza FIRMĘ (przedsiębiorcę z CEIDG albo podmiot z rejestru przedsiębiorców KRS) przez e-Doręczenia, czyli elektroniczny odpowiednik listu poleconego w kontaktach z urzędami. Uruchamiaj, gdy przedsiębiorca pyta o e-Doręczenia dla swojej firmy, adres do doręczeń elektronicznych (ADE), skrzynkę do doręczeń, Bazę Adresów Elektronicznych, termin z harmonogramu (mówi np. o pierwszym października), albo potocznie, że musi założyć jakąś skrzynkę dla urzędu, dostał powiadomienie o piśmie na e-Doręczenia, nie wie czy obowiązek go dotyczy, boi się że przegapi pismo z urzędu; także gdy firma ustala, kto i jak ma pilnować skrzynki. NIE uruchamiaj do skrzynki prywatnej obywatela, obsługi urzędu lub podmiotu publicznego, integracji systemów dostawcy, pisania pism i odwołań (pismo-urzedowe), tłumaczenia treści otrzymanego pisma na prosty język (prosty-jezyk), faktur i KSeF ani zwykłej poczty e-mail."
+description: "Przeprowadza FIRMĘ (z CEIDG albo KRS) przez e-Doręczenia, czyli elektroniczny odpowiednik listu poleconego w kontaktach z urzędami. Uruchamiaj, gdy przedsiębiorca pyta o e-Doręczenia dla swojej firmy, adres do doręczeń elektronicznych (ADE), skrzynkę do doręczeń, Bazę Adresów Elektronicznych, termin z harmonogramu (mówi np. o pierwszym października), albo potocznie, że musi założyć jakąś skrzynkę dla urzędu, dostał powiadomienie o piśmie na e-Doręczenia, nie wie czy obowiązek go dotyczy, boi się że przegapi pismo z urzędu; także gdy firma ustala, kto i jak ma pilnować skrzynki. NIE uruchamiaj do skrzynki prywatnej obywatela, obsługi urzędu lub podmiotu publicznego, integracji systemów dostawcy, pisania pism i odwołań (pismo-urzedowe), terminu, drogi i skutku od doręczonej decyzji, postanowienia, upomnienia, tytułu wykonawczego albo zajęcia (decyzja-z-urzedu-co-dalej), tłumaczenia treści otrzymanego pisma na prosty język (prosty-jezyk), faktur i KSeF ani zwykłej poczty e-mail."
 ---
 
 # e-Doręczenia w firmie
@@ -106,18 +106,21 @@ wejść na skrzynkę ręcznie (publiczna: znany adres rządowy; kwalifikowana:
 strona albo aplikacja znana z umowy) i sprawdzić, czy pismo tam jest.
 Wskazuj konkretne sygnały, nie orzekaj całościowo „to oszustwo”.
 
-Gdy pismo jest w skrzynce, tłumacz skutki precyzyjnie: otwarcie pisma to
-odebranie, a chwila odebrania to chwila doręczenia, od której biegną terminy.
+Gdy pismo jest w skrzynce, tłumacz skutki precyzyjnie: odebraniem jest każde
+działanie, po którym adresat ma dokument i może zapoznać się z treścią (nie
+tylko otwarcie), a chwila odebrania z dowodu otrzymania to chwila doręczenia,
+od której biegną terminy.
 Fikcja doręczenia dotyczy korespondencji OD URZĘDU (podmiotu publicznego):
-takiego pisma nie chroni zwłoka, bo po 14 dniach od wpłynięcia na adres
-uznaje się je za doręczone (dokładny sposób liczenia i dowód otrzymania są
+takiego pisma nie chroni zwłoka, bo nieodebrane uznaje się za doręczone w dniu
+następującym po upływie 14 dni od wpłynięcia na adres (dokładny sposób liczenia i dowód otrzymania są
 w skrzynce przy piśmie). Przy korespondencji między firmami u dostawcy
 kwalifikowanego zasady doręczenia wynikają z umów, nie przenoś na nią
 automatycznie reguły 14 dni. Terminy na reakcję czytaj z treści i POUCZENIA
 pisma; jeśli ich tam nie widzisz, powiedz, że termin może wynikać z rodzaju
 sprawy i trzeba go potwierdzić (pouczenie, urząd prowadzący sprawę, doradca),
-zamiast podawać typowy z głowy. Do napisania odpowiedzi odeślij do skilla
-pismo-urzedowe, a do przełożenia trudnej treści pisma na prosty język do
+zamiast podawać typowy z głowy. Pytanie o termin, środek i skutek decyzji, postanowienia, upomnienia, tytułu
+wykonawczego albo zajęcia odeślij do skilla decyzja-z-urzedu-co-dalej. Do
+napisania odpowiedzi odeślij do skilla pismo-urzedowe, a do przełożenia trudnej treści pisma na prosty język do
 skilla prosty-jezyk; ten skill zajmuje się mechaniką odbioru i terminami,
 nie merytoryką pisma.
 
