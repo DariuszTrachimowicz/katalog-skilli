@@ -1,0 +1,161 @@
+Reading additional input from stdin...
+OpenAI Codex v0.162.1
+--------
+workdir: C:\Users\CP24\AiXperts - projekty\katalog-skilli
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1aaf0-662c-7790-a360-7b95727d437e
+--------
+user
+Jesteś doświadczonym notariuszem i radcą prawnym od polskiego prawa spadkowego oraz recenzentem QA. Recenzujesz skill AI `spadek-krok-po-kroku` z katalogu AiXperts. Pliki (czytaj je, nie zgaduj): skille/spadek-krok-po-kroku/SKILL.md, references/zasady.md, references/teczka.md, wpis.md (karta publiczna). Materiał źródłowy researchu z datami i przepisami: testy/spadek-krok-po-kroku/research-stan-prawny.md. Dziś jest 5 listopada 2026 r.; stan prawny skilla to 5 listopada 2026 r. (teksty jednolite i zmiany opisane w researchu, w tym nowa taksa notarialna od 5 listopada 2026 r. i przywracanie terminu SD-Z2 od 7 stycznia 2026 r.). Nie korzystaj z sieci.
+
+Twoja rola: POPRAWNOŚĆ MERYTORYCZNA. Sprawdź:
+1. Czy reguły w zasady.md i teczka.md są zgodne z polskim prawem (akt zgonu, zasiłek pogrzebowy, konto zmarłego i prawo bankowe, kolejność dziedziczenia po 15 listopada 2023 r., majątek wspólny, testamenty zwykłe i szczególne, przyjęcie i odrzucenie, termin 6 miesięcy i jego początek, milczenie, odrzucenie za małoletnich, uchylenie się od skutków, odpowiedzialność za długi i inwentarz, sąd a notariusz z kosztami, podatek i SD-Z2, dział, zachowek, księga wieczysta, zarząd sukcesyjny). Szukaj błędów, uproszczeń wprowadzających w błąd i brakujących wyjątków, które realnie zmieniają wynik dla rodziny.
+2. Czy tezy orzeczeń SN w sekcji 11 są wiernie oddane i czy któraś jest przedstawiona mocniej niż orzeczenie.
+3. Czy teczka.md (fakty, szablon planu, podział zadań, teczka dokumentów, lista kontrolna) nie zgłasza fałszywych braków, nie pomija istotnych kontroli i nie podsuwa rodzinie ryzykownych działań.
+4. Czy wpis.md nie składa obietnic sprzecznych z SKILL.md i nie zawiera błędów merytorycznych.
+5. Czy oznaczenia DO WERYFIKACJI są tam, gdzie trzeba, i czy nie ma tez podanych jako pewnik bez podstawy w researchu.
+
+Format: po polsku, zwięźle, każde znalezisko z plik:linia, kategorią (BLOKER / WAŻNE / KOSMETYKA) i propozycją naprawy w jednym zdaniu. Nie chwal. Na końcu werdykt: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+hook: SessionStart
+hook: SessionStart
+hook: SessionStart Completed
+hook: SessionStart Completed
+hook: UserPromptSubmit
+hook: UserPromptSubmit Completed
+codex
+Czytam pięć wskazanych plików i porównuję reguły z lokalnym researchem, bez sieci. Etap 1 z 2: kontrola źródeł; etap 2: lista błędów z liniami i poprawkami.
+
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -Command "Get-Content -LiteralPath 'C:\\Users\\CP24\\.agents\\skills\\using-superpowers\\SKILL.md'; Get-Content -LiteralPath 'C:\\Users\\CP24\\AiXperts - projekty\\DOKUMENTACJA-PROJEKTU.md' -TotalCount 180; rg -n 'katalog-skilli|spadek-krok-po-kroku' 'C:\\Users\\CP24\\.codex\\memories\\MEMORY.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -LiteralPath 'C:\Users\CP24\.agents\skills\using-superpowers\SKILL.md'; Get-Content -LiteralPath 'C:\Users\CP24\AiXperts - projekty\DOKUMENTACJA-PROJEKTU.md' -TotalCount 180; rg -n 'katalog-skilli|spadek-krok-po-kroku' 'C:\Users\CP24\.codex\memories\MEMORY.md'" | env_u16_len=4830 | si_flags=256 | creation_flags=134743040
+2026-11-05T09:01:02.492240Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-Content -LiteralPath 'C:\\\\Users\\\\CP24\\\\.agents\\\\skills\\\\using-superpowers\\\\SKILL.md'; Get-Content -LiteralPath 'C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\DOKUMENTACJA-PROJEKTU.md' -TotalCount 180; rg -n 'katalog-skilli|spadek-krok-po-kroku' 'C:\\\\Users\\\\CP24\\\\.codex\\\\memories\\\\MEMORY.md'\\\" | env_u16_len=4830 | si_flags=256 | creation_flags=134743040\")" }
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Stosuję skill `using-superpowers` do doboru procedury recenzji. Terminal odmówił uruchomienia; odczyt plików działa przez narzędzie lokalne.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 1 z 2 zakończony: przeczytane wszystkie pięć plików. Są błędy zmieniające wynik dla rodziny: automatyczne „przejście spadku na dzieci”, ucięcie dalszych zstępnych rodzeństwa i przesunięcie terminu używania NIP; teraz sprawdzam wyjątki podatkowe i tezy SN.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+2026-11-05T09:05:19.666783Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out
+codex
+Etap 2 z 2: potwierdzone numery linii usterek. Dwa istotne uproszczenia dotyczą też rejestru SN: teza o cenach przy zachowku została rozszerzona na cały spadek, a opis wydziedziczenia sugeruje automatyczne dziedziczenie przez wnuki; część tych problemów pochodzi już z researchu.
+
+codex
+Ścieżki `zasady.md` i `teczka.md` odnoszą się do `skille/spadek-krok-po-kroku/references/`.
+
+| Plik:linia | Kategoria | Znalezisko i naprawa |
+|---|---|---|
+| zasady.md:41 | **BLOKER** | „Bez dzieci i wnuków” oraz „dzieci rodzeństwa” błędnie ucinają dziedziczenie dalszych pokoleń; zastąpić je odpowiednio wszystkimi zstępnymi spadkodawcy i zstępnymi rodzeństwa, również w linii 42. |
+| zasady.md:64; SKILL.md:45; wpis.md:63 | **BLOKER** | Odrzucenie nie zawsze powołuje dzieci odrzucającego, zwłaszcza przy odrzuceniu przez małżonka lub spadkobiercę testamentowego; ustalać następców według konkretnego tytułu, podstawienia, przyrostu i ustawy. |
+| zasady.md:104; zasady.md:146 | **BLOKER** | Opis III CZP 85/15 sugeruje automatyczne nabycie udziału spadkowego przez dzieci wydziedziczonego; wyjaśnić skutek dotyczący zachowku zstępnych i oddzielić go od ustalenia spadkobierców. |
+| zasady.md:147 | **BLOKER** | Tezę V CSK 385/12 dotyczącą wyceny dla zachowku rozszerzono na każdą „wartość spadku”; ograniczyć jej zakres i wskazać, że w inwentarzu stan oraz ceny ustala się na chwilę otwarcia spadku. |
+| zasady.md:67; zasady.md:140 | **BLOKER** | Pominięto zatwierdzenie uchylenia przez sąd, początek rocznego terminu przy groźbie i możliwość zachowania terminu przez wniosek; uzupełnić regułę oraz oznaczyć historyczny zakres III CZP 77/13. |
+| zasady.md:109 | **BLOKER** | Dwa miesiące używania NIP bez zarządcy błędnie liczone są od zgłoszenia kontynuacji; wskazać okres liczony od śmierci i oznaczyć aktualną podstawę dotyczącą NIP jako DO WERYFIKACJI zgodnie z ograniczeniem researchu. |
+| zasady.md:65; zasady.md:133 | **WAŻNE** | Skrót zasad odrzucenia za dziecko pomija właściwość sądu spadku podczas toczącej się sprawy, zakres władzy rodzicielskiej i sytuację braku innych zstępnych; doprecyzować warunki oraz historyczny zakres uchwały III CZP 102/17. |
+| zasady.md:142; wpis.md:63 | **WAŻNE** | Reguła milczenia przed 18 października 2015 r. pomija ówczesne wyjątki ochronne, a FAQ nie zawiera granicy czasowej; rozróżnić stare i nowe spadki bez automatycznego przypisywania wszystkim przyjęcia prostego. |
+| zasady.md:75; zasady.md:143 | **WAŻNE** | Zastrzeżenie ograniczenia odpowiedzialności zawężono do wyroku; wskazać również postanowienie o nadaniu klauzuli przeciw spadkobiercy oraz ustawowe wyjątki, zamiast absolutyzować skrót tezy I CSK 439/10. |
+| zasady.md:96 | **WAŻNE** | Późniejsze dowiedzenie się o nabyciu przedstawiono jako bezwarunkowy nowy termin; dopisać obowiązek uprawdopodobnienia późniejszego uzyskania wiedzy. |
+| zasady.md:96 | **WAŻNE** | „Ostatnie 5 lat” może oznaczać błędne liczenie ruchomych 60 miesięcy; opisać kumulację nabyć w roku ostatniego nabycia i pięciu poprzedzających go latach kalendarzowych. |
+| zasady.md:97 | **WAŻNE** | Przywracanie SD-Z2 nie obejmuje terminów zakończonych przed 7 stycznia 2026 r., a SD-3 po odmowie ma odrębny początek terminu; dopisać oba zastrzeżenia oraz konieczność równoczesnego dokonania spóźnionej czynności. |
+| zasady.md:98 | **WAŻNE** | Nakaz SD-3 dla wszystkich pozostałych nabywców pomija kwotę wolną i nie podaje początku miesiąca; uzależnić obowiązek od wartości nabycia i wskazać właściwe zdarzenie rozpoczynające termin. |
+| zasady.md:99 | **WAŻNE** | Właściwość urzędu według miejsca zamieszkania zmarłego podano jako pewnik mimo oznaczenia w researchu jako praktyki; uwzględnić reguły dotyczące położenia nieruchomości i oznaczyć właściwość DO WERYFIKACJI. |
+| zasady.md:99; zasady.md:117 | **WAŻNE** | Zwolnienie z zaświadczenia podatkowego rozszerzono na każde zwolnione nabycie; ograniczyć wskazaną podstawę do zwolnienia najbliższej rodziny oraz osobno opisać nabycie udokumentowane aktem notarialnym. |
+| zasady.md:104 | **WAŻNE** | Zachowek zawężono do dzieci i pozostawiono pięć lat bez początku biegu; wskazać wszystkich uprawnionych zstępnych oraz rozróżnić termin od ogłoszenia testamentu i od otwarcia spadku. |
+| zasady.md:103 | **WAŻNE** | Brak zgody na zbycie udziału w konkretnej rzeczy opisano jak bezwzględny zakaz; wyjaśnić względną bezskuteczność rozporządzenia w zakresie naruszającym uprawnienia pozostałych przy dziale. |
+| zasady.md:103 | **WAŻNE** | Stawki 1 000/600 zł przypisano działowi połączonemu z podziałem majątku małżeńskiego, choć wskazana regulacja dotyczy połączenia ze zniesieniem współwłasności; rozdzielić te postępowania i zweryfikować sumowanie opłat. |
+| zasady.md:53 | **WAŻNE** | Niemożliwość zwykłej formy testamentu ustnego oderwano od szczególnych okoliczności, a roczny termin pozostawiono bez początku; dopisać tę przesłankę, liczenie roku od oświadczenia oraz zawieszenie terminu utraty mocy przy niemożności sporządzenia testamentu zwykłego. |
+| zasady.md:45 | **WAŻNE** | Samo wystąpienie o rozwód lub separację z winy małżonka nie wystarcza do wyłączenia go od dziedziczenia; przywrócić pominięty warunek zasadności żądania. |
+| zasady.md:47; wpis.md:33 | **WAŻNE** | Bezwzględnie przypisano odziedziczone rzeczy do majątku osobistego, a połowę mieszkania ustalono bez danych o nabyciu; dodać wyjątki dotyczące woli spadkodawcy i wyposażenia domowego oraz warunek przynależności mieszkania do majątku wspólnego. |
+| zasady.md:26 | **WAŻNE** | Trzydniowy termin zgłoszenia zgonu podano bez wyjątku choroby zakaźnej; dopisać wskazany w researchu termin 24 godzin. |
+| zasady.md:27 | **WAŻNE** | Pokrycie kosztów przedstawiono jako wystarczającą podstawę zasiłku, a termin jako zawsze liczony od śmierci; dodać wymagany tytuł do świadczenia i wyjątek późniejszego odnalezienia lub identyfikacji zwłok. |
+| zasady.md:29 | **WAŻNE** | Reguły rachunku indywidualnego i wygaśnięcia pełnomocnictwa uogólniono; oddzielić rachunek wspólny, wyłączenie szczególnych wypłat pogrzebowych z takiego rachunku oraz ustawowy wyjątek zachowania pełnomocnictwa. |
+| zasady.md:28 | **WAŻNE** | Wypłatę pogrzebową z banku i rozliczenie tych samych kosztów ze spadkobiercami opisano bez kontroli podwójnego zwrotu; nakazać uwzględnienie kwot już pokrytych z rachunku. |
+| zasady.md:32 | **WAŻNE** | Niezrealizowane świadczenie ZUS ograniczono do małżonka i dzieci bez kolejności uprawnienia; uwzględnić pozostałych ustawowo uprawnionych członków rodziny oraz wyjątek wcześniejszego wniosku o dalsze prowadzenie postępowania. |
+| zasady.md:33 | **WAŻNE** | „Domownicy” rozszerzają ochronę mieszkaniową poza małżonka i inne osoby bliskie, a opis najmu pomija dzieci współmałżonka oraz współnajem; doprecyzować oba odrębne mechanizmy. |
+| zasady.md:84; teczka.md:83 | **WAŻNE** | Sama nieobecność spadkobiercy błędnie zamyka drogę notarialną; odróżnić brak udziału od oddzielnego potwierdzenia projektu protokołu i uwzględnić wymagany udział zapisobierców windykacyjnych w linii 85 oraz teczka.md:84. |
+| teczka.md:21 | **WAŻNE** | Zbieranie faktów urywa się na dzieciach zmarłych dzieci i rodzeństwie; dodać dalsze właściwe gałęzie rodziny, wcześniejsze odrzucenia, zrzeczenia, przysposobienie oraz dziecko poczęte przed śmiercią. |
+| teczka.md:72 | **WAŻNE** | Wspólna lista dla banku, ZUS i urzędu może generować fałszywy brak potwierdzenia dziedziczenia lub SD-Z2; przypisać dokumenty do konkretnej czynności i wyłączyć ten wymóg przy zasiłku oraz ustawowym zwrocie kosztów pogrzebu. |
+| teczka.md:86 | **WAŻNE** | Kontrola terminów pomija EPS, dyspozycję wkładem, SD-3, przywrócenie SD-Z2 oraz początek przedawnienia zachowku; dodać warunkowe kontrole tych terminów i niezwłocznego ujawnienia własności w KW. |
+| wpis.md:29 | **WAŻNE** | „Nie da się odkręcić” przeczy opisanym w skillu mechanizmom uchylenia skutków i przywrócenia SD-Z2; zastąpić tę obietnicę ostrzeżeniem o ograniczonych możliwościach naprawy uchybienia. |
+| wpis.md:33 | **WAŻNE** | Potwierdzenie projektu protokołu „za granicą” obiecano bez ustalenia dopuszczalnej formy i uprawnionego organu; oznaczyć tę możliwość DO WERYFIKACJI z polskim notariuszem. |
+
+Nie sprawdzałem sieci ani ponownie pełnych ustaw i uzasadnień SN; porównanie orzeczeń opiera się na lokalnym researchu, który sam zawiera część wskazanych uproszczeń.
+
+**BLOKERY DO WYDANIA: TAK**
+tokens used
+134 325
+Ścieżki `zasady.md` i `teczka.md` odnoszą się do `skille/spadek-krok-po-kroku/references/`.
+
+| Plik:linia | Kategoria | Znalezisko i naprawa |
+|---|---|---|
+| zasady.md:41 | **BLOKER** | „Bez dzieci i wnuków” oraz „dzieci rodzeństwa” błędnie ucinają dziedziczenie dalszych pokoleń; zastąpić je odpowiednio wszystkimi zstępnymi spadkodawcy i zstępnymi rodzeństwa, również w linii 42. |
+| zasady.md:64; SKILL.md:45; wpis.md:63 | **BLOKER** | Odrzucenie nie zawsze powołuje dzieci odrzucającego, zwłaszcza przy odrzuceniu przez małżonka lub spadkobiercę testamentowego; ustalać następców według konkretnego tytułu, podstawienia, przyrostu i ustawy. |
+| zasady.md:104; zasady.md:146 | **BLOKER** | Opis III CZP 85/15 sugeruje automatyczne nabycie udziału spadkowego przez dzieci wydziedziczonego; wyjaśnić skutek dotyczący zachowku zstępnych i oddzielić go od ustalenia spadkobierców. |
+| zasady.md:147 | **BLOKER** | Tezę V CSK 385/12 dotyczącą wyceny dla zachowku rozszerzono na każdą „wartość spadku”; ograniczyć jej zakres i wskazać, że w inwentarzu stan oraz ceny ustala się na chwilę otwarcia spadku. |
+| zasady.md:67; zasady.md:140 | **BLOKER** | Pominięto zatwierdzenie uchylenia przez sąd, początek rocznego terminu przy groźbie i możliwość zachowania terminu przez wniosek; uzupełnić regułę oraz oznaczyć historyczny zakres III CZP 77/13. |
+| zasady.md:109 | **BLOKER** | Dwa miesiące używania NIP bez zarządcy błędnie liczone są od zgłoszenia kontynuacji; wskazać okres liczony od śmierci i oznaczyć aktualną podstawę dotyczącą NIP jako DO WERYFIKACJI zgodnie z ograniczeniem researchu. |
+| zasady.md:65; zasady.md:133 | **WAŻNE** | Skrót zasad odrzucenia za dziecko pomija właściwość sądu spadku podczas toczącej się sprawy, zakres władzy rodzicielskiej i sytuację braku innych zstępnych; doprecyzować warunki oraz historyczny zakres uchwały III CZP 102/17. |
+| zasady.md:142; wpis.md:63 | **WAŻNE** | Reguła milczenia przed 18 października 2015 r. pomija ówczesne wyjątki ochronne, a FAQ nie zawiera granicy czasowej; rozróżnić stare i nowe spadki bez automatycznego przypisywania wszystkim przyjęcia prostego. |
+| zasady.md:75; zasady.md:143 | **WAŻNE** | Zastrzeżenie ograniczenia odpowiedzialności zawężono do wyroku; wskazać również postanowienie o nadaniu klauzuli przeciw spadkobiercy oraz ustawowe wyjątki, zamiast absolutyzować skrót tezy I CSK 439/10. |
+| zasady.md:96 | **WAŻNE** | Późniejsze dowiedzenie się o nabyciu przedstawiono jako bezwarunkowy nowy termin; dopisać obowiązek uprawdopodobnienia późniejszego uzyskania wiedzy. |
+| zasady.md:96 | **WAŻNE** | „Ostatnie 5 lat” może oznaczać błędne liczenie ruchomych 60 miesięcy; opisać kumulację nabyć w roku ostatniego nabycia i pięciu poprzedzających go latach kalendarzowych. |
+| zasady.md:97 | **WAŻNE** | Przywracanie SD-Z2 nie obejmuje terminów zakończonych przed 7 stycznia 2026 r., a SD-3 po odmowie ma odrębny początek terminu; dopisać oba zastrzeżenia oraz konieczność równoczesnego dokonania spóźnionej czynności. |
+| zasady.md:98 | **WAŻNE** | Nakaz SD-3 dla wszystkich pozostałych nabywców pomija kwotę wolną i nie podaje początku miesiąca; uzależnić obowiązek od wartości nabycia i wskazać właściwe zdarzenie rozpoczynające termin. |
+| zasady.md:99 | **WAŻNE** | Właściwość urzędu według miejsca zamieszkania zmarłego podano jako pewnik mimo oznaczenia w researchu jako praktyki; uwzględnić reguły dotyczące położenia nieruchomości i oznaczyć właściwość DO WERYFIKACJI. |
+| zasady.md:99; zasady.md:117 | **WAŻNE** | Zwolnienie z zaświadczenia podatkowego rozszerzono na każde zwolnione nabycie; ograniczyć wskazaną podstawę do zwolnienia najbliższej rodziny oraz osobno opisać nabycie udokumentowane aktem notarialnym. |
+| zasady.md:104 | **WAŻNE** | Zachowek zawężono do dzieci i pozostawiono pięć lat bez początku biegu; wskazać wszystkich uprawnionych zstępnych oraz rozróżnić termin od ogłoszenia testamentu i od otwarcia spadku. |
+| zasady.md:103 | **WAŻNE** | Brak zgody na zbycie udziału w konkretnej rzeczy opisano jak bezwzględny zakaz; wyjaśnić względną bezskuteczność rozporządzenia w zakresie naruszającym uprawnienia pozostałych przy dziale. |
+| zasady.md:103 | **WAŻNE** | Stawki 1 000/600 zł przypisano działowi połączonemu z podziałem majątku małżeńskiego, choć wskazana regulacja dotyczy połączenia ze zniesieniem współwłasności; rozdzielić te postępowania i zweryfikować sumowanie opłat. |
+| zasady.md:53 | **WAŻNE** | Niemożliwość zwykłej formy testamentu ustnego oderwano od szczególnych okoliczności, a roczny termin pozostawiono bez początku; dopisać tę przesłankę, liczenie roku od oświadczenia oraz zawieszenie terminu utraty mocy przy niemożności sporządzenia testamentu zwykłego. |
+| zasady.md:45 | **WAŻNE** | Samo wystąpienie o rozwód lub separację z winy małżonka nie wystarcza do wyłączenia go od dziedziczenia; przywrócić pominięty warunek zasadności żądania. |
+| zasady.md:47; wpis.md:33 | **WAŻNE** | Bezwzględnie przypisano odziedziczone rzeczy do majątku osobistego, a połowę mieszkania ustalono bez danych o nabyciu; dodać wyjątki dotyczące woli spadkodawcy i wyposażenia domowego oraz warunek przynależności mieszkania do majątku wspólnego. |
+| zasady.md:26 | **WAŻNE** | Trzydniowy termin zgłoszenia zgonu podano bez wyjątku choroby zakaźnej; dopisać wskazany w researchu termin 24 godzin. |
+| zasady.md:27 | **WAŻNE** | Pokrycie kosztów przedstawiono jako wystarczającą podstawę zasiłku, a termin jako zawsze liczony od śmierci; dodać wymagany tytuł do świadczenia i wyjątek późniejszego odnalezienia lub identyfikacji zwłok. |
+| zasady.md:29 | **WAŻNE** | Reguły rachunku indywidualnego i wygaśnięcia pełnomocnictwa uogólniono; oddzielić rachunek wspólny, wyłączenie szczególnych wypłat pogrzebowych z takiego rachunku oraz ustawowy wyjątek zachowania pełnomocnictwa. |
+| zasady.md:28 | **WAŻNE** | Wypłatę pogrzebową z banku i rozliczenie tych samych kosztów ze spadkobiercami opisano bez kontroli podwójnego zwrotu; nakazać uwzględnienie kwot już pokrytych z rachunku. |
+| zasady.md:32 | **WAŻNE** | Niezrealizowane świadczenie ZUS ograniczono do małżonka i dzieci bez kolejności uprawnienia; uwzględnić pozostałych ustawowo uprawnionych członków rodziny oraz wyjątek wcześniejszego wniosku o dalsze prowadzenie postępowania. |
+| zasady.md:33 | **WAŻNE** | „Domownicy” rozszerzają ochronę mieszkaniową poza małżonka i inne osoby bliskie, a opis najmu pomija dzieci współmałżonka oraz współnajem; doprecyzować oba odrębne mechanizmy. |
+| zasady.md:84; teczka.md:83 | **WAŻNE** | Sama nieobecność spadkobiercy błędnie zamyka drogę notarialną; odróżnić brak udziału od oddzielnego potwierdzenia projektu protokołu i uwzględnić wymagany udział zapisobierców windykacyjnych w linii 85 oraz teczka.md:84. |
+| teczka.md:21 | **WAŻNE** | Zbieranie faktów urywa się na dzieciach zmarłych dzieci i rodzeństwie; dodać dalsze właściwe gałęzie rodziny, wcześniejsze odrzucenia, zrzeczenia, przysposobienie oraz dziecko poczęte przed śmiercią. |
+| teczka.md:72 | **WAŻNE** | Wspólna lista dla banku, ZUS i urzędu może generować fałszywy brak potwierdzenia dziedziczenia lub SD-Z2; przypisać dokumenty do konkretnej czynności i wyłączyć ten wymóg przy zasiłku oraz ustawowym zwrocie kosztów pogrzebu. |
+| teczka.md:86 | **WAŻNE** | Kontrola terminów pomija EPS, dyspozycję wkładem, SD-3, przywrócenie SD-Z2 oraz początek przedawnienia zachowku; dodać warunkowe kontrole tych terminów i niezwłocznego ujawnienia własności w KW. |
+| wpis.md:29 | **WAŻNE** | „Nie da się odkręcić” przeczy opisanym w skillu mechanizmom uchylenia skutków i przywrócenia SD-Z2; zastąpić tę obietnicę ostrzeżeniem o ograniczonych możliwościach naprawy uchybienia. |
+| wpis.md:33 | **WAŻNE** | Potwierdzenie projektu protokołu „za granicą” obiecano bez ustalenia dopuszczalnej formy i uprawnionego organu; oznaczyć tę możliwość DO WERYFIKACJI z polskim notariuszem. |
+
+Nie sprawdzałem sieci ani ponownie pełnych ustaw i uzasadnień SN; porównanie orzeczeń opiera się na lokalnym researchu, który sam zawiera część wskazanych uproszczeń.
+
+**BLOKERY DO WYDANIA: TAK**
