@@ -18,7 +18,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import {createSubscriptions, appendDurable, ORIGINS, TEXT as TEKST_ZGODY, VERSION as WERSJA_ZGODY} from './subskrypcje.mjs';
 import {createEventInbox} from './crm-events.mjs';
-import {newsletterConfirmation,mailMimeBody,htmlPaczki,htmlNowejWersji,htmlPotwierdzenia,htmlZestawu,komplet} from './mail-design.mjs';
+import {newsletterConfirmation,mailMimeBody,htmlPaczki,htmlNowejWersji,htmlPotwierdzenia,htmlZestawu,komplet,escapeHtml} from './mail-design.mjs';
 const MIESIACE = ["stycznia","lutego","marca","kwietnia","maja","czerwca","lipca","sierpnia","września","października","listopada","grudnia"];
 const dataPl = (iso) => { const [r, m, d] = String(iso).split("-").map(Number); return r && m && d ? `${d} ${MIESIACE[m - 1]} ${r}` : String(iso); };
 const WYGLAD = () => ({ baza: BAZA, nazwaSerwisu: cfg.nazwaSerwisu, domena: cfg.domena });
@@ -336,7 +336,7 @@ ${newsletter
   ? `ktoś (mamy nadzieję, że Ty) zapisał ten adres na newsletter „${cfg.nazwaSerwisu}" na ${cfg.domena}.`
   : `ktoś (mamy nadzieję, że Ty) poprosił o zestaw umiejętności AI dobrany w teście na ${cfg.domena}.`}
 
-Potwierdź kliknięciem, a ${newsletter ? "dopiszemy Cię do listy" : "wyślemy go od razu"}:
+Otwórz link i naciśnij przycisk, a ${newsletter ? "dopiszemy Cię do listy" : "wyślemy go od razu"}:
 ${BAZA}/api/potwierdz?t=${token}
 
 Jeśli to nie Ty, po prostu zignoruj tę wiadomość. Bez potwierdzenia nie wyślemy nic więcej i nie zapiszemy Cię na żadną listę.
@@ -620,6 +620,16 @@ const serwer = createServer(async (req, res) => {
         return stronaHtml(res, "Link wygasł albo jest nieprawidłowy",
           "<p class='skrot'>Nie znaleźliśmy tego zapisu. Zrób test jeszcze raz, zajmie minutę.</p>");
 
+      // GET niczego nie zmienia: skanery linków w poczcie otwierają adresy same, potwierdza dopiero POST przyciskiem.
+      if (req.method !== "POST" && !rekord.potwierdzony) {
+        const wynik = rekord.typ === "wynik-prosba";
+        const marketing = !wynik || (rekord.zgodaMarketing === true && rekord.zgoda?.udzielona === true);
+        return stronaHtml(res, wynik ? "Potwierdź wysłanie zestawu" : "Potwierdź zapis na newsletter",
+          `<p class="skrot">${wynik ? "Naciśnij przycisk, a wyślemy dobrany zestaw skilli" : "Naciśnij przycisk, a dopiszemy Cię do newslettera"} na adres <strong>${escapeHtml(rekord.email)}</strong>.</p>
+           <p>${marketing ? "Po potwierdzeniu zapiszemy Cię także na wybrany newsletter AiXperts. Wypis jest w każdej wiadomości." : "Potwierdzasz wyłącznie wysłanie wyniku testu. Nie zapisujemy Cię do newslettera."}</p>
+           <form method="post" action="/api/potwierdz?t=${encodeURIComponent(rekord.token)}"><button class="btn" type="submit">${wynik ? "Potwierdź i wyślij zestaw" : "Potwierdzam zapis"}</button></form>`);
+      }
+
       if (rekord.typ === "wynik-prosba") {
         const marketing = rekord.zgodaMarketing === true && rekord.zgoda?.udzielona === true;
         if (!rekord.potwierdzony) {
@@ -643,7 +653,7 @@ const serwer = createServer(async (req, res) => {
         zglosDoCrm(rekord).catch((e) => console.error("Zgłoszenie do CRM nieudane:", e.message));
       }
       return stronaHtml(res, "Potwierdzone",
-        `<p class="skrot">Zestaw poleciał na <strong>${rekord.email}</strong>. Powinien być w skrzynce w ciągu minuty, jeśli go nie ma, zajrzyj do spamu.</p>
+        `<p class="skrot">Zestaw poleciał na <strong>${escapeHtml(rekord.email)}</strong>. Powinien być w skrzynce w ciągu minuty, jeśli go nie ma, zajrzyj do spamu.</p>
          <section class="blok"><h3>Co dalej</h3><p>Będziemy pisać o nowościach w katalogu, a od czasu do czasu o naszych szkoleniach i usługach. Wypisujesz się jednym kliknięciem ze stopki każdej wiadomości.</p><p>Twój kod dla subskrybentów: <strong>NEWSLETTER10</strong> to 10% rabatu na każdy płatny skill.</p></section>`);
       } finally {
         potwierdzeniaWToku.delete(token);

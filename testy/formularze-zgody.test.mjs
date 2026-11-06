@@ -58,7 +58,7 @@ test('formularze i zgody: rzeczywisty lokalny HTTP, dziennik i fikcyjne odbiorni
       assert.equal((await json('/api/zapis',{email:'quiz@example.invalid',wynik:['sample']})).status,200);
       const record=(await events()).find(x=>x.email==='quiz@example.invalid');
       assert.equal(record?.typ,'wynik-prosba');
-      await fetch(base+'/api/potwierdz?t='+record.token);
+      await fetch(base+'/api/potwierdz?t='+record.token,{method:'POST'});
       const saved=(await events()).filter(x=>x.email==='quiz@example.invalid');
       assert.equal(saved.some(x=>x.typ==='zapis'||x.typ==='potwierdzenie'),false);
       assert.equal(saved.filter(x=>x.typ==='wynik-potwierdzenie').length,1);
@@ -66,8 +66,34 @@ test('formularze i zgody: rzeczywisty lokalny HTTP, dziennik i fikcyjne odbiorni
       assert.match(logs,/Twój zestaw/);
       assert.doesNotMatch(logs,/Będziemy pisać|NEWSLETTER10/);
       const before=saved.length;
-      await fetch(base+'/api/potwierdz?t='+record.token);
+      await fetch(base+'/api/potwierdz?t='+record.token,{method:'POST'});
       assert.equal((await events()).filter(x=>x.email==='quiz@example.invalid').length,before);
+    });
+    await t.test('GET linku potwierdzenia tylko pokazuje przycisk (skanery linków niczego nie potwierdzają)',async()=>{
+      const email='skaner"<b>@example.invalid';
+      assert.equal((await json('/api/zapis',{email,wynik:['sample'],zgodaMarketing:true})).status,200);
+      const record=(await events()).find(x=>x.email===email);
+      const przed=mails.length;
+      const strona=await (await fetch(base+'/api/potwierdz?t='+record.token)).text();
+      assert.ok(strona.includes('<form method="post" action="/api/potwierdz?t='),'strona ma formularz POST');
+      assert.doesNotMatch(strona,/"<b>@/,'adres e-mail musi być escapowany');
+      const saved=(await events()).filter(x=>x.email===email);
+      assert.equal(saved.some(x=>['wynik-potwierdzenie','zapis','potwierdzenie'].includes(x.typ)),false);
+      assert.equal(mails.length,przed,'GET nie wysyła zestawu');
+      const wynik=await (await fetch(base+'/api/potwierdz?t='+record.token,{method:'POST'})).text();
+      assert.match(wynik,/Wynik testu wysłany/);
+      assert.equal((await events()).filter(x=>x.email===email&&x.typ==='wynik-potwierdzenie').length,1);
+      const ponownie=await (await fetch(base+'/api/potwierdz?t='+record.token)).text();
+      assert.doesNotMatch(ponownie,/<form method="post"/,'po potwierdzeniu GET pokazuje wynik, bez formularza');
+    });
+    await t.test('GET potwierdzenia newslettera katalogu też niczego nie zapisuje',async()=>{
+      const email='skaner-news@example.invalid';
+      assert.equal((await json('/api/newsletter',{email,zgoda:true})).status,200);
+      const record=(await events()).find(x=>x.email===email);
+      assert.match(await (await fetch(base+'/api/potwierdz?t='+record.token)).text(),/Potwierdzam zapis/);
+      assert.equal((await events()).some(x=>x.email===email&&x.typ==='potwierdzenie'),false);
+      await fetch(base+'/api/potwierdz?t='+record.token,{method:'POST'});
+      assert.equal((await events()).filter(x=>x.email===email&&x.typ==='potwierdzenie').length,1);
     });
     await t.test('dobrowolny marketing testu ma dowód treści i powstaje dopiero po kliknięciu',async()=>{
       const email='optin@example.invalid';
@@ -78,7 +104,7 @@ test('formularze i zgody: rzeczywisty lokalny HTTP, dziennik i fikcyjne odbiorni
       assert.equal(record.zgoda?.zrodlo,'test-doboru');
       assert.equal(record.zgoda?.kanal,'email');
       assert.ok(record.zgoda?.wersja && record.zgoda?.tresc && record.zgoda?.kiedy);
-      await fetch(base+'/api/potwierdz?t='+record.token);
+      await fetch(base+'/api/potwierdz?t='+record.token,{method:'POST'});
       const saved=(await events()).filter(x=>x.email===email);
       assert.equal(saved.filter(x=>x.typ==='zapis').length,1);
       assert.equal(saved.filter(x=>x.typ==='potwierdzenie').length,1);
@@ -100,7 +126,7 @@ test('formularze i zgody: rzeczywisty lokalny HTTP, dziennik i fikcyjne odbiorni
       const email='race@example.invalid';
       await json('/api/zapis',{email,wynik:['sample'],zgodaMarketing:false});
       const r=(await events()).find(x=>x.email===email);
-      await Promise.all(Array.from({length:4},()=>fetch(base+'/api/potwierdz?t='+r.token)));
+      await Promise.all(Array.from({length:4},()=>fetch(base+'/api/potwierdz?t='+r.token,{method:'POST'})));
       assert.equal((await events()).filter(x=>x.email===email&&x.typ==='wynik-potwierdzenie').length,1);
       assert.equal(mails.filter(m=>m.to.includes(email)).length,2,'jedna prośba o potwierdzenie i jeden zestaw');
     });
@@ -115,7 +141,7 @@ test('formularze i zgody: rzeczywisty lokalny HTTP, dziennik i fikcyjne odbiorni
     });
     await t.test('token pobrania bez zgody nie może stać się potwierdzeniem newslettera',async()=>{
       const r=(await events()).find(x=>x.email==='trialfalse@example.invalid');
-      await fetch(base+'/api/potwierdz?t='+r.token);
+      await fetch(base+'/api/potwierdz?t='+r.token,{method:'POST'});
       assert.equal((await events()).some(x=>x.email===r.email&&x.typ==='potwierdzenie'),false);
     });
     await t.test('wypis zachowuje zdarzenia, a komunikat nie obiecuje skasowania historii',async()=>{

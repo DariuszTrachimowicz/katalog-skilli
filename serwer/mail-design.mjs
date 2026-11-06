@@ -1,6 +1,6 @@
 // Presentation only: confirmation HTML and MIME alternatives; no transport or storage.
 import {randomBytes} from 'node:crypto';
-const escapeHtml=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export const escapeHtml=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 export function newsletterConfirmation({base,delivery,bonus=null}) {
   const confirm=base+'/api/subskrypcje/potwierdz?t='+delivery.confirmToken;
@@ -142,11 +142,11 @@ export function htmlNowejWersji({baza,nazwaSerwisu,skill,data,pobierz,wypis}) {
 }
 
 export function htmlPotwierdzenia({baza,nazwaSerwisu,domena,potwierdz,newsletter,marketing}) {
-  return ukladMaila({baza,nazwaSerwisu,zajawka:newsletter?'Jedno kliknięcie i jesteś na liście.':'Jedno kliknięcie i wyślemy Twój zestaw skilli.',
+  return ukladMaila({baza,nazwaSerwisu,zajawka:newsletter?'Potwierdź adres, a dopiszemy Cię do listy.':'Potwierdź adres, a wyślemy Twój zestaw skilli.',
     nadtytul:newsletter?'Newsletter · potwierdzenie adresu':'Test doboru · potwierdzenie adresu',tytul:'Potwierdź swój adres',
     tresc:akapit(newsletter?`Ktoś (mamy nadzieję, że Ty) zapisał ten adres na newsletter „${nazwaSerwisu}” na ${domena}.`:`Ktoś (mamy nadzieję, że Ty) poprosił o zestaw skilli AI dobrany w teście na ${domena}.`)
       +przycisk(newsletter?'Potwierdzam zapis':'Potwierdź i wyślij zestaw',potwierdz)
-      +drobny(newsletter?'Po potwierdzeniu dopiszemy Cię do listy.':'Po potwierdzeniu wyślemy zestaw od razu.')
+      +drobny(newsletter?'Na otwartej stronie naciśnij jeszcze przycisk potwierdzenia, wtedy dopiszemy Cię do listy.':'Na otwartej stronie naciśnij jeszcze przycisk potwierdzenia, wtedy wyślemy zestaw od razu.')
       +ramka(marketing?'Po potwierdzeniu zapiszemy Cię także na wybrany newsletter AiXperts. Wypis jest w każdej wiadomości.':'Potwierdzasz wyłącznie wysłanie wyniku testu. Nie zapisujemy Cię do newslettera.')
       +drobny('Jeśli to nie Ty, zignoruj tę wiadomość. Bez potwierdzenia nie wyślemy nic więcej i nie zapiszemy Cię na żadną listę.'),
     powod:'Dostajesz tę wiadomość, bo ktoś podał ten adres w formularzu katalogu.'});

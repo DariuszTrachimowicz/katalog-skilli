@@ -15,7 +15,9 @@ test('quiz and download preserve business facts; CRM offline does not block resu
   assert.equal((await post('/api/zapis',{email,wynik:[free],premium,zgodaMarketing:consent})).status,200);
   const request=rows().find(r=>r.typ==='wynik-prosba'&&r.email===email);
   assert.equal((await fetch(base+'/api/potwierdz?t='+request.token)).status,200);
-  await fetch(base+'/api/potwierdz?t='+request.token);
+  assert.equal(rows().filter(r=>r.typ==='wynik-potwierdzenie'&&r.token===request.token).length,0,'GET nie potwierdza');
+  assert.equal((await fetch(base+'/api/potwierdz?t='+request.token,{method:'POST'})).status,200);
+  await fetch(base+'/api/potwierdz?t='+request.token,{method:'POST'});
   assert.equal(rows().filter(r=>r.typ==='wynik-potwierdzenie'&&r.token===request.token).length,1);
   assert.deepEqual(request.wynik,[free]);assert.equal(request.premium??undefined,premium);
  }
