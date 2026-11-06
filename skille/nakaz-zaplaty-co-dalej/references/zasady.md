@@ -176,7 +176,7 @@ Sygnatury tylko na pytanie o źródło. SN sprawdzone 5 listopada 2026 r. w SAOS
 | TSUE C-176/17 Profi Credit Polska, wyrok z 13 września 2018 r. | Postępowanie nakazowe z weksla przeciw konsumentowi musi pozwalać na kontrolę umowy z urzędu (źródło wtórne). |
 | TSUE C-419/18 i C-483/18 Profi Credit Polska, wyrok z 7 listopada 2019 r. | Umowa podstawowa przy wekslu podlega kontroli niedozwolonych zapisów; gdy jest w aktach, sąd bada ją z urzędu (źródło wtórne). |
 
-Do weryfikacji (nie podawaj jako źródła i nie wymieniaj sygnatury): TSUE C-632/17 (dzień wyroku), C-531/22 (kontrola przy egzekucji z nakazu, tekst nieotwarty), SN III CZP 128/08 i III CZP 56/13 (stan sprzed obecnych przepisów).
+Do weryfikacji (nie podawaj jako źródła i nie wymieniaj sygnatury): TSUE C-632/17 (dzień wyroku), C-531/22 (kontrola przy egzekucji z nakazu, tekst nieotwarty). Stan sprzed obecnych przepisów, otwarte (pełny tekst, API SN 6.11.2026), nie podawaj jako aktualnej reguły i nie wymieniaj sygnatury: SN III CZP 128/08, uchwała z 16 stycznia 2009 r. (wniosku o przywrócenie terminu do sprzeciwu od nakazu w postępowaniu upominawczym nie można było oddalić na posiedzeniu niejawnym; KPC w brzmieniu z 2009 r., aktualność po późniejszych zmianach zasad posiedzeń nieustalona), SN III CZP 56/13, uchwała z 10 października 2013 r. (po sprzeciwie od nakazu z e-Sądu powód nie dopłacał opłaty od pozwu, bo sprawa trafiała wtedy do sądu właściwości ogólnej; dziś po sprzeciwie sąd umarza postępowanie, sekcja 6).
 
 ## 16. Rejestr źródeł
 

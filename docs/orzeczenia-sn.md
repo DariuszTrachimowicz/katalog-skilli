@@ -28,7 +28,7 @@ Wynik (ok. 76 miejsc w skillach bez kopii): 4 tezy niezgodne z orzeczeniem (III 
 
 Typowe błędy, na które uważać przy nowych tezach: teza sądu niższej instancji albo strony przypisana SN; pominięty warunek (np. drugie wypowiedzenie, niewstąpienie syndyka); pogląd sprzed zmiany ustawy podany jako aktualny.
 
-Zostało ok. 25 innych sygnatur SN ze statusem „nieotwarte” (m.in. mobbing w `zatrudnienie-na-co-dzien.md`, najem w `najem-lokalu-firmowego.md`). Ta sama procedura: `pobierz`, porównanie z tekstem, poprawka w wąskim skillu, `node narzedzia/katalog-do-firmy.mjs`.
+Druga tura tego samego dnia: 27 kolejnych sygnatur SN ze statusem „nieotwarte” (mobbing, B2B, najem lokalu, spory, niewypłacalność). Niezgodne 4: II CSKP 452/22 i II CSKP 1862/22 (nie dotyczą KC art. 673, pogląd sądu apelacyjnego albo inna sprawa), I PK 176/06 (SN odrzucił sztywne minimum czasu mobbingu), I PK 257/17 (pogląd sądu okręgowego uchylony przez SN); 9 nieprecyzyjnych poprawionych. Teraz żadna sygnatura SN w skillach nie ma statusu „nieotwarte”. Nowe orzeczenia: ta sama procedura (`pobierz`, porównanie z tekstem, poprawka w wąskim skillu, `node narzedzia/katalog-do-firmy.mjs`).
 
 Cztery sygnatury mają w API po dwa orzeczenia (postanowienie i wyrok): II KK 429/22, II PK 224/17, III KK 193/23, V CSK 30/13. Tezy dotyczą wyroków.
 

@@ -264,7 +264,7 @@ Elementy z ZATORY art. 13d ust. 2-3: wskazanie podmiotu, opis stanu faktycznego,
 
 ## 6. Orzecznictwo (moduł A)
 
-Baza SN po zmianie serwisu: wyszukiwarka `https://www.sn.pl/pl/wyszukiwarka-orzeczen` (pole „Sygnatura”); stare bezpośrednie linki do PDF zwracają 404. Status „otwarte” = sentencja przeczytana w bazie SN 6.11.2026 (przeglądarka, treść HTML).
+Baza SN po zmianie serwisu: wyszukiwarka `https://www.sn.pl/pl/wyszukiwarka-orzeczen` (pole „Sygnatura”); stare bezpośrednie linki do PDF zwracają 404. Status „otwarte” = sentencja przeczytana w bazie SN 6.11.2026 (przeglądarka, treść HTML); „otwarte (pełny tekst, API SN 6.11.2026)” = sentencja i uzasadnienie przeczytane w oficjalnym API repozytorium2.sn.pl.
 
 | Sygnatura, data, sąd | Teza własnymi słowami | URL | Status |
 |---|---|---|---|
@@ -275,9 +275,9 @@ Baza SN po zmianie serwisu: wyszukiwarka `https://www.sn.pl/pl/wyszukiwarka-orze
 | III CZP 48/19, uchwała, 12.12.2019, SN | Celowe koszty windykacji ponad 40 euro wchodzą w koszty odzyskiwania należności z art. 10 ust. 2 ustawy (brzmienie pierwotne). | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. III CZP 48/19) | otwarte |
 | III CZP 38/25, uchwała, 24.02.2026, SN | Zarzut potrącenia podniesiony po terminie z KPC art. 203¹ § 2 jest bezskuteczną czynnością procesową (art. 167 KPC); w upadłości dodatkowo termin z PU art. 96, którego niezachowanie oznacza utratę prawa potrącenia. | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. III CZP 38/25) | otwarte |
 | III CZP 9/24, uchwała 7 sędziów, 19.03.2025, SN | Skarga pauliańska: przy zbyciu nieruchomości obciążonej hipoteką pokrzywdzenie zachodzi, gdy czynność wytworzyła lub zwiększyła nadwyżkę pasywów nad aktywami dłużnika; ocenia się to na chwilę zamknięcia rozprawy. | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. III CZP 9/24) | otwarte |
-| III CZP 94/15, uchwała, 11.12.2015, SN | Teza nieodczytana (treść tylko w PDF, nieotwarta). Według opisu w wynikach wyszukiwania dotyczy powstania roszczenia o rekompensatę 40 euro. Nie cytować tezy. | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. III CZP 94/15) | nieotwarte |
-| III CZP 2/24, uchwała, 2.07.2024, SN | Teza nieodczytana. Według opisu wyszukiwarki dotyczy pełnomocnictwa procesowego przy zarzucie potrącenia z KPC art. 203¹. | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. III CZP 2/24) | nieotwarte |
-| I CSK 3778/23, postanowienie, 27.03.2025, SN | Teza nieodczytana. Według opisu wyszukiwarki dotyczy relacji oświadczenia o potrąceniu poza procesem i zarzutu w procesie. | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. I CSK 3778/23) | nieotwarte |
+| III CZP 94/15, uchwała, 11.12.2015, SN | Rekompensata 40 euro (ZATORY art. 10 ust. 1, brzmienie pierwotne) należy się bez wykazywania, że wierzyciel poniósł koszty odzyskiwania należności; roszczenie powstaje bez wezwania, z nabyciem prawa do odsetek, po upływie terminu zapłaty z umowy albo ustalonego według ustawy. Sąd może badać nadużycie prawa (KC art. 5). Dziś kwota zależy od wartości świadczenia (40/70/100 euro). | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. III CZP 94/15) | otwarte (pełny tekst, API SN 6.11.2026) |
+| III CZP 2/24, uchwała, 2.07.2024, SN | Do podniesienia zarzutu potrącenia z KPC art. 203¹ i do odbioru takiego oświadczenia przez pełnomocnika strony przeciwnej wystarcza pełnomocnictwo procesowe; odrębne pełnomocnictwo materialnoprawne nie jest potrzebne. Dotyczy zarzutu w piśmie procesowym, nie potrącenia poza procesem. | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. III CZP 2/24) | otwarte (pełny tekst, API SN 6.11.2026) |
+| I CSK 3778/23, postanowienie, 27.03.2025, SN | Zarzutu potrącenia w procesie nie trzeba poprzedzać oświadczeniem o potrąceniu poza procesem: wystarczy oświadczenie w odpowiedzi na pozew doręczone pełnomocnikowi procesowemu powoda (za III CZP 2/24). Potrącenie na wypadek przegrania sporu w innym zakresie nie jest oświadczeniem warunkowym (KC art. 89), a jego skutek liczy się od chwili, gdy potrącenie stało się możliwe (KC art. 499). Wypowiedź przy odmowie przyjęcia skarg kasacyjnych. | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. I CSK 3778/23) | otwarte (pełny tekst, API SN 6.11.2026) |
 
 Do rozważenia (spoza dozwolonych źródeł, nie wpisywać jako źródła): wyrok TSUE C-585/20 (rekompensata od każdej faktury), nieotwierany.
 
