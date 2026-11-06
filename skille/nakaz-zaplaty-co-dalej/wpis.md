@@ -2,7 +2,7 @@
 nazwa: Nakaz zapłaty, co dalej
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.5
+wersja: 1.0.6
 poziom: Działa od razu
 aktualizacja: 2026-11-06
 skrot: Wyjaśnia nakaz zapłaty, pozew, wezwanie od windykatora albo pismo komornika, czyli co to za pismo, ile jest czasu i od kiedy go liczyć, sprzeciw albo zarzuty i ich koszt, skutki braku reakcji, ugoda i raty, oraz układa teczkę dla prawnika.

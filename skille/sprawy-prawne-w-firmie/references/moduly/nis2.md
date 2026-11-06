@@ -131,7 +131,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 
 | Sygnatura | Data | Organ | Teza własnymi słowami | URL | Status |
 |---|---|---|---|---|---|
-| II SA/Wa 846/23 | 2024-02-05 | WSA w Warszawie | Temat wg wyszukiwarki: bank jako operator usługi kluczowej (KSC w dawnym brzmieniu) a żądanie kopii danych z RODO i weryfikacja tożsamości. Tezy nie podaję. | https://orzeczenia.nsa.gov.pl/doc/8C17F5BC71 | nieotwarte (CBOSA nie odpowiedziała 2026-11-06) |
+| II SA/Wa 846/23 | 2024-02-05 | WSA w Warszawie (wyrok nieprawomocny; skargę kasacyjną rozpoznał NSA wyrokiem z 2026-10-06, III OSK 1538/24, którego treści nie otwarto) | Prezes UODO, nakazując bankowi wydanie kopii danych (RODO art. 15 ust. 3), musi rozważyć obowiązki banku jako operatora usługi kluczowej (KSC art. 8 w brzmieniu sprzed 2026-04-03), tajemnicę bankową (Prawo bankowe art. 104) i wymóg silnego uwierzytelnienia; żądanie weryfikacji tożsamości w oddziale przy szerokim wniosku złożonym kanałem bez silnego uwierzytelnienia to podejście oparte na ryzyku, a nie utrudnianie praw (RODO art. 11 ust. 2, art. 12 ust. 6, art. 24 ust. 1). WSA uchylił pkt 1 decyzji z przyczyn proceduralnych (KPA art. 7, art. 77 § 1, art. 107 § 3). | https://orzeczenia.nsa.gov.pl/doc/8C17F5BC71 | otwarte (pełny tekst, CBOSA 6.11.2026) |
 
 Orzecznictwa do znowelizowanej ustawy (od 2026-04-03) nie znalazłem w orzeczenia.nsa.gov.pl ani w sn.pl; kary z art. 73 ust. 1-4 i art. 73a-73c można nakładać dopiero od 2028-04-03 (art. 35 ustawy zmieniającej nie wymienia kary z KSC art. 73 ust. 5; czy może być nałożona przed 2028-04-03, to pytanie do prawnika, reguła 45), decyzje organów i wyroki WSA dopiero się pojawią. Minimum 5 pozycji dla tego modułu jest nieosiągalne bez źródeł spoza listy (TSUE, wytyczne ENISA, Komisji Europejskiej).
 
@@ -142,8 +142,8 @@ Orzecznictwa do znowelizowanej ustawy (od 2026-04-03) nie znalazłem w orzeczeni
 - Ustawa z 25 czerwca 2025 r. o operacyjnej odporności cyfrowej sektora finansowego (DORA; Dz. U. 2025 poz. 1069), w życie 2025-08-07.
 - Ustawa z 29 maja 2026 r. o zmianie ustawy o zarządzaniu kryzysowym (Dz. U. 2026 poz. 815), w życie 2026-07-04 (podmioty krytyczne, dyrektywa CER).
 - Ustawa z 3 lipca 2026 r. o systemach sztucznej inteligencji (Dz. U. 2026 poz. 1003): od 2026-10-28 CSIRT współpracują z Komisją Rozwoju i Bezpieczeństwa SI (KSC art. 26 ust. 3 pkt 24).
-- Ustawa z 31 lipca 2026 r. o zmianie Prawa bankowego (Dz. U. 2026 poz. 1206), zmiana KSC od 2027-01-11 [zakres WYMAGA WERYFIKACJI].
-- Możliwe rozporządzenie Rady Ministrów o szczegółowych wymaganiach SZBI dla rodzajów działalności (KSC art. 8a) i rozporządzenie o certyfikatach audytorów (KSC art. 15 ust. 8): stanu wydania nie sprawdzałem [WYMAGA WERYFIKACJI].
+- Ustawa z 31 lipca 2026 r. o zmianie Prawa bankowego (Dz. U. 2026 poz. 1206), zmiana KSC od 2027-01-11 (art. 35 w zw. z art. 57): w załączniku nr 1, sektor „Bankowość i infrastruktura rynków finansowych”, „oddział banku zagranicznego” zastąpiony „oddziałem z państwa trzeciego” w rozumieniu Prawa bankowego art. 4 ust. 1 pkt 20a; innych zmian KSC ustawa nie wprowadza (tekst z api.sejm.gov.pl, odczyt 2026-11-06).
+- Rozporządzenie Rady Ministrów o szczegółowych wymaganiach SZBI dla rodzajów działalności (KSC art. 8a, przepis fakultatywny: „może określić”): do 2026-11-06 nie wydane (wyszukiwanie tytułów aktów DU z 2025 i 2026 r. w api.sejm.gov.pl). Wykaz certyfikatów audytorów (KSC art. 15 ust. 8, obowiązkowe „określi”): nowego rozporządzenia brak, ELI pokazuje jako obowiązujące rozporządzenie Ministra Cyfryzacji z 12.10.2018 w sprawie wykazu certyfikatów uprawniających do przeprowadzenia audytu (DU/2018/1999) [czy stosuje się do audytów według obecnego art. 15: WYMAGA WERYFIKACJI].
 
 ### C8. Rejestr źródeł (moduł C)
 

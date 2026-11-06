@@ -48,8 +48,8 @@ Terminy liczone od doręczenia, chyba że wskazano inaczej (w procedurze adminis
 | Postanowienie, na które przepis daje zażalenie (także przy błędnym albo brakującym pouczeniu) | zażalenie | 7 dni | organ wyższy przez organ, który wydał | zwykle nie wstrzymuje wykonania |
 | Postanowienie po rozpatrzeniu zażalenia albo kończące postępowanie | skarga do sądu, gdy przepis ją daje | 30 dni | sąd przez organ | według pouczenia i prawnika |
 | Postanowienie bez zażalenia, skargi i sprzeciwu | zarzut w odwołaniu od decyzji | razem z odwołaniem | - | droga wynika z przepisu; rozbieżność z pouczeniem pilnie do prawnika |
-| Pouczenie błędne, niejasne albo brak pouczenia | żądanie uzupełnienia decyzji albo sprostowania pouczenia | 14 dni | urząd, który wydał | procedura administracyjna: termin na środek biegnie od doręczenia albo ustnego ogłoszenia postanowienia o uzupełnieniu albo odmowie; podatki: od decyzji o uzupełnieniu (odmowa: do weryfikacji) |
-| Decyzja ZUS (świadczenia, składki) | odwołanie do sądu powszechnego przez ZUS | według pouczenia [WYMAGA WERYFIKACJI] | ZUS | prawnik |
+| Pouczenie błędne, niejasne albo brak pouczenia | żądanie uzupełnienia decyzji albo sprostowania pouczenia | 14 dni | urząd, który wydał | procedura administracyjna: termin na środek biegnie od doręczenia albo ustnego ogłoszenia postanowienia o uzupełnieniu albo odmowie; podatki: od doręczenia decyzji o uzupełnieniu albo postanowienia o odmowie |
+| Decyzja ZUS (świadczenia, składki) | odwołanie do sądu powszechnego przez ZUS | miesiąc od doręczenia (zawsze według pouczenia) | ZUS | prawnik |
 | Zawiadomienie, wezwanie | wyjaśnienia, dowody, wgląd w akta | termin z pisma | urząd prowadzący | szansa przed decyzją |
 | Brak decyzji w terminie (procedura administracyjna) | ponaglenie, potem skarga na bezczynność albo przewlekłość | po upływie terminu; skarga w każdym czasie po ponagleniu | organ wyższy przez urząd prowadzący; sąd przez urząd | wyznaczenie terminu, ewentualnie grzywna dla urzędu |
 | Decyzja o karze administracyjnej | odwołanie i niezależnie wniosek o ulgę (raty, umorzenie) | 14 dni; wniosek o ulgę także później | organ odwoławczy; organ, który nałożył | zaległość po 14 dniach od ostateczności; wniosek o ulgę nie wstrzymuje egzekucji |
@@ -59,7 +59,7 @@ Terminy liczone od doręczenia, chyba że wskazano inaczej (w procedurze adminis
 | Zajęcie albo inna czynność egzekucyjna | skarga na czynność egzekucyjną | 7 dni od doręczenia dokumentu będącego podstawą tej czynności | organ egzekucyjny | nie wstrzymuje zajęcia |
 | Mandat przy wręczeniu | przyjęcie albo odmowa | od razu | funkcjonariusz | odmowa: sprawa w sądzie |
 | Mandat prawomocny | wniosek o uchylenie, tylko z wąskich przyczyn (w części nadwyżki, gdy grzywna ponad limit) | co do zasady 7 dni od uprawomocnienia; wyjątkowo w każdym czasie | sąd właściwy dla miejsca nałożenia | zwrot grzywny w zakresie uchylenia |
-| Mandat zaoczny | zapłata | 14 dni [WYMAGA WERYFIKACJI: od jakiego zdarzenia, według mandatu] | organ wskazany | brak zapłaty: wniosek do sądu |
+| Mandat zaoczny | zapłata | 14 dni od wystawienia (mandat zostawiony na miejscu) albo od doręczenia (mandat doręczony) | organ wskazany | brak zapłaty: wniosek do sądu |
 | Wezwanie do wskazania kierującego | wskazanie | termin z wezwania | organ wzywający | niewskazanie to osobne wykroczenie (wyjątek: pojazd użyty wbrew woli i wiedzy właściciela przez nieznaną osobę, czemu nie mógł zapobiec; aktualność do weryfikacji) |
 | Uchybiony termin procesowy | prośba o przywrócenie + samo pismo | 7 dni od ustania przeszkody | urząd; przy skardze do sądu wniosek za pośrednictwem urzędu razem ze skargą | wymaga braku winy; nie dotyczy terminów materialnych; przy mandacie do weryfikacji |
 

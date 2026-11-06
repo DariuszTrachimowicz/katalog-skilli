@@ -2,7 +2,7 @@
 nazwa: Sprawy prawne w firmie
 kategoria: Prawo
 status: gotowy
-wersja: 1.1.4
+wersja: 1.1.5
 poziom: Działa od razu
 aktualizacja: 2026-11-06
 skrot: Jeden skill prawny dla firmy bez prawnika na etacie. Sam dobiera moduł do sprawy (umowy, zatrudnienie i B2B, cudzoziemcy, dane osobowe i NIS2, spółka, sukcesja, sprzedaż konsumencka, urzędy i procedury podatkowe, spory, niewypłacalność, marka, najem lokalu, przetargi, pierwsza reakcja w sprawach karnych), sprawdza przepisy we wbudowanych kodeksach i ustawach, pokazuje drogi działania, pisze pisma i przygotowuje kartę sprawy dla prawnika.

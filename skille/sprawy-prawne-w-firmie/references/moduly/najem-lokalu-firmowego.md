@@ -99,7 +99,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 50. Spór dwóch przedsiębiorców o najem to sprawa gospodarcza: wszystkie twierdzenia i dowody trzeba podać w pozwie albo odpowiedzi na pozew. (KPC art. 458² § 1 pkt 1, KPC art. 458⁵ § 1)
 
 **VAT i faktury (skrót)**
-51. Najem lokalu użytkowego jest co do zasady opodatkowany VAT stawką podstawową, a zwolnienie dotyczy najmu na cele wyłącznie mieszkaniowe [spoza plików lokalnych: ustawa o VAT; WYMAGA WERYFIKACJI artykułów przed użyciem w skillu].
+51. Najem lokalu użytkowego jest co do zasady opodatkowany VAT stawką podstawową, a zwolnienie dotyczy tylko najmu nieruchomości o charakterze mieszkalnym na własny rachunek wyłącznie na cele mieszkaniowe (albo na rzecz społecznych agencji najmu) [spoza plików lokalnych: ustawa o VAT art. 43 ust. 1 pkt 36, t.j. Dz.U. 2026 poz. 1263, api.sejm.gov.pl, odczyt 6.11.2026].
 52. Faktury za czynsz wystawia się w KSeF: duzi podatnicy (sprzedaż 2024 ponad 200 mln zł) od 1 lutego 2026 r., pozostali od 1 kwietnia 2026 r.; podatnicy ze sprzedażą fakturowaną do 10 000 zł brutto miesięcznie do końca 2026 r. mogą jeszcze nie wystawiać w KSeF; odbiór w KSeF obowiązkowy od 1 lutego 2026 r. (źródło: ksef.podatki.gov.pl, odczyt 2026-11-06).
 
 ### A3. Co firma może zrobić sama i jakie pisma przygotuje skill
@@ -161,7 +161,7 @@ Brak zweryfikowanego orzecznictwa o: art. 15ze ustawy COVID (galerie, historyczn
 ### A7. Zmiany w toku i świeże (2025-2026)
 
 - KSeF obowiązkowy: odbiór od 2026-02-01, wystawianie od 2026-02-01 (duzi) i 2026-04-01 (pozostali), wyjątek do 10 000 zł miesięcznie do końca 2026 r. (ksef.podatki.gov.pl). Dotyczy faktur za czynsz.
-- Poselski projekt zmiany ustawy o ochronie praw lokatorów, Kodeksu cywilnego i innych ustaw (druk sejmowy nr 2447, X kadencja): ułatwienie wypowiedzenia przy zwłoce z czynszem; dotyczy lokali mieszkalnych, ale zmienia też Kodeks cywilny. Status wg api.sejm.gov.pl: wpłynął 2026-02-27, I czytanie na posiedzeniu Sejmu 2026-04-30, stanowisko rządu 2026-09-02; dalej w komisjach. Wpływ na lokale użytkowe [WYMAGA WERYFIKACJI po treści druku].
+- Poselski projekt zmiany ustawy o ochronie praw lokatorów, mieszkaniowym zasobie gminy i o zmianie Kodeksu cywilnego oraz niektórych innych ustaw (druk sejmowy nr 2447, X kadencja): ułatwienie wypowiedzenia przy zwłoce z czynszem. Mimo tytułu nie zmienia Kodeksu cywilnego: zmienia ustawę o ochronie praw lokatorów (art. 6g, 8a, 11, 14, 17) i KPC art. 1046 (eksmisja), co dotyczy lokali mieszkalnych, oraz KK art. 191 (nowy § 1b) i art. 193 (nowy § 1a), które nie są ograniczone do mieszkań: wyłączają odpowiedzialność karną właściciela lokalu, który przestaje opłacać media, gdy z lokalu korzysta osoba bez tytułu prawnego, oraz właściciela domu, mieszkania, lokalu, pomieszczenia albo ogrodzonego terenu (lub osoby przez niego upoważnionej), gdy zajmuje je osoba bez tytułu prawnego, więc mogłyby objąć także lokal użytkowy zajmowany przez byłego najemcę. Projekt nie obowiązuje. Status wg api.sejm.gov.pl: wpłynął 2026-02-27, I czytanie na posiedzeniu Sejmu 2026-04-30, stanowisko rządu 2026-09-02; dalszych etapów brak (treść druku i przebieg odczytane 2026-11-06).
 - Rządowy projekt zmiany ustawy o ochronie praw lokatorów i Kodeksu cywilnego (wersja 4.0 z 2026-07-15 na gov.pl/web/premier; „najem senioralny”, zasób gminy): dotyczy mieszkań.
 - Nie znalazłem projektów zmieniających KC art. 659-692 wyłącznie dla lokali użytkowych.
 

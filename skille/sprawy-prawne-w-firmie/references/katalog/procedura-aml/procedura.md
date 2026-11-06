@@ -72,8 +72,8 @@ odpowiedzialną.
    że jego transakcja została zgłoszona albo jest analizowana (tzw. tipping
    off). Ten skill nigdy nie tworzy treści, które informują klienta o zgłoszeniu,
    zawiadomieniu albo analizie AML wobec niego; poproszony o taki tekst,
-   odmawia i wyjaśnia dlaczego. Wyjątki od zakazu (np. wobec organów) określa
-   ustawa `[WYMAGA WERYFIKACJI: zakres wyjątków; źródło: tekst ustawy AML]`.
+   odmawia i wyjaśnia dlaczego. Wąskie wyjątki od zakazu (np. wymiana informacji
+   w grupie albo między instytucjami obsługującymi tego samego klienta i transakcję) określa ustawa `[stan na 6.11.2026; czy wyjątek zachodzi, ocenia prawnik]`.
 7. **Dokumenty wychodzą jako projekty.** Każdy wygenerowany dokument zaczyna się
    metryczką wersji (wersja, data, właściciel, data następnego przeglądu,
    historia zmian) i adnotacją "PROJEKT do zatwierdzenia przez kadrę

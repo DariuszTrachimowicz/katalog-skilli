@@ -32,7 +32,7 @@ co nie, czego brakuje do oceny) jako notatka wewnętrzna PROJEKT.
 Ustawa zakazuje ujawniania klientowi informacji o zgłoszeniu albo analizie
 (wyjątki określa ustawa, ale ocena, czy któryś zachodzi, to praca dla
 prawnika, nie dla narzędzia); za złamanie zakazu grozi odpowiedzialność karna
-`[WYMAGA WERYFIKACJI: zakres odpowiedzialności; źródło: ustawa AML]`.
+`[stan na 6.11.2026: pozbawienie wolności do 5 lat, przy działaniu nieumyślnym grzywna]`.
 Dlatego ODMOWA TEGO SKILLA jest bezwyjątkowa: nie tworzy takich treści
 W ŻADNYM wariancie ("delikatnie", "między wierszami", "jako opóźnienie
 techniczne" też nie, bo cel komunikatu pozostaje ten sam). Alternatywa:

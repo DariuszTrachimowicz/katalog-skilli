@@ -48,3 +48,12 @@ Rezerwa, gdyby API zniknęło albo warunki przestały wystarczać:
 - Oferta przy zwykłym przekazaniu informacji (art. 41): 14 dni od otrzymania oferty na jej przyjęcie albo sprzeciw z powodu naruszenia ustawy; nieprzyjęcie w terminie oznacza wycofanie wniosku.
 - Oferta przy stałym dostępie w czasie rzeczywistym (art. 42): 14 dni na przyjęcie, sprzeciw nie przysługuje; nieprzyjęcie w terminie oznacza wycofanie wniosku.
 - Odmowa decyzją: odwołanie do ministra właściwego do spraw informatyzacji (art. 43 ust. 1), 14 dni od doręczenia, za pośrednictwem SN (art. 129 k.p.a.). Adres SN według strony kontaktowej: Plac Krasińskich 2/4/6, 00-951 Warszawa; sprawy informacji publicznej: inf.publ@sn.pl.
+
+## Przegląd wszystkich oznaczeń „do weryfikacji” (6 XI 2026, wieczór)
+
+Polecenie Darka: „sprawdź UD260 i sygnalistów, oraz wszystko co jeszcze nie jest dopracowane”. Około 900 oznaczeń w 21 skillach prawnych podzielono na: K1 instrukcje dla modelu, K2 wartości zmienne sprawdzane w chwili użycia, K3 fakty sprawdzalne w oficjalnych źródłach (176 linii sprawdzonych, około 100 poprawionych merytorycznie), K4 do sprawdzenia przez człowieka (lista: `docs/do-sprawdzenia-recznie.md`). Oceny z cytatami źródeł: `docs/orzeczenia-sn/weryfikacja-2026-11-06/dopracowanie/`.
+
+- UD260 (projekt nowelizacji Prawa upadłościowego): druk sejmowy 3085, po pierwszym czytaniu, sprawozdanie komisji druk 3280 z 5 XI 2026; w wersji komisji wejście w życie po 6 miesiącach (projekt rządowy: 30 dni; prasa podawała 14 dni).
+- Sygnaliści: w bazie SN brak orzeczeń merytorycznych na gruncie ustawy; I KK 142/25 i I PSK 80/26 o działaniu ustawy w czasie.
+- Orzeczenia NSA pobierane pojedynczo ze stron `/doc/` (robots.txt pozwala; wyszukiwarka CBOSA zabroniona): razem 11 w `docs/orzeczenia-nsa/`.
+- Źródła niedostępne automatycznie (EUR-Lex i curia przy wielu zapytaniach, portale sądów powszechnych, legislacja.gov.pl, część podatki.gov.pl) zostają w K4; blokad nie obchodzimy.

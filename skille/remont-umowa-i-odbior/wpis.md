@@ -2,9 +2,9 @@
 nazwa: Remont, umowa i odbiór
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-11-05
+aktualizacja: 2026-11-06
 skrot: Prowadzi osobę prywatną przez remont albo budowę zlecane ekipie (co powinno być w umowie, ryczałt czy kosztorys, zaliczka czy zadatek, harmonogram, kary, materiały, podwykonawcy, odbiór i usterki, rękojmia, umowa podpisana w domu, gdy ekipa się spóźnia, partaczy albo znika), układa kalendarz terminów, teczkę dowodów i pytania do prawnika albo rzeczoznawcy oraz sprawdza umowę albo protokół według listy kontrolnej.
 korzysc: Wiesz, co ma być w umowie z ekipą, jak odebrać prace i co zrobić, gdy coś idzie źle.
 szukaj: umowa o remont, umowa z ekipą remontową, umowa na wykończenie mieszkania, zaliczka a zadatek, odbiór prac remontowych, protokół odbioru usterki, rękojmia za remont, ekipa nie kończy remontu, wykonawca zniknął z zaliczką, ryczałt a dopłaty, prace dodatkowe remont, umowa podpisana w domu odstąpienie, podwykonawca remont sprzeciw, VAT 8 % remont, remont na czarno

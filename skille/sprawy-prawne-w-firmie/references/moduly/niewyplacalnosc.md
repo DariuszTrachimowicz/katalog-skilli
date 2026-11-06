@@ -167,7 +167,7 @@ Sprawdzone w pełnym tekście (repozytorium SN, 6.11.2026): wyrok SN z 26 lipca 
 
 | Akt / druk | Co | Status (6.11.2026) | Źródło |
 |---|---|---|---|
-| Dz.U. 2025 poz. 1085 (druk 1263) | Nowelizacja PR, PU i ustawy o KRZ wdrażająca dyrektywę restrukturyzacyjną (m.in. głosowanie w grupach, przyjęcie układu mimo sprzeciwu części grup: PR art. 119 ust. 3-5 w obecnym tekście) | obowiązuje; data wejścia wg ELI 23.08.2025 [WYMAGA WERYFIKACJI przepisów przejściowych] | ELI DU/2025/1085 |
+| Dz.U. 2025 poz. 1085 (druk 1263) | Nowelizacja PR, PU i ustawy o KRZ wdrażająca dyrektywę restrukturyzacyjną (m.in. głosowanie w grupach, przyjęcie układu mimo sprzeciwu części grup: PR art. 119 ust. 3-5 w obecnym tekście) | obowiązuje od 23.08.2025 (ELI); przepisy przejściowe (art. 4): gdy przed tym dniem wpłynął wniosek o ogłoszenie upadłości, o uznanie zagranicznego postępowania upadłościowego, wniosek restrukturyzacyjny albo wniosek o stwierdzenie wykonania, zmianę lub uchylenie układu, albo ustalono dzień układowy (PR art. 211 ust. 1), stosuje się przepisy dotychczasowe; art. 12a ustawy o KRZ stosuje się później, według art. 5 (tekst z api.sejm.gov.pl, odczyt 6.11.2026) | ELI DU/2025/1085 |
 | Druk 3085 | Rządowy projekt zmiany PU, PR i ustawy o KRZ: usprawnienie oddłużania osób fizycznych (także przedsiębiorców), etap planu spłaty | I czytanie w komisjach 5.11.2026 | api.sejm.gov.pl proces 3085 |
 | Dz.U. 2026 poz. 1206 | Ustawa o zmianie Prawa bankowego i innych: zmiany PU (art. 452, 456), PR (art. 4 ust. 2 pkt 4), OP | wchodzą 11.01.2027 (wg notek ISAP) | notki ISAP w PU.md, PR.md |
 | Dz.U. 2026 poz. 1440 (druk 2737) | KSH: uproszczenie sp. z o.o., forma elektroniczna; KSH art. 299 bez zmian | wchodzi 3.12.2026 | ELI DU/2026/1440 |

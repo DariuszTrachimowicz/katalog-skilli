@@ -105,14 +105,14 @@ Struktura projektu procedury (rozdziały):
    `[WYMAGA WERYFIKACJI: przesłanki i terminy ustawowe]`.
 9. **Kontrola wewnętrzna**: kto i jak często sprawdza wykonywanie procedury
    (w małej instytucji choćby coroczny samoprzegląd z notatką).
-10. **Przechowywanie dokumentacji** (co, gdzie, jak długo `[WYMAGA WERYFIKACJI:
-    okresy]`), ochrona danych w zgodzie z RODO (bez rozstrzygania kwestii RODO,
+10. **Przechowywanie dokumentacji** (co, gdzie, jak długo: co do zasady 5 lat od zakończenia
+    relacji lub transakcji okazjonalnej, analizy 5 lat od ich przeprowadzenia `[stan na 6.11.2026; przedłużenie na żądanie GIIF sprawdź w ustawie]`), ochrona danych w zgodzie z RODO (bez rozstrzygania kwestii RODO,
     odesłanie do dokumentacji RODO instytucji).
 11. **Szkolenia**: kto, jak często, jak dokumentowane.
 12. **Zgłaszanie naruszeń (whistleblowing)**: kanał zgłoszeń (także
     anonimowych), kto przyjmuje, poufność i ochrona zgłaszającego, działania
-    następcze, zasady usuwania danych `[WYMAGA WERYFIKACJI: wymogi ustawowe
-    dla procedury zgłoszeń]`.
+    następcze, termin usunięcia danych osobowych ze zgłoszeń `[stan na 6.11.2026;
+    sprawdź aktualny tekst ustawy]`.
 13. Postanowienia końcowe: zatwierdzenie przez kadrę kierowniczą, wejście
     w życie, przegląd.
 
@@ -191,7 +191,7 @@ Listy czynności na kolejne etapy relacji, dopasowane do usług instytucji:
   sankcyjnych (wynik i rozstrzygnięcie zbieżności odnotowane), cel
   i charakter relacji, ocena ryzyka (komponent 3), decyzja o nawiązaniu
   relacji: osoba odpowiedzialna. Gdy któregoś środka nie da się zastosować:
-  odnotuj i postępuj wg procedury `[WYMAGA WERYFIKACJI: skutki ustawowe]`.
+  co do zasady nie nawiązuj relacji ani nie przeprowadzaj transakcji, istniejącą relację rozwiąż, odnotuj przeszkodę i oceń podstawę zawiadomienia GIIF wg procedury `[stan na 6.11.2026; sprawdź aktualny tekst ustawy]`.
 - **W trakcie relacji**: monitorowanie transakcji względem profilu,
   aktualizacja danych i oceny wg terminów z modelu, okresowe sprawdzenia
   sankcyjne, reagowanie na sygnały z katalogu procedury.

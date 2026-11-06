@@ -2,9 +2,9 @@
 nazwa: Regulamin sklepu, lista kontrolna
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.1
+wersja: 1.0.2
 poziom: Działa od razu
-aktualizacja: 2026-11-05
+aktualizacja: 2026-11-06
 skrot: Sprawdza regulamin własnego sklepu internetowego według listy kontrolnej z wagą (dane sprzedawcy, zamówienie, ceny, dostawa, odstąpienie w 14 dni, zwrot pieniędzy, reklamacje, przedsiębiorca na prawach konsumenta, treści cyfrowe, opinie, zmiany regulaminu), wskazuje braki i zapisy, które mogą być niezgodne, i układa pytania do prawnika.
 korzysc: Wiesz, czego brakuje w regulaminie sklepu, co może być niezgodne i o co zapytać prawnika.
 szukaj: regulamin sklepu internetowego, regulamin sklepu 2026, wzór regulaminu sklepu, regulamin z generatora, klauzule niedozwolone w regulaminie, odstąpienie od umowy 14 dni sklep, zwrot towaru sklep internetowy, zwrot pieniędzy 14 dni, reklamacja sklep internetowy, przedsiębiorca na prawach konsumenta, najniższa cena z 30 dni, Omnibus sklep, opinie w sklepie internetowym, UOKiK regulamin sklepu, platforma ODR

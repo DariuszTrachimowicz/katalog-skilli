@@ -63,7 +63,7 @@ Według przepisów, wyroków TSUE, wspólnego stanowiska europejskich organów (
 
 - **Zasada:** wysyłanie informacji handlowej (każda informacja promująca towary, usługi albo wizerunek firmy) e-mailem, SMS-em, komunikatorem, a także telefon z ofertą, w tym wykonywany przez człowieka, wymaga **uprzedniej** zgody adresata. Pierwszy e-mail z pytaniem „czy możemy wysyłać oferty”, jeśli promuje firmę, sam jest informacją handlową [WYMAGA WERYFIKACJI: brak stanowiska urzędów po 10.11.2024].
 - **Podanie adresu:** przepis pozwala wyrazić zgodę przez podanie adresu e-mail w celu otrzymywania informacji handlowych, ale zgoda nadal ma standard RODO; adres podany w formularzu kontaktowym albo przy zamówieniu jest podany w innym celu i nie daje zgody na oferty.
-- **Firmy (B2B):** przepis chroni każdego abonenta i użytkownika, także firmy, więc zgoda jest potrzebna także na adresy firmowe; adres imienny w firmie i dane jednoosobowej firmy to dodatkowo dane osobowe. „B2B nie potrzebuje zgody” w Polsce się nie sprawdza [WYMAGA WERYFIKACJI: brak orzecznictwa po 10.11.2024].
+- **Firmy (B2B):** przepis chroni każdego abonenta i użytkownika, także firmy, więc zgoda jest potrzebna także na adresy firmowe; adres imienny w firmie i dane jednoosobowej firmy to dodatkowo dane osobowe. „B2B nie potrzebuje zgody” w Polsce się nie sprawdza.
 - **Dotychczasowi klienci:** polskie przepisy nie przewidują wyjątku (znanego z prawa unijnego jako „soft opt-in”) pozwalającego bez zgody reklamować klientom podobne produkty; bezpieczne założenie: także do klientów, którzy już kupowali, wysyłka ofert wymaga zgody. Czy firma może powołać się wprost na unijną dyrektywę: pytanie do prawnika.
 - **Kupione albo zebrane z internetu bazy:** nie dają zgody na wysyłkę; przy danych zebranych nie od osoby dochodzi obowiązek poinformowania jej o przetwarzaniu.
 - **Termin tej informacji:** przy danych osobowych pozyskanych z rejestru (np. CEIDG), strony firmy albo kupionej bazy przekaż wymagane informacje zasadniczo najpóźniej w miesiąc, a wcześniej przy pierwszej komunikacji z osobą albo przy pierwszym ujawnieniu danych innemu odbiorcy, jeżeli nastąpią wcześniej; sprawdź wyjątki. Informacja nie zastępuje uprzedniej zgody na marketing elektroniczny.
@@ -73,7 +73,7 @@ Według przepisów, wyroków TSUE, wspólnego stanowiska europejskich organów (
 - **Zgoda osobno od reszty:** zgoda marketingowa nie może być ukryta w akceptacji regulaminu albo polityki prywatności ani być warunkiem zakupu, konta czy reklamacji, gdy nie jest do nich potrzebna.
 - **Bonus za zapis (e-book, rabat):** nie jest wprost zakazany, gdy oferta jest jasna (dostajesz e-book, bo zapisujesz się na newsletter), a wypis łatwy i nie odbiera już otrzymanej korzyści; ryzyko rośnie, gdy zgoda warunkuje coś niezwiązanego z newsletterem [WYMAGA WERYFIKACJI: interpretacja, brak decyzji urzędu].
 - **Double opt-in** (potwierdzenie zapisu linkiem): nie jest wymagany przepisem, ale jest dobrym dowodem zgody; e-mail potwierdzający nie powinien zawierać promocji [WYMAGA WERYFIKACJI: interpretacja].
-- **Uciążliwe nakłanianie konsumentów** e-mailem albo telefonem może być też agresywną praktyką rynkową (ryzyko po stronie UOKiK) [WYMAGA WERYFIKACJI: decyzje UOKiK niesprawdzone].
+- **Uciążliwe nakłanianie konsumentów** e-mailem albo telefonem, niewywołane przez samego konsumenta, jest też agresywną praktyką rynkową zakazaną w każdych okolicznościach (ryzyko po stronie UOKiK).
 
 ## 6. Formularze i klauzule informacyjne
 
@@ -92,14 +92,14 @@ Według przepisów, wyroków TSUE, wspólnego stanowiska europejskich organów (
 
 ## 8. Przekazywanie danych do USA
 
-- Od 10 lipca 2023 r. obowiązują unijno-amerykańskie ramy ochrony danych (Data Privacy Framework): przekazanie do firmy z USA, która ma certyfikację w tych ramach, ma podstawę w decyzji Komisji. Sąd UE oddalił skargę na tę decyzję 3 września 2025 r.; odwołanie do TSUE jest w toku [WYMAGA WERYFIKACJI: stan odwołania na curia.europa.eu]. Certyfikację konkretnego dostawcy sprawdza się na jego liście [WYMAGA WERYFIKACJI: lista nieprzeglądana].
+- Od 10 lipca 2023 r. obowiązują unijno-amerykańskie ramy ochrony danych (Data Privacy Framework): przekazanie do firmy z USA, która ma certyfikację w tych ramach, ma podstawę w decyzji Komisji. Sąd UE oddalił skargę na tę decyzję 3 września 2025 r.; odwołanie do TSUE wniesiono 31 października 2025 r. i na 6 listopada 2026 r. wyroku jeszcze nie ma, więc przed powołaniem się sprawdź, czy zapadł. Certyfikację konkretnego dostawcy sprawdza się na jego liście [WYMAGA WERYFIKACJI: lista nieprzeglądana].
 - Klauzula i polityka prywatności podają, że dane są przekazywane, do kogo i na jakiej podstawie; ogólnik „dane mogą być przekazywane do USA” to uwaga do wyjaśnienia.
 - Ramy dotyczą podstawy przekazania, nie zastępują zgody na cookies ani na marketing. Bez ram (dostawca niecertyfikowany albo ramy unieważnione przez TSUE) potrzebny jest inny mechanizm przekazania, np. standardowe klauzule umowne z oceną, czy w praktyce zapewniają odpowiednią ochronę, i ewentualnymi dodatkowymi zabezpieczeniami; sama deklaracja dostawcy o serwerach w UE nie rozstrzyga sprawy, jeśli dane są dostępne z USA [WYMAGA WERYFIKACJI: ocena konkretnego dostawcy]. Pytanie do prawnika albo IOD.
 
 ## 9. Czat i czatbot AI
 
 - **Widżet czatu** zwykle zapisuje identyfikatory w przeglądarce; ładowany na każdej podstronie przed kliknięciem nie jest usługą, której użytkownik żąda; po otwarciu czatu może się nią stać [WYMAGA WERYFIKACJI: wykładnia]. Spotykana praktyka: wczytywanie widżetu dopiero po świadomym wyborze odwiedzającego, poprzedzonym informacją o dostawcy. Treść rozmowy to dane osobowe: informacja w oknie czatu, dostawca czatu jako odbiorca, ewentualne przekazanie poza EOG.
-- **Czatbot oparty na AI:** od 2 sierpnia 2026 r. osoby rozmawiające z systemem AI mają być o tym informowane, chyba że to oczywiste; obowiązek ciąży na dostawcy systemu, a firma, która sama buduje bota i udostępnia go pod swoją nazwą, może być uznana za dostawcę [WYMAGA WERYFIKACJI: kwalifikacja, prawnik]. Niezależnie od roli do sprawdzenia jest, czy rozmówca od początku rozmowy wie, że rozmawia z systemem AI. Polski organ i kary za ten obowiązek: [WYMAGA WERYFIKACJI].
+- **Czatbot oparty na AI:** od 2 sierpnia 2026 r. osoby rozmawiające z systemem AI mają być o tym informowane, chyba że to oczywiste; obowiązek ciąży na dostawcy systemu, a firma, która sama buduje bota i udostępnia go pod swoją nazwą, może być uznana za dostawcę [WYMAGA WERYFIKACJI: kwalifikacja, prawnik]. Niezależnie od roli do sprawdzenia jest, czy rozmówca od początku rozmowy wie, że rozmawia z systemem AI. Polskim organem nadzoru jest Komisja Rozwoju i Bezpieczeństwa Sztucznej Inteligencji; kary nakłada ona w wysokości i na warunkach z unijnego aktu o sztucznej inteligencji, a krajowe przepisy o karach obowiązują od 28 października 2026 r.
 
 ## 10. Kary i nadzór
 

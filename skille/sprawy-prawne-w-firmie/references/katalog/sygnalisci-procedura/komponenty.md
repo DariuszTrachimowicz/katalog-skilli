@@ -51,7 +51,7 @@ PROCEDURA ZGŁOSZEŃ WEWNĘTRZNYCH W [UZUPEŁNIJ: nazwa podmiotu]
 § 1 Cel i zakres
 1. Procedura określa zasady przyjmowania zgłoszeń o naruszeniach prawa, podejmowania działań następczych i ochrony osób zgłaszających w [nazwa].
 2. Dotyczy naruszeń prawa w następujących dziedzinach: [lista 17 dziedzin wg stan-prawny.md, sekcja 2, albo odesłanie do załącznika].
-3. (D) [DECYZJA: czy procedura obejmuje też naruszenia regulacji wewnętrznych i standardów etycznych ustanowionych na podstawie prawa powszechnego i z nim zgodnych: UZUPEŁNIJ nazwy dokumentów. Do zgłoszeń dotyczących wyłącznie tych regulacji nie stosuje się § 8 (zgłoszenia zewnętrzne) ani zasad o ujawnieniu publicznym; ochrona przed odwetem zostaje. Rozdzielenie trybów do potwierdzenia z prawnikiem.]
+3. (D) [DECYZJA: czy procedura obejmuje też naruszenia regulacji wewnętrznych i standardów etycznych ustanowionych na podstawie prawa powszechnego i z nim zgodnych: UZUPEŁNIJ nazwy dokumentów. Do zgłoszeń dotyczących wyłącznie tych regulacji nie stosuje się § 8 (zgłoszenia zewnętrzne) ani zasad o ujawnieniu publicznym; ochrona przed odwetem zostaje.]
 4. Zgłoszenie może złożyć każda osoba, która informację uzyskała w kontekście pracy dla [nazwa], w tym pracownik, osoba na umowie cywilnoprawnej, współpracujący przedsiębiorca, stażysta, praktykant, wolontariusz, kandydat do pracy i były pracownik.
 
 § 2 Kto przyjmuje zgłoszenia (O1)
@@ -85,7 +85,7 @@ Informację zwrotną o planowanych lub podjętych działaniach następczych i ic
 
 § 9 Poufność i dane osobowe
 1. Tożsamość zgłaszającego, osoby, której zgłoszenie dotyczy, i osób trzecich jest chroniona; nie ujawnia się jej osobom nieupoważnionym, z zastrzeżeniem wyjątków wynikających z przepisów [do opisania z prawnikiem]. Dostęp do zgłoszeń mają wyłącznie osoby z pisemnym upoważnieniem, zobowiązane do tajemnicy także po ustaniu zatrudnienia lub współpracy; sama funkcja nie daje dostępu.
-2. Administratorem danych jest [nazwa]; zasady przetwarzania określa klauzula informacyjna (załącznik). Rejestr zgłoszeń prowadzi [DECYZJA]. Dane przechowuje się 3 lata po zakończeniu roku kalendarzowego, w którym zakończono działania następcze lub postępowania nimi zainicjowane; dane bez znaczenia dla sprawy nie są zbierane, a zebrane przypadkowo usuwa się niezwłocznie [termin i wyjątki: do potwierdzenia z IOD].
+2. Administratorem danych jest [nazwa]; zasady przetwarzania określa klauzula informacyjna (załącznik). Rejestr zgłoszeń prowadzi [DECYZJA]. Dane przechowuje się 3 lata po zakończeniu roku kalendarzowego, w którym zakończono działania następcze lub postępowania nimi zainicjowane; dane bez znaczenia dla sprawy nie są zbierane, a zebrane przypadkowo usuwa się niezwłocznie, najpóźniej w 14 dni od ustalenia, że nie mają znaczenia dla sprawy. Po upływie okresu przechowywania dane usuwa się, a dokumenty niszczy, chyba że stanowią część akt postępowania przygotowawczego, sądowego lub sądowoadministracyjnego.
 
 § 10 Ochrona przed odwetem
 1. Wobec osoby zgłaszającej, osób jej pomagających i powiązanych nie podejmuje się działań odwetowych ani prób lub gróźb takich działań.

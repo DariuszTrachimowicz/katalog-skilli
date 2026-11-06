@@ -2,7 +2,7 @@
 nazwa: Procedura dla sygnalistów
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.2
+wersja: 1.0.3
 poziom: Działa od razu
 aktualizacja: 2026-11-06
 skrot: Buduje z firmą projekt procedury zgłoszeń wewnętrznych dla sygnalistów wraz z rejestrem, upoważnieniami, klauzulą informacyjną, planem wdrożenia i kartą obsługi zgłoszenia, albo sprawdza procedurę, którą już macie.
@@ -45,7 +45,7 @@ Liczb na 1 stycznia albo 1 lipca (pełne etaty i osoby na innych umowach), infor
 - Nie rozstrzygnie, czy Twoja firma ma obowiązek: pokaże sposób liczenia, daty pomiaru i wyjątki, policzy z podanych liczb i wyśle przypadki graniczne (B2B zatrudniający innych, agencja pracy tymczasowej, sektor bez progu) do prawnika.
 - Nie oceni konkretnego zgłoszenia ani tego, czy zwolnienie osoby, która zgłosiła, było odwetem; to sprawa dla prawnika i sądu, a skill zapisze tylko pytania.
 - Projekty wymagają przeglądu prawnika, a klauzula informacyjna inspektora ochrony danych; skill nie dobiera podstaw prawnych przetwarzania, nie przesądza konstrukcji umów o dane i nie formułuje postanowień sankcyjnych.
-- W sprawdzonych źródłach nie zidentyfikował orzeczeń Sądu Najwyższego na gruncie tych przepisów i mówi to wprost, zamiast zmyślać sygnatury; odsyła do bazy orzeczeń i prawnika.
+- Sąd Najwyższy nie rozstrzygał jeszcze sprawy na gruncie tych przepisów (przeszukana oficjalna baza SN, 6 listopada 2026), co skill mówi wprost, zamiast zmyślać sygnatury; odsyła do bazy orzeczeń sądów powszechnych i prawnika.
 - Procedury zewnętrzne organów publicznych, szczególne rozwiązania samorządowe i wspólne procedury grup kapitałowych tylko nazywa i kieruje do specjalisty.
 
 ## Czego ten skill nie robi celowo
