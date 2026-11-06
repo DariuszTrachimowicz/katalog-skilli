@@ -20,6 +20,8 @@ import {createSubscriptions, appendDurable, ORIGINS} from './subskrypcje.mjs';
 import {createEventInbox} from './crm-events.mjs';
 import {newsletterConfirmation,mailMimeBody} from './mail-design.mjs';
 import {subscriptionPage,subscriptionForm,subscriptionResult,sendSubscriptionPage} from './subscription-pages.mjs';
+import {odbiorcy,zmienione,wypisanyZWersji,TRESC_ZGODY_WERSJI,WERSJA_ZGODY_WERSJI} from './powiadomienia-wersji.mjs';
+import {writeFileSync,renameSync} from 'node:fs';
 
 const KORZEN = join(dirname(fileURLToPath(import.meta.url)), "..");
 const cfg = JSON.parse(readFileSync(join(KORZEN, "config.json"), "utf8"));
@@ -166,6 +168,8 @@ function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy,
     };
     gniazdo.setTimeout(20_000, () => koniec(new Error("SMTP: przekroczony czas")));
     gniazdo.on("error", koniec);
+    // Serwer zamyka połączenie bez odpowiedzi: bez tego obietnica wisiałaby bez końca.
+    gniazdo.on("close", () => koniec(new Error("SMTP: serwer zamknął połączenie")));
 
     // Odpowiedź SMTP jest kompletna, gdy ostatnia linia zaczyna się od "XXX " -
     // wcześniejsze linie wieloliniowej odpowiedzi mają "XXX-".
@@ -219,6 +223,7 @@ function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy,
       });
       gniazdo.setTimeout(20_000, () => koniec(new Error("SMTP: przekroczony czas (TLS)")));
       gniazdo.on("error", koniec);
+      gniazdo.on("close", () => koniec(new Error("SMTP: serwer zamknął połączenie (TLS)")));
 
       await komenda(`EHLO ${cfg.domena}`, 250);
       await komenda("AUTH PLAIN " + Buffer.from(`\0${uzytkownik}\0${haslo}`, "utf8").toString("base64"), 235);
@@ -382,10 +387,10 @@ function odpowiedz(res, kod, dane) {
 function stronaHtml(res, tytul, tresc) {
   const html = `<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>${tytul}</title>
-<meta name="robots" content="noindex"><link rel="stylesheet" href="/fonty.css?v=${W_FONTY}"><link rel="stylesheet" href="/styl.css?v=${W_STYL}"></head><body>
+<meta name="robots" content="noindex"><meta name="referrer" content="no-referrer"><link rel="stylesheet" href="/fonty.css?v=${W_FONTY}"><link rel="stylesheet" href="/styl.css?v=${W_STYL}"></head><body>
 <main class="wrap"><article class="art"><h1>${tytul}</h1>${tresc}
 <div class="powrot"><a class="btn" href="/">Wróć do katalogu</a></div></article></main></body></html>`;
-  res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
+  res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store", "Referrer-Policy": "no-referrer" });
   res.end(html);
 }
 
@@ -682,10 +687,12 @@ const serwer = createServer(async (req, res) => {
       const telefon = String(ciało.telefon || "").replace(/[^0-9+ ]/g, "").trim().slice(0, 20) || null;
       const kiedy = new Date().toISOString();
       const zgodaMarketing = ciało.zgodaMarketing === true ? kiedy : null;
+      const powiadomWersje = ciało.powiadomWersje === true
+        ? { udzielona: true, tresc: TRESC_ZGODY_WERSJI, wersja: WERSJA_ZGODY_WERSJI, kiedy, kanal: "email" } : null;
 
       const token = randomBytes(24).toString("hex");
       dopisz({ typ: "pobranie-prosba", email, skill, nazwa, osoba, telefon,
-        zgodaMarketing, token, kiedy, ip, zgoda: dowodZgody("pobranie-triala", ciało.zgodaMarketing === true, kiedy), zrodlo: "pobranie-paczki" });
+        zgodaMarketing, token, kiedy, ip, zgoda: dowodZgody("pobranie-triala", ciało.zgodaMarketing === true, kiedy), powiadomWersje, zrodlo: "pobranie-paczki" });
       const dodatkoweSubskrypcje=subskrypcje.subscribeOptional({...ciało,email,zgodaEmail:false},'https://skille.aixperts.pl','katalog-pobranie');
 
       // Centrum imports the durable request independently of optional marketing consent.
@@ -711,7 +718,10 @@ ${trial ? `
 To wersja trialowa płatnego skilla. Pełna wersja i cennik:
 ${BAZA}/skill/${s.id}/
 ` : ""}
-Jeśli to nie Ty prosiłeś o paczkę, po prostu zignoruj tę wiadomość.
+${powiadomWersje ? `Przy pobraniu zaznaczono prośbę o wiadomość, gdy wyjdzie nowa wersja tego skilla. Napiszemy tylko wtedy, a link pobrania wyżej zawsze da najnowszą wersję. Rezygnacja: ${BAZA}/api/wypisz-wersje?t=${token}
+(powiadomienia zaczną działać po pierwszym pobraniu z linku wyżej)
+
+` : ""}Jeśli to nie Ty prosiłeś o paczkę, po prostu zignoruj tę wiadomość.
 
 ${cfg.nazwaSerwisu}
 ${BAZA}`,
@@ -745,6 +755,15 @@ ${BAZA}`,
         "Cache-Control": "no-store",
       });
       return res.end(dane);
+    }
+
+    /* rezygnacja z powiadomień o nowych wersjach jednego skilla */
+    if (url.pathname === "/api/wypisz-wersje") {
+      const token = url.searchParams.get("t") || "";
+      const prosba = wczytaj().find((r) => r.typ === "pobranie-prosba" && r.token && bezpieczneRowne(r.token, token));
+      if (prosba && !wypisanyZWersji(wczytaj(), prosba.email, prosba.skill)) appendDurable(C.plikDanych, { typ: "wypis-wersji", email: prosba.email, skill: prosba.skill, token: prosba.token, kiedy: new Date().toISOString() });
+      return stronaHtml(res, "Nie będziemy pisać o nowych wersjach",
+        "<p class='skrot'>Wyłączyliśmy powiadomienia o nowych wersjach tego skilla na ten adres.</p><p>Najnowszą wersję zawsze znajdziesz na stronie skilla w katalogu. Gdy przy kolejnym pobraniu znów zaznaczysz powiadomienia, wrócą.</p>");
     }
 
     /* wypisanie */
@@ -788,7 +807,68 @@ try {
   process.exit(1);
 }
 
+// Po każdym wdrożeniu (start kontenera) mail do osób, które przy pobraniu poprosiły
+// o powiadomienie, gdy skill ma nową wersję. Pierwszy start tylko zapisuje stan.
+const PLIK_WERSJI = join(dirname(C.plikDanych), "wersje-powiadomione.json");
+// Wypisy z rejestru wspólnych subskrypcji (strony wypisu newslettera) też blokują powiadomienia.
+function wycofaniaSubskrypcji() {
+  const m = new Map();
+  // Tylko wypis z e-maila albo z całości; wypis z samego SMS i anulowanie pojedynczego zgłoszenia nie dotyczą tych wiadomości.
+  for (const r of subskrypcje.rows()) if (r.type === "subscription-withdrawn" && r.email && ["email", "all"].includes(r.channel) && !r.request_only) {
+    const kiedy = new Date(r.occurred_at).toISOString();
+    if (!(m.get(r.email) >= kiedy)) m.set(r.email, kiedy);
+  }
+  return m;
+}
+async function powiadomONowychWersjach() {
+  const skille = SKILLE.filter((s) => s.wersja && s.gotowy);
+  const stan = existsSync(PLIK_WERSJI) ? JSON.parse(readFileSync(PLIK_WERSJI, "utf8")) : {};
+  for (const s of zmienione(skille, stan)) {
+    let wyslane = 0, nieudane = 0;
+    for (const o of odbiorcy(wczytaj(), s.id, s.wersja, wycofaniaSubskrypcji())) {
+      // Ponowna kontrola tuż przed wysyłką: wypis kliknięty w trakcie kolejki ma pierwszeństwo.
+      // shortcut: każda kontrola czyta oba dzienniki (koszt odbiorcy × wiersze), przy setkach odbiorców przejść na indeks przyrostowy
+      if (!odbiorcy(wczytaj(), s.id, s.wersja, wycofaniaSubskrypcji()).some((x) => x.email === o.email)) continue;
+      // Trwała rezerwacja przed wysyłką: bez ponowień, więc nigdy dwa maile o tej samej wersji.
+      appendDurable(C.plikDanych, { typ: "powiadomienie-wersji-proba", email: o.email, skill: s.id, wersja: s.wersja, kiedy: new Date().toISOString() });
+      // Wyjątek transportu = nieudana próba tego adresu, kolejka idzie dalej.
+      const ok = await wyslijMail({
+        do: o.email,
+        temat: `Nowa wersja skilla: ${s.nazwa} (${s.wersja})`,
+        tresc: `Cześć,
+
+wyszła nowa wersja skilla „${s.nazwa}”: ${s.wersja}${s.aktualizacja ? ` z ${s.aktualizacja}` : ""}. Piszemy, bo przy pobraniu tego skilla zaznaczono prośbę o taką wiadomość.
+${s.zmiany ? `
+Co nowego: ${s.zmiany}
+` : ""}
+Pobierz nową wersję (Twój link, zawsze daje najnowszą):
+${BAZA}/api/pobierz?t=${o.token}
+
+JAK PODMIENIĆ
+1. Claude: Ustawienia -> Umiejętności, usuń starą wersję i prześlij nowy plik
+   ChatGPT: Skills, usuń starą wersję i wgraj nowy plik
+2. Otwórz nową rozmowę
+
+Opis skilla: ${BAZA}/skill/${s.id}/
+
+Nie chcesz więcej takich wiadomości o tym skillu? Kliknij:
+${BAZA}/api/wypisz-wersje?t=${o.token}
+
+${cfg.nazwaSerwisu}
+${BAZA}`,
+      }).catch((e) => { console.error("Powiadomienie o wersji: błąd wysyłki:", e.message); return false; });
+      appendDurable(C.plikDanych, { typ: "powiadomienie-wersji", email: o.email, skill: s.id, wersja: s.wersja, ok, kiedy: new Date().toISOString() });
+      if (ok) wyslane++; else nieudane++;
+    }
+    console.log(`Powiadomienia o wersji ${s.id} ${s.wersja}: wysłano ${wyslane}, nieudane ${nieudane} (bez ponowień, adresy w dzienniku jako ok:false)`);
+  }
+  const nowy = Object.fromEntries(skille.map((s) => [s.id, s.wersja]));
+  writeFileSync(PLIK_WERSJI + ".tmp", JSON.stringify(nowy, null, 2));
+  renameSync(PLIK_WERSJI + ".tmp", PLIK_WERSJI);
+}
+
 serwer.listen(C.port, HOST, () => {
+  powiadomONowychWersjach().catch((e) => console.error("Powiadomienia o wersjach nieudane:", e.message));
   console.log(`Usługa zapisów działa na http://${HOST}:${C.port}`);
   console.log(`Dane: ${C.plikDanych}`);
   console.log(`Wysyłka: tryb "${C.wysylka.tryb}"${C.wysylka.tryb === "log" ? ` (maile trafiają do ${DZIENNIK_MAILI}, nic nie wychodzi na zewnątrz)` : ""}`);

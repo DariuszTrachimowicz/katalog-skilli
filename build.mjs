@@ -287,6 +287,7 @@ var b=f.querySelector("button");b.disabled=true;b.textContent="Wysyłam…";
 var dane={email:f.email.value,skill:skill};
 if(f.telefon)dane.telefon=f.telefon.value;
 if(f.zgodaSms){dane.zgodaSms=f.zgodaSms.checked;dane.wersjaZgodySms="2026-09-09";}
+if(f.powiadomWersje)dane.powiadomWersje=f.powiadomWersje.checked;
 var podpis=JSON.stringify(dane);if(f._pobraniePodpis!==podpis){f._pobraniePodpis=podpis;f._pobranieId=crypto.randomUUID();}dane.requestId=f._pobranieId;
 try{var o=await fetch("/api/pobranie",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(dane)});
 var d=await o.json().catch(function(){return{}});
@@ -304,6 +305,7 @@ function formularzPobrania(idPaczki) {
       <label class="sr-only" for="dl-phone-${idPaczki}">Telefon z prefiksem kraju, opcjonalnie</label>
       <input type="tel" name="telefon" id="dl-phone-${idPaczki}" placeholder="Telefon, np. +48 500 100 200 (opcjonalnie)" autocomplete="tel">
       <label class="dl-zgoda aix-sub-choice" data-aix-sms-phone="#dl-phone-${idPaczki}" hidden><input type="checkbox" name="zgodaSms" disabled> <span>Chcę otrzymywać od D-X.PL Michał Jaśkiewicz wiadomości SMS o ofertach, nowościach i promocjach AiXperts i Digital Xperts na podany numer telefonu. Zgodę mogę wycofać w każdej chwili.</span></label>
+      <label class="dl-zgoda"><input type="checkbox" name="powiadomWersje"> <span>Napisz do mnie, gdy wyjdzie nowa wersja tego skilla (poprawki, zmiany przepisów). Tylko o tym skillu, bez reklam. Wypis jednym kliknięciem w każdej wiadomości.</span></label>
       <button class="btn" data-umami-event="prosba-o-paczke" data-umami-event-skill="${idPaczki}">Wyślij link</button>
     </form>
     <p class="dl-rodo">Dane posłużą do dostarczenia pliku i odnotowania pobrania, również w naszym CRM. Zapis do newslettera tylko za Twoją zgodą, szczegóły w <a href="/prywatnosc/">polityce prywatności</a>.</p>
@@ -1101,7 +1103,7 @@ zapisz(join(WY, ".well-known", "ai-catalog.json"), ard); // starsza ścieżka, t
 zapisz(
   join(WY, "dane", "skille.json"),
   JSON.stringify(
-    skille.map((s) => ({ id: s.id, nazwa: s.nazwa, skrot: s.skrot, gotowy: s.status === "gotowy", platny: false, cena: "", trial: false })),
+    skille.map((s) => ({ id: s.id, nazwa: s.nazwa, skrot: s.skrot, gotowy: s.status === "gotowy", platny: false, cena: "", trial: false, wersja: s.wersja, aktualizacja: s.aktualizacja || "", ...(s.zmiany ? { zmiany: s.zmiany } : {}) })),
     null,
     2
   )
