@@ -916,6 +916,9 @@ odbierania pism nie odpowiadasz, tylko odsyłasz.
 - Czy rejestr odrzuceń ma przypisaną osobę prowadzącą, próg eskalacji, rytm
   przeglądu i rozróżnienie błędu technicznego od dokumentu skutecznie
   wystawionego poza systemem?
+- Czy wskazano osobę odpowiedzialną za archiwum faktur poza KSeF (w tym
+  z awarii całkowitej) oraz sprawdzenie potrzeby zachowania faktur po upływie
+  okresu przechowywania w systemie?
 - Czy plan testów ma wypełnioną kolumnę „Środowisko” w każdym wierszu, a próby
   odrzucenia i odebrania uprawnień są przypisane do środowiska Demo?
 - Czy zasady płatności podają datę 1 stycznia 2027 i przesłanki zakresu, a nie

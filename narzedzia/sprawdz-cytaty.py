@@ -54,7 +54,7 @@ def sprawdz(plik):
             blok = artykuly(skrot).get(art)
             if blok is None:
                 bledy.append(f"{plik.name}:{nr}: {skrot} art. {art} nie istnieje w {skrot}.md")
-            elif par and not re.search(r"(^|[\s\[<])§\s*" + re.escape(par) + r"\.", blok):
+            elif par and not re.search(r"(^|[\s\[<.])§\s*" + re.escape(par) + r"\.", blok):
                 bledy.append(f"{plik.name}:{nr}: {skrot} art. {art} § {par}: brak paragrafu w {skrot}.md")
             elif ust and re.search(r"§\s*1\.", blok):
                 bledy.append(f"{plik.name}:{nr}: {skrot} art. {art} ma paragrafy (§), nie ustępy")
@@ -63,14 +63,14 @@ def sprawdz(plik):
             elif re.match(r"^[\[<]?Art\.\s+\S+\s*\(uchylony\)", blok):
                 bledy.append(f"{plik.name}:{nr}: {skrot} art. {art} jest uchylony")
             # Dalsze numery w liście albo zakresie („art. 118, 120”, „§ 2-4”, „ust. 4 i 5”): ta sama jednostka co ostatnia.
-            ogon = re.match(r"((?:\s*(?:,|-|\bi\b|\boraz\b)\s*\d+[" + IDX + r"]*[a-z]?\b(?!\s*(?:r\.|zł|dni|lat|%)))+)", linia[m.end():])
+            ogon = re.match(r"((?:\s*(?:,|-|\bi\b|\boraz\b)\s*(?:§\s*|ust\.\s*)?\d+[" + IDX + r"]*[a-z]?\b(?!\s*(?:r\.|zł|dni|lat|%)))+)", linia[m.end():])
             if ogon and blok is not None:
                 for nr2 in re.findall(r"\d+[" + IDX + r"]*[a-z]?", ogon.group(1)):
                     n += 1
                     if ust:
                         ok = re.search(r"(^|[\s\[<.])" + re.escape(nr2) + r"\.\s", blok)
                     elif par:
-                        ok = re.search(r"(^|[\s\[<])§\s*" + re.escape(nr2) + r"\.", blok)
+                        ok = re.search(r"(^|[\s\[<.])§\s*" + re.escape(nr2) + r"\.", blok)
                     else:
                         ok = artykuly(skrot).get(nr2)
                     if not ok:

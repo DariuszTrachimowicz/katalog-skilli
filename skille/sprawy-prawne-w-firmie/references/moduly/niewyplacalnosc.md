@@ -25,8 +25,8 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 
 1. Upadłość ogłasza się wobec dłużnika niewypłacalnego (PU art. 10).
 2. Dłużnik jest niewypłacalny, gdy utracił zdolność do wykonywania wymagalnych zobowiązań pieniężnych; domniemywa się to, gdy opóźnienie w płaceniu przekracza **3 miesiące** (PU art. 11 ust. 1 i 1a).
-3. Spółka kapitałowa (osoba prawna) jest niewypłacalna także wtedy, gdy jej zobowiązania pieniężne przekraczają wartość majątku i trwa to ponad **24 miesiące** (do majątku nie wlicza się składników, które nie wchodzą do masy upadłości, PU art. 11 ust. 3); domniemanie, gdy według bilansu zobowiązania (bez rezerw i zobowiązań wobec jednostek powiązanych) przekraczają aktywa ponad 24 miesiące (PU art. 11 ust. 2 i 5). Do tego testu nie wlicza się zobowiązań przyszłych (także pod warunkiem zawieszającym) ani zobowiązań wobec wspólnika lub akcjonariusza z pożyczki albo podobnej czynności, ale tylko tych z kategorii czwartej (PU art. 11 ust. 4 w zw. z PU art. 342 ust. 1 pkt 4): udzielonych w ciągu 5 lat przed upadłością, bez wyjątków z PU art. 342 ust. 5 (np. pożyczka w toku restrukturyzacji albo od wspólnika z mniej niż 10 % głosów, który nie jest członkiem organu i nie prowadzi faktycznie spraw spółki). Pozostałe pożyczki wspólników się wlicza. To osobna reguła od bilansowego domniemania, które pomija rezerwy i zobowiązania wobec jednostek powiązanych (PU art. 11 ust. 5).
-4. Sąd może oddalić wniosek przy przesłance bilansowej, gdy nie ma zagrożenia utraty płynności w niedługim czasie (PU art. 11 ust. 6). Przesłanki bilansowej nie stosuje się do spółek osobowych z osobą fizyczną odpowiadającą bez ograniczeń (art. 11 ust. 7).
+3. Osoba prawna (sp. z o.o., PSA, S.A.), a także jednostka organizacyjna ze zdolnością prawną, w tym spółka osobowa, w której żaden wspólnik odpowiadający bez ograniczeń nie jest osobą fizyczną (np. sp. z o.o. sp.k.), jest niewypłacalna także wtedy, gdy jej zobowiązania pieniężne przekraczają wartość majątku i trwa to ponad **24 miesiące** (PU art. 11 ust. 2 i ust. 7; nie oceniaj tego po samej nazwie formy, sprawdź rodzaj wspólników) (do majątku nie wlicza się składników, które nie wchodzą do masy upadłości, PU art. 11 ust. 3); domniemanie, gdy według bilansu zobowiązania (bez rezerw i zobowiązań wobec jednostek powiązanych) przekraczają aktywa ponad 24 miesiące (PU art. 11 ust. 2 i 5). Do tego testu nie wlicza się zobowiązań przyszłych (także pod warunkiem zawieszającym) ani zobowiązań wobec wspólnika lub akcjonariusza z pożyczki albo podobnej czynności, ale tylko tych z kategorii czwartej (PU art. 11 ust. 4 w zw. z PU art. 342 ust. 1 pkt 4): udzielonych w ciągu 5 lat przed upadłością, bez wyjątków z PU art. 342 ust. 5 (np. pożyczka w toku restrukturyzacji albo od wspólnika z mniej niż 10 % głosów, który nie jest członkiem organu i nie prowadzi faktycznie spraw spółki). Pozostałe pożyczki wspólników się wlicza. To osobna reguła od bilansowego domniemania, które pomija rezerwy i zobowiązania wobec jednostek powiązanych (PU art. 11 ust. 5).
+4. Sąd może oddalić wniosek przy przesłance bilansowej, gdy nie ma zagrożenia utraty płynności w niedługim czasie (PU art. 11 ust. 6). Przesłanki bilansowej nie stosuje się do spółek osobowych z osobą fizyczną odpowiadającą bez ograniczeń (PU art. 11 ust. 7).
 5. Dłużnik **zagrożony niewypłacalnością** to taki, którego sytuacja wskazuje, że wkrótce może stać się niewypłacalny; wobec niego (i wobec niewypłacalnego) można prowadzić restrukturyzację (PR art. 6 ust. 1-3).
 
 ### Obowiązek wniosku o upadłość i odpowiedzialność
@@ -39,20 +39,23 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 11. Wniosek o upadłość może złożyć dłużnik i każdy jego wierzyciel osobisty (PU art. 20 ust. 1). Wniosek wierzyciela sąd oddali, gdy dłużnik wykaże, że cała wierzytelność jest sporna, a spór powstał przed wnioskiem (PU art. 12a).
 12. Gdy majątek nie wystarcza nawet na koszty postępowania, sąd oddala wniosek (PU art. 13 ust. 1) i ustala, czy można rozwiązać spółkę z KRS bez likwidacji (art. 13 ust. 2a). Oddalenie z tego powodu nie zwalnia zarządu z odpowiedzialności z KSH art. 299 (SN III CZP 65/17, dla członka zarządu, który objął funkcję w czasie niewypłacalności).
 
-### Odpowiedzialność członków zarządu sp. z o.o. za długi (KSH art. 299)
+### Odpowiedzialność członków zarządu sp. z o.o. i PSA za długi (KSH art. 299, KSH art. 300¹³²)
 
 13. Gdy egzekucja przeciw spółce okaże się bezskuteczna, członkowie zarządu odpowiadają solidarnie za jej zobowiązania (KSH art. 299 § 1). Wierzyciel zwykle ma tytuł przeciw spółce i wykazuje bezskuteczność egzekucji (choćby częściowej), najczęściej postanowieniem komornika o umorzeniu egzekucji. Wcześniejsza egzekucja nie jest bezwarunkowym wymogiem: bezskuteczność można wykazać każdym dowodem, np. oddaleniem wniosku o upadłość z braku majątku albo umorzeniem innej egzekucji (orzecznictwo SN, np. II CSK 301/07 [WYMAGA WERYFIKACJI: sn.pl]).
 14. Członek zarządu uwalnia się, gdy wykaże, że: wniosek o upadłość zgłoszono we właściwym czasie albo w tym czasie otwarto restrukturyzację lub zatwierdzono układ; albo niezgłoszenie nie nastąpiło z jego winy; albo wierzyciel mimo to nie poniósł szkody (KSH art. 299 § 2). Ciężar dowodu po stronie członka zarządu.
 15. Brak odpowiedzialności za niezłożenie wniosku w czasie egzekucji przez zarząd przymusowy lub sprzedaż przedsiębiorstwa (KSH art. 299 § 4). Przepis stosuje się też do likwidatorów (poza ustanowionymi przez sąd) (KSH art. 299¹).
 16. Powództwo przeciw członkowi zarządu jest sprawą gospodarczą (KPC art. 458² § 1 pkt 3 i 7).
 17. Członek zarządu, który objął funkcję, gdy spółka już była niewypłacalna, odpowiada za długi powstałe po objęciu funkcji, nawet gdyby wniosek o upadłość został oddalony z powodu braku majątku (SN III CZP 65/17).
+17a. W PSA bezskuteczność egzekucji również może prowadzić do solidarnej odpowiedzialności członków zarządu za zobowiązania spółki, z ustawowymi przesłankami uwolnienia (KSH art. 300¹³² § 1 i § 2); gdy w PSA działa rada dyrektorów, przepis stosuje się odpowiednio do dyrektorów (KSH art. 4 § 2¹). Nie przenoś automatycznie całego opisu sp. z o.o.: najpierw ustal model organów i okres pełnienia funkcji, a podatki i składki oceniaj osobno (OP art. 116 § 1, SUS art. 31).
 
 ### Odpowiedzialność za zaległości podatkowe (OP art. 116)
 
 18. Za zaległości podatkowe sp. z o.o., PSA i S.A. (także w organizacji) członkowie zarządu odpowiadają solidarnie całym majątkiem, gdy egzekucja z majątku spółki okazała się bezskuteczna w całości lub części, a członek zarządu nie wykazał, że we właściwym czasie zgłoszono wniosek o upadłość (albo otwarto restrukturyzację, zatwierdzono układ), albo że niezgłoszenie nastąpiło bez jego winy, i nie wskazał mienia spółki pozwalającego zaspokoić zaległości w znacznej części (OP art. 116 § 1).
 19. Odpowiedzialność obejmuje zaległości z terminem płatności w czasie pełnienia funkcji (OP art. 116 § 2) i dotyczy także byłych członków zarządu (§ 4). Członek zarządu może uwolnić się, wykazując, że w czasie jego kadencji nie było podstaw do wniosku o upadłość (NSA II FPS 3/09, na gruncie dawnego brzmienia; późniejsze orzecznictwo WSA i NSA uznaje ją za aktualną, odczyt pośredni).
 20. Organ nie może wydać decyzji o odpowiedzialności, gdy od końca roku powstania zaległości minęło 5 lat (OP art. 118 § 1). Analogiczne reguły dla zarządów innych osób prawnych (OP art. 116a).
-21. Za zaległe składki ZUS spółki członkowie zarządu odpowiadają na tych samych zasadach co za podatki, bo do należności z tytułu składek stosuje się odpowiednio m.in. OP art. 116 (SUS art. 31: „art. 115-117”).
+21. Za zaległe składki ZUS spółki członkowie zarządu odpowiadają co do zasady jak za podatki, bo do należności z tytułu składek stosuje się odpowiednio m.in. OP art. 116 (SUS art. 31: „art. 115-117”); odwołanie i przedawnienie są jednak inne (reguły 21a i 21b).
+21a. Przy ZUS nie stosuj podatkowego trzyletniego terminu od końca roku doręczenia decyzji: należność z decyzji o odpowiedzialności osoby trzeciej przedawnia się po 5 latach od końca roku, w którym decyzję wydano (SUS art. 24 ust. 5d; SUS art. 31 odsyła tylko do OP art. 118 § 1). Datę przedawnienia ustal z prawnikiem po sprawdzeniu zdarzeń wpływających na bieg terminu.
+21b. Od decyzji ZUS o odpowiedzialności za zaległe składki odwołanie do sądu wnosi się na piśmie za pośrednictwem jednostki ZUS, która wydała decyzję, w miesiąc od doręczenia; to projekt poziomu B (SUS art. 83 ust. 2 i ust. 5, KPC art. 477⁹ § 1).
 
 ### Postępowania restrukturyzacyjne w zarysie
 
@@ -65,6 +68,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 28. Postępowanie restrukturyzacyjne wszczyna się co do zasady tylko na wniosek dłużnika (PR art. 7 ust. 1). Sąd odmawia otwarcia, gdy prowadziłoby to do pokrzywdzenia wierzycieli; układowe i sanację także bez uprawdopodobnionej zdolności do bieżącego regulowania kosztów i nowych zobowiązań (PR art. 8 ust. 1 i 2). Wymagany jest wstępny plan restrukturyzacyjny (PR art. 9).
 29. Od otwarcia przyspieszonego, układowego, sanacji do ich zakończenia nie można ogłosić upadłości; wniosek o upadłość czeka (PU art. 9a ust. 1).
 30. Układ przyjmuje większość głosujących wierzycieli mających co najmniej 2/3 sumy głosujących wierzytelności; przy głosowaniu w grupach także możliwe przyjęcie mimo sprzeciwu części grup (PR art. 119 ust. 1-4). Układ obejmuje co do zasady wierzytelności sprzed otwarcia (w PZU sprzed dnia układowego) (PR art. 150 ust. 1, art. 211 ust. 4), nie obejmuje m.in. alimentów i (bez zgody) wierzytelności ze stosunku pracy (PR art. 151). Sąd odmawia zatwierdzenia układu, gdy narusza prawo albo oczywiste jest, że nie zostanie wykonany, np. dłużnik nie płaci bieżących zobowiązań (PR art. 165 ust. 1).
+30a. Składek i innych należności wobec ZUS wskazanych w PR art. 160 ust. 1 nie redukuje się w układzie: dopuszczalne jest wyłącznie rozłożenie na raty albo odroczenie płatności (PR art. 160 ust. 1). Oddziel je w propozycjach układowych od długów, dla których doradca może rozważyć zmniejszenie.
 31. Od odpowiedzialności za niezłożenie wniosku o upadłość uwalnia **otwarcie postępowania restrukturyzacyjnego albo zatwierdzenie układu** we właściwym czasie, a nie samo złożenie wniosku restrukturyzacyjnego (PU art. 21 ust. 3; KSH art. 299 § 2; OP art. 116 § 1 pkt 1 lit. a). Wniosek restrukturyzacyjny trzeba więc złożyć na tyle wcześnie, by sąd zdążył otworzyć postępowanie, albo równolegle chronić się wnioskiem o upadłość [ocena czasu dla prawnika].
 
 ### Pisma, opłaty, KRZ
@@ -76,11 +80,14 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 
 ### Przestępstwa na szkodę wierzycieli (krótko)
 
-36. Kto przy grożącej niewypłacalności lub upadłości usuwa, ukrywa, zbywa, darowuje, niszczy, pozornie obciąża majątek i przez to udaremnia lub uszczupla zaspokojenie wierzyciela: do 3 lat; przy szkodzie wielu wierzycieli od 6 miesięcy do 8 lat; wobec majątku zajętego lub zagrożonego zajęciem w celu udaremnienia orzeczenia od 3 miesięcy do 5 lat (KK art. 300 § 1-3). § 1 ściga się na wniosek pokrzywdzonego, chyba że jest nim Skarb Państwa (§ 4).
-37. Przeniesienie majątku do nowo tworzonej spółki przez dłużnika kilku wierzycieli w celu udaremnienia ich zaspokojenia oraz doprowadzenie do własnej upadłości: od 3 miesięcy do 5 lat; lekkomyślne doprowadzenie do niewypłacalności: do 2 lat (KK art. 301 § 1-3).
-38. **Faworyzowanie wierzycieli:** kto przy grożącej niewypłacalności, nie mogąc zaspokoić wszystkich, spłaca lub zabezpiecza tylko niektórych na szkodę pozostałych: do 2 lat (KK art. 302 § 1); łapówka dla wierzyciela za działanie na szkodę innych i jej przyjęcie: do 3 lat (art. 302 § 2 i 3). Odpowiedź na pytanie B1.9: wybiórcza spłata przy grożącej niewypłacalności to ryzyko karne.
+36. Kto przy grożącej niewypłacalności lub upadłości usuwa, ukrywa, zbywa, darowuje, niszczy, rzeczywiście lub pozornie obciąża albo uszkadza składniki swojego majątku i przez to udaremnia lub uszczupla zaspokojenie wierzyciela: do 3 lat; przy szkodzie wielu wierzycieli od 6 miesięcy do 8 lat; wobec majątku zajętego lub zagrożonego zajęciem w celu udaremnienia orzeczenia od 3 miesięcy do 5 lat (KK art. 300 § 1-3). § 1 ściga się na wniosek pokrzywdzonego, chyba że jest nim Skarb Państwa (§ 4).
+37. Dłużnik kilku wierzycieli, który tworzy nową jednostkę gospodarczą i przenosi na nią składniki swojego majątku, przez co udaremnia lub ogranicza zaspokojenie ich należności, albo doprowadza do swojej upadłości lub niewypłacalności: od 3 miesięcy do 5 lat (KK art. 301 § 1 i § 2). Dłużnik kilku wierzycieli, który w sposób lekkomyślny doprowadza do swojej upadłości lub niewypłacalności, w szczególności przez trwonienie majątku, zaciąganie zobowiązań albo transakcje oczywiście sprzeczne z zasadami gospodarowania: grzywna, ograniczenie wolności albo pozbawienie wolności do 2 lat (KK art. 301 § 3). Nie każdy dalszy zakup na kredyt jest przestępstwem, ale pytanie o dalsze kredytowanie firmy, która już nie płaci na bieżąco, to sygnał do pilnej konsultacji z prawnikiem albo doradcą restrukturyzacyjnym.
+38. **Faworyzowanie wierzycieli:** kto w razie grożącej niewypłacalności lub upadłości, nie mogąc zaspokoić wszystkich wierzycieli, spłaca lub zabezpiecza tylko niektórych, czym działa na szkodę pozostałych: grzywna, ograniczenie wolności albo pozbawienie wolności do 2 lat (KK art. 302 § 1). Udzielenie albo obietnica korzyści majątkowej wierzycielowi za działanie na szkodę innych wierzycieli w związku z postępowaniem upadłościowym lub zmierzającym do zapobiegnięcia upadłości, a także przyjęcie albo żądanie takiej korzyści przez wierzyciela: do 3 lat (KK art. 302 § 2 i § 3). Odpowiedź na pytanie 9 z części 1: wybiórcza spłata przy grożącej niewypłacalności to ryzyko karne, ale zależy od spełnienia pozostałych znamion, nie od samej kolejności przelewów; nie kwalifikuj tak każdej ugody.
 39. Za te przestępstwa odpowiada jak dłużnik także osoba zajmująca się sprawami majątkowymi dłużnika (członek zarządu, prokurent, faktyczny zarządca) (KK art. 308).
+39a. Niewpłacenie w terminie pobranego podatku (np. zaliczek PIT z wynagrodzeń) to odrębne ryzyko karne skarbowe; jak sprawca odpowiada osoba zajmująca się sprawami finansowymi spółki, np. członek zarządu (KKS art. 9 § 3, KKS art. 77 § 1-3). Kwalifikacja i kara zależą m.in. od kwoty (przy małej wartości grzywna, poniżej progu wykroczenie skarbowe), więc nie przypisuj każdej zaległości zagrożenia pozbawieniem wolności; wpłata całości przed wszczęciem postępowania może mieć znaczenie dla złagodzenia albo odstąpienia od kary, ale go nie gwarantuje (KKS art. 77 § 4 i § 5). Kolejności płatności nie wybieraj na podstawie samego zagrożenia karą; dane przygotuj dla prawnika i doradcy restrukturyzacyjnego.
+39b. Wobec sprawcy przestępstw z KK art. 300-302, który dobrowolnie naprawił szkodę w całości, sąd może zastosować nadzwyczajne złagodzenie kary, a nawet odstąpić od jej wymierzenia (KK art. 307 § 1).
 40. Wierzyciel, wobec którego dłużnik wyzbył się majątku, ma dodatkowo skargę pauliańską (KC art. 527, KC art. 534; `moduly/spory-z-kontrahentem.md`, punkt 73).
+40a. Po ogłoszeniu upadłości darowizna albo rozporządzenie majątkiem za świadczenie rażąco niższe od wartości, dokonane w ciągu roku przed złożeniem wniosku, są bezskuteczne wobec masy upadłości (PU art. 127 ust. 1). Zbierz takie transakcje z ostatniego roku, a z ostatnich 6 miesięcy także zapłaty i zabezpieczenia długów niewymagalnych; tu otrzymujący może żądać uznania czynności za skuteczną, jeśli nie wiedział o podstawie upadłości (PU art. 127 ust. 3).
 
 ### Perspektywa wierzyciela niewypłacalnej firmy
 
@@ -109,7 +116,7 @@ Ustalenie najwcześniejszej daty niewypłacalności: przede wszystkim dnia, w kt
 Elementy: **oświadczenie dłużnika o prawdziwości danych we wniosku**, obowiązkowe: bez niego wniosek zwraca się bez wzywania do uzupełnienia, a nieprawdziwe dane rodzą odpowiedzialność za szkodę (PU art. 25 ust. 1-3); PU art. 22 ust. 1 pkt 1-5 (dane dłużnika, reprezentantów z PESEL, NIP, ośrodek działalności, okoliczności i uprawdopodobnienie niewypłacalności, informacja o systemach płatności i spółce publicznej), załączniki z PU art. 23 ust. 1 pkt 1-9 albo uzasadnienie ich braku (art. 23 ust. 3), dowód opłaty 1 000 zł (KOSZTY art. 74 pkt 1) i zaliczki (PU art. 22a), podpis elektroniczny osoby uprawnionej (PU art. 216a ust. 1a). Projekt zawsze do weryfikacji przez prawnika lub doradcę restrukturyzacyjnego przed złożeniem.
 
 ### Dokument 6. Pakiet do doradcy restrukturyzacyjnego
-Lista wierzycieli, spis majątku, bilans i rachunek wyników za 24 miesiące, prognoza przepływów na 3-6 miesięcy, lista egzekucji i zajęć, lista umów kluczowych (najem lokalu, leasingi, kredyty), propozycja układowa robocza (raty, redukcja, karencja), pytania o wybór trybu (PZU przy spornych do 15 %, układowe przy powyżej 15 %, sanacja przy egzekucjach i potrzebie zmian w umowach).
+Lista wierzycieli, spis majątku, bilans i rachunek wyników za 24 miesiące, prognoza przepływów na 3-6 miesięcy, lista egzekucji i zajęć, lista umów kluczowych (najem lokalu, leasingi, kredyty), propozycja układowa robocza (raty, redukcja, karencja; należności ZUS z PR art. 160 ust. 1 tylko raty albo odroczenie, reguła 30a), pytania o wybór trybu (PZU przy spornych do 15 %, układowe przy powyżej 15 %, sanacja przy egzekucjach i potrzebie zmian w umowach).
 
 ### Pismo 7 (wierzyciel). Pozew przeciw członkowi zarządu z KSH art. 299
 Tylko projekt dla prawnika: tytuł przeciw spółce, postanowienie komornika o umorzeniu egzekucji jako bezskutecznej (albo dowody oczywistej bezskuteczności), okres pełnienia funkcji (KRS historyczny), daty powstania zobowiązania. Sprawa gospodarcza (KPC art. 458² § 1 pkt 7), pełna prekluzja.
@@ -121,7 +128,7 @@ Tylko projekt dla prawnika: tytuł przeciw spółce, postanowienie komornika o u
 - Wybór między upadłością a restrukturyzacją; każda restrukturyzacja wymaga nadzorcy albo zarządcy z licencją (PR art. 23, art. 210).
 - Pomysł przeniesienia majątku, marki lub pracowników do innej spółki, spłaty „najważniejszych” wierzycieli, ustanowienia zabezpieczeń dla wybranych (KK art. 300-302).
 - Wniosek wierzyciela o upadłość albo o zakaz prowadzenia działalności przeciw firmie lub osobie.
-- Spółka osobowa, PSA, S.A., fundacja rodzinna, osoba fizyczna prowadząca działalność (inne reguły, w tym upadłość konsumencka: osobny skill `upadlosc-konsumencka-przygotowanie`).
+- Spółka osobowa, S.A., fundacja rodzinna, osoba fizyczna prowadząca działalność (inne reguły, w tym upadłość konsumencka: osobny skill `upadlosc-konsumencka-przygotowanie`). PSA: najpierw ustal model organów (zarząd albo rada dyrektorów); odpowiedzialność za długi według reguły 17a, bez automatycznego przenoszenia całego opisu sp. z o.o. (KSH art. 300¹³², KSH art. 4 § 2¹).
 - Egzekucja z przedsiębiorstwa, zarząd przymusowy, kredyty z klauzulami wypowiedzenia, leasingi.
 - Postępowanie karne skarbowe, niewpłacony VAT lub PIT pracowników.
 
@@ -135,12 +142,12 @@ Tylko projekt dla prawnika: tytuł przeciw spółce, postanowienie komornika o u
 6. Jaki jest majątek i czy jest obciążony (hipoteki, zastawy, przewłaszczenia, leasing).
 7. Czy toczą się egzekucje, jaki komornik, czy zajęto rachunek.
 8. Jaki udział mają wierzytelności sporne uprawniające do głosowania w sumie wierzytelności uprawniających do głosowania nad układem (próg 15 %, PR art. 3 ust. 2 pkt 2 i ust. 3 pkt 2); nie licz go od wszystkich długów.
-9. Czy w ostatnich 6 miesiącach spłacano wybranych wierzycieli, ustanawiano zabezpieczenia, sprzedawano majątek, przenoszono go do podmiotów powiązanych.
+9. Czy w ostatnich 6 miesiącach spłacano wybranych wierzycieli albo ustanawiano zabezpieczenia, a w ostatnim roku darowano albo sprzedawano majątek poniżej wartości, przenoszono go do podmiotów powiązanych (PU art. 127 ust. 1 i ust. 3).
 10. Czy w ostatnich 10 latach była restrukturyzacja lub PZU z obwieszczeniem (PR art. 226a ust. 2).
 11. Czy zarząd ma podział obowiązków i kto wiedział o sytuacji (wina przy KSH art. 299 § 2, PU art. 21 ust. 3).
 12. Czy użytkownik pyta jako dłużnik czy jako wierzyciel niewypłacalnej firmy.
 
-## 6. Orzecznictwo (moduł B)
+## 6. Orzecznictwo
 
 | Sygnatura, data, sąd | Teza własnymi słowami | URL | Status |
 |---|---|---|---|
@@ -149,7 +156,7 @@ Tylko projekt dla prawnika: tytuł przeciw spółce, postanowienie komornika o u
 | III CZP 38/25, uchwała, 24.02.2026, SN | Termin na potrącenie w upadłości (PU art. 96) i termin zarzutu potrącenia w procesie (KPC art. 203¹) działają równolegle; niezachowanie terminu z PU art. 96 oznacza utratę prawa potrącenia. | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. III CZP 38/25) | otwarte |
 | III CZP 9/24, uchwała 7 sędziów, 19.03.2025, SN | Pokrzywdzenie wierzycieli przy skardze pauliańskiej to powstanie lub zwiększenie nadwyżki pasywów nad aktywami; ocena na chwilę zamknięcia rozprawy. | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. III CZP 9/24) | otwarte |
 | III CZP 61/19, postanowienie, 30.06.2020, SN | SN **odmówił podjęcia uchwały** w pytaniu, czy niezłożenie wniosku o upadłość przy braku majątku, z dalszym zaciąganiem zobowiązań, obniża wartość przedsiębiorstwa i pokrzywdza wierzycieli w rozumieniu przepisów o zakazie prowadzenia działalności (PU art. 373). Zagadnienie pozostaje nierozstrzygnięte na poziomie uchwały. | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. III CZP 61/19) | otwarte |
-| III CZP 72/08, uchwała 7 sędziów, 7.11.2008, SN | Teza nieodczytana (PDF nieotwarty). Według opisu w wynikach wyszukiwania dotyczy charakteru odpowiedzialności z KSH art. 299 i jej przedawnienia. | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. III CZP 72/08) | nieotwarte |
+| III CZP 72/08, uchwała 7 sędziów, 7.11.2008, SN | Roszczenia wierzycieli z KSH art. 299 przedawniają się według przepisów o czynach niedozwolonych (teza odczytana w pełnym tekście, zob. `moduly/spolka-na-co-dzien.md`, orzecznictwo poz. 1). | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. III CZP 72/08) | otwarte |
 | III CZP 108/12, uchwała, 28.02.2013, SN | **Nie dotyczy KSH art. 299**: wspólnik spółki jawnej, który zapłacił wierzycielowi spółki, może żądać od innego wspólnika zwrotu odpowiedniej części wraz z kosztami procesu (teza z otwartego tekstu, moduł spolka-na-co-dzien, tabela orzeczeń poz. 10; opis wyszukiwarki o art. 299 był błędny). Nie powołuj w sprawach odpowiedzialności zarządu. | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. III CZP 108/12) | otwarte (w module spolka-na-co-dzien) |
 | III CZP 129/10, uchwała, 17.02.2011, SN | Teza nieodczytana. Według opisu wyszukiwarki dotyczy zarzutów członka zarządu (potrącenie po powstaniu tytułu). | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. III CZP 129/10) | nieotwarte |
 | II CSK 229/15, wyrok, 12.02.2016, SN | Teza nieodczytana. Według opisu wyszukiwarki dotyczy zakresu czasowego odpowiedzialności członka zarządu (zobowiązania z okresu funkcji). | https://www.sn.pl/pl/wyszukiwarka-orzeczen (sygn. II CSK 229/15) | nieotwarte |
@@ -172,21 +179,13 @@ Do dalszego sprawdzenia (nieotwarte, sygnatury z wyszukiwarki): II KK 429/22 i I
 
 ## Źródła i akty spoza wbudowanych
 
-### Research: spory z kontrahentem (A) i niewypłacalność firmy (B)
+### Research: niewypłacalność firmy
 
-Skill: „Sprawy prawne w firmie” (skille.aixperts.pl). **Stan prawny: 6 listopada 2026 r.** Materiał roboczy dla autora skilla, nie treść do odpowiedzi.
+Skill: „Sprawy prawne w firmie” (skille.aixperts.pl). **Stan prawny: 6 listopada 2026 r.**
 
 Podstawa tekstów ustaw: lokalne kopie `skille/sprawy-prawne-w-firmie/references/akty/` (teksty ujednolicone Kancelarii Sejmu pobrane z api.sejm.gov.pl 6.11.2026). Każdy artykuł poniżej sprawdzony w tych plikach (odczyt 6.11.2026). Wersje: KC t.u. 3.11.2026 (Dz.U. 2026 poz. 795), KPC t.u. 16.10.2026 (Dz.U. 2026 poz. 468 ze zm.), ZATORY t.u. 27.09.2023 (Dz.U. 2023 poz. 1790, bez późniejszych zmian według ELI), KOSZTY t.u. 18.08.2026 (Dz.U. 2025 poz. 1228 ze zm.), PU t.u. 9.10.2026 (Dz.U. 2026 poz. 913, 1206), PR t.u. 8.10.2026 (Dz.U. 2026 poz. 533, 1206), KSH t.u. 5.11.2026, OP t.u. 8.10.2026, KK t.u. 29.10.2026 (Dz.U. 2026 poz. 1342), KPK.
 
 Skróty: KC, KPC, ZATORY (ustawa o przeciwdziałaniu nadmiernym opóźnieniom w transakcjach handlowych), KOSZTY (ustawa o kosztach sądowych w sprawach cywilnych), PU (Prawo upadłościowe), PR (Prawo restrukturyzacyjne), KSH, OP (Ordynacja podatkowa), KK, KPK, KRZ (Krajowy Rejestr Zadłużonych), EPU (elektroniczne postępowanie upominawcze, e-Sąd).
-
-### Relacja do wiedzy z `references/katalog/`
-
-- `windykacja-miekka` (references/polskie-realia.md, stopnie-eskalacji.md) już pokrywa: ton i stopnie pism przed sądem, rejestry dłużników (BIG), korektę VAT po 90 dniach, KSeF a doręczenie faktury, doręczenie pism do kontrahenta, nazewnictwo księgowe. Ten skill **odsyła tam** przy pytaniach o kolejne monity i wpis do BIG; tu dokłada podstawy prawne, terminy, sąd i egzekucję.
-- `nakaz-zaplaty-co-dalej` (references/zasady.md) pokrywa perspektywę **dłużnika**: sprzeciw, zarzuty, liczenie terminów, doręczenie, skarga na komornika, kwoty wolne, przywrócenie terminu. Ten skill w module A mówi o tym tylko jednym akapitem i odsyła tam.
-- Nowe względem obu: rekompensata i odsetki handlowe w liczbach na 2026 r., terminy z podmiotami publicznymi, UOKiK i zatory, zawezwanie do próby ugodowej po zmianie z 1 lipca 2022 r., potrącenie (także procesowe), sprawy gospodarcze (prekluzja, umowa dowodowa, koszty za brak próby ugody), e-Sąd od strony wierzyciela, zabezpieczenie, egzekucja od strony wierzyciela, zawiadomienie o oszustwie, cały moduł B.
-
----
 
 ### Rejestr źródeł
 
@@ -194,32 +193,14 @@ Wszystkie odczyty 6 listopada 2026 r.
 
 | Źródło | Adres | Co potwierdza |
 |---|---|---|
-| Lokalne teksty ujednolicone (KC, KPC, ZATORY, KOSZTY, PU, PR, KSH, OP, KK, KPK) pobrane z api.sejm.gov.pl | `skille/sprawy-prawne-w-firmie/references/akty/*.md`; źródła PDF wskazane w nagłówkach plików (np. https://api.sejm.gov.pl/eli/acts/DU/2013/403/text/U/D20130403Lj.pdf) | wszystkie artykuły w sekcjach A2, B2, A3, B3 |
-| Obwieszczenie MS z 8.04.2026, odsetki ustawowe za opóźnienie 9,25 % | https://eli.gov.pl/eli/MP/2026/367/ogl ; PDF: https://api.sejm.gov.pl/eli/acts/MP/2026/367/text.pdf | stawka od 5.03.2026 |
-| Obwieszczenie MS z 8.04.2026, odsetki ustawowe 7,25 % | https://api.sejm.gov.pl/eli/acts/MP/2026/368/text.pdf | stawka kapitałowa |
-| Obwieszczenie MFiG z 22.06.2026, odsetki w transakcjach handlowych | https://eli.gov.pl/eli/MP/2026/642/ogl ; PDF: https://api.sejm.gov.pl/eli/acts/MP/2026/642/text.pdf | 13,75 % i 11,75 % w II półroczu 2026 |
-| Obwieszczenie MFiG z 11.12.2025 (I półrocze 2026) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20250001257 | 14 % i 12 % (odczyt pośredni, treść nieotwarta) |
-| Lista obwieszczeń M.P. 2026 o odsetkach (brak nowszego niż kwiecień dla KC) | https://api.sejm.gov.pl/eli/acts/search?publisher=MP&year=2026&title=odsetek | aktualność stawek |
-| ELI: odwołania do ustawy o zatorach | https://api.sejm.gov.pl/eli/acts/DU/2013/403/references | brak nowelizacji po 2023 r. |
+| Lokalne teksty ujednolicone (KC, KPC, ZATORY, KOSZTY, PU, PR, KSH, OP, KK, KPK) pobrane z api.sejm.gov.pl | `skille/sprawy-prawne-w-firmie/references/akty/*.md`; źródła PDF wskazane w nagłówkach plików (np. https://api.sejm.gov.pl/eli/acts/DU/2013/403/text/U/D20130403Lj.pdf) | wszystkie artykuły w częściach 2 i 3 |
 | ELI: metadane aktów zmieniających | https://api.sejm.gov.pl/eli/acts/DU/2025/1085 ; .../DU/2025/1157 ; .../DU/2025/1172 ; .../DU/2025/1518 ; .../DU/2026/1206 ; .../DU/2026/1440 ; .../DU/2026/176 ; .../DU/2026/1046 ; .../DU/2026/1296 ; .../DU/2026/346 | daty wejścia w życie |
 | Sejm X kadencji, procesy legislacyjne | https://api.sejm.gov.pl/sejm/term10/processes (procesy 1263, 3085, 3008, 3011, 1442, 1304, 1425, 1242, 2027, 2737, 3299) | projekty i ich etapy |
 | GUS, obwieszczenie o wynagrodzeniu bez nagród z zysku w III kw. 2025 | https://stat.gov.pl/sygnalne/komunikaty-i-obwieszczenia/lista-komunikatow-i-obwieszczen/obwieszczenie-w-sprawie-przecietnego-miesiecznego-wynagrodzenia-w-sektorze-przedsiebiorstw-bez-wyplat-nagrod-z-zysku-w-trzecim-kwartale-2025-r-,59,48.html | 8 851,42 zł, podstawa PU art. 22a |
-| UOKiK, zatory 2026 | https://uokik.gov.pl/en/payment-backlogs-actions-taken-by-the-president-of-uokik-since-the-beginning-of-2026 | statystyka do 14.04.2026 |
-| UOKiK, zatory 2025 (kontekst) | https://uokik.gov.pl/en/payment-backlogs-further-decisions-and-soft-calls | brak zapowiedzi nowelizacji na stronie |
-| biznes.gov.pl, „Jak i od kogo można odzyskać dług” (publ. 2.11.2021) | https://www.biznes.gov.pl/pl/portal/001093 | kolejność kroków, e-Sąd i klauzula; strona stara, tylko orientacyjnie |
-| biznes.gov.pl, terminy zapłaty i zatory (karty z wyników wyszukiwania, nieotwierane w całości) | https://www.biznes.gov.pl/pl/portal/00156 ; https://www.biznes.gov.pl/pl/portal/00157 ; https://www.biznes.gov.pl/pl/portal/00431 | kontekst; nie stanowią podstawy reguł |
 | KRZ | https://prs.ms.gov.pl/krz | portal do wniosków w upadłości i restrukturyzacji |
-| SN, baza orzeczeń (nowy serwis) | https://www.sn.pl/pl/wyszukiwarka-orzeczen | orzeczenia „otwarte” w A6 i B6 |
-| SN, komunikat II CSKP 104/21 | https://www.sn.pl/pl/aktualnosci/komunikaty-o-sprawach/sad-najwyzszy-rozpoznajac-skarge-kasacyjna-stwierdzil-ze-kazde-zawezwanie-do-proby-ugodowej-powoduje-przerwanie-biegu-przedawnienia | teza II CSKP 104/21 |
+| SN, baza orzeczeń (nowy serwis) | https://www.sn.pl/pl/wyszukiwarka-orzeczen | orzeczenia „otwarte” w części 6 |
 | NSA, CBOSA | https://orzeczenia.nsa.gov.pl/doc/87A5494E40 | II FPS 3/09 |
 
 ### Akty potrzebne, a spoza lokalnej listy (nie cytowano z pamięci; ELI do potwierdzenia na isap.sejm.gov.pl)
 
-1. Ustawa z 28 lutego 2018 r. o kosztach komorniczych (ELI DU/2018/770) - opłaty egzekucyjne, koszty wierzyciela przy bezskutecznej egzekucji.
-2. Ustawa z 22 marca 2018 r. o komornikach sądowych (ELI DU/2018/771) - wybór komornika, właściwość.
-3. Ustawa z 6 grudnia 2018 r. o Krajowym Rejestrze Zadłużonych (ELI DU/2019/55) - jawność, obwieszczenia, konta.
-4. Ustawa z 9 kwietnia 2010 r. o udostępnianiu informacji gospodarczych i wymianie danych gospodarczych (ELI DU/2010/530) - wpis do BIG (szczegóły w `windykacja-miekka`).
-5. Ustawa z 11 marca 2004 r. o podatku od towarów i usług (ELI DU/2004/535), art. 89a-89b - ulga na złe długi (szczegóły w `windykacja-miekka`).
-6. Ustawa z 11 września 2019 r. Prawo zamówień publicznych, art. 4 i 5 (plik PZP.md jest lokalnie; definicja podmiotu publicznego nie była tu cytowana).
-7. Rozporządzenie (WE) nr 1896/2006 (europejski nakaz zapłaty) i rozporządzenie (UE) nr 655/2014 (europejski nakaz zabezpieczenia na rachunku).
-8. Ustawa z 15 kwietnia 2011 r. o działalności leczniczej, art. 4 ust. 1 pkt 2-4 (definicja podmiotu leczniczego w ZATORY art. 4 pkt 4).
+1. Ustawa z 6 grudnia 2018 r. o Krajowym Rejestrze Zadłużonych (ELI DU/2019/55) - jawność, obwieszczenia, konta.

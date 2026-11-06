@@ -45,3 +45,12 @@ Miernik na całym katalogu (59 opisów, 20 zapytań po 3 przebiegi): 20/20 zgodn
 ## Statusy
 
 `claude: ok` po realnych przebiegach na Claude Sonnet (dwa cykle na ślepo, 5 scenariuszy). `gpt: ok` po rundzie `kompatybilnosc` z dostępem do plików skilla (GPT czyta pliki jak model z zainstalowanym skillem; 14 MB aktów nie mieści się w poleceniu): pierwszy przebieg A, B, C PASS, końcowy A, B, C PASS po utwardzeniu trybu pisma (raport `testy/wyniki-gpt/sprawy-prawne-w-firmie.md`). `gemini: brak`.
+
+## Wydanie 1.1.0 (6 listopada 2026): panel 6 ekspertów i 3 sędziów, Claude i Codex
+
+Polecenie Darka z 6 XI ok. 13:10. Pliki: `testy/sprawy-prawne-w-firmie/panel/` (BRIEF.md, NANIESIENIE.md, 12 raportów ekspertów, 6 raportów sędziów, 8 rejestrów naniesienia).
+
+- **Eksperci (12 raportów):** 1 prawo pracy i cudzoziemcy, 2 spółki i niewypłacalność, 3 umowy i spory, 4 konsument i dane osobowe, 5 administracja i przetargi, 6 prawo karne gospodarcze; każdy w Claude i w Codeksie. Razem 6 blokerów, 67 ważnych, 20 kosmetycznych i 130 luk z gotowym tekstem; oceny dziedzin 4-7/10.
+- **Sędziowie (6 raportów, każdy ocenił 224 propozycje):** praktyk, granice i bezpieczeństwo, użytkownik i spójność. Claude: trzy razy „TAK pod warunkami”; Codex: trzy razy „NIE” warunkowo (własne blokery rdzenia CS1-01, CS2-01 i test zachowania CS2-05), wszystkie warunki spełnione.
+- **Naniesienie:** reguła 4 z 6 głosów, przy dublach jeden tekst, przy różnicach wersja najostrożniejsza; 8 obszarów, 0 propozycji pominiętych w całości. Nowe moduły: `dane-osobowe.md`, `urzedy-i-podatki-procedura.md`, `sprawy-karne-firmy.md` (razem 16). 20 wąskich skilli poprawionych z podbitymi wersjami (m.in. windykacja-miekka 1.0.3: 2 lata przedawnienia przy sprzedaży i usługach zawodowych; reklamacja-i-rekojmia 1.0.4; pismo-urzedowe 1.0.4: zwykły e-mail nie jest skutecznym wniesieniem).
+- **Odbiór:** testy na ślepo Claude Sonnet w 4 nowych scenariuszach (`scenariusze-c3.md`: stara faktura i odwołanie od decyzji ZUS jutro, wyciek danych, przeszukanie i świadek, mandat karny skarbowy i zażalenie): 4 z 4 PASS. Codex cykl 6 (4 role): 2 blokery w module karnym (PODZB art. 7a i 7b, tajemnica zawodowa KPK art. 180 § 2) i 14 ważnych, naniesione; cykl 7 potwierdzający: „BLOKERY DO WYDANIA: NIE” w obu rolach, 5 ważnych naniesionych. GPT (A, B, C na wersji 1.1.0): PASS. Kontrola cytowań: 2 744, błędnych 0 (sprawdzanie także powtarzanych § i ust., test regresji). Testy katalogu 121/121. Wyzwalanie na całym katalogu po zmianie opisu: 20/20.

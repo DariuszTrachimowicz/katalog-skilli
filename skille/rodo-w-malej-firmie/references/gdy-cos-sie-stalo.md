@@ -18,7 +18,9 @@ Zdanie odmowy, powtarzane bez zmian:
 
 Powiedz to w pierwszej wiadomości, bez straszenia i bez podawania podstawy prawnej:
 
-Termin na zgłoszenie takich zdarzeń jest bardzo krótki i liczy się w godzinach od chwili, gdy ktokolwiek w firmie się zorientował, nie od chwili, gdy sprawa została wyjaśniona, i nie od poniedziałku. Dlatego kolejność jest taka: najpierw zatrzymać wyciek, potem zapisać fakty, a kontakt ze specjalistą umówić dzisiaj, nie po weekendzie. Dokładny termin i sposób zgłoszenia sprawdź na stronie UODO albo u prawnika, nie opieraj się na mojej pamięci.
+Firma, która sama decyduje o tych danych, zgłasza naruszenie do UODO bez zbędnej zwłoki, w miarę możliwości w ciągu 72 godzin od jego stwierdzenia, chyba że ryzyko dla osób, których dane dotyczą, jest mało prawdopodobne. Liczy się stwierdzenie naruszenia, nie chwila, gdy sprawa została wyjaśniona, i nie poniedziałek. Firma, która przetwarza dane na zlecenie innej (np. biuro rachunkowe, firma IT), zawiadamia tę firmę bez zbędnej zwłoki. Zapisz osobno godzinę pierwszego sygnału i godzinę stwierdzenia naruszenia, a ocenę zacznij dzisiaj. Dlatego kolejność jest taka: najpierw zatrzymać wyciek, potem zapisać fakty, a kontakt ze specjalistą umówić dzisiaj, nie po weekendzie. Formularz i sposób zgłoszenia sprawdź na stronie UODO albo u prawnika.
+
+Oddzielnie od zgłoszenia do UODO trzeba ocenić, czy zawiadomić osoby, których dane dotyczą: przy możliwym wysokim ryzyku dla nich zawiadomienie następuje bez zbędnej zwłoki, z wyjątkami przewidzianymi w przepisach, a czasem zamiast zawiadomień indywidualnych wystarcza komunikat publiczny. Każde naruszenie, jego skutki i działania zaradcze zapisuje się w dokumentacji naruszeń, także wtedy, gdy firma nie zgłasza go do UODO.
 
 ## Pierwsza godzina
 
@@ -74,3 +76,7 @@ Nie orzekaj, nazwij i kieruj do specjalisty od razu, tego samego dnia:
 - Nie streszczaj pisma jako „nic groźnego” ani „to już kara”. Zawiadomienie o kontroli, wezwanie do wyjaśnień i decyzja to trzy różne rzeczy o różnym ciężarze.
 - Nie układaj treści odpowiedzi ani nawet jej punktów, od tego jest prawnik, a pierwsza odpowiedź wyznacza całą dalszą sprawę.
 - Zrób to, co potrafisz najlepiej: zbierz fakty, o które pismo pyta, i przygotuj listę dokumentów, które trzeba odszukać.
+
+## Źródła (do aktualizacji skilla, nie do odpowiedzi)
+
+W odpowiedzi nie podajesz numerów przepisów; ta lista służy do aktualizacji i dla specjalisty. Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO): zgłoszenie naruszenia i rola podmiotu przetwarzającego (art. 33 ust. 1, 2 i 5), zawiadomienie osób (art. 34 ust. 1-3), termin odpowiedzi na żądanie osoby (art. 12 ust. 3 i 4), ocena skutków przy monitorowaniu miejsc dostępnych publicznie na dużą skalę (art. 35 ust. 3 lit. c). Tekst urzędowy: https://www.gov.pl/attachment/6ad1668e-e043-4c47-8455-870a6dd1ea80, odczyt w przeglądzie panelu 6 listopada 2026 r.

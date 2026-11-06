@@ -69,14 +69,14 @@ Co z tego wynika dla pisma:
 
 ## Przedawnienie, liczy się do końca roku
 
-Roszczenia z działalności gospodarczej przedawniają się po trzech latach, a koniec tego okresu przypada na koniec roku kalendarzowego. Każda faktura ma własny licznik.
+Nie zakładaj trzech lat dla każdej faktury. Za towar sprzedany w ramach działalności sprzedawcy, za wykonane dzieło i za część usług świadczonych zawodowo przedawnienie trwa zwykle dwa lata, a przy dziele liczy się od oddania dzieła, nie od terminu płatności. Trzy lata to reguła ogólna dla pozostałych roszczeń firmy, a przy spedycji i przewozie osób termin bywa roczny. Przy terminach dwuletnich i dłuższych koniec przypada na ostatni dzień roku kalendarzowego. Każda faktura ma własny licznik. Rodzaj umowy, termin i jego początek dla konkretnej faktury potwierdza prawnik; nie czekaj z tym na kolejne stopnie windykacji.
 
 Dwie rzeczy, które zmieniają taktykę:
 
 - **Samo wezwanie do zapłaty nie zatrzymuje biegu przedawnienia.** Wysyłanie co pół roku uprzejmych monitów nie chroni należności.
 - **Pisemne uznanie długu przez dłużnika i częściowa wpłata mają znaczenie.** Dlatego w stopniu 2 i 3 prosisz o pisemne potwierdzenie kwoty albo harmonogramu, nie z uprzejmości, tylko dlatego, że taki dokument realnie zmienia sytuację wierzyciela.
 
-Jeśli faktura zbliża się do trzeciego roku, przestań pisać kolejne pisma i skieruj do prawnika. Termin, którego nie da się cofnąć, jest ważniejszy niż relacja z klientem.
+Jeśli nie ustalono właściwego terminu przedawnienia albo zbliża się jego koniec, przestań pisać kolejne pisma i skieruj do prawnika. Przy fakturze za towar, dzieło albo usługi koniec może przypaść już w drugim roku, nie w trzecim. Termin, którego nie da się cofnąć, jest ważniejszy niż relacja z klientem.
 
 ## Zanim wyślesz, sprawdź po swojej stronie
 

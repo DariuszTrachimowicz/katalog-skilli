@@ -2,9 +2,9 @@
 nazwa: Zgody na stronie www
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-11-05
+aktualizacja: 2026-11-06
 skrot: Sprawdza zgody i informacje na własnej stronie internetowej według listy kontrolnej z wagą (baner cookies i narzędzia jak Google Analytics czy piksel Meta, osadzone filmy i mapy, newsletter, SMS i telefon, formularze i klauzule, dowód i wycofanie zgody, przekazywanie danych do USA, czat i AI), wskazuje braki i ryzykowne rozwiązania i układa pytania do prawnika albo IOD.
 korzysc: Wiesz, co na Twojej stronie może nie dawać ważnej zgody, czego brakuje i o co zapytać prawnika.
 szukaj: baner cookies, zgoda na cookies, Google Analytics zgoda, piksel Facebooka zgoda, Consent Mode v2, cookie wall, zgoda na newsletter, zgoda marketingowa e-mail SMS telefon, mailing B2B zgoda, klauzula informacyjna formularz kontaktowy, domyślnie zaznaczony checkbox, wycofanie zgody, Prawo komunikacji elektronicznej cookies, kary UKE marketing, przekazywanie danych do USA

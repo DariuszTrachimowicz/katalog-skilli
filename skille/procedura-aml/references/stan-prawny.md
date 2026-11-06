@@ -59,6 +59,15 @@ przekroczeniu progu") i przy każdej wartości zmiennej dodawaj
 - Podejście oparte na ryzyku: środki dobiera się do poziomu ryzyka, a poziom
   ryzyka musi wynikać z udokumentowanej oceny, nie z intuicji.
 
+## Sprawdzone w przeglądzie 6 listopada 2026 (dla aktualizacji skilla)
+
+Tekst ujednolicony ustawy AML z 8.10.2026 (t.j. Dz.U. 2025 poz. 644 ze zm.):
+skutki niemożności zastosowania środków i ocena zawiadomienia (art. 41),
+zawiadomienie o okolicznościach w 2 dni robocze (art. 74 ust. 1-2),
+zawiadomienie o konkretnej transakcji, 24 godziny od potwierdzenia przyjęcia,
+żądanie GIIF do 96 godzin i postanowienie prokuratora (art. 86). Numerów nie
+podajesz w dokumentach ani w odpowiedziach.
+
 ## Czego ten plik nie robi
 
 Nie jest streszczeniem ustawy i nie zastępuje jej lektury. Służy dyscyplinie

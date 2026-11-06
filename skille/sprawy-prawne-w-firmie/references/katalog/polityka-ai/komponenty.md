@@ -137,6 +137,21 @@ prowadzą różnymi ścieżkami: błąd samego AI (zła decyzja albo wynik), mo�
 danych osobowych (dane trafiły, gdzie nie trzeba), oraz problem kontraktowy (narzędzie
 nie robi tego, co obiecał dostawca). Krótka, wykonalna.
 
+Dodaj czwartą ścieżkę: podejrzenie przestępstwa z użyciem AI, np. wyłudzenie
+płatności przez podszycie się pod osobę (podrobiony głos, wiadomość) albo
+posłużenie się podrobionym dokumentem. Zachowaj źródłowe wiadomości, pliki
+i dane o przelewie, oddziel fakty od podejrzeń, a jeżeli doszło do przelewu,
+od razu skontaktuj się z bankiem i skieruj sprawę do prawnika; użycie AI samo
+nie rozstrzyga, czy i jakie przestępstwo popełniono, to zależy od zachowania
+człowieka.
+
+Treści zgłoszeń sygnalistów i informacji pozwalających ustalić tożsamość osób
+nie przekazuj do narzędzia AI w sposób dający dostęp osobom nieupoważnionym;
+sama zgoda przełożonego na korzystanie z AI nie zastępuje wymagań poufności.
+Przed takim zastosowaniem sprawdź z prawnikiem albo inspektorem ochrony danych
+zakres danych, dostęp i upoważnienia, bo bezprawne ujawnienie tożsamości
+sygnalisty może rodzić także odpowiedzialność karną.
+
 Szkielet:
 
 ```
@@ -148,7 +163,8 @@ GDY COŚ PÓJDZIE NIE TAK Z AI, [UZUPEŁNIJ: nazwa firmy]
 3. Jeśli mogły wyciec dane osobowe, od razu włącz inspektora ochrony danych albo
    [UZUPEŁNIJ: osobę odpowiedzialną za dane], nie czekaj na dalsze kroki.
 4. Zabezpiecz: co zapisać (co się stało, kogo dotyczy, jakie dane).
-5. Oceń skutek: czy to błąd AI, naruszenie danych osobowych, czy sprawa kontraktowa.
+5. Oceń skutek: czy to błąd AI, naruszenie danych osobowych, sprawa kontraktowa,
+   czy podejrzenie przestępstwa (np. wyłudzenie przelewu): wtedy bank i prawnik od razu.
 6. Powiadom na zewnątrz, jeśli trzeba: [WYMAGA WERYFIKACJI: obowiązki i terminy
    zgłoszeń, m.in. wobec organu i osób, powiązanie z RODO; źródło: AI Act / RODO /
    polski organ]. To pole domyka prawnik albo inspektor ochrony danych.

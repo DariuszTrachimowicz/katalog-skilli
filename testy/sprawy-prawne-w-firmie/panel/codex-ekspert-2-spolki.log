@@ -1,0 +1,258 @@
+Reading additional input from stdin...
+OpenAI Codex v0.162.1
+--------
+workdir: C:\Users\CP24\AiXperts - projekty\katalog-skilli
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1b0c7-8c42-7982-a437-fc552e9f7e57
+--------
+user
+Przeczytaj najpierw plik testy/sprawy-prawne-w-firmie/panel/BRIEF.md (zasady i format). Twoja rola: Ekspert 2: prawo spółek, KRS i CRBR, sukcesja, niewypłacalność i restrukturyzacja, odpowiedzialność członków zarządu. Zakres: references/moduly/spolka-na-co-dzien.md, sukcesja-firmy.md, niewyplacalnosc.md, kopie katalog/spolka-zoo-przygotowanie, katalog/pelnomocnictwo-w-firmie, katalog/zamkniecie-firmy-krok-po-kroku. Szukaj błędów i luk (np. spółki osobowe, PSA, przekształcenia, likwidacja sp. z o.o., absolutorium, konflikt wspólników, umowy z członkiem zarządu, odpowiedzialność za zaległości ZUS). Jesteś Codex, więc w nagłówku wpisz (Codex). Nie możesz zapisywać plików: Twoja końcowa wiadomość to cały plik eksperta w formacie z BRIEF.md (zostanie zapisany automatycznie). Identyfikatory zaczynaj od C2- (np. C2-01).
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+hook: SessionStart
+hook: SessionStart
+hook: SessionStart Completed
+hook: SessionStart Completed
+hook: UserPromptSubmit
+hook: UserPromptSubmit Completed
+codex
+Czytam najpierw `BRIEF.md`. Etap 1 z 3: ustalenie formatu, potem audyt wskazanych materiałów i weryfikacja prawna.
+
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -Command "Get-Content -LiteralPath 'testy/sprawy-prawne-w-firmie/panel/BRIEF.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -LiteralPath 'testy/sprawy-prawne-w-firmie/panel/BRIEF.md'" | env_u16_len=4864 | si_flags=256 | creation_flags=134743040
+2026-11-06T12:14:12.248203Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-Content -LiteralPath 'testy/sprawy-prawne-w-firmie/panel/BRIEF.md'\\\" | env_u16_len=4864 | si_flags=256 | creation_flags=134743040\")" }
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 1 z 3 zakończony: format wymaga konkretnych poprawek i cytatów ze sprawdzonych przepisów. Stosuję zasady `using-superpowers`; raport pozostanie w odpowiedzi, bez zapisywania plików.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: https://api.sejm.gov.pl/eli/acts/DU/2000/1037
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 2 z 3: sprawdzam reguły z tekstami ustaw. Do weryfikacji wytypowałem m.in. warunki podziału majątku w likwidacji, terminy CRBR i odpowiedzialność za zaległości ZUS.
+
+web search: 
+web search: site.gov.pl CRBR zmiana deklaratoryjna konstytutywna 14 dni ...
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: site.sn.pl "II CSKP 785/22" ...
+web search: 
+web search: https://www.sn.pl/sites/orzecznictwo/orzeczenia3/ii%20cskp%20785-22.pdf
+web search: 
+web search: https://www.sn.pl/sites/orzecznictwo/Orzeczenia3/II%20CSKP%20785-22.pdf
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 2 z 3: potwierdziłem błędny początek terminu CRBR w kopii skilla o zakładaniu spółki. Znalazłem też sprzeczność w opisie wyroku II CSKP 785/22; pełny tekst SN jest niedostępny, więc tę uwagę oznaczę jako wymagającą potwierdzenia.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 3 z 3: układam raport i usuwam uwagi powtarzające wcześniejsze QA. Kopie odpowiadają plikom źródłowym, więc błędy wąskich skilli wskażę pod `skille/<id>/`, zgodnie z BRIEF.md.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+# Ekspert 2: prawo spółek, KRS i CRBR, sukcesja, niewypłacalność i restrukturyzacja, odpowiedzialność członków zarządu (Codex)
+
+## Błędy
+
+Stan oceny: 6 listopada 2026 r. Ścieżki `references/` odnoszą się do `skille/sprawy-prawne-w-firmie/`. Przepisy sprawdzono w plikach aktów, z uwzględnieniem notek o wejściu zmian w życie. Kopie porównano z materiałami źródłowymi wąskich skilli. Pominięto uwagi już naniesione po wcześniejszym QA.
+
+C2-01 | skille/spolka-zoo-przygotowanie/references/zasady.md:121, kopia references/katalog/spolka-zoo-przygotowanie/zasady.md:122 | BLOKER | Aktualizacja CRBR została uzależniona od wpisu zmiany do KRS, chyba że zmiana w ogóle nie wymaga wpisu. To myli obowiązek ujawnienia zmiany z warunkiem jej skuteczności: zmiana zarządu podlega wpisowi, ale oczekiwanie na wpis może spowodować przekroczenie terminu CRBR. | AML art. 60 ust. 1a pkt 1: „dla których skuteczności nie jest wymagany wpis”, termin biegnie „od dnia ich dokonania”; AML art. 60 ust. 2 wyłącza soboty i dni ustawowo wolne od pracy. Potwierdzenie: [wyjaśnienia MF, pytanie 5](https://www.gov.pl/web/finanse/ii-wyszukiwanie-informacji-z-centralnego-rejestru-beneficjentow-rzeczywistych-zwanego-dalej-crbr). | poprawka: w wierszu „Aktualizacja CRBR”, w komórce terminu, wstaw: „14 dni, bez sobót i dni ustawowo wolnych od pracy: przy zmianie skutecznej dopiero po wpisie do KRS od tego wpisu, a przy zmianie skutecznej wcześniej, np. powołaniu członka zarządu lub sprzedaży udziałów, od dokonania zmiany (AML art. 60 ust. 1a pkt 1 i ust. 2).”
+
+C2-02 | references/moduly/sukcesja-firmy.md:60 | WAŻNE | Reguła 23 mówi o wygaśnięciu umów o pracę z chwilą śmierci bez zarządu sukcesyjnego, chociaż następna reguła prawidłowo wskazuje późniejsze terminy. Pierwsze zdanie może spowodować przedwczesne wyrejestrowanie pracowników. | KP art. 63² § 1: „z zastrzeżeniem § 3-11”; KP art. 63² § 5: „z upływem 30 dni od dnia śmierci pracodawcy”. | poprawka: zastąp regułę 23: „Jeżeli zarząd sukcesyjny ustanowiono z chwilą śmierci pracodawcy, zatrudnienie trwa, a umowa wygasa z wygaśnięciem tego zarządu, chyba że wcześniej nastąpi przejęcie pracownika przez nowego pracodawcę (KP art. 63² § 3-4). Jeżeli zarządu nie ustanowiono z chwilą śmierci, stosuj terminy i wyjątki z następnej reguły, zamiast przyjmować automatyczne wygaśnięcie umów w dniu śmierci (KP art. 63² § 5-11).”
+
+C2-03 | references/moduly/spolka-na-co-dzien.md:187 | WAŻNE | Nakaz skierowania każdej zmiany umowy i każdego rozwiązania spółki do notariusza pomija dostępne czynności na wzorcach S24. Jest też sprzeczny z regułą 30 tego samego modułu. | KSH art. 255 § 4: „również zmieniona [...] przy wykorzystaniu wzorca uchwały”; KSH art. 270 pkt 2¹ przewiduje uchwałę o rozwiązaniu podpisaną elektronicznie przez wszystkich wspólników. | poprawka: zastąp pierwszy sygnał: „Zmiana umowy spółki, podwyższenie kapitału lub rozwiązanie spółki wymagają ustalenia właściwej formy z prawnikiem; notariusz jest potrzebny poza dopuszczonymi czynnościami na wzorcach S24 (KSH art. 255 § 3-4, KSH art. 270 pkt 2 i 2¹).”
+
+C2-04 | references/moduly/spolka-na-co-dzien.md:28 i :171 | WAŻNE | Lista obowiązkowych uchwał zakłada sporządzanie sprawozdania zarządu przez każdą spółkę oraz kompetencję zgromadzenia do podziału zysku w każdym przypadku. Pomija zwolnienia jednostek mikro i małych oraz zastrzeżenie dotyczące kompetencji do podziału zysku. | RACH art. 49 ust. 4-5: jednostka mikro lub mała „może nie sporządzać tego sprawozdania” po spełnieniu warunków; KSH art. 231 § 2 pkt 2: „jeżeli [...] sprawy te nie zostały wyłączone spod kompetencji zgromadzenia wspólników”. | poprawka: zastąp regułę 2: „Na ZZW rozpatruje się i zatwierdza sprawozdanie finansowe oraz rozstrzyga absolutorium członków organów; sprawozdanie zarządu z działalności zatwierdza się, jeżeli spółka ma obowiązek je sporządzić, z uwzględnieniem zwolnień jednostek mikro i małych (KSH art. 231 § 2, RACH art. 49 ust. 4-5). Uchwałę o podziale zysku albo pokryciu straty przygotuj po sprawdzeniu, czy sprawa należy do kompetencji zgromadzenia wspólników (KSH art. 231 § 2 pkt 2).” W punkcie 2 listy projektów po „zatwierdzenie sprawozdania zarządu” dodaj „jeżeli jest wymagane”, a po „podział zysku albo pokrycie straty” dodaj „jeżeli należy do kompetencji zgromadzenia”.
+
+C2-05 | references/moduly/spolka-na-co-dzien.md:224 | WAŻNE | Wpis II CSKP 785/22 przedstawia bezwzględną nieważność i niemożność potwierdzenia umowy jako tezę SN, mimo odczytania jedynie fragmentu uzasadnienia. Oficjalny biuletyn przypisuje temu wyrokowi tezę o dopuszczalności ustanowienia członka zarządu pełnomocnikiem z KSH art. 210 § 1. Istnieje istotne ryzyko przypisania SN stanowiska sądu niższej instancji. Pełny tekst wyroku pozostaje do potwierdzenia. | KSH art. 210 § 1: „pełnomocnik powołany uchwałą zgromadzenia wspólników”; KC art. 39 § 1: „ważność umowy zależy od jej potwierdzenia”. Samo zestawienie tych przepisów nie rozstrzyga skutków konkretnego naruszenia. [Biuletyn SN 1-2/2024, s. 10](https://www.sn.pl/orzecznictwo/Biuletyn_SN/Biuletyn_SN_202401-2.pdf), II CSKP 785/22, 22.02.2023, oraz [pełny tekst do potwierdzenia](https://www.sn.pl/sites/orzecznictwo/Orzeczenia3/II%20CSKP%20785-22.pdf). | poprawka: w polu tezy wstaw: „Według oficjalnego biuletynu SN pełnomocnikiem powołanym na podstawie KSH art. 210 § 1 może być także członek zarządu spółki; pełny tekst do potwierdzenia. Nie powołuj tego wpisu jako podstawy bezwyjątkowej niemożności potwierdzenia wadliwie zawartej umowy.” Status zmień na „do potwierdzenia, pełny tekst nieodczytany”.
+
+C2-06 | skille/zamkniecie-firmy-krok-po-kroku/references/zasady.md:168, kopia references/katalog/zamkniecie-firmy-krok-po-kroku/zasady.md:169 | WAŻNE | Spółki osobowe opisano zbiorczo jako wymagające procedury z likwidatorami i wezwaniem wierzycieli. Spółka jawna może zakończyć działalność w inny uzgodniony sposób; nie należy automatycznie przenosić na nią procedury sp. z o.o. | KSH art. 67 § 1: „chyba że wspólnicy uzgodnili inny sposób zakończenia działalności spółki”. | poprawka: zastąp wskazany punkt: „Spółki handlowe kończą działalność według zasad właściwych dla ich formy, z wykreśleniem z KRS; w spółce jawnej wspólnicy mogą uzgodnić inny sposób zakończenia działalności zamiast likwidacji (KSH art. 67 § 1). Nie przenoś automatycznie procedury likwidacji sp. z o.o. na spółki osobowe; właściwą ścieżkę i odpowiedzialność wspólników ustal z prawnikiem.”
+
+C2-07 | references/moduly/spolka-na-co-dzien.md:134 | WAŻNE | Roczny okres poprzedzający możliwość wniesienia pozwu przez wspólnika liczony jest od ujawnienia szkody zamiast ujawnienia czynu wyrządzającego szkodę. Te zdarzenia nie muszą przypadać tego samego dnia. | KSH art. 295 § 1: „od dnia ujawnienia czynu wyrządzającego szkodę”. | poprawka: zastąp zdanie zaczynające się od „Jeśli spółka nie pozwie”: „Jeśli spółka nie wytoczy powództwa w ciągu roku od ujawnienia czynu wyrządzającego szkodę, każdy wspólnik może wnieść pozew o naprawienie szkody wyrządzonej spółce (KSH art. 295 § 1).”
+
+## Luki (czego brakuje)
+
+C2-08 | references/moduly/spolka-na-co-dzien.md, po regule 88, linia 153 | Firma zamykająca działalność może uznać upływ sześciu miesięcy za wystarczający do wypłaty majątku wspólnikom. Brakuje warunku zaspokojenia lub zabezpieczenia wierzycieli i postępowania z wierzytelnościami spornymi. Podstawa: KSH art. 286 § 1, „po zaspokojeniu lub zabezpieczeniu wierzycieli”; KSH art. 285, „należy złożyć do depozytu sądowego”. | gotowy tekst do wstawienia: „Upływ sześciu miesięcy nie wystarcza do podziału majątku: najpierw trzeba zaspokoić albo zabezpieczyć wierzycieli (KSH art. 286 § 1). Sumy potrzebne dla znanych wierzycieli, którzy się nie zgłosili, oraz na wierzytelności niewymagalne lub sporne składa się do depozytu sądowego (KSH art. 285).”
+
+C2-09 | references/moduly/spolka-na-co-dzien.md, po regule 87, linia 152 | Typowa mała spółka potrzebuje informacji, co zrobić bezpośrednio po uchwale o rozwiązaniu, zanim rozpocznie oczekiwanie na zgłoszenia wierzycieli. Podstawa: KSH art. 277 § 1, „Każdy likwidator ma prawo i obowiązek dokonania zgłoszenia”; KSH art. 281 § 1, „sporządzają bilans otwarcia likwidacji”; KSH art. 288 § 3, dokumenty „oddane na przechowanie”. | gotowy tekst do wstawienia: „Otwarcie likwidacji, likwidatorów i sposób reprezentacji zgłoś do KRS co do zasady w 7 dni, a bilans otwarcia likwidacji przedstaw wspólnikom do zatwierdzenia (KSH art. 277 § 1, KRS art. 22 ust. 1, KSH art. 281 § 1). W planie zakończenia uwzględnij także wskazanie przechowawcy ksiąg i dokumentów rozwiązanej spółki (KSH art. 288 § 3).”
+
+C2-10 | references/moduly/spolka-na-co-dzien.md, po regule 3, linia 29 | Zarząd często traktuje absolutorium jako zwolnienie z całej odpowiedzialności. Moduł opisuje głosowanie, ale nie jego ograniczony skutek ochronny. Podstawa: KSH art. 296, „nie mogą powoływać się na uchwałę [...] udzielającą im absolutorium”; KSH art. 299 § 2 wymienia odrębne przesłanki uwolnienia od odpowiedzialności wobec wierzyciela. | gotowy tekst do wstawienia: „Absolutorium nie zastępuje przesłanek uwolnienia od odpowiedzialności za długi spółki wobec wierzycieli (KSH art. 299 § 2). Przy pozwie wspólnika o naprawienie szkody spółce oraz w razie jej upadłości osoba odpowiedzialna nie może bronić się udzielonym absolutorium ani zrzeczeniem się roszczeń przez spółkę (KSH art. 296).”
+
+C2-11 | references/moduly/spolka-na-co-dzien.md, po regule 80, linia 139 | Przy konflikcie 50/50 samo wyjaśnienie niemożności wyłączenia drugiego wspólnika nie pokazuje dostępnej drogi sądowej. Podstawa: KSH art. 271 pkt 1, „osiągnięcie celu spółki stało się niemożliwe” albo wystąpiły „inne ważne przyczyny”; KSH art. 268, „zawiesić wspólnika w wykonywaniu jego praw udziałowych”. | gotowy tekst do wstawienia: „Przy trwałym paraliżu spółki wspólnik lub członek organu może żądać jej rozwiązania przez sąd, jeżeli spełnione są ustawowe przesłanki; sam konflikt nie przesądza wyniku (KSH art. 271 pkt 1). W sprawie o wyłączenie wspólnika sąd może z ważnych powodów zabezpieczyć powództwo przez zawieszenie jego praw udziałowych, co wymaga pilnej oceny prawnika (KSH art. 268).”
+
+C2-12 | references/moduly/spolka-na-co-dzien.md, przed nagłówkiem „Zgromadzenie wspólników i sprawozdanie roczne”, linia 25 | Moduł obsługuje ogólnie sprawy spółek, ale reguły reprezentacji i umów z członkami organów dotyczą przede wszystkim sp. z o.o. W PSA szczególnie istotny jest odmienny zakres obowiązku aktu notarialnego. Podstawa: KSH art. 300⁵² § 1, „zarząd albo radę dyrektorów”; KSH art. 300⁶⁷ § 3, jedyny akcjonariusz „jest zarazem członkiem zarządu”; KSH art. 300⁷⁹ § 4, „jest zarazem dyrektorem”. | gotowy tekst do wstawienia: „W PSA ustal, czy działa zarząd czy rada dyrektorów: umowę z członkiem zarządu zawiera za spółkę pełnomocnik powołany uchwałą akcjonariuszy albo rada nadzorcza, a z dyrektorem pełnomocnik, z możliwością szczególnej reprezentacji przez dyrektora niewykonawczego przewidzianej w umowie spółki (KSH art. 300⁵² § 1, KSH art. 300⁶⁷ § 1, KSH art. 300⁷⁹ § 1 i § 3). Czynność między jedynym akcjonariuszem będącym członkiem zarządu lub dyrektorem a reprezentowaną przez niego PSA wymaga aktu notarialnego także wtedy, gdy organ jest wieloosobowy (KSH art. 300⁶⁷ § 3, KSH art. 300⁷⁹ § 4).”
+
+C2-13 | references/moduly/niewyplacalnosc.md, po regule 17, linia 48 | Członek organu PSA może błędnie uznać, że osobista odpowiedzialność za niezaspokojone długi dotyczy tylko sp. z o.o. Wymienienie PSA jedynie przy podatkach i w sygnałach skierowania do prawnika nie wyjaśnia podstawy ryzyka. Podstawa: KSH art. 300¹³² § 1, „członkowie zarządu odpowiadają solidarnie”; KSH art. 4 § 2¹ nakazuje rozumieć członka zarządu PSA odpowiednio jako dyrektora. | gotowy tekst do wstawienia: „W PSA bezskuteczność egzekucji również może prowadzić do solidarnej odpowiedzialności członków zarządu, a przy radzie dyrektorów także dyrektorów, z ustawowymi przesłankami uwolnienia od odpowiedzialności (KSH art. 300¹³² § 1-2, KSH art. 4 § 2¹). Taką sprawę kieruj do prawnika po ustaleniu modelu organów i okresu pełnienia funkcji.”
+
+C2-14 | references/moduly/niewyplacalnosc.md, po regule 4, linia 29 | Test nadmiernego zadłużenia opisano przede wszystkim dla spółek kapitałowych. Bardzo typowa spółka komandytowa z komplementariuszem będącym sp. z o.o. może również podlegać temu testowi. Podstawa: PU art. 11 ust. 2 obejmuje również jednostkę organizacyjną ze zdolnością prawną; PU art. 11 ust. 7 wyłącza spółkę osobową, w której nieograniczenie odpowiada „osoba fizyczna”. | gotowy tekst do wstawienia: „Test zadłużenia utrzymującego się ponad 24 miesiące stosuje się także do spółki osobowej, jeżeli żaden wspólnik odpowiadający bez ograniczeń nie jest osobą fizyczną, np. gdy jedynym komplementariuszem spółki komandytowej jest sp. z o.o. (PU art. 11 ust. 2 i ust. 7). Przed oceną sprawdź więc rodzaj wspólników i zakres ich odpowiedzialności.”
+
+C2-15 | references/moduly/spolka-na-co-dzien.md, po regule 94, linia 162 | W spółkach rodzinnych częste jest mylenie sumy komandytowej z wkładem oraz przekonanie, że każdy wspólnik odpowiada jak wspólnik spółki jawnej. Podstawa: KSH art. 102 rozróżnia komplementariusza i komandytariusza; KSH art. 112 § 1, „wolny od odpowiedzialności w granicach wartości wkładu”; KSH art. 112 § 2, „odpowiedzialność zostaje przywrócona”. | gotowy tekst do wstawienia: „W spółce komandytowej komplementariusz odpowiada bez ograniczeń, a komandytariusz co do zasady do sumy komandytowej, z uwzględnieniem zwolnienia w granicach wartości wniesionego wkładu (KSH art. 102, KSH art. 111, KSH art. 112 § 1). Zwrot wkładu może przywrócić odpowiedzialność komandytariusza, więc przed wypłatą sprawdź jej charakter i skutki z prawnikiem (KSH art. 112 § 2-4).”
+
+C2-16 | references/moduly/spolka-na-co-dzien.md, po regule 94, linia 162 | Wspólnicy spółek osobowych potrzebują osobnego rozpoznania odpowiedzialności podatkowej i składkowej. Reguły obrony członka zarządu nie są uniwersalną obroną wspólnika. Podstawa: OP art. 115 § 1, „odpowiada całym swoim majątkiem solidarnie ze spółką”; SUS art. 31 odsyła do OP art. 115. | gotowy tekst do wstawienia: „Za zaległości podatkowe spółki cywilnej, jawnej lub partnerskiej oraz jako komplementariusz spółki komandytowej albo komandytowo-akcyjnej odpowiadasz według odrębnych zasad, obejmujących również wskazane ustawą przypadki byłych wspólników (OP art. 115 § 1-2). Do należności składkowych stosuje się te przepisy odpowiednio; nie przenoś na wspólnika przesłanek zwalniających członka zarządu z odpowiedzialności podatkowej (SUS art. 31, OP art. 115-116).”
+
+C2-17 | references/moduly/sukcesja-firmy.md, po regule 51, linia 100 | Śmierć komandytariusza w rodzinnej spółce komandytowej to typowa sukcesja. Bez osobnej reguły łatwo zastosować opis rozwiązania spółki jawnej po śmierci wspólnika. Podstawa: KSH art. 124 § 1, „Śmierć komandytariusza nie stanowi przyczyny rozwiązania spółki”; KSH art. 124 § 2 wymaga zgody pozostałych wspólników na skuteczny wobec spółki podział udziału. | gotowy tekst do wstawienia: „Śmierć komandytariusza sama nie rozwiązuje spółki komandytowej, a jego spadkobiercy wskazują spółce jedną osobę do wykonywania ich praw (KSH art. 124 § 1). Podział udziału komandytariusza w majątku spółki między spadkobierców jest skuteczny wobec spółki tylko za zgodą pozostałych wspólników (KSH art. 124 § 2).”
+
+C2-18 | references/moduly/sukcesja-firmy.md, po regule 56, linia 108; dodatkowo skille/zamkniecie-firmy-krok-po-kroku/references/zasady.md, po punkcie o sprzedaży przedsiębiorstwa, linia 160 | Przy przejściu JDG do spółki użytkownik może pomylić przekształcenie z aportem lub sprzedażą i założyć, że przestaje odpowiadać za wcześniejsze długi. Podstawa: KSH art. 584¹, „z chwilą wpisu do rejestru”; KSH art. 584² § 1, „wszystkie prawa i obowiązki”; KSH art. 584¹³, „odpowiada solidarnie [...] przez okres trzech lat”. | gotowy tekst do wstawienia: „Przekształcenie JDG następuje z wpisem spółki do KRS i przenosi na nią prawa oraz obowiązki przedsiębiorcy; aport i sprzedaż przedsiębiorstwa wymagają odrębnej oceny skutków, więc ustal wybrany tryb przed planowaniem zamknięcia JDG (KSH art. 584¹, KSH art. 584² § 1). Przedsiębiorca nadal odpowiada solidarnie ze spółką za wcześniejsze zobowiązania związane z działalnością przez trzy lata od przekształcenia (KSH art. 584¹³).”
+
+C2-19 | references/moduly/niewyplacalnosc.md, po regule 21, linia 55 | Zdanie o takich samych zasadach ZUS i podatków wymaga wyraźnego ograniczenia. Termin przedawnienia należności wynikającej z decyzji o odpowiedzialności osoby trzeciej jest inny. Podstawa: SUS art. 31 odsyła do „art. 118 § 1”, bez § 2; SUS art. 24 ust. 5d, „5 lat [...] od końca roku kalendarzowego, w którym decyzja została wydana”. | gotowy tekst do wstawienia: „Przy ZUS nie stosuj podatkowego trzyletniego terminu od końca roku doręczenia decyzji: należność wynikająca z decyzji o odpowiedzialności osoby trzeciej ma własny pięcioletni termin od końca roku jej wydania (SUS art. 24 ust. 5d, SUS art. 31). Datę przedawnienia ustal z prawnikiem po sprawdzeniu zdarzeń wpływających na bieg terminu.”
+
+C2-20 | references/moduly/niewyplacalnosc.md, po regule 21, linia 55 | Członek zarządu otrzymujący decyzję ZUS o odpowiedzialności potrzebuje od razu właściwego terminu i drogi odwołania. Odesłanie wyłącznie do zasad podatkowych grozi zastosowaniem niewłaściwej procedury. Podstawa: SUS art. 83 ust. 2, „odwołanie do właściwego sądu”; KPC art. 477⁹ § 1, „w terminie miesiąca od dnia doręczenia decyzji”. | gotowy tekst do wstawienia: „Od decyzji ZUS przenoszącej odpowiedzialność za zaległe składki odwołujesz się do sądu za pośrednictwem jednostki ZUS, która wydała decyzję, co do zasady w miesiąc od doręczenia (SUS art. 83 ust. 2 i ust. 5, KPC art. 477⁹ § 1). Zabezpiecz decyzję i dowód doręczenia, a projekt odwołania przygotuj na poziomie B z prawnikiem.”
+
+C2-21 | references/moduly/niewyplacalnosc.md, po regule 30, linia 67, oraz przy opisie pakietu propozycji układowych, linia 112 | Firma z zaległościami ZUS może odczytać ogólną propozycję redukcji długów jako możliwość umorzenia części składek w układzie. Podstawa: PR art. 160 ust. 1, „wyłącznie rozłożenie na raty lub odroczenie terminu płatności”. | gotowy tekst do wstawienia: „Należności wobec ZUS wskazanych w tym przepisie nie redukuje się w układzie: dopuszczalne są raty albo odroczenie płatności (PR art. 160 ust. 1). Oddziel je w propozycjach układowych od długów, dla których doradca może rozważyć zmniejszenie należności.”
+
+C2-22 | references/moduly/niewyplacalnosc.md, po regule 40, linia 83; w pytaniu 9, linia 138, rozszerzenie okresu zbierania danych | Moduł skupia się na ryzyku karnym i skardze pauliańskiej, ale pomija bezskuteczność czynności wobec masy upadłości. Zbieranie danych wyłącznie z sześciu miesięcy może ominąć wcześniejszą darowiznę albo sprzedaż majątku za rażąco niską cenę. Podstawa: PU art. 127 ust. 1, „w ciągu roku przed dniem złożenia wniosku”; PU art. 127 ust. 3 obejmuje zapłatę lub zabezpieczenie długu niewymagalnego w ciągu sześciu miesięcy. | gotowy tekst do wstawienia: „Po ogłoszeniu upadłości darowizna albo rozporządzenie majątkiem za rażąco nieekwiwalentne świadczenie, dokonane w ciągu roku przed złożeniem wniosku, mogą podlegać ustawowej bezskuteczności wobec masy upadłości (PU art. 127 ust. 1). Zbierz takie transakcje z ostatniego roku, a z ostatnich sześciu miesięcy także zapłaty i zabezpieczenia długów niewymagalnych, z uwzględnieniem ustawowych wyjątków (PU art. 127 ust. 3-4).”
+
+## Ocena
+
+**7/10.** Moduły dobrze opisują podstawowe obowiązki sp. z o.o. i pilność niewypłacalności. Największe braki dotyczą rozróżniania form spółek, skutków likwidacji i praktycznej obrony przed odpowiedzialnością.
+
+1. Poprawić początek terminu aktualizacji CRBR w źródle wąskiego skilla, następnie odświeżyć kopię.
+2. Uzupełnić ochronę wierzycieli przy likwidacji oraz reguły PSA i spółek osobowych.
+3. Rozdzielić procedurę i przedawnienie odpowiedzialności ZUS od odpowiedzialności podatkowej; ponownie sprawdzić wpis II CSKP 785/22.
+
+Nie zmieniano ani nie zapisywano plików. Nie przeprowadzano testów odpowiedzi modelu po poprawkach.
+Pełnego tekstu II CSKP 785/22 nie udało się odczytać; proponowana teza orzecznicza pozostaje do potwierdzenia.
+
+
+tokens used
+284 542
+# Ekspert 2: prawo spółek, KRS i CRBR, sukcesja, niewypłacalność i restrukturyzacja, odpowiedzialność członków zarządu (Codex)
+
+## Błędy
+
+Stan oceny: 6 listopada 2026 r. Ścieżki `references/` odnoszą się do `skille/sprawy-prawne-w-firmie/`. Przepisy sprawdzono w plikach aktów, z uwzględnieniem notek o wejściu zmian w życie. Kopie porównano z materiałami źródłowymi wąskich skilli. Pominięto uwagi już naniesione po wcześniejszym QA.
+
+C2-01 | skille/spolka-zoo-przygotowanie/references/zasady.md:121, kopia references/katalog/spolka-zoo-przygotowanie/zasady.md:122 | BLOKER | Aktualizacja CRBR została uzależniona od wpisu zmiany do KRS, chyba że zmiana w ogóle nie wymaga wpisu. To myli obowiązek ujawnienia zmiany z warunkiem jej skuteczności: zmiana zarządu podlega wpisowi, ale oczekiwanie na wpis może spowodować przekroczenie terminu CRBR. | AML art. 60 ust. 1a pkt 1: „dla których skuteczności nie jest wymagany wpis”, termin biegnie „od dnia ich dokonania”; AML art. 60 ust. 2 wyłącza soboty i dni ustawowo wolne od pracy. Potwierdzenie: [wyjaśnienia MF, pytanie 5](https://www.gov.pl/web/finanse/ii-wyszukiwanie-informacji-z-centralnego-rejestru-beneficjentow-rzeczywistych-zwanego-dalej-crbr). | poprawka: w wierszu „Aktualizacja CRBR”, w komórce terminu, wstaw: „14 dni, bez sobót i dni ustawowo wolnych od pracy: przy zmianie skutecznej dopiero po wpisie do KRS od tego wpisu, a przy zmianie skutecznej wcześniej, np. powołaniu członka zarządu lub sprzedaży udziałów, od dokonania zmiany (AML art. 60 ust. 1a pkt 1 i ust. 2).”
+
+C2-02 | references/moduly/sukcesja-firmy.md:60 | WAŻNE | Reguła 23 mówi o wygaśnięciu umów o pracę z chwilą śmierci bez zarządu sukcesyjnego, chociaż następna reguła prawidłowo wskazuje późniejsze terminy. Pierwsze zdanie może spowodować przedwczesne wyrejestrowanie pracowników. | KP art. 63² § 1: „z zastrzeżeniem § 3-11”; KP art. 63² § 5: „z upływem 30 dni od dnia śmierci pracodawcy”. | poprawka: zastąp regułę 23: „Jeżeli zarząd sukcesyjny ustanowiono z chwilą śmierci pracodawcy, zatrudnienie trwa, a umowa wygasa z wygaśnięciem tego zarządu, chyba że wcześniej nastąpi przejęcie pracownika przez nowego pracodawcę (KP art. 63² § 3-4). Jeżeli zarządu nie ustanowiono z chwilą śmierci, stosuj terminy i wyjątki z następnej reguły, zamiast przyjmować automatyczne wygaśnięcie umów w dniu śmierci (KP art. 63² § 5-11).”
+
+C2-03 | references/moduly/spolka-na-co-dzien.md:187 | WAŻNE | Nakaz skierowania każdej zmiany umowy i każdego rozwiązania spółki do notariusza pomija dostępne czynności na wzorcach S24. Jest też sprzeczny z regułą 30 tego samego modułu. | KSH art. 255 § 4: „również zmieniona [...] przy wykorzystaniu wzorca uchwały”; KSH art. 270 pkt 2¹ przewiduje uchwałę o rozwiązaniu podpisaną elektronicznie przez wszystkich wspólników. | poprawka: zastąp pierwszy sygnał: „Zmiana umowy spółki, podwyższenie kapitału lub rozwiązanie spółki wymagają ustalenia właściwej formy z prawnikiem; notariusz jest potrzebny poza dopuszczonymi czynnościami na wzorcach S24 (KSH art. 255 § 3-4, KSH art. 270 pkt 2 i 2¹).”
+
+C2-04 | references/moduly/spolka-na-co-dzien.md:28 i :171 | WAŻNE | Lista obowiązkowych uchwał zakłada sporządzanie sprawozdania zarządu przez każdą spółkę oraz kompetencję zgromadzenia do podziału zysku w każdym przypadku. Pomija zwolnienia jednostek mikro i małych oraz zastrzeżenie dotyczące kompetencji do podziału zysku. | RACH art. 49 ust. 4-5: jednostka mikro lub mała „może nie sporządzać tego sprawozdania” po spełnieniu warunków; KSH art. 231 § 2 pkt 2: „jeżeli [...] sprawy te nie zostały wyłączone spod kompetencji zgromadzenia wspólników”. | poprawka: zastąp regułę 2: „Na ZZW rozpatruje się i zatwierdza sprawozdanie finansowe oraz rozstrzyga absolutorium członków organów; sprawozdanie zarządu z działalności zatwierdza się, jeżeli spółka ma obowiązek je sporządzić, z uwzględnieniem zwolnień jednostek mikro i małych (KSH art. 231 § 2, RACH art. 49 ust. 4-5). Uchwałę o podziale zysku albo pokryciu straty przygotuj po sprawdzeniu, czy sprawa należy do kompetencji zgromadzenia wspólników (KSH art. 231 § 2 pkt 2).” W punkcie 2 listy projektów po „zatwierdzenie sprawozdania zarządu” dodaj „jeżeli jest wymagane”, a po „podział zysku albo pokrycie straty” dodaj „jeżeli należy do kompetencji zgromadzenia”.
+
+C2-05 | references/moduly/spolka-na-co-dzien.md:224 | WAŻNE | Wpis II CSKP 785/22 przedstawia bezwzględną nieważność i niemożność potwierdzenia umowy jako tezę SN, mimo odczytania jedynie fragmentu uzasadnienia. Oficjalny biuletyn przypisuje temu wyrokowi tezę o dopuszczalności ustanowienia członka zarządu pełnomocnikiem z KSH art. 210 § 1. Istnieje istotne ryzyko przypisania SN stanowiska sądu niższej instancji. Pełny tekst wyroku pozostaje do potwierdzenia. | KSH art. 210 § 1: „pełnomocnik powołany uchwałą zgromadzenia wspólników”; KC art. 39 § 1: „ważność umowy zależy od jej potwierdzenia”. Samo zestawienie tych przepisów nie rozstrzyga skutków konkretnego naruszenia. [Biuletyn SN 1-2/2024, s. 10](https://www.sn.pl/orzecznictwo/Biuletyn_SN/Biuletyn_SN_202401-2.pdf), II CSKP 785/22, 22.02.2023, oraz [pełny tekst do potwierdzenia](https://www.sn.pl/sites/orzecznictwo/Orzeczenia3/II%20CSKP%20785-22.pdf). | poprawka: w polu tezy wstaw: „Według oficjalnego biuletynu SN pełnomocnikiem powołanym na podstawie KSH art. 210 § 1 może być także członek zarządu spółki; pełny tekst do potwierdzenia. Nie powołuj tego wpisu jako podstawy bezwyjątkowej niemożności potwierdzenia wadliwie zawartej umowy.” Status zmień na „do potwierdzenia, pełny tekst nieodczytany”.
+
+C2-06 | skille/zamkniecie-firmy-krok-po-kroku/references/zasady.md:168, kopia references/katalog/zamkniecie-firmy-krok-po-kroku/zasady.md:169 | WAŻNE | Spółki osobowe opisano zbiorczo jako wymagające procedury z likwidatorami i wezwaniem wierzycieli. Spółka jawna może zakończyć działalność w inny uzgodniony sposób; nie należy automatycznie przenosić na nią procedury sp. z o.o. | KSH art. 67 § 1: „chyba że wspólnicy uzgodnili inny sposób zakończenia działalności spółki”. | poprawka: zastąp wskazany punkt: „Spółki handlowe kończą działalność według zasad właściwych dla ich formy, z wykreśleniem z KRS; w spółce jawnej wspólnicy mogą uzgodnić inny sposób zakończenia działalności zamiast likwidacji (KSH art. 67 § 1). Nie przenoś automatycznie procedury likwidacji sp. z o.o. na spółki osobowe; właściwą ścieżkę i odpowiedzialność wspólników ustal z prawnikiem.”
+
+C2-07 | references/moduly/spolka-na-co-dzien.md:134 | WAŻNE | Roczny okres poprzedzający możliwość wniesienia pozwu przez wspólnika liczony jest od ujawnienia szkody zamiast ujawnienia czynu wyrządzającego szkodę. Te zdarzenia nie muszą przypadać tego samego dnia. | KSH art. 295 § 1: „od dnia ujawnienia czynu wyrządzającego szkodę”. | poprawka: zastąp zdanie zaczynające się od „Jeśli spółka nie pozwie”: „Jeśli spółka nie wytoczy powództwa w ciągu roku od ujawnienia czynu wyrządzającego szkodę, każdy wspólnik może wnieść pozew o naprawienie szkody wyrządzonej spółce (KSH art. 295 § 1).”
+
+## Luki (czego brakuje)
+
+C2-08 | references/moduly/spolka-na-co-dzien.md, po regule 88, linia 153 | Firma zamykająca działalność może uznać upływ sześciu miesięcy za wystarczający do wypłaty majątku wspólnikom. Brakuje warunku zaspokojenia lub zabezpieczenia wierzycieli i postępowania z wierzytelnościami spornymi. Podstawa: KSH art. 286 § 1, „po zaspokojeniu lub zabezpieczeniu wierzycieli”; KSH art. 285, „należy złożyć do depozytu sądowego”. | gotowy tekst do wstawienia: „Upływ sześciu miesięcy nie wystarcza do podziału majątku: najpierw trzeba zaspokoić albo zabezpieczyć wierzycieli (KSH art. 286 § 1). Sumy potrzebne dla znanych wierzycieli, którzy się nie zgłosili, oraz na wierzytelności niewymagalne lub sporne składa się do depozytu sądowego (KSH art. 285).”
+
+C2-09 | references/moduly/spolka-na-co-dzien.md, po regule 87, linia 152 | Typowa mała spółka potrzebuje informacji, co zrobić bezpośrednio po uchwale o rozwiązaniu, zanim rozpocznie oczekiwanie na zgłoszenia wierzycieli. Podstawa: KSH art. 277 § 1, „Każdy likwidator ma prawo i obowiązek dokonania zgłoszenia”; KSH art. 281 § 1, „sporządzają bilans otwarcia likwidacji”; KSH art. 288 § 3, dokumenty „oddane na przechowanie”. | gotowy tekst do wstawienia: „Otwarcie likwidacji, likwidatorów i sposób reprezentacji zgłoś do KRS co do zasady w 7 dni, a bilans otwarcia likwidacji przedstaw wspólnikom do zatwierdzenia (KSH art. 277 § 1, KRS art. 22 ust. 1, KSH art. 281 § 1). W planie zakończenia uwzględnij także wskazanie przechowawcy ksiąg i dokumentów rozwiązanej spółki (KSH art. 288 § 3).”
+
+C2-10 | references/moduly/spolka-na-co-dzien.md, po regule 3, linia 29 | Zarząd często traktuje absolutorium jako zwolnienie z całej odpowiedzialności. Moduł opisuje głosowanie, ale nie jego ograniczony skutek ochronny. Podstawa: KSH art. 296, „nie mogą powoływać się na uchwałę [...] udzielającą im absolutorium”; KSH art. 299 § 2 wymienia odrębne przesłanki uwolnienia od odpowiedzialności wobec wierzyciela. | gotowy tekst do wstawienia: „Absolutorium nie zastępuje przesłanek uwolnienia od odpowiedzialności za długi spółki wobec wierzycieli (KSH art. 299 § 2). Przy pozwie wspólnika o naprawienie szkody spółce oraz w razie jej upadłości osoba odpowiedzialna nie może bronić się udzielonym absolutorium ani zrzeczeniem się roszczeń przez spółkę (KSH art. 296).”
+
+C2-11 | references/moduly/spolka-na-co-dzien.md, po regule 80, linia 139 | Przy konflikcie 50/50 samo wyjaśnienie niemożności wyłączenia drugiego wspólnika nie pokazuje dostępnej drogi sądowej. Podstawa: KSH art. 271 pkt 1, „osiągnięcie celu spółki stało się niemożliwe” albo wystąpiły „inne ważne przyczyny”; KSH art. 268, „zawiesić wspólnika w wykonywaniu jego praw udziałowych”. | gotowy tekst do wstawienia: „Przy trwałym paraliżu spółki wspólnik lub członek organu może żądać jej rozwiązania przez sąd, jeżeli spełnione są ustawowe przesłanki; sam konflikt nie przesądza wyniku (KSH art. 271 pkt 1). W sprawie o wyłączenie wspólnika sąd może z ważnych powodów zabezpieczyć powództwo przez zawieszenie jego praw udziałowych, co wymaga pilnej oceny prawnika (KSH art. 268).”
+
+C2-12 | references/moduly/spolka-na-co-dzien.md, przed nagłówkiem „Zgromadzenie wspólników i sprawozdanie roczne”, linia 25 | Moduł obsługuje ogólnie sprawy spółek, ale reguły reprezentacji i umów z członkami organów dotyczą przede wszystkim sp. z o.o. W PSA szczególnie istotny jest odmienny zakres obowiązku aktu notarialnego. Podstawa: KSH art. 300⁵² § 1, „zarząd albo radę dyrektorów”; KSH art. 300⁶⁷ § 3, jedyny akcjonariusz „jest zarazem członkiem zarządu”; KSH art. 300⁷⁹ § 4, „jest zarazem dyrektorem”. | gotowy tekst do wstawienia: „W PSA ustal, czy działa zarząd czy rada dyrektorów: umowę z członkiem zarządu zawiera za spółkę pełnomocnik powołany uchwałą akcjonariuszy albo rada nadzorcza, a z dyrektorem pełnomocnik, z możliwością szczególnej reprezentacji przez dyrektora niewykonawczego przewidzianej w umowie spółki (KSH art. 300⁵² § 1, KSH art. 300⁶⁷ § 1, KSH art. 300⁷⁹ § 1 i § 3). Czynność między jedynym akcjonariuszem będącym członkiem zarządu lub dyrektorem a reprezentowaną przez niego PSA wymaga aktu notarialnego także wtedy, gdy organ jest wieloosobowy (KSH art. 300⁶⁷ § 3, KSH art. 300⁷⁹ § 4).”
+
+C2-13 | references/moduly/niewyplacalnosc.md, po regule 17, linia 48 | Członek organu PSA może błędnie uznać, że osobista odpowiedzialność za niezaspokojone długi dotyczy tylko sp. z o.o. Wymienienie PSA jedynie przy podatkach i w sygnałach skierowania do prawnika nie wyjaśnia podstawy ryzyka. Podstawa: KSH art. 300¹³² § 1, „członkowie zarządu odpowiadają solidarnie”; KSH art. 4 § 2¹ nakazuje rozumieć członka zarządu PSA odpowiednio jako dyrektora. | gotowy tekst do wstawienia: „W PSA bezskuteczność egzekucji również może prowadzić do solidarnej odpowiedzialności członków zarządu, a przy radzie dyrektorów także dyrektorów, z ustawowymi przesłankami uwolnienia od odpowiedzialności (KSH art. 300¹³² § 1-2, KSH art. 4 § 2¹). Taką sprawę kieruj do prawnika po ustaleniu modelu organów i okresu pełnienia funkcji.”
+
+C2-14 | references/moduly/niewyplacalnosc.md, po regule 4, linia 29 | Test nadmiernego zadłużenia opisano przede wszystkim dla spółek kapitałowych. Bardzo typowa spółka komandytowa z komplementariuszem będącym sp. z o.o. może również podlegać temu testowi. Podstawa: PU art. 11 ust. 2 obejmuje również jednostkę organizacyjną ze zdolnością prawną; PU art. 11 ust. 7 wyłącza spółkę osobową, w której nieograniczenie odpowiada „osoba fizyczna”. | gotowy tekst do wstawienia: „Test zadłużenia utrzymującego się ponad 24 miesiące stosuje się także do spółki osobowej, jeżeli żaden wspólnik odpowiadający bez ograniczeń nie jest osobą fizyczną, np. gdy jedynym komplementariuszem spółki komandytowej jest sp. z o.o. (PU art. 11 ust. 2 i ust. 7). Przed oceną sprawdź więc rodzaj wspólników i zakres ich odpowiedzialności.”
+
+C2-15 | references/moduly/spolka-na-co-dzien.md, po regule 94, linia 162 | W spółkach rodzinnych częste jest mylenie sumy komandytowej z wkładem oraz przekonanie, że każdy wspólnik odpowiada jak wspólnik spółki jawnej. Podstawa: KSH art. 102 rozróżnia komplementariusza i komandytariusza; KSH art. 112 § 1, „wolny od odpowiedzialności w granicach wartości wkładu”; KSH art. 112 § 2, „odpowiedzialność zostaje przywrócona”. | gotowy tekst do wstawienia: „W spółce komandytowej komplementariusz odpowiada bez ograniczeń, a komandytariusz co do zasady do sumy komandytowej, z uwzględnieniem zwolnienia w granicach wartości wniesionego wkładu (KSH art. 102, KSH art. 111, KSH art. 112 § 1). Zwrot wkładu może przywrócić odpowiedzialność komandytariusza, więc przed wypłatą sprawdź jej charakter i skutki z prawnikiem (KSH art. 112 § 2-4).”
+
+C2-16 | references/moduly/spolka-na-co-dzien.md, po regule 94, linia 162 | Wspólnicy spółek osobowych potrzebują osobnego rozpoznania odpowiedzialności podatkowej i składkowej. Reguły obrony członka zarządu nie są uniwersalną obroną wspólnika. Podstawa: OP art. 115 § 1, „odpowiada całym swoim majątkiem solidarnie ze spółką”; SUS art. 31 odsyła do OP art. 115. | gotowy tekst do wstawienia: „Za zaległości podatkowe spółki cywilnej, jawnej lub partnerskiej oraz jako komplementariusz spółki komandytowej albo komandytowo-akcyjnej odpowiadasz według odrębnych zasad, obejmujących również wskazane ustawą przypadki byłych wspólników (OP art. 115 § 1-2). Do należności składkowych stosuje się te przepisy odpowiednio; nie przenoś na wspólnika przesłanek zwalniających członka zarządu z odpowiedzialności podatkowej (SUS art. 31, OP art. 115-116).”
+
+C2-17 | references/moduly/sukcesja-firmy.md, po regule 51, linia 100 | Śmierć komandytariusza w rodzinnej spółce komandytowej to typowa sukcesja. Bez osobnej reguły łatwo zastosować opis rozwiązania spółki jawnej po śmierci wspólnika. Podstawa: KSH art. 124 § 1, „Śmierć komandytariusza nie stanowi przyczyny rozwiązania spółki”; KSH art. 124 § 2 wymaga zgody pozostałych wspólników na skuteczny wobec spółki podział udziału. | gotowy tekst do wstawienia: „Śmierć komandytariusza sama nie rozwiązuje spółki komandytowej, a jego spadkobiercy wskazują spółce jedną osobę do wykonywania ich praw (KSH art. 124 § 1). Podział udziału komandytariusza w majątku spółki między spadkobierców jest skuteczny wobec spółki tylko za zgodą pozostałych wspólników (KSH art. 124 § 2).”
+
+C2-18 | references/moduly/sukcesja-firmy.md, po regule 56, linia 108; dodatkowo skille/zamkniecie-firmy-krok-po-kroku/references/zasady.md, po punkcie o sprzedaży przedsiębiorstwa, linia 160 | Przy przejściu JDG do spółki użytkownik może pomylić przekształcenie z aportem lub sprzedażą i założyć, że przestaje odpowiadać za wcześniejsze długi. Podstawa: KSH art. 584¹, „z chwilą wpisu do rejestru”; KSH art. 584² § 1, „wszystkie prawa i obowiązki”; KSH art. 584¹³, „odpowiada solidarnie [...] przez okres trzech lat”. | gotowy tekst do wstawienia: „Przekształcenie JDG następuje z wpisem spółki do KRS i przenosi na nią prawa oraz obowiązki przedsiębiorcy; aport i sprzedaż przedsiębiorstwa wymagają odrębnej oceny skutków, więc ustal wybrany tryb przed planowaniem zamknięcia JDG (KSH art. 584¹, KSH art. 584² § 1). Przedsiębiorca nadal odpowiada solidarnie ze spółką za wcześniejsze zobowiązania związane z działalnością przez trzy lata od przekształcenia (KSH art. 584¹³).”
+
+C2-19 | references/moduly/niewyplacalnosc.md, po regule 21, linia 55 | Zdanie o takich samych zasadach ZUS i podatków wymaga wyraźnego ograniczenia. Termin przedawnienia należności wynikającej z decyzji o odpowiedzialności osoby trzeciej jest inny. Podstawa: SUS art. 31 odsyła do „art. 118 § 1”, bez § 2; SUS art. 24 ust. 5d, „5 lat [...] od końca roku kalendarzowego, w którym decyzja została wydana”. | gotowy tekst do wstawienia: „Przy ZUS nie stosuj podatkowego trzyletniego terminu od końca roku doręczenia decyzji: należność wynikająca z decyzji o odpowiedzialności osoby trzeciej ma własny pięcioletni termin od końca roku jej wydania (SUS art. 24 ust. 5d, SUS art. 31). Datę przedawnienia ustal z prawnikiem po sprawdzeniu zdarzeń wpływających na bieg terminu.”
+
+C2-20 | references/moduly/niewyplacalnosc.md, po regule 21, linia 55 | Członek zarządu otrzymujący decyzję ZUS o odpowiedzialności potrzebuje od razu właściwego terminu i drogi odwołania. Odesłanie wyłącznie do zasad podatkowych grozi zastosowaniem niewłaściwej procedury. Podstawa: SUS art. 83 ust. 2, „odwołanie do właściwego sądu”; KPC art. 477⁹ § 1, „w terminie miesiąca od dnia doręczenia decyzji”. | gotowy tekst do wstawienia: „Od decyzji ZUS przenoszącej odpowiedzialność za zaległe składki odwołujesz się do sądu za pośrednictwem jednostki ZUS, która wydała decyzję, co do zasady w miesiąc od doręczenia (SUS art. 83 ust. 2 i ust. 5, KPC art. 477⁹ § 1). Zabezpiecz decyzję i dowód doręczenia, a projekt odwołania przygotuj na poziomie B z prawnikiem.”
+
+C2-21 | references/moduly/niewyplacalnosc.md, po regule 30, linia 67, oraz przy opisie pakietu propozycji układowych, linia 112 | Firma z zaległościami ZUS może odczytać ogólną propozycję redukcji długów jako możliwość umorzenia części składek w układzie. Podstawa: PR art. 160 ust. 1, „wyłącznie rozłożenie na raty lub odroczenie terminu płatności”. | gotowy tekst do wstawienia: „Należności wobec ZUS wskazanych w tym przepisie nie redukuje się w układzie: dopuszczalne są raty albo odroczenie płatności (PR art. 160 ust. 1). Oddziel je w propozycjach układowych od długów, dla których doradca może rozważyć zmniejszenie należności.”
+
+C2-22 | references/moduly/niewyplacalnosc.md, po regule 40, linia 83; w pytaniu 9, linia 138, rozszerzenie okresu zbierania danych | Moduł skupia się na ryzyku karnym i skardze pauliańskiej, ale pomija bezskuteczność czynności wobec masy upadłości. Zbieranie danych wyłącznie z sześciu miesięcy może ominąć wcześniejszą darowiznę albo sprzedaż majątku za rażąco niską cenę. Podstawa: PU art. 127 ust. 1, „w ciągu roku przed dniem złożenia wniosku”; PU art. 127 ust. 3 obejmuje zapłatę lub zabezpieczenie długu niewymagalnego w ciągu sześciu miesięcy. | gotowy tekst do wstawienia: „Po ogłoszeniu upadłości darowizna albo rozporządzenie majątkiem za rażąco nieekwiwalentne świadczenie, dokonane w ciągu roku przed złożeniem wniosku, mogą podlegać ustawowej bezskuteczności wobec masy upadłości (PU art. 127 ust. 1). Zbierz takie transakcje z ostatniego roku, a z ostatnich sześciu miesięcy także zapłaty i zabezpieczenia długów niewymagalnych, z uwzględnieniem ustawowych wyjątków (PU art. 127 ust. 3-4).”
+
+## Ocena
+
+**7/10.** Moduły dobrze opisują podstawowe obowiązki sp. z o.o. i pilność niewypłacalności. Największe braki dotyczą rozróżniania form spółek, skutków likwidacji i praktycznej obrony przed odpowiedzialnością.
+
+1. Poprawić początek terminu aktualizacji CRBR w źródle wąskiego skilla, następnie odświeżyć kopię.
+2. Uzupełnić ochronę wierzycieli przy likwidacji oraz reguły PSA i spółek osobowych.
+3. Rozdzielić procedurę i przedawnienie odpowiedzialności ZUS od odpowiedzialności podatkowej; ponownie sprawdzić wpis II CSKP 785/22.
+
+Nie zmieniano ani nie zapisywano plików. Nie przeprowadzano testów odpowiedzi modelu po poprawkach.
+Pełnego tekstu II CSKP 785/22 nie udało się odczytać; proponowana teza orzecznicza pozostaje do potwierdzenia.
+
+

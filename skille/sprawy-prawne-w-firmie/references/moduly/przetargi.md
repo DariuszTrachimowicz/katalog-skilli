@@ -19,6 +19,9 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 13. „Czy fakturę dla szkoły musimy wysłać przez Platformę Elektronicznego Fakturowania albo KSeF?”
 14. „Nie zdążyliśmy przedłużyć gwarancji wadialnej. Co teraz?”
 15. „Czy kiedyś złe wykonanie umowy dla gminy wyklucza nas na lata?”
+16. „Wygraliśmy, ale ceny skoczyły i nie chcemy podpisać umowy. Co nam grozi?”
+17. „Jesteśmy podwykonawcą na budowie dla gminy, generalny wykonawca nie płaci. Czy gmina musi nam zapłacić?”
+18. „Zamawiający przysłał notę obciążeniową z karą umowną i potrącił ją z faktury. Co odpisać?”
 
 ### B2. Reguły po skutku z podstawą
 
@@ -36,10 +39,11 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 9. Związanie ofertą: powyżej progów najwyżej 90 dni (120 dni przy największych zamówieniach); poniżej progów najwyżej 30 dni od terminu składania ofert. (PZP art. 220 ust. 1, art. 307 ust. 1)
 
 **JEDZ, oświadczenia, dokumenty**
-10. Do oferty dołącza się oświadczenie o niepodleganiu wykluczeniu i spełnianiu warunków; powyżej progów na formularzu JEDZ; poniżej progów obowiązek formularza JEDZ nie działa, a formę oświadczenia określa zamawiający. (PZP art. 125 ust. 1-2, art. 266)
+10. Co do zasady do oferty dołącza się oświadczenie o niepodleganiu wykluczeniu i spełnianiu warunków, powyżej progów unijnych na formularzu JEDZ, a poniżej bez obowiązku tego formularza (formę określa zamawiający). W procedurze odwróconej sprawdź SWZ: zamawiający może żądać oświadczenia dopiero od wykonawcy najwyżej ocenionego. (PZP art. 125 ust. 1-2, PZP art. 139 ust. 2, PZP art. 266)
 11. Przy konsorcjum oświadczenie składa każdy wykonawca. (PZP art. 125 ust. 4)
 12. Dokumenty potwierdzające (podmiotowe środki dowodowe, np. KRK, zaświadczenia z ZUS i US) co do zasady składa wykonawca najwyżej oceniony na wezwanie: powyżej progów termin co najmniej 10 dni, poniżej co najmniej 5 dni. (PZP art. 126 ust. 1, art. 274 ust. 1) Zamawiający może jednak wezwać do nich wszystkich lub niektórych wykonawców na każdym etapie, gdy to niezbędne dla przebiegu postępowania, a przy wątpliwościach co do aktualności w każdym czasie żądać dokumentów aktualnych; trzymaj je gotowe od początku. (PZP art. 126 ust. 2-3)
 13. Nie trzeba składać dokumentów dostępnych w bezpłatnych rejestrach, jeśli wskazano dane dostępu. (PZP art. 127 ust. 1 pkt 1)
+13a. Urząd skarbowy wydaje zaświadczenie bez zbędnej zwłoki, najpóźniej w 7 dni od wniosku, i potwierdza ono stan z dnia wydania, a poniżej progów termin na podmiotowe środki dowodowe może wynosić tylko 5 dni; zamów zaświadczenia z wyprzedzeniem i pilnuj ich aktualności, nie czekając na wezwanie. (OP art. 306a § 3 i 5, PZP art. 274 ust. 1, PZP art. 126 ust. 3)
 14. Brakujące lub błędne oświadczenia i podmiotowe środki dowodowe zamawiający wzywa do uzupełnienia (co do zasady jednokrotnie), chyba że oferta i tak podlega odrzuceniu. (PZP art. 128 ust. 1) Inaczej przy przedmiotowych środkach dowodowych (np. karty techniczne, certyfikaty produktu): składa się je wraz z ofertą; uzupełnić je można tylko, gdy zamawiający przewidział to w ogłoszeniu albo dokumentach zamówienia, i nigdy, gdy służą potwierdzeniu kryteriów oceny ofert (PZP art. 107 ust. 1-3). Błędu w treści oferty wezwanie do uzupełnienia nie naprawia.
 
 **Wadium**
@@ -53,7 +57,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 **Wykluczenie**
 21. Wykluczenie obowiązkowe obejmuje m.in. prawomocne skazania wykonawcy lub członka zarządu, prokurenta, wspólnika (korupcja, oszustwo, przestępstwa przeciw obrotowi gospodarczemu i dokumentom, skarbowe), zakaz ubiegania się o zamówienia oraz zmowę przetargową. (PZP art. 108 ust. 1)
 22. Zaległość podatkowa lub w składkach wyklucza obowiązkowo tylko przy prawomocnym wyroku lub ostatecznej decyzji, a nie wyklucza, jeżeli przed terminem składania ofert firma zapłaciła z odsetkami albo zawarła wiążące porozumienie o spłacie. (PZP art. 108 ust. 1 pkt 3) Inne naruszenie płatności: wykluczenie fakultatywne. (PZP art. 109 ust. 1 pkt 1)
-23. Wykluczenie fakultatywne (m.in. upadłość, likwidacja, poważne naruszenie obowiązków zawodowych, wcześniejsze nienależyte wykonanie umowy publicznej zakończone wypowiedzeniem, odstąpieniem, odszkodowaniem lub wykonaniem zastępczym, wprowadzenie w błąd) działa tylko, gdy zamawiający wskazał tę podstawę w ogłoszeniu lub dokumentach; przy niewielkich zaległościach może odstąpić jako nieproporcjonalne. (PZP art. 109 ust. 1-3)
+23. Wykluczenie fakultatywne (m.in. upadłość, likwidacja, poważne naruszenie obowiązków zawodowych, wcześniejsze niewykonanie albo nienależyte wykonanie istotnego zobowiązania z umowy publicznej, w znacznym stopniu lub zakresie i z przyczyn po stronie wykonawcy, które doprowadziło do wypowiedzenia, odstąpienia, odszkodowania, wykonania zastępczego albo realizacji uprawnień z rękojmi za wady, wprowadzenie w błąd) działa tylko, gdy zamawiający wskazał tę podstawę w ogłoszeniu lub dokumentach; przy niewielkich zaległościach może odstąpić jako nieproporcjonalne. (PZP art. 109 ust. 1-3) Sama nota z karą umowną nie rozstrzyga spełnienia przesłanki z PZP art. 109 ust. 1 pkt 7; zbierz dokumenty wykonania i skutków naruszenia do oceny prawnika.
 24. Samooczyszczenie: firma unika wykluczenia (poza częścią podstaw), jeśli łącznie naprawiła szkodę albo zobowiązała się do jej naprawienia (także zadośćuczynieniem pieniężnym), wyczerpująco wyjaśniła fakty i okoliczności, aktywnie współpracując z właściwymi organami (w tym ścigania) albo z zamawiającym, i wdrożyła konkretne środki zapobiegawcze; ciężar dowodu na wykonawcy, ocenia zamawiający (KIO 2903/26). (PZP art. 110 ust. 2-3)
 25. Okresy wykluczenia: 5 lat od prawomocnego wyroku przy przestępstwach z art. 108 ust. 1 pkt 1 lit. a-g (także skazanie członka organu, wspólnika, prokurenta z pkt 2); 3 lata od prawomocnego wyroku przy przestępstwie z lit. h (powierzenie pracy cudzoziemcom przebywającym nielegalnie); 3 lata przy art. 109 ust. 1 pkt 2-3, liczone odpowiednio od uprawomocnienia się wyroku, wydania ostatecznej decyzji albo zaistnienia zdarzenia będącego podstawą wykluczenia; okres orzeczonego zakazu przy art. 108 ust. 1 pkt 4; 3 lata od zdarzenia przy zmowie (art. 108 ust. 1 pkt 5) i art. 109 ust. 1 pkt 4, 5, 7 i 9; 2 lata przy wprowadzeniu w błąd z pkt 8; rok przy niedbalstwie z pkt 10; w wyroku lub decyzji może być określony inny okres. (PZP art. 111)
 
@@ -65,8 +69,9 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 
 **Odrzucenie, wybór, zawarcie umowy**
 30. Katalog przyczyn odrzucenia jest zamknięty; obejmuje m.in. niezgodność z warunkami zamówienia, błędy w obliczeniu ceny, rażąco niską cenę, wadium, brak zgody na przedłużenie związania, wykonawców z państw trzecich bez dostępu do rynku, produkty ICT objęte rekomendacją lub decyzją o dostawcy wysokiego ryzyka z KSC. (PZP art. 226 ust. 1)
-31. Umowę zawiera się nie wcześniej niż po 10 dniach (15 dni przy innej drodze niż elektroniczna) od zawiadomienia o wyborze powyżej progów, a poniżej progów po 5 dniach (10 dniach). (PZP art. 264 ust. 1, art. 308 ust. 2)
+31. Co do zasady umowę zawiera się po co najmniej 10 dniach od elektronicznego przesłania zawiadomienia o wyborze powyżej progów unijnych albo 5 dniach poniżej progów, a przy innym sposobie przesłania odpowiednio po 15 albo 10 dniach. Ustawa przewiduje wyjątki, m.in. jedną ofertę w przetargu nieograniczonym lub w trybie podstawowym; osobno sprawdź zakaz zawarcia umowy po wniesieniu odwołania. (PZP art. 264, PZP art. 308 ust. 2-3, PZP art. 577)
 32. Po wniesieniu odwołania zamawiający nie może zawrzeć umowy do wyroku lub postanowienia kończącego KIO, chyba że Izba uchyli zakaz. (PZP art. 577, art. 578)
+32a. Gdy wybrany wykonawca uchyla się od zawarcia umowy albo nie wnosi wymaganego zabezpieczenia, zamawiający może ponownie zbadać pozostałe oferty i wybrać kolejną albo unieważnić postępowanie. (PZP art. 263) Odmowa podpisania umowy na warunkach z oferty i niewniesienie zabezpieczenia to ustawowe podstawy zatrzymania wadium, a zawartą umowę można zmieniać tylko w granicach PZP art. 454-455. (PZP art. 98 ust. 6) Czy wzrost cen daje firmie inną drogę, ocenia prawnik; skill nie doradza ani podpisania, ani odmowy. Wybór oferty to jeszcze nie umowa: umowa wymaga formy pisemnej pod rygorem nieważności, więc przed podpisaniem sprawdź termin i sposób podpisania, reprezentację, wymagane zabezpieczenie oraz zgodność dokumentu z ofertą i warunkami zamówienia, a rozbieżność zakresu, ceny albo odpowiedzialności przekaż prawnikowi. (PZP art. 432)
 
 **Odwołanie do KIO i skarga**
 33. Odwołanie przysługuje na niezgodną z ustawą czynność lub zaniechanie zamawiającego, także na projektowane postanowienia umowy, każdemu, kto ma interes w uzyskaniu zamówienia i może ponieść szkodę. (PZP art. 505 ust. 1, art. 513)
@@ -81,16 +86,18 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 
 **Umowa w sprawie zamówienia publicznego**
 42. Projekt umowy nie może przewidywać odpowiedzialności wykonawcy za opóźnienie (chyba że uzasadnione), kar za zachowania niezwiązane z przedmiotem umowy, odpowiedzialności za okoliczności wyłącznie po stronie zamawiającego, ani ograniczenia zakresu bez minimalnej wartości; taki projekt można zaskarżyć odwołaniem (KIO 8/25). (PZP art. 433, art. 513 pkt 1)
-43. Umowa musi określać termin wykonania, warunki zapłaty i łączną maksymalną wysokość kar umownych; ustawa nie podaje procentowego limitu kar, ale limit musi być w umowie. (PZP art. 436 pkt 1-3) Rażąco wygórowaną karę sąd może obniżyć. (KC art. 484 § 2)
+43. Umowa musi określać termin wykonania, warunki zapłaty i łączną maksymalną wysokość kar umownych; ustawa nie podaje procentowego limitu kar, ale limit musi być w umowie. (PZP art. 436 pkt 1-3) Na żądanie wykonawcy sąd może obniżyć karę, gdy zobowiązanie wykonano w znacznej części albo kara jest rażąco wygórowana. (KC art. 484 § 2) Sprawdź też klauzulę o odszkodowaniu ponad karę, bo limit kar nie musi ograniczać całej odpowiedzialności. (KC art. 484 § 1)
 44. W umowach na ponad 12 miesięcy obowiązkowe są zasady zmiany wynagrodzenia przy zmianie VAT i akcyzy, minimalnego wynagrodzenia, zasad i stawek składek ZUS i NFZ oraz wpłat PPK. (PZP art. 436 pkt 4 lit. b)
 45. Umowa na roboty, dostawy lub usługi zawarta na ponad 6 miesięcy musi zawierać klauzulę waloryzacji przy zmianie cen materiałów lub kosztów: próg zmiany uprawniający do żądania, sposób ustalania (np. wskaźnik GUS), okresy i maksymalną wartość zmiany; niski limit można zaskarżyć (KIO 408/24 nakazała limit 15 % i próg 5 %). (PZP art. 439 ust. 1-2)
 46. Wykonawca, któremu zwaloryzowano wynagrodzenie, musi odpowiednio zmienić wynagrodzenie podwykonawcy w umowie na ponad 6 miesięcy. (PZP art. 439 ust. 5)
 47. Istotna zmiana umowy wymaga nowego postępowania; bez niego dopuszczalne są m.in. zmiany przewidziane w jasnych klauzulach umownych, o ile określają rodzaj, zakres i warunki zmian i nie zmieniają ogólnego charakteru umowy; zmiana wykonawcy przewidziana w umowie albo przez sukcesję (nowy wykonawca spełnia warunki udziału, nie podlega wykluczeniu, bez innych istotnych zmian); niezbędne zamówienia dodatkowe tylko, gdy zmiana wykonawcy jest niemożliwa z powodów ekonomicznych lub technicznych i spowodowałaby istotną niedogodność lub znaczne zwiększenie kosztów, a każda zmiana do 50 % wartości pierwotnej; zmiany z przyczyn, których zamawiający przy należytej staranności nie mógł przewidzieć, bez zmiany ogólnego charakteru umowy i każda do 50 %; zmiany o łącznej wartości poniżej progów unijnych i poniżej 10 % (dostawy, usługi) albo 15 % (roboty), bez zmiany ogólnego charakteru umowy. Same limity procentowe nie wystarczają: każda przesłanka musi być spełniona. (PZP art. 454, art. 455 ust. 1-3)
-48. Zabezpieczenie należytego wykonania najwyżej 5 % ceny (wyjątkowo do 10 %); zwrot w 30 dni od odbioru, z możliwą częścią na rękojmię. (PZP art. 452 ust. 2-3, art. 453 ust. 1-2)
+47a. Zamawiający może odstąpić od umowy w 30 dni od powzięcia wiadomości o istotnej zmianie okoliczności, przez którą wykonanie umowy nie leży w interesie publicznym, czego nie można było przewidzieć przy zawarciu umowy; ten termin nie dotyczy pozostałych podstaw, m.in. zmiany umowy z naruszeniem PZP art. 454-455 (wtedy odstąpienie w części, której zmiana dotyczy) i podlegania przez wykonawcę wykluczeniu z PZP art. 108 w chwili zawarcia. We wszystkich tych przypadkach wykonawca może żądać tylko wynagrodzenia za wykonaną część umowy. (PZP art. 456 ust. 1-3)
+48. Zabezpieczenie wynosi co do zasady najwyżej 5 % ceny, wyjątkowo do 10 %, a zamawiający zwraca je w 30 dni od wykonania zamówienia i uznania go za należycie wykonane. Na roszczenia z rękojmi lub gwarancji może pozostawić najwyżej 30 % zabezpieczenia, zwracane najpóźniej w 15. dniu po upływie właściwego okresu. (PZP art. 452 ust. 2-3, PZP art. 453 ust. 1-3)
 
 **Płatności i faktury**
 49. Przy umowach na ponad 12 miesięcy zamawiający płaci częściami po wykonaniu części albo udziela zaliczek. (PZP art. 443 ust. 1)
 50. Przy robotach na ponad 12 miesięcy kolejne płatności zależą od dowodów zapłaty podwykonawcom; brak dowodów wstrzymuje wypłatę w odpowiedniej części. (PZP art. 447 ust. 1-2)
+50a. Przy robotach budowlanych zamawiający płaci bezpośrednio podwykonawcy wymagalne wynagrodzenie, gdy wykonawca uchyla się od zapłaty, jeżeli umowę o podwykonawstwo robót zamawiający zaakceptował, a umowę na dostawy lub usługi mu przedłożono; dotyczy to tylko należności powstałych po akceptacji albo przedłożeniu i obejmuje samo wynagrodzenie, bez odsetek. (PZP art. 465 ust. 1-3) Przed zapłatą zamawiający daje wykonawcy co najmniej 7 dni na uwagi, a po uwagach może nie zapłacić, złożyć kwotę do depozytu sądowego albo zapłacić, jeżeli podwykonawca wykaże zasadność. (PZP art. 465 ust. 4-5) Umowa podwykonawcza nie może ustalać kar umownych ani warunków zapłaty mniej korzystnie dla podwykonawcy niż umowa wykonawcy z zamawiającym. (PZP art. 463) Pierwszy krok podwykonawcy: pismo do zamawiającego z umową, dowodem jej akceptacji albo przedłożenia, fakturą i dowodem wymagalności (poziom A); pismo nie zapewnia, że zamawiający zapłaci.
 51. Zamawiający musi odbierać ustrukturyzowane faktury elektroniczne przesłane przez Platformę Elektronicznego Fakturowania, a wykonawca nie musi ich tą drogą wysyłać. (ustawa o elektronicznym fakturowaniu w zamówieniach publicznych, art. 4 ust. 1-2, t.j. Dz. U. 2026 poz. 276 [spoza plików lokalnych, odczyt PDF z api.sejm.gov.pl 2026-11-06]) Niezależnie od tego obowiązuje KSeF (zob. A2 pkt 52); relacji KSeF i PEF dla konkretnego zamawiającego nie weryfikowałem w źródle UZP [WYMAGA WERYFIKACJI].
 52. Spór z umowy można skierować do mediacji przed Sądem Polubownym przy Prokuratorii Generalnej. (PZP art. 591 ust. 1)
 
@@ -104,6 +111,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 6. **Wniosek o zmianę wynagrodzenia (waloryzacja)**. Elementy: klauzula umowna i art. 439 albo 436 pkt 4 lit. b, wskaźnik i okres, wyliczenie wpływu na koszt, dowody (komunikaty GUS, faktury), wnioskowana kwota, limit z umowy.
 7. **Wniosek o zwrot wadium**. Elementy: postępowanie, kwota i forma, podstawa z art. 98 (uwaga: wniosek z art. 98 ust. 2 oznacza utratę środków ochrony prawnej, art. 98 ust. 3).
 8. **Lista kontrolna przed złożeniem oferty**: próg i tryb, terminy (składanie, związanie, wadium), forma podpisu, JEDZ lub oświadczenie, wadium (kwota, ważność do końca związania, beneficjent, oryginał elektroniczny), warunki udziału, podstawy wykluczenia z ogłoszenia, kryteria, projekt umowy (kary, limit, waloryzacja, terminy), tajemnica przedsiębiorstwa, konsorcjum i podwykonawcy; wymóg zatrudnienia na umowę o pracę osób wykonujących wskazane czynności, sposób jego dokumentowania i kary za niespełnienie, także wobec podwykonawców (PZP art. 95 ust. 1, PZP art. 438); weryfikacja sankcyjna wykonawcy, jego beneficjenta rzeczywistego i jednostki dominującej, niezależna od wartości zamówienia [WYMAGA WERYFIKACJI: ustawa o szczególnych rozwiązaniach w zakresie przeciwdziałania wspieraniu agresji na Ukrainę, art. 7 ust. 1, na isap.sejm.gov.pl].
+9. **Odpowiedź na notę obciążeniową albo potrącenie kary umownej** (poziom A, gdy firma przedstawia fakty i dowody bez sporu o wykładnię; poziom B, gdy spór dotyczy wykładni umowy albo przepisów, także przy małej kwocie, albo gdy kwota zagraża płynności). Elementy: oznaczenie umowy i noty; czy umowa wiąże karę z opóźnieniem czy ze zwłoką i czy przyczyna leżała po stronie zamawiającego (projekt umowy nie mógł przewidywać odpowiedzialności wykonawcy za okoliczności, za które wyłączną odpowiedzialność ponosi zamawiający, PZP art. 433); łączny limit kar z umowy (PZP art. 436); stanowisko co do zasadności z dowodami (umowa, harmonogram, protokoły, wpisy w dzienniku budowy, korespondencja o przeszkodach); żądanie zmniejszenia kary, gdy zobowiązanie wykonano w znacznej części albo kara jest rażąco wygórowana (KC art. 484 § 2); propozycja mediacji albo innego polubownego rozwiązania sporu (PZP art. 591 ust. 1). Sama sporność kary nie przesądza, że potrącenie jest nieskuteczne; skuteczność potrącenia oceni prawnik (KC art. 498 § 1). Pod pismem: wpływ na przesłankę z PZP art. 109 ust. 1 pkt 7 (reguła 23) jako pytanie do prawnika.
 
 ### B4. Sygnały „tylko prawnik”
 
@@ -128,6 +136,8 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 - Czy zaległość ZUS lub US została spłacona albo objęta porozumieniem przed terminem składania ofert.
 - Czas trwania umowy (6 miesięcy dla waloryzacji, 12 miesięcy dla płatności częściowych i klauzul z art. 436 pkt 4).
 - Czy zmiana umowy była przewidziana w klauzuli umownej.
+- Czy złożono tylko jedną ofertę (wcześniejsze zawarcie umowy) i czy wybrana firma wniosła zabezpieczenie.
+- U podwykonawcy: czy zamawiający zaakceptował umowę o roboty albo otrzymał umowę na dostawy lub usługi i kiedy powstała należność.
 
 ### B6. Orzecznictwo
 
@@ -182,21 +192,13 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 | Rozporządzenie Prezesa Rady Ministrów z 30 grudnia 2020 r. w sprawie szczegółowych rodzajów kosztów postępowania odwoławczego, ich rozliczania oraz wysokości i sposobu pobierania wpisu od odwołania | DU/2020/2437 | stawki wpisu do KIO |
 | Obwieszczenie Prezesa UZP z 8 grudnia 2025 r. (progi unijne i kurs na 2026-2027) | MP/2025/1247 | progi w złotych |
 | Ustawa z 9 listopada 2018 r. o elektronicznym fakturowaniu w zamówieniach publicznych, koncesjach na roboty budowlane lub usługi oraz partnerstwie publiczno-prywatnym | DU/2018/2191, t.j. DU/2026/276 | faktury ustrukturyzowane, PEF |
-| Ustawa z 11 marca 2004 r. o podatku od towarów i usług | DU/2004/535 (t.j. wg PZP art. 225: Dz. U. 2025 poz. 775) | VAT od najmu lokalu, KSeF |
+| Ustawa z 11 marca 2004 r. o podatku od towarów i usług | DU/2004/535 (t.j. wg PZP art. 225: Dz. U. 2025 poz. 775) | KSeF przy fakturach dla zamawiającego (reguła 51) |
 | Ustawa z 25 lipca 2025 r. o zmianie ustawy PZP oraz niektórych innych ustaw | DU/2025/1173 | próg 170 000 zł, przepisy przejściowe art. 7-10 |
 | Ustawa z 9 lipca 2025 r. o zmianie ustawy PZP oraz ustawy o umowie koncesji | DU/2025/1165 [numer wg ISAP z wyników wyszukiwania, WYMAGA WERYFIKACJI] | wykonawcy z państw trzecich |
 | Rozporządzenie Ministra Rozwoju, Pracy i Technologii w sprawie podmiotowych środków dowodowych (wydane na podstawie PZP art. 128 ust. 6) | DU/2020/2415 [WYMAGA WERYFIKACJI] | jakie dokumenty i jak stare |
-| Rozporządzenie Komisji (UE) nr 651/2014, załącznik I | Dz. Urz. UE L 187 z 26.06.2014 | progi mikro, małego, średniego przedsiębiorcy |
-| Rozporządzenie wykonawcze Komisji (UE) 2024/2690 | Dz. Urz. UE (17.10.2024) | środki i progi incydentu poważnego dla dostawców cyfrowych |
-| Ustawa z 21 czerwca 2001 r. o ochronie praw lokatorów | DU/2001/733 | tylko rozgraniczenie: nie dotyczy lokali użytkowych |
-| RODO (rozporządzenie 2016/679) art. 33 | Dz. Urz. UE L 119 z 4.05.2016 | zgłoszenie naruszenia danych równolegle do incydentu |
 
 ### Kwestie sporne i niepewne (przedstawiaj jako pytania do prawnika, nie jako regułę)
 
-1. Czy umowa najmu lokalu użytkowego może skrócić 3-miesięczny termin z KC art. 688 (relacja do art. 673 § 1).
-2. Skuteczność jednostronnej podwyżki z KC art. 685¹ przy umowie na czas oznaczony z ustaloną stawką.
-3. Czy ogólna klauzula „z ważnych przyczyn” spełnia KC art. 673 § 3 (orzeczenia SN nieotwarte; skill mieszkaniowy przyjmuje, że wystarcza).
-4. Czy kara z KSC art. 73 ust. 5 (do 100 mln zł) jest objęta 2-letnim moratorium z art. 35 ustawy zmieniającej.
-5. Intertemporalność progu 170 000 zł (art. 7-10 ustawy z 25 lipca 2025 r.).
-6. VAT od najmu lokalu użytkowego i relacja PEF z KSeF: tylko z wyników wyszukiwania, bez lektury ustaw lokalnie.
-7. Orzeczenia SN do najmu: 4 pozycje nieotwarte (sn.pl zwraca pustą treść); KIO 8/25: data z nagłówka w wynikach wyszukiwania.
+1. Intertemporalność progu 170 000 zł (art. 7-10 ustawy z 25 lipca 2025 r.).
+2. Relacja Platformy Elektronicznego Fakturowania i KSeF u danego zamawiającego: tylko z wyników wyszukiwania.
+3. KIO 8/25: data z nagłówka w wynikach wyszukiwania.

@@ -1,0 +1,13 @@
+1. **WAŻNE, nowe** — [references/moduly/umowy-wlasne-firmy.md:115](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/umowy-wlasne-firmy.md:115>): instrukcja sporządzania klauzuli arbitrażowej pomija konsumentów; dopisz, że zapis jest dopuszczalny dopiero po powstaniu sporu, na piśmie i z wymaganym pouczeniem pod rygorem nieważności, zgodnie z KPC art. 1164¹ § 1–2 ([przepis](https://eli.gov.pl/api/acts/DU/2016/1823/text.html)).
+
+2. **WAŻNE, niedomknięte naniesienie** — [references/mapa-spraw.md:64](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/mapa-spraw.md:64>): szkoda wyrządzona produktem trafia wyłącznie do modułu sprzedaży, który nie zawiera dodanych reguł odpowiedzialności; skieruj ją także do bloku „Odpowiedzialność za produkt niebezpieczny” w `umowy-wlasne-firmy.md`, zachowując osobną ścieżkę GPSR i pilnego prawnika.
+
+3. **WAŻNE, wcześniejsze** — [references/moduly/marka-i-tajemnica.md:34](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/marka-i-tajemnica.md:34>): sformułowanie „a potem skarga” pomija możliwość zaskarżenia decyzji UPRP bez ponownego rozpatrzenia; dodaj alternatywną skargę do WSA w ciągu 30 dni od doręczenia, zgodnie z PPSA art. 52 § 3 i art. 53 § 1 ([oficjalne pouczenie](https://www.epuap.gov.pl/wps/portal/strefa-klienta/katalog-spraw/opis-uslugi/sprzeciw-wobec-zgloszenia-znaku-towarowego)).
+
+4. **WAŻNE, wcześniejsze** — [references/moduly/umowy-wlasne-firmy.md:27](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/umowy-wlasne-firmy.md:27>): wykluczenie „samej strony, którą można zmienić” nadmiernie zawęża KC art. 384 § 4; zastąp je sprawdzeniem możliwości zachowania i odtworzenia udostępnionej wersji wzorca, ponieważ zapisywalny HTML również może spełniać wymaganie.
+
+5. **KOSMETYKA, nowe** — [references/moduly/sprzedaz-konsumencka.md:121](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sprzedaz-konsumencka.md:121>): zwrot „inne niż konsumenckie i dotyczące platform wideo” niejednoznacznie określa właściwość UKE; napisz „pozostałe sprawy, poza właściwością Prezesa UOKiK i Przewodniczącego KRRiT”, zgodnie z SDE art. 15a ust. 1 pkt 1–3 ([nowelizacja](https://eli.gov.pl/api/acts/DU/2026/1296/text/T/D20261296L.pdf)).
+
+Nie stwierdziłem blokerów w `dane-osobowe.md` ani wskazanych punktach `pisma.md`; kopii wąskich skilli nie recenzowałem, testów działania modelu nie wykonywałem.
+
+**BLOKERY DO WYDANIA: NIE**

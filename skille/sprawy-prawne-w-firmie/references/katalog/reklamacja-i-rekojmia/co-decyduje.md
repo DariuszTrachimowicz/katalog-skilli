@@ -42,9 +42,9 @@ Ustal to na początku, bo połowa porad krążących w internecie milcząco zak�
 
 **Reklamacja** dotyczy wady, rzecz jest zepsuta, niekompletna albo inna niż obiecano.
 
-**Zwrot** to zmiana zdania. Prawo do odstąpienia bez podania powodu w ciągu 14 dni działa przy zakupach przez internet, telefon i poza lokalem sprzedawcy, na pokazie, u akwizytora. W sklepie stacjonarnym takiego prawa nie ma; sklep, który przyjmuje zwroty, robi to z własnej polityki i może ją obwarować warunkami (metki, termin, tylko wymiana albo bon).
+**Zwrot** to zmiana zdania. Prawo do odstąpienia bez podania powodu działa przy zakupach przez internet, telefon i poza lokalem sprzedawcy, na pokazie, u akwizytora. Termin wynosi zasadniczo 14 dni, a przy umowie zawartej podczas nieumówionej wizyty sprzedawcy w domu klienta albo na wycieczce 30 dni; sam pokaz albo umówiona wizyta nie wydłuża go automatycznie. W sklepie stacjonarnym takiego prawa nie ma; sklep, który przyjmuje zwroty, robi to z własnej polityki i może ją obwarować warunkami (metki, termin, tylko wymiana albo bon).
 
-Typowe wyjątki od zwrotu przy zakupie na odległość, o które warto zapytać: rzecz wykonana na zamówienie lub personalizowana, rzecz szybko psująca się, produkt zapieczętowany ze względów zdrowotnych lub higienicznych po otwarciu opakowania, nagrania i programy po zdjęciu folii, prasa, usługa w pełni wykonana za wyraźną zgodą klienta.
+Typowe wyjątki od zwrotu przy zakupie na odległość, o które warto zapytać: rzecz wykonana na zamówienie lub personalizowana, rzecz szybko psująca się, produkt zapieczętowany ze względów zdrowotnych lub higienicznych po otwarciu opakowania, nagrania i programy po zdjęciu folii, prasa, odpłatna usługa w pełni wykonana za wyraźną zgodą klienta, który wcześniej został uprzedzony o utracie prawa do odstąpienia i przyjął to do wiadomości.
 
 Dwie rzeczy, o które przy zwrocie internetowym toczy się w Polsce najwięcej awantur:
 - **Sprzedawca może wstrzymać zwrot pieniędzy** do chwili, w której dostanie towar z powrotem albo dowód jego odesłania, zależnie od tego, co nastąpi wcześniej. Nie dotyczy to sytuacji, w której sam zaproponował, że odbierze rzecz od klienta. Dlatego klient, który wysłał paczkę i czeka, przyspiesza sprawę, wysyłając potwierdzenie nadania.
@@ -59,7 +59,7 @@ To dwie równoległe drogi i **wybór należy do kupującego**.
 - Reklamacja idzie do **sprzedawcy**, tego, kto wystawił paragon lub fakturę. Sprzedawca nie może się z niej zwolnić, powołując się na gwarancję producenta.
 - Gwarancja jest **dobrowolna**. Jej treść, czas i zakres układa gwarant, zwykle producent. Bywa lepsza od reklamacji (np. door-to-door, urządzenie zastępcze) i bywa dużo gorsza (tylko naprawa, tylko w autoryzowanym serwisie, plomby, oryginalne opakowanie).
 
-Te dwie drogi są od siebie niezależne. Skorzystanie z gwarancji nie zamyka drogi do sprzedawcy: jeśli naprawa gwarancyjna nic nie da, sprawa może wrócić do sklepu, a czas spędzony w serwisie nie zjada kupującemu terminu wobec sprzedawcy, zegar stoi, dopóki gwarant nie odmówi albo nie przekroczy czasu na naprawę. Kupujący, który poszedł najpierw do serwisu, nie stracił więc niczego poza czasem.
+Te dwie drogi są od siebie niezależne. Skorzystanie z gwarancji nie zamyka drogi do sprzedawcy: jeśli naprawa gwarancyjna nic nie da, sprawa może wrócić do sklepu, a termin wobec sprzedawcy staje od dnia, w którym kupujący zawiadomił sprzedawcę o wadzie, i biegnie dalej od odmowy gwaranta albo bezskutecznego upływu czasu na naprawę. Samo oddanie rzeczy do serwisu tego zegara nie zatrzymuje, dlatego kupujący, który idzie najpierw do gwaranta, powinien zawiadomić też sprzedawcę i zachować dowód tego zawiadomienia.
 
 Odesłanie klienta zdaniem „to nie do nas, to do serwisu” jest najczęstszym błędem sprzedawców i najczęstszym powodem, dla którego sprawa trafia potem do rzecznika.
 
@@ -91,7 +91,7 @@ Sprawdź, czy sklep nie wpisał sobie w regulamin 30 dni na odpowiedź. Zapis o 
 
 ## 7. Ciężar dowodu i dowody
 
-Kto musi udowodnić swoje, ten przegrywa, gdy nic nie da się ustalić. W pierwszych dwóch latach ten ciężar leży po stronie sprzedawcy. Po tym czasie się odwraca i to kupujący musi pokazać, że rzecz była wadliwa od początku.
+Kto musi udowodnić swoje, ten przegrywa, gdy nic nie da się ustalić. Przy towarze kupionym przez konsumenta przyjmuje się, że wada ujawniona w ciągu dwóch lat od dostarczenia istniała już wtedy, i to sprzedawca musi wykazać, że było inaczej. Przy treści albo usłudze cyfrowej dostarczanej jednorazowo lub w częściach to domniemanie trwa rok, choć sama odpowiedzialność trwa dwa lata. Po tym czasie ciężar się odwraca i to kupujący musi pokazać, że rzecz była wadliwa od początku. Najpierw ustal rodzaj świadczenia i sposób dostarczenia; domniemanie nie przenosi na sprzedawcę dowodzenia wszystkich faktów sprawy.
 
 Co realnie działa jako dowód:
 - zdjęcia i nagrania wady, najlepiej z widoczną datą,
@@ -112,7 +112,7 @@ Praktyczna ścieżka wygląda tak: opisać na piśmie, co miało być, a co jest
 
 Ważne rozróżnienie, które decyduje o tym, czego w ogóle można żądać: czy umówiono się na **konkretny efekt** (uszyta sukienka, wykafelkowana łazienka, wykonana strona), czy na **staranne działanie** (opieka, doradztwo, zajęcia). Przy staraniu trudniej mówić o wadzie, a łatwiej o niewykonaniu tego, co obiecano w umowie lub w opisie oferty.
 
-Przy usługach zamawianych przez internet obowiązuje osobna pułapka: klient, który wyraźnie zgodził się na rozpoczęcie usługi przed upływem terminu na odstąpienie, traci możliwość darmowej rezygnacji po jej pełnym wykonaniu.
+Przy usługach zamawianych przez internet obowiązuje osobna pułapka: przy odpłatnej usłudze klient traci prawo do odstąpienia po jej pełnym wykonaniu tylko wtedy, gdy wcześniej wyraźnie zgodził się na rozpoczęcie przed upływem terminu na odstąpienie, został uprzedzony, że po wykonaniu usługi to prawo utraci, i przyjął to do wiadomości. Sama zgoda na rozpoczęcie nie wystarcza, a przy umowie z nieumówionej wizyty albo wycieczki ten wyjątek sprawdza się osobno.
 
 ## 9. Treści i usługi cyfrowe
 
@@ -160,7 +160,7 @@ Powiedz od razu, że są poza zakresem, i nie zgaduj tam terminów:
 - Żądanie paragonu jako jedynego dowodu zakupu.
 - Żądanie oryginalnego opakowania jako warunku reklamacji.
 - Odmowa ze zdaniem „uszkodzenie mechaniczne” bez żadnego uzasadnienia.
-- Zapis w regulaminie: „towary z wyprzedaży nie podlegają reklamacji”. Jeśli cena była obniżona z powodu konkretnej wady, o której klienta uprzedzono, to tylko ta jedna wada jest poza sporem, nie wszystkie.
+- Zapis w regulaminie: „towary z wyprzedaży nie podlegają reklamacji”. Przy sprzedaży konsumenckiej konkretna wada nie obciąża sprzedawcy tylko wtedy, gdy klient najpóźniej przy zawarciu umowy został o niej wyraźnie poinformowany i wyraźnie, odrębnie ją zaakceptował. Sam rabat albo opis wady nie wystarcza, a nawet skuteczna akceptacja dotyczy tylko tej jednej wady, nie wszystkich.
 - Wpisany w regulamin termin 30 dni na odpowiedź konsumentowi.
 - Przyjmowanie reklamacji wyłącznie w jednej formie, na przykład tylko na formularzu ze strony.
 - Brak rejestru zgłoszeń z datami wpływu. Bez niego sklep nie udowodni, że odpowiedział na czas.
@@ -182,5 +182,5 @@ Powiedz od razu, że są poza zakresem, i nie zgaduj tam terminów:
 - **Elektronika po roku od zakupu.** Sprzedawcy odruchowo odsyłają do gwarancji, choć droga do sklepu wciąż jest otwarta.
 - **Meble na wymiar i montaż.** Spór dotyczy tego, czy problem leży w produkcie, w pomiarze, czy w montażu, a przy każdej z odpowiedzi odpowiada kto inny.
 - **Remont i wykończenie.** Kluczowe jest to, co zapisano w umowie i w protokole odbioru, oraz czy w ogóle wezwano wykonawcę do poprawek.
-- **Kursy online i subskrypcje.** Spór o to, czy klient zgodził się na rozpoczęcie przed terminem na rezygnację i czy dostał to, co obiecywała strona sprzedażowa.
+- **Kursy online i subskrypcje.** Spór o to, czy klient zgodził się na rozpoczęcie przed terminem na rezygnację, czy został uprzedzony o utracie prawa do odstąpienia i czy dostał to, co obiecywała strona sprzedażowa.
 - **Sprzęt kupiony na firmę.** Pierwsze pytanie brzmi, czy zakup miał związek z branżą kupującego, od tego zależy cała reszta.

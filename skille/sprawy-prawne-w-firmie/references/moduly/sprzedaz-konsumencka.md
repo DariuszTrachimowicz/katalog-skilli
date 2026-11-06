@@ -18,6 +18,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 12. Sprzedajemy przez Allegro, Amazon albo inną platformę, kto odpowiada wobec klienta?
 13. Klient żąda sprzedaży po cenie z błędnej etykiety.
 14. Napisaliśmy „u nas 14 dni na zwrot!” jako atut oferty, czy to problem?
+15. Płacimy influencerce produktami za posty, czy musi to oznaczać i czy my coś ryzykujemy?
 
 ## 2. Reguły po skutku z podstawą
 
@@ -27,6 +28,11 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 - Od 27.11.2025 taka osoba może najpóźniej przy zawarciu umowy oświadczyć, czy umowa ma dla niej charakter zawodowy; sprzedawca nie może uzależnić zawarcia umowy od złożenia oświadczenia (UPK art. 7aa ust. 2; KC art. 385⁵ § 1¹; zmiana Dz.U. 2025 poz. 1172, data stosowania 2025-11-27 według ELI).
 - Konsument nie może zrzec się praw z ustawy; postanowienie gorsze od ustawy jest nieważne i zastępuje je ustawa (UPK art. 7).
 - Przepisy o odstąpieniu nie obejmują m.in. umów o nieruchomości, najmu mieszkań do celów mieszkalnych (poza rozdziałem 2) i większości usług finansowych (UPK art. 4 ust. 1 i 2), a usługi zdrowotne mają odrębny zakres (UPK art. 3a).
+
+**Sprzedaż konsumentom z innych państw**
+- Gdy sklep kieruje ofertę do konsumentów z innego państwa (język, waluta, wysyłka, domena), przed zastosowaniem samych polskich reguł ustal kraj zwykłego pobytu klienta i sposób, w jaki oferta tam trafia. Wybór prawa polskiego w regulaminie nie może pozbawić takiego konsumenta ochrony z przepisów jego państwa, których nie da się wyłączyć umową; skala sprzedaży nie jest warunkiem tej ochrony, a wyjątki obejmują m.in. usługi świadczone konsumentowi wyłącznie poza jego państwem (rozporządzenie (WE) nr 593/2008 Rzym I, art. 6 ust. 1, 2 i 4; tekst urzędowy na arch-bip.ms.gov.pl, odczyt 6.11.2026).
+- VAT od sprzedaży wysyłkowej do innych państw (procedura OSS) to sprawa dla księgowej; skill nie wylicza podatku.
+- Przed rozszerzeniem sprzedaży na nowy kraj: karta dla prawnika z pytaniem, których przepisów konsumenckich tego kraju regulamin nie może wyłączyć.
 
 **Informacje przed umową**
 - W sklepie stacjonarnym obowiązek informacyjny jest węższy, najpóźniej przy wyrażeniu woli związania się umową (UPK art. 8).
@@ -43,7 +49,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 - Konsument może odstąpić od umowy zawartej na odległość lub poza lokalem w ciągu 14 dni bez podania przyczyny; przy nieumówionej wizycie w domu albo wycieczce termin wynosi 30 dni (UPK art. 27).
 - Termin dla towaru biegnie od objęcia rzeczy w posiadanie przez konsumenta (nie przez kuriera), przy dostawie w częściach od ostatniej części, przy dostawach regularnych od pierwszej; dla usług od zawarcia umowy (UPK art. 28).
 - Brak pouczenia o prawie odstąpienia wydłuża termin o 12 miesięcy; gdy pouczenie przyjdzie później, termin liczy się od pouczenia (UPK art. 29).
-- Wystarczy wysłanie oświadczenia przed upływem terminu; wzór formularza jest dobrowolny dla klienta (UPK art. 30 ust. 1 i 2). Przy oświadczeniu złożonym elektronicznie sprzedawca niezwłocznie potwierdza jego otrzymanie na trwałym nośniku (UPK art. 30 ust. 4).
+- Wystarczy wysłanie oświadczenia przed upływem terminu; wzór formularza jest dobrowolny dla klienta (UPK art. 30 ust. 1 i 2). Gdy klient złożył oświadczenie elektronicznym sposobem udostępnionym przez sklep (wzór formularza wysłany elektronicznie albo formularz na stronie), sklep niezwłocznie potwierdza jego otrzymanie na trwałym nośniku (UPK art. 30 ust. 3 i 4). Sprawdź, jaki sposób sklep udostępnił; nie zakładaj, że e-mail nigdy nim nie jest, a potwierdzenie pozostałych oświadczeń i tak ułatwia dowód.
 - Po odstąpieniu umowę uważa się za niezawartą (UPK art. 31 ust. 1).
 - Zwrot płatności, w tym kosztu najtańszej zwykłej dostawy do klienta, w ciągu 14 dni od otrzymania oświadczenia, tym samym sposobem płatności, chyba że klient wyraźnie zgodzi się na inny bez kosztów (UPK art. 32 ust. 1 i 2, art. 33).
 - Sprzedawca, który nie zaproponował sam odbioru, może wstrzymać zwrot do otrzymania rzeczy albo dowodu jej odesłania, zależnie od tego, co nastąpi wcześniej (UPK art. 32 ust. 3).
@@ -58,6 +64,8 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 - Rzecz w zapieczętowanym opakowaniu, której po otwarciu nie można zwrócić ze względów zdrowotnych lub higienicznych, jeśli opakowanie otwarto po dostawie (UPK art. 38 ust. 1 pkt 5). Wyjątek dotyczy tylko takich rzeczy; rozciąganie go na zwykłe towary to praktyka wprowadzająca w błąd (zob. XVII AmA 6/18, XVII AmA 16/17).
 - Usługi z oznaczonym dniem lub okresem: zakwaterowanie (nie mieszkaniowe), przewóz rzeczy, najem aut, gastronomia, wypoczynek, wydarzenia (UPK art. 38 ust. 1 pkt 12).
 - Odpłatna treść cyfrowa bez nośnika, gdy dostarczanie rozpoczęto za wyraźną i uprzednią zgodą klienta, który przed rozpoczęciem został poinformowany o utracie prawa odstąpienia i przyjął to do wiadomości, a sprzedawca przekazał potwierdzenie (UPK art. 38 ust. 1 pkt 13); brak któregokolwiek elementu wyłącza wyjątek.
+- Pilna naprawa albo konserwacja, gdy klient wyraźnie zażądał przyjazdu w tym celu; prawo odstąpienia zostaje co do dodatkowych usług i towarów innych niż części potrzebne do naprawy (UPK art. 38 ust. 1 pkt 8). Odpłatna naprawa w pełni wykonana za wyraźną i uprzednią zgodą klienta, który zażądał przyjazdu w celu naprawy (UPK art. 38 ust. 1 pkt 14). Oba wyjątki stosuj tylko po ustaleniu rzeczywistego, wyraźnego żądania klienta; zapis w formularzu nie zmienia wizyty akwizycyjnej w wezwanie do naprawy.
+- Towar, który po dostarczeniu ze względu na swój charakter zostaje nierozłącznie połączony z innymi rzeczami (UPK art. 38 ust. 1 pkt 6).
 - Przy nieumówionej wizycie w domu albo wycieczce wyjątki z pkt 1-3 i 5 nie działają (UPK art. 38 ust. 2).
 
 **Zgodność towaru i treści cyfrowych z umową (rama, szczegóły w `reklamacja-i-rekojmia`)**
@@ -72,6 +80,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 - Cenę i cenę jednostkową uwidacznia się jednoznacznie i tak, by dało się porównać (CENY art. 4 ust. 1).
 - Przy każdej informacji o obniżce obok ceny obniżonej podaje się najniższą cenę z 30 dni przed obniżką; przy krótszym oferowaniu najniższą od początku oferowania; przy towarach szybko psujących się cenę sprzed pierwszej obniżki; to samo w reklamie z ceną (CENY art. 4 ust. 2-5).
 - Przy rozbieżności cen klient może żądać ceny dla siebie najkorzystniejszej (CENY art. 5).
+- Oczywista pomyłka w cenie w sklepie internetowym: najpierw ustal z regulaminu i rzeczywistej korespondencji, czy umowa została zawarta. Cennik i reklama w razie wątpliwości są zaproszeniem do zawarcia umowy, nie ofertą (KC art. 71), a automatyczne potwierdzenie otrzymania zamówienia nie przesądza jego przyjęcia (KC art. 66¹ § 1). Gdy umowa została zawarta, uchylenie się od skutków istotnego błędu, który klient mógł z łatwością zauważyć, wymaga oświadczenia na piśmie złożonego klientowi w ciągu roku od wykrycia błędu (KC art. 84 § 1 i 2, KC art. 88 § 1 i 2). Nie obiecuj automatycznego anulowania zamówień; pismo do klientów zawsze jako poziom B. W sklepie stacjonarnym rzecz wystawiona z ceną jest ofertą (KC art. 543).
 - Kary Inspekcji Handlowej: do 20 000 zł, a przy co najmniej trzech naruszeniach w 12 miesiącach do 40 000 zł (CENY art. 6 ust. 1 i 2; kwoty według tekstu jednolitego Dz.U. 2023 poz. 168, bez zmian w ELI do 6.11.2026). Decyzji nie wydaje się po 3 latach od końca roku stwierdzenia naruszenia (CENY art. 7 ust. 2).
 - Procent obniżki liczy się od najniższej ceny z 30 dni, nie od „ceny regularnej” (stanowisko UOKiK w komunikacie z 14.01.2026 o karach dla Zalando i Temu; TSUE C-330/23 według rejestru skilla `regulamin-sklepu-checklista`).
 
@@ -79,6 +88,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 - Praktyka wprowadzająca w błąd jest nieuczciwa bez badania innych przesłanek (UNPR art. 4 ust. 2).
 - Sklep, który pokazuje opinie, podaje, czy i jak sprawdza, że pochodzą od osób, które kupiły lub używały produktu; pominięcie tej informacji to zaniechanie wprowadzające w błąd (UNPR art. 6 ust. 4 pkt 7).
 - Zawsze zakazane: twierdzenie, że opinie są od kupujących, bez rozsądnych kroków weryfikacji (UNPR art. 7 pkt 25); zamieszczanie lub zlecanie fałszywych opinii albo zniekształcanie opinii (UNPR art. 7 pkt 26); przedstawianie praw ustawowych jako atutu oferty (UNPR art. 7 pkt 10); fałszywe „tylko dziś” (UNPR art. 7 pkt 7); „gratis”, gdy klient musi coś zapłacić poza kosztem dostawy (UNPR art. 7 pkt 20).
+- Treść sponsorowana (post influencera, recenzja za produkt, rabat, prowizję albo pieniądze) musi być rozpoznawalna jako reklama: nieujawnienie handlowego celu może być zaniechaniem wprowadzającym w błąd (UNPR art. 6 ust. 3 pkt 2), a opłacona promocja podana jak treść publicystyczna w mediach jest zawsze zakazana (UNPR art. 7 pkt 11). Wobec innych firm wypowiedź zachęcająca do zakupu, która sprawia wrażenie neutralnej informacji, jest czynem nieuczciwej konkurencji (ZNK art. 16 ust. 1 pkt 4). Przy współpracy ustal wszystkie korzyści twórcy i sposób oznaczania w umowie; samo oznaczenie marki nie zastępuje informacji o reklamie, a przerzucenie oznaczania na twórcę w umowie nie zapewnia, że firma nie odpowiada (zakres odpowiedzialności reklamodawcy, agencji i twórcy zależy od ich faktycznych działań). Szczegółowe zasady oznaczania podaje Prezes UOKiK w rekomendacjach dla influencerów [WYMAGA WERYFIKACJI: aktualna wersja na uokik.gov.pl].
 - Klient poszkodowany nieuczciwą praktyką może żądać m.in. zaniechania, usunięcia skutków, obniżenia ceny, naprawienia szkody, w tym unieważnienia umowy (UNPR art. 12 ust. 1).
 - To przedsiębiorca musi udowodnić, że praktyka nie wprowadza w błąd (UNPR art. 13).
 
@@ -87,7 +97,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 - Zakazane jest stosowanie we wzorcach z konsumentami postanowień niedozwolonych (UOKIK art. 23a); decyzja prawomocna działa wobec przedsiębiorcy i wszystkich jego klientów z tego wzorca (UOKIK art. 23d).
 - Prezes UOKiK może bez wszczynania postępowania skierować do firmy „wystąpienie”; firma może zająć stanowisko w terminie nie krótszym niż 14 dni (UOKIK art. 49a).
 - Na żądanie Prezesa UOKiK trzeba udzielić informacji i dokumentów (UOKIK art. 50 ust. 1); za nieudzielenie albo podanie nieprawdziwych lub mylących informacji kara do 3 % obrotu (UOKIK art. 106 ust. 2 pkt 2).
-- Przedsiębiorca, który zobowiąże się do zmian, może dostać decyzję zobowiązującą zamiast kary (UOKIK art. 28 ust. 1, art. 23c ust. 1). Jeśli zaprzestał praktyki, decyzja stwierdza zaniechanie, ciężar dowodu zaprzestania jest na firmie (UOKIK art. 27).
+- Przedsiębiorca, który zobowiąże się do zmian, może dostać decyzję zobowiązującą zamiast kary (UOKIK art. 28 ust. 1, art. 23c ust. 1). Jeśli zaprzestał praktyki, decyzja stwierdza zaniechanie, ciężar dowodu zaprzestania jest na firmie (UOKIK art. 27). Samo zaprzestanie praktyki nie usuwa ryzyka kary, bo kara dotyczy przedsiębiorcy, który „dopuścił się” naruszenia (UOKIK art. 106 ust. 1 pkt 4). Decyzja zobowiązująca wyłącza tę podstawę kary (UOKIK art. 28 ust. 4), ale jej wydania nie można obiecać, a po jej uchyleniu Prezes UOKiK orzeka ponownie co do istoty sprawy (UOKIK art. 28 ust. 5-7).
 - Kara za praktykę albo klauzulę niedozwoloną: do 10 % obrotu z roku poprzedniego (UOKIK art. 106 ust. 1 pkt 3a i 4). Przy obrocie do równowartości 100 000 euro liczy się średni obrót z 3 lat (UOKIK art. 106 ust. 5), a gdy i ten nie przekracza 100 000 euro, kara do równowartości 10 000 euro (UOKIK art. 106 ust. 6). Gdy obrotu nie da się ustalić, do równowartości 2 000 000 euro (UOKIK art. 106 ust. 8).
 - Członek zarządu, który umyślnie dopuścił do naruszenia, może dostać karę do 2 000 000 zł (UOKIK art. 106b ust. 1). W praktyce UOKiK sięga po to już przy małych firmach (decyzje RPZ-4/2026 i RPZ-5/2026: po 25 000 zł dla dwóch członków zarządu firmy sprzedającej opinie, komunikat z 5.11.2026, nieprawomocne).
 - Postępowania nie wszczyna się po 3 latach od końca roku, w którym praktykę zaprzestano (UOKIK art. 105).
@@ -107,7 +117,8 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 **Marketplace (sprzedaż przez platformę)**
 - Platforma (dostawca internetowej platformy handlowej) musi poinformować konsumenta, czy sprzedawca jest przedsiębiorcą, że do umowy z nieprzedsiębiorcą nie stosuje się przepisów konsumenckich, oraz jak dzielą się obowiązki między platformą i sprzedawcą (UPK art. 12a, art. 2 pkt 8 i 9).
 - Sprzedawca na platformie nadal jest stroną umowy i ma wszystkie obowiązki z UPK (wniosek z UPK art. 12a pkt 4 i art. 12; regulamin platformy nie zdejmuje ich ze sprzedawcy).
-- Od 6.11.2026 obowiązują polskie przepisy wykonujące akt o usługach cyfrowych (DSA); Prezes UOKiK jest właściwy w sprawach obowiązków platform wobec konsumentów (SDE art. 15a ust. 1 pkt 1). Koordynator do spraw usług cyfrowych: Prezes UKE (SDE art. 15b).
+- Oddziel obowiązki z samego unijnego aktu o usługach cyfrowych (DSA, stosowanego co do zasady od 17.02.2024 według uke.gov.pl, wpis z 4.11.2026) od polskich przepisów o organach i postępowaniach, obowiązujących od 6.11.2026; nie przedstawiaj tej daty jako początku obowiązków. Zakres obowiązków zależy od rodzaju usługi (forum, opinie, ogłoszenia, własny marketplace); nie przypisuj małej firmie wszystkich obowiązków platformy [WYMAGA WERYFIKACJI: zakres obowiązków w rozporządzeniu (UE) 2022/2065]. Prezes UOKiK jest właściwy w sprawach obowiązków platform wobec konsumentów (SDE art. 15a ust. 1 pkt 1), koordynatorem do spraw usług cyfrowych jest Prezes UKE (SDE art. 15b). Od 6.11.2026 nie opieraj wyłączenia odpowiedzialności za cudze treści na uchylonym rozdziale 3 SDE (dawne art. 12-15); podstawa jest w DSA art. 4-6 [WYMAGA WERYFIKACJI: brzmienie, rozporządzenie (UE) 2022/2065].
+- Blokada konta sprzedawcy, usunięcie oferty albo ograniczenie sprzedaży przez platformę to spór firmy z platformą, nie reklamacja konsumencka: zbierz decyzję platformy z uzasadnieniem, regulamin i daty i najpierw skorzystaj z odwołania w platformie. Skarga do organu nie zastępuje tego odwołania; UOKiK nie obsługuje wszystkich spraw DSA, a sprawy inne niż konsumenckie i dotyczące platform wideo należą do Prezesa UKE (SDE art. 15a ust. 1 pkt 3, SDE art. 15b).
 - Ukrywanie, że wyniki wyszukiwania są sponsorowane, jest zawsze zakazane (UNPR art. 7 pkt 11a).
 
 ## 3. Co firma może zrobić sama i jakie pisma przygotuje skill
@@ -121,7 +132,7 @@ Działania bez prawnika:
 
 Pisma (skill przygotowuje projekt, użytkownik podpisuje):
 
-1. **Odpowiedź na oświadczenie o odstąpieniu.** Elementy: dane firmy i klienta, numer zamówienia, data otrzymania oświadczenia, potwierdzenie przyjęcia (przy formie elektronicznej obowiązkowe), kwota i sposób zwrotu z terminem 14 dni, ewentualne wstrzymanie zwrotu tylko gdy firma nie zaproponowała odbioru i tylko do otrzymania rzeczy albo dowodu jej odesłania, zależnie od tego, co nastąpi wcześniej (UPK art. 32 ust. 3), z wpisaniem obu zdarzeń w odpowiedzi, adres do odesłania i koszt odesłania (jeśli klient go ponosi), ewentualne roszczenie o zmniejszenie wartości z uzasadnieniem i dowodem (zdjęcia). Wariant odmowy: wskazanie konkretnego wyjątku z art. 38 i faktów (np. specyfikacja klienta), bez ogólnych formułek. Forma: trwały nośnik (e-mail, PDF).
+1. **Odpowiedź na oświadczenie o odstąpieniu.** Elementy: dane firmy i klienta, numer zamówienia, data otrzymania oświadczenia, potwierdzenie przyjęcia (obowiązkowe, gdy klient skorzystał z elektronicznego sposobu udostępnionego przez sklep, UPK art. 30 ust. 4; w pozostałych przypadkach zalecane dla dowodu), kwota i sposób zwrotu z terminem 14 dni, ewentualne wstrzymanie zwrotu tylko gdy firma nie zaproponowała odbioru i tylko do otrzymania rzeczy albo dowodu jej odesłania, zależnie od tego, co nastąpi wcześniej (UPK art. 32 ust. 3), z wpisaniem obu zdarzeń w odpowiedzi, adres do odesłania i koszt odesłania (jeśli klient go ponosi), ewentualne roszczenie o zmniejszenie wartości z uzasadnieniem i dowodem (zdjęcia). Wariant odmowy: wskazanie konkretnego wyjątku z art. 38 i faktów (np. specyfikacja klienta), bez ogólnych formułek. Forma: trwały nośnik (e-mail, PDF).
 2. **Odpowiedź na wystąpienie albo żądanie informacji UOKiK (projekt).** Elementy: sygnatura pisma, termin (w wystąpieniu co najmniej 14 dni), odpowiedź na każde pytanie po kolei, dokumenty z wykazem, opis stanu obecnego i zmian już wprowadzonych z datami, ewentualna propozycja zobowiązania, wskazanie tajemnicy przedsiębiorstwa w załącznikach z uzasadnieniem, osoba kontaktowa. Bez przyznawania winy w ocenach prawnych. Przy żądaniu informacji pouczenie o karze do 3 % obrotu. Gdy przyszło postanowienie o wszczęciu postępowania, zarzuty albo kontrola: „tylko prawnik”.
 3. **Odpowiedź na skargę o brak dostępności.** Elementy z DOST art. 37: wynik, uzasadnienie przy odmowie, termin realizacji do 6 miesięcy przy uwzględnieniu, imię, nazwisko i stanowisko osoby odpowiadającej, pouczenia (odwołanie, mediacja, zawiadomienie do PFRON).
 4. **Informacja o weryfikacji opinii** (tekst na stronę): czy firma weryfikuje, jak (np. tylko po zakupie, link z zamówienia), czy publikuje wszystkie opinie, w tym negatywne, jak oznacza opinie sponsorowane.
@@ -132,7 +143,7 @@ Pisma (skill przygotowuje projekt, użytkownik podpisuje):
 - Postanowienie o wszczęciu postępowania przez Prezesa UOKiK, zarzuty, kontrola albo przeszukanie.
 - Decyzja z karą (Inspekcja Handlowa, UOKiK, PFRON, Minister Cyfryzacji): terminy odwołań są krótkie.
 - Pozew zbiorowy, pozew rzecznika konsumentów albo organizacji konsumenckiej.
-- Sprzedaż za granicę na dużą skalę, platforma pośrednicząca (własny marketplace), DSA.
+- Sprzedaż kierowana do konsumentów z nowego kraju (bez względu na skalę), własna platforma pośrednicząca (marketplace), spór o obowiązki z DSA.
 - Towary regulowane (alkohol, leki, suplementy, kosmetyki), kredyt, raty, usługi finansowe.
 - Gdy firma chce kwestionować status konsumenta albo przedsiębiorcy na prawach konsumenta w sporze o dużą kwotę.
 - Pokazy, wycieczki, sprzedaż w domu klienta: wyższe ryzyko. 30 dni na odstąpienie zamiast 14 przysługuje tylko w przypadkach z UPK art. 27 ust. 2 (m.in. umowa zawarta podczas nieumówionej wizyty w miejscu zamieszkania klienta albo wycieczki); umówiona wizyta i zwykły pokaz to co do zasady 14 dni.
@@ -145,6 +156,7 @@ Pisma (skill przygotowuje projekt, użytkownik podpisuje):
 - Czy rzecz była robiona na zamówienie według specyfikacji klienta, czy z katalogu z wyborem wariantu.
 - Czy przy usłudze lub treści cyfrowej klient wyraźnie żądał rozpoczęcia przed upływem terminu i dostał potwierdzenie.
 - Status klienta: konsument, JDG z innym PKD, firma.
+- Kraj zwykłego pobytu klienta i to, czy sklep kieruje ofertę do tego kraju.
 - Czy firma oferowała odbiór rzeczy.
 - Obrót, zatrudnienie i suma bilansowa za 2 ostatnie lata (dostępność, wysokość kar).
 - Historia cen danego towaru z 30 dni przed obniżką.
@@ -189,7 +201,11 @@ Praktyka UOKiK (decyzje administracyjne, nie wyroki):
 | https://api.sejm.gov.pl/eli/acts/DU/2026/1296 | ustawa DSA, wejście 6.11.2026 |
 | akty/UOKIK.md (t.j. Dz.U. 2025 poz. 1714, 2026 poz. 1296) | art. 23a-28, 49a, 50, 99a, 100, 105, 106, 106b |
 | akty/DOST.md, akty/PRPRZ.md | dostępność, definicja mikroprzedsiębiorcy |
-| akty/SDE.md | art. 15a, 15b |
+| akty/SDE.md | art. 12-15 (uchylone od 6.11.2026 według notki ISAP), 15a, 15b |
+| akty/KC.md | art. 66¹, 71, 84, 88, 543 (pomyłka w cenie) |
+| akty/UNPR.md, akty/ZNK.md | UNPR art. 6 ust. 3 pkt 2, art. 7 pkt 11; ZNK art. 16 ust. 1 pkt 4 (treść sponsorowana) |
+| https://uke.gov.pl/blog/dsa-to-nie-tylko-obowiazki-duzych-platform-jakie-wymagania-dotycza-poszczegolnych-dostawcow-uslug-posrednich,171.html | stosowanie DSA od 17.02.2024 (wpis z 4.11.2026) |
+| https://arch-bip.ms.gov.pl/Data/Files/_public/bip/prawo_eu/ue1/rozporzadzenie-parlamentu-europejskiego-i-rady-we-nr-593_2008-z-dnia-17-czerwca-2008-r.-w-sprawie-prawa-wlasciwego-dla-zobowiazan-umownych_rzym-i.pdf | rozporządzenie Rzym I, art. 6 (umowy konsumenckie), tekst otwarty 6.11.2026 |
 | https://www.biznes.gov.pl/pl/portal/005142 | kto zapewnia dostępność, kary (strona z 1.10.2024) |
 | https://www.gov.pl/web/dostepnosc-cyfrowa/polski-akt-o-dostepnosci--uslugi-handlu-elektronicznego | handel elektroniczny, nadzór Ministra Cyfryzacji (mod. 14.08.2025) |
 | https://www.funduszeunijne.gov.pl/media/163026/Poradnik_MFiPR_dla_mikroprzedsiebiorcow_210x297_2_web.pdf | przykłady mikroprzedsiębiorców (tylko wynik wyszukiwania, pliku nie otwierano) |
@@ -228,3 +244,5 @@ Podział z innymi skillami (nie dublować, odsyłać):
 7. Rozporządzenie (UE) 2016/679 (RODO), art. 28 (umowa powierzenia).
 8. Rozporządzenie (UE) 2022/2065 (DSA) i (UE) 2023/2854 (Data Act).
 9. Ustawa z 4 września 2026 r. o zmianie UNPR i UPK, ELI DU/2026/1353 (tekst ogłoszony, do porównania z notkami ISAP w UPK).
+10. Rozporządzenie (WE) nr 593/2008 z 17 czerwca 2008 r. o prawie właściwym dla zobowiązań umownych (Rzym I), art. 6: tekst urzędowy na arch-bip.ms.gov.pl (adres w rejestrze źródeł), odczyt 6.11.2026; reguła „Sprzedaż konsumentom z innych państw”. Jurysdykcja sądów (rozporządzenie (UE) nr 1215/2012) i blokowanie geograficzne (rozporządzenie (UE) 2018/302) nie są opisane w module: tylko prawnik.
+11. Rekomendacje Prezesa UOKiK dla influencerów: [WYMAGA WERYFIKACJI: aktualna wersja na uokik.gov.pl]; reguła o treści sponsorowanej opiera się na UNPR i ZNK.

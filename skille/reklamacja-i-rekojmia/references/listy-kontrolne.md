@@ -15,7 +15,7 @@ Trzy listy. Otwórz tę, która pasuje do sytuacji. To materiał do Twojej pracy
 - Czy rzecz była już wcześniej reklamowana i z jakim skutkiem. Powtórna wada po naprawie zmienia całą rozmowę.
 - Czy rzecz kupiono jako osoba prywatna, czy na fakturę.
 - Czy jest karta gwarancyjna i co w niej stoi.
-- Czy sprzedawca nadal działa. Przy zamkniętej działalności zostaje wyłącznie droga przez gwarancję albo przez producenta.
+- Kto był sprzedawcą i co oznacza, że „już nie działa”. Samo zamknięcie sklepu albo wykreślenie jednoosobowej działalności nie usuwa zobowiązań tej osoby. Przy spółce ustal jej aktualny stan w rejestrze i ewentualnego następcę; gwarancja albo producent to droga dodatkowa, nie automatycznie jedyna.
 - Czy rzecz kupiono w Polsce, czy u sprzedawcy zagranicznego.
 
 ### Co zebrać
@@ -32,7 +32,7 @@ Trzy listy. Otwórz tę, która pasuje do sytuacji. To materiał do Twojej pracy
 - **Czego żąda.** Naprawa, wymiana, obniżenie ceny, wycofanie się z zakupu. Jedno, nie cztery naraz.
 - **Czy to żądanie jest w tej sytuacji pierwsze w kolejce.** Przy rysie na obudowie żądanie zwrotu pieniędzy zwykle wraca odmową i zabiera dwa tygodnie. Przy wadzie, która psuje sens zakupu, jest inaczej, i to sprzedawca musiałby wykazać, że wada jest drobna.
 - **Jaką drogą składa zgłoszenie.** Mail albo list za potwierdzeniem, bo od daty wpływu liczy się termin na odpowiedź.
-- **Którą drogą idzie najpierw, do sprzedawcy czy do gwaranta.** Wybór jednej nie zamyka drugiej: jeśli naprawa gwarancyjna nic nie da, sprawa może wrócić do sprzedawcy, a czas spędzony w serwisie nie zjada terminu wobec sklepu.
+- **Którą drogą idzie najpierw, do sprzedawcy czy do gwaranta.** Wybór jednej nie zamyka drugiej: jeśli naprawa gwarancyjna nic nie da, sprawa może wrócić do sprzedawcy, a termin wobec sklepu staje od dnia zawiadomienia sprzedawcy o wadzie, nie od samego oddania rzeczy do serwisu; zachowaj dowód tego zawiadomienia.
 - **Czy ma czym wykazać, że rzecz nie była użytkowana niezgodnie z przeznaczeniem.**
 
 ### Czego w takich zgłoszeniach najczęściej brakuje
@@ -73,7 +73,7 @@ Policz datę graniczną i podaj ją użytkownikowi wprost.
 - Kiedy rzecz wydano i ile czasu minęło.
 - Czy to pierwsze zgłoszenie w tej sprawie, czy powtórka po naprawie.
 - Czy wada jest w ogóle w tej rzeczy, czy w sposobie użytkowania, montażu lub przechowywania.
-- Co firma jest w stanie wykazać. W pierwszych dwóch latach to sprzedawca ma coś udowodnić, nie klient.
+- Co firma jest w stanie wykazać. Przy towarze dla konsumenta wadę ujawnioną w ciągu dwóch lat od dostarczenia uznaje się za istniejącą od początku, chyba że sprzedawca wykaże inaczej; przy treści lub usłudze cyfrowej dostarczanej jednorazowo albo w częściach to domniemanie trwa rok.
 - Czy sprawa dotyczy towaru, usługi, czy treści cyfrowej.
 
 ### Co sprawdzić we własnych dokumentach

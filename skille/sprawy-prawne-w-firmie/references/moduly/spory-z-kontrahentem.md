@@ -18,6 +18,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 12. „Dłużnik przepisał auto na żonę, czy mogę to podważyć?” (skarga pauliańska)
 13. „Duży odbiorca systematycznie płaci po terminie, czy mogę to zgłosić do UOKiK anonimowo?”
 14. „Kontrahent wziął towar i zniknął, czy to oszustwo i czy zgłosić na policję?”
+14a. „Zapłaciliśmy fakturę na nowy numer rachunku z maila dostawcy, a dostawca mówi, że go nie zmieniał.”
 15. „Druga strona proponuje mediację albo ugodę w ratach, jak to zabezpieczyć?”
 
 ## 2. Reguły po skutku z podstawą
@@ -33,8 +34,8 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 7. W transakcji handlowej (dłużnik nie jest podmiotem publicznym) wierzycielowi, który spełnił swoje świadczenie i nie dostał zapłaty w umówionym terminie, bez wezwania należą się odsetki ustawowe za opóźnienie w transakcjach handlowych od dnia wymagalności do dnia zapłaty, chyba że umówiono wyższe (ZATORY art. 7 ust. 1). Do transakcji handlowych nie stosuje się „zwykłych” odsetek z KC art. 481 § 2 (ZATORY art. 4a).
 8. Stawka handlowa: stopa referencyjna NBP + 10 punktów procentowych; gdy dłużnikiem jest publiczny podmiot leczniczy: + 8 punktów (ZATORY art. 4 pkt 3). Stawka jest stała przez półrocze: liczy się stopa z 1 stycznia (dla I półrocza) i z 1 lipca (dla II półrocza) (ZATORY art. 11b). **Kwoty: od 1 lipca do 31 grudnia 2026 r. 13,75 % (zwykły dłużnik) i 11,75 % (publiczny podmiot leczniczy)** (obwieszczenie MFiG z 22.06.2026, M.P. 2026 poz. 642, odczyt treści PDF z api.sejm.gov.pl 6.11.2026). Od 1 stycznia do 30 czerwca 2026 r.: 14 % i 12 % (M.P. 2025 poz. 1257, odczyt pośredni z karty ISAP, treści nie otwierano). Stawka na I półrocze 2027 r.: [WYMAGA WERYFIKACJI: obwieszczenie ministra właściwego do spraw gospodarki w M.P. z grudnia 2026 r., eli.gov.pl].
 9. Gdy umowa nie przewiduje terminu zapłaty, odsetki handlowe należą się bez wezwania po upływie 30 dni od spełnienia świadczenia przez wierzyciela (ZATORY art. 6 ust. 1).
-10. Wierzyciel, który nie jest dużym przedsiębiorcą, przy umówionym terminie dłuższym niż 30 dni może żądać odsetek ustawowych (kapitałowych) po 30 dniach od spełnienia świadczenia i doręczenia faktury, do dnia wymagalności (ZATORY art. 5).
-11. Wpłaty dłużnik może przypisać do wybranego długu, ale wierzyciel zalicza je najpierw na zaległe odsetki i należności uboczne; bez oświadczeń wpłata idzie na najdawniej wymagalny dług (KC art. 451 § 1 i § 3).
+10. Wierzyciel, który nie jest dużym przedsiębiorcą, przy umówionym terminie zapłaty dłuższym niż 30 dni może żądać odsetek ustawowych (kapitałowych) po upływie 30 dni od spełnienia świadczenia i doręczenia faktury, do zapłaty, lecz nie dłużej niż do wymagalności; reguła ta nie obejmuje transakcji z publicznym podmiotem leczniczym (ZATORY art. 5).
+11. Dłużnik może wskazać, który dług spłaca, a wierzyciel może w ramach tego długu zaliczyć wpłatę najpierw na związane z nim zaległe należności uboczne oraz zalegające świadczenia główne (KC art. 451 § 1). Gdy brak wskazania długu i rozstrzygającego pokwitowania, stosuj kolejność ustawową: najpierw dług wymagalny, a spośród kilku wymagalnych najdawniejszy (KC art. 451 § 2 i § 3).
 
 ### Terminy płatności między firmami i z podmiotami publicznymi
 
@@ -48,6 +49,12 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 19. Umowne badanie towaru lub usługi nie może trwać dłużej niż 30 dni od otrzymania; gdy faktura przyszła przed badaniem albo w jego trakcie, termin zapłaty liczy się od zakończenia badania (ZATORY art. 9).
 20. Gdy duży przedsiębiorca nie płaci w terminie wierzycielowi MŚP, umowny zakaz cesji wierzytelności przestaje działać i wierzyciel może sprzedać fakturę (faktoring, firma windykacyjna) (ZATORY art. 9a ust. 1; nie dotyczy dłużnika publicznego, ust. 2).
 21. Przy płatności w ratach (harmonogram) limity, odsetki i rekompensata działają osobno dla każdej raty (ZATORY art. 7 ust. 2a zd. 2, art. 8 ust. 2 zd. 2, art. 11 ust. 2).
+
+### Cesja wierzytelności i faktoring
+
+21a. Wierzyciel może przenieść fakturę na faktora albo firmę windykacyjną bez zgody dłużnika, chyba że sprzeciwia się temu ustawa, umowa albo właściwość zobowiązania (KC art. 509 § 1). Umowny zakaz cesji przy wierzytelności stwierdzonej pismem działa wobec nabywcy tylko, gdy pismo zawiera wzmiankę o zakazie albo nabywca o nim wiedział (KC art. 514); wyjątek dla MŚP wobec dużego przedsiębiorcy opisuje pkt 20 i nie obejmuje dłużnika publicznego (ZATORY art. 9a ust. 2).
+21b. Dopóki dłużnik nie dostał zawiadomienia o przelewie, zapłata do rąk dotychczasowego wierzyciela zwalnia go także wobec nabywcy, chyba że wiedział o przelewie (KC art. 512); zawiadomienie o cesji wysyłaj więc od razu, z dowodem doręczenia. Dłużnik zachowuje wobec nabywcy zarzuty, które miał wobec zbywcy, gdy dowiedział się o przelewie, i co do zasady może potrącić swoją wierzytelność wobec zbywcy (KC art. 513 § 1 i § 2).
+21c. Zbywca odpowiada nabywcy za to, że wierzytelność istnieje, a za wypłacalność dłużnika tylko wtedy, gdy to przyjął (KC art. 516); kto ponosi ryzyko niezapłaty i jaki jest zakres regresu, ustal z całej umowy faktoringowej, nie z nazwy produktu, a samą umowę z faktorem sprawdź jak cudzą umowę (`katalog/czerwone-flagi-w-umowie/`). Rekompensaty 40, 70 albo 100 euro nie przenosi się razem z fakturą (pkt 25, ZATORY art. 10 ust. 4).
 
 ### Rekompensata za koszty odzyskiwania należności
 
@@ -89,6 +96,10 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 46. Zawezwanie do próby ugodowej: wniosek do sądu rejonowego właściwego dla przeciwnika, bez względu na kwotę; trzeba zwięźle oznaczyć sprawę i przedstawić propozycje ugodowe (KPC art. 185 § 1 i § 1¹). Opłata 120 zł (wartość do 20 000 zł) albo 300 zł (powyżej) (KOSZTY art. 23a). Przy zawarciu ugody sąd zwraca 3/4 opłaty pomniejszone o opłatę minimalną 30 zł, czyli 60 zł ze 120 zł albo 195 zł z 300 zł (KOSZTY art. 79 ust. 1 pkt 2 lit. e i ust. 3, KOSZTY art. 14 ust. 3). Niestawiennictwo przeciwnika bez usprawiedliwienia: koszty próby uwzględnia się w późniejszym wyroku, jeśli wzywający wniesie pozew (KPC art. 186 § 2).
 47. Ugoda zawarta przed sądem (także w postępowaniu pojednawczym) jest tytułem egzekucyjnym (KPC art. 777 § 1 pkt 1). Alternatywa pozasądowa: akt notarialny z poddaniem się egzekucji (KPC art. 777 § 1 pkt 4 i 5).
 
+### Podwykonawca robót budowlanych
+
+47a. Przy niezapłaconym wynagrodzeniu podwykonawcy robót budowlanych zbierz zgłoszenie szczegółowego zakresu robót inwestorowi przed ich rozpoczęciem, dowód doręczenia oraz ewentualny sprzeciw, bo od nich zależy solidarna odpowiedzialność inwestora (KC art. 647¹ § 1); zgłoszenie i sprzeciw wymagają formy pisemnej pod rygorem nieważności, więc zwykły e-mail nie wystarcza (KC art. 647¹ § 4). Sprawdź termin sprzeciwu, ustawowo 30 dni, który umowa inwestora z wykonawcą może skrócić, oraz wyjątek, w którym zgłoszenie zastępuje pisemna umowa inwestora z wykonawcą wskazująca podwykonawcę i roboty (KC art. 647¹ § 1¹ i § 1², KC art. 647¹ § 2).
+
 ### Postępowanie w sprawach gospodarczych
 
 48. Sprawa gospodarcza to m.in. spór cywilny między przedsiębiorcami w zakresie ich działalności (także gdy jedna strona zaprzestała działalności), spór z umów o roboty budowlane i leasingu, przeciwko osobom odpowiadającym za dług przedsiębiorcy (np. członkom zarządu z KSH art. 299) i z prawa upadłościowego i restrukturyzacyjnego (KPC art. 458² § 1). Nie jest gospodarczą sprawa o wierzytelność kupioną od nieprzedsiębiorcy, chyba że powstała z działalności wszystkich stron (KPC art. 458² § 2).
@@ -98,13 +109,18 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 52. Oświadczenia woli i wiedzy zmieniające prawa strony (np. wypowiedzenie, odstąpienie, uznanie, potrącenie, potwierdzenie salda) można wykazać tylko dokumentem w rozumieniu KC art. 77³ (także mail, plik), chyba że strona nie może go przedstawić z przyczyn od niej niezależnych (KPC art. 458¹¹; KC art. 77³). Wniosek dla firmy: wszystko ważne na piśmie lub mailem.
 53. Świadkowie są dowodem ostatniej kolejności (KPC art. 458¹⁰). Strony mogą umową na piśmie wyłączyć określone dowody w sporach z danej umowy (umowa dowodowa) (KPC art. 458⁹).
 54. Przepisy gospodarcze nie dotyczą sprawy w e-Sądzie ani europejskich postępowań nakazowych i drobnych roszczeń (KPC art. 458¹ § 2 zd. 2). Sprawy z udziałem konsumenta mają odrębny tryb z podobną prekluzją dla przedsiębiorcy (KPC art. 458¹⁴, 458¹⁵).
+54a. Jeżeli umowa albo OWU zawiera zapis na sąd polubowny, przekaż go prawnikowi przed odpowiedzią co do meritum: zarzut zapisu trzeba co do zasady podnieść przed wdaniem się w spór co do istoty sprawy, a nie działa on m.in. przy zapisie nieważnym, bezskutecznym albo niewykonalnym (KPC art. 1165 § 1 i § 2). Zapis nie wyłącza zabezpieczenia roszczenia przez sąd państwowy, także przy arbitrażu za granicą (KPC art. 1166 § 1 i § 2).
 55. Sprawy do 20 000 zł o świadczenie idą w postępowaniu uproszczonym (KPC art. 505¹ § 1); powyżej 100 000 zł właściwy jest sąd okręgowy (KPC art. 17 pkt 4).
+
+### Kontrahent zagraniczny (krótko)
+
+55a. Przy kontrahencie zagranicznym ustal państwa siedzib stron, miejsce wykonania i dostawy, uzgodnione prawo, sąd albo arbitraż oraz państwo, w którym dłużnik ma majątek, i przekaż te dane prawnikowi w karcie. Nie stosuj automatycznie polskich terminów, zwłaszcza przedawnienia, bo przedawnienie podlega prawu właściwemu dla roszczenia, a prawo umowy wskazuje unijne rozporządzenie Rzym I (Prawo prywatne międzynarodowe art. 26, Prawo prywatne międzynarodowe art. 28 ust. 1). e-Sąd odpada, gdy doręczenie miałoby nastąpić za granicą (KPC art. 505²⁸ § 2); drogę (pozew w Polsce albo za granicą, procedura europejska) wybiera prawnik.
 
 ### e-Sąd, postępowanie upominawcze i nakazowe (wierzyciel)
 
 56. Sąd wydaje nakaz zapłaty, gdy powód dochodzi roszczenia pieniężnego (KPC art. 480¹ § 1). Nakaz upominawczy nie zapada, gdy roszczenie jest oczywiście bezzasadne, fakty budzą wątpliwość albo zapłata zależy od świadczenia wzajemnego (KPC art. 499). Termin dla dłużnika na sprzeciw: 2 tygodnie od doręczenia w kraju (KPC art. 480² § 2 pkt 1); nakaz niezaskarżony ma skutki prawomocnego wyroku (art. 480² § 4).
 57. **e-Sąd:** tylko roszczenia pieniężne wymagalne w ciągu 3 lat przed dniem pozwu (KPC art. 505²⁹ᵃ); nakazu nie wyda się, gdy doręczenie miałoby nastąpić za granicą (KPC art. 505²⁸ § 2). Powód wnosi pisma wyłącznie elektronicznie (KPC art. 505³¹ § 1), w pozwie wskazuje dowody, ale ich nie dołącza (KPC art. 505³² § 1), i musi podać PESEL lub NIP pozwanego będącego osobą fizyczną albo numer KRS (innego rejestru, NIP) pozwanego niebędącego osobą fizyczną (KPC art. 505³² § 2); błędne dane grożą grzywną (art. 505³² § 3).
-58. Brak podstaw do nakazu w e-Sądzie: umorzenie (KPC art. 505³³). Sprzeciw dłużnika: umorzenie w zaskarżonej części, każda strona ponosi swoje koszty; jeśli w 3 miesiące od umorzenia powód wniesie zwykły pozew o to samo, skutki pozwu (w tym dla przedsiębiorcy przerwanie przedawnienia) liczą się od pozwu w e-Sądzie (KPC art. 505³⁶, 505³⁷). Nieodebrany nakaz uznaje się za doręczony tylko przy zgodności adresu z rejestrem PESEL; inaczej sąd uchyla nakaz i umarza, chyba że powód w terminie do miesiąca usunie przeszkodę (KPC art. 505³⁴).
+58. Brak podstaw do nakazu w e-Sądzie: umorzenie (KPC art. 505³³). Sprzeciw dłużnika: umorzenie w zaskarżonej części, każda strona ponosi swoje koszty; jeśli w 3 miesiące od umorzenia powód wniesie zwykły pozew o to samo, skutki pozwu (w tym dla przedsiębiorcy przerwanie przedawnienia) liczą się od pozwu w e-Sądzie (KPC art. 505³⁶, 505³⁷). Nieodebrany nakaz uznaje się za doręczony tylko przy zgodności adresu z rejestrem PESEL (dotyczy pozwanego będącego osobą fizyczną, gdy nie działa inny przepis o skutku doręczenia; spółce z KRS doręcza się na adres z rejestru i przy nieujawnionej zmianie adresu pismo zostaje w aktach ze skutkiem doręczenia, chyba że nowy adres jest sądowi znany, a przedsiębiorcy z CEIDG na adres do doręczeń z ewidencji, przy pierwszym piśmie ewentualnie na adres zamieszkania: KPC art. 505³⁴ § 1, KPC art. 133 § 2¹ i § 2², KPC art. 139 § 2¹ i § 3); inaczej sąd uchyla nakaz i umarza, chyba że powód w terminie do miesiąca usunie przeszkodę (KPC art. 505³⁴).
 59. Opłata od pozwu w e-Sądzie: 1/4 opłaty, nie mniej niż 30 zł, i zalicza się ją na poczet opłaty od nowego pozwu po umorzeniu (KOSZTY art. 19 ust. 2 pkt 2, art. 20 ust. 1).
 60. **Postępowanie nakazowe:** nakaz na podstawie dokumentu urzędowego, zaakceptowanego przez dłużnika rachunku, wezwania do zapłaty z pisemnym uznaniem długu, weksla, czeku, a w transakcjach handlowych na podstawie umowy, dowodu wykonania świadczenia i dowodu doręczenia faktury (także odsetki handlowe i rekompensata) (KPC art. 485 § 1, § 2, § 2¹). Opłata od pozwu: 1/4 (KOSZTY art. 19 ust. 2 pkt 1). Nakaz nakazowy z chwilą wydania jest tytułem zabezpieczenia bez klauzuli (KPC art. 492 § 1), a z weksla lub czeku po upływie terminu natychmiast wykonalny (art. 492 § 3).
 61. **Wpis (opłata od pozwu):** do 20 000 zł opłata stała 30-1 000 zł według progów; powyżej 20 000 zł 5 % wartości, nie więcej niż 100 000 zł (KOSZTY art. 13 ust. 1 i 2; limit 100 000 zł od 23.09.2025, Dz.U. 2025 poz. 1157).
@@ -126,7 +142,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 71. Gdy wierzyciel nie wskaże majątku, komornik z urzędu ustala majątek z rejestrów i wzywa dłużnika do wykazu majątku; wnioski szykanujące albo zbędne mogą obciążyć wierzyciela kosztami (KPC art. 801 § 1-3). Komornik może żądać informacji od banków, urzędów, ZUS, biur informacji gospodarczej itd. (KPC art. 761 § 1¹).
 72. Gdy egzekucja nie rokuje albo nie dała pełnego zaspokojenia, wierzyciel może żądać wyjawienia majątku pod rygorem odpowiedzialności karnej dłużnika; przed egzekucją także, jeśli po uzyskaniu tytułu wezwał dłużnika listem poleconym za potwierdzeniem odbioru, a ten nie zapłacił w 14 dni (KPC art. 913 § 1, § 1¹, § 2). Opłata 200 zł (KOSZTY art. 70 pkt 5).
 73. Gdy dłużnik pozbył się majątku z pokrzywdzeniem wierzycieli (stał się przez to niewypłacalny lub bardziej niewypłacalny), wierzyciel może pozwać nabywcę o uznanie czynności za bezskuteczną wobec niego (skarga pauliańska); przy osobie bliskiej i stałym kontrahencie dłużnika domniemywa się wiedzę nabywcy; termin 5 lat od czynności (KC art. 527 § 1-4, art. 534). Pokrzywdzenie ocenia się na chwilę zamknięcia rozprawy (SN 7 sędziów III CZP 9/24).
-74. Członek zarządu sp. z o.o. odpowiada za długi spółki dopiero, gdy egzekucja przeciw spółce okaże się bezskuteczna (KSH art. 299 § 1); szczegóły w module B.
+74. Członek zarządu sp. z o.o. odpowiada za długi spółki dopiero, gdy egzekucja przeciw spółce okaże się bezskuteczna (KSH art. 299 § 1); szczegóły: `moduly/niewyplacalnosc.md`, reguły 13-15.
 
 ### Dłużnik broni się (krótko, reszta w `nakaz-zaplaty-co-dalej`)
 
@@ -142,9 +158,9 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 
 ### Oszustwo kontrahenta (krótko)
 
-81. Oszustwo to doprowadzenie innej osoby do niekorzystnego rozporządzenia mieniem przez wprowadzenie w błąd, w celu osiągnięcia korzyści majątkowej; kara od 6 miesięcy do 8 lat, w wypadku mniejszej wagi łagodniej (KK art. 286 § 1 i § 3). Ściganie z urzędu, chyba że pokrzywdzonym jest osoba najbliższa (art. 286 § 4). Sama niezapłacona faktura nie wypełnia tych znamion: potrzebny jest zamiar i wprowadzenie w błąd przy zawieraniu transakcji (wniosek z treści przepisu; ocena dla prawnika).
-82. Zawiadomienie składa się prokuratorowi lub Policji (KPK art. 304 § 1). Zawiadamiający dostaje informację o wszczęciu albo odmowie (KPK art. 305 § 4); organ może prowadzić czynności sprawdzające do 30 dni (KPK art. 307 § 1); bez informacji w 6 tygodni przysługuje zażalenie do prokuratora nadrzędnego (KPK art. 306 § 3). Pokrzywdzony może zaskarżyć odmowę wszczęcia (KPK art. 306 § 1 pkt 1).
-83. Ukrywanie lub zbywanie majątku przez dłużnika przy grożącej niewypłacalności albo dla udaremnienia wykonania orzeczenia może być przestępstwem z KK art. 300; § 1 ściga się na wniosek pokrzywdzonego (chyba że pokrzywdzony jest Skarb Państwa), § 2 z urzędu (KK art. 300 § 1, § 2, § 4; KPK art. 12 § 1). Szczegóły w module B.
+81. Oszustwo to doprowadzenie innej osoby do niekorzystnego rozporządzenia mieniem przez wprowadzenie w błąd, w celu osiągnięcia korzyści majątkowej; kara od 6 miesięcy do 8 lat, w wypadku mniejszej wagi łagodniej (KK art. 286 § 1 i § 3). Ściganie z urzędu, chyba że pokrzywdzonym jest osoba najbliższa (KK art. 286 § 4). Sama niezapłacona faktura nie wystarcza do przyjęcia oszustwa: trzeba ustalić, czy sprawca, działając w celu osiągnięcia korzyści majątkowej, doprowadził do niekorzystnego rozporządzenia mieniem przez wprowadzenie w błąd, wyzyskanie błędu albo niezdolności do należytego pojmowania działania. Badaj okoliczności konkretnego rozporządzenia mieniem, także dokonanego podczas wykonywania umowy, a ocenę zamiaru i kwalifikacji pozostaw prawnikowi (KK art. 286 § 1). Przy świeżym przelewie na podmieniony rachunek (pytanie 14a) liczą się godziny: od razu skontaktuj się z bankiem przez niezależnie sprawdzony kanał w sprawie zatrzymania albo odzyskania płatności, zachowaj wiadomości, dokument płatności i dane rachunku i równolegle przygotuj zawiadomienie; kwalifikacja czynu zależy od przebiegu działania, a odzyskania pieniędzy nie obiecuj (KPK art. 304 § 1). Dalsze kroki: `moduly/sprawy-karne-firmy.md`, reguła 8.
+82. Zawiadomienie składa się prokuratorowi lub Policji (KPK art. 304 § 1); za spółkę działa jej organ uprawniony do reprezentacji, a pełnomocnikiem w sprawie karnej może być adwokat albo radca prawny (KPK art. 51 § 1, KPK art. 88 § 1). Na odmowę wszczęcia zażalenie przysługuje pokrzywdzonemu, a na umorzenie stronom, w tym pokrzywdzonemu, zasadniczo w **7 dni od doręczenia postanowienia** (KPK art. 306 § 1 pkt 1, KPK art. 306 § 1a pkt 1, KPK art. 460); bez informacji o decyzji w 6 tygodni przysługuje osobne zażalenie do prokuratora nadrzędnego (KPK art. 306 § 3). Terminy decyzji, dalsza droga po ponownej odmowie, prawa pokrzywdzonego i naprawienie szkody: `moduly/sprawy-karne-firmy.md`, reguły 9-13.
+83. Ukrywanie lub zbywanie majątku przez dłużnika przy grożącej niewypłacalności albo dla udaremnienia wykonania orzeczenia może być przestępstwem z KK art. 300; § 1 ściga się na wniosek pokrzywdzonego (chyba że pokrzywdzony jest Skarb Państwa), § 2 z urzędu (KK art. 300 § 1, § 2, § 4; KPK art. 12 § 1). Szczegóły: `moduly/niewyplacalnosc.md`, reguły 36-39.
 
 ## 3. Co firma może zrobić sama i jakie pisma przygotuje skill
 
@@ -207,8 +223,10 @@ Elementy z ZATORY art. 13d ust. 2-3: wskazanie podmiotu, opis stanu faktycznego,
 - adresat: prokuratura rejonowa właściwa dla miejsca czynu albo Policja (KPK art. 304 § 1);
 - dane zawiadamiającego (firma, reprezentant) i osoby podejrzewanej (jeśli znane: nazwa, KRS/NIP, osoby działające);
 - opis faktów w kolejności: jak zawarto transakcję, jakie zapewnienia padły (wprowadzenie w błąd), co wydano, co się stało potem (zniknięcie, fałszywe dane, brak zamiaru zapłaty), wysokość szkody;
-- kwalifikacja tylko jako sugestia („czyn może wyczerpywać znamiona art. 286 § 1 KK”);
+- kwalifikacja tylko jako sugestia („czyn może wyczerpywać znamiona KK art. 286 § 1”);
 - dowody: umowa, korespondencja, faktury, WZ, nagrania, świadkowie;
+- fakty, źródła wiedzy (dokumenty, świadkowie) i podejrzenia opisane oddzielnie; bez przypisywania czynu osobom, wobec których firma nie ma podstaw, bo świadomie fałszywe zawiadomienie i fałszywe oskarżenie są przestępstwami (KK art. 238, KK art. 234);
+- z prawnikiem rozważ wniosek o orzeczenie obowiązku naprawienia szkody (można go złożyć także później, do zamknięcia przewodu sądowego na rozprawie głównej) i wskazanie potrzeby zabezpieczenia majątkowego, gdy dłużnik wyzbywa się majątku; o zabezpieczeniu decyduje organ, więc nie obiecuj go ani zwrotu pieniędzy; ujawnij równoległy pozew albo prawomocne rozstrzygnięcie co do tego samego roszczenia, bo wyłącza ono orzeczenie naprawienia szkody (KK art. 46 § 1, KPK art. 49a § 1, KPK art. 291 § 1, KPK art. 415 § 1);
 - przy KK art. 300 § 1 wyraźny **wniosek o ściganie** (KK art. 300 § 4);
 - prośba o informację o wszczęciu albo odmowie (KPK art. 305 § 4), podpis.
 
@@ -225,7 +243,7 @@ Elementy z ZATORY art. 13d ust. 2-3: wskazanie podmiotu, opis stanu faktycznego,
 - Potrącenie w toku procesu (KPC art. 203¹), potrącenie z wierzytelnością spółki w upadłości.
 - Zabezpieczenie (hipoteka przymusowa, zajęcie rachunku) i skarga pauliańska.
 - Umowa z postanowieniami o terminach > 60 dni, wyłączeniu rekompensaty, karach umownych, zakazie cesji (ocena rażącej nieuczciwości: ZATORY art. 11a).
-- Zawiadomienie o przestępstwie, gdy w grę wchodzi znany kontrahent i trwające negocjacje (ryzyko zarzutu fałszywego oskarżenia, ryzyko dla relacji).
+- Zawiadomienie o przestępstwie, gdy w grę wchodzi znany kontrahent i trwające negocjacje (ryzyko zarzutu fałszywego oskarżenia, ryzyko dla relacji) (KK art. 234, KK art. 238).
 - Dłużnik w restrukturyzacji lub upadłości (obwieszczenie w KRZ): inne reguły zgłaszania wierzytelności i zakaz egzekucji (`moduly/niewyplacalnosc.md`, część „Perspektywa wierzyciela niewypłacalnej firmy”).
 
 ## 5. Fakty, które zmieniają ocenę (pytania do użytkownika)
@@ -238,6 +256,7 @@ Elementy z ZATORY art. 13d ust. 2-3: wskazanie podmiotu, opis stanu faktycznego,
 6. Data wymagalności najstarszej faktury; czy były wpłaty częściowe, prośby o raty, potwierdzenia salda, wcześniejsze pozwy lub zawezwania?
 7. Czy masz wobec dłużnika własne długi (potrącenie) albo on wobec Ciebie?
 8. Czy umowa zawiera zapis na sąd polubowny, mediację, wybór sądu, kary umowne, zakaz cesji?
+8a. Czy faktura została sprzedana albo przeniesiona (faktoring, cesja), a jeśli tak, czy i kiedy dłużnik dostał zawiadomienie?
 9. Kwota łączna i liczba faktur (opłata, tryb uproszczony, sąd okręgowy).
 10. Czy dłużnik ma majątek, rachunki, kontrahentów; czy coś zbywa; czy jest w KRZ (restrukturyzacja, upadłość)?
 11. Czy przy zawieraniu transakcji padły nieprawdziwe zapewnienia (oszustwo), czy to zwykła niewypłacalność?
@@ -275,7 +294,7 @@ Do rozważenia (spoza dozwolonych źródeł, nie wpisywać jako źródła): wyro
 | ZATORY | Brak zmian od t.j. Dz.U. 2023 poz. 1790 (ELI: tylko obwieszczenia o odsetkach); projektu zmiany w Sejmie X kadencji nie znaleziono | - | api.sejm.gov.pl, references DU/2013/403 |
 | M.P. 2026 poz. 642 | Odsetki handlowe II półrocze 2026: 13,75 % / 11,75 % | obowiązuje 1.07-31.12.2026 | eli.gov.pl/eli/MP/2026/642/ogl |
 | M.P. 2026 poz. 367, 368 | Odsetki ustawowe za opóźnienie 9,25 %, kapitałowe 7,25 % od 5.03.2026 | obowiązuje | eli.gov.pl/eli/MP/2026/367/ogl |
-| Dz.U. 2026 poz. 1046, 1296 | Zmiany KPC wchodzące 5.11 i 6.11.2026 (Kodeks pracy; usługi elektroniczne); tekst lokalny KPC z 16.10.2026 może ich nie zawierać [WYMAGA WERYFIKACJI: czy dotyczą przepisów z tego researchu] | wchodzą 5-6.11.2026 | ELI |
+| Dz.U. 2026 poz. 1046, 1296 | Zmiany KPC wchodzące 5.11 i 6.11.2026 (m.in. KPC art. 17 pkt 4⁶ o roszczeniach z ustawy o świadczeniu usług drogą elektroniczną i przepisy o sprawach z zakresu prawa pracy); lokalny tekst KPC z 16.10.2026 uwzględnia obie pozycje; przed użyciem przepisu sprawdź notkę o jego wejściu w życie | wchodzą 5-6.11.2026 | ELI; nagłówek `akty/KPC.md` |
 
 ---
 
@@ -283,7 +302,7 @@ Do rozważenia (spoza dozwolonych źródeł, nie wpisywać jako źródła): wyro
 
 ### Research: spory z kontrahentem (A) i niewypłacalność firmy (B)
 
-Skill: „Sprawy prawne w firmie” (skille.aixperts.pl). **Stan prawny: 6 listopada 2026 r.** Materiał roboczy dla autora skilla, nie treść do odpowiedzi.
+Skill: „Sprawy prawne w firmie” (skille.aixperts.pl). **Stan prawny: 6 listopada 2026 r.**
 
 Podstawa tekstów ustaw: lokalne kopie `skille/sprawy-prawne-w-firmie/references/akty/` (teksty ujednolicone Kancelarii Sejmu pobrane z api.sejm.gov.pl 6.11.2026). Każdy artykuł poniżej sprawdzony w tych plikach (odczyt 6.11.2026). Wersje: KC t.u. 3.11.2026 (Dz.U. 2026 poz. 795), KPC t.u. 16.10.2026 (Dz.U. 2026 poz. 468 ze zm.), ZATORY t.u. 27.09.2023 (Dz.U. 2023 poz. 1790, bez późniejszych zmian według ELI), KOSZTY t.u. 18.08.2026 (Dz.U. 2025 poz. 1228 ze zm.), PU t.u. 9.10.2026 (Dz.U. 2026 poz. 913, 1206), PR t.u. 8.10.2026 (Dz.U. 2026 poz. 533, 1206), KSH t.u. 5.11.2026, OP t.u. 8.10.2026, KK t.u. 29.10.2026 (Dz.U. 2026 poz. 1342), KPK.
 
@@ -293,7 +312,7 @@ Skróty: KC, KPC, ZATORY (ustawa o przeciwdziałaniu nadmiernym opóźnieniom w 
 
 - `windykacja-miekka` (references/polskie-realia.md, stopnie-eskalacji.md) już pokrywa: ton i stopnie pism przed sądem, rejestry dłużników (BIG), korektę VAT po 90 dniach, KSeF a doręczenie faktury, doręczenie pism do kontrahenta, nazewnictwo księgowe. Ten skill **odsyła tam** przy pytaniach o kolejne monity i wpis do BIG; tu dokłada podstawy prawne, terminy, sąd i egzekucję.
 - `nakaz-zaplaty-co-dalej` (references/zasady.md) pokrywa perspektywę **dłużnika**: sprzeciw, zarzuty, liczenie terminów, doręczenie, skarga na komornika, kwoty wolne, przywrócenie terminu. Ten skill w module A mówi o tym tylko jednym akapitem i odsyła tam.
-- Nowe względem obu: rekompensata i odsetki handlowe w liczbach na 2026 r., terminy z podmiotami publicznymi, UOKiK i zatory, zawezwanie do próby ugodowej po zmianie z 1 lipca 2022 r., potrącenie (także procesowe), sprawy gospodarcze (prekluzja, umowa dowodowa, koszty za brak próby ugody), e-Sąd od strony wierzyciela, zabezpieczenie, egzekucja od strony wierzyciela, zawiadomienie o oszustwie, cały moduł B.
+- Nowe względem obu: rekompensata i odsetki handlowe w liczbach na 2026 r., terminy z podmiotami publicznymi, UOKiK i zatory, zawezwanie do próby ugodowej po zmianie z 1 lipca 2022 r., potrącenie (także procesowe), sprawy gospodarcze (prekluzja, umowa dowodowa, koszty za brak próby ugody), e-Sąd od strony wierzyciela, zabezpieczenie, egzekucja od strony wierzyciela, zawiadomienie o oszustwie.
 
 ---
 
@@ -312,15 +331,14 @@ Wszystkie odczyty 6 listopada 2026 r.
 | ELI: odwołania do ustawy o zatorach | https://api.sejm.gov.pl/eli/acts/DU/2013/403/references | brak nowelizacji po 2023 r. |
 | ELI: metadane aktów zmieniających | https://api.sejm.gov.pl/eli/acts/DU/2025/1085 ; .../DU/2025/1157 ; .../DU/2025/1172 ; .../DU/2025/1518 ; .../DU/2026/1206 ; .../DU/2026/1440 ; .../DU/2026/176 ; .../DU/2026/1046 ; .../DU/2026/1296 ; .../DU/2026/346 | daty wejścia w życie |
 | Sejm X kadencji, procesy legislacyjne | https://api.sejm.gov.pl/sejm/term10/processes (procesy 1263, 3085, 3008, 3011, 1442, 1304, 1425, 1242, 2027, 2737, 3299) | projekty i ich etapy |
-| GUS, obwieszczenie o wynagrodzeniu bez nagród z zysku w III kw. 2025 | https://stat.gov.pl/sygnalne/komunikaty-i-obwieszczenia/lista-komunikatow-i-obwieszczen/obwieszczenie-w-sprawie-przecietnego-miesiecznego-wynagrodzenia-w-sektorze-przedsiebiorstw-bez-wyplat-nagrod-z-zysku-w-trzecim-kwartale-2025-r-,59,48.html | 8 851,42 zł, podstawa PU art. 22a |
 | UOKiK, zatory 2026 | https://uokik.gov.pl/en/payment-backlogs-actions-taken-by-the-president-of-uokik-since-the-beginning-of-2026 | statystyka do 14.04.2026 |
 | UOKiK, zatory 2025 (kontekst) | https://uokik.gov.pl/en/payment-backlogs-further-decisions-and-soft-calls | brak zapowiedzi nowelizacji na stronie |
 | biznes.gov.pl, „Jak i od kogo można odzyskać dług” (publ. 2.11.2021) | https://www.biznes.gov.pl/pl/portal/001093 | kolejność kroków, e-Sąd i klauzula; strona stara, tylko orientacyjnie |
 | biznes.gov.pl, terminy zapłaty i zatory (karty z wyników wyszukiwania, nieotwierane w całości) | https://www.biznes.gov.pl/pl/portal/00156 ; https://www.biznes.gov.pl/pl/portal/00157 ; https://www.biznes.gov.pl/pl/portal/00431 | kontekst; nie stanowią podstawy reguł |
 | KRZ | https://prs.ms.gov.pl/krz | portal do wniosków w upadłości i restrukturyzacji |
 | SN, baza orzeczeń (nowy serwis) | https://www.sn.pl/pl/wyszukiwarka-orzeczen | orzeczenia „otwarte” w A6 i B6 |
+| Prawo prywatne międzynarodowe, t.j. Dz.U. 2023 poz. 503 (akt niewbudowany) | https://api.sejm.gov.pl/eli/acts/DU/2011/432/text/U/D20110432Lj.pdf | art. 26 i art. 28 ust. 1 (pkt 55a) |
 | SN, komunikat II CSKP 104/21 | https://www.sn.pl/pl/aktualnosci/komunikaty-o-sprawach/sad-najwyzszy-rozpoznajac-skarge-kasacyjna-stwierdzil-ze-kazde-zawezwanie-do-proby-ugodowej-powoduje-przerwanie-biegu-przedawnienia | teza II CSKP 104/21 |
-| NSA, CBOSA | https://orzeczenia.nsa.gov.pl/doc/87A5494E40 | II FPS 3/09 |
 
 ### Akty potrzebne, a spoza lokalnej listy (nie cytowano z pamięci; ELI do potwierdzenia na isap.sejm.gov.pl)
 
@@ -332,3 +350,4 @@ Wszystkie odczyty 6 listopada 2026 r.
 6. Ustawa z 11 września 2019 r. Prawo zamówień publicznych, art. 4 i 5 (plik PZP.md jest lokalnie; definicja podmiotu publicznego nie była tu cytowana).
 7. Rozporządzenie (WE) nr 1896/2006 (europejski nakaz zapłaty) i rozporządzenie (UE) nr 655/2014 (europejski nakaz zabezpieczenia na rachunku).
 8. Ustawa z 15 kwietnia 2011 r. o działalności leczniczej, art. 4 ust. 1 pkt 2-4 (definicja podmiotu leczniczego w ZATORY art. 4 pkt 4).
+9. Ustawa z 4 lutego 2011 r. Prawo prywatne międzynarodowe (t.j. Dz.U. 2023 poz. 503), art. 26 i art. 28 ust. 1: odczyt oficjalnego tekstu ujednoliconego 6.11.2026, adres w rejestrze źródeł (pkt 55a).

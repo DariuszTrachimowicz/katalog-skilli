@@ -47,7 +47,7 @@ Jeśli kontrahent kwestionuje jakość, zakres albo termin wykonania, to nie jes
 Zatrzymaj się też, gdy:
 
 - **dłużnik ogłosił upadłość albo restrukturyzację**, zapłata idzie wtedy trybem zbiorowym, wspólnym dla wszystkich wierzycieli, a osobne wezwanie niczego w tej kolejce nie zmienia,
-- **od terminu płatności minęły blisko trzy lata** (licząc do końca roku kalendarzowego, szczegóły w `references/polskie-realia.md`), o kolejności kroków decyduje wtedy termin, którego nie da się cofnąć, a nie relacja z klientem,
+- **nie ustalono właściwego terminu przedawnienia albo zbliża się jego koniec** (przy fakturach za towar, dzieło i część usług zwykle dwa lata, nie trzy; szczegóły w `references/polskie-realia.md`), najpierw prawnik, bez czekania na kolejne stopnie; o kolejności kroków decyduje wtedy termin, którego nie da się cofnąć, a nie relacja z klientem,
 - **umowa przewiduje obowiązkową mediację przed jakimikolwiek krokami**, pismo wysłane wcześniej bywa potem użyte przeciwko wysyłającemu,
 - **dług został już przekazany firmie windykacyjnej**, dwa równoległe pisma od dwóch nadawców psują pozycję obu.
 

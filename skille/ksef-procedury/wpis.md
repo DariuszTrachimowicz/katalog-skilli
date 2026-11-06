@@ -2,9 +2,9 @@
 nazwa: Procedury operacyjne KSeF
 kategoria: Finanse
 status: gotowy
-wersja: 1.1.1
+wersja: 1.1.2
 poziom: Zaawansowany
-aktualizacja: 2026-11-05
+aktualizacja: 2026-11-06
 skrot: "Buduje z firmą albo biurem rachunkowym jej własną dokumentację operacyjną KSeF: macierz odpowiedzialności firma-biuro, kartę postępowania przy braku dostępu do systemu, matrycę uprawnień i certyfikatów, rejestr odrzuceń, plan testów i zasady płatności z numerem KSeF."
 korzysc: Wiesz, kto w firmie co robi w KSeF i co zrobić, gdy system nie działa, zamiast szukać rady w internecie.
 szukaj: KSeF, Krajowy System e-Faktur, faktura ustrukturyzowana, awaria KSeF, offline24, niedostępność KSeF, uprawnienia KSeF, certyfikat KSeF, biuro rachunkowe, faktura odrzucona, numer KSeF w przelewie, procedura awaryjna, FA(3), finanse

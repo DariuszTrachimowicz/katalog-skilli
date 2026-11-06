@@ -278,6 +278,18 @@ firmy musi go rozstrzygać wprost.
   rejestru odrzuceń w kolumnie „Data wystawienia po przyjęciu”; ujęcie
   w rozliczeniu miesiąca rozstrzyga księgowa.
 
+### Przechowywanie faktur w systemie i poza nim
+
+- Faktury przyjęte do KSeF są w nim przechowywane przez 10 lat od końca roku
+  wystawienia; jeżeli zobowiązanie podatkowe nie przedawniło się do końca tego
+  okresu, firma zapewnia dalsze przechowywanie poza systemem.
+- Przechowywanie w systemie nie obejmuje faktur pozostających poza KSeF, w tym
+  wystawionych w awarii całkowitej i niedosyłanych do systemu. Procedura
+  wskazuje właściciela i miejsce archiwum takich faktur oraz osobę, która przed
+  upływem okresu przechowywania w systemie sprawdza potrzebę zachowania faktur
+  poza nim `[stan na 6.11.2026; sprawdź okres w aktualnym tekście ustawy
+  o podatku od towarów i usług]`.
+
 ## Katalog wartości oznaczanych do weryfikacji
 
 Poniższe zmieniają się najczęściej i zawsze idą ze znacznikiem
@@ -309,6 +321,7 @@ zostaw `[UZUPEŁNIJ: adres do zapisania przy wdrożeniu]`.
 |---|---|---|
 | Harmonogram, odbieranie faktur, limit 10 tys. zł, wyłączenia | ksef.podatki.gov.pl/informacje-ogolne-ksef-20/zakres-obowiazkowego-ksef/ | 24 sierpnia 2026 |
 | Sankcje, katalog naruszeń, okres przejściowy, przechowywanie | ksef.podatki.gov.pl/ksef-news/zasady-obowiazywania-ksef-i-przepisy-prawne/ | 24 sierpnia 2026 |
+| Okres przechowywania faktur w systemie i dalsze przechowywanie poza nim (ustawa o podatku od towarów i usług, art. 112, 112a, 112aa, brzmienie z 16.10.2026) | api.sejm.gov.pl/eli/acts/DU/2004/535/text/U/D20040535Lj.pdf | 6 listopada 2026 (przegląd panelu) |
 | Pytania i odpowiedzi, status dokumentu wystawionego poza systemem | ksef.podatki.gov.pl/ksef-news/najczestsze-pytania/ | 24 sierpnia 2026 |
 | Cztery tryby szczególne i ich skutki | ksef.podatki.gov.pl/wyjasnienia/co-warto-wiedziec-przed-startem-ii-etapu-wdrozenia-krajowego-systemu-e-faktur/ | 24 sierpnia 2026 |
 | Tryb offline24: warunki, termin, udostępnianie faktury | ksef.podatki.gov.pl/informacje-ogolne-ksef-20/tryb-offline24/ | 24 sierpnia 2026 |

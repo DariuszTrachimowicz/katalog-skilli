@@ -2,9 +2,9 @@
 nazwa: Pełnomocnictwo w firmie
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.1
+wersja: 1.0.2
 poziom: Działa od razu
-aktualizacja: 2026-11-05
+aktualizacja: 2026-11-06
 skrot: Ustala, kto może podpisać za firmę i co (zarząd, wspólnik, prokurent, pełnomocnik, pracownik, biuro rachunkowe), dobiera rodzaj umocowania i formę, mówi, gdzie je zgłosić (urząd skarbowy, ZUS, KRS, CEIDG, KSeF, e-Doręczenia, bank, sąd) i od kiedy działa, prowadzi rejestr umocowań i listę działań przy odwołaniu, sprawdza wklejone pełnomocnictwo.
 korzysc: Wiesz, kto może podpisać za firmę, w jakiej formie i co zrobić przy odwołaniu umocowania.
 szukaj: kto może podpisać za spółkę, sposób reprezentacji sp. z o.o., prokura a pełnomocnictwo, prokura łączna, pełnomocnictwo ogólne rodzajowe szczególne, pełnomocnictwo do urzędu skarbowego, pełnomocnictwo ogólne CRPO, pełnomocnictwo dla biura rachunkowego, umowa z członkiem zarządu art 210, pełnomocnictwo notarialne nieruchomość, odwołanie pełnomocnictwa, opłata skarbowa od pełnomocnictwa 17 zł, pełnomocnik w CEIDG, sprawozdanie finansowe do KRS kto składa

@@ -1,0 +1,444 @@
+Reading additional input from stdin...
+OpenAI Codex v0.162.1
+--------
+workdir: C:\Users\CP24\AiXperts - projekty\katalog-skilli
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1b0c7-8d3f-7551-8d32-1247d1a7c7d2
+--------
+user
+Przeczytaj najpierw plik testy/sprawy-prawne-w-firmie/panel/BRIEF.md (zasady i format). Twoja rola: Ekspert 6: prawo karne gospodarcze i karne skarbowe, odpowiedzialność podmiotów zbiorowych, sygnaliści, AI w firmie. Zakres: references/mapa-spraw.md (jak skill kieruje sprawy karne), references/moduly/spory-z-kontrahentem.md (oszustwo kontrahenta, zawiadomienie), references/moduly/niewyplacalnosc.md (przestępstwa na szkodę wierzycieli), kopie katalog/sygnalisci-procedura i katalog/polityka-ai, akty KK, KKS, KPK, PODZB. Szukaj błędów i luk (np. firma jako pokrzywdzony: zawiadomienie, status pokrzywdzonego, oskarżyciel posiłkowy; przeszukanie i żądanie wydania dokumentów w firmie; wezwanie pracownika jako świadka; czynny żal w sprawach karnych skarbowych; mandat karny skarbowy; odpowiedzialność podmiotu zbiorowego; przestępstwa przeciwko prawom pracownika). Rozważ, czy skill potrzebuje osobnego modułu dla spraw karnych firmy, i jeśli tak, napisz jego szkic jako lukę. Jesteś Codex, więc w nagłówku wpisz (Codex). Nie możesz zapisywać plików: Twoja końcowa wiadomość to cały plik eksperta w formacie z BRIEF.md (zostanie zapisany automatycznie). Identyfikatory zaczynaj od C6- (np. C6-01).
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+hook: SessionStart
+hook: SessionStart
+hook: SessionStart Completed
+hook: SessionStart Completed
+hook: UserPromptSubmit
+hook: UserPromptSubmit Completed
+codex
+Otwórz wynik po zakończeniu jako raport Eksperta 6 (Codex). Najpierw odczytuję BRIEF.md; potem sprawdzę wskazane moduły i podstawy prawne. Nie zapisuję plików.
+
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -Command "Get-Content -LiteralPath 'testy/sprawy-prawne-w-firmie/panel/BRIEF.md' -Raw" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -LiteralPath 'testy/sprawy-prawne-w-firmie/panel/BRIEF.md' -Raw" | env_u16_len=4864 | si_flags=256 | creation_flags=134743040
+2026-11-06T12:14:11.922906Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-Content -LiteralPath 'testy/sprawy-prawne-w-firmie/panel/BRIEF.md' -Raw\\\" | env_u16_len=4864 | si_flags=256 | creation_flags=134743040\")" }
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Krok 1 z 3: format raportu odczytany. Stosuję zasady using-superpowers i Ponytail do przeglądu; każdą uwagę oprę na konkretnym fragmencie skilla i sprawdzonym przepisie.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Krok 2 z 3: mapa kieruje mandat do procedury administracyjnej, a sprawy karne firmy obejmuje głównie przez oszustwo kontrahenta. Sprawdzam teraz, gdzie ten podział może prowadzić do błędnej porady i jak uzupełnić pierwszą reakcję firmy.
+
+mcp: node_repl/js started
+web search: 
+mcp: node_repl/js (completed)
+web search: site.gov.pl czynny żal art 16 16a kodeks karny skarbowy mandat ...
+mcp: node_repl/js started
+mcp: node_repl/js (failed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Krok 2 z 3: potwierdzone są błędy w opisach oszustwa i przestępstw na szkodę wierzycieli. W procedurze sygnalistów zdanie „zgłaszanie nie jest obowiązkiem” wymaga rozróżnienia dobrowolnego kanału zgłoszeń od ustawowego obowiązku zawiadomienia organów.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20021971661/U/D20021661Lj.pdf
+web search: 
+web search: site.api.sejm.gov.pl/eli/acts/DU/2026 "Kodeks postępowania karnego" "901" ...
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Krok 3 z 3: sprawdziłem też moduły pomocnicze, aby nie zgłaszać istniejących reguł jako braków. Raport będzie zawierał gotowe poprawki i szkic osobnego modułu pierwszej reakcji, z zachowaniem zasady, że obronę prowadzi prawnik.
+
+web search: 
+web search: https://api.sejm.gov.pl/eli/acts/DU/1997/553
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: https://api.sejm.gov.pl/eli/acts/DU/2002/1661/text.html
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+# Ekspert 6: prawo karne gospodarcze i karne skarbowe, odpowiedzialność podmiotów zbiorowych, sygnaliści, AI w firmie (Codex)
+
+Stan oceny: 6 listopada 2026. Uwzględniono wcześniejszy `RAPORT.md`. Wszystkie przywołane niżej artykuły przeczytano w całości w plikach wbudowanych aktów. Brzmienia kopii: KK 29.10.2026, KKS 8.10.2026, KPK 17.07.2026, PODZB 8.05.2026, KP 14.10.2026; SYGN według tekstu ogłoszonego w Dz.U. 2024 poz. 928. Uwzględniono notki o przepisach wchodzących w życie później.
+
+Ścieżki `references/` są względem `skille/sprawy-prawne-w-firmie/`. Błędy kopii katalogowych przypisano wąskim skillom źródłowym.
+
+## Błędy
+
+C6-01 | references/mapa-spraw.md:71 | WAŻNE | Wiersz obejmuje każdy „mandat”, ale kieruje do materiału opisującego mandaty za zwykłe wykroczenia. Nie rozdziela mandatu karnego skarbowego, który ma własne przesłanki, skutki odmowy i podstawy uchylenia. Kopia `katalog/decyzja-z-urzedu-co-dalej/zasady.md:103` opisuje już mandat zaoczny, podczas gdy odpowiednie przepisy KKS zaczną obowiązywać dopiero 26.12.2026. | KKS art. 137 § 3: „zgody na przyjęcie mandatu”; KKS art. 139 § 1: „sprawa podlega rozpoznaniu na zasadach ogólnych”; KKS art. 140 § 1: „7 dni od daty przyjęcia mandatu”. Datę przyszłych zmian potwierdzają notki w KKS oraz [urzędowa informacja o nowelizacji](https://eli.sejm.gov.pl/eli/DU/2026/846/ogl/pol). | poprawka: w istniejącym wierszu zastąpić słowo „mandat” słowami „mandat za wykroczenie inne niż skarbowe”, a bezpośrednio pod nim dodać:
+
+```markdown
+| Mandat karny skarbowy, wezwanie w sprawie o przestępstwo lub wykroczenie skarbowe | `moduly/sprawy-karne-firmy.md`: pierwsza reakcja i karta dla adwokata albo radcy prawnego; reguły mandatów sprawdzaj w KKS według daty czynności | KKS |
+```
+
+Nowy moduł opisano w C6-06. Nie przenosić do niego zasad mandatu zaocznego przed datą ich stosowania.
+
+C6-02 | references/moduly/spory-z-kontrahentem.md:145 | WAŻNE | Punkt 81 nadmiernie zawęża oszustwo do wprowadzenia w błąd przy zawieraniu transakcji. Istotny jest związek oszukańczego zachowania z niekorzystnym rozporządzeniem mieniem, które może nastąpić również podczas wykonywania wcześniej uczciwie zawartej umowy. Pominięto też wyzyskanie istniejącego błędu oraz niezdolności do należytego pojmowania działania. | KK art. 286 § 1: „wprowadzenia jej w błąd albo wyzyskania błędu lub niezdolności”. | poprawka: zastąpić ostatnie zdanie punktu 81 tekstem: „Sama niezapłacona faktura nie wystarcza do przyjęcia oszustwa: trzeba ustalić, czy sprawca, działając w celu osiągnięcia korzyści majątkowej, doprowadził do niekorzystnego rozporządzenia mieniem przez wprowadzenie w błąd, wyzyskanie błędu albo niezdolności do należytego pojmowania działania. Badaj okoliczności konkretnego rozporządzenia mieniem, także dokonanego podczas wykonywania umowy, a ocenę zamiaru i kwalifikacji pozostaw prawnikowi (KK art. 286 § 1).”
+
+C6-03 | references/moduly/niewyplacalnosc.md:79 | WAŻNE | Punkt 36 wymienia tylko pozorne obciążenie majątku. Rzeczywiste ustanowienie zabezpieczenia również może realizować znamiona, jeżeli zachodzą pozostałe przesłanki przepisu. To istotne przy hipotece lub zastawie ustanawianych przed egzekucją. | KK art. 300 § 1 i § 2: „rzeczywiście lub pozornie obciąża albo uszkadza”. | poprawka: w pierwszym zdaniu punktu 36 zastąpić fragment „niszczy, pozornie obciąża majątek” fragmentem „niszczy, rzeczywiście lub pozornie obciąża albo uszkadza składniki swojego majątku”. Pozostałe warunki, sankcje i rozróżnienie trybu ścigania zachować.
+
+C6-04 | references/moduly/niewyplacalnosc.md:80 | WAŻNE | Punkt 37 zawęża nową jednostkę gospodarczą do spółki, pomija niewypłacalność w opisie czynu umyślnego i upadłość w opisie czynu lekkomyślnego. Warunek bycia dłużnikiem kilku wierzycieli powinien być widoczny przy wszystkich trzech odmianach. | KK art. 301 § 1: „tworzy [...] nową jednostkę gospodarczą”; KK art. 301 § 2 i § 3: „do swojej upadłości lub niewypłacalności”. | poprawka: zastąpić cały punkt 37 tekstem: „37. Dłużnik kilku wierzycieli, który tworzy nową jednostkę gospodarczą i przenosi na nią składniki swojego majątku, przez co udaremnia lub ogranicza zaspokojenie ich należności, może odpowiadać karnie (KK art. 301 § 1). Odrębnie przepis obejmuje doprowadzenie przez dłużnika kilku wierzycieli do własnej upadłości lub niewypłacalności oraz lekkomyślną odmianę takiego zachowania, przykładowo przez trwonienie majątku lub transakcje oczywiście sprzeczne z zasadami gospodarowania (KK art. 301 § 2 i § 3).”
+
+C6-05 | skille/sygnalisci-procedura/references/stan-prawny.md:16; kopia references/katalog/sygnalisci-procedura/stan-prawny.md:17 | WAŻNE | Zdanie „Zgłaszanie nie jest obowiązkiem” nie rozdziela dobrowolnego korzystania z kanału sygnalistów od odrębnego obowiązku zawiadomienia organów ścigania. Problem pogłębia wariant zamykania anonimów „bez działań” w źródłowym `references/komponenty.md:3`. | KK art. 240 § 1: „nie zawiadamia niezwłocznie organu”; KPK art. 304 § 2: instytucje państwowe i samorządowe „są obowiązane niezwłocznie zawiadomić”. Nie oznacza to takiego obowiązku przy każdym oszustwie ani automatycznie dla każdej spółki z udziałem publicznym. | poprawka: zastąpić ostatnie zdanie wskazanego akapitu tekstem: „Przepisy o ochronie sygnalistów nie ustanawiają ogólnego obowiązku korzystania z kanału zgłoszeń, ale odrębne przepisy mogą nakazywać niezwłoczne zawiadomienie organów ścigania. Dotyczy to w szczególności wiarygodnej wiadomości o czynach wymienionych w przepisie karnym oraz obowiązku instytucji państwowych i samorządowych, z uwzględnieniem ustawowych wyjątków (KK art. 240; KPK art. 304 § 2).”
+
+W źródłowym `skille/sygnalisci-procedura/references/komponenty.md`, po zdaniu „Każdy wariant opisuje, kto podejmuje decyzję i jak kończy obsługę.”, dodać: „Wariant nierozpatrywania anonimów nie uchyla odrębnych obowiązków zawiadomienia organów ścigania; przed zamknięciem sprawdź, czy treść informacji uruchamia taki obowiązek (KK art. 240; KPK art. 304 § 2).” Następnie odtworzyć kopie generatorem.
+
+## Luki (czego brakuje)
+
+C6-06 | references/mapa-spraw.md, przed sekcją „10. Poza zakresem tego skilla”; nowy references/moduly/sprawy-karne-firmy.md | Potrzebny jest osobny moduł pierwszej reakcji. Firma może być pokrzywdzonym, dysponentem dokumentów, pracodawcą świadka albo podmiotem zagrożonym odpowiedzialnością majątkową. Samo odesłanie obrony do prawnika nie obsługuje tych sytuacji. | gotowy tekst do wstawienia do mapy:
+
+```markdown
+## 9a. Sprawy karne związane z firmą
+
+| Sprawa | Moduł główny | Akty |
+|---|---|---|
+| Firma pokrzywdzona przestępstwem, przeszukanie, żądanie wydania dokumentów, wezwanie pracownika jako świadka, ryzyko odpowiedzialności podmiotu zbiorowego lub odpowiedzialności karnej skarbowej | `moduly/sprawy-karne-firmy.md`; dodatkowo moduł właściwy dla zdarzenia | KK, KPK, KKS, PODZB |
+```
+
+W sekcji „Poza zakresem”, po zdaniu o przygotowaniu wyłącznie karty w sprawach obrony, dodać: „Przed przekazaniem sprawy wczytaj `moduly/sprawy-karne-firmy.md`, aby rozpoznać pilną czynność, rolę użytkownika i potrzebę zabezpieczenia dowodów.”
+
+Szkic nowego modułu, rozwijany regułami C6-07 do C6-12:
+
+```markdown
+# Moduł: Sprawy karne firmy, pierwsza reakcja
+
+Wczytaj przy podejrzeniu przestępstwa związanego z działalnością firmy, czynności organu ścigania, wezwaniu świadka albo ryzyku odpowiedzialności podmiotu zbiorowego. Każdą podstawę sprawdź w całości w pliku aktu i podaj użytkownikowi datę brzmienia.
+
+## 1. Rola, pilność i data zdarzenia
+
+Ustal, czy użytkownik działa jako pokrzywdzony, reprezentant firmy, świadek, podejrzany albo osoba odpowiedzialna za dokumenty, oraz czy czynność trwa lub wyznaczono jej termin. Rozdziel interes firmy od osobistego interesu członka zarządu lub pracownika.
+
+Zapisz datę zarzucanego zachowania: przy ocenie odpowiedzialności materialnej trzeba uwzględnić ustawę wcześniejszą, jeżeli jest względniejsza dla sprawcy (KK art. 4 § 1; KKS art. 2 § 2 i § 3).
+
+## 2. Dokumenty i dowody
+
+Zachowaj dokumenty i dane w oryginalnej postaci, ogranicz dostęp do osób uprawnionych i odnotuj, skąd pochodzą kopie. Nie pomagaj w tworzeniu fałszywych dowodów ani zacieraniu śladów dla uniknięcia odpowiedzialności przez sprawcę (KK art. 239 § 1).
+
+## 3. Firma jako pokrzywdzony
+
+Sprawdź, czy bezpośrednio naruszono lub zagrożono dobru firmy oraz kto wykonuje jej prawa procesowe (KPK art. 49 § 1 i § 2; KPK art. 51 § 1). Zawiadomienie o przestępstwie przygotowuj jako poziom B, zgodnie z modułem sporów i regułami pism.
+
+## 4. Czynności organu w firmie
+
+Rozdziel przeszukanie, żądanie wydania rzeczy lub danych i przesłuchanie świadka: każda czynność ma własne warunki i uprawnienia (KPK art. 177 § 1; KPK art. 217; KPK art. 219 i art. 220; KPK art. 236a). Nie stosuj do nich automatycznie procedury zwykłej kontroli przedsiębiorcy.
+
+## 5. Granice i karta dla prawnika
+
+Obronę podejrzanego lub oskarżonego prowadzi adwokat albo radca prawny; skill porządkuje fakty i przygotowuje kartę. W karcie zapisz rolę każdej osoby, datę czynu, organ i sygnaturę, termin najbliższej czynności, dokumenty, możliwy konflikt interesów oraz jedno pytanie wymagające pilnej decyzji prawnika.
+```
+
+Podstawy dodatkowe szkicu, sprawdzone w plikach: KK art. 4 § 1: „jeżeli jest względniejsza dla sprawcy”; KKS art. 2 § 3: „Niedopuszczalne jest stosowanie w części ustawy nowej i w części ustawy obowiązującej poprzednio”; KK art. 239 § 1: „tworzy fałszywe dowody, zaciera ślady przestępstwa”.
+
+C6-07 | references/moduly/spory-z-kontrahentem.md, po punkcie 82; nowy moduł, sekcja 3 | Brakuje dalszej drogi firmy po zawiadomieniu: statusu pokrzywdzonego, reprezentacji, praw strony, oskarżyciela posiłkowego i dochodzenia szkody. Złożenie zawiadomienia nie zapewnia automatycznie wszystkich tych uprawnień. | gotowy tekst do wstawienia, jako kolejne reguły:
+
+„Pokrzywdzonym jest podmiot, którego dobro prawne przestępstwo bezpośrednio naruszyło lub zagroziło; ustal, czy jest nim przedsiębiorca będący osobą fizyczną, spółka czy inna jednostka ze zdolnością prawną. Za pokrzywdzonego niebędącego osobą fizyczną czynności wykonuje uprawniony organ, a samo bycie wspólnikiem albo pracownikiem nie daje prawa działania za spółkę (KPK art. 49 § 1 i § 2; KPK art. 51 § 1).”
+
+„Pokrzywdzony jest stroną postępowania przygotowawczego, może składać wnioski o czynności dowodowe i korzystać z dostępu do akt na ustawowych zasadach. Po wniesieniu aktu oskarżenia przez oskarżyciela publicznego może złożyć oświadczenie o działaniu jako oskarżyciel posiłkowy aż do rozpoczęcia przewodu sądowego na rozprawie głównej (KPK art. 299 § 1; KPK art. 315 § 1; KPK art. 156 § 5; KPK art. 54 § 1).”
+
+„Z prawnikiem rozważ wniosek o naprawienie szkody, który można złożyć do zamknięcia przewodu sądowego na rozprawie głównej. Sprawdź wcześniej, czy to samo roszczenie nie jest przedmiotem innego postępowania albo nie zostało już prawomocnie rozstrzygnięte, ponieważ może to wyłączyć orzeczenie obowiązku naprawienia szkody w procesie karnym (KK art. 46 § 1; KPK art. 49a § 1; KPK art. 415 § 1).”
+
+Podstawy z cytatami: KPK art. 49 § 1: „bezpośrednio naruszone lub zagrożone”; KPK art. 51 § 1: „organ uprawniony do działania”; KPK art. 299 § 1: „pokrzywdzony i podejrzany są stronami”; KPK art. 315 § 1: „wnioski o dokonanie czynności śledztwa”; KPK art. 156 § 5: „udostępnia się akta”; KPK art. 54 § 1: „aż do czasu rozpoczęcia przewodu sądowego”; KK art. 46 § 1: „na wniosek pokrzywdzonego [...] orzeka”; KPK art. 49a § 1: „aż do zamknięcia przewodu sądowego”; KPK art. 415 § 1: „roszczenie [...] jest przedmiotem innego postępowania”.
+
+C6-08 | references/moduly/spory-z-kontrahentem.md, po regułach dodanych w C6-07; nowy moduł, sekcja 3 | Punkt 82 wspomina zaskarżenie odmowy, lecz pomija termin, umorzenie i dalszą ścieżkę po ponownej decyzji. Firma może utracić możliwość skutecznego działania, czekając na zwykłą odpowiedź organu. | gotowy tekst do wstawienia:
+
+„Pokrzywdzony może zaskarżyć odmowę wszczęcia, a jako strona także umorzenie postępowania; termin zażalenia wynosi zasadniczo 7 dni od doręczenia postanowienia, gdy ustawa nakazuje jego doręczenie. Odróżnij to od zażalenia na brak informacji przez 6 tygodni, które ma inny przedmiot i adresata (KPK art. 306 § 1 pkt 1, § 1a pkt 1 i § 3; KPK art. 460).”
+
+„Po ponownej odmowie lub umorzeniu, wydanych po uchyleniu wcześniejszego postanowienia przez sąd, dalsza droga prowadzi najpierw do prokuratora nadrzędnego. Dopiero po spełnieniu ustawowych warunków może powstać możliwość wniesienia subsydiarnego aktu oskarżenia w miesiąc od właściwego zawiadomienia; akt musi sporządzić i podpisać uprawniony profesjonalny pełnomocnik, więc sprawę przekaż prawnikowi natychmiast (KPK art. 330 § 2 i § 2a; KPK art. 55 § 1 i § 2).”
+
+Podstawy z cytatami: KPK art. 306 § 1a pkt 1: „stronom”; KPK art. 460: „w terminie 7 dni”; KPK art. 306 § 3: „w ciągu 6 tygodni”; KPK art. 330 § 2: „tylko do prokuratora nadrzędnego”; KPK art. 55 § 1: „w terminie miesiąca”; KPK art. 55 § 2: „sporządzony i podpisany przez adwokata, radcę prawnego”.
+
+C6-09 | nowy references/moduly/sprawy-karne-firmy.md, sekcja 4, po pierwszym akapicie | Przeszukanie biura i zatrzymanie komputera mogą nastąpić również w firmie, której nikt nie zarzuca przestępstwa. Brakuje krótkiej instrukcji rozpoznania podstawy czynności, zabezpieczenia dokumentacji i ochrony tajemnic. | gotowy tekst do wstawienia:
+
+„Przy przeszukaniu poproś o okazanie postanowienia sądu lub prokuratora, ustal cel czynności i skontaktuj się z prawnikiem; w wypadku niecierpiącym zwłoki ustawa dopuszcza działanie na podstawie nakazu kierownika jednostki lub legitymacji służbowej. W takim przypadku zgłoś do protokołu żądanie doręczenia postanowienia w przedmiocie zatwierdzenia przeszukania, które powinno zostać doręczone w 7 dni od czynności (KPK art. 220 § 2 i § 3).”
+
+„Przy żądaniu wydania dokumentów, urządzeń lub danych ustal organ, zakres i podstawę żądania, dopilnuj spisu zatrzymanych rzeczy oraz pokwitowania. Przy dobrowolnym wydaniu na żądanie Policji lub innego uprawnionego organu działającego we własnym zakresie można niezwłocznie zażądać sporządzenia i doręczenia postanowienia zatwierdzającego zatrzymanie, z terminem doręczenia 14 dni (KPK art. 217 § 1 i § 4; KPK art. 228 § 3; KPK art. 229; KPK art. 236a).”
+
+„Zgłoś do protokołu, że określone dokumenty zawierają tajemnicę prawnie chronioną albo dotyczą wykonywania funkcji obrońcy; ustawa przewiduje odrębne sposoby postępowania i wyjątki, które powinien ocenić prawnik. Osobie, której prawa naruszono, może przysługiwać zażalenie na przeszukanie lub zatrzymanie rzeczy (KPK art. 225; KPK art. 236 § 1).”
+
+Podstawy z cytatami: KPK art. 220 § 3: „na zgłoszone do protokołu żądanie”; KPK art. 217 § 4: „w terminie 14 dni”; KPK art. 228 § 3: „natychmiast wręczyć pokwitowanie”; KPK art. 229: „dokładną listę zatrzymanych rzeczy”; KPK art. 236a: „w tym korespondencji przesyłanej pocztą elektroniczną”; KPK art. 225 § 1: „w opieczętowanym opakowaniu”, z wyjątkami i odrębną ochroną z dalszych paragrafów; KPK art. 236 § 1: „osobom, których prawa zostały naruszone”.
+
+C6-10 | nowy references/moduly/sprawy-karne-firmy.md, sekcja 4, po regułach o dokumentach | Wezwanie księgowej, handlowca lub członka zarządu jako świadka jest typową sprawą firmy. Brakuje rozróżnienia obowiązku stawienia się, prawa odmowy zeznań i prawa uchylenia się od konkretnej odpowiedzi. | gotowy tekst do wstawienia:
+
+„Osoba wezwana jako świadek ma obowiązek stawić się i zeznawać; prawo odmowy zeznań przysługuje w ustawowych sytuacjach, między innymi osobie najbliższej dla oskarżonego. Niezależnie od tego świadek może uchylić się od odpowiedzi na pytanie, jeżeli odpowiedź mogłaby narazić jego albo osobę najbliższą na odpowiedzialność za przestępstwo lub przestępstwo skarbowe (KPK art. 177 § 1; KPK art. 182; KPK art. 183 § 1).”
+
+„Jeżeli interes świadka wymaga pomocy prawnej, może on ustanowić własnego pełnomocnika, którego dopuszczenie podlega ustawowym zasadom; sprawdź, czy interes pracownika jest zgodny z interesem firmy. Firma nie ustala za świadka treści zeznań ani nie wywiera na niego nacisku, a skill pomaga wyłącznie uporządkować autentyczne dokumenty i pytania do prawnika (KPK art. 87 § 2 i § 3; KK art. 233 § 1 i § 2; KK art. 245).”
+
+Podstawy z cytatami: KPK art. 177 § 1: „obowiązek stawić się i złożyć zeznania”; KPK art. 182 § 1: „może odmówić zeznań”; KPK art. 183 § 1: „może uchylić się od odpowiedzi”; KPK art. 87 § 2: „jeżeli wymagają tego jej interesy”; KK art. 233 § 1: „zeznaje nieprawdę lub zataja prawdę”, z warunkiem z § 2; KK art. 245: „przemocy lub groźby bezprawnej”.
+
+C6-11 | nowy references/moduly/sprawy-karne-firmy.md, sekcja 5, przed kartą; references/mapa-spraw.md:101 | Czynny żal i korekta pojawiają się w kopiach materiałów o kontrolach, ale brakuje wyraźnego powiązania z osobistą odpowiedzialnością sprawcy i rozdzielenia obu podstaw niekaralności. Nie jest to wyliczanie podatku, więc nie powinno znikać pod ogólnym wyłączeniem rozliczeń podatkowych. | gotowy tekst do wstawienia:
+
+„Przy pytaniu o czynny żal ustal osobę, której może dotyczyć odpowiedzialność, datę czynu, działania już podjęte przez organ oraz to, czy ujawniono wszystkie istotne okoliczności, w tym osoby współdziałające. Zawiadomienie nie zapewnia automatycznie niekaralności: trzeba sprawdzić warunki zapłaty uszczuplonej należności lub przepadku, przeszkody wynikające z wiedzy i czynności organu oraz wyłączenia dotyczące określonych sprawców (KKS art. 9 § 3; KKS art. 16).”
+
+„Prawnie skuteczna korekta deklaracji lub księgi jest odrębną podstawą niekaralności dotyczącą wskazanego w przepisie czynu, z warunkiem zapłaty uszczuplonej należności i ograniczeniem związanym z postępowaniem przygotowawczym. Nie zapewniaj, że sama korekta albo czynny żal złożony przez jedną osobę chronią wszystkie osoby związane z rozliczeniem (KKS art. 16a; KKS art. 9 § 2 i § 3).”
+
+„Przy mandacie karnym skarbowym najpierw ustal osobę sprawcy i datę czynności: na 6 listopada 2026 r. nałożenie mandatu wymaga zgody, mandat kredytowany staje się prawomocny po pokwitowaniu odbioru, a odmowa kieruje sprawę do rozpoznania na zasadach ogólnych. Wniosek o uchylenie prawomocnego mandatu przysługuje z ustawowych przyczyn, zasadniczo w 7 dni od przyjęcia, z wyjątkami dopuszczającymi uchylenie w każdym czasie; sprawę przekaż prawnikowi, zachowując granicę obrony z mapy spraw (KKS art. 137 § 3; KKS art. 138 § 4; KKS art. 139 § 1; KKS art. 140).”
+
+Podstawy z cytatami: KKS art. 9 § 3: „zajmuje się sprawami gospodarczymi, w szczególności finansowymi”; KKS art. 16 § 1: „ujawniając istotne okoliczności”; KKS art. 16 § 5: „Zawiadomienie jest bezskuteczne”; KKS art. 16a § 1: „prawnie skuteczna korekta”; KKS art. 16a § 3: „wszczęto postępowanie przygotowawcze”; KKS art. 9 § 2: „niezależnie od odpowiedzialności pozostałych sprawców”. Podstawy mandatowe przytoczono w C6-01. Oficjalne objaśnienie potwierdza konieczność spełnienia warunków ustawowych, a nie samego wysłania pisma: [Ministerstwo Finansów o czynnym żalu](https://www.gov.pl/web/finanse/czynny-zal-dotyczacy-np-schematow-podatkowych-i-cen-transferowych-zloz-do-urzedu-skarbowego).
+
+C6-12 | nowy references/moduly/sprawy-karne-firmy.md, sekcja 5, po regułach KKS; references/mapa-spraw.md, nowy wiersz sekcji 9a | PODZB jest wbudowany, ale mapa nie kieruje do niego żadnej konkretnej sprawy. Brakuje też odpowiedzialności posiłkowej z KKS, która jest innym mechanizmem niż odpowiedzialność podmiotu zbiorowego. | gotowy tekst do wstawienia:
+
+„Przy podejrzeniu przestępstwa popełnionego w związku z działalnością spółki sprawdź, czy podmiot mieści się w ustawowej definicji, czy czyn jest objęty katalogiem ustawy, jaki związek ma sprawca z podmiotem oraz czy podmiot uzyskał lub mógł uzyskać korzyść, także niemajątkową. Znaczenie mają również przesłanki organizacyjne, wyboru lub nadzoru oraz rozstrzygnięcie dotyczące osoby fizycznej wymagane ustawą; dla wskazanych przestępstw przeciwko środowisku przewidziano wyjątek od tego ostatniego warunku, więc sprawę od razu przekazuj prawnikowi (PODZB art. 2-5, w tym PODZB art. 4a; PODZB art. 16).”
+
+„Osobno sprawdź ryzyko odpowiedzialności posiłkowej firmy za grzywnę wymierzoną sprawcy przestępstwa skarbowego, gdy sprawca prowadził jej sprawy jako zastępca, a firma odniosła albo mogła odnieść korzyść majątkową. Ustawa przewiduje także odpowiednie stosowanie do równowartości przepadku oraz zwrot uzyskanej korzyści, więc nie ograniczaj karty do osobistej grzywny pracownika lub członka zarządu (KKS art. 24 § 1, § 2 i § 5).”
+
+Podstawy z cytatami: PODZB art. 2 ust. 1: „osoba prawna oraz jednostka organizacyjna”; PODZB art. 3: „korzyść, chociażby niemajątkową”; PODZB art. 4: „czynu zabronionego, wymienionego w art. 16”; PODZB art. 5 pkt 2: „organizacji działalności podmiotu zbiorowego”; PODZB art. 4a: „niezależnie od wydania wyroku albo orzeczenia”; KKS art. 24 § 1: „odpowiedzialną posiłkowo”; KKS art. 24 § 5: „do jej zwrotu w całości albo w części”.
+
+Nowy wiersz mapy: „Odpowiedzialność podmiotu zbiorowego albo odpowiedzialność posiłkowa za przestępstwo skarbowe | `moduly/sprawy-karne-firmy.md`, od razu prawnik | PODZB, KKS”.
+
+C6-13 | nowy references/moduly/sprawy-karne-firmy.md, sekcja 1, po akapicie o roli; references/mapa-spraw.md:25 | Moduł zatrudnienia sygnalizuje złośliwe naruszanie praw pracownika, ale nie zapewnia rozpoznania innych typowych przestępstw pracodawcy ani pilnego obowiązku zawiadomienia o poważnym wypadku. | gotowy tekst do wstawienia:
+
+„W sprawach pracowniczych sprawdź także sygnały odpowiedzialności karnej: złośliwe lub uporczywe naruszanie praw pracownika, niewykonanie sądowego obowiązku wypłaty świadczenia, niezgłoszenie albo nieprawdziwe zgłoszenie danych ubezpieczeniowych, bezpośrednie zagrożenie życia lub ciężkiego uszczerbku wskutek naruszenia obowiązków BHP oraz brak wymaganej informacji lub dokumentacji powypadkowej. Nie utożsamiaj każdego naruszenia prawa pracy z przestępstwem; rozpoznanie właściwych znamion wymaga prawnika (KK art. 218 § 1a i § 3; KK art. 219; KK art. 220; KK art. 221).”
+
+„Przy śmiertelnym, ciężkim lub zbiorowym wypadku przy pracy pracodawca ma obowiązek niezwłocznie zawiadomić właściwego okręgowego inspektora pracy i prokuratora; obowiązek obejmuje również inne wypadki związane z pracą, które wywołały takie skutki i mogą być uznane za wypadki przy pracy. Wskaż ten obowiązek od razu, bez uzależniania go od ukończenia karty lub projektu pisma (KP art. 234 § 1 i § 2).”
+
+Podstawy z cytatami: KK art. 218 § 1a: „złośliwie lub uporczywie”; KK art. 218 § 3: „obowiązku tego nie wykonuje”; KK art. 219: „nawet za zgodą zainteresowanego”; KK art. 220 § 1: „bezpośrednie niebezpieczeństwo utraty życia”; KK art. 221: „nie sporządza lub nie przedstawia wymaganej dokumentacji”; KP art. 234 § 2: „niezwłocznie zawiadomić [...] inspektora pracy i prokuratora”.
+
+W wierszu zatrudnienia w mapie dodać warunkowe odesłanie do nowego modułu przy sygnale przestępstwa lub poważnego wypadku.
+
+C6-14 | skille/sygnalisci-procedura/references/stan-prawny.md, sekcja 6, po pierwszym punkcie; kopia references/katalog/sygnalisci-procedura/stan-prawny.md | Brakuje rozdzielenia ochrony zgłoszenia od odpowiedzialności za sposób uzyskania informacji. To typowy problem przy skopiowaniu cudzej poczty, wejściu na konto współpracownika lub pozyskaniu dokumentów poza uprawnieniami. | gotowy tekst do wstawienia:
+
+„Ochronę samego zgłoszenia oceniaj odrębnie od sposobu zdobycia informacji: ustawa chroni zgłoszenie lub ujawnienie przy spełnieniu określonych warunków, ale ochrona uzyskania informacji albo dostępu do nich zależy również od tego, czy nie stanowiły czynu zabronionego. Nie przesądzaj ani bezkarności, ani utraty całej ochrony na podstawie samej informacji o skopiowaniu dokumentu; przy podejrzeniu nieuprawnionego dostępu przekaż prawnikowi oba zagadnienia osobno (SYGN art. 16 ust. 1 i ust. 3; KK art. 267).”
+
+Podstawy z cytatami: SYGN art. 16 ust. 1: „miał uzasadnione podstawy sądzić”; SYGN art. 16 ust. 3: „nie stanowią czynu zabronionego”; KK art. 267 § 2: „bez uprawnienia uzyskuje dostęp”. Treść ochrony potwierdzono również w [oficjalnym tekście ustawy](https://api.sejm.gov.pl/eli/acts/DU/2024/928/text.html).
+
+C6-15 | skille/polityka-ai/references/komponenty.md, sekcja 5, po zdaniu „Krótka, wykonalna.”; kopia references/katalog/polityka-ai/komponenty.md:138 | Ścieżka incydentu obejmuje błąd AI, dane osobowe i kontrakt, ale pomija podejrzenie przestępstwa. Przykładem jest wyłudzenie przelewu przy użyciu wygenerowanego głosu lub fałszywego dokumentu. Brakuje też połączenia polityki AI z poufnością zgłoszeń sygnalistów. | gotowy tekst do wstawienia:
+
+„Dodaj czwartą ścieżkę: podejrzenie przestępstwa z użyciem AI, na przykład wyłudzenie płatności przez podszycie się pod osobę albo posłużenie się podrobionym dokumentem. Zachowaj źródłowe wiadomości, pliki i dane o przelewie, oddziel fakty od podejrzeń oraz skieruj sprawę do prawnika; kwalifikacja zależy od zachowania człowieka i znamion czynu, a samo użycie AI jej nie przesądza (KK art. 1 § 3; KK art. 270 § 1; KK art. 286 § 1; KPK art. 304 § 1).”
+
+W tej samej sekcji, po punkcie „Zabezpiecz”, dodać:
+
+„Treści zgłoszeń sygnalistów i informacji pozwalających ustalić tożsamość osób nie przekazuj do narzędzia AI w sposób dający dostęp osobom nieupoważnionym; sama zgoda przełożonego na korzystanie z AI nie zastępuje wymagań poufności. Przed takim zastosowaniem sprawdź z prawnikiem lub IOD zakres danych, dostęp i upoważnienia, ponieważ bezprawne ujawnienie tożsamości może rodzić również odpowiedzialność karną (SYGN art. 27 ust. 1 i ust. 2; SYGN art. 56).”
+
+Podstawy z cytatami: KK art. 1 § 3: „nie można mu przypisać winy”; KK art. 270 § 1: „w celu użycia za autentyczny”; KK art. 286 § 1: „niekorzystnego rozporządzenia [...] mieniem”; KPK art. 304 § 1: „społeczny obowiązek zawiadomić”; SYGN art. 27 ust. 1: „uniemożliwiają nieupoważnionym osobom uzyskanie dostępu”; SYGN art. 27 ust. 2: „pisemne upoważnienie”; SYGN art. 56: „wbrew przepisom ustawy ujawnia tożsamość”.
+
+## Ocena
+
+**6/10 dla ocenianej dziedziny.** Skill prawidłowo eskaluje obronę do prawnika, oznacza zawiadomienie jako poziom B i rozróżnia podstawowe tryby ścigania czynów na szkodę wierzycieli. Największy brak dotyczy pierwszej reakcji firmy oraz jej praw jako pokrzywdzonego.
+
+Trzy najważniejsze zmiany:
+
+1. Dodać moduł pierwszej reakcji i kierowanie do niego, obejmujące pokrzywdzonego, czynności w firmie, świadka, KKS i PODZB.
+2. Poprawić opisy znamion oszustwa oraz czynów na szkodę wierzycieli, a mandat skarbowy oddzielić od zwykłego mandatu.
+3. Powiązać procedurę sygnalistów i politykę AI z obowiązkiem zawiadomienia, ochroną dowodów i poufnością.
+
+Następny krok: przekazać sędziom propozycje C6-01 do C6-15.
+
+Nie zmieniano plików ani nie uruchamiano scenariuszy skilla. Po naniesieniu zmian potrzebna jest walidacja cytowań i zachowania skilla; ten raport jej nie zastępuje.
+
+
+tokens used
+223 216
+# Ekspert 6: prawo karne gospodarcze i karne skarbowe, odpowiedzialność podmiotów zbiorowych, sygnaliści, AI w firmie (Codex)
+
+Stan oceny: 6 listopada 2026. Uwzględniono wcześniejszy `RAPORT.md`. Wszystkie przywołane niżej artykuły przeczytano w całości w plikach wbudowanych aktów. Brzmienia kopii: KK 29.10.2026, KKS 8.10.2026, KPK 17.07.2026, PODZB 8.05.2026, KP 14.10.2026; SYGN według tekstu ogłoszonego w Dz.U. 2024 poz. 928. Uwzględniono notki o przepisach wchodzących w życie później.
+
+Ścieżki `references/` są względem `skille/sprawy-prawne-w-firmie/`. Błędy kopii katalogowych przypisano wąskim skillom źródłowym.
+
+## Błędy
+
+C6-01 | references/mapa-spraw.md:71 | WAŻNE | Wiersz obejmuje każdy „mandat”, ale kieruje do materiału opisującego mandaty za zwykłe wykroczenia. Nie rozdziela mandatu karnego skarbowego, który ma własne przesłanki, skutki odmowy i podstawy uchylenia. Kopia `katalog/decyzja-z-urzedu-co-dalej/zasady.md:103` opisuje już mandat zaoczny, podczas gdy odpowiednie przepisy KKS zaczną obowiązywać dopiero 26.12.2026. | KKS art. 137 § 3: „zgody na przyjęcie mandatu”; KKS art. 139 § 1: „sprawa podlega rozpoznaniu na zasadach ogólnych”; KKS art. 140 § 1: „7 dni od daty przyjęcia mandatu”. Datę przyszłych zmian potwierdzają notki w KKS oraz [urzędowa informacja o nowelizacji](https://eli.sejm.gov.pl/eli/DU/2026/846/ogl/pol). | poprawka: w istniejącym wierszu zastąpić słowo „mandat” słowami „mandat za wykroczenie inne niż skarbowe”, a bezpośrednio pod nim dodać:
+
+```markdown
+| Mandat karny skarbowy, wezwanie w sprawie o przestępstwo lub wykroczenie skarbowe | `moduly/sprawy-karne-firmy.md`: pierwsza reakcja i karta dla adwokata albo radcy prawnego; reguły mandatów sprawdzaj w KKS według daty czynności | KKS |
+```
+
+Nowy moduł opisano w C6-06. Nie przenosić do niego zasad mandatu zaocznego przed datą ich stosowania.
+
+C6-02 | references/moduly/spory-z-kontrahentem.md:145 | WAŻNE | Punkt 81 nadmiernie zawęża oszustwo do wprowadzenia w błąd przy zawieraniu transakcji. Istotny jest związek oszukańczego zachowania z niekorzystnym rozporządzeniem mieniem, które może nastąpić również podczas wykonywania wcześniej uczciwie zawartej umowy. Pominięto też wyzyskanie istniejącego błędu oraz niezdolności do należytego pojmowania działania. | KK art. 286 § 1: „wprowadzenia jej w błąd albo wyzyskania błędu lub niezdolności”. | poprawka: zastąpić ostatnie zdanie punktu 81 tekstem: „Sama niezapłacona faktura nie wystarcza do przyjęcia oszustwa: trzeba ustalić, czy sprawca, działając w celu osiągnięcia korzyści majątkowej, doprowadził do niekorzystnego rozporządzenia mieniem przez wprowadzenie w błąd, wyzyskanie błędu albo niezdolności do należytego pojmowania działania. Badaj okoliczności konkretnego rozporządzenia mieniem, także dokonanego podczas wykonywania umowy, a ocenę zamiaru i kwalifikacji pozostaw prawnikowi (KK art. 286 § 1).”
+
+C6-03 | references/moduly/niewyplacalnosc.md:79 | WAŻNE | Punkt 36 wymienia tylko pozorne obciążenie majątku. Rzeczywiste ustanowienie zabezpieczenia również może realizować znamiona, jeżeli zachodzą pozostałe przesłanki przepisu. To istotne przy hipotece lub zastawie ustanawianych przed egzekucją. | KK art. 300 § 1 i § 2: „rzeczywiście lub pozornie obciąża albo uszkadza”. | poprawka: w pierwszym zdaniu punktu 36 zastąpić fragment „niszczy, pozornie obciąża majątek” fragmentem „niszczy, rzeczywiście lub pozornie obciąża albo uszkadza składniki swojego majątku”. Pozostałe warunki, sankcje i rozróżnienie trybu ścigania zachować.
+
+C6-04 | references/moduly/niewyplacalnosc.md:80 | WAŻNE | Punkt 37 zawęża nową jednostkę gospodarczą do spółki, pomija niewypłacalność w opisie czynu umyślnego i upadłość w opisie czynu lekkomyślnego. Warunek bycia dłużnikiem kilku wierzycieli powinien być widoczny przy wszystkich trzech odmianach. | KK art. 301 § 1: „tworzy [...] nową jednostkę gospodarczą”; KK art. 301 § 2 i § 3: „do swojej upadłości lub niewypłacalności”. | poprawka: zastąpić cały punkt 37 tekstem: „37. Dłużnik kilku wierzycieli, który tworzy nową jednostkę gospodarczą i przenosi na nią składniki swojego majątku, przez co udaremnia lub ogranicza zaspokojenie ich należności, może odpowiadać karnie (KK art. 301 § 1). Odrębnie przepis obejmuje doprowadzenie przez dłużnika kilku wierzycieli do własnej upadłości lub niewypłacalności oraz lekkomyślną odmianę takiego zachowania, przykładowo przez trwonienie majątku lub transakcje oczywiście sprzeczne z zasadami gospodarowania (KK art. 301 § 2 i § 3).”
+
+C6-05 | skille/sygnalisci-procedura/references/stan-prawny.md:16; kopia references/katalog/sygnalisci-procedura/stan-prawny.md:17 | WAŻNE | Zdanie „Zgłaszanie nie jest obowiązkiem” nie rozdziela dobrowolnego korzystania z kanału sygnalistów od odrębnego obowiązku zawiadomienia organów ścigania. Problem pogłębia wariant zamykania anonimów „bez działań” w źródłowym `references/komponenty.md:3`. | KK art. 240 § 1: „nie zawiadamia niezwłocznie organu”; KPK art. 304 § 2: instytucje państwowe i samorządowe „są obowiązane niezwłocznie zawiadomić”. Nie oznacza to takiego obowiązku przy każdym oszustwie ani automatycznie dla każdej spółki z udziałem publicznym. | poprawka: zastąpić ostatnie zdanie wskazanego akapitu tekstem: „Przepisy o ochronie sygnalistów nie ustanawiają ogólnego obowiązku korzystania z kanału zgłoszeń, ale odrębne przepisy mogą nakazywać niezwłoczne zawiadomienie organów ścigania. Dotyczy to w szczególności wiarygodnej wiadomości o czynach wymienionych w przepisie karnym oraz obowiązku instytucji państwowych i samorządowych, z uwzględnieniem ustawowych wyjątków (KK art. 240; KPK art. 304 § 2).”
+
+W źródłowym `skille/sygnalisci-procedura/references/komponenty.md`, po zdaniu „Każdy wariant opisuje, kto podejmuje decyzję i jak kończy obsługę.”, dodać: „Wariant nierozpatrywania anonimów nie uchyla odrębnych obowiązków zawiadomienia organów ścigania; przed zamknięciem sprawdź, czy treść informacji uruchamia taki obowiązek (KK art. 240; KPK art. 304 § 2).” Następnie odtworzyć kopie generatorem.
+
+## Luki (czego brakuje)
+
+C6-06 | references/mapa-spraw.md, przed sekcją „10. Poza zakresem tego skilla”; nowy references/moduly/sprawy-karne-firmy.md | Potrzebny jest osobny moduł pierwszej reakcji. Firma może być pokrzywdzonym, dysponentem dokumentów, pracodawcą świadka albo podmiotem zagrożonym odpowiedzialnością majątkową. Samo odesłanie obrony do prawnika nie obsługuje tych sytuacji. | gotowy tekst do wstawienia do mapy:
+
+```markdown
+## 9a. Sprawy karne związane z firmą
+
+| Sprawa | Moduł główny | Akty |
+|---|---|---|
+| Firma pokrzywdzona przestępstwem, przeszukanie, żądanie wydania dokumentów, wezwanie pracownika jako świadka, ryzyko odpowiedzialności podmiotu zbiorowego lub odpowiedzialności karnej skarbowej | `moduly/sprawy-karne-firmy.md`; dodatkowo moduł właściwy dla zdarzenia | KK, KPK, KKS, PODZB |
+```
+
+W sekcji „Poza zakresem”, po zdaniu o przygotowaniu wyłącznie karty w sprawach obrony, dodać: „Przed przekazaniem sprawy wczytaj `moduly/sprawy-karne-firmy.md`, aby rozpoznać pilną czynność, rolę użytkownika i potrzebę zabezpieczenia dowodów.”
+
+Szkic nowego modułu, rozwijany regułami C6-07 do C6-12:
+
+```markdown
+# Moduł: Sprawy karne firmy, pierwsza reakcja
+
+Wczytaj przy podejrzeniu przestępstwa związanego z działalnością firmy, czynności organu ścigania, wezwaniu świadka albo ryzyku odpowiedzialności podmiotu zbiorowego. Każdą podstawę sprawdź w całości w pliku aktu i podaj użytkownikowi datę brzmienia.
+
+## 1. Rola, pilność i data zdarzenia
+
+Ustal, czy użytkownik działa jako pokrzywdzony, reprezentant firmy, świadek, podejrzany albo osoba odpowiedzialna za dokumenty, oraz czy czynność trwa lub wyznaczono jej termin. Rozdziel interes firmy od osobistego interesu członka zarządu lub pracownika.
+
+Zapisz datę zarzucanego zachowania: przy ocenie odpowiedzialności materialnej trzeba uwzględnić ustawę wcześniejszą, jeżeli jest względniejsza dla sprawcy (KK art. 4 § 1; KKS art. 2 § 2 i § 3).
+
+## 2. Dokumenty i dowody
+
+Zachowaj dokumenty i dane w oryginalnej postaci, ogranicz dostęp do osób uprawnionych i odnotuj, skąd pochodzą kopie. Nie pomagaj w tworzeniu fałszywych dowodów ani zacieraniu śladów dla uniknięcia odpowiedzialności przez sprawcę (KK art. 239 § 1).
+
+## 3. Firma jako pokrzywdzony
+
+Sprawdź, czy bezpośrednio naruszono lub zagrożono dobru firmy oraz kto wykonuje jej prawa procesowe (KPK art. 49 § 1 i § 2; KPK art. 51 § 1). Zawiadomienie o przestępstwie przygotowuj jako poziom B, zgodnie z modułem sporów i regułami pism.
+
+## 4. Czynności organu w firmie
+
+Rozdziel przeszukanie, żądanie wydania rzeczy lub danych i przesłuchanie świadka: każda czynność ma własne warunki i uprawnienia (KPK art. 177 § 1; KPK art. 217; KPK art. 219 i art. 220; KPK art. 236a). Nie stosuj do nich automatycznie procedury zwykłej kontroli przedsiębiorcy.
+
+## 5. Granice i karta dla prawnika
+
+Obronę podejrzanego lub oskarżonego prowadzi adwokat albo radca prawny; skill porządkuje fakty i przygotowuje kartę. W karcie zapisz rolę każdej osoby, datę czynu, organ i sygnaturę, termin najbliższej czynności, dokumenty, możliwy konflikt interesów oraz jedno pytanie wymagające pilnej decyzji prawnika.
+```
+
+Podstawy dodatkowe szkicu, sprawdzone w plikach: KK art. 4 § 1: „jeżeli jest względniejsza dla sprawcy”; KKS art. 2 § 3: „Niedopuszczalne jest stosowanie w części ustawy nowej i w części ustawy obowiązującej poprzednio”; KK art. 239 § 1: „tworzy fałszywe dowody, zaciera ślady przestępstwa”.
+
+C6-07 | references/moduly/spory-z-kontrahentem.md, po punkcie 82; nowy moduł, sekcja 3 | Brakuje dalszej drogi firmy po zawiadomieniu: statusu pokrzywdzonego, reprezentacji, praw strony, oskarżyciela posiłkowego i dochodzenia szkody. Złożenie zawiadomienia nie zapewnia automatycznie wszystkich tych uprawnień. | gotowy tekst do wstawienia, jako kolejne reguły:
+
+„Pokrzywdzonym jest podmiot, którego dobro prawne przestępstwo bezpośrednio naruszyło lub zagroziło; ustal, czy jest nim przedsiębiorca będący osobą fizyczną, spółka czy inna jednostka ze zdolnością prawną. Za pokrzywdzonego niebędącego osobą fizyczną czynności wykonuje uprawniony organ, a samo bycie wspólnikiem albo pracownikiem nie daje prawa działania za spółkę (KPK art. 49 § 1 i § 2; KPK art. 51 § 1).”
+
+„Pokrzywdzony jest stroną postępowania przygotowawczego, może składać wnioski o czynności dowodowe i korzystać z dostępu do akt na ustawowych zasadach. Po wniesieniu aktu oskarżenia przez oskarżyciela publicznego może złożyć oświadczenie o działaniu jako oskarżyciel posiłkowy aż do rozpoczęcia przewodu sądowego na rozprawie głównej (KPK art. 299 § 1; KPK art. 315 § 1; KPK art. 156 § 5; KPK art. 54 § 1).”
+
+„Z prawnikiem rozważ wniosek o naprawienie szkody, który można złożyć do zamknięcia przewodu sądowego na rozprawie głównej. Sprawdź wcześniej, czy to samo roszczenie nie jest przedmiotem innego postępowania albo nie zostało już prawomocnie rozstrzygnięte, ponieważ może to wyłączyć orzeczenie obowiązku naprawienia szkody w procesie karnym (KK art. 46 § 1; KPK art. 49a § 1; KPK art. 415 § 1).”
+
+Podstawy z cytatami: KPK art. 49 § 1: „bezpośrednio naruszone lub zagrożone”; KPK art. 51 § 1: „organ uprawniony do działania”; KPK art. 299 § 1: „pokrzywdzony i podejrzany są stronami”; KPK art. 315 § 1: „wnioski o dokonanie czynności śledztwa”; KPK art. 156 § 5: „udostępnia się akta”; KPK art. 54 § 1: „aż do czasu rozpoczęcia przewodu sądowego”; KK art. 46 § 1: „na wniosek pokrzywdzonego [...] orzeka”; KPK art. 49a § 1: „aż do zamknięcia przewodu sądowego”; KPK art. 415 § 1: „roszczenie [...] jest przedmiotem innego postępowania”.
+
+C6-08 | references/moduly/spory-z-kontrahentem.md, po regułach dodanych w C6-07; nowy moduł, sekcja 3 | Punkt 82 wspomina zaskarżenie odmowy, lecz pomija termin, umorzenie i dalszą ścieżkę po ponownej decyzji. Firma może utracić możliwość skutecznego działania, czekając na zwykłą odpowiedź organu. | gotowy tekst do wstawienia:
+
+„Pokrzywdzony może zaskarżyć odmowę wszczęcia, a jako strona także umorzenie postępowania; termin zażalenia wynosi zasadniczo 7 dni od doręczenia postanowienia, gdy ustawa nakazuje jego doręczenie. Odróżnij to od zażalenia na brak informacji przez 6 tygodni, które ma inny przedmiot i adresata (KPK art. 306 § 1 pkt 1, § 1a pkt 1 i § 3; KPK art. 460).”
+
+„Po ponownej odmowie lub umorzeniu, wydanych po uchyleniu wcześniejszego postanowienia przez sąd, dalsza droga prowadzi najpierw do prokuratora nadrzędnego. Dopiero po spełnieniu ustawowych warunków może powstać możliwość wniesienia subsydiarnego aktu oskarżenia w miesiąc od właściwego zawiadomienia; akt musi sporządzić i podpisać uprawniony profesjonalny pełnomocnik, więc sprawę przekaż prawnikowi natychmiast (KPK art. 330 § 2 i § 2a; KPK art. 55 § 1 i § 2).”
+
+Podstawy z cytatami: KPK art. 306 § 1a pkt 1: „stronom”; KPK art. 460: „w terminie 7 dni”; KPK art. 306 § 3: „w ciągu 6 tygodni”; KPK art. 330 § 2: „tylko do prokuratora nadrzędnego”; KPK art. 55 § 1: „w terminie miesiąca”; KPK art. 55 § 2: „sporządzony i podpisany przez adwokata, radcę prawnego”.
+
+C6-09 | nowy references/moduly/sprawy-karne-firmy.md, sekcja 4, po pierwszym akapicie | Przeszukanie biura i zatrzymanie komputera mogą nastąpić również w firmie, której nikt nie zarzuca przestępstwa. Brakuje krótkiej instrukcji rozpoznania podstawy czynności, zabezpieczenia dokumentacji i ochrony tajemnic. | gotowy tekst do wstawienia:
+
+„Przy przeszukaniu poproś o okazanie postanowienia sądu lub prokuratora, ustal cel czynności i skontaktuj się z prawnikiem; w wypadku niecierpiącym zwłoki ustawa dopuszcza działanie na podstawie nakazu kierownika jednostki lub legitymacji służbowej. W takim przypadku zgłoś do protokołu żądanie doręczenia postanowienia w przedmiocie zatwierdzenia przeszukania, które powinno zostać doręczone w 7 dni od czynności (KPK art. 220 § 2 i § 3).”
+
+„Przy żądaniu wydania dokumentów, urządzeń lub danych ustal organ, zakres i podstawę żądania, dopilnuj spisu zatrzymanych rzeczy oraz pokwitowania. Przy dobrowolnym wydaniu na żądanie Policji lub innego uprawnionego organu działającego we własnym zakresie można niezwłocznie zażądać sporządzenia i doręczenia postanowienia zatwierdzającego zatrzymanie, z terminem doręczenia 14 dni (KPK art. 217 § 1 i § 4; KPK art. 228 § 3; KPK art. 229; KPK art. 236a).”
+
+„Zgłoś do protokołu, że określone dokumenty zawierają tajemnicę prawnie chronioną albo dotyczą wykonywania funkcji obrońcy; ustawa przewiduje odrębne sposoby postępowania i wyjątki, które powinien ocenić prawnik. Osobie, której prawa naruszono, może przysługiwać zażalenie na przeszukanie lub zatrzymanie rzeczy (KPK art. 225; KPK art. 236 § 1).”
+
+Podstawy z cytatami: KPK art. 220 § 3: „na zgłoszone do protokołu żądanie”; KPK art. 217 § 4: „w terminie 14 dni”; KPK art. 228 § 3: „natychmiast wręczyć pokwitowanie”; KPK art. 229: „dokładną listę zatrzymanych rzeczy”; KPK art. 236a: „w tym korespondencji przesyłanej pocztą elektroniczną”; KPK art. 225 § 1: „w opieczętowanym opakowaniu”, z wyjątkami i odrębną ochroną z dalszych paragrafów; KPK art. 236 § 1: „osobom, których prawa zostały naruszone”.
+
+C6-10 | nowy references/moduly/sprawy-karne-firmy.md, sekcja 4, po regułach o dokumentach | Wezwanie księgowej, handlowca lub członka zarządu jako świadka jest typową sprawą firmy. Brakuje rozróżnienia obowiązku stawienia się, prawa odmowy zeznań i prawa uchylenia się od konkretnej odpowiedzi. | gotowy tekst do wstawienia:
+
+„Osoba wezwana jako świadek ma obowiązek stawić się i zeznawać; prawo odmowy zeznań przysługuje w ustawowych sytuacjach, między innymi osobie najbliższej dla oskarżonego. Niezależnie od tego świadek może uchylić się od odpowiedzi na pytanie, jeżeli odpowiedź mogłaby narazić jego albo osobę najbliższą na odpowiedzialność za przestępstwo lub przestępstwo skarbowe (KPK art. 177 § 1; KPK art. 182; KPK art. 183 § 1).”
+
+„Jeżeli interes świadka wymaga pomocy prawnej, może on ustanowić własnego pełnomocnika, którego dopuszczenie podlega ustawowym zasadom; sprawdź, czy interes pracownika jest zgodny z interesem firmy. Firma nie ustala za świadka treści zeznań ani nie wywiera na niego nacisku, a skill pomaga wyłącznie uporządkować autentyczne dokumenty i pytania do prawnika (KPK art. 87 § 2 i § 3; KK art. 233 § 1 i § 2; KK art. 245).”
+
+Podstawy z cytatami: KPK art. 177 § 1: „obowiązek stawić się i złożyć zeznania”; KPK art. 182 § 1: „może odmówić zeznań”; KPK art. 183 § 1: „może uchylić się od odpowiedzi”; KPK art. 87 § 2: „jeżeli wymagają tego jej interesy”; KK art. 233 § 1: „zeznaje nieprawdę lub zataja prawdę”, z warunkiem z § 2; KK art. 245: „przemocy lub groźby bezprawnej”.
+
+C6-11 | nowy references/moduly/sprawy-karne-firmy.md, sekcja 5, przed kartą; references/mapa-spraw.md:101 | Czynny żal i korekta pojawiają się w kopiach materiałów o kontrolach, ale brakuje wyraźnego powiązania z osobistą odpowiedzialnością sprawcy i rozdzielenia obu podstaw niekaralności. Nie jest to wyliczanie podatku, więc nie powinno znikać pod ogólnym wyłączeniem rozliczeń podatkowych. | gotowy tekst do wstawienia:
+
+„Przy pytaniu o czynny żal ustal osobę, której może dotyczyć odpowiedzialność, datę czynu, działania już podjęte przez organ oraz to, czy ujawniono wszystkie istotne okoliczności, w tym osoby współdziałające. Zawiadomienie nie zapewnia automatycznie niekaralności: trzeba sprawdzić warunki zapłaty uszczuplonej należności lub przepadku, przeszkody wynikające z wiedzy i czynności organu oraz wyłączenia dotyczące określonych sprawców (KKS art. 9 § 3; KKS art. 16).”
+
+„Prawnie skuteczna korekta deklaracji lub księgi jest odrębną podstawą niekaralności dotyczącą wskazanego w przepisie czynu, z warunkiem zapłaty uszczuplonej należności i ograniczeniem związanym z postępowaniem przygotowawczym. Nie zapewniaj, że sama korekta albo czynny żal złożony przez jedną osobę chronią wszystkie osoby związane z rozliczeniem (KKS art. 16a; KKS art. 9 § 2 i § 3).”
+
+„Przy mandacie karnym skarbowym najpierw ustal osobę sprawcy i datę czynności: na 6 listopada 2026 r. nałożenie mandatu wymaga zgody, mandat kredytowany staje się prawomocny po pokwitowaniu odbioru, a odmowa kieruje sprawę do rozpoznania na zasadach ogólnych. Wniosek o uchylenie prawomocnego mandatu przysługuje z ustawowych przyczyn, zasadniczo w 7 dni od przyjęcia, z wyjątkami dopuszczającymi uchylenie w każdym czasie; sprawę przekaż prawnikowi, zachowując granicę obrony z mapy spraw (KKS art. 137 § 3; KKS art. 138 § 4; KKS art. 139 § 1; KKS art. 140).”
+
+Podstawy z cytatami: KKS art. 9 § 3: „zajmuje się sprawami gospodarczymi, w szczególności finansowymi”; KKS art. 16 § 1: „ujawniając istotne okoliczności”; KKS art. 16 § 5: „Zawiadomienie jest bezskuteczne”; KKS art. 16a § 1: „prawnie skuteczna korekta”; KKS art. 16a § 3: „wszczęto postępowanie przygotowawcze”; KKS art. 9 § 2: „niezależnie od odpowiedzialności pozostałych sprawców”. Podstawy mandatowe przytoczono w C6-01. Oficjalne objaśnienie potwierdza konieczność spełnienia warunków ustawowych, a nie samego wysłania pisma: [Ministerstwo Finansów o czynnym żalu](https://www.gov.pl/web/finanse/czynny-zal-dotyczacy-np-schematow-podatkowych-i-cen-transferowych-zloz-do-urzedu-skarbowego).
+
+C6-12 | nowy references/moduly/sprawy-karne-firmy.md, sekcja 5, po regułach KKS; references/mapa-spraw.md, nowy wiersz sekcji 9a | PODZB jest wbudowany, ale mapa nie kieruje do niego żadnej konkretnej sprawy. Brakuje też odpowiedzialności posiłkowej z KKS, która jest innym mechanizmem niż odpowiedzialność podmiotu zbiorowego. | gotowy tekst do wstawienia:
+
+„Przy podejrzeniu przestępstwa popełnionego w związku z działalnością spółki sprawdź, czy podmiot mieści się w ustawowej definicji, czy czyn jest objęty katalogiem ustawy, jaki związek ma sprawca z podmiotem oraz czy podmiot uzyskał lub mógł uzyskać korzyść, także niemajątkową. Znaczenie mają również przesłanki organizacyjne, wyboru lub nadzoru oraz rozstrzygnięcie dotyczące osoby fizycznej wymagane ustawą; dla wskazanych przestępstw przeciwko środowisku przewidziano wyjątek od tego ostatniego warunku, więc sprawę od razu przekazuj prawnikowi (PODZB art. 2-5, w tym PODZB art. 4a; PODZB art. 16).”
+
+„Osobno sprawdź ryzyko odpowiedzialności posiłkowej firmy za grzywnę wymierzoną sprawcy przestępstwa skarbowego, gdy sprawca prowadził jej sprawy jako zastępca, a firma odniosła albo mogła odnieść korzyść majątkową. Ustawa przewiduje także odpowiednie stosowanie do równowartości przepadku oraz zwrot uzyskanej korzyści, więc nie ograniczaj karty do osobistej grzywny pracownika lub członka zarządu (KKS art. 24 § 1, § 2 i § 5).”
+
+Podstawy z cytatami: PODZB art. 2 ust. 1: „osoba prawna oraz jednostka organizacyjna”; PODZB art. 3: „korzyść, chociażby niemajątkową”; PODZB art. 4: „czynu zabronionego, wymienionego w art. 16”; PODZB art. 5 pkt 2: „organizacji działalności podmiotu zbiorowego”; PODZB art. 4a: „niezależnie od wydania wyroku albo orzeczenia”; KKS art. 24 § 1: „odpowiedzialną posiłkowo”; KKS art. 24 § 5: „do jej zwrotu w całości albo w części”.
+
+Nowy wiersz mapy: „Odpowiedzialność podmiotu zbiorowego albo odpowiedzialność posiłkowa za przestępstwo skarbowe | `moduly/sprawy-karne-firmy.md`, od razu prawnik | PODZB, KKS”.
+
+C6-13 | nowy references/moduly/sprawy-karne-firmy.md, sekcja 1, po akapicie o roli; references/mapa-spraw.md:25 | Moduł zatrudnienia sygnalizuje złośliwe naruszanie praw pracownika, ale nie zapewnia rozpoznania innych typowych przestępstw pracodawcy ani pilnego obowiązku zawiadomienia o poważnym wypadku. | gotowy tekst do wstawienia:
+
+„W sprawach pracowniczych sprawdź także sygnały odpowiedzialności karnej: złośliwe lub uporczywe naruszanie praw pracownika, niewykonanie sądowego obowiązku wypłaty świadczenia, niezgłoszenie albo nieprawdziwe zgłoszenie danych ubezpieczeniowych, bezpośrednie zagrożenie życia lub ciężkiego uszczerbku wskutek naruszenia obowiązków BHP oraz brak wymaganej informacji lub dokumentacji powypadkowej. Nie utożsamiaj każdego naruszenia prawa pracy z przestępstwem; rozpoznanie właściwych znamion wymaga prawnika (KK art. 218 § 1a i § 3; KK art. 219; KK art. 220; KK art. 221).”
+
+„Przy śmiertelnym, ciężkim lub zbiorowym wypadku przy pracy pracodawca ma obowiązek niezwłocznie zawiadomić właściwego okręgowego inspektora pracy i prokuratora; obowiązek obejmuje również inne wypadki związane z pracą, które wywołały takie skutki i mogą być uznane za wypadki przy pracy. Wskaż ten obowiązek od razu, bez uzależniania go od ukończenia karty lub projektu pisma (KP art. 234 § 1 i § 2).”
+
+Podstawy z cytatami: KK art. 218 § 1a: „złośliwie lub uporczywie”; KK art. 218 § 3: „obowiązku tego nie wykonuje”; KK art. 219: „nawet za zgodą zainteresowanego”; KK art. 220 § 1: „bezpośrednie niebezpieczeństwo utraty życia”; KK art. 221: „nie sporządza lub nie przedstawia wymaganej dokumentacji”; KP art. 234 § 2: „niezwłocznie zawiadomić [...] inspektora pracy i prokuratora”.
+
+W wierszu zatrudnienia w mapie dodać warunkowe odesłanie do nowego modułu przy sygnale przestępstwa lub poważnego wypadku.
+
+C6-14 | skille/sygnalisci-procedura/references/stan-prawny.md, sekcja 6, po pierwszym punkcie; kopia references/katalog/sygnalisci-procedura/stan-prawny.md | Brakuje rozdzielenia ochrony zgłoszenia od odpowiedzialności za sposób uzyskania informacji. To typowy problem przy skopiowaniu cudzej poczty, wejściu na konto współpracownika lub pozyskaniu dokumentów poza uprawnieniami. | gotowy tekst do wstawienia:
+
+„Ochronę samego zgłoszenia oceniaj odrębnie od sposobu zdobycia informacji: ustawa chroni zgłoszenie lub ujawnienie przy spełnieniu określonych warunków, ale ochrona uzyskania informacji albo dostępu do nich zależy również od tego, czy nie stanowiły czynu zabronionego. Nie przesądzaj ani bezkarności, ani utraty całej ochrony na podstawie samej informacji o skopiowaniu dokumentu; przy podejrzeniu nieuprawnionego dostępu przekaż prawnikowi oba zagadnienia osobno (SYGN art. 16 ust. 1 i ust. 3; KK art. 267).”
+
+Podstawy z cytatami: SYGN art. 16 ust. 1: „miał uzasadnione podstawy sądzić”; SYGN art. 16 ust. 3: „nie stanowią czynu zabronionego”; KK art. 267 § 2: „bez uprawnienia uzyskuje dostęp”. Treść ochrony potwierdzono również w [oficjalnym tekście ustawy](https://api.sejm.gov.pl/eli/acts/DU/2024/928/text.html).
+
+C6-15 | skille/polityka-ai/references/komponenty.md, sekcja 5, po zdaniu „Krótka, wykonalna.”; kopia references/katalog/polityka-ai/komponenty.md:138 | Ścieżka incydentu obejmuje błąd AI, dane osobowe i kontrakt, ale pomija podejrzenie przestępstwa. Przykładem jest wyłudzenie przelewu przy użyciu wygenerowanego głosu lub fałszywego dokumentu. Brakuje też połączenia polityki AI z poufnością zgłoszeń sygnalistów. | gotowy tekst do wstawienia:
+
+„Dodaj czwartą ścieżkę: podejrzenie przestępstwa z użyciem AI, na przykład wyłudzenie płatności przez podszycie się pod osobę albo posłużenie się podrobionym dokumentem. Zachowaj źródłowe wiadomości, pliki i dane o przelewie, oddziel fakty od podejrzeń oraz skieruj sprawę do prawnika; kwalifikacja zależy od zachowania człowieka i znamion czynu, a samo użycie AI jej nie przesądza (KK art. 1 § 3; KK art. 270 § 1; KK art. 286 § 1; KPK art. 304 § 1).”
+
+W tej samej sekcji, po punkcie „Zabezpiecz”, dodać:
+
+„Treści zgłoszeń sygnalistów i informacji pozwalających ustalić tożsamość osób nie przekazuj do narzędzia AI w sposób dający dostęp osobom nieupoważnionym; sama zgoda przełożonego na korzystanie z AI nie zastępuje wymagań poufności. Przed takim zastosowaniem sprawdź z prawnikiem lub IOD zakres danych, dostęp i upoważnienia, ponieważ bezprawne ujawnienie tożsamości może rodzić również odpowiedzialność karną (SYGN art. 27 ust. 1 i ust. 2; SYGN art. 56).”
+
+Podstawy z cytatami: KK art. 1 § 3: „nie można mu przypisać winy”; KK art. 270 § 1: „w celu użycia za autentyczny”; KK art. 286 § 1: „niekorzystnego rozporządzenia [...] mieniem”; KPK art. 304 § 1: „społeczny obowiązek zawiadomić”; SYGN art. 27 ust. 1: „uniemożliwiają nieupoważnionym osobom uzyskanie dostępu”; SYGN art. 27 ust. 2: „pisemne upoważnienie”; SYGN art. 56: „wbrew przepisom ustawy ujawnia tożsamość”.
+
+## Ocena
+
+**6/10 dla ocenianej dziedziny.** Skill prawidłowo eskaluje obronę do prawnika, oznacza zawiadomienie jako poziom B i rozróżnia podstawowe tryby ścigania czynów na szkodę wierzycieli. Największy brak dotyczy pierwszej reakcji firmy oraz jej praw jako pokrzywdzonego.
+
+Trzy najważniejsze zmiany:
+
+1. Dodać moduł pierwszej reakcji i kierowanie do niego, obejmujące pokrzywdzonego, czynności w firmie, świadka, KKS i PODZB.
+2. Poprawić opisy znamion oszustwa oraz czynów na szkodę wierzycieli, a mandat skarbowy oddzielić od zwykłego mandatu.
+3. Powiązać procedurę sygnalistów i politykę AI z obowiązkiem zawiadomienia, ochroną dowodów i poufnością.
+
+Następny krok: przekazać sędziom propozycje C6-01 do C6-15.
+
+Nie zmieniano plików ani nie uruchamiano scenariuszy skilla. Po naniesieniu zmian potrzebna jest walidacja cytowań i zachowania skilla; ten raport jej nie zastępuje.
+
+

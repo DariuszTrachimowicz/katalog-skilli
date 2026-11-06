@@ -119,7 +119,7 @@ Nie wybierasz wariantu i nie liczysz składek; opisujesz cztery warianty do rozm
 | Podatek od umowy spółki (S24; u notariusza pobiera notariusz) | 14 dni od zawarcia umowy | zarząd albo księgowa |
 | Dane uzupełniające do urzędu skarbowego (NIP-8) | 21 dni od wpisu; gdy wcześniej powstaną obowiązki płatnika, termin może być inny [WYMAGA WERYFIKACJI: księgowa] | zarząd albo księgowa |
 | Beneficjent rzeczywisty do CRBR | 14 dni od wpisu, bez sobót i dni ustawowo wolnych od pracy; zgłasza osoba uprawniona do reprezentacji, podpisem kwalifikowanym albo zaufanym, bez opłaty [WYMAGA WERYFIKACJI: późniejsze zmiany ustawy] | zarząd |
-| Aktualizacja CRBR | 14 dni (bez sobót i dni ustawowo wolnych): od wpisu zmiany do KRS, a gdy zmiana nie wymaga wpisu, od samej zmiany | zarząd |
+| Aktualizacja CRBR | 14 dni (bez sobót i dni ustawowo wolnych), jeżeli zmieniły się informacje objęte CRBR: przy zmianie, której skuteczność zależy od wpisu do KRS, od tego wpisu, a przy zmianie skutecznej wcześniej, np. sprzedaży udziałów, od jej dokonania, bez czekania na wpis; sama zmiana zarządu nie zmienia danych w CRBR, chyba że członek zarządu był zgłoszony jako beneficjent zastępczy | zarząd |
 | VAT-R, jeśli spółka ma być czynnym podatnikiem VAT | przed dniem wykonania pierwszej czynności opodatkowanej | zarząd albo księgowa |
 | Adres do doręczeń elektronicznych | obowiązek od wpisu do KRS [WYMAGA WERYFIKACJI: czy potrzebny osobny wniosek; e-doreczenia-w-firmie] | zarząd |
 | KSeF | od kiedy i dla jakich faktur obowiązuje (w tym wyjątki przejściowe w 2026 r.): ksef-procedury | księgowa |
@@ -159,7 +159,7 @@ Daty kalendarzowe podajesz tylko warunkowo, gdy użytkownik poda datę podpisani
 | Ustawa o KRS, t.j. Dz.U. 2025 poz. 869; zmiana Dz.U. 2025 poz. 1556 (uchylenie ogłoszeń w Monitorze od 29.11.2025, sprawdzona przez autora) | zgłoszenie, terminy, sprawozdania |
 | Ustawa o kosztach sądowych w sprawach cywilnych, t.j. Dz.U. 2025 poz. 1228 (art. 52 sprawdzony przez autora) | 500 zł i 250 zł |
 | Ustawa o podatku od czynności cywilnoprawnych, t.j. Dz.U. 2026 poz. 191; rozporządzenie o taksie notarialnej, t.j. Dz.U. 2024 poz. 1566, zmiana Dz.U. 2026 poz. 1370 | podatek od umowy spółki; taksa |
-| Ustawa o przeciwdziałaniu praniu pieniędzy, t.j. Dz.U. 2025 poz. 644 (art. 60 sprawdzony przez autora) | CRBR 14 dni bez sobót i dni wolnych |
+| Ustawa o przeciwdziałaniu praniu pieniędzy, t.j. Dz.U. 2025 poz. 644 (art. 60 sprawdzony przez autora; art. 59 i art. 60 ust. 1a pkt 1 i ust. 2 sprawdzone w przeglądzie panelu 6.11.2026) | CRBR 14 dni bez sobót i dni wolnych; początek terminu przy zmianie skutecznej bez wpisu; zakres informacji objętych CRBR |
 | Ustawy: o rachunkowości (t.j. Dz.U. 2026 poz. 522), CIT (t.j. Dz.U. 2026 poz. 554, zmiana Dz.U. 2025 poz. 1658), VAT (t.j. Dz.U. 2026 poz. 1263), o NIP (t.j. Dz.U. 2026 poz. 151), o systemie ubezpieczeń społecznych (t.j. Dz.U. 2026 poz. 199), o świadczeniach opieki zdrowotnej (t.j. Dz.U. 2025 poz. 1461), Ordynacja podatkowa (t.j. Dz.U. 2026 poz. 622), o doręczeniach elektronicznych (t.j. Dz.U. 2026 poz. 3), o opłacie skarbowej (t.j. Dz.U. 2026 poz. 1395) | kalendarz po wpisie, sygnały podatkowe, ZUS |
 | Rozporządzenie w sprawie PKD 2025 (Dz.U. 2024 poz. 1936) | PKD 2025 i przejście |
 | Orzecznictwo SN w rejestrze researchu (m.in. mandat przy powołaniu na czas nieokreślony, majątek wspólny a udziały, jedyny wspólnik jako pracownik) | tło; nowsze orzecznictwo [WYMAGA WERYFIKACJI] |

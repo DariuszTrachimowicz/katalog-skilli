@@ -34,9 +34,10 @@ Zakres uzupełnia skill `dzielo-zlecenie-czy-etat` (kwalifikacja, PIP, składki,
 - B10. **Prawa do wyników pracy:** nabycie praw z mocy prawa dotyczy tylko pracowników (PRAUT art. 12 ust. 1, PRAUT art. 74 ust. 3 dla programów); przy B2B firma ma prawa tylko z umowy. Przeniesienie praw majątkowych wymaga **formy pisemnej pod rygorem nieważności** (PRAUT art. 53) i obejmuje tylko pola eksploatacji wyraźnie wymienione (PRAUT art. 41 ust. 2, PRAUT art. 50), znane w chwili zawarcia (PRAUT art. 41 ust. 4); umowa o wszystkie przyszłe utwory twórcy jest nieważna (PRAUT art. 41 ust. 3). Bez odmiennego zapisu twórca zachowuje prawo zezwalania na opracowania (PRAUT art. 46) i ma prawo do wynagrodzenia, jeśli umowa nie stanowi o nieodpłatności (PRAUT art. 43 ust. 1); ta reguła **nie dotyczy programów komputerowych** (PRAUT art. 77 ust. 1), więc przy oprogramowaniu odpłatność i wysokość wynagrodzenia za prawa wpisz wprost w umowie. Szczegóły: skill prawa-autorskie-w-zleceniu.
 - B11. **Poufność:** informacja jest tajemnicą przedsiębiorstwa tylko wtedy, gdy firma podjęła z należytą starannością działania dla utrzymania jej w poufności (np. NDA, oznaczenia, dostęp) (ZNK art. 11 ust. 2). Ujawnienie lub wykorzystanie wbrew obowiązkowi to czyn nieuczciwej konkurencji (ZNK art. 11 ust. 1, 4), a przy poważnej szkodzie przestępstwo do 2 lat (ZNK art. 23 ust. 1). Informacje przekazane w negocjacjach z zastrzeżeniem poufności są chronione także bez umowy (KC art. 72¹).
 - B12. **Zakaz konkurencji w B2B:** przepisy KP o zakazie konkurencji (KP art. 101¹-101⁴) i minimum 25 % nie obowiązują; zakaz ocenia się według swobody umów i zasad współżycia (KC art. 353¹, KC art. 58). Według orzecznictwa nieodpłatny, długi albo zbyt szeroki zakaz po zakończeniu współpracy może być nieważny zależnie od okoliczności (sekcja B.6). Zakaz w czasie trwania umowy jest co do zasady dopuszczalny.
-- B13. Przedsiębiorca organizujący pracę osób na B2B w swoim zakładzie lub miejscu wyznaczonym ma zapewnić im bezpieczne i higieniczne warunki (KP art. 304 § 1, § 3).
+- B13. Przedsiębiorca organizujący pracę osób na B2B w swoim zakładzie lub miejscu wyznaczonym ma zapewnić im bezpieczne i higieniczne warunki (KP art. 304 § 1, § 3). Kto kieruje takimi osobami i nie przestrzega przepisów BHP, popełnia wykroczenie zagrożone grzywną od 2 000 do 60 000 zł (KP art. 283 § 1).
 - B14. Kontrolę trzeźwości i na środki podobne pracodawca może stosować także wobec osób na B2B, których pracę organizuje (KP art. 22¹ʰ).
 - B15. Zachowania osoby na B2B wobec pracowników mogą być mobbingiem, za który odpowiada pracodawca (KP art. 94³ § 8); sama osoba na B2B nie jest chroniona przez KP art. 94³ (to przepis o pracowniku). Ochrona B2B przed dyskryminacją wynika z innej ustawy [poza plikami: ustawa o wdrożeniu niektórych przepisów UE w zakresie równego traktowania, WYMAGA WERYFIKACJI].
+- B15a. Osoba na B2B albo zleceniu, która zgłosiła naruszenie prawa, może korzystać z ochrony sygnalisty po sprawdzeniu zakresu zgłoszenia i warunków ustawowych (SYGN art. 3, SYGN art. 4, SYGN art. 6); wtedy zakaz działań odwetowych obejmuje także wypowiedzenie, odstąpienie albo rozwiązanie umowy bez wypowiedzenia z powodu zgłoszenia (SYGN art. 11, SYGN art. 13 ust. 1-2). Przed zakończeniem współpracy z taką osobą: karta dla prawnika.
 - B16. Niezgłaszanie do ubezpieczeń wymaganych danych, **nawet za zgodą zainteresowanego**, to przestępstwo do 2 lat (KK art. 219); złośliwe lub uporczywe naruszanie praw pracownika także (KK art. 218 § 1a), co ma znaczenie po uznaniu B2B za etat.
 - B17. Cudzoziemiec wpisany do CEIDG, pracujący na umowie cywilnej w ramach swojej działalności, nie podlega ustawie o powierzaniu pracy cudzoziemcom (PRACACUDZ art. 1 ust. 4 pkt 1); legalność jego pobytu i prawa do prowadzenia firmy w Polsce to osobna kwestia (`moduly/cudzoziemcy.md`).
 - B18. Okresy działalności z opłaconymi składkami wliczają się do stażu pracy przy późniejszym zatrudnieniu (KP art. 302¹ § 1).
@@ -107,43 +108,25 @@ Wszystkie pozycje nieotwarte, teza wg fragmentu, do potwierdzenia. Orzeczenia o 
 
 ### Akty brakujące (spoza plików akty/)
 
-Ustawy o PIP, minimalnym wynagrodzeniu, PPK, systemie ubezpieczeń społecznych i rynku pracy są wbudowane (PIP, MINWYN, PPK, SUS, RYNEKPRACY w akty/SPIS.md); poniżej tylko akty niewbudowane.
+Ustawy o PIP, minimalnym wynagrodzeniu, systemie ubezpieczeń społecznych i sygnalistach są wbudowane (PIP, MINWYN, SUS, SYGN w akty/SPIS.md); poniżej tylko akty niewbudowane. Przed wydaniem autor otwiera każdy adres ponownie; czego nie otworzy, zostaje z [WYMAGA WERYFIKACJI].
 
-| Akt | ELI / adres | Do czego |
+| Akt | Adres oficjalnego tekstu i data odczytu | Reguły modułu |
 |---|---|---|
-| Rozporządzenia o płacy minimalnej i minimalnej stawce godzinowej: Dz.U. 2025 poz. 1242 i Dz.U. 2026 poz. 1213 (sama ustawa jest wbudowana jako MINWYN) | DU/2025/1242; DU/2026/1213 | B4, A48-A49 (kwoty) |
-| Ustawa z 19.06.2026 o zmianie KP i KPC (Dz.U. 2026 poz. 1046), przepisy przejściowe | DU/2026/1046 (odczytana z api.sejm.gov.pl 6.11.2026: art. 2-6) | A41, A51 |
-| (KPC jest lokalnie w KPC.md, tekst z 2026-10-16; art. 461 i 477⁶ᵃ sprawdzone tam) | DU/1964/296 | A51, B3 |
-| Ustawa z 23.01.2026 o wygaszeniu rozwiązań ustawy o pomocy obywatelom Ukrainy (Dz.U. 2026 poz. 203) | DU/2026/203 | C27 (przepis przejściowy 3 lat) |
-| Ustawa z 15.06.2012 o skutkach powierzania wykonywania pracy cudzoziemcom przebywającym wbrew przepisom | DU/2012/769 [WYMAGA WERYFIKACJI t.j.] | zaległe wynagrodzenie, koszty wydalenia, zakazy (PRACACUDZ art. 1 ust. 2 odsyła) |
-| Rozporządzenie MRPiPS w sprawie państw, których obywateli mogą dotyczyć oświadczenia (PRACACUDZ art. 3 ust. 8) | [WYMAGA WERYFIKACJI w ISAP] | C16 (lista państw) |
-| Rozporządzenie MRPiPS o wysokości opłat (zezwolenie, oświadczenie), listopad 2025 | [WYMAGA WERYFIKACJI: Dz.U. 2025 poz. 1617, 1620 albo 1622 wg PUP] | C9, C16 |
-| Rozporządzenie MZ o badaniach lekarskich pracowników | [WYMAGA WERYFIKACJI w ISAP] | A12 (treść skierowania) |
+| Rozporządzenia o płacy minimalnej i minimalnej stawce godzinowej: Dz.U. 2025 poz. 1242 i Dz.U. 2026 poz. 1213 (sama ustawa jest wbudowana jako MINWYN) | DU/2025/1242; DU/2026/1213 (kwoty za researchem skilla dzielo-zlecenie-czy-etat, w tej sesji nieotwierane) | B4 (kwoty) |
+| Ustawa z 19.06.2026 o zmianie KP i KPC (Dz.U. 2026 poz. 1046) | https://api.sejm.gov.pl/eli/acts/DU/2026/1046/text.pdf (odczyt 6.11.2026) | sekcja 7 (KPC art. 461 § 1¹) |
+| (KPC jest lokalnie w KPC.md, tekst z 2026-10-16; art. 461 sprawdzony tam) | DU/1964/296 | B3 |
 | Ustawa o wdrożeniu niektórych przepisów UE w zakresie równego traktowania | DU/2010/1700 [WYMAGA WERYFIKACJI t.j.] | B15 (ochrona B2B przed dyskryminacją) |
-| Ustawa o jawności wynagrodzeń (zmiana KP z 2025 r., wprowadzająca art. 18³ᶜᵃ) | [WYMAGA WERYFIKACJI: ELI] | A10, A.7 |
 
 ### Rejestr źródeł
 
 | Źródło | Adres | Odczyt | Co potwierdza |
 |---|---|---|---|
-| KP, tekst ujednolicony z 2026-10-14 (t.j. Dz.U. 2026 poz. 1245) | lokalnie `references/akty/KP.md`; https://api.sejm.gov.pl/eli/acts/DU/1974/141/text/U/D19740141Lj.pdf | 6.11.2026 | wszystkie reguły KP w modułach A i B |
+| KP, tekst ujednolicony z 2026-10-14 (t.j. Dz.U. 2026 poz. 1245) | lokalnie `references/akty/KP.md`; https://api.sejm.gov.pl/eli/acts/DU/1974/141/text/U/D19740141Lj.pdf | 6.11.2026 | reguły KP w module |
 | KC | lokalnie `KC.md` | 6.11.2026 | B5-B9, B11 |
 | Prawo autorskie | lokalnie `PRAUT.md` | 6.11.2026 | B10 |
 | Ustawa o zwalczaniu nieuczciwej konkurencji | lokalnie `ZNK.md` | 6.11.2026 | B11 |
 | Kodeks karny | lokalnie `KK.md` | 6.11.2026 | B16 |
-| Ustawa z 20.03.2025 (tekst z 2026-06-17) | lokalnie `PRACACUDZ.md`; https://api.sejm.gov.pl/eli/acts/DU/2025/621/text/U/D20250621Lj.pdf | 6.11.2026 | moduł C |
-| Ustawa o cudzoziemcach (tekst z 2026-04-07) | lokalnie `CUDZ.md` | 6.11.2026 | C21-C22, zmiany z komunikatu |
-| Ustawa Dz.U. 2026 poz. 1046 (metadane i tekst) | https://api.sejm.gov.pl/eli/acts/DU/2026/1046 ; https://api.sejm.gov.pl/eli/acts/DU/2026/1046/text.pdf | 6.11.2026 | wejście 5.11.2026, art. 3 (zachowania trwające), art. 4 (6 miesięcy na regulamin), KPC art. 461 § 1¹, KPC art. 477⁶ᵃ |
+| Ustawa z 20.03.2025 o warunkach dopuszczalności powierzania pracy cudzoziemcom (tekst z 2026-06-17) | lokalnie `PRACACUDZ.md` | 6.11.2026 | B17 |
 | Ustawa Dz.U. 2026 poz. 473 (metadane) | https://api.sejm.gov.pl/eli/acts/DU/2026/473 | 6.11.2026 | wejście 8.07.2026, zmieniane akty |
-| Ustawa Dz.U. 2026 poz. 203 (metadane) | https://api.sejm.gov.pl/eli/acts/DU/2026/203 | 6.11.2026 | tytuł, 5.03.2026 i dalsze daty |
-| biznes.gov.pl, PPK | https://www.biznes.gov.pl/pl/portal/00138 | 6.11.2026 | A63 |
-| psz.praca.gov.pl, oświadczenie | https://psz.praca.gov.pl/dla-pracodawcow-i-przedsiebiorcow/zatrudnianie-cudzoziemcow/powierzenie-pracy-na-podstawie-oswiadczenia | 6.11.2026 (strona aktualizowana 23.09.2026) | państwa, 24 miesiące, 400 zł, 7/14 dni, ZUS 7 dni |
-| PUP Kępno, Opoczno, Brzeg, GUP Kraków (praca.gov.pl), opłaty od 1.12.2025 | https://kepno.praca.gov.pl/-/informacja-dotyczaca-obowiazkow-pracodawcy-w-zwiazku-z-oswiadczeniem-o-powierzeniu-pracy-cudzoziemcowi-skopiuj- ; https://gupkrakow.praca.gov.pl/oswiadczenie-o-powierzeniu-pracy-cudzoziemcowi ; https://brzeg.praca.gov.pl/rynek-pracy/aktualnosci/-/asset_publisher/8VCc6CLiHUaO/content/oplata-za-oswiadczenie-o-powierzeniu-pracy-cudzoziemcowi-oraz-za-wniosek-o-zezwolenie-na-prace-sezonowa-cudzoziemca | 6.11.2026 (wyniki wyszukiwania, stron nie otwierano) | 400 zł; 200/400/800/100 zł |
-| Zielona Linia, obywatele Ukrainy po 4.03.2026 | https://zielonalinia.gov.pl/zatrudnianie-obywateli-ukrainy-po-4-marca-2026-r-wszystko-co-pracodawca-musi-wiedziec-o-nowych-przepisach/ | 6.11.2026 (publikacja 16.03.2026) | C8, C27 |
-| Zielona Linia, oświadczenie od 1.12.2025 | https://zielonalinia.gov.pl/-/od-1-grudnia-2025-r.-wazne-zmiany-w-oswiadczeniu-o-powierzeniu-pracy-cudzoziemcowi | 6.11.2026 (wynik wyszukiwania) | opłata 400 zł |
-| Dolnośląski UW, karta CUKR | https://www.gov.pl/web/dolnoslaski-uw/karta-pobytu-cukr--wazne-dla-obywateli-ukrainy | 6.11.2026 (wynik wyszukiwania) | C28 |
-| Lubelski UW, obywatele Ukrainy | https://cudzoziemcy.lublin.uw.gov.pl/pl/Obywatele-Ukrainy | 6.11.2026 (wynik wyszukiwania) | legalność pobytu do 4.03.2027 |
-| sn.pl, orzeczenia z tabel A.6 i B.6 | adresy w tabelach | 6.11.2026 | tylko sygnatura, data, fragment; treść nieotwarta (pusta odpowiedź) |
-| orzeczenia.nsa.gov.pl, orzeczenia.ms.gov.pl | adresy w tabeli C.6 | 6.11.2026 | tylko sygnatura, data; treść nieotwarta (błąd 500, błąd połączenia) |
-| Skill dzielo-zlecenie-czy-etat, references/zasady.md | lokalnie | 6.11.2026 | odesłania B1-B4, kwoty płacy minimalnej i stawki |
-| Skill zwolnienie-pracownika-krok-po-kroku, references/zasady.md | lokalnie | 6.11.2026 | odesłania A59, daty zmian A.7 |
+| sn.pl, orzeczenia z tabeli B.6 | adresy w tabeli | 6.11.2026 | tylko sygnatura, data, fragment; treść nieotwarta (pusta odpowiedź) |
+| Skill dzielo-zlecenie-czy-etat, references/zasady.md | lokalnie | 6.11.2026 | odesłania B1-B4, kwoty stawki |

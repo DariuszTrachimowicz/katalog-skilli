@@ -2,9 +2,9 @@
 nazwa: Windykacja miękka
 kategoria: Finanse
 status: gotowy
-wersja: 1.0.2
+wersja: 1.0.3
 poziom: Działa od razu
-aktualizacja: 2026-11-04
+aktualizacja: 2026-11-06
 skrot: Układa komunikację przy nieopłaconej fakturze, od przypomnienia po ostatnie pismo przed przekazaniem sprawy. Mówi też, kiedy przejść dalej.
 korzysc: Wiesz, co napisać klientowi, który nie zapłacił, i kiedy wysłać kolejne pismo, bez psucia relacji.
 szukaj: niezapłacona faktura, wezwanie do zapłaty, monit, przeterminowana płatność, dłużnik, odsetki, windykacja, przypomnienie o płatności, kontrahent nie płaci

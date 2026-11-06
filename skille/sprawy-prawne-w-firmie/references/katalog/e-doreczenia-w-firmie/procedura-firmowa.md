@@ -39,9 +39,11 @@ Firma: [nazwa]
      reagowania] od pierwszego dnia, bez osobnego polecenia.
 
 3. Postępowanie z nowym pismem
-   - UWAGA: otwarcie pisma to odebranie, a chwila odebrania to chwila
-     doręczenia, od której biegną terminy. Otwiera się więc wtedy, gdy jest
-     czas od razu zanotować, co dalej (nie „przy okazji”).
+   - UWAGA: odebraniem jest każde działanie, po którym firma ma dokument
+     i może zapoznać się z jego treścią (nie tylko „otwarcie”), a chwila
+     odebrania to chwila doręczenia, od której biegną terminy; odczytuje się
+     ją z dowodu otrzymania. Pismo otwiera się więc wtedy, gdy jest czas od
+     razu zanotować, co dalej (nie „przy okazji”).
    - Po otwarciu od razu zapisuje się: nadawcę, datę i godzinę doręczenia
      (z dowodu otrzymania przy piśmie), termin z treści albo pouczenia
      (jeśli jest) i osobę odpowiedzialną za dalszy krok.
@@ -50,9 +52,9 @@ Firma: [nazwa]
    - Dowód otrzymania i treść pisma zapisuje się w [miejsce przechowywania].
 
 4. Zasada bezpieczeństwa
-   - Pismo OD URZĘDU nieodebrane uznaje się za doręczone po 14 dniach od
-     wpłynięcia na adres (dokładne liczenie pokazuje dowód otrzymania
-     w skrzynce). Dlatego przerwa w reagowaniu dłuższa niż [np. 2-3 dni
+   - Pismo OD URZĘDU nieodebrane uznaje się za doręczone w dniu
+     następującym po upływie 14 dni od wpłynięcia wskazanego w dowodzie
+     otrzymania; tę datę wpisuje się do kalendarza sprawy. Dlatego przerwa w reagowaniu dłuższa niż [np. 2-3 dni
      robocze] wymaga planu ustawionego ZANIM się zacznie (urlop, choroba,
      szczyt).
    - Domyślnie imienny dostęp mają co najmniej dwie osoby (administrator

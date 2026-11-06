@@ -46,7 +46,7 @@ Lista mówi, **na co patrzeć**. Nie jest treścią do przepisania do odpowiedzi
 - Brak jakiejkolwiek możliwości wyjścia.
 - Automatyczne przedłużenie bez wyraźnej zgody.
 - Utrata zaliczki lub kara za rezygnację.
-- **Odstąpienie a wypowiedzenie**, to nie to samo, a laicy mylą je stale. Odstąpienie działa wstecz, jakby umowy nie było. Umowne prawo odstąpienia bez wskazanego terminu to flaga.
+- **Odstąpienie a wypowiedzenie**, to nie to samo, a laicy mylą je stale. Odstąpienie i wypowiedzenie mogą inaczej wpływać na wykonane prace, zapłatę i obowiązek zwrotu świadczeń; nie zakładaj, że każde odstąpienie usuwa całą umowę od początku, bo bywa częściowe albo działa od dnia odstąpienia. Sprawdź podstawę odstąpienia, jego zakres i zasady rozliczenia. Umowne prawo odstąpienia bez wskazanego terminu to flaga.
 - Przy najmie na czas oznaczony: czy w ogóle przewidziano wypowiedzenie i w jakich wypadkach.
 
 ## Prawa autorskie i efekty pracy

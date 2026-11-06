@@ -2,9 +2,9 @@
 nazwa: Decyzja z urzędu, co dalej
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-11-05
+aktualizacja: 2026-11-06
 skrot: Rozpoznaje pismo z urzędu (decyzja, postanowienie, kara, decyzja podatkowa, upomnienie, tytuł wykonawczy, mandat, wezwanie), ustala, od kiedy biegnie termin (awizo, e-Doręczenia, pełnomocnik), układa kalendarz z warunkową datą, opisuje drogi i ich skutki (odwołanie, wniosek o ponowne rozpatrzenie, zażalenie, skarga, sprzeciw, przywrócenie terminu, wstrzymanie, raty, zarzut w egzekucji) i daje teczkę oraz pytania do prawnika.
 korzysc: Wiesz, co to za pismo z urzędu, ile masz czasu i jakie masz drogi, zanim minie termin.
 szukaj: decyzja administracyjna co dalej, odwołanie od decyzji 14 dni, termin na odwołanie od decyzji, awizo z urzędu termin, e-Doręczenia doręczenie po 14 dniach, wniosek o ponowne rozpatrzenie sprawy, skarga do WSA 30 dni, sprzeciw od decyzji kasacyjnej, przywrócenie terminu do odwołania, rygor natychmiastowej wykonalności, kara administracyjna odwołanie, decyzja urzędu skarbowego odwołanie, upomnienie i tytuł wykonawczy, zarzut w egzekucji administracyjnej, uchylenie mandatu

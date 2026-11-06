@@ -2,9 +2,9 @@
 nazwa: Zamknięcie firmy krok po kroku
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.1
+wersja: 1.0.2
 poziom: Działa od razu
-aktualizacja: 2026-11-05
+aktualizacja: 2026-11-06
 skrot: Prowadzi przedsiębiorcę z jednoosobową działalnością przez zawieszenie albo zamknięcie firmy, czyli kolejność zgłoszeń do CEIDG, ZUS i urzędu skarbowego, spis z natury i VAT przy likwidacji, kasę fiskalną, pracowników, umowy i przechowywanie dokumentów, z kalendarzem i pytaniami do księgowej.
 korzysc: Wiesz, co po kolei zrobić przy zamykaniu albo zawieszaniu firmy, żeby nie przegapić terminu ani spisu.
 szukaj: zamknięcie firmy, likwidacja działalności gospodarczej, wykreślenie z CEIDG, zawieszenie działalności, VAT-Z, spis z natury, remanent likwidacyjny, kasa fiskalna zakończenie działalności, wyrejestrowanie z ZUS, składka zdrowotna po zamknięciu firmy, ile lat trzymać dokumenty, zamknięcie firmy a pracownicy, spółka cywilna zakończenie, długi po zamknięciu firmy

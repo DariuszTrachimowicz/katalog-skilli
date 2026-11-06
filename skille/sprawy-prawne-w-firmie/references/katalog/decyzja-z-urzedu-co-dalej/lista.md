@@ -80,7 +80,7 @@ Najpierw jedno, dwa zdania: co to za pismo i jaki termin biegnie (przy podanej d
 - Formuła: „Jeżeli pismo doręczono [data], termin na [środek] upływa [data + liczba dni]; gdy ten dzień to sobota albo święto, przesuwa się na najbliższy dzień roboczy.”
 - Awizo: „Jeżeli nie odebrano przesyłki, a zawiadomienie i powtórne zawiadomienie zostawiono prawidłowo, doręczenie następuje z upływem ostatniego dnia 14-dniowego przechowania; datę pierwszego zawiadomienia sprawdź na druku albo w śledzeniu przesyłki, a prawidłowość zawiadomień oceni prawnik.” [WYMAGA WERYFIKACJI: sposób liczenia, prawnik]
 - e-Doręczenia: „Jeżeli pismo wpłynęło [data] i według dowodu otrzymania nie zostało odebrane, doręczenie następuje dnia następnego po upływie 14 dni od wpłynięcia; jeżeli zostało odebrane wcześniej, liczy się chwila odebrania z dowodu otrzymania.”
-- Zawsze: bezpieczniej liczyć od wcześniejszej możliwej daty; wobec urzędu termin zachowuje nadanie w placówce Poczty Polskiej albo wysłanie na adres do doręczeń elektronicznych urzędu z dowodem otrzymania; wobec sądu administracyjnego nadanie w placówce Poczty Polskiej, a kanał elektroniczny [WYMAGA WERYFIKACJI]; kurier i paczkomat co do zasady nie; datę potwierdza prawnik.
+- Zawsze: bezpieczniej liczyć od wcześniejszej możliwej daty; wobec urzędu termin zachowuje nadanie w placówce Poczty Polskiej albo wysłanie na adres do doręczeń elektronicznych urzędu z dowodem otrzymania; wobec sądu administracyjnego nadanie w placówce Poczty Polskiej, a elektronicznie skrzynka podawcza urzędu (adres do doręczeń elektronicznych urzędu: do potwierdzenia przez prawnika); kurier i paczkomat co do zasady nie; datę potwierdza prawnik.
 
 ## 5. Teczka dokumentów
 

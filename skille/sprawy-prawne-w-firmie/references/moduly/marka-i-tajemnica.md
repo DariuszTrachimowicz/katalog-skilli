@@ -18,6 +18,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 12. Dystrybutor zarejestrował nasz znak na siebie.
 13. Ile mamy czasu, żeby pozwać za naruszenie?
 14. Czy licencja na znak musi być na piśmie?
+15. Ktoś wystawił nam w Google opinię o usłudze, której u nas nie kupił. Jak to usunąć?
 
 ## 2. Reguły po skutku z podstawą
 
@@ -27,11 +28,11 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 - Zgłoszenie obejmuje jeden znak i wykaz towarów lub usług (PWP art. 138 ust. 1 i 2). Klasy według klasyfikacji nicejskiej; opłata rośnie z liczbą klas.
 - Urząd bada tylko przeszkody bezwzględne; kolizje z cudzymi znakami podnosi właściciel znaku wcześniejszego w sprzeciwie (PWP art. 145 ust. 1, art. 132¹ ust. 1, art. 152¹⁷ ust. 1).
 - Urząd ujawnia zgłoszenie w ciągu 2 miesięcy od daty zgłoszenia i ogłasza je w Biuletynie (PWP art. 146¹).
-- Sprzeciw wobec cudzego zgłoszenia: 3 miesiące od ogłoszenia, termin nie podlega przywróceniu także przy zgłoszeniach krajowych (PWP art. 152¹⁷ ust. 1); podstawą jest wcześniejszy znak albo wcześniejsze prawo osobiste lub majątkowe (PWP art. 152¹⁷ ust. 1, art. 132¹ ust. 1-3; nieprzywracalność wprost zapisana w art. 152⁶ᵃ ust. 1 dla znaków międzynarodowych).
+- Sprzeciw wobec cudzego zgłoszenia: 3 miesiące od ogłoszenia; termin nie podlega przywróceniu (PWP art. 152¹⁷ ust. 1). Podstawą jest wcześniejszy znak albo wcześniejsze prawo osobiste lub majątkowe (PWP art. 152¹⁷ ust. 1, PWP art. 132¹ ust. 1-3).
 - Po sprzeciwie strony mają 2 miesiące na ugodę, przedłużalne do 6 miesięcy na zgodny wniosek (PWP art. 152¹⁹ ust. 1 i 2).
-- Brak sprzeciwu w terminie oznacza decyzję o udzieleniu prawa (PWP art. 147 ust. 1).
+- Po bezskutecznym upływie terminu sprzeciwu Urząd Patentowy udziela prawa, chyba że po ogłoszeniu dowiedział się o ustawowych przeszkodach rejestracji (PWP art. 147 ust. 1). Udzielenie prawa jest warunkowe: bez opłaty za dziesięcioletni okres ochrony w terminie decyzja wygasa (PWP art. 147 ust. 2). Upływ terminu sprzeciwu nie kończy więc każdego ryzyka.
 - Od decyzji Urzędu przysługuje wniosek o ponowne rozpatrzenie w 2 miesiące, od postanowienia w 1 miesiąc (PWP art. 244), a potem skarga do sądu administracyjnego.
-- Prawo ochronne daje wyłączność na używanie znaku zarobkowo na terenie Polski; trwa 10 lat od daty zgłoszenia i można je przedłużać o kolejne 10 lat (PWP art. 153 ust. 1, 2 i 3). Symbol ® wolno stosować dopiero po rejestracji (PWP art. 153 ust. 1³).
+- Prawo ochronne daje wyłączność na używanie znaku zarobkowo na terenie Polski; trwa 10 lat od daty zgłoszenia i można je przedłużać o kolejne 10 lat (PWP art. 153 ust. 1, 2 i 3). Symbol ® wskazuje rejestrację i może go stawiać uprawniony (PWP art. 153 ust. 1³); przed użyciem sprawdź udzielone prawo i jego zakres, nie samo zgłoszenie. Wprowadzanie do obrotu towarów ze znakiem z wyróżnikiem mającym wywołać mylne mniemanie o ochronie jest zagrożone grzywną (PWP art. 308), a wobec konsumentów może wprowadzać w błąd co do praw własności przemysłowej (UNPR art. 5 ust. 3 pkt 6).
 - Znak, którego nie używano rzeczywiście przez nieprzerwany okres 5 lat (dowolny taki okres po decyzji o udzieleniu prawa), wygasa na wniosek, chyba że istnieją ważne powody nieużywania (PWP art. 169 ust. 1 pkt 1). Urząd Patentowy oddala jednak wniosek, gdy przed jego złożeniem uprawniony rozpoczął albo wznowił rzeczywiste używanie znaku (PWP art. 170 ust. 1); nie liczy się to, gdy używanie ruszyło w 3 miesiącach przed wnioskiem, po upływie 5 lat nieużywania, a przygotowania zaczęły się tuż po tym, jak uprawniony dowiedział się, że wniosek może być złożony (PWP art. 170 ust. 2). Wniosek: używaj znaku stale, a nie „na ratunek” po sygnale od konkurenta.
 - Przedsiębiorca prowadzący lokalną działalność w niewielkim rozmiarze, który w dobrej wierze używał oznaczenia przed cudzą rejestracją, może dalej bezpłatnie używać go w zakresie nie większym niż dotychczas (PWP art. 160 ust. 1); większa albo ponadlokalna działalność nie korzysta z tego wyjątku.
 - Przeniesienie znaku wymaga formy pisemnej pod rygorem nieważności i staje się skuteczne wobec osób trzecich z wpisem do rejestru (PWP art. 162 ust. 1 w zw. z art. 67 ust. 2 i 3). Licencja również na piśmie pod rygorem nieważności (PWP art. 163 ust. 1 w zw. z art. 76 ust. 1).
@@ -78,12 +79,19 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 - Przedawnienie: 3 lata, osobno dla każdego naruszenia; dla szkody stosuje się KC art. 442¹ (ZNK art. 20 ust. 1 i 2). Gdy naruszenie tajemnicy przedsiębiorstwa jest jednocześnie przestępstwem, nie stosuje się dwudziestoletniego terminu z KC art. 442¹ § 2; roszczenie o szkodę przedawnia się według zwykłych reguł, ale najpóźniej 20 lat od popełnienia przestępstwa (ZNK art. 20 ust. 4).
 - Za oczywiście bezzasadny pozew sąd może nakazać powodowi oświadczenie i zasądzić szkodę pozwanemu (ZNK art. 22). Dlatego wezwanie musi mieć podstawę.
 
+**Nieprawdziwe opinie i wpisy o firmie w internecie**
+- Najpierw zabezpiecz adres wpisu, jego treść, datę i dowody, oddzielając twierdzenia o faktach od ocen, a potem zgłoś konkretną bezprawność w serwisie (portal z opiniami, platforma, forum). Brak zamówienia pod nazwiskiem autora sam nie dowodzi, że opinia jest fałszywa.
+- Gdy serwis nie wykonuje obowiązków z DSA, firma może złożyć skargę do Prezesa UKE jako koordynatora do spraw usług cyfrowych, elektronicznie, z opisem stanu faktycznego, wskazaniem naruszonego obowiązku i dowodami, np. zrzutami ekranu (SDE art. 22zh ust. 1-3, SDE art. 15b). Skarga dotyczy obowiązków serwisu, nie gwarantuje usunięcia wpisu i nie rozstrzyga, czy wpis jest bezprawny.
+- Wobec autora: spółka może żądać zaniechania, usunięcia skutków i naprawienia szkody, gdy wpis bezprawnie narusza jej dobre imię (KC art. 24 § 1 i 2, KC art. 43); przedsiębiorca jednoosobowy działa z własnych dóbr osobistych (KC art. 23, KC art. 24). Gdy autorem jest konkurent, w grę wchodzi też rozpowszechnianie nieprawdziwych wiadomości o przedsiębiorcy (ZNK art. 14 ust. 1). Prawdziwa, choć negatywna opinia klienta zwykle nie jest bezprawna, a jej usuwanie albo ukrywanie przez sklep może być zniekształcaniem opinii (UNPR art. 7 pkt 26).
+- Roszczenia wobec autora, autor anonimowy, pozew albo zawiadomienie o przestępstwie: karta dla prawnika. W odpowiedzi firmy na opinię nie publikuj danych autora.
+
 **Tajemnica przedsiębiorstwa**
 - Tajemnica to informacje techniczne, technologiczne, organizacyjne lub inne o wartości gospodarczej, nieznane powszechnie ani łatwo dostępne dla osób z branży, jeśli właściciel z należytą starannością podjął działania, by utrzymać je w poufności (ZNK art. 11 ust. 2). Liczą się faktyczne działania ochronne (umowy o poufności, ograniczony dostęp, oznaczenia, zabezpieczenia techniczne); dokumentacja nie jest warunkiem ustawowym, ale bez niej trudno je wykazać.
 - Czynem jest pozyskanie, wykorzystanie lub ujawnienie cudzej tajemnicy, m.in. przez kopiowanie plików albo wbrew obowiązkowi z umowy lub ustawy (ZNK art. 11 ust. 1, 3 i 4); odpowiada też ten, kto wiedział lub mógł wiedzieć, że informacje pochodzą z naruszenia (ZNK art. 11 ust. 5), oraz ten, kto produkuje, oferuje albo wprowadza do obrotu towary, na które naruszenie tajemnicy miało znaczny wpływ, jeśli wiedział albo przy należytej staranności mógł wiedzieć o naruszeniu (ZNK art. 11 ust. 6).
+- Gdy wyniesione informacje zawierają dane osobowe klientów albo pracowników (np. baza klientów), równolegle uruchom ścieżkę incydentu ochrony danych z `moduly/dane-osobowe.md`, niezależnie od tego, czy baza jest tajemnicą przedsiębiorstwa (ZNK art. 11 ust. 1 i 2). Spór z byłym pracownikiem ani wezwanie nie zastępują oceny obowiązku zgłoszenia do UODO i zawiadomienia osób.
 - Nie jest naruszeniem niezależne odkrycie, inżynieria wsteczna rzeczy legalnie posiadanej (jeśli nie było ograniczenia), ochrona interesu publicznego, sygnalizowanie nieprawidłowości (ZNK art. 11 ust. 7 i 8).
 - Sąd może nakazać publikację wyroku (ZNK art. 18 ust. 3). Zamiast zakazu albo usunięcia skutków może, tylko na wniosek pozwanego, zasądzić wynagrodzenie nie wyższe niż za zgodę na korzystanie z informacji, gdy łącznie: pozwany nie wiedział i przy należytej staranności nie mógł wiedzieć, że informacje pochodzą od osoby, która je bezprawnie wykorzystała lub ujawniła, zakaz wyrządziłby mu niewspółmierną szkodę, a zapłata nie narusza uzasadnionego interesu powoda (ZNK art. 18 ust. 4 pkt 1-3).
-- Ujawnienie lub wykorzystanie tajemnicy wbrew obowiązkowi, jeśli wyrządza poważną szkodę, to przestępstwo do 2 lat (ZNK art. 23 ust. 1).
+- Ujawnienie albo wykorzystanie tajemnicy wbrew obowiązkowi wobec przedsiębiorcy (umowa, NDA, stosunek pracy) jest przestępstwem zagrożonym karą do 2 lat, jeśli wyrządza poważną szkodę (ZNK art. 23 ust. 1). Kto uzyskał tajemnicę bezprawnie i ją ujawnia albo wykorzystuje we własnej działalności, może odpowiadać tak samo, bez warunku poważnej szkody (ZNK art. 23 ust. 2); ustal sposób uzyskania informacji, ich status tajemnicy i ewentualną ochronę zgłoszenia naruszenia prawa, bo sam fakt skopiowania plików nie przesądza przestępstwa. Ściganie następuje tylko na wniosek pokrzywdzonej firmy (ZNK art. 27 ust. 1); decyzję o zawiadomieniu prokuratury firma podejmuje z prawnikiem po zabezpieczeniu dowodów, a zawiadomienie to pismo poziomu B.
 - W przetargach publicznych to wykonawca musi wykazać, że zastrzeżone informacje spełniają definicję tajemnicy; samo zastrzeżenie nie wystarcza (SN II CSKP 1808/22, na tle dawnego PZP art. 8 ust. 3).
 - Zakaz konkurencji pracownika i umowy o poufności: KP (nie analizowano w tym module); NDA czytane przed podpisem: skill `przed-podpisem-nda`.
 
@@ -154,8 +162,10 @@ Uwaga: orzecznictwo NSA sprzed 2019 r. dotyczy dawnego art. 132 PWP (dziś uchyl
 | URL | Co potwierdza |
 |---|---|
 | akty/PWP.md (t.j. Dz.U. 2023 poz. 1170, 2026 poz. 1296) | art. 67, 76, 120, 129¹, 132¹, 138, 145-147, 152¹⁷, 152¹⁹, 153-156, 160-165, 169, 244, 286¹, 287, 289, 296, 298 |
-| akty/ZNK.md (t.j. Dz.U. 2026 poz. 85) | art. 3, 5, 10-16, 18, 18a, 20, 22, 23 |
-| akty/KC.md | art. 43²-43⁵, 43¹⁰ |
+| akty/ZNK.md (t.j. Dz.U. 2026 poz. 85) | art. 3, 5, 10-16, 18, 18a, 20, 22, 23, 27 |
+| akty/KC.md | art. 23, 24, 43, 43²-43⁵, 43¹⁰ |
+| akty/PWP.md | art. 147 ust. 1 i 2, art. 308 (dopisane 6.11.2026 po panelu) |
+| akty/SDE.md, akty/UNPR.md | SDE art. 15b, 22zh (skarga do koordynatora DSA, od 6.11.2026); UNPR art. 5 ust. 3 pkt 6, art. 7 pkt 26 |
 | https://uprp.gov.pl/pl/przedmioty-ochrony/znaki-towarowe/procedura-krajowa-/oplaty-zgloszeniowe | opłaty zgłoszeniowe, sprzeciw 600 zł |
 | https://uprp.gov.pl/pl/przedmioty-ochrony/znaki-towarowe/procedura-krajowa-/oplaty-za-ochrone-przedluzenie | opłaty za ochronę i przedłużenie |
 | https://www.biznes.gov.pl/pl/portal/ou598 | przebieg zgłoszenia, 90 zł publikacja, czas około 6 miesięcy (strona z 28.05.2014) |

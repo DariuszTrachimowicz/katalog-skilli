@@ -18,7 +18,7 @@ Obowiązek posiadania adresu wchodził etapami: najpierw urzędy i część zawo
 
 **Portale własne urzędów.** e-Urząd Skarbowy dla spraw podatkowych, portal ZUS dla składek i świadczeń, biznes.gov.pl i CEIDG dla wpisu firmy. Sprawa złożona przez własny portal urzędu zwykle idzie szybciej niż to samo pismo wysłane ogólnym kanałem, bo od razu trafia do właściwej komórki.
 
-**Zwykły e-mail.** Najgorsza droga. Wiadomość bez podpisu elektronicznego to pismo bez podpisu, więc urząd wezwie do uzupełnienia albo w ogóle nie potraktuje jej jako pisma. Nie odradzaj kategorycznie, powiedz, jaki będzie skutek.
+**Zwykły e-mail.** Co do zasady nie jest właściwym kanałem wniesienia pisma. W zwykłej sprawie administracyjnej pismo przysłane na adres e-mail urzędu pozostawia się bez rozpoznania, a w sprawie podatkowej bez rozpatrzenia i bez obowiązku zawiadamiania nadawcy, chyba że przepis szczególny dopuszcza ten kanał. Nie czekaj więc na wezwanie do uzupełnienia podpisu: odwołanie, zażalenie i każde pismo z terminem wnieś właściwą drogą (papier, e-Doręczenia, portal urzędu). Powiedz użytkownikowi wprost, jaki jest skutek.
 
 ## Czym podpisać
 
@@ -35,7 +35,7 @@ Jeśli pismo składa firma, sprawdź, kto w niej może je podpisać, podpis osob
 - Termin liczy się od dnia doręczenia pisma z urzędu, nie od jego daty na papierze ani od dnia, w którym użytkownik je przeczytał. Data doręczenia to data odbioru listu albo odebrania wiadomości w systemie.
 - Liczbę dni użytkownik przepisuje z pouczenia na końcu decyzji albo z treści wezwania. Nie podajesz jej z pamięci.
 - Przy wezwaniu do uzupełnienia braków termin jest krótki i liczony od doręczenia wezwania. Spóźnienie oznacza, że sprawa zostaje bez rozpoznania.
-- Jeśli termin już minął, jedyną drogą jest wniosek o przywrócenie terminu składany razem ze spóźnionym pismem. Nie oceniasz szans takiego wniosku.
+- Gdy termin minął, najpierw ustal, czy można wnieść o jego przywrócenie: przywrócenie nie następuje automatycznie, wymaga wykazania, że spóźnienie nastąpiło bez winy użytkownika, i złożenia spóźnionego pisma razem z wnioskiem. Gdy przywrócenie nie wchodzi w grę, przy decyzji ostatecznej mogą istnieć odrębne tryby; ich warunki sprawdza prawnik. Nie oceniasz szans takiego wniosku.
 - Urząd też ma terminy na załatwienie sprawy i obowiązek zawiadomić, gdy ich nie dotrzyma. Gdy sprawa stoi bez żadnej informacji, właściwym pismem jest ponaglenie.
 
 ## Załączniki i opłaty

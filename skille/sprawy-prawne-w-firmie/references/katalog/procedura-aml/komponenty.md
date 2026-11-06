@@ -69,8 +69,14 @@ Struktura projektu procedury (rozdziały):
    `[WYMAGA WERYFIKACJI: tryb; źródło: podatki.gov.pl/CRBR]`), status PEP
    (podejście oparte na ryzyku; oświadczenie to jedno ze źródeł, nie jedyna
    metoda), monitorowanie relacji; odesłanie do modelu oceny ryzyka klienta
-   (komponent 3). Osobno: co robi instytucja, gdy NIE MOŻE zastosować
-   któregoś ze środków `[WYMAGA WERYFIKACJI: skutki ustawowe]`.
+   (komponent 3). Osobno: gdy instytucja NIE MOŻE zastosować
+   któregoś z wymaganych środków, co do zasady nie nawiązuje relacji, nie
+   przeprowadza transakcji okazjonalnej ani transakcji przez rachunek,
+   a istniejącą relację rozwiązuje; osoba odpowiedzialna dokumentuje
+   przeszkodę i ocenia, czy jest podstawa do zawiadomienia GIIF. Wyjątek
+   ustawowy dotyczy prawników w zakresie związanym z postępowaniem sądowym
+   i poradą co do jego wszczęcia lub uniknięcia `[stan na 6.11.2026; sprawdź
+   aktualny tekst ustawy]`.
 4. **Postępowanie z ryzykiem wyższym i niższym**: co instytucja robi inaczej
    przy poszczególnych poziomach (środki wzmożone / możliwość uproszczonych
    `[WYMAGA WERYFIKACJI: warunki dopuszczalności]`).
@@ -83,9 +89,19 @@ Struktura projektu procedury (rozdziały):
    działalności (nie generyczny), droga wewnętrznego raportowania do osoby
    odpowiedzialnej; ZASADA POUFNOŚCI (zakaz ujawniania, tzw. tipping off)
    opisana wprost.
-7. **Zgłoszenia i zawiadomienia**: kto, w jakim trybie i terminach
-   `[WYMAGA WERYFIKACJI: terminy i tryb; źródło: GIIF]`; procedura NIE zawiera
-   wypełnionych formularzy.
+7. **Zgłoszenia i zawiadomienia**: kto, w jakim trybie i terminach; procedura
+   NIE zawiera wypełnionych formularzy. Procedura rozdziela dwie ścieżki
+   z różnymi zegarami: zawiadomienie o okolicznościach wskazujących na
+   podejrzenie (niezwłocznie, najpóźniej w 2 dni robocze od potwierdzenia
+   podejrzenia w instytucji) oraz niezwłoczne zawiadomienie o konkretnej
+   podejrzanej transakcji lub wartościach majątkowych. Przy tej drugiej
+   ścieżce odnotowuje się godzinę potwierdzenia przyjęcia zawiadomienia przez
+   GIIF i nie przeprowadza transakcji do żądania albo zwolnienia, najdłużej
+   przez 24 godziny od tego potwierdzenia; upływ 24 godzin nie uchyla dalszego
+   żądania GIIF ani postanowienia prokuratora, więc przed wznowieniem
+   transakcji sprawdza się wszystkie otrzymane rozstrzygnięcia
+   `[stan na 6.11.2026; terminy i tryb sprawdź w aktualnym tekście ustawy
+   i komunikatach GIIF]`.
 8. **Wstrzymanie transakcji / blokada**: wewnętrzny obieg decyzji
    `[WYMAGA WERYFIKACJI: przesłanki i terminy ustawowe]`.
 9. **Kontrola wewnętrzna**: kto i jak często sprawdza wykonywanie procedury

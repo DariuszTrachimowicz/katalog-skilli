@@ -16,7 +16,7 @@ OK          [13/20] oczekiwani=najem-mieszkania-pod-lupa glosy=najem-mieszkania-
 OK          [14/20] oczekiwani=ogloszenie-o-prace glosy=ogloszenie-o-prace,ogloszenie-o-prace,ogloszenie-o-prace :: Napisz ogłoszenie o pracę na stanowisko księgowej w naszym b
 OK          [15/20] oczekiwani=oferta-handlowa/oferta-behawioralna glosy=oferta-handlowa,oferta-handlowa,oferta-handlowa :: Przygotuj ofertę handlową dla sieci hoteli na nasze usługi s
 OK          [16/20] oczekiwani=windykacja-miekka glosy=windykacja-miekka,windykacja-miekka,windykacja-miekka :: Klient spóźnia się 5 dni z płatnością faktury, napisz uprzej
-OK          [17/20] oczekiwani=trudna-rozmowa/rozmowa-oceniajaca glosy=trudna-rozmowa,trudna-rozmowa,trudna-rozmowa :: Muszę porozmawiać z pracownikiem o tym, że jego wyniki spadł
+OK          [17/20] oczekiwani=trudna-rozmowa/rozmowa-oceniajaca glosy=rozmowa-oceniajaca,rozmowa-oceniajaca,rozmowa-oceniajaca :: Muszę porozmawiać z pracownikiem o tym, że jego wyniki spadł
 OK          [18/20] oczekiwani=faktura-do-tabeli glosy=faktura-do-tabeli,faktura-do-tabeli,faktura-do-tabeli :: Zrób mi z tych faktur PDF tabelę do Excela: numer, data, kon
 OK          [19/20] oczekiwani=ZADEN glosy=ZADEN,ZADEN,ZADEN :: Ile wynosi okres wypowiedzenia umowy o pracę po 4 latach sta
 OK          [20/20] oczekiwani=ZADEN glosy=ZADEN,ZADEN,ZADEN :: Co to jest KRS?

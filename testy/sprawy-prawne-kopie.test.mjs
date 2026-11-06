@@ -1,6 +1,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync, mkdtempSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { tmpdir } from 'node:os';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { rozjazdy } from '../narzedzia/katalog-do-firmy.mjs';
@@ -17,6 +19,21 @@ test('kopie wąskich skilli w sprawy-prawne-w-firmie są aktualne', { skip: !exi
 test('każdy przepis cytowany w skillu istnieje we wbudowanym akcie', { skip: !existsSync(SKILL) }, () => {
   const r = spawnSync('python', ['narzedzia/sprawdz-cytaty.py'], { cwd: fileURLToPath(new URL('..', import.meta.url)), encoding: 'utf8', env: { ...process.env, PYTHONUTF8: '1' } });
   assert.equal(r.status, 0, r.stdout + r.stderr);
+});
+
+test('kontrola cytowań łapie nieistniejące jednostki, także w listach', { skip: !existsSync(SKILL) }, () => {
+  const dir = mkdtempSync(join(tmpdir(), 'cytaty-'));
+  const plik = join(dir, 'proba.md');
+  const zle = ['(KC art. 999999)', '(KP art. 30 § 3 i § 999)', '(SYGN art. 13 ust. 1 i ust. 999)', '(KC art. 118, 999999)', '(KC art. 61 ust. 1)', '(FOO art. 5)'];
+  const dobre = ['(KP art. 30 § 3 i § 4)', '(SYGN art. 13 ust. 1 i ust. 2)', '(KC art. 527, KC art. 534)'];
+  for (const z of zle) {
+    writeFileSync(plik, `x ${z}\n`);
+    const r = spawnSync('python', ['narzedzia/sprawdz-cytaty.py', plik], { cwd: fileURLToPath(new URL('..', import.meta.url)), encoding: 'utf8', env: { ...process.env, PYTHONUTF8: '1' } });
+    assert.equal(r.status, 1, `nie wykrył: ${z}`);
+  }
+  writeFileSync(plik, `x ${dobre.join(' ')}\n`);
+  const r = spawnSync('python', ['narzedzia/sprawdz-cytaty.py', plik], { cwd: fileURLToPath(new URL('..', import.meta.url)), encoding: 'utf8', env: { ...process.env, PYTHONUTF8: '1' } });
+  assert.equal(r.status, 0, r.stdout);
 });
 
 test('każdy wbudowany akt ma nagłówek z datą brzmienia i źródłem', { skip: !existsSync(SKILL) }, () => {

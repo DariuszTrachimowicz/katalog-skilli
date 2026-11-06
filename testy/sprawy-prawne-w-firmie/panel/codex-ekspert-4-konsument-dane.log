@@ -1,0 +1,237 @@
+Reading additional input from stdin...
+OpenAI Codex v0.162.1
+--------
+workdir: C:\Users\CP24\AiXperts - projekty\katalog-skilli
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1b0c7-8c8b-7733-bd16-863da9ec4562
+--------
+user
+Przeczytaj najpierw plik testy/sprawy-prawne-w-firmie/panel/BRIEF.md (zasady i format). Twoja rola: Ekspert 4: prawo konsumenckie i e-commerce, ochrona danych osobowych, marka, prawa autorskie, tajemnica przedsiębiorstwa. Zakres: references/moduly/sprzedaz-konsumencka.md, marka-i-tajemnica.md, mapa-spraw.md obszary 3, 5 i 8, kopie katalog/rodo-w-malej-firmie, katalog/rodo-dokumentacja, katalog/zgody-na-stronie-www, katalog/regulamin-sklepu-checklista, katalog/reklamacja-i-rekojmia, katalog/prawa-autorskie-w-zleceniu. Szukaj błędów i luk (np. naruszenie ochrony danych 72 godziny i zawiadomienie osób, monitoring klientów, marketing B2B, sprzedaż transgraniczna w UE, platformy i DSA, opinie i influencerzy, ceny i promocje). Jesteś Codex, więc w nagłówku wpisz (Codex). Nie możesz zapisywać plików: Twoja końcowa wiadomość to cały plik eksperta w formacie z BRIEF.md (zostanie zapisany automatycznie). Identyfikatory zaczynaj od C4- (np. C4-01).
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+hook: SessionStart
+hook: SessionStart
+hook: SessionStart Completed
+hook: SessionStart Completed
+hook: UserPromptSubmit
+hook: UserPromptSubmit Completed
+codex
+Czytam `BRIEF.md`, potem sprawdzę wskazany zakres i aktualne źródła prawa. Wynik podam jako cały plik eksperta z identyfikatorami `C4-`.
+
+
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -Command "Get-Content -LiteralPath 'testy/sprawy-prawne-w-firmie/panel/BRIEF.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -LiteralPath 'testy/sprawy-prawne-w-firmie/panel/BRIEF.md'" | env_u16_len=4864 | si_flags=256 | creation_flags=134743040
+2026-11-06T12:14:11.696630Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-Content -LiteralPath 'testy/sprawy-prawne-w-firmie/panel/BRIEF.md'\\\" | env_u16_len=4864 | si_flags=256 | creation_flags=134743040\")" }
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Krok 1 z 3: zasady panelu odczytane. Stosuję skill `using-superpowers` do doboru procedury; uwagi oprę na treści plików i sprawdzonych przepisach. Nie zapisuję plików.
+
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: site.gov.pl rozporządzenie 2016/679 pełny tekst pdf art 33 34 ...
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Krok 2 z 3: potwierdziłem problem w instrukcji po wycieku danych. Opisuje zegar ogólnie, bez 72 godzin, i nie rozdziela zgłoszenia do UODO od zawiadomienia osób. Sprawdzam pozostałe reguły oraz wyjątki, żeby nie powielać uwag z wcześniejszego QA.
+
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: site.gov.pl "593/2008" "pdf" ...
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: "Rzym I" "site:gov.pl" rozporządzenie ...
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: site:gov.pl "Rzym I" "593/2008" ...
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: https://www.gov.pl/attachment/6ad1668e-e043-4c47-8455-870a6dd1ea80
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Krok 2 z 3: moduł sprzedaży zawiera już poprawne reguły o 30 dniach i warunkach utraty prawa odstąpienia. Kopia skilla reklamacyjnego nadal je upraszcza; znalazłem też brak warunku zawiadomienia sprzedawcy przy zawieszeniu terminu podczas gwarancji. Sprawdzam teraz podstawy dla luk dotyczących kamer, sprzedaży w UE i blokad na platformach.
+
+
+web search: 
+web search: 
+web search: 
+web search: site:gov.pl "2022/2065" "eur-lex.europa.eu/eli" ...
+web search: 
+web search: site:gov.pl "2022/2065" "Artykuł 20" ...
+web search: 
+web search: https://www.gov.pl/web/cyfryzacja/dsa--co-zmienia-nowe-przepisy
+web search: 
+web search: 
+web search: 
+web search: 'eur-lex'
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: site:gov.pl/web "DSA" "Rozporządzenie" "eur-lex" ...
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: "site:gov.pl/attachment/" "L 277/1" ...
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: https://api.sejm.gov.pl/eli/acts/DU/2026/795
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: https://api.sejm.gov.pl/eli/acts/DU/2026/1244/text.pdf
+web search: 
+web search: https://www.uke.gov.pl/uslugi-cyfrowe-dsa/centrum-wiedzy/akty-prawne-i-wytyczne/
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: 
+codex
+Krok 3 z 3: przygotowuję raport z 17 uwagami i dokładnymi miejscami poprawek. W dokumentacji RODO reguły o zgłoszeniu i zawiadomieniu osób już są; problemem jest ich brak w ścieżce incydentu. Uwagi o DSA ograniczam do sprawdzonej właściwości polskich organów.
+
+
+codex
+# Ekspert 4: prawo konsumenckie i e-commerce, ochrona danych osobowych, marka, prawa autorskie i tajemnica przedsiębiorstwa (Codex)
+
+## Błędy
+
+C4-01 | `skille/rodo-w-malej-firmie/references/gdy-cos-sie-stalo.md:21` (kopia: `references/katalog/rodo-w-malej-firmie/gdy-cos-sie-stalo.md:22`) | WAŻNE | Zegar powiązano z chwilą, gdy „ktokolwiek w firmie się zorientował”, bez rozróżnienia podejrzenia od stwierdzenia naruszenia oraz administratora od podmiotu przetwarzającego. Jednocześnie pominięto konkretną regułę 72 godzin, chociaż jest już poprawnie opisana w kopii `rodo-dokumentacja/stan-prawny.md:454-465`. | RODO art. 33 ust. 1: „72 godzin po stwierdzeniu naruszenia”; RODO art. 33 ust. 2 przewiduje odrębne zgłoszenie administratorowi przez podmiot przetwarzający. [Oficjalny tekst RODO](https://www.kcor.gov.pl/wp-content/uploads/2018/05/prawo_UE_RODO_2016_679.pdf), odczyt 6.11.2026. | poprawka: zastąpić akapit: „Administrator zgłasza naruszenie organowi bez zbędnej zwłoki, w miarę możliwości w ciągu 72 godzin od jego stwierdzenia, chyba że ryzyko dla praw lub wolności osób jest mało prawdopodobne. Podmiot przetwarzający zawiadamia administratora bez zbędnej zwłoki; zapisz osobno czas wykrycia sygnału i stwierdzenia naruszenia, a ocenę rozpocznij dzisiaj (RODO art. 33 ust. 1 i 2).”
+
+C4-02 | `skille/reklamacja-i-rekojmia/references/co-decyduje.md:61` oraz `references/listy-kontrolne.md:35` (kopie: odpowiednio linie 62 i 36) | BLOKER | Zapewnienie, że czas spędzony w serwisie nie zużywa terminu wobec sprzedawcy, pomija warunek zawiadomienia sprzedawcy o wadzie. Samo oddanie rzeczy gwarantowi nie daje opisanego skutku. | KC art. 579 § 3: „ulega zawieszeniu z dniem zawiadomienia sprzedawcy o wadzie”, brzmienie z 3.11.2026, sprawdzone w `references/akty/KC.md`. | poprawka: w obu miejscach zastąpić opis zatrzymania zegara: „Przy korzystaniu z gwarancji termin wykonania uprawnień wobec sprzedawcy zawiesza się od zawiadomienia sprzedawcy o wadzie, dlatego zachowaj dowód tego zawiadomienia. Biegnie dalej od odmowy wykonania obowiązków przez gwaranta albo bezskutecznego upływu czasu na ich wykonanie (KC art. 579 § 3).”
+
+C4-03 | `skille/reklamacja-i-rekojmia/references/listy-kontrolne.md:18` (kopia: linia 19) | WAŻNE | Zdanie „Przy zamkniętej działalności zostaje wyłącznie droga przez gwarancję albo przez producenta” błędnie usuwa odpowiedzialność osoby fizycznej po zamknięciu jej działalności. Nie rozróżnia też zamknięcia sklepu, wykreślenia JDG i ustania osoby prawnej. | KC art. 43¹: przedsiębiorcą jest m.in. „osoba fizyczna”; KC art. 353 § 1: „dłużnik powinien świadczenie spełnić”, brzmienie z 3.11.2026, sprawdzone w `references/akty/KC.md`. Wniosek: zaprzestanie działalności nie jest samoistnym zwolnieniem osoby fizycznej z zobowiązania. | poprawka: zastąpić punkt: „Ustal, kto był sprzedawcą i co oznacza zamknięcie działalności: samo zamknięcie sklepu albo wykreślenie JDG nie usuwa zobowiązań osoby fizycznej. Przy spółce ustal jej aktualny status i ewentualnego następcę, zamiast automatycznie odsyłać wyłącznie do producenta lub gwaranta (KC art. 43¹, KC art. 353 § 1).”
+
+C4-04 | `skille/reklamacja-i-rekojmia/references/co-decyduje.md:162` (kopia: linia 163) | BLOKER | Samo uprzedzenie klienta o wadzie przecenionego towaru przedstawiono jako wystarczające wyłączenie odpowiedzialności. Brakuje wyraźnej i odrębnej akceptacji konkretnego odstępstwa najpóźniej przy zawarciu umowy. | UPK art. 43b ust. 4: „wyraźnie i odrębnie zaakceptował brak konkretnej cechy towaru”, brzmienie z 29.10.2026, sprawdzone w `references/akty/UPK.md`. | poprawka: zastąpić drugie zdanie punktu: „Przy sprzedaży konsumenckiej konkretne odstępstwo od obiektywnych wymogów zgodności nie obciąża sprzedawcy tylko wtedy, gdy klient najpóźniej przy zawarciu umowy został o nim wyraźnie poinformowany i wyraźnie, odrębnie je zaakceptował. Sam rabat lub opis wady nie wystarcza i nie wyłącza odpowiedzialności za inne niezgodności (UPK art. 43b ust. 4).”
+
+C4-05 | `skille/reklamacja-i-rekojmia/references/co-decyduje.md:44` (kopia: linia 45) | WAŻNE | Jedną regułą 14 dni objęto internet, telefon i sprzedaż poza lokalem, w tym akwizycję. Moduł nadrzędny został poprawiony, ale kopia nadal pomija 30 dni przy nieumówionych wizytach i wycieczkach. | UPK art. 27 ust. 2: „termin do odstąpienia od umowy wynosi 30 dni”, brzmienie z 29.10.2026, sprawdzone w `references/akty/UPK.md`. | poprawka: zastąpić zdanie o terminie: „Przy umowie na odległość lub poza lokalem termin odstąpienia wynosi zasadniczo 14 dni, ale przy umowie zawartej podczas nieumówionej wizyty przedsiębiorcy w miejscu zamieszkania lub zwykłego pobytu konsumenta albo wycieczki wynosi 30 dni. Sam pokaz albo umówiona wizyta nie daje automatycznie dłuższego terminu (UPK art. 27 ust. 1 i 2).”
+
+C4-06 | `skille/reklamacja-i-rekojmia/references/co-decyduje.md:114` oraz skrót wyjątków w linii 46 (kopia: linie 115 i 47) | BLOKER | Wyraźna zgoda na rozpoczęcie usługi i pełne wykonanie przedstawione są jako wystarczające do utraty prawa odstąpienia. Brakuje odpłatności, uprzedniego poinformowania o utracie prawa oraz przyjęcia tej informacji do wiadomości. Poprawna reguła w module nadrzędnym nie naprawia samodzielnego użycia kopii. | UPK art. 38 ust. 1 pkt 1: „został poinformowany przed rozpoczęciem świadczenia” i „przyjął to do wiadomości”, brzmienie z 29.10.2026, sprawdzone w `references/akty/UPK.md`. | poprawka: w obu miejscach zastosować: „Przy odpłatnej usłudze prawo odstąpienia znika po pełnym wykonaniu tylko wtedy, gdy konsument wcześniej wyraźnie zgodził się na wykonanie, został poinformowany o utracie prawa i przyjął to do wiadomości. Sama zgoda na rozpoczęcie nie wystarcza; odrębnie sprawdź wyłączenie tego wyjątku przy nieumówionej wizycie lub wycieczce (UPK art. 38 ust. 1 pkt 1 i ust. 2).”
+
+C4-07 | `skille/reklamacja-i-rekojmia/references/co-decyduje.md:93` oraz `references/listy-kontrolne.md:76` (kopie: linie 94 i 77) | WAŻNE | Ogólne zapewnienie o ciężarze dowodu po stronie sprzedawcy przez dwa lata trafia także do spraw dotyczących treści cyfrowych. Przy dostarczeniu jednorazowym lub w częściach domniemanie trwa rok, mimo dwuletniego okresu odpowiedzialności. Również przy towarach domniemanie nie oznacza, że sprzedawca dowodzi wszystkich okoliczności reklamacji. | UPK art. 43l ust. 1: „przed upływem roku”; UPK art. 43c ust. 1 wiąże domniemanie z istnieniem niezgodności w chwili dostarczenia, brzmienie z 29.10.2026, sprawdzone w `references/akty/UPK.md`. | poprawka: zastąpić oba uogólnienia: „Dla towaru domniemanie istnienia niezgodności przy dostarczeniu obejmuje zasadniczo niezgodność ujawnioną przed upływem dwóch lat, a dla samodzielnej treści lub usługi cyfrowej dostarczanej jednorazowo lub w częściach przed upływem roku. Najpierw ustal rodzaj świadczenia i sposób dostarczania; domniemanie nie przenosi na sprzedawcę dowodzenia wszystkich faktów sprawy (UPK art. 43c ust. 1 i 3, UPK art. 43l ust. 1, 3 i 5).”
+
+C4-08 | `skille/prawa-autorskie-w-zleceniu/references/zasady.md:64` (kopia: `references/katalog/prawa-autorskie-w-zleceniu/zasady.md:65`) | WAŻNE | Reguła o usterkach pomija wygaśnięcie szczególnych roszczeń przy przyjęciu utworu oraz wyjątek dotyczący okoliczności, za które twórca nie odpowiada. Sformułowanie o zachowaniu 25 % nie wskazuje, że chodzi o część wynagrodzenia już otrzymaną. | PRAUT art. 55 ust. 3: „wygasają z chwilą przyjęcia utworu”; PRAUT art. 55 ust. 1: „prawo do otrzymanej części wynagrodzenia”, brzmienie z 16.10.2026, sprawdzone w `references/akty/PRAUT.md`. | poprawka: zastąpić punkt „Wady”: „Przy usterkach zamówionego utworu, za które twórca odpowiada, zamawiający może wyznaczyć odpowiedni termin naprawy, a po jego bezskutecznym upływie odstąpić albo żądać obniżenia wynagrodzenia; te szczególne roszczenia wygasają przy przyjęciu utworu, a twórca zachowuje otrzymaną część wynagrodzenia najwyżej do 25 % wynagrodzenia umownego. Wady prawne dają odrębnie możliwość odstąpienia i żądania naprawienia szkody (PRAUT art. 55 ust. 1-4).”
+
+C4-09 | `references/moduly/marka-i-tajemnica.md:32` | WAŻNE | Brak sprzeciwu opisano jako bezwarunkową drogę do decyzji o udzieleniu prawa. Urząd może po ogłoszeniu powziąć informację o przeszkodach, a udzielenie prawa jest warunkowe wobec opłaty za ochronę. Firma może potraktować upływ terminu sprzeciwu jako koniec ryzyka odmowy. | PWP art. 147 ust. 1: „chyba że powziął, po ogłoszeniu o zgłoszeniu znaku towarowego, informację”; PWP art. 147 ust. 2: „pod warunkiem uiszczenia opłaty”, brzmienie z 16.10.2026, sprawdzone w `references/akty/PWP.md`. | poprawka: zastąpić punkt: „Po bezskutecznym upływie terminu sprzeciwu Urząd Patentowy udziela prawa, chyba że po ogłoszeniu uzyskał informację o ustawowych przeszkodach rejestracji. Udzielenie prawa jest warunkowe wobec opłaty za dziesięcioletni okres ochrony; jej brak w terminie powoduje wygaśnięcie decyzji (PWP art. 147 ust. 1 i 2).”
+
+## Luki (czego brakuje)
+
+C4-10 | `skille/rodo-w-malej-firmie/references/gdy-cos-sie-stalo.md`, bezpośrednio po akapicie „Zegar”, po poprawce C4-01 | Firma po wycieku potrzebuje dwóch odrębnych ocen: zgłoszenia organowi i zawiadomienia osób. W aktualnej ścieżce incydentu brakuje drugiej reguły i dokumentowania naruszeń niezależnie od decyzji o zgłoszeniu; poprawne informacje są częściowo dostępne dopiero w innym skillu. | gotowy tekst do wstawienia: „Oddzielnie oceń obowiązek zawiadomienia osób: przy możliwym wysokim ryzyku zawiadomienie następuje bez zbędnej zwłoki, z uwzględnieniem wyjątków ustawowych i ewentualnego komunikatu publicznego zamiast zawiadomień indywidualnych. Udokumentuj każde naruszenie, jego skutki i działania zaradcze, także gdy nie zgłaszasz go organowi (RODO art. 33 ust. 5, RODO art. 34 ust. 1-3).” Podstawa z cytatem: RODO art. 34 ust. 1: „bez zbędnej zwłoki”. [Oficjalny tekst RODO](https://www.kcor.gov.pl/wp-content/uploads/2018/05/prawo_UE_RODO_2016_679.pdf), odczyt 6.11.2026.
+
+C4-11 | `skille/rodo-w-malej-firmie/references/pytania-po-obszarach.md`, sekcja „Gdy ktoś się o siebie upomni”, po punkcie z linii 109 | Żądania dostępu lub usunięcia danych są zwykłą sprawą sklepu. Samo odesłanie po „dokładny termin” nie daje firmie podstawowej reguły do organizacji odpowiedzi. | gotowy tekst do wstawienia: „Na informację o działaniach w sprawie żądania masz bez zbędnej zwłoki, najwyżej miesiąc od otrzymania; uzasadnione przedłużenie o kolejne dwa miesiące wymaga poinformowania w pierwszym miesiącu. Odmowę też uzasadnij w tym terminie, z informacją o skardze i drodze sądowej (RODO art. 12 ust. 3 i 4).” Podstawa z cytatem: „w terminie miesiąca od otrzymania żądania”. [Oficjalny tekst RODO](https://www.gov.pl/attachment/6ad1668e-e043-4c47-8455-870a6dd1ea80), odczyt 6.11.2026.
+
+C4-12 | `references/mapa-spraw.md`, obszar 3, nowy wiersz po „Rejestr czynności, upoważnienia, analiza ryzyka”; rozwinięcie w `skille/rodo-w-malej-firmie/references/pytania-po-obszarach.md` po pytaniu o informację przy wejściu, linia 61 | Monitoring klientów ma obecnie jedynie listę pytań. Mapa kieruje ogólne hasło „monitoring” do modułu zatrudnienia, co sprzyja stosowaniu reguł pracowniczych do wszystkich nagrań. | gotowy tekst do wstawienia do mapy: „Monitoring klientów i innych odwiedzających: `katalog/rodo-w-malej-firmie/` oraz `katalog/rodo-dokumentacja/`; moduł zatrudnienia dodatkowo, gdy monitoring obejmuje pracowników.” Gotowy tekst do rozwinięcia: „Dla kamer obejmujących klientów ustal podstawę, niezbędność, zakres kadru, czas przechowywania i informowanie przy zbieraniu danych; sama tabliczka nie zastępuje podstawy przetwarzania. Systematyczne monitorowanie na dużą skalę miejsc dostępnych publicznie wymaga oceny skutków przed rozpoczęciem przetwarzania (RODO art. 5 ust. 1 lit. c i e, RODO art. 6 ust. 1, RODO art. 13, RODO art. 35 ust. 1 i ust. 3 lit. c).” Krótkie cytaty: RODO art. 6 ust. 1: „niezbędne”; RODO art. 13 ust. 1: „podczas pozyskiwania”. [Oficjalny tekst RODO](https://www.gov.pl/attachment/6ad1668e-e043-4c47-8455-870a6dd1ea80), odczyt 6.11.2026.
+
+C4-13 | `skille/zgody-na-stronie-www/references/zasady.md`, sekcja „Marketing: e-mail, SMS, telefon”, po punkcie „Kupione albo zebrane z internetu bazy”, linia 68 | Zasada uprzedniej zgody także w B2B jest już obecna. Brakuje operacyjnego terminu informacji przy pozyskaniu danych z CEIDG, strony firmy albo kupionej bazy; samo wskazanie obowiązku bez terminu pozostawia typową lukę. | gotowy tekst do wstawienia: „Przy danych osobowych pozyskanych z rejestru lub innego zewnętrznego źródła przekaż wymagane informacje zasadniczo najpóźniej w miesiąc, a wcześniej przy pierwszej komunikacji albo pierwszym ujawnieniu, jeżeli nastąpią wcześniej; sprawdź wyjątki. Informacja nie zastępuje uprzedniej zgody na marketing elektroniczny (RODO art. 14 ust. 3 i 5; PKE art. 398 ust. 1).” Podstawa z cytatem: RODO art. 14 ust. 3 lit. a: „najpóźniej w ciągu miesiąca”; PKE art. 398 ust. 1: „chyba że uprzednio wyraził on na to zgodę”, sprawdzone w `references/akty/PKE.md`, brzmienie z 16.10.2026. [Oficjalny tekst RODO](https://www.gov.pl/attachment/6ad1668e-e043-4c47-8455-870a6dd1ea80), odczyt 6.11.2026.
+
+C4-14 | `references/moduly/sprzedaz-konsumencka.md`, po sekcji „Kogo dotyczy”, przed „Informacje przed umową”; w `references/mapa-spraw.md`, obszar 5, nowy wiersz dotyczący sprzedaży transgranicznej | Sprzedaż za granicę kierowana jest do prawnika dopiero jako działalność „na dużą skalę”. Kierowanie oferty do konsumentów innego państwa może zmienić ocenę już przy małej liczbie zamówień. | gotowy tekst do wstawienia: „Przy sprzedaży kierowanej do konsumentów innego państwa ustal ich miejsce zwykłego pobytu i sposób kierowania tam oferty przed zastosowaniem wyłącznie polskich reguł. Wybór prawa polskiego nie może odbierać ochrony wynikającej z niewyłączalnych przepisów prawa właściwego bez tego wyboru; skalę sprzedaży traktuj jako fakt organizacyjny, nie warunek tej ochrony (Rzym I art. 6 ust. 1 i 2, z uwzględnieniem wyjątków z ust. 4).” Podstawa z cytatem: „Wybór taki nie może jednak prowadzić do pozbawienia konsumenta ochrony”. [Oficjalny tekst Rzym I w serwisie Ministerstwa Sprawiedliwości](https://arch-bip.ms.gov.pl/Data/Files/_public/bip/prawo_eu/ue1/rozporzadzenie-parlamentu-europejskiego-i-rady-we-nr-593_2008-z-dnia-17-czerwca-2008-r.-w-sprawie-prawa-wlasciwego-dla-zobowiazan-umownych_rzym-i.pdf), odczyt 6.11.2026.
+
+C4-15 | `references/moduly/sprzedaz-konsumencka.md`, sekcja „Marketplace”, po punkcie z linii 110; `references/mapa-spraw.md`, obszar 5, osobny wiersz dla sporu sprzedawcy z platformą | Moduł opisuje obowiązki platform wobec konsumenta, ale pomija częstą sprawę przedsiębiorcy: blokadę konta, usunięcie oferty lub ograniczenie sprzedaży. Samo odesłanie do UOKiK może być mylące w sprawie firmy jako użytkownika platformy. | gotowy tekst do wstawienia: „Przy blokadzie konta sprzedawcy albo usunięciu oferty zbierz decyzję platformy, uzasadnienie, regulamin i daty, a sprawę oddziel od reklamacji konsumenta wobec sklepu. Ustal właściwy organ według rodzaju usługi i naruszenia: UOKiK nie obsługuje wszystkich spraw DSA, a Prezes UKE jest koordynatorem oraz organem właściwym w sprawach nieprzypisanych UOKiK lub KRRiT (SDE art. 15a ust. 1, SDE art. 15b).” Podstawa z cytatem: SDE art. 15a ust. 1 pkt 3: „w zakresie spraw innych niż wskazane w pkt 1 i 2”, sprawdzone w `references/akty/SDE.md`, brzmienie stosowane od 6.11.2026. Szczegółowych terminów odwołań z samego DSA nie uzupełniam bez wymaganego odczytu oficjalnego tekstu.
+
+C4-16 | `references/moduly/sprzedaz-konsumencka.md`, sekcja „Opinie, reklama i czarna lista”, po punkcie z linii 81 | Zakaz fałszywych opinii nie obejmuje całej typowej współpracy z influencerem. Brakuje reguły ujawnienia komercyjnego celu publikacji, również gdy korzyścią jest produkt lub usługa zamiast przelewu. | gotowy tekst do wstawienia: „Przy współpracy z influencerem ustal pieniądze, barter, prowizje i inne korzyści oraz sprawdź, czy odbiorca rozpoznaje handlowy cel publikacji. Nie przedstawiaj zleconej promocji jako neutralnej opinii; samo oznaczenie marki nie zastępuje jasnej informacji o reklamowym charakterze materiału (UNPR art. 6 ust. 3 pkt 2, UNPR art. 7 pkt 11; ZNK art. 16 ust. 1 pkt 4).” Podstawa z cytatem: UNPR art. 6 ust. 3 pkt 2: „nieujawnienie handlowego celu praktyki”; ZNK art. 16 ust. 1 pkt 4: „sprawia wrażenie neutralnej informacji”, sprawdzone w `references/akty/UNPR.md` i `references/akty/ZNK.md`, brzmienia odpowiednio z 29.10.2026 i 30.01.2026.
+
+C4-17 | `references/moduly/marka-i-tajemnica.md`, sekcja „Tajemnica przedsiębiorstwa”, po punkcie z linii 83; `references/mapa-spraw.md`, obszar 8, uzupełnienie wiersza o wycieku know-how | Wyniesienie bazy klientów jest typową sprawą na styku tajemnicy i danych osobowych. Obecna ścieżka koncentruje się na roszczeniach i zabezpieczeniu dowodów, bez jawnego przekierowania do pilnej oceny naruszenia ochrony danych. | gotowy tekst do wstawienia: „Jeżeli wyniesione informacje zawierają dane osobowe klientów lub pracowników, uruchom równolegle ścieżkę incydentu ochrony danych, niezależnie od oceny, czy baza stanowi tajemnicę przedsiębiorstwa. Spór z byłym pracownikiem ani przygotowanie wezwania nie zastępują oceny obowiązków zgłoszenia i zawiadomienia osób (ZNK art. 11 ust. 1 i 2; RODO art. 33 i 34).” Podstawa z cytatem: ZNK art. 11 ust. 1: „ujawnienie, wykorzystanie lub pozyskanie cudzych informacji stanowiących tajemnicę przedsiębiorstwa”, sprawdzone w `references/akty/ZNK.md`, brzmienie z 30.01.2026; podstawy RODO sprawdzone w [oficjalnym tekście](https://www.kcor.gov.pl/wp-content/uploads/2018/05/prawo_UE_RODO_2016_679.pdf), odczyt 6.11.2026.
+
+## Ocena
+
+**7/10.** Moduły nadrzędne zawierają większość podstawowych reguł konsumenckich, cenowych i dotyczących opinii. Największe ryzyko pozostało w generowanych kopiach wąskich skilli oraz w przekierowaniach między obszarami.
+
+1. Poprawić źródłowy skill reklamacyjny: zawieszenie terminów podczas gwarancji, akceptację wad oraz warunki utraty prawa odstąpienia. Następnie odświeżyć generowane kopie.
+2. Uzupełnić ścieżkę incydentu RODO o właściwy zegar, zawiadamianie osób i dokumentowanie naruszeń; połączyć ją ze sprawami o wyniesienie bazy klientów.
+3. Dodać kwalifikację monitoringu klientów, sprzedaży transgranicznej i sporów przedsiębiorcy z platformą.
+
+Przegląd zakończony w zakresie powyższych ustaleń; plików nie zmieniano. Nie wykonywano testów odpowiedzi modelu ani pełnej weryfikacji orzecznictwa; szczegółowe środki odwoławcze z DSA pozostają do potwierdzenia.
+tokens used
+297 218
+# Ekspert 4: prawo konsumenckie i e-commerce, ochrona danych osobowych, marka, prawa autorskie i tajemnica przedsiębiorstwa (Codex)
+
+## Błędy
+
+C4-01 | `skille/rodo-w-malej-firmie/references/gdy-cos-sie-stalo.md:21` (kopia: `references/katalog/rodo-w-malej-firmie/gdy-cos-sie-stalo.md:22`) | WAŻNE | Zegar powiązano z chwilą, gdy „ktokolwiek w firmie się zorientował”, bez rozróżnienia podejrzenia od stwierdzenia naruszenia oraz administratora od podmiotu przetwarzającego. Jednocześnie pominięto konkretną regułę 72 godzin, chociaż jest już poprawnie opisana w kopii `rodo-dokumentacja/stan-prawny.md:454-465`. | RODO art. 33 ust. 1: „72 godzin po stwierdzeniu naruszenia”; RODO art. 33 ust. 2 przewiduje odrębne zgłoszenie administratorowi przez podmiot przetwarzający. [Oficjalny tekst RODO](https://www.kcor.gov.pl/wp-content/uploads/2018/05/prawo_UE_RODO_2016_679.pdf), odczyt 6.11.2026. | poprawka: zastąpić akapit: „Administrator zgłasza naruszenie organowi bez zbędnej zwłoki, w miarę możliwości w ciągu 72 godzin od jego stwierdzenia, chyba że ryzyko dla praw lub wolności osób jest mało prawdopodobne. Podmiot przetwarzający zawiadamia administratora bez zbędnej zwłoki; zapisz osobno czas wykrycia sygnału i stwierdzenia naruszenia, a ocenę rozpocznij dzisiaj (RODO art. 33 ust. 1 i 2).”
+
+C4-02 | `skille/reklamacja-i-rekojmia/references/co-decyduje.md:61` oraz `references/listy-kontrolne.md:35` (kopie: odpowiednio linie 62 i 36) | BLOKER | Zapewnienie, że czas spędzony w serwisie nie zużywa terminu wobec sprzedawcy, pomija warunek zawiadomienia sprzedawcy o wadzie. Samo oddanie rzeczy gwarantowi nie daje opisanego skutku. | KC art. 579 § 3: „ulega zawieszeniu z dniem zawiadomienia sprzedawcy o wadzie”, brzmienie z 3.11.2026, sprawdzone w `references/akty/KC.md`. | poprawka: w obu miejscach zastąpić opis zatrzymania zegara: „Przy korzystaniu z gwarancji termin wykonania uprawnień wobec sprzedawcy zawiesza się od zawiadomienia sprzedawcy o wadzie, dlatego zachowaj dowód tego zawiadomienia. Biegnie dalej od odmowy wykonania obowiązków przez gwaranta albo bezskutecznego upływu czasu na ich wykonanie (KC art. 579 § 3).”
+
+C4-03 | `skille/reklamacja-i-rekojmia/references/listy-kontrolne.md:18` (kopia: linia 19) | WAŻNE | Zdanie „Przy zamkniętej działalności zostaje wyłącznie droga przez gwarancję albo przez producenta” błędnie usuwa odpowiedzialność osoby fizycznej po zamknięciu jej działalności. Nie rozróżnia też zamknięcia sklepu, wykreślenia JDG i ustania osoby prawnej. | KC art. 43¹: przedsiębiorcą jest m.in. „osoba fizyczna”; KC art. 353 § 1: „dłużnik powinien świadczenie spełnić”, brzmienie z 3.11.2026, sprawdzone w `references/akty/KC.md`. Wniosek: zaprzestanie działalności nie jest samoistnym zwolnieniem osoby fizycznej z zobowiązania. | poprawka: zastąpić punkt: „Ustal, kto był sprzedawcą i co oznacza zamknięcie działalności: samo zamknięcie sklepu albo wykreślenie JDG nie usuwa zobowiązań osoby fizycznej. Przy spółce ustal jej aktualny status i ewentualnego następcę, zamiast automatycznie odsyłać wyłącznie do producenta lub gwaranta (KC art. 43¹, KC art. 353 § 1).”
+
+C4-04 | `skille/reklamacja-i-rekojmia/references/co-decyduje.md:162` (kopia: linia 163) | BLOKER | Samo uprzedzenie klienta o wadzie przecenionego towaru przedstawiono jako wystarczające wyłączenie odpowiedzialności. Brakuje wyraźnej i odrębnej akceptacji konkretnego odstępstwa najpóźniej przy zawarciu umowy. | UPK art. 43b ust. 4: „wyraźnie i odrębnie zaakceptował brak konkretnej cechy towaru”, brzmienie z 29.10.2026, sprawdzone w `references/akty/UPK.md`. | poprawka: zastąpić drugie zdanie punktu: „Przy sprzedaży konsumenckiej konkretne odstępstwo od obiektywnych wymogów zgodności nie obciąża sprzedawcy tylko wtedy, gdy klient najpóźniej przy zawarciu umowy został o nim wyraźnie poinformowany i wyraźnie, odrębnie je zaakceptował. Sam rabat lub opis wady nie wystarcza i nie wyłącza odpowiedzialności za inne niezgodności (UPK art. 43b ust. 4).”
+
+C4-05 | `skille/reklamacja-i-rekojmia/references/co-decyduje.md:44` (kopia: linia 45) | WAŻNE | Jedną regułą 14 dni objęto internet, telefon i sprzedaż poza lokalem, w tym akwizycję. Moduł nadrzędny został poprawiony, ale kopia nadal pomija 30 dni przy nieumówionych wizytach i wycieczkach. | UPK art. 27 ust. 2: „termin do odstąpienia od umowy wynosi 30 dni”, brzmienie z 29.10.2026, sprawdzone w `references/akty/UPK.md`. | poprawka: zastąpić zdanie o terminie: „Przy umowie na odległość lub poza lokalem termin odstąpienia wynosi zasadniczo 14 dni, ale przy umowie zawartej podczas nieumówionej wizyty przedsiębiorcy w miejscu zamieszkania lub zwykłego pobytu konsumenta albo wycieczki wynosi 30 dni. Sam pokaz albo umówiona wizyta nie daje automatycznie dłuższego terminu (UPK art. 27 ust. 1 i 2).”
+
+C4-06 | `skille/reklamacja-i-rekojmia/references/co-decyduje.md:114` oraz skrót wyjątków w linii 46 (kopia: linie 115 i 47) | BLOKER | Wyraźna zgoda na rozpoczęcie usługi i pełne wykonanie przedstawione są jako wystarczające do utraty prawa odstąpienia. Brakuje odpłatności, uprzedniego poinformowania o utracie prawa oraz przyjęcia tej informacji do wiadomości. Poprawna reguła w module nadrzędnym nie naprawia samodzielnego użycia kopii. | UPK art. 38 ust. 1 pkt 1: „został poinformowany przed rozpoczęciem świadczenia” i „przyjął to do wiadomości”, brzmienie z 29.10.2026, sprawdzone w `references/akty/UPK.md`. | poprawka: w obu miejscach zastosować: „Przy odpłatnej usłudze prawo odstąpienia znika po pełnym wykonaniu tylko wtedy, gdy konsument wcześniej wyraźnie zgodził się na wykonanie, został poinformowany o utracie prawa i przyjął to do wiadomości. Sama zgoda na rozpoczęcie nie wystarcza; odrębnie sprawdź wyłączenie tego wyjątku przy nieumówionej wizycie lub wycieczce (UPK art. 38 ust. 1 pkt 1 i ust. 2).”
+
+C4-07 | `skille/reklamacja-i-rekojmia/references/co-decyduje.md:93` oraz `references/listy-kontrolne.md:76` (kopie: linie 94 i 77) | WAŻNE | Ogólne zapewnienie o ciężarze dowodu po stronie sprzedawcy przez dwa lata trafia także do spraw dotyczących treści cyfrowych. Przy dostarczeniu jednorazowym lub w częściach domniemanie trwa rok, mimo dwuletniego okresu odpowiedzialności. Również przy towarach domniemanie nie oznacza, że sprzedawca dowodzi wszystkich okoliczności reklamacji. | UPK art. 43l ust. 1: „przed upływem roku”; UPK art. 43c ust. 1 wiąże domniemanie z istnieniem niezgodności w chwili dostarczenia, brzmienie z 29.10.2026, sprawdzone w `references/akty/UPK.md`. | poprawka: zastąpić oba uogólnienia: „Dla towaru domniemanie istnienia niezgodności przy dostarczeniu obejmuje zasadniczo niezgodność ujawnioną przed upływem dwóch lat, a dla samodzielnej treści lub usługi cyfrowej dostarczanej jednorazowo lub w częściach przed upływem roku. Najpierw ustal rodzaj świadczenia i sposób dostarczania; domniemanie nie przenosi na sprzedawcę dowodzenia wszystkich faktów sprawy (UPK art. 43c ust. 1 i 3, UPK art. 43l ust. 1, 3 i 5).”
+
+C4-08 | `skille/prawa-autorskie-w-zleceniu/references/zasady.md:64` (kopia: `references/katalog/prawa-autorskie-w-zleceniu/zasady.md:65`) | WAŻNE | Reguła o usterkach pomija wygaśnięcie szczególnych roszczeń przy przyjęciu utworu oraz wyjątek dotyczący okoliczności, za które twórca nie odpowiada. Sformułowanie o zachowaniu 25 % nie wskazuje, że chodzi o część wynagrodzenia już otrzymaną. | PRAUT art. 55 ust. 3: „wygasają z chwilą przyjęcia utworu”; PRAUT art. 55 ust. 1: „prawo do otrzymanej części wynagrodzenia”, brzmienie z 16.10.2026, sprawdzone w `references/akty/PRAUT.md`. | poprawka: zastąpić punkt „Wady”: „Przy usterkach zamówionego utworu, za które twórca odpowiada, zamawiający może wyznaczyć odpowiedni termin naprawy, a po jego bezskutecznym upływie odstąpić albo żądać obniżenia wynagrodzenia; te szczególne roszczenia wygasają przy przyjęciu utworu, a twórca zachowuje otrzymaną część wynagrodzenia najwyżej do 25 % wynagrodzenia umownego. Wady prawne dają odrębnie możliwość odstąpienia i żądania naprawienia szkody (PRAUT art. 55 ust. 1-4).”
+
+C4-09 | `references/moduly/marka-i-tajemnica.md:32` | WAŻNE | Brak sprzeciwu opisano jako bezwarunkową drogę do decyzji o udzieleniu prawa. Urząd może po ogłoszeniu powziąć informację o przeszkodach, a udzielenie prawa jest warunkowe wobec opłaty za ochronę. Firma może potraktować upływ terminu sprzeciwu jako koniec ryzyka odmowy. | PWP art. 147 ust. 1: „chyba że powziął, po ogłoszeniu o zgłoszeniu znaku towarowego, informację”; PWP art. 147 ust. 2: „pod warunkiem uiszczenia opłaty”, brzmienie z 16.10.2026, sprawdzone w `references/akty/PWP.md`. | poprawka: zastąpić punkt: „Po bezskutecznym upływie terminu sprzeciwu Urząd Patentowy udziela prawa, chyba że po ogłoszeniu uzyskał informację o ustawowych przeszkodach rejestracji. Udzielenie prawa jest warunkowe wobec opłaty za dziesięcioletni okres ochrony; jej brak w terminie powoduje wygaśnięcie decyzji (PWP art. 147 ust. 1 i 2).”
+
+## Luki (czego brakuje)
+
+C4-10 | `skille/rodo-w-malej-firmie/references/gdy-cos-sie-stalo.md`, bezpośrednio po akapicie „Zegar”, po poprawce C4-01 | Firma po wycieku potrzebuje dwóch odrębnych ocen: zgłoszenia organowi i zawiadomienia osób. W aktualnej ścieżce incydentu brakuje drugiej reguły i dokumentowania naruszeń niezależnie od decyzji o zgłoszeniu; poprawne informacje są częściowo dostępne dopiero w innym skillu. | gotowy tekst do wstawienia: „Oddzielnie oceń obowiązek zawiadomienia osób: przy możliwym wysokim ryzyku zawiadomienie następuje bez zbędnej zwłoki, z uwzględnieniem wyjątków ustawowych i ewentualnego komunikatu publicznego zamiast zawiadomień indywidualnych. Udokumentuj każde naruszenie, jego skutki i działania zaradcze, także gdy nie zgłaszasz go organowi (RODO art. 33 ust. 5, RODO art. 34 ust. 1-3).” Podstawa z cytatem: RODO art. 34 ust. 1: „bez zbędnej zwłoki”. [Oficjalny tekst RODO](https://www.kcor.gov.pl/wp-content/uploads/2018/05/prawo_UE_RODO_2016_679.pdf), odczyt 6.11.2026.
+
+C4-11 | `skille/rodo-w-malej-firmie/references/pytania-po-obszarach.md`, sekcja „Gdy ktoś się o siebie upomni”, po punkcie z linii 109 | Żądania dostępu lub usunięcia danych są zwykłą sprawą sklepu. Samo odesłanie po „dokładny termin” nie daje firmie podstawowej reguły do organizacji odpowiedzi. | gotowy tekst do wstawienia: „Na informację o działaniach w sprawie żądania masz bez zbędnej zwłoki, najwyżej miesiąc od otrzymania; uzasadnione przedłużenie o kolejne dwa miesiące wymaga poinformowania w pierwszym miesiącu. Odmowę też uzasadnij w tym terminie, z informacją o skardze i drodze sądowej (RODO art. 12 ust. 3 i 4).” Podstawa z cytatem: „w terminie miesiąca od otrzymania żądania”. [Oficjalny tekst RODO](https://www.gov.pl/attachment/6ad1668e-e043-4c47-8455-870a6dd1ea80), odczyt 6.11.2026.
+
+C4-12 | `references/mapa-spraw.md`, obszar 3, nowy wiersz po „Rejestr czynności, upoważnienia, analiza ryzyka”; rozwinięcie w `skille/rodo-w-malej-firmie/references/pytania-po-obszarach.md` po pytaniu o informację przy wejściu, linia 61 | Monitoring klientów ma obecnie jedynie listę pytań. Mapa kieruje ogólne hasło „monitoring” do modułu zatrudnienia, co sprzyja stosowaniu reguł pracowniczych do wszystkich nagrań. | gotowy tekst do wstawienia do mapy: „Monitoring klientów i innych odwiedzających: `katalog/rodo-w-malej-firmie/` oraz `katalog/rodo-dokumentacja/`; moduł zatrudnienia dodatkowo, gdy monitoring obejmuje pracowników.” Gotowy tekst do rozwinięcia: „Dla kamer obejmujących klientów ustal podstawę, niezbędność, zakres kadru, czas przechowywania i informowanie przy zbieraniu danych; sama tabliczka nie zastępuje podstawy przetwarzania. Systematyczne monitorowanie na dużą skalę miejsc dostępnych publicznie wymaga oceny skutków przed rozpoczęciem przetwarzania (RODO art. 5 ust. 1 lit. c i e, RODO art. 6 ust. 1, RODO art. 13, RODO art. 35 ust. 1 i ust. 3 lit. c).” Krótkie cytaty: RODO art. 6 ust. 1: „niezbędne”; RODO art. 13 ust. 1: „podczas pozyskiwania”. [Oficjalny tekst RODO](https://www.gov.pl/attachment/6ad1668e-e043-4c47-8455-870a6dd1ea80), odczyt 6.11.2026.
+
+C4-13 | `skille/zgody-na-stronie-www/references/zasady.md`, sekcja „Marketing: e-mail, SMS, telefon”, po punkcie „Kupione albo zebrane z internetu bazy”, linia 68 | Zasada uprzedniej zgody także w B2B jest już obecna. Brakuje operacyjnego terminu informacji przy pozyskaniu danych z CEIDG, strony firmy albo kupionej bazy; samo wskazanie obowiązku bez terminu pozostawia typową lukę. | gotowy tekst do wstawienia: „Przy danych osobowych pozyskanych z rejestru lub innego zewnętrznego źródła przekaż wymagane informacje zasadniczo najpóźniej w miesiąc, a wcześniej przy pierwszej komunikacji albo pierwszym ujawnieniu, jeżeli nastąpią wcześniej; sprawdź wyjątki. Informacja nie zastępuje uprzedniej zgody na marketing elektroniczny (RODO art. 14 ust. 3 i 5; PKE art. 398 ust. 1).” Podstawa z cytatem: RODO art. 14 ust. 3 lit. a: „najpóźniej w ciągu miesiąca”; PKE art. 398 ust. 1: „chyba że uprzednio wyraził on na to zgodę”, sprawdzone w `references/akty/PKE.md`, brzmienie z 16.10.2026. [Oficjalny tekst RODO](https://www.gov.pl/attachment/6ad1668e-e043-4c47-8455-870a6dd1ea80), odczyt 6.11.2026.
+
+C4-14 | `references/moduly/sprzedaz-konsumencka.md`, po sekcji „Kogo dotyczy”, przed „Informacje przed umową”; w `references/mapa-spraw.md`, obszar 5, nowy wiersz dotyczący sprzedaży transgranicznej | Sprzedaż za granicę kierowana jest do prawnika dopiero jako działalność „na dużą skalę”. Kierowanie oferty do konsumentów innego państwa może zmienić ocenę już przy małej liczbie zamówień. | gotowy tekst do wstawienia: „Przy sprzedaży kierowanej do konsumentów innego państwa ustal ich miejsce zwykłego pobytu i sposób kierowania tam oferty przed zastosowaniem wyłącznie polskich reguł. Wybór prawa polskiego nie może odbierać ochrony wynikającej z niewyłączalnych przepisów prawa właściwego bez tego wyboru; skalę sprzedaży traktuj jako fakt organizacyjny, nie warunek tej ochrony (Rzym I art. 6 ust. 1 i 2, z uwzględnieniem wyjątków z ust. 4).” Podstawa z cytatem: „Wybór taki nie może jednak prowadzić do pozbawienia konsumenta ochrony”. [Oficjalny tekst Rzym I w serwisie Ministerstwa Sprawiedliwości](https://arch-bip.ms.gov.pl/Data/Files/_public/bip/prawo_eu/ue1/rozporzadzenie-parlamentu-europejskiego-i-rady-we-nr-593_2008-z-dnia-17-czerwca-2008-r.-w-sprawie-prawa-wlasciwego-dla-zobowiazan-umownych_rzym-i.pdf), odczyt 6.11.2026.
+
+C4-15 | `references/moduly/sprzedaz-konsumencka.md`, sekcja „Marketplace”, po punkcie z linii 110; `references/mapa-spraw.md`, obszar 5, osobny wiersz dla sporu sprzedawcy z platformą | Moduł opisuje obowiązki platform wobec konsumenta, ale pomija częstą sprawę przedsiębiorcy: blokadę konta, usunięcie oferty lub ograniczenie sprzedaży. Samo odesłanie do UOKiK może być mylące w sprawie firmy jako użytkownika platformy. | gotowy tekst do wstawienia: „Przy blokadzie konta sprzedawcy albo usunięciu oferty zbierz decyzję platformy, uzasadnienie, regulamin i daty, a sprawę oddziel od reklamacji konsumenta wobec sklepu. Ustal właściwy organ według rodzaju usługi i naruszenia: UOKiK nie obsługuje wszystkich spraw DSA, a Prezes UKE jest koordynatorem oraz organem właściwym w sprawach nieprzypisanych UOKiK lub KRRiT (SDE art. 15a ust. 1, SDE art. 15b).” Podstawa z cytatem: SDE art. 15a ust. 1 pkt 3: „w zakresie spraw innych niż wskazane w pkt 1 i 2”, sprawdzone w `references/akty/SDE.md`, brzmienie stosowane od 6.11.2026. Szczegółowych terminów odwołań z samego DSA nie uzupełniam bez wymaganego odczytu oficjalnego tekstu.
+
+C4-16 | `references/moduly/sprzedaz-konsumencka.md`, sekcja „Opinie, reklama i czarna lista”, po punkcie z linii 81 | Zakaz fałszywych opinii nie obejmuje całej typowej współpracy z influencerem. Brakuje reguły ujawnienia komercyjnego celu publikacji, również gdy korzyścią jest produkt lub usługa zamiast przelewu. | gotowy tekst do wstawienia: „Przy współpracy z influencerem ustal pieniądze, barter, prowizje i inne korzyści oraz sprawdź, czy odbiorca rozpoznaje handlowy cel publikacji. Nie przedstawiaj zleconej promocji jako neutralnej opinii; samo oznaczenie marki nie zastępuje jasnej informacji o reklamowym charakterze materiału (UNPR art. 6 ust. 3 pkt 2, UNPR art. 7 pkt 11; ZNK art. 16 ust. 1 pkt 4).” Podstawa z cytatem: UNPR art. 6 ust. 3 pkt 2: „nieujawnienie handlowego celu praktyki”; ZNK art. 16 ust. 1 pkt 4: „sprawia wrażenie neutralnej informacji”, sprawdzone w `references/akty/UNPR.md` i `references/akty/ZNK.md`, brzmienia odpowiednio z 29.10.2026 i 30.01.2026.
+
+C4-17 | `references/moduly/marka-i-tajemnica.md`, sekcja „Tajemnica przedsiębiorstwa”, po punkcie z linii 83; `references/mapa-spraw.md`, obszar 8, uzupełnienie wiersza o wycieku know-how | Wyniesienie bazy klientów jest typową sprawą na styku tajemnicy i danych osobowych. Obecna ścieżka koncentruje się na roszczeniach i zabezpieczeniu dowodów, bez jawnego przekierowania do pilnej oceny naruszenia ochrony danych. | gotowy tekst do wstawienia: „Jeżeli wyniesione informacje zawierają dane osobowe klientów lub pracowników, uruchom równolegle ścieżkę incydentu ochrony danych, niezależnie od oceny, czy baza stanowi tajemnicę przedsiębiorstwa. Spór z byłym pracownikiem ani przygotowanie wezwania nie zastępują oceny obowiązków zgłoszenia i zawiadomienia osób (ZNK art. 11 ust. 1 i 2; RODO art. 33 i 34).” Podstawa z cytatem: ZNK art. 11 ust. 1: „ujawnienie, wykorzystanie lub pozyskanie cudzych informacji stanowiących tajemnicę przedsiębiorstwa”, sprawdzone w `references/akty/ZNK.md`, brzmienie z 30.01.2026; podstawy RODO sprawdzone w [oficjalnym tekście](https://www.kcor.gov.pl/wp-content/uploads/2018/05/prawo_UE_RODO_2016_679.pdf), odczyt 6.11.2026.
+
+## Ocena
+
+**7/10.** Moduły nadrzędne zawierają większość podstawowych reguł konsumenckich, cenowych i dotyczących opinii. Największe ryzyko pozostało w generowanych kopiach wąskich skilli oraz w przekierowaniach między obszarami.
+
+1. Poprawić źródłowy skill reklamacyjny: zawieszenie terminów podczas gwarancji, akceptację wad oraz warunki utraty prawa odstąpienia. Następnie odświeżyć generowane kopie.
+2. Uzupełnić ścieżkę incydentu RODO o właściwy zegar, zawiadamianie osób i dokumentowanie naruszeń; połączyć ją ze sprawami o wyniesienie bazy klientów.
+3. Dodać kwalifikację monitoringu klientów, sprzedaży transgranicznej i sporów przedsiębiorcy z platformą.
+
+Przegląd zakończony w zakresie powyższych ustaleń; plików nie zmieniano. Nie wykonywano testów odpowiedzi modelu ani pełnej weryfikacji orzecznictwa; szczegółowe środki odwoławcze z DSA pozostają do potwierdzenia.

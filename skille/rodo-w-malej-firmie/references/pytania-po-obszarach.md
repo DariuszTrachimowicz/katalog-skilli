@@ -59,6 +59,7 @@ Spis: klienci i kontrahenci · pracownicy i zleceniobiorcy · kandydaci do pracy
 - Ile czasu nagrania leżą i czy ktoś to kiedykolwiek ustawiał, czy dysk po prostu nadpisuje się sam.
 - Kto ma podgląd i czy podgląd jest w prywatnym telefonie właściciela lub kogoś z rodziny.
 - Czy przy wejściu jest jakakolwiek informacja o kamerach.
+- Gdy kamery obejmują klientów: ustal podstawę, niezbędność, zakres kadru, czas przechowywania i informowanie przy zbieraniu danych; sama tabliczka nie zastępuje podstawy. Systematyczne monitorowanie miejsc dostępnych publicznie na dużą skalę wymaga oceny skutków dla ochrony danych przed uruchomieniem kamer, wtedy specjalista. Gdy monitoring obejmuje pracowników, dochodzą zasady pracownicze.
 - Lokalizatory w samochodach firmowych i aplikacje do rozliczania czasu pracy, czy działają po godzinach.
 - Rejestratory czasu pracy z odciskiem palca. To dane, których nie da się wymienić po wycieku, kieruj do specjalisty zawsze.
 
@@ -106,7 +107,7 @@ Spis: klienci i kontrahenci · pracownicy i zleceniobiorcy · kandydaci do pracy
 - Czy zdarzyło się, że klient prosił o usunięcie danych, o kopię swoich danych albo o wypisanie z bazy.
 - Kto w firmie odbiera takie prośby i czy ktokolwiek wie, co z nimi robić.
 - Czy da się w ogóle znaleźć wszystkie miejsca, w których dana osoba występuje. Jeśli nie, to jest osobna pozycja w mapie, bo o tym samym pyta się później przy każdym wycieku.
-- Termin biegnie od wpłynięcia prośby, nie od momentu, w którym ktoś się nią zajmie, dokładny ustal ze specjalistą.
+- Termin biegnie od wpłynięcia prośby, nie od momentu, w którym ktoś się nią zajmie: informację o działaniach w sprawie żądania daje się bez zbędnej zwłoki, najpóźniej w miesiąc od otrzymania; przedłużenie o kolejne dwa miesiące jest możliwe tylko przy skomplikowanych albo licznych żądaniach i trzeba o nim poinformować w pierwszym miesiącu. Odmowę też uzasadnia się w tym terminie, z informacją o skardze do UODO i drodze do sądu. Termin dotyczy odpowiedzi; czy żądanie trzeba uwzględnić, to osobna ocena.
 
 ## Branże z wyższą poprzeczką
 

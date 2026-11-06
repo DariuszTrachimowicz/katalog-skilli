@@ -2,9 +2,9 @@
 nazwa: Procedury AML dla instytucji obowiązanych
 kategoria: Prawo
 status: gotowy
-wersja: 1.1.1
+wersja: 1.1.2
 poziom: Zaawansowany
-aktualizacja: 2026-11-05
+aktualizacja: 2026-11-06
 skrot: Buduje z instytucją obowiązaną jej dokumentację AML dopasowaną do realnej działalności, ocenę ryzyka instytucji, procedurę wewnętrzną, ocenę ryzyka klienta liczoną skryptem ze śladem obliczeń, ewidencje i checklisty środków bezpieczeństwa finansowego.
 korzysc: Masz dokumentację AML opisującą Twoją firmę, z uzasadnieniami i śladem obliczeń, a nie martwy wzór.
 szukaj: AML, pranie pieniędzy, instytucja obowiązana, GIIF, procedura wewnętrzna AML, ocena ryzyka klienta, środki bezpieczeństwa finansowego, beneficjent rzeczywisty, CRBR, biuro rachunkowe, pośrednik nieruchomości, biuro wirtualne, kontrola GIIF, prawo

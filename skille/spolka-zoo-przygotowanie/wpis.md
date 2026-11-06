@@ -2,9 +2,9 @@
 nazwa: Spółka z o.o., przygotowanie
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-11-05
+aktualizacja: 2026-11-06
 skrot: Przed rejestracją spółki z o.o. układa teczkę decyzji wspólników (udziały, wkłady, zarząd i reprezentacja, wyjście wspólnika, śmierć, małżonkowie, impas 50/50, zakaz konkurencji, PKD 2025, rok obrotowy) z tym, co dzieje się bez zapisu w umowie, porównuje S24 z notariuszem, podaje koszty jako reguły, kalendarz po wpisie (NIP-8, CRBR, VAT-R, ZUS, księgi) i sprawdza wklejony projekt umowy.
 korzysc: Wspólnicy uzgadniają kluczowe decyzje przed podpisem, zamiast odkrywać spór po rejestracji.
 szukaj: założenie spółki z o.o. 2026, spółka z o.o. S24 czy notariusz, koszt założenia spółki z o.o., umowa spółki z o.o. co zawiera, podział udziałów 50/50, aport do spółki z o.o., wkład pracy wspólnika, zarząd spółki z o.o. reprezentacja, wyjście wspólnika umorzenie udziałów, śmierć wspólnika spółki z o.o., CRBR termin, NIP-8 po rejestracji, PKD 2025 w umowie spółki, spółka w organizacji odpowiedzialność, pierwszy rok obrotowy spółki

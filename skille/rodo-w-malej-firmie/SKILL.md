@@ -52,7 +52,7 @@ Ustal trzy rzeczy, jednym zbiorczym pytaniem, jeśli nie wynikają z rozmowy:
 2. **Ile osób pracuje i na jakich umowach.** Pracownicy, zleceniobiorcy i jednoosobowe firmy na współpracy to trzy różne zestawy dokumentów w szafie.
 3. **Czy coś już się dzieje.** Pismo z urzędu, żądanie klienta, zgubiony telefon, mail wysłany nie tam, podejrzenie włamania.
 
-**Jeśli coś już się dzieje, przerwij mapowanie i otwórz `references/gdy-cos-sie-stalo.md`.** Przy incydencie liczy się kolejność i czas: zegar zwykle rusza od chwili, gdy ktoś w firmie się zorientował, a nie od chwili, gdy sprawa została wyjaśniona, więc odkładanie tego na poniedziałek bywa nieodwracalne.
+**Jeśli coś już się dzieje, przerwij mapowanie i otwórz `references/gdy-cos-sie-stalo.md`.** Przy incydencie liczy się kolejność i czas: termin na zgłoszenie liczy się w godzinach od stwierdzenia naruszenia, a nie od chwili, gdy sprawa została wyjaśniona, a pierwszy sygnał trzeba zapisać i ocenić od razu, więc odkładanie tego na poniedziałek bywa nieodwracalne.
 
 ## Sześć pytań
 

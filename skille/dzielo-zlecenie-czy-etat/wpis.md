@@ -2,9 +2,9 @@
 nazwa: Dzieło, zlecenie czy etat
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-11-05
+aktualizacja: 2026-11-06
 skrot: Z opisu współpracy pokazuje, do której umowy co do zasady pasuje układ (umowa o pracę, zlecenie, dzieło, B2B), jakie są skutki składkowe i podatkowe wariantów, co wygląda jak ukryty etat i czym grozi kontrola inspekcji pracy, ZUS albo urzędu skarbowego.
 korzysc: Rozumiesz, do której umowy pasuje praca, czym grozi ukryty etat i o co zapytać księgową.
 szukaj: umowa o dzieło czy zlecenie, umowa zlecenie czy umowa o pracę, ukryty etat, umowa śmieciowa, B2B zamiast etatu, przejście z etatu na B2B, samozatrudnienie, PIP decyzja umowa o pracę, przekwalifikowanie umowy, minimalna stawka godzinowa 2026, umowa o dzieło ZUS, RUD, student zlecenie ZUS, interpretacja Głównego Inspektora Pracy

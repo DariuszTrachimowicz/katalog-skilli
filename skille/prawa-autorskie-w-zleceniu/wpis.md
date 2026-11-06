@@ -2,9 +2,9 @@
 nazwa: Prawa autorskie w zleceniu
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-11-05
+aktualizacja: 2026-11-06
 skrot: Wyjaśnia zleceniodawcy i wykonawcy, kto ma prawa autorskie do zamówionego logo, kodu, zdjęć albo tekstu, czym różni się przeniesienie od licencji, co musi być na piśmie, czego brakuje w klauzuli i jakie pytania zadać prawnikowi.
 korzysc: Porządkujesz, kto może mieć prawa do logo, kodu albo zdjęć, czego brakuje w umowie i o co zapytać prawnika.
 szukaj: prawa autorskie, przeniesienie praw autorskich, licencja, pola eksploatacji, umowa o dzieło prawa autorskie, B2B prawa autorskie do kodu, logo prawa autorskie, grafik prawa do logo, zdjęcia prawa autorskie, wizerunek, prawa osobiste, zrzeczenie się praw osobistych, prawo zależne, przeróbki logo, utwór z AI, Midjourney prawa autorskie, portfolio, kod źródłowy, klauzula autorska

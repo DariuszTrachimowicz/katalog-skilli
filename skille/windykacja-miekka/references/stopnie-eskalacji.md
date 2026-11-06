@@ -34,7 +34,7 @@ Zanim napiszesz cokolwiek, przejdź przez to z użytkownikiem. Połowa „zaleg�
 
 ## Stopień 2, ponowienie z terminem
 
-**Kiedy:** 10-21 dni po terminie, albo od razu po nieodpowiedzi na stopień 1. **Kanał:** mail do osoby kontaktowej i do księgowości łącznie; telefon tego samego dnia. Zachowaj wysłaną wiadomość razem z nagłówkami, dowodem jest nadanie, nie odczyt. Nie polecaj potwierdzenia odczytu jako zabezpieczenia: odbiorca może je po prostu odrzucić, a jego brak niczego nie dowodzi.
+**Kiedy:** 10-21 dni po terminie, albo od razu po nieodpowiedzi na stopień 1. **Kanał:** mail do osoby kontaktowej i do księgowości łącznie; telefon tego samego dnia. Zachowaj wiadomość z nagłówkami oraz dostępne potwierdzenia dostarczenia i odpowiedzi odbiorcy; sam zapis wysłania nie przesądza, że wezwanie do niego doszło. Potwierdzenie odczytu może pomóc, ale jego brak nie dowodzi, że wiadomości nie doręczono.
 
 **W treści:**
 - odwołanie do poprzedniej wiadomości z datą,
@@ -98,7 +98,7 @@ Skróć terminy albo przeskocz stopień, gdy:
 - w rejestrze pojawiła się informacja o restrukturyzacji lub upadłości,
 - kontrahent został wykreślony z rejestru czynnych podatników VAT,
 - kwota rośnie, bo trwają kolejne dostawy, zapytaj, czy użytkownik chce wstrzymać prace; to decyzja o skutkach umownych, więc podejmuje ją on, a warunki wstrzymania sprawdza w umowie,
-- faktura zbliża się do granicy trzech lat, licząc do końca roku kalendarzowego.
+- nie ustalono właściwego terminu przedawnienia albo zbliża się jego koniec (przy towarze, dziele i części usług zwykle dwa lata, nie trzy); najpierw prawnik, bez czekania na kolejne stopnie.
 
 ## Kiedy zwolnić
 

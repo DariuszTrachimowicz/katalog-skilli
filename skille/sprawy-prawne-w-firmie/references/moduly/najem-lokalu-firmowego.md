@@ -46,16 +46,16 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 17. Firma nie może żądać sądowej waloryzacji świadczenia pieniężnego związanego z jej przedsiębiorstwem; zostaje klauzula umowna albo klauzula nadzwyczajnej zmiany stosunków. (KC art. 358¹ § 3-4, art. 357¹)
 
 **Kaucja**
-18. Kaucji przy lokalu użytkowym nie reguluje żadna ustawa: wysokość, co zabezpiecza, termin zwrotu i możliwość zaliczenia na czynsz wynikają z umowy. (KC art. 353¹) Brak terminu zwrotu w umowie: zwrot niezwłocznie po wezwaniu po zakończeniu najmu i rozliczeniu. (KC art. 455)
+18. Kaucji przy lokalu użytkowym nie reguluje żadna ustawa: wysokość, co zabezpiecza, termin zwrotu i możliwość zaliczenia na czynsz wynikają z umowy. (KC art. 353¹) Brak terminu zwrotu w umowie: zwrot niezwłocznie po wezwaniu po zakończeniu najmu i rozliczeniu. (KC art. 455) Gdy zabezpieczeniem jest gwarancja bankowa, sprawdź ją według `moduly/umowy-wlasne-firmy.md`, część „Zabezpieczenia”.
 19. Najemca może potrącić wymagalny zwrot kaucji z zaległym czynszem, a sąd uwzględnia nierozliczoną kaucję przy zasądzaniu zaległości (SA Kraków I ACa 1561/14; SO Łódź XIII Ga 620/17). (KC art. 498 § 1)
 20. Wynajmujący nie może trzymać kaucji do końca pierwotnego okresu najmu, jeśli nie zgłosił do rozliczenia żadnych roszczeń (SO Łódź XIII Ga 620/17). (KC art. 5)
 
 **Stan lokalu, naprawy, wady**
 21. Wynajmujący wydaje lokal w stanie przydatnym do umówionego użytku i utrzymuje go w takim stanie; drobne nakłady (malowanie, drobne naprawy podłóg, drzwi, okien, instalacji) obciążają najemcę. (KC art. 662 § 1-2, art. 681) Umowa może ten podział zmienić (KC art. 353¹).
 22. O potrzebie napraw obciążających wynajmującego najemca zawiadamia niezwłocznie. (KC art. 666 § 2)
-23. Gdy wynajmujący nie wykonuje koniecznych napraw, najemca wyznacza mu odpowiedni termin na piśmie, a po jego bezskutecznym upływie może naprawić sam na koszt wynajmującego. (KC art. 663)
+23. Gdy lokal wymaga napraw obciążających wynajmującego, bez których nie nadaje się do umówionego użytku, najemca może wyznaczyć mu odpowiedni termin, a po jego bezskutecznym upływie wykonać konieczne naprawy na koszt wynajmującego; termin wyznacz na piśmie albo mailem, żeby mieć dowód. (KC art. 663)
 24. Za czas wad ograniczających przydatność lokalu najemca może żądać odpowiedniego obniżenia czynszu; nie przysługuje to, jeżeli wiedział o wadach przy zawarciu umowy. (KC art. 664 § 1 i 3)
-25. Wada uniemożliwiająca używanie, nieusunięta mimo zawiadomienia w odpowiednim czasie albo nieusuwalna, pozwala najemcy wypowiedzieć bez terminów (KC art. 664 § 2), ale nie wtedy, gdy najemca wiedział o wadach przy zawarciu umowy (KC art. 664 § 3). Przed zapowiedzią wypowiedzenia ustal, kiedy wada powstała i czy była znana przy podpisaniu; wyjątek: wada zagrażająca zdrowiu (pkt 26, KC art. 682).
+25. Najemca może wypowiedzieć najem bez terminów, gdy wada uniemożliwiająca umówione używanie istniała przy wydaniu lokalu, powstała później i nie została usunięta w odpowiednim czasie mimo zawiadomienia albo jest nieusuwalna (KC art. 664 § 2). Uprawnienie to co do zasady odpada przy wadzie znanej przy zawarciu umowy; wyjątek dotyczący zagrożenia zdrowia sprawdź według reguły 26 (KC art. 664 § 3, KC art. 682). Przed zapowiedzią wypowiedzenia ustal, kiedy wada powstała i czy była znana przy podpisaniu.
 26. Wady zagrażające zdrowiu najemcy lub osób u niego zatrudnionych pozwalają wypowiedzieć bez terminów nawet wtedy, gdy najemca znał je przy zawarciu umowy. (KC art. 682)
 27. Najemca może zakładać instalacje (prąd, gaz, telefon i podobne), chyba że narusza to przepisy lub bezpieczeństwo nieruchomości. (KC art. 684)
 
@@ -71,6 +71,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 
 **Zwrot lokalu i protokół**
 34. Po zakończeniu najmu najemca zwraca lokal w stanie niepogorszonym; nie odpowiada za zużycie wynikające z prawidłowego używania. (KC art. 675 § 1)
+34a. Gdy najemca nie oddaje lokalu, najpierw potwierdź skuteczne zakończenie najmu i to, że dalsze używanie za zgodą wynajmującego nie przedłużyło najmu na czas nieoznaczony (KC art. 674). Po zakończeniu najmu najemca musi zwrócić lokal (KC art. 675 § 1), a wynajmujący będący właścicielem może też żądać wydania (KC art. 222 § 1); podstawę i wysokość wynagrodzenia za dalsze zajmowanie lokalu ustal z prawnikiem, bez automatycznego przypisywania byłemu najemcy złej wiary (KC art. 224 § 2, KC art. 225, KC art. 230). Kara umowna za każdy dzień zwłoki w wydaniu ułatwia rozliczenie (pkt 47), a samopomoc (wymiana zamków, odcięcie mediów) jest niedozwolona także po zakończeniu najmu (pkt 38).
 35. Domniemywa się, że lokal wydano w stanie dobrym; bez protokołu przy wydaniu ciężar wykazania wcześniejszych usterek spada na najemcę. (KC art. 675 § 3)
 
 **Prawo zastawu wynajmującego**
@@ -80,7 +81,8 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 
 **Zmiana właściciela**
 39. Nabywca lokalu wstępuje w najem w miejsce zbywcy, ale może go wypowiedzieć z ustawowym terminem. (KC art. 678 § 1)
-40. Nabywca nie może wypowiedzieć, jeżeli umowa była na czas oznaczony, w formie pisemnej z datą pewną, a lokal został już wydany najemcy; datę pewną daje m.in. poświadczenie notariusza, wzmianka w dokumencie urzędowym albo śmierć podpisującego, i musi ona powstać przed zbyciem. (KC art. 678 § 2, art. 81 § 1-2; SO Sieradz I Ca 144/19)
+40. Nabywca nie może wypowiedzieć, jeżeli umowa była na czas oznaczony, w formie pisemnej z datą pewną, a lokal został już wydany najemcy; datę pewną daje m.in. urzędowe poświadczenie daty, stwierdzenie umowy w dokumencie urzędowym, wzmianka organu albo notariusza na dokumencie, a przy dokumencie elektronicznym kwalifikowany elektroniczny znacznik czasu, i musi ona powstać przed zbyciem. Sam znacznik czasu ani zwykła data pliku nie zastępują wymaganej formy umowy ani wydania lokalu, więc sprawdź wszystkie warunki ochrony. (KC art. 678 § 2, KC art. 81 § 1, KC art. 81 § 2 pkt 1-3; SO Sieradz I Ca 144/19)
+40a. Ochrona najmu z datą pewną ma odrębny wyjątek przy nabyciu nieruchomości w egzekucji: przy najmie na czas oznaczony dłuższy niż dwa lata nabywca może w miesiąc od uprawomocnienia się postanowienia o przysądzeniu własności wypowiedzieć umowę z rocznym terminem, chyba że umowa przewiduje krótszy, mimo formy pisemnej, daty pewnej i wydania lokalu. Po informacji o licytacji przekaż umowę prawnikowi. (KPC art. 1002)
 41. Najemca wypowiedziany przez nabywcę wcześniej, niż przewidywała umowa, może żądać odszkodowania od zbywcy, ale musi go niezwłocznie zawiadomić. (KC art. 679 § 1-2) Ograniczenie wypowiedzenia przez nabywcę z art. 692 dotyczy tylko lokali mieszkalnych. (KC art. 692)
 
 **Dzierżawa a najem**
@@ -94,7 +96,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 47. Kara umowna (np. za opóźnienie w wydaniu lokalu, za każdy dzień bezumownego zajmowania) należy się bez względu na szkodę; sąd może ją obniżyć przy znacznym wykonaniu albo rażącym wygórowaniu. (KC art. 484 § 1-2)
 48. Akt notarialny z poddaniem się egzekucji co do zapłaty czynszu i wydania lokalu (z terminem lub zdarzeniem) jest tytułem egzekucyjnym, co skraca drogę do opróżnienia lokalu bez procesu. (KPC art. 777 § 1 pkt 4-5)
 49. Opróżnienie lokalu wykonuje komornik po wezwaniu do dobrowolnego wydania. (KPC art. 1046 § 1)
-50. Spór dwóch przedsiębiorców o najem to sprawa gospodarcza: wszystkie twierdzenia i dowody trzeba podać w pozwie albo odpowiedzi na pozew. (KPC art. 458¹ § 1, art. 458⁵ § 1)
+50. Spór dwóch przedsiębiorców o najem to sprawa gospodarcza: wszystkie twierdzenia i dowody trzeba podać w pozwie albo odpowiedzi na pozew. (KPC art. 458² § 1 pkt 1, KPC art. 458⁵ § 1)
 
 **VAT i faktury (skrót)**
 51. Najem lokalu użytkowego jest co do zasady opodatkowany VAT stawką podstawową, a zwolnienie dotyczy najmu na cele wyłącznie mieszkaniowe [spoza plików lokalnych: ustawa o VAT; WYMAGA WERYFIKACJI artykułów przed użyciem w skillu].
@@ -104,15 +106,15 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 
 1. **Wypowiedzenie umowy najmu** (najemca albo wynajmujący). Elementy: strony z danymi z KRS/CEIDG; oznaczenie umowy (data, lokal, adres, powierzchnia); podstawa (czas nieoznaczony z terminem, klauzula z umowy przy czasie oznaczonym z numerem paragrafu, podstawa natychmiastowa z KC); wskazanie terminu wypowiedzenia i daty końca najmu; termin ustawowy przy lokalu na czas nieoznaczony z czynszem miesięcznym to 3 miesiące naprzód na koniec miesiąca kalendarzowego (KC art. 688, przepis szczególny dla lokali), a w pozostałych układach według częstotliwości płatności: czynsz płatny rzadziej niż miesięcznie to 3 miesiące na koniec kwartału kalendarzowego, płatny częściej niż miesięcznie to 3 dni naprzód, a przy najmie dziennym 1 dzień naprzód (KC art. 673 § 2); termin z umowy ma pierwszeństwo przed ustawowym (KC art. 673 § 1), z zastrzeżeniem z reguły 8, czy przy lokalu da się skrócić 3 miesiące z KC art. 688; przy czasie oznaczonym tylko wypadki z umowy (KC art. 673 § 3) albo ustawowe podstawy natychmiastowe z reguły 9; prośba o termin zdania lokalu; podpis osoby uprawnionej do reprezentacji; forma zgodna z umową, minimum dokumentowa (KC art. 77 § 2); dowód doręczenia (list polecony za zwrotnym potwierdzeniem, e-Doręczenia albo osobiście z potwierdzeniem).
 2. **Uprzedzenie o zamiarze wypowiedzenia z powodu zaległości** (wynajmujący, przed wypowiedzeniem). Elementy: forma pisemna; wyliczenie zaległości za co najmniej dwa pełne okresy (miesiące, kwoty, terminy płatności); wyznaczenie dodatkowego terminu miesięcznego na zapłatę; numer rachunku; zapowiedź wypowiedzenia bez terminów po bezskutecznym upływie. (KC art. 687) Po upływie: osobne pismo wypowiedzenia.
-3. **Wezwanie do usunięcia wad lokalu / wykonania napraw** (najemca). Elementy: opis wady (miejsce, od kiedy, zdjęcia, ocena wpływu na działalność); powołanie KC art. 662 § 1 i KC art. 666 § 2 (zawiadomienie); wyznaczenie odpowiedniego terminu (z uzasadnieniem, np. 14 dni, przy awarii krócej); zapowiedź naprawy na koszt wynajmującego po bezskutecznym upływie (KC art. 663); zastrzeżenie obniżenia czynszu za czas wady (KC art. 664 § 1) z proponowaną kwotą lub procentem; przy wadzie uniemożliwiającej używanie zapowiedź wypowiedzenia bez terminów (KC art. 664 § 2) tylko, gdy najemca nie znał wady przy zawarciu umowy (KC art. 664 § 3); przy wadzie znanej wcześniej zapowiedź wyłącznie, gdy wada zagraża zdrowiu najemcy albo osób u niego zatrudnionych (KC art. 682). Bez samowolnego potrącenia całego czynszu: potrącenie tylko wierzytelności wymagalnej i wyliczonej (KC art. 498 § 1).
+3. **Wezwanie do usunięcia wad lokalu / wykonania napraw** (najemca). Elementy: opis wady (miejsce, od kiedy, zdjęcia, ocena wpływu na działalność); powołanie KC art. 662 § 1 i KC art. 666 § 2 (zawiadomienie); wyznaczenie odpowiedniego terminu (z uzasadnieniem, np. 14 dni, przy awarii krócej); zapowiedź naprawy na koszt wynajmującego po bezskutecznym upływie (KC art. 663); zastrzeżenie obniżenia czynszu za czas wady (KC art. 664 § 1) z proponowaną kwotą lub procentem; przy wadzie uniemożliwiającej używanie podstawę zapowiedzi wypowiedzenia bez terminów dobierz według trzech sytuacji z reguły 25, z uwzględnieniem wiedzy o wadzie przy zawarciu umowy i wyjątku z reguły 26 (KC art. 664 § 2 i § 3, KC art. 682). Bez samowolnego potrącenia całego czynszu: potrącenie tylko wierzytelności wymagalnej i wyliczonej (KC art. 498 § 1).
 4. **Wezwanie do zwrotu kaucji** (najemca). Elementy: kwota i data wpłaty, paragraf umowy, data zwrotu lokalu i protokołu, brak roszczeń wynajmującego lub ich zakwestionowanie, termin zapłaty, rachunek, zapowiedź odsetek (KC art. 481 § 1) i drogi sądowej.
 5. **Wypowiedzenie wysokości czynszu (podwyżka)** (wynajmujący, bez klauzuli waloryzacyjnej). Elementy: dotychczasowa i nowa stawka; termin wypowiedzenia dotychczasowej stawki: najpóźniej na miesiąc naprzód, na koniec miesiąca kalendarzowego, a nowa stawka obowiązuje od następnego dnia (np. przy doręczeniu 6 listopada wypowiedzenie upływa 31 grudnia, nowa stawka od 1 stycznia); podstawa KC art. 685¹; uzasadnienie rynkowe (zalecane).
 6. **Protokół zdawczo-odbiorczy (lista)**. Elementy: data i godzina; strony i osoby obecne z umocowaniem; adres i oznaczenie lokalu; stany liczników (prąd, woda, gaz, ciepło) ze zdjęciami; liczba kluczy, kart, pilotów, kodów alarmu; opis pomieszczeń po kolei (ściany, podłogi, sufity, stolarka, instalacje, oświetlenie, sanitariaty, klimatyzacja, wentylacja, p.poż., witryny i szyldy); wyposażenie z listą i stanem; usterki istniejące z numerami zdjęć; nakłady i ulepszenia najemcy i decyzja wynajmującego (zatrzymuje za zapłatą czy przywrócenie, KC art. 676); zużycie normalne a uszkodzenia (KC art. 675 § 1); rzeczy pozostawione; termin usunięcia usterek; rozliczenie kaucji; dokumentacja (deklaracje, przeglądy, certyfikat energetyczny); podpisy obu stron na każdej stronie; dokumentacja zdjęciowa z datą jako załącznik. Przy wydaniu protokół obala domniemanie z KC art. 675 § 3.
 7. **Wniosek o zgodę na podnajem albo na prace adaptacyjne** (najemca). Elementy: zakres, podnajemca lub prace, czas, sposób rozliczenia nakładów po zakończeniu, odpowiedzialność za szkody, forma aneksu.
 8. **Zawiadomienie zbywcy o przedwczesnym wypowiedzeniu przez nabywcę** (najemca). Elementy: data zbycia, wypowiedzenie nabywcy, zarzuty (data pewna, czas oznaczony, wydanie lokalu), zastrzeżenie odszkodowania. (KC art. 679 § 2)
-9. **Wezwanie do wydania lokalu po zakończeniu najmu** (wynajmujący). Elementy: data końca najmu, podstawa, termin wydania, zapowiedź odszkodowania za bezumowne korzystanie i pozwu o wydanie; bez gróźb samopomocy (KC art. 690).
+9. **Wezwanie do wydania lokalu po zakończeniu najmu** (wynajmujący). Elementy: data końca najmu i sposób jej ustalenia (bez przedłużenia z KC art. 674), podstawa, termin wydania, zapowiedź roszczeń za dalsze zajmowanie lokalu po sprawdzeniu ich podstawy i wysokości (reguła 34a) albo kary umownej z umowy oraz pozwu o wydanie; bez gróźb samopomocy (KC art. 690).
 
-Firma sama może też: negocjować klauzule (kaucja, waloryzacja, podział napraw, nakłady, wypowiedzenie przy czasie oznaczonym), zadbać o datę pewną (notarialne poświadczenie daty, KC art. 81 § 2) przed planowaną sprzedażą budynku, prowadzić korespondencję i dokumentację zdjęciową.
+Firma sama może też: negocjować klauzule (kaucja, waloryzacja, podział napraw, nakłady, wypowiedzenie przy czasie oznaczonym), zadbać o datę pewną (poświadczenie daty u notariusza albo, przy umowie podpisanej elektronicznie, kwalifikowany elektroniczny znacznik czasu na pliku umowy; KC art. 81 § 1, KC art. 81 § 2 pkt 3) przed planowaną sprzedażą budynku, prowadzić korespondencję i dokumentację zdjęciową.
 
 ### A4. Sygnały „tylko prawnik”
 
@@ -181,29 +183,17 @@ Brak zweryfikowanego orzecznictwa o: art. 15ze ustawy COVID (galerie, historyczn
 
 ## Źródła i akty spoza wbudowanych
 
-### Akty spoza plików lokalnych potrzebne skillowi
+### Akty spoza plików lokalnych potrzebne modułowi
 
 | Akt | ELI / publikator | Po co |
 |---|---|---|
-| Ustawa z 23 stycznia 2026 r. o zmianie ustawy o KSC oraz niektórych innych ustaw | DU/2026/252 | przepisy przejściowe NIS2 (art. 22-48), tabele załączników nr 1 i 2 |
-| Rozporządzenie Prezesa Rady Ministrów z 30 grudnia 2020 r. w sprawie szczegółowych rodzajów kosztów postępowania odwoławczego, ich rozliczania oraz wysokości i sposobu pobierania wpisu od odwołania | DU/2020/2437 | stawki wpisu do KIO |
-| Obwieszczenie Prezesa UZP z 8 grudnia 2025 r. (progi unijne i kurs na 2026-2027) | MP/2025/1247 | progi w złotych |
-| Ustawa z 9 listopada 2018 r. o elektronicznym fakturowaniu w zamówieniach publicznych, koncesjach na roboty budowlane lub usługi oraz partnerstwie publiczno-prywatnym | DU/2018/2191, t.j. DU/2026/276 | faktury ustrukturyzowane, PEF |
-| Ustawa z 11 marca 2004 r. o podatku od towarów i usług | DU/2004/535 (t.j. wg PZP art. 225: Dz. U. 2025 poz. 775) | VAT od najmu lokalu, KSeF |
-| Ustawa z 25 lipca 2025 r. o zmianie ustawy PZP oraz niektórych innych ustaw | DU/2025/1173 | próg 170 000 zł, przepisy przejściowe art. 7-10 |
-| Ustawa z 9 lipca 2025 r. o zmianie ustawy PZP oraz ustawy o umowie koncesji | DU/2025/1165 [numer wg ISAP z wyników wyszukiwania, WYMAGA WERYFIKACJI] | wykonawcy z państw trzecich |
-| Rozporządzenie Ministra Rozwoju, Pracy i Technologii w sprawie podmiotowych środków dowodowych (wydane na podstawie PZP art. 128 ust. 6) | DU/2020/2415 [WYMAGA WERYFIKACJI] | jakie dokumenty i jak stare |
-| Rozporządzenie Komisji (UE) nr 651/2014, załącznik I | Dz. Urz. UE L 187 z 26.06.2014 | progi mikro, małego, średniego przedsiębiorcy |
-| Rozporządzenie wykonawcze Komisji (UE) 2024/2690 | Dz. Urz. UE (17.10.2024) | środki i progi incydentu poważnego dla dostawców cyfrowych |
+| Ustawa z 11 marca 2004 r. o podatku od towarów i usług | DU/2004/535 | VAT od najmu lokalu, KSeF |
 | Ustawa z 21 czerwca 2001 r. o ochronie praw lokatorów | DU/2001/733 | tylko rozgraniczenie: nie dotyczy lokali użytkowych |
-| RODO (rozporządzenie 2016/679) art. 33 | Dz. Urz. UE L 119 z 4.05.2016 | zgłoszenie naruszenia danych równolegle do incydentu |
 
 ### Kwestie sporne i niepewne (przedstawiaj jako pytania do prawnika, nie jako regułę)
 
-1. Czy umowa najmu lokalu użytkowego może skrócić 3-miesięczny termin z KC art. 688 (relacja do art. 673 § 1).
+1. Czy umowa najmu lokalu użytkowego może skrócić 3-miesięczny termin z KC art. 688 (relacja do KC art. 673 § 1).
 2. Skuteczność jednostronnej podwyżki z KC art. 685¹ przy umowie na czas oznaczony z ustaloną stawką.
 3. Czy ogólna klauzula „z ważnych przyczyn” spełnia KC art. 673 § 3 (orzeczenia SN nieotwarte; skill mieszkaniowy przyjmuje, że wystarcza).
-4. Czy kara z KSC art. 73 ust. 5 (do 100 mln zł) jest objęta 2-letnim moratorium z art. 35 ustawy zmieniającej.
-5. Intertemporalność progu 170 000 zł (art. 7-10 ustawy z 25 lipca 2025 r.).
-6. VAT od najmu lokalu użytkowego i relacja PEF z KSeF: tylko z wyników wyszukiwania, bez lektury ustaw lokalnie.
-7. Orzeczenia SN do najmu: 4 pozycje nieotwarte (sn.pl zwraca pustą treść); KIO 8/25: data z nagłówka w wynikach wyszukiwania.
+4. VAT od najmu lokalu użytkowego: tylko z wyników wyszukiwania, bez lektury ustawy lokalnie.
+5. Orzeczenia SN do najmu: 4 pozycje nieotwarte (sn.pl zwraca pustą treść).
