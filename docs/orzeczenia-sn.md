@@ -34,7 +34,7 @@ Cztery sygnatury mają w API po dwa orzeczenia (postanowienie i wyrok): II KK 42
 
 ## NSA: ręcznie
 
-Baza CBOSA (orzeczenia.nsa.gov.pl) nie ma API, a jej robots.txt zabrania robotom wyszukiwania. Orzeczenia NSA pobiera człowiek: I FSK 1239/24, II FSK 1301/25, II GSK 883/11 (zlecenie dla Michała, artefakt z 6 XI 2026).
+Baza CBOSA (orzeczenia.nsa.gov.pl) nie ma API. robots.txt zabrania robotom wyszukiwarki (`/cbo/search`, `/cbo/find`, `/cbo/do/*`) i plików `.txt`, ale strony samych orzeczeń `/doc/<ID>` są dozwolone. Gdy adres `/doc/` jest znany (z researchu albo z odnośnika), pobieramy stronę pojedynczo z przerwą i przedstawiającym się User-Agentem; wyszukiwarki CBOSA nie używamy. 6 XI 2026 tak pobrano I FSK 1239/24, II FSK 1301/25 i II GSK 883/11 (teksty i zrodla.txt w `docs/orzeczenia-nsa/`; zlecenie dla Michała oznaczone jako wykonane). Tezy porównane: II GSK 883/11 zgodna, II FSK 1301/25 i I FSK 1239/24 doprecyzowane. Gdy adresu nie znamy, orzeczenie NSA wyszukuje człowiek.
 
 ## Wniosek do SN o ponowne wykorzystywanie: niepotrzebny
 
