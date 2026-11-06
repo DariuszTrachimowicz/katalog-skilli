@@ -20,12 +20,13 @@ export function subscriptionForm({confirm, preference, token, statuses = {}}) {
   return subscriptionPage({title:confirm?'Potwierdź swój zapis':requestOnly?'Anuluj ten zapis':'Twoje wiadomości, Twój wybór',intro:confirm?'Jeszcze jeden krok. Potwierdź, że chcesz otrzymywać newsletter AiXperts i Digital Xperts.':requestOnly?'Możesz anulować wybory z przesłanego formularza.':'Możesz w każdej chwili zrezygnować z wiadomości. Wybierz zakres i zatwierdź poniżej.',body:status+(requestOnly&&!confirm?'<div class="note">Ten link dotyczy nowego zgłoszenia. Wcześniejsze zgody pozostają niezależne. Wycofasz je przez link w otrzymanym newsletterze.</div>':'')+form+'<a class="secondary" href="https://aixperts.pl/">Przejdź do AiXperts</a>'});
 }
 
-export function subscriptionResult({confirm, status, requestOnly = false, channel, hasSms = false}) {
+// extra: gotowy HTML od wywołującego (np. bonus po potwierdzeniu), wstawiany przed notą.
+export function subscriptionResult({confirm, status, requestOnly = false, channel, hasSms = false, extra = ''}) {
   const withdrawn = confirm && status === 'wycofana';
   const title = withdrawn?'Ten zapis jest wycofany':confirm?'Zapis potwierdzony!':requestOnly?'Gotowe. Zapis anulowany.':'Gotowe. Zgoda wycofana.';
   const intro = withdrawn?'Nie zapisaliśmy Cię ponownie do newslettera.':confirm?'Dziękujemy za potwierdzenie. Będziemy przesyłać Ci newsletter AiXperts i Digital Xperts.':requestOnly?'Zapisaliśmy anulowanie wybranych kanałów w tym zgłoszeniu.':channel==='email'?'Nie będziemy już wysyłać Ci newslettera e-mail AiXperts i Digital Xperts.':channel==='sms'?'Nie będziemy już wysyłać wiadomości marketingowych SMS na numer objęty tym zgłoszeniem.':'Wycofaliśmy wszystkie zgody marketingowe AiXperts i Digital Xperts powiązane z tym zapisem.';
   const note = withdrawn?'Jeśli kiedyś zechcesz wrócić, możesz ponownie wypełnić formularz zapisu.':confirm?(hasSms?'Jeśli wybrano też SMS, ten kanał nadal czeka na potwierdzenie numeru telefonu.':'Zgodę możesz wycofać w dowolnym momencie przez link w stopce wiadomości.'):requestOnly?'Wcześniejsze zgody pozostają niezależne. Aby je wycofać, użyj linku w otrzymanym newsletterze.':'Ta zmiana dotyczy marketingu. Nadal możesz otrzymywać wiadomości potrzebne do obsługi konta lub zamówień.';
-  return subscriptionPage({title,intro,success:true,eyebrow:'POTWIERDZENIE',body:`<div class="note">${esc(note)}</div><a class="button" href="https://aixperts.pl/">Przejdź do AiXperts</a><p class="quiet">${confirm&&!withdrawn?'Możesz już zamknąć tę kartę.':'Nie musisz już nic robić. Możesz zamknąć tę kartę.'}</p>`});
+  return subscriptionPage({title,intro,success:true,eyebrow:'POTWIERDZENIE',body:`${extra}<div class="note">${esc(note)}</div><a class="${extra?'secondary':'button'}" href="https://aixperts.pl/">Przejdź do AiXperts</a><p class="quiet">${confirm&&!withdrawn?'Możesz już zamknąć tę kartę.':'Nie musisz już nic robić. Możesz zamknąć tę kartę.'}</p>`});
 }
 
 export function sendSubscriptionPage(res, html, status = 200) {

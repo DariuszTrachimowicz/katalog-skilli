@@ -12,6 +12,8 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 import { zbudujZip } from "./narzedzia/zip.mjs";
+import { TEXT as TEKST_ZGODY } from "./serwer/subskrypcje.mjs";
+import { komplet } from "./serwer/mail-design.mjs";
 import { render, naglowkiPoziom2, frontmatter, lista, esc } from "./narzedzia/markdown.mjs";
 
 const KORZEN = dirname(fileURLToPath(import.meta.url));
@@ -287,11 +289,12 @@ var b=f.querySelector("button");b.disabled=true;b.textContent="Wysyłam…";
 var dane={email:f.email.value,skill:skill};
 if(f.telefon)dane.telefon=f.telefon.value;
 if(f.zgodaSms){dane.zgodaSms=f.zgodaSms.checked;dane.wersjaZgodySms="2026-09-09";}
+if(f.zgodaEmail){dane.zgodaEmail=f.zgodaEmail.checked;dane.wersjaZgodySms="2026-09-09";}
 if(f.powiadomWersje)dane.powiadomWersje=f.powiadomWersje.checked;
 var podpis=JSON.stringify(dane);if(f._pobraniePodpis!==podpis){f._pobraniePodpis=podpis;f._pobranieId=crypto.randomUUID();}dane.requestId=f._pobranieId;
 try{var o=await fetch("/api/pobranie",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(dane)});
 var d=await o.json().catch(function(){return{}});
-if(o.ok){var sms=dane.zgodaSms?(d.subskrypcje&&d.subskrypcje.sms==='oczekuje_potwierdzenia_numeru'?' Wybór SMS zapisany. Wysyłka reklam pozostaje nieaktywna do potwierdzenia numeru.':' Nie potwierdzono zapisu SMS. Możesz ponowić wybór w formularzu newslettera.') : '';f.closest(".dl").outerHTML='<div class="dl dl-ok" role="status"><b>Sprawdź skrzynkę</b><span>Link do pobrania wysłaliśmy na Twój adres. Nie widzisz go po minucie? Zajrzyj do spamu.'+sms+'</span></div>';}
+if(o.ok){var sms=dane.zgodaSms?(d.subskrypcje&&d.subskrypcje.sms==='oczekuje_potwierdzenia_numeru'?' Wybór SMS zapisany. Wysyłka reklam pozostaje nieaktywna do potwierdzenia numeru.':' Nie potwierdzono zapisu SMS. Możesz ponowić wybór w formularzu newslettera.') : '';var nm=d.newsletterMail,nl=dane.zgodaEmail?(nm==='wyslany'?' Potwierdzenie newslettera wysłaliśmy osobnym mailem, w nim jest też link do bonusu.':(d.subskrypcje&&d.subskrypcje.email==='oczekuje_potwierdzenia'?' Nie mamy pewności, że mail z potwierdzeniem newslettera wyszedł. Jeśli nie dotrze, zapisz się przyciskiem poniżej.':' Nie zapisano newslettera. Możesz zapisać się poniżej.')):'';var zapr=(!dane.zgodaEmail||nm!=='wyslany')&&f.dataset.bonus?'<div class="dl-news"><b>Bonus dla zapisanych na newsletter: '+f.dataset.bonus+' w jednym pliku</b><span>Piszemy o nowych skillach, aktualizacjach pod zmiany przepisów, czasem o naszych szkoleniach i usługach. To dobrowolne: każdy skill nadal pobierzesz osobno za darmo, a bonus zostaje po wypisie.</span><a class="btn line" href="/#newsletter" data-umami-event="newsletter-z-pobrania">Zapisz się i odbierz bonus</a></div>':'';f.closest(".dl").outerHTML='<div class="dl dl-ok" role="status"><b>Sprawdź skrzynkę</b><span>'+(d.paczka==='w_toku'?'Wysyłka linku do tego zgłoszenia już trwa albo jej wynik jest niepewny. Jeśli mail nie dotrze w ciągu kilku minut, odśwież stronę i poproś o link jeszcze raz.':'Link do pobrania wysłaliśmy na Twój adres. Nie widzisz go po minucie? Zajrzyj do spamu.')+nl+sms+'</span>'+zapr+'</div>';}
 else{b.disabled=false;b.textContent="Wyślij link";var pole=f.querySelector("input");pole.setCustomValidity(d.blad||"Nie udało się wysłać");f.reportValidity();setTimeout(function(){pole.setCustomValidity("")},2500);}
 }catch(e){b.disabled=false;b.textContent="Spróbuj ponownie";}
 return false;});</script>`;
@@ -299,12 +302,14 @@ return false;});</script>`;
 function formularzPobrania(idPaczki) {
   return `<div class="dl"><b>Pobierz za darmo</b><span>Podaj e-mail, wyślemy link do pobrania.</span>
     <p class="plik">${esc(idPaczki)}.skill</p>
-    <form class="dl-form" onsubmit="event.preventDefault();poprosOPaczke(this,'${idPaczki}')">
+    <form class="dl-form" data-bonus="${komplet(LICZBA_GOTOWYCH)}" onsubmit="event.preventDefault();poprosOPaczke(this,'${idPaczki}')">
       <label class="sr-only" for="dl-mail-${idPaczki}">Adres e-mail do wysyłki linku</label>
       <input type="email" name="email" id="dl-mail-${idPaczki}" required placeholder="twoj@adres.pl" autocomplete="email">
       <label class="sr-only" for="dl-phone-${idPaczki}">Telefon z prefiksem kraju, opcjonalnie</label>
       <input type="tel" name="telefon" id="dl-phone-${idPaczki}" placeholder="Telefon, np. +48 500 100 200 (opcjonalnie)" autocomplete="tel">
       <label class="dl-zgoda aix-sub-choice" data-aix-sms-phone="#dl-phone-${idPaczki}" hidden><input type="checkbox" name="zgodaSms" disabled> <span>Chcę otrzymywać od D-X.PL Michał Jaśkiewicz wiadomości SMS o ofertach, nowościach i promocjach AiXperts i Digital Xperts na podany numer telefonu. Zgodę mogę wycofać w każdej chwili.</span></label>
+      <p class="dl-bonus"><b>Bonus dla zapisanych na newsletter:</b> ${komplet(LICZBA_GOTOWYCH)} w jednym pliku, mailem po potwierdzeniu zapisu.</p>
+      <label class="dl-zgoda"><input type="checkbox" name="zgodaEmail"> <span>${esc(TEKST_ZGODY.email)}</span></label>
       <label class="dl-zgoda"><input type="checkbox" name="powiadomWersje"> <span>Napisz do mnie, gdy wyjdzie nowa wersja tego skilla (poprawki, zmiany przepisów). Tylko o tym skillu, bez reklam. Wypis jednym kliknięciem w każdej wiadomości.</span></label>
       <button class="btn" data-umami-event="prosba-o-paczke" data-umami-event-skill="${idPaczki}">Wyślij link</button>
     </form>
@@ -644,6 +649,7 @@ function stronaGlowna(skille) {
       <p class="eyebrow">Newsletter</p>
       <h2 id="nw-t">Prawo się zmienia. Niech Twoje skille zmieniają się razem z nim.</h2>
       <p>Raz na jakiś czas jeden mail: nowy skill, aktualizacja pod zmianę przepisów (KSeF, AML, AI Act, RODO) albo konkretna porada. Wypiszesz się jednym kliknięciem w stopce.</p>
+      <p><b>Bonus na start:</b> ${komplet(LICZBA_GOTOWYCH)} w jednym pliku, mailem po potwierdzeniu zapisu.</p>
     </div>
     <div data-aix-subskrypcje="katalog-newsletter"><p>Formularz zapisu wymaga JavaScript. Możesz też napisać do kontakt@aixperts.pl.</p></div>
   </div></div>
@@ -744,6 +750,7 @@ rmSync(WY, { recursive: true, force: true });
 mkdirSync(WY, { recursive: true });
 
 const skille = wczytajSkille();
+const LICZBA_GOTOWYCH = skille.filter((s) => s.status === "gotowy").length;
 if (!skille.length) {
   console.error("Nie znaleziono żadnych skilli w katalogu skille/. Przerywam.");
   process.exit(1);
@@ -803,6 +810,23 @@ for (const s of skille) {
   const zip = zbudujZip(pliki);
   zapisz(join(KORZEN, "paczki", `${s.id}.skill`), zip);
   console.log(`  paczka  paczki/${s.id}.skill  (${pliki.length} plików, ${(zip.length / 1024).toFixed(1)} KB)`);
+}
+// Bonus dla zapisanych na newsletter: wszystkie paczki w jednym ZIP-ie (wydaje go usługa po potwierdzeniu zapisu).
+{
+  const gotowe = skille.filter((s) => s.status === "gotowy");
+  const pliki = gotowe.map((s) => ({ nazwa: `skille-po-polsku/${s.id}.skill`, dane: readFileSync(join(KORZEN, "paczki", `${s.id}.skill`)) }));
+  pliki.push({ nazwa: "skille-po-polsku/CZYTAJ-MNIE.txt", dane: Buffer.from(`${cfg.nazwaSerwisu}: komplet ${gotowe.length} skilli, stan z ${new Date().toISOString().slice(0, 10)}.
+
+Każdy plik .skill wgrywasz osobno:
+Claude: Ustawienia -> Umiejętności -> Prześlij umiejętność
+ChatGPT: Skills -> Upload from your computer (plan Business lub wyższy)
+
+Wgraj tylko te, których potrzebujesz. Opisy: https://${cfg.domena}/
+Licencja: ${cfg.licencja}, szczegóły w pliku LICENSE.txt w każdej paczce.
+`, "utf8") });
+  const zip = zbudujZip(pliki);
+  zapisz(join(KORZEN, "paczki", "komplet-skilli.zip"), zip);
+  console.log(`  komplet paczki/komplet-skilli.zip  (${gotowe.length} skilli, ${(zip.length / 1048576).toFixed(1)} MB)`);
 }
 
 /* ---------- poradniki (klaster treści KSeF) ---------- */

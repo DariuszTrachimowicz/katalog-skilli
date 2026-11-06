@@ -113,7 +113,11 @@ test('usługa: zapis zgody, wysyłka po zmianie wersji przy starcie, rezygnacja'
     assert.equal(tak.powiadomWersje.udzielona, true);
     assert.equal(tak.powiadomWersje.tresc, TRESC_ZGODY_WERSJI);
     assert.equal(ev.find((r) => r.email === 'nie@example.invalid').powiadomWersje, null, 'tylko boolean true jest zgodą');
-    assert.match(mails.find((m) => m.to.includes('tak@example.invalid')).text, /wypisz-wersje/);
+    const paczka = mails.find((m) => m.to.includes('tak@example.invalid'));
+    assert.match(paczka.text, /wypisz-wersje/);
+    // Wersja HTML niesie te same linki co tekst (pobranie i wypis), nie tylko wygląd.
+    for (const u of paczka.text.match(/https:\/\/\S+\/api\/\S+/g)) assert.ok(paczka.html.includes(u), 'link z tekstu w HTML: ' + u);
+    assert.doesNotMatch(mails.find((m) => m.to.includes('nie@example.invalid')).html, /wypisz-wersje/, 'bez zgody bez ramki powiadomień');
     for (const r of ev.filter((r) => r.typ === 'pobranie-prosba')) await (await fetch(base + '/api/pobierz?t=' + r.token)).arrayBuffer();
     const wypis = ev.find((r) => r.email === 'wypis@example.invalid');
     assert.equal((await fetch(base + '/api/wypisz-wersje?t=' + wypis.token)).status, 200);
@@ -137,6 +141,9 @@ test('usługa: zapis zgody, wysyłka po zmianie wersji przy starcie, rezygnacja'
     assert.match(mails[0].subject, /Iks \(1\.1\.0\)/);
     assert.match(mails[0].text, /Co nowego: Nowe brzmienie KP\./);
     assert.match(mails[0].text, /api\/pobierz\?t=[0-9a-f]{48}/);
+    assert.match(mails[0].text, /z 6 listopada 2026/);
+    for (const u of mails[0].text.match(/https:\/\/\S+\/api\/\S+/g)) assert.ok(mails[0].html.includes(u), 'link z tekstu w HTML: ' + u);
+    assert.match(mails[0].html, /Co nowego[\s\S]*Nowe brzmienie KP\./);
     assert.deepEqual(JSON.parse(await readFile(join(dir, 'data', 'wersje-powiadomione.json'), 'utf8')), { x: '1.1.0' });
   } finally { child.kill(); }
   await new Promise((r) => setTimeout(r, 100));
@@ -169,4 +176,15 @@ test('SMTP: serwer zamykający połączenie daje błąd, nie zawieszenie', async
   for (let n = 0; n < 100; n++) { try { if ((await fetch(base + '/api/zdrowie')).ok) break; } catch {} await new Promise((r) => setTimeout(r, 30)); }
   const odp = await fetch(base + '/api/pobranie', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: 'a@example.invalid', skill: 'x', requestId: crypto.randomUUID() }), signal: AbortSignal.timeout(5000) });
   assert.equal(odp.status, 502);
+});
+
+test('szablon HTML maili katalogu escapuje dane i nie ma pauz', async () => {
+  const { htmlNowejWersji, htmlPaczki } = await import('../serwer/mail-design.mjs');
+  const baza = 'https://skille.aixperts.pl';
+  const html = htmlNowejWersji({ baza, nazwaSerwisu: 'S', skill: { id: 'x', nazwa: '<img src=x onerror=alert(1)>', wersja: '1.0.1', zmiany: 'a & "b"' }, data: '', pobierz: baza + '/api/pobierz?t=ab', wypis: baza + '/api/wypisz-wersje?t=ab' });
+  assert.doesNotMatch(html, /<img src=x/);
+  assert.match(html, /&lt;img src=x/);
+  assert.match(html, /a &amp; &quot;b&quot;/);
+  const p = htmlPaczki({ baza, nazwaSerwisu: 'S', domena: 'skille.aixperts.pl', skill: { id: 'x', nazwa: 'X', skrot: 'y' }, pobierz: baza + '/api/pobierz?t=ab', trial: false, wypisWersji: null });
+  for (const h of [html, p]) assert.ok(![...h].some((c) => c === String.fromCharCode(0x2014) || c === String.fromCharCode(0x2013)), 'bez pauz i półpauz');
 });

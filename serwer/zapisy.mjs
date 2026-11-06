@@ -13,12 +13,15 @@ import { createServer } from "node:http";
 import { createConnection } from "node:net";
 import { connect as polaczTls } from "node:tls";
 import { readFileSync, appendFileSync, existsSync, mkdirSync } from "node:fs";
-import { randomBytes, timingSafeEqual, createHash } from "node:crypto";
+import { randomBytes, timingSafeEqual, createHash, randomUUID } from "node:crypto";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import {createSubscriptions, appendDurable, ORIGINS} from './subskrypcje.mjs';
+import {createSubscriptions, appendDurable, ORIGINS, TEXT as TEKST_ZGODY, VERSION as WERSJA_ZGODY} from './subskrypcje.mjs';
 import {createEventInbox} from './crm-events.mjs';
-import {newsletterConfirmation,mailMimeBody} from './mail-design.mjs';
+import {newsletterConfirmation,mailMimeBody,htmlPaczki,htmlNowejWersji,htmlPotwierdzenia,htmlZestawu,komplet} from './mail-design.mjs';
+const MIESIACE = ["stycznia","lutego","marca","kwietnia","maja","czerwca","lipca","sierpnia","września","października","listopada","grudnia"];
+const dataPl = (iso) => { const [r, m, d] = String(iso).split("-").map(Number); return r && m && d ? `${d} ${MIESIACE[m - 1]} ${r}` : String(iso); };
+const WYGLAD = () => ({ baza: BAZA, nazwaSerwisu: cfg.nazwaSerwisu, domena: cfg.domena });
 import {subscriptionPage,subscriptionForm,subscriptionResult,sendSubscriptionPage} from './subscription-pages.mjs';
 import {odbiorcy,zmienione,wypisanyZWersji,TRESC_ZGODY_WERSJI,WERSJA_ZGODY_WERSJI} from './powiadomienia-wersji.mjs';
 import {writeFileSync,renameSync} from 'node:fs';
@@ -70,12 +73,31 @@ const DZIENNIK_MAILI = join(dirname(C.plikDanych), "wyslane-maile.log");
 const subskrypcje = createSubscriptions(join(dirname(C.plikDanych), 'subskrypcje.jsonl'),{publicBase:BAZA_SUBSKRYPCJI});
 const crmInbox=createEventInbox({dir:dirname(C.plikDanych),keyFile:process.env.AIX_CRM_EVENT_KEY_FILE||join(dirname(C.plikDanych),'crm-event.key')});
 
+// Bonus dla zapisanych na newsletter: komplet wszystkich paczek (build.mjs). Każda paczka
+// jest też osobno darmowa bez zgody; zachęta za zgodę to ryzyko oceny dobrowolności (EROD 05/2020 pkt 37, 46-54),
+// przyjęte decyzją Darka 6.11.2026 (ocena w DOKUMENTACJA-PROJEKTU.md).
+const KOMPLET = join(KORZEN, "paczki", "komplet-skilli.zip");
+const liczbaKompletu = () => SKILLE.filter((s) => s.gotowy).length;
+
+const blokBonusu = (confirmToken) => `<div class="note"><strong>Twój bonus:</strong> ${komplet(liczbaKompletu())} w jednym pliku ZIP. W środku osobne pliki .skill, każdy wgrywasz jak zwykle. Link działa także po wypisie.</div><a class="button" href="${BAZA}/api/komplet?t=${encodeURIComponent(confirmToken)}">Pobierz komplet skilli</a>`;
+
 async function mailSubskrypcji(requestId) {
   const r=subskrypcje.reserveMail(requestId);
   if (!r) return;
   let accepted=false;
-  try { accepted=await wyslijMail({do:r.email,...newsletterConfirmation({base:BAZA_SUBSKRYPCJI,delivery:r.delivery})}); }
+  try {
+  // Link do bonusu jest w mailu potwierdzającym na stałe (zadziała dopiero po potwierdzeniu, także po wypisie).
+  const bonus=existsSync(KOMPLET)?{url:`${BAZA}/api/komplet?t=${r.delivery.confirmToken}`,opis:komplet(liczbaKompletu())}:null;
+  accepted=await wyslijMail({do:r.email,...newsletterConfirmation({base:BAZA_SUBSKRYPCJI,delivery:r.delivery,bonus})}); }
   finally { subskrypcje.finishMail(requestId,accepted); }
+}
+// Stan maila potwierdzającego dla interfejsu: wyslany, nieudany, niepewny (próba bez wyniku) albo brak.
+// Wspólny rejestr nie ponawia potwierdzeń; przy nieudanym albo niepewnym strona proponuje zwykły formularz newslettera.
+function stanPotwierdzenia(requestId) {
+  const w = subskrypcje.rows().filter((x) => x.request_id === requestId);
+  if (w.some((x) => x.type === "confirmation-mail-result" && x.accepted === true)) return "wyslany";
+  if (w.some((x) => x.type === "confirmation-mail-result")) return "nieudany";
+  return w.some((x) => x.type === "confirmation-mail-attempt") ? "niepewny" : "brak";
 }
 
 // Ta sama wersja arkuszy co na stronach z builda, bez niej wracający
@@ -322,11 +344,13 @@ ${marketing ? "\nPo potwierdzeniu zapiszemy Cię także na wybrany newsletter Ai
 
 ${cfg.nazwaSerwisu}
 ${BAZA}`,
+  html: htmlPotwierdzenia({ ...WYGLAD(), potwierdz: `${BAZA}/api/potwierdz?t=${token}`, newsletter, marketing }),
   };
 };
 
 const mailZZestawem = (wynik, token, premium = null, marketing = true) => ({
   temat: "Twój zestaw umiejętności AI",
+  html: htmlZestawu({ ...WYGLAD(), skille: wynik.map(nazwaSkilla), premium: premium && nazwaSkilla(premium).platny ? nazwaSkilla(premium) : null, wypis: marketing ? `${BAZA}/api/wypisz?t=${token}` : null }),
   tresc: `Oto zestaw dobrany na podstawie Twoich odpowiedzi.
 
 ${wynik
@@ -499,7 +523,7 @@ const serwer = createServer(async (req, res) => {
         const token=form.get('t')||'';
         const preference=subskrypcje.find(token,confirm?'confirm_hash':'unsubscribe_hash');
         if(req.method==='GET')return sendSubscriptionPage(res,subscriptionForm({confirm,preference,token,statuses:{email:subskrypcje.status(preference.request_id,'email'),sms:subskrypcje.status(preference.request_id,'sms')}}));
-        if(confirm){const status=subskrypcje.confirm(token);return sendSubscriptionPage(res,subscriptionResult({confirm:true,status,hasSms:!!preference.consent_sms}));}
+        if(confirm){const status=subskrypcje.confirm(token);return sendSubscriptionPage(res,subscriptionResult({confirm:true,status,hasSms:!!preference.consent_sms,extra:status==='potwierdzona'&&existsSync(KOMPLET)?blokBonusu(token):''}));}
         const channel=form.get('kanal');
         // Legacy guard reads this file immediately before SMTP. Persist its block first;
         // a failed second write returns 503 but cannot leave a fresh legacy permission.
@@ -690,18 +714,43 @@ const serwer = createServer(async (req, res) => {
       const powiadomWersje = ciało.powiadomWersje === true
         ? { udzielona: true, tresc: TRESC_ZGODY_WERSJI, wersja: WERSJA_ZGODY_WERSJI, kiedy, kanal: "email" } : null;
 
-      const token = randomBytes(24).toString("hex");
-      dopisz({ typ: "pobranie-prosba", email, skill, nazwa, osoba, telefon,
-        zgodaMarketing, token, kiedy, ip, zgoda: dowodZgody("pobranie-triala", ciało.zgodaMarketing === true, kiedy), powiadomWersje, zrodlo: "pobranie-paczki" });
-      const dodatkoweSubskrypcje=subskrypcje.subscribeOptional({...ciało,email,zgodaEmail:false},'https://skille.aixperts.pl','katalog-pobranie');
+      // Idempotencja: ponowienie z tym samym requestId (np. po utracie odpowiedzi) odzyskuje tę samą prośbę
+      // i jej token; paczkę wysyła ponownie tylko, gdy poprzednia wysyłka nie była udana. Inne dane: 409.
+      const requestId = typeof ciało.requestId === "string" && /^[0-9a-f-]{36}$/i.test(ciało.requestId) ? ciało.requestId : null;
+      const odcisk = createHash("sha256").update(JSON.stringify([email, skill, nazwa, osoba, telefon, !!zgodaMarketing, !!powiadomWersje, ciało.zgodaEmail === true, ciało.zgodaSms === true])).digest("hex");
+      const poprzednia = requestId ? wczytaj().find((r) => r.typ === "pobranie-prosba" && r.requestId === requestId) : null;
+      if (poprzednia && poprzednia.odcisk !== odcisk) return odpowiedz(res, 409, { blad: "Ten identyfikator został już użyty z innymi danymi. Odśwież stronę." });
+      const token = poprzednia ? poprzednia.token : randomBytes(24).toString("hex");
+      if (!poprzednia) dopisz({ typ: "pobranie-prosba", email, skill, nazwa, osoba, telefon,
+        zgodaMarketing, token, kiedy, ip, zgoda: dowodZgody("pobranie-triala", ciało.zgodaMarketing === true, kiedy), powiadomWersje, zrodlo: "pobranie-paczki", requestId, odcisk });
+      const dodatkoweSubskrypcje=subskrypcje.subscribeOptional({...ciało,email},'https://skille.aixperts.pl','katalog-pobranie');
+      // Newsletter zaznaczony w formularzu: standardowy mail potwierdzający ze wspólnego rejestru, przed paczką
+      // i niezależnie od niej (rezerwacja przed wysyłką jak w formularzu newslettera).
+      let newsletterMail = null;
+      if (dodatkoweSubskrypcje.email === "oczekuje_potwierdzenia" && dodatkoweSubskrypcje.requestId) {
+        try { await mailSubskrypcji(dodatkoweSubskrypcje.requestId); } catch { console.error("Nie potwierdzono wysłania maila subskrypcji z pobrania."); }
+        newsletterMail = stanPotwierdzenia(dodatkoweSubskrypcje.requestId);
+      }
+      // Rezerwacja paczki: sprawdzenie i zapis próby bez await pomiędzy, zawsze (także dla pierwszego żądania,
+      // bo równoległe ponowienie mogło już zarezerwować wysyłkę w trakcie wysyłki potwierdzenia newslettera).
+      // Ponowna wysyłka tylko, gdy każda wcześniejsza próba ma zapisany wynik nieudany.
+      // shortcut: SMTP zgłasza każde zerwanie jako nieudane, więc rzadko możliwy drugi mail z tą samą paczką (nieszkodliwy).
+      const historia = wczytaj().filter((r) => r.token === token);
+      const proby = historia.filter((r) => r.typ === "pobranie-mail-proba").length, wyniki = historia.filter((r) => r.typ === "pobranie-mail");
+      if (wyniki.some((r) => r.ok)) return odpowiedz(res, 200, { ok: true, paczka: "wyslana", subskrypcje: dodatkoweSubskrypcje, newsletterMail });
+      // Próba w toku albo bez wyniku (np. awaria w trakcie): bez ponowienia na ślepo, uczciwy stan dla interfejsu.
+      if (wyniki.length < proby) return odpowiedz(res, 200, { ok: true, paczka: "w_toku", subskrypcje: dodatkoweSubskrypcje, newsletterMail });
+      dopisz({ typ: "pobranie-mail-proba", token, kiedy: new Date().toISOString() });
 
       // Centrum imports the durable request independently of optional marketing consent.
+
 
       const trial = skill.endsWith("-trial");
       const s = nazwaSkilla(trial ? skill.replace(/-trial$/, "") : skill);
       const wyslany = await wyslijMail({
         do: email,
         temat: `Twoja paczka: ${s.nazwa}${trial ? " (wersja trialowa)" : ""}`,
+        html: htmlPaczki({ ...WYGLAD(), skill: s, pobierz: `${BAZA}/api/pobierz?t=${token}`, trial, wypisWersji: powiadomWersje ? `${BAZA}/api/wypisz-wersje?t=${token}` : null }),
         tresc: `Cześć,
 
 ktoś (mamy nadzieję, że Ty) poprosił o paczkę „${s.nazwa}${trial ? ", wersja trialowa" : ""}" na ${cfg.domena}.
@@ -725,9 +774,24 @@ ${powiadomWersje ? `Przy pobraniu zaznaczono prośbę o wiadomość, gdy wyjdzie
 
 ${cfg.nazwaSerwisu}
 ${BAZA}`,
-      });
-      if (!wyslany) return odpowiedz(res, 502, { blad: "Nie udało się wysłać maila, spróbuj za chwilę.",subskrypcje:dodatkoweSubskrypcje });
-      return odpowiedz(res, 200, { ok: true,subskrypcje:dodatkoweSubskrypcje });
+      }).catch((e) => { console.error("Wysyłka paczki: błąd transportu:", e.message); return false; });
+      dopisz({ typ: "pobranie-mail", token, ok: wyslany, kiedy: new Date().toISOString() });
+      if (!wyslany) return odpowiedz(res, 502, { blad: "Nie udało się wysłać maila, spróbuj za chwilę.",subskrypcje:dodatkoweSubskrypcje, newsletterMail });
+      return odpowiedz(res, 200, { ok: true, paczka: "wyslana", subskrypcje:dodatkoweSubskrypcje, newsletterMail });
+    }
+
+    /* bonus: komplet skilli po potwierdzonym zapisie (token potwierdzenia); po wypisie dostęp zostaje */
+    if (url.pathname === "/api/komplet") {
+      const token = url.searchParams.get("t") || "";
+      let zapis = null;
+      try { zapis = subskrypcje.find(token, "confirm_hash"); } catch {}
+      const wolno = zapis && existsSync(KOMPLET) && subskrypcje.rows().some((r) => r.type === "email-confirmed" && r.request_id === zapis.request_id);
+      if (!wolno) return stronaHtml(res, "Najpierw potwierdź zapis",
+        "<p class='skrot'>Komplet skilli pobierzesz po potwierdzeniu zapisu na newsletter. Otwórz link z maila i naciśnij przycisk potwierdzenia.</p>");
+      const dane = readFileSync(KOMPLET);
+      res.once("finish", () => { try { dopisz({ typ: "komplet-pobranie", email: zapis.email, request_id: zapis.request_id, kiedy: new Date().toISOString() }); } catch {} });
+      res.writeHead(200, { "Content-Type": "application/zip", "Content-Disposition": 'attachment; filename="skille-po-polsku-komplet.zip"', "Content-Length": dane.length, "Cache-Control": "no-store" });
+      return res.end(dane);
     }
 
     /* pobranie paczki z linku w mailu */
@@ -835,9 +899,10 @@ async function powiadomONowychWersjach() {
       const ok = await wyslijMail({
         do: o.email,
         temat: `Nowa wersja skilla: ${s.nazwa} (${s.wersja})`,
+        html: htmlNowejWersji({ ...WYGLAD(), skill: s, data: s.aktualizacja ? dataPl(s.aktualizacja) : "", pobierz: `${BAZA}/api/pobierz?t=${o.token}`, wypis: `${BAZA}/api/wypisz-wersje?t=${o.token}` }),
         tresc: `Cześć,
 
-wyszła nowa wersja skilla „${s.nazwa}”: ${s.wersja}${s.aktualizacja ? ` z ${s.aktualizacja}` : ""}. Piszemy, bo przy pobraniu tego skilla zaznaczono prośbę o taką wiadomość.
+wyszła nowa wersja skilla „${s.nazwa}”: ${s.wersja}${s.aktualizacja ? ` z ${dataPl(s.aktualizacja)}` : ""}. Piszemy, bo przy pobraniu tego skilla zaznaczono prośbę o taką wiadomość.
 ${s.zmiany ? `
 Co nowego: ${s.zmiany}
 ` : ""}
