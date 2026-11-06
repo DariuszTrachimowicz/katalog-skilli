@@ -22,9 +22,15 @@ SAOS (saos.org.pl) ma orzeczenia SN tylko do czerwca 2016 r. i nie jest już pot
 
 ## Sygnatury „do weryfikacji” w skillach
 
-Wszystkie 40 sygnatur SN oznaczonych w skillach jako „do weryfikacji” lub „do potwierdzenia” istnieje w API SN (sprawdzone 6 XI 2026, `sprawdz`). To potwierdza sygnaturę, datę i formę, nie treść tezy. Następny krok: pobrać teksty i porównać tezy w skillach (`sprawy-prawne-w-firmie`, `upadlosc-konsumencka-przygotowanie`, `najem-mieszkania-pod-lupa`, `pelnomocnictwo-w-firmie`, `nakaz-zaplaty-co-dalej`, `kontrola-z-urzedu`).
+Wszystkie 40 sygnatur SN oznaczonych w skillach jako „do weryfikacji” lub „do potwierdzenia” istnieje w API SN i ma tezy porównane z pełnym tekstem (6 XI 2026). Teksty: `docs/orzeczenia-sn/teksty/` (44 orzeczenia, plus II CSK 587/10 i II UKN 687/99 sprawdzone przy okazji). Oceny z cytatami: `docs/orzeczenia-sn/weryfikacja-2026-11-06/`.
 
-Cztery sygnatury mają w API po dwa orzeczenia (postanowienie i wyrok): II KK 429/22, II PK 224/17, III KK 193/23, V CSK 30/13. Przy porównaniu wybrać to, którego dotyczy teza.
+Wynik (ok. 76 miejsc w skillach bez kopii): 4 tezy niezgodne z orzeczeniem (III CZP 30/06, IV CZ 7/09, I UK 231/14, I KS 27/23), kilkanaście nieprecyzyjnych, reszta zgodna. Poprawione w skillach razem z datami i formami, dopiski „do weryfikacji” usunięte tam, gdzie dotyczyły samej tezy. Sędzia: Codex, r1 i r2 DO POPRAWY, r3 PRZYJĘTE.
+
+Typowe błędy, na które uważać przy nowych tezach: teza sądu niższej instancji albo strony przypisana SN; pominięty warunek (np. drugie wypowiedzenie, niewstąpienie syndyka); pogląd sprzed zmiany ustawy podany jako aktualny.
+
+Zostało ok. 25 innych sygnatur SN ze statusem „nieotwarte” (m.in. mobbing w `zatrudnienie-na-co-dzien.md`, najem w `najem-lokalu-firmowego.md`). Ta sama procedura: `pobierz`, porównanie z tekstem, poprawka w wąskim skillu, `node narzedzia/katalog-do-firmy.mjs`.
+
+Cztery sygnatury mają w API po dwa orzeczenia (postanowienie i wyrok): II KK 429/22, II PK 224/17, III KK 193/23, V CSK 30/13. Tezy dotyczą wyroków.
 
 ## NSA: ręcznie
 

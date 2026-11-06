@@ -133,7 +133,7 @@ Według `karta-dla-prawnika.md`, z ograniczeniami: tylko fakty i dokumenty, bez 
 
 ## 6. Orzecznictwo
 
-Brak orzeczeń otwartych w pełnym tekście. Nie powołuj sygnatur w tym module bez otwarcia ich w sn.pl albo orzeczenia.ms.gov.pl; nieotwarte sygnatury z `moduly/niewyplacalnosc.md` (II KK 429/22, III KK 193/23, I KS 27/23) tylko z dopiskiem „do potwierdzenia”.
+Orzeczenia otwarte w pełnym tekście (repozytorium SN, 6.11.2026): wyrok SN z 26 lipca 2023 r., II KK 429/22, i wyrok SN z 9 stycznia 2024 r., III KK 193/23 (KK art. 300 § 2: przestępstwo skutkowe, czynność bez realnego wpływu na zaspokojenie wierzyciela nie wypełnia znamion; szczegóły w `moduly/niewyplacalnosc.md`). Postanowienia SN I KS 27/23 nie powołuj: dotyczy granic skargi na wyrok kasatoryjny (KPK art. 539a), nie znamion KK art. 300. Innych sygnatur nie powołuj w tym module bez otwarcia ich w sn.pl albo orzeczenia.ms.gov.pl.
 
 ## 7. Zmiany w toku i świeże (2026)
 

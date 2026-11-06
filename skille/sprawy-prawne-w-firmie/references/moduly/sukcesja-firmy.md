@@ -62,7 +62,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 25. Pracownikowi, którego umowa wygasła ze śmierci pracodawcy, przysługuje odszkodowanie w wysokości wynagrodzenia za okres wypowiedzenia (KP art. 63² § 2). Gdy zarządca ponownie zatrudnia pracowników **w tej samej grupie zawodowej**, musi zatrudnić **na poprzednich warunkach** byłego pracownika, którego umowa wygasła ze śmierci pracodawcy, jeśli ten zgłosi zamiar powrotu w miesiąc od ustanowienia ZS (KP art. 63² § 12); nie ma obowiązku zatrudniania, gdy firma nikogo w tej grupie nie przyjmuje.
 26. Obowiązki pracodawcy wykonuje zarządca, a bez niego osoby z ZARSUK art. 14 (ZARSUK art. 31 ust. 2).
 27. Decyzje (koncesje, zezwolenia) po śmierci: przy ZS wygasają po 3 miesiącach od ustanowienia ZS, chyba że zarządca złoży wniosek o potwierdzenie; bez ZS po 6 miesiącach od śmierci, chyba że złożono wniosek o przeniesienie (ZARSUK art. 37 ust. 1, art. 38 ust. 1).
-28. Bank prowadzi firmowy rachunek zmarłego, jeśli ustanowiono ZS (Prawo bankowe art. 59c, akt spoza listy; przywołany przez SN w II USKP 74/22). [WYMAGA WERYFIKACJI treści art. 59c Prawa bankowego]
+28. Bank prowadzi firmowy rachunek zmarłego, jeśli ustanowiono ZS; od ustanowienia do wygaśnięcia ZS dostęp do środków i prawo do dyspozycji ma zarządca sukcesyjny, który informuje bank, kto go powołał i kto uzyskał tytuł do spadku (Prawo bankowe art. 59c, akt spoza listy; treść potwierdzona w uzasadnieniu SN II USKP 74/22, wyrok z 7 lutego 2024 r.).
 
 ### Pozycja i obowiązki zarządcy
 

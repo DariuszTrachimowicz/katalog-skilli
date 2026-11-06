@@ -2,7 +2,7 @@
 nazwa: Pełnomocnictwo w firmie
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.2
+wersja: 1.0.3
 poziom: Działa od razu
 aktualizacja: 2026-11-06
 skrot: Ustala, kto może podpisać za firmę i co (zarząd, wspólnik, prokurent, pełnomocnik, pracownik, biuro rachunkowe), dobiera rodzaj umocowania i formę, mówi, gdzie je zgłosić (urząd skarbowy, ZUS, KRS, CEIDG, KSeF, e-Doręczenia, bank, sąd) i od kiedy działa, prowadzi rejestr umocowań i listę działań przy odwołaniu, sprawdza wklejone pełnomocnictwo.

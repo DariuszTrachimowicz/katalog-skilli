@@ -166,7 +166,7 @@ Sygnatury tylko na pytanie o źródło. SN sprawdzone 5 listopada 2026 r. w SAOS
 |---|---|
 | SN II PK 292/11, wyrok z 13 czerwca 2012 r. | Przy przewadze innych cech pracowniczych zapis o możliwości zastępstwa, z którego nie korzystano, nie odbiera umowie cech etatu; podporządkowanie to m.in. czas i miejsce pracy, lista obecności, regulamin, polecenia, nadzór. |
 | SN I PK 8/10, wyrok z 5 maja 2010 r. | Brak urlopu i chorobowego to skutek pozornej umowy, nie argument przeciw stosunkowi pracy; nazwa umowy nie przesądza. |
-| SN I UK 231/14, wyrok z 17 lutego 2015 r. | Przy równym nasileniu cech umowy o pracę i innej umowy rozstrzyga zgodna wola stron. |
+| SN I UK 231/14, wyrok z 17 lutego 2015 r. | Zlecenie studentki przy wprowadzaniu danych: sądy obu instancji przyjęły, że przy równym nasileniu cech rozstrzyga zgodna wola stron; SN oddalił skargę ZUS w części o ubezpieczenia społeczne bez własnej oceny tej tezy, a sam orzekł, że brak tytułu do ubezpieczeń społecznych oznacza z mocy prawa brak obowiązkowego ubezpieczenia zdrowotnego. |
 | SN II PK 352/14, wyrok z 18 lutego 2016 r. | Decydują cechy przeważające; w tej sprawie przejście pracowników budowy na działalność jako warunek dalszej współpracy służyło obniżeniu składek, co miało znaczenie przy ocenie woli stron. |
 | SN II UK 184/12, wyrok z 12 lutego 2013 r. | Wyłączenie preferencyjnych składek przy pracy dla byłego pracodawcy dotyczy tych samych czynności co na etacie; przy innych czynnościach preferencja przysługuje. |
 | SN I UK 389/14, wyrok z 12 sierpnia 2015 r. | Dzieło to oznaczony, sprawdzalny rezultat; umowa o dzieło nie jest zobowiązaniem ciągłym; niestandardowy wykład może być dziełem. |

@@ -2,9 +2,9 @@
 nazwa: Upadłość konsumencka, przygotowanie
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.0
+wersja: 1.0.1
 poziom: Działa od razu
-aktualizacja: 2026-11-04
+aktualizacja: 2026-11-06
 skrot: Tłumaczy, jak przebiega upadłość konsumencka i co z niej wynika, porządkuje Twoje długi, majątek i dokumenty w teczkę pod wniosek do Krajowego Rejestru Zadłużonych i sprawdza kompletność wniosku, który sam przygotowałeś.
 korzysc: Wiesz, co Cię czeka w upadłości konsumenckiej, i idziesz do prawnika z uporządkowaną teczką długów i dokumentów.
 szukaj: upadłość konsumencka, bankructwo osoby prywatnej, oddłużenie, wniosek o upadłość, Krajowy Rejestr Zadłużonych, KRZ, plan spłaty wierzycieli, syndyk, komornik zabiera pensję, nie spłacam kredytów, chwilówki, umorzenie długów, co z mieszkaniem po upadłości

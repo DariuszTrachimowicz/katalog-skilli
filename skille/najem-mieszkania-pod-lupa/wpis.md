@@ -2,9 +2,9 @@
 nazwa: Najem mieszkania pod lupą
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.1
+wersja: 1.0.2
 poziom: Działa od razu
-aktualizacja: 2026-11-05
+aktualizacja: 2026-11-06
 skrot: Czyta umowę najmu mieszkania z perspektywy najemcy albo wynajmującego, rozpoznaje rodzaj najmu, wskazuje ryzyka i braki (kaucja, podwyżki, opłaty, wypowiedzenie, naprawy, wizyty), daje pytania przed podpisem, plan odbioru i sprawdza rozliczenie kaucji.
 korzysc: Wiesz, co w umowie najmu działa na Twoją niekorzyść, o co zapytać przed podpisem i jak odzyskać kaucję.
 szukaj: umowa najmu mieszkania, kaucja za mieszkanie, zwrot kaucji, najem okazjonalny, podwyżka czynszu, czynsz administracyjny, wypowiedzenie umowy najmu, protokół zdawczo-odbiorczy, wynajmujący wchodzi do mieszkania, najemca nie płaci, eksmisja zimą, ryczałt od najmu, kopia dowodu przy najmie, malowanie po wyprowadzce
