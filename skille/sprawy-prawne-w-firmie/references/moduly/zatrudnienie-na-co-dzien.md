@@ -262,6 +262,6 @@ Ustawy o PIP, minimalnym wynagrodzeniu, PPK, systemie ubezpieczeń społecznych,
 | Ustawa Dz.U. 2026 poz. 1046 (metadane i tekst) | https://api.sejm.gov.pl/eli/acts/DU/2026/1046 ; https://api.sejm.gov.pl/eli/acts/DU/2026/1046/text.pdf | 6.11.2026 | wejście 5.11.2026, art. 3 (zachowania trwające), art. 4 (6 miesięcy na regulamin), KPC art. 461 § 1¹, KPC art. 477⁶ᵃ |
 | Ustawa Dz.U. 2026 poz. 473 (metadane) | https://api.sejm.gov.pl/eli/acts/DU/2026/473 | 6.11.2026 | wejście 8.07.2026, zmieniane akty |
 | biznes.gov.pl, PPK | https://www.biznes.gov.pl/pl/portal/00138 | 6.11.2026 | A63 |
-| sn.pl, orzeczenia z tabeli A.6 | adresy w tabeli | 6.11.2026 | tylko sygnatura, data, fragment; treść nieotwarta (pusta odpowiedź) |
+| repozytorium2.sn.pl (oficjalne API SN), orzeczenia z tabeli A.6 | adresy w tabeli | 6.11.2026 | pełny tekst: sentencja i uzasadnienie |
 | Skill dzielo-zlecenie-czy-etat, references/zasady.md | lokalnie | 6.11.2026 | odesłanie A23, kwoty płacy minimalnej |
 | Skill zwolnienie-pracownika-krok-po-kroku, references/zasady.md | lokalnie | 6.11.2026 | odesłania A29d, A59, A59a, daty zmian A.7 |
