@@ -1,0 +1,172 @@
+<!-- Kopia z skille/kontrola-z-urzedu/references/zasady.md, generowana: node narzedzia/katalog-do-firmy.mjs. Nie edytuj tutaj. -->
+# Zasady kontroli przedsiębiorcy: stan prawny i orzecznictwo
+
+Wczytaj zawsze, w każdym trybie. **Stan prawny: 5 listopada 2026 r.** (Prawo przedsiębiorców w tekście jednolitym z 2025 r. po deregulacji z 13 lipca 2025 r. i zmianach od 1 stycznia 2026 r., ustawa o PIP z reformą od 8 lipca 2026 r., ustawa o systemie ubezpieczeń społecznych, Ordynacja podatkowa ze zmianami od 1 października 2026 r., ustawa o KAS, ustawa o ochronie danych osobowych, ustawy o inspekcji sanitarnej i handlowej, KPA, KKS, Kodeks karny). Gdy od tej daty minął ponad rok albo użytkownik pyta o zmiany, powiedz, że materiał może być nieaktualny, i wskaż biznes.gov.pl, zus.pl, podatki.gov.pl, pip.gov.pl.
+
+Kolumna „Podstawa” i rejestr na końcu służą wyłącznie Tobie do weryfikacji i do odpowiedzi na pytanie o źródło. **W odpowiedzi nie podawaj numerów artykułów, paragrafów ani tytułów ustaw**; mów skutkiem. Sygnatury orzeczeń podajesz tylko na pytanie o źródło. Pozycje oznaczone „DO WERYFIKACJI” przedstawiasz jako kwestię niepewną, do potwierdzenia z doradcą lub na stronie organu; orzeczeń spoza tabeli w sekcji 13 nie podajesz jako źródła. Skrót PP = Prawo przedsiębiorców (ogólne zasady kontroli przedsiębiorcy).
+
+## Spis treści
+
+1. Który organ, które reguły
+2. Zawiadomienie i wszczęcie
+3. Czas trwania, równoczesne kontrole, powtórna kontrola
+4. Prawa i obowiązki w trakcie
+5. Sprzeciw
+6. Inspekcja pracy (PIP)
+7. ZUS
+8. Urząd skarbowy i kontrola celno-skarbowa
+9. UODO, sanepid, Inspekcja Handlowa
+10. Protokół i zastrzeżenia
+11. Utrudnianie kontroli i ochrona przed nadużyciem
+12. Zmiany 2024 do 2026
+13. Orzecznictwo
+14. Rejestr źródeł
+
+## 1. Który organ, które reguły
+
+| Organ | Zawiadomienie | Limity czasu | Sprzeciw | Zastrzeżenia do protokołu |
+|---|---|---|---|---|
+| ZUS | tak (ogólne zasady) | tak | tak | 14 dni od otrzymania protokołu, ze wskazaniem dowodów |
+| Inspekcja pracy (PIP) | nie, może przyjść bez uprzedzenia, o każdej porze | nie (NSA III OSK 120/23) | co do zasady tak, ale brak zawiadomienia nie jest naruszeniem | 7 dni od przedstawienia protokołu, na piśmie, przed podpisaniem |
+| Urząd skarbowy (kontrola podatkowa) | tak, z wyjątkami (np. zwrot VAT, niezgłoszona działalność) | tak | tak | 14 dni od doręczenia protokołu (zastrzeżenia lub wyjaśnienia z wnioskami dowodowymi) |
+| Kontrola celno-skarbowa (KAS) | nie | nie (do 3 miesięcy, przedłużenie pisemne z przyczynami i nowym terminem) | nie | nie ma; w zakresie podatkowym 14 dni od doręczenia wyniku na korektę (inne zakresy: DO WERYFIKACJI) |
+| UODO | DO WERYFIKACJI (ustawa milczy, ogólne zasady co do zasady się stosują) | tak (oraz 30 dni od upoważnienia) | co do zasady tak | 7 dni: podpis albo pisemne zastrzeżenia; milczenie = odmowa podpisu |
+| Sanepid | tak, ale kontrola żywności może być bez zawiadomienia | nie przy bezpieczeństwie żywności | tak | ustawa nie określa terminu: DO WERYFIKACJI |
+| Inspekcja Handlowa | tak; zakup kontrolny wyłączony z zasad o zawiadomieniu, upoważnieniu, obecności, miejscu, równoczesnych kontrolach, limitach i książce kontroli | tak (poza zakupem kontrolnym) | tak (przy zakupie kontrolnym brak tych przesłanek, DO WERYFIKACJI) | uwagi od razu albo na piśmie w 7 dni od przedstawienia |
+
+Podstawa: PP art. 45 do 65; ustawa o PIP art. 24, 31; ustawa o systemie ubezpieczeń społecznych art. 86 do 92a; Ordynacja podatkowa art. 281 do 292; ustawa o KAS art. 62 do 93; ustawa o ochronie danych osobowych art. 78 do 91; ustawa o inspekcji sanitarnej art. 37; ustawa o Inspekcji Handlowej art. 20, 22b.
+
+## 2. Zawiadomienie i wszczęcie
+
+- **Zawiadomienie (ogólne zasady):** organ zawiadamia o zamiarze kontroli; kontrolę wszczyna się nie wcześniej niż po 7 dniach i nie później niż przed upływem 30 dni od doręczenia zawiadomienia, potem trzeba nowego zawiadomienia. Na wniosek przedsiębiorcy (w kontroli podatkowej na wniosek albo za zgodą) kontrola może się zacząć wcześniej. Zawiadomienie zawiera m.in. zakres kontroli i, od 13 lipca 2025 r., **wstępną listę dokumentów**, których organ oczekuje (w trakcie może żądać innych z zakresu); w kontroli planowej wszczętej od 1 stycznia 2026 r. także kategorię ryzyka. Samo zawiadomienie nie wszczyna kontroli i nie jest zaskarżalne. (PP art. 48; Ordynacja art. 282b; NSA II OSK 1103/25)
+- **Przed upływem 7 dni bez zgody** można pobrać próbki, zrobić oględziny (nie treści dokumentów) i pomiary, w krótkim czasie i z protokołem. (PP art. 48 ust. 5 do 8)
+- **Bez zawiadomienia (wybrane):** przeciwdziałanie przestępstwu lub wykroczeniu, zabezpieczenie dowodów, bezpośrednie zagrożenie życia, zdrowia lub środowiska, postępowania ochrony konkurencji i konsumentów, brak adresu lub bezskuteczne doręczenia, wyjątki z Ordynacji (m.in. zwrot VAT, niezgłoszona działalność, skazanie za przestępstwo skarbowe lub utrudnianie kontroli, egzekucja), kontrole inspekcji pracy, kontrola celno-skarbowa, kontrola urzędowa żywności. Uzasadnienie braku zawiadomienia wpisuje się do protokołu. (PP art. 48 ust. 10 i 11; Ordynacja art. 282c; ustawa o KAS art. 62; NSA II GSK 2128/23)
+- **Doręczenie:** zawiadomienie może przyjść przez e-Doręczenia; 7 dni liczy się od skutecznego doręczenia. Daty obowiązku e-Doręczeń dla poszczególnych firm: DO WERYFIKACJI.
+- **Wszczęcie:** okazanie legitymacji i doręczenie upoważnienia. Upoważnienie zawiera m.in. podstawę prawną, organ, datę i miejsce, imię i nazwisko kontrolera i numer legitymacji, oznaczenie przedsiębiorcy, **zakres**, **datę rozpoczęcia i przewidywany termin zakończenia**, podpis i pouczenie o prawach i obowiązkach. **Dokument bez wymaganych elementów nie jest podstawą kontroli, a kontrola nie może wykraczać poza zakres upoważnienia**; zmiana osób, zakresu lub miejsca wymaga nowego upoważnienia. Gdy przepis pozwala zacząć na legitymację (przestępstwo, zagrożenie), upoważnienie doręcza się najpóźniej w 3 dni robocze (inspekcja pracy: do 7 dni; relacja tych terminów DO WERYFIKACJI); w kontroli podatkowej dokumenty z czynności przy spóźnionym upoważnieniu nie są dowodem. W kontroli podatkowej upoważnienie zawiera też informacje o przetwarzaniu danych osobowych. (PP art. 49; Ordynacja art. 283, 284a; ustawa o PIP art. 24 ust. 5)
+
+## 3. Czas trwania, równoczesne kontrole, powtórna kontrola
+
+- **Limity w roku kalendarzowym na jeden organ (dni robocze):** mikroprzedsiębiorca **6** (od 13 lipca 2025 r.; wcześniej 12), mały 18, średni 24, pozostali 48. Liczy się kolejne dni robocze od wszczęcia do zakończenia, nie tylko dni obecności kontrolerów. Wielkość: mikro średniorocznie mniej niż 10 pracowników i roczny obrót albo suma bilansowa do 2 mln euro, mały mniej niż 50 i do 10 mln euro, średni mniej niż 250 i do 50 mln euro obrotu albo 43 mln euro sumy bilansowej, w co najmniej jednym z dwóch ostatnich lat obrotowych. Bieżąca liczba pracowników nie wystarcza: kategorię potwierdza biuro rachunkowe z danych za te lata. (PP art. 7, 55 ust. 1; NSA III OSK 1677/22)
+- **Wyjątki i przedłużenia:** m.in. przestępstwo, zagrożenie życia lub zdrowia, zwrot VAT, nadzór nad bezpieczeństwem żywności, inspekcja pracy (NSA III OSK 120/23). Przedłużenie tylko z przyczyn niezależnych od organu, z pisemnym uzasadnieniem, i tylko w granicach rocznego limitu; ponad limit, do jego dwukrotności, gdy ujawniono zaniżenie podatku ponad 10 % (najmniej 500 zł), zawyżenie straty ponad 50 % (najmniej 2 500 zł) albo niezłożenie deklaracji, z zawiadomieniem i wskazaniem dowodów; u mikroprzedsiębiorcy do 12 dni, gdy zostało tylko analizowanie dokumentów i protokół, także zdalnie bez zgody. Do czasu nie wlicza się nieobecności przedsiębiorcy, która przeszkadza w czynnościach, ani czasu sprzeciwu. (PP art. 50 ust. 4, 55 ust. 2 do 7, 59 ust. 5, 61)
+- **Kontrole planowe od 1 stycznia 2026 r.:** firma ma kategorię ryzyka; przy niskim ryzyku kontrola planowa najwyżej raz na 5 lat, przy średnim raz na 3 lata; kontrole wszczęte przed tą datą się nie liczą. Nie dotyczy kontroli celno-skarbowej i kontroli inspekcji pracy legalności zatrudnienia cudzoziemców; inne wyłączenia: DO WERYFIKACJI. Kontrole pozaplanowe (np. po zawiadomieniu o naruszeniu) tej częstotliwości nie podlegają. (PP art. 47, 55a)
+- **Zakaz równoczesnych kontroli:** co do zasady jedna kontrola naraz (u mikro i małych na całą firmę); wyjątki m.in. zgoda przedsiębiorcy, przestępstwo, zagrożenie, zwrot VAT, legalność zatrudnienia cudzoziemców. Zgody nie warto dawać „przy okazji”, ustnie (forma zgody: DO WERYFIKACJI). (PP art. 54)
+- **Powtórna kontrola tego samego:** co do zasady niedopuszczalna po zakończonej kontroli tego przedmiotu, z wyjątkami (inny okres, zagrożenie, wznowienie, sprawdzenie zaleceń, nowe okoliczności). Po kontroli, która ujawniła rażące naruszenie, organ może przeprowadzić powtórną kontrolę tego samego zakresu w tym samym roku, do 7 dni, poza rocznym limitem. (PP art. 55 ust. 7, 58)
+
+## 4. Prawa i obowiązki w trakcie
+
+- **Obecność:** czynności w obecności przedsiębiorcy lub osoby przez niego upoważnionej; przedsiębiorca wskazuje ją **na piśmie**, zwłaszcza na czas nieobecności. Bez takiej osoby kontrola idzie w obecności pracownika albo osoby zatrudnionej na innej podstawie, która jest czynna w lokalu firmy, albo przywołanego świadka będącego funkcjonariuszem publicznym spoza organu kontroli. Upoważnienie pracownika wygasa z końcem kontroli; do dalszego postępowania potrzebne pełnomocnictwo. W kontroli podatkowej kontrolowany ma obowiązek ustanowić pełnomocnika na wypadek nieobecności. Pełnomocnik lub prokurent wpisany do CEIDG lub KRS nie musi przedstawiać dokumentu (od 13 lipca 2025 r.). (PP art. 30a, 50; Ordynacja art. 284, 285; NSA II GSK 2124/22)
+- **Miejsce i godziny:** siedziba lub miejsce działalności w godzinach pracy; za zgodą lub na wniosek przedsiębiorcy miejsce przechowywania dokumentów (np. biuro rachunkowe); za zgodą siedziba organu albo kontrola zdalna. Dokumenty zebrane z naruszeniem zasad o miejscu i kontroli zdalnej nie są dowodem. Bez zgody zdalnie: inspekcja pracy w uzasadnionych przypadkach (od 8 lipca 2026 r.) oraz u mikroprzedsiębiorcy końcowa analiza dokumentów i protokół po przedłużeniu kontroli. Inspekcja pracy: o każdej porze. UODO: wstęp od 6:00 do 22:00. (PP art. 51; ustawa o PIP art. 24, 26; ustawa o ochronie danych osobowych art. 84)
+- **Zakłócanie działalności:** gdy przedsiębiorca wskaże na piśmie, że czynności istotnie zakłócają działalność, organ musi uzasadnić ich konieczność w protokole. (PP art. 52)
+- **Dokumenty i wyjaśnienia:** firma udostępnia dokumenty z zakresu kontroli, robi kopie, udziela wyjaśnień (ZUS: nieodpłatnie, w wyznaczonym terminie, także dokumenty w biurze rachunkowym; inspekcja pracy: także dokumenty elektroniczne i transmisja online od 8 lipca 2026 r.; UODO: kopie robi i poświadcza kontrolowany). (ustawa o systemie ubezpieczeń społecznych art. 88; ustawa o PIP art. 23, 27; ustawa o ochronie danych osobowych art. 84)
+- **Książka kontroli:** przedsiębiorca prowadzi ją (papierową, także jako zbiór dokumentów, albo elektroniczną) i przechowuje w siedzibie razem z upoważnieniami i protokołami; w papierowej wpisy robi kontrolujący, w elektronicznej przedsiębiorca; przy wszczęciu kontroli niezwłocznie ją okazuje. Prawo przedsiębiorców nie przewiduje kary za jej brak. Sanepid wpisuje do niej zalecenia. (PP art. 57; ustawa o inspekcji sanitarnej art. 31)
+- **Dowody z naruszeniem przepisów o kontroli:** jeżeli miały istotny wpływ na wynik, nie mogą być dowodem w dalszych postępowaniach wobec przedsiębiorcy. Liczy się konkretna wadliwa czynność i jej wpływ na wynik: samo prawidłowe wszczęcie nie usuwa wad późniejszych czynności, a sama wada wszczęcia nie zawsze przekreśla dowody (w kontroli podatkowej wszczętej prawidłowo NSA dopuścił użycie dowodów). Szczególnie: w kontroli podatkowej dokumenty z czynności po terminie zakończenia z upoważnienia bez wskazania nowego terminu nie są dowodem; w kontroli celno-skarbowej to samo po 3 miesiącach bez przedłużenia. Za szkodę z czynności sprzecznych z prawem przysługuje odszkodowanie na zasadach ogólnych (podstawa szczegółowa: DO WERYFIKACJI). Ocenę zawsze zostawiasz doradcy lub prawnikowi. (PP art. 46; NSA II FSK 1301/25)
+- **Nowa firma:** dotyczy przedsiębiorcy wpisanego do CEIDG, przy naruszeniu w ciągu 12 miesięcy od pierwszego podjęcia działalności (albo ponownego po co najmniej 36 miesiącach przerwy): organ, zanim wymierzy mandat lub karę administracyjną, wzywa do usunięcia naruszenia w terminie; wyjątki (np. szkoda, zagrożenie): DO WERYFIKACJI; inspekcja pracy może poprzestać na pouczeniu. (PP art. 21a; ustawa o PIP art. 37a)
+
+## 5. Sprzeciw
+
+- **Kiedy:** wobec podjęcia lub wykonywania kontroli z naruszeniem zasad o zawiadomieniu, upoważnieniu i legitymacji, obecności, miejscu i godzinach, równoczesnych kontrolach, czasie trwania, częstotliwości kontroli planowych i powtórnej kontroli. Wymaga uzasadnienia. (PP art. 59 ust. 1)
+- **Jak i do kiedy:** na piśmie do organu, z pisemnym zawiadomieniem kontrolującego, **w 3 dni robocze** od wszczęcia kontroli albo od wystąpienia przesłanki; tylko do faktycznego zakończenia czynności (później jest bezprzedmiotowy, a spóźniony nie otworzy sądowej oceny kontroli). (PP art. 59 ust. 3, 4; NSA II GSK 417/25, II GSK 590/25, II GSK 852/25)
+- **Skutek:** czynności wstrzymuje się z chwilą doręczenia kontrolującemu zawiadomienia o sprzeciwie, a czas kontroli nie biegnie; od 13 lipca 2025 r. sprzeciw nie wstrzymuje czynności, gdy organ powołuje się na przeciwdziałanie przestępstwu lub wykroczeniu albo na szczególne wyłączenia z ogólnych zasad kontroli (np. zakup kontrolny Inspekcji Handlowej). Organ rozpatruje sprzeciw **w 3 dni robocze**; brak postanowienia w terminie oznacza odstąpienie od kontroli. Kontrolę wznawia się dopiero po ostateczności postanowienia o kontynuowaniu. Na to postanowienie przysługuje zażalenie w 3 dni; organ rozpatruje je w 7 dni, a brak rozstrzygnięcia w terminie oznacza uchylenie postanowienia i odstąpienie od kontroli. Organ odwoławczy nie może przekazać sprawy do ponownego rozpatrzenia. Zaskarżalne do sądu jest tylko postanowienie o kontynuowaniu; osobno, po jego utrzymaniu w mocy, przysługuje skarga na przewlekłe prowadzenie kontroli, która czynności nie wstrzymuje. (PP art. 59; NSA I GSK 949/23, I GSK 815/24)
+- **Nie ma sprzeciwu** w kontroli celno-skarbowej. Przy inspekcji pracy brak zawiadomienia nie jest przesłanką, bo inspekcja może przyjść bez uprzedzenia. Wielokrotne sprzeciwy mogą uzasadniać przedłużenie kontroli (NSA III OSK 120/23).
+
+## 6. Inspekcja pracy (PIP)
+
+- Kontrola bez uprzedzenia, o każdej porze; inspektor ma swobodny wstęp, może przesłuchiwać pracowników, byłych pracowników i osoby na umowach cywilnoprawnych i B2B, żądać dokumentów papierowych i elektronicznych, utrwalać obraz i dźwięk, a od 8 lipca 2026 r. żądać transmisji online i prowadzić kontrolę lub jej część zdalnie bez zgody firmy, w uzasadnionych przypadkach, gdy nie przeczy to celowi kontroli i ją usprawnia albo przemawia za tym charakter działalności. Kontroli legalności zatrudnienia i umów cywilnoprawnych podlegają też firmy niebędące pracodawcami. (ustawa o PIP art. 13, 23, 24, 26)
+- **Środki:** nakazy (także ustne w trakcie), wystąpienia (odpowiedź w terminie z wystąpienia, nie dłuższym niż 30 dni), polecenia, mandaty, wnioski do sądu. Odwołanie od nakazu do okręgowego inspektora pracy w 7 dni od doręczenia. Obowiązek pisemnego informowania o wykonaniu. (ustawa o PIP art. 33 do 36)
+- **Stosunek pracy (od 8 lipca 2026 r.):** inspektor, po umożliwieniu stronom zajęcia stanowiska, wydaje pisemne polecenie usunięcia naruszenia, gdy praca w warunkach stosunku pracy jest wykonywana na podstawie umowy cywilnoprawnej albo faktycznie bez umowy o pracę, z terminem; gdy polecenie nie zostanie wykonane, okręgowy inspektor pracy może wydać decyzję stwierdzającą stosunek pracy albo wnieść powództwo. Odwołanie od decyzji do sądu pracy **w miesiąc od doręczenia**, za pośrednictwem okręgowego inspektora, z wszystkimi twierdzeniami i dowodami od razu. Decyzja ma skutki od dnia wydania w prawie pracy, ubezpieczeniach i podatkach; datą zawarcia umowy jest data decyzji (albo rozpoczęcia kontroli, gdy firma w trakcie sama zakończyła współpracę); wykonalna jest po upływie terminu odwołania, z prawomocnym wyrokiem albo z rygorem natychmiastowej wykonalności; zgłoszenie do ubezpieczeń w 7 dni od ostateczności decyzji lub prawomocności wyroku. Firma, która do 8 lipca 2027 r. dobrowolnie zawrze umowę o pracę zamiast takiej umowy, nie odpowiada za wykroczenie z tego tytułu. Kontrole wszczęte przed 8 lipca 2026 r. toczą się według dawnych przepisów. Interpretacja Głównego Inspektora Pracy na wniosek: 40 zł, 30 dni. (ustawa o PIP art. 11, 14b, 33a, 34; ustawa zmieniająca z 11 marca 2026 r.)
+- **Mandaty i grzywny (od 8 lipca 2026 r.):** mandat do 5 000 zł, przy recydywie do 10 000 zł; grzywny sądowe za wykroczenia przeciwko prawom pracownika od 2 000 do 60 000 zł, dla części wykroczeń od 3 000 do 90 000 zł. (Kodeks postępowania w sprawach o wykroczenia art. 96; Kodeks pracy art. 281 do 283)
+- PIP przekazuje dane z kontroli do ZUS, a ZUS i KAS do PIP; ustalenia inspekcji mogą uruchomić kontrolę ZUS lub skarbową. (ustawa o PIP art. 14a)
+
+## 7. ZUS
+
+- Zakres: zgłoszenia do ubezpieczeń, składki, zasiłki i świadczenia, zaświadczenia, dane. Kontrola PPK przez ZUS: DO WERYFIKACJI. Odrębna kontrola wykorzystania zwolnień lekarskich (zastrzeżenia 7 dni według zus.pl): DO WERYFIKACJI. (ustawa o systemie ubezpieczeń społecznych art. 86)
+- Ogólne zasady kontroli (zawiadomienie, limity, sprzeciw) się stosują; datą wszczęcia jest dzień doręczenia upoważnienia. Przy braku warunków ZUS może zabrać dokumenty do siebie na najwyżej 3 tygodnie za protokołem. (art. 89, 90, 92a)
+- Protokół w 2 egzemplarzach z pouczeniem o zastrzeżeniach; **zastrzeżenia w 14 dni od otrzymania protokołu lub aneksu, ze wskazaniem dowodów**; od aneksu po rozpatrzeniu zastrzeżeń nie ma kolejnych. Protokół jest podstawą decyzji ZUS (od decyzji odwołanie do sądu). Protokół ZUS jest dokumentem urzędowym, któremu można przeciwstawić dowody; brak zastrzeżeń utrudnia późniejszy spór. Korekty dokumentów po kontroli w 30 dni według zus.pl: DO WERYFIKACJI. (art. 83, 91; SN I UK 156/13)
+- Utrudnianie kontroli ZUS: grzywna do 46 000 zł. (art. 98)
+
+## 8. Urząd skarbowy i kontrola celno-skarbowa
+
+- **Kontrola podatkowa:** zawiadomienie z pouczeniem o prawie do korekty. Prawo do korekty deklaracji jest **zawieszone na czas kontroli** w jej zakresie, więc skuteczna korekta możliwa jest przed wszczęciem i po zakończeniu kontroli (do wszczęcia postępowania podatkowego). Kary za czyn dotyczący deklaracji co do zasady nie ma, gdy korekta jest prawnie skuteczna, a zaległość zapłacona niezwłocznie; ochrona nie działa, gdy wcześniej wszczęto postępowanie przygotowawcze albo czyn ujawniono w toczącym się postępowaniu. Czynny żal jest bezskuteczny po rozpoczęciu kontroli zmierzającej do ujawnienia przestępstwa skarbowego, chyba że kontrola nie dała podstaw do wszczęcia postępowania. Szczegóły i sankcja VAT: DO WERYFIKACJI z doradcą. Protokół zawiera ustalenia, dowody i ocenę prawną; **zastrzeżenia lub wyjaśnienia w 14 dni od doręczenia protokołu**, podpisane, z wnioskami dowodowymi; kontrolujący odpowiada w 14 dni; **brak zastrzeżeń oznacza przyjęcie, że kontrolowany nie kwestionuje ustaleń**; kontrola kończy się z dniem doręczenia protokołu (niezależnie od podpisu). Gdy kontrola wykazała nieprawidłowości, a firma nie skorygowała deklaracji w pełni je uwzględniając, organ co do zasady wszczyna postępowanie podatkowe najpóźniej w 6 miesięcy od zakończenia kontroli; nie dotyczy to sytuacji, gdy zastrzeżenia uwzględniono w całości. (Ordynacja art. 81b, 165b, 282b, 290, 291; KKS art. 16, 16a; NSA I FSK 1239/24)
+- **Kontrola celno-skarbowa:** bez zawiadomienia; wszczęcie doręczeniem upoważnienia; **korekta w 14 dni od doręczenia upoważnienia** (później do końca kontroli bez skutku); kontrola do 3 miesięcy, z możliwością przedłużenia pisemnym zawiadomieniem z przyczynami i nowym terminem (dokumenty zebrane po terminie bez przedłużenia nie są dowodem); kontrola przestrzegania prawa podatkowego kończy się **wynikiem kontroli**, nie protokołem z zastrzeżeniami; **w 14 dni od doręczenia wyniku** można złożyć korektę w całości lub części; bez korekty kontrola przekształca się w postępowanie podatkowe. Zakończenie kontroli celno-skarbowej w innych zakresach (np. celnym): DO WERYFIKACJI. Ogólne zasady kontroli przedsiębiorcy (limity, sprzeciw, książka) nie mają zastosowania. (ustawa o KAS art. 62, 63, 82, 83, 93)
+- **Czynności sprawdzające** to nie kontrola; od 1 października 2026 r. urząd może sam poprawić oczywiste błędy w deklaracji do 10 000 zł (wcześniej 5 000 zł), sprzeciw w 14 dni od doręczenia informacji. (Ordynacja art. 272, 274)
+- Utrudnianie kontroli podatkowej, celno-skarbowej i czynności sprawdzających (także nieokazanie ksiąg, niszczenie dokumentów) to przestępstwo skarbowe, w mniejszej wadze wykroczenie skarbowe; skazanie odbiera prawo do zawiadomienia przy kolejnych kontrolach. (KKS art. 83; Ordynacja art. 282c)
+
+## 9. UODO, sanepid, Inspekcja Handlowa
+
+- **UODO:** kontrola według planu, na podstawie informacji albo w ramach monitorowania; imienne upoważnienie z legitymacją; obowiązek pisemnego wskazania reprezentanta; wstęp 6:00 do 22:00, oględziny systemów, przesłuchania; kopie robi i poświadcza kontrolowany. Protokół: **w 7 dni podpis albo pisemne zastrzeżenia**; milczenie oznacza odmowę podpisu; pouczenie obejmuje prawo odmowy podpisu. Kontrola do 30 dni od okazania upoważnienia; do tego czasu nie wlicza się terminów na zastrzeżenia i podpis, a kontrola kończy się podpisem protokołu albo wzmianką o odmowie. Utrudnianie: przestępstwo (grzywna, ograniczenie wolności albo do 2 lat). (ustawa o ochronie danych osobowych art. 78 do 91, 108)
+- **Sanepid:** ogólne zasady kontroli co do zasady się stosują, ale kontrole urzędowe żywności mogą być bez zawiadomienia, a limity czasu i zakaz równoczesnych kontroli nie dotyczą bezpieczeństwa żywności. Środki: decyzja z terminem usunięcia uchybień, przy zagrożeniu unieruchomienie zakładu lub wycofanie produktu; zalecenia w książce kontroli; odpowiedź na zawiadomienie o uchybieniach w 30 dni. Termin zastrzeżeń do protokołu: ustawa nie określa (DO WERYFIKACJI). Utrudnianie: wykroczenie. (ustawa o inspekcji sanitarnej art. 25 do 38)
+- **Inspekcja Handlowa:** legitymacja i upoważnienie; obecność kontrolowanego albo pracownika lub świadka; protokół z uwagami od razu albo na piśmie w 7 dni od przedstawienia, odmowa podpisu odnotowywana z przyczyną; wojewódzki inspektor ustosunkowuje się w 14 dni. Zakup kontrolny jest wyłączony z zasad o zawiadomieniu, upoważnieniu, obecności, miejscu, równoczesnych kontrolach, limitach czasu i książce kontroli. Utrudnianie: wykroczenie (areszt albo grzywna do 5 000 zł). (ustawa o Inspekcji Handlowej art. 13 do 22b, 39)
+
+## 10. Protokół i zastrzeżenia
+
+- Ustalenia kontroli zapisuje się w protokole; szczegóły zależą od organu (tabela w sekcji 1). Kopia protokołu zostaje u firmy i trafia do książki kontroli z upoważnieniem.
+- **Czytaj przed podpisem:** sprawdzić zakres zgodny z upoważnieniem, daty i czas trwania, opis ustaleń i dowodów, pouczenie o zastrzeżeniach i jego termin, wzmiankę o wyjaśnieniach i uwagach firmy.
+- **Odmowa podpisu** sama niczego nie zatrzymuje (inspekcja pracy wprost; w kontroli podatkowej kontrola kończy się doręczeniem protokołu); chronią zastrzeżenia złożone w terminie, podpisane, z dowodami. Ogólnego obowiązku pisemnego uzasadnienia odmowy podpisu przez firmę w badanych przepisach nie ma (Inspekcja Handlowa odnotowuje przyczynę). Czy podpis „bez uwag” zamyka drogę do zastrzeżeń w terminie liczonym od doręczenia: zależy od organu, DO WERYFIKACJI.
+- Protokół i czynności kontrolne zwykle nie są zaskarżalne; zaskarża się decyzję wydaną po kontroli. Protokół inspekcji pracy nie wiąże ZUS co do oceny. (NSA II GPS 3/13; SN I UK 526/12)
+
+## 11. Utrudnianie kontroli i ochrona przed nadużyciem
+
+| Kontrola | Utrudnianie lub udaremnianie | Skutek |
+|---|---|---|
+| Inspekcja pracy | udaremnianie lub utrudnianie czynności inspektora; utrudnianie działalności inspekcji, nieudzielanie informacji | przestępstwo, do 3 lat; obok tego wykroczenie, grzywna 2 000 do 60 000 zł (kwalifikację ocenia prawnik) |
+| Urząd skarbowy, KAS, czynności sprawdzające | utrudnianie, nieokazanie ksiąg, niszczenie dokumentów | przestępstwo skarbowe albo wykroczenie skarbowe |
+| ZUS | utrudnianie | wykroczenie, grzywna do 46 000 zł |
+| UODO | utrudnianie | przestępstwo, do 2 lat |
+| Sanepid, Inspekcja Handlowa | utrudnianie | wykroczenie |
+
+Podstawa: Kodeks karny art. 225; Kodeks pracy art. 283; KKS art. 83; ustawa o systemie ubezpieczeń społecznych art. 98; ustawa o ochronie danych osobowych art. 108; ustawa o inspekcji sanitarnej art. 38; ustawa o Inspekcji Handlowej art. 39.
+
+- **Granica:** korzystanie z praw (sprzeciw przy przesłankach, zastrzeżenia, żądanie upoważnienia i legitymacji, wskazanie osoby upoważnionej, pismo o zakłócaniu działalności, uzgodnienie miejsca) nie jest utrudnianiem; niewpuszczenie kontrolera, nieokazanie dokumentów, ukrywanie lub niszczenie dokumentów, fałszywe wyjaśnienia mogą nim być (wniosek z przepisów).
+- **Rzecznik Małych i Średnich Przedsiębiorców:** na wniosek bada działania organu, może wystąpić do organu, wnosić skargi do sądu administracyjnego, od 13 lipca 2025 r. brać udział w sprawach pracy i ubezpieczeń (za pisemną zgodą firmy, gdy brał udział w postępowaniu administracyjnym), pomaga w mediacji. (ustawa o Rzeczniku MŚP art. 8 do 11)
+- **Fałszywi kontrolerzy:** sprawdzić legitymację i upoważnienie, w razie wątpliwości zadzwonić do organu (wskazówka praktyczna).
+
+## 12. Zmiany 2024 do 2026
+
+| Od kiedy | Co |
+|---|---|
+| 1 czerwca 2025 r. | kontrole inspekcji pracy legalności zatrudnienia cudzoziemców bez zawiadomienia i równolegle z innymi |
+| 13 lipca 2025 r. | deregulacja: mikroprzedsiębiorca 6 dni zamiast 12, lista dokumentów w zawiadomieniu, sprzeciw nie wstrzymuje czynności przy przeciwdziałaniu przestępstwu, pełnomocnik z CEIDG lub KRS bez dokumentu, Rzecznik MŚP w sprawach pracy i ubezpieczeń |
+| 1 października 2025 r. | kontrola celno-skarbowa: 14 dni po wyniku na korektę także częściową |
+| 1 stycznia 2026 r. | kontrole planowe według kategorii ryzyka (niskie raz na 5 lat, średnie raz na 3 lata) |
+| 8 lipca 2026 r. | reforma inspekcji pracy: polecenie i decyzja o stosunku pracy, kontrola zdalna bez zgody, transmisja online, wyższe mandaty i grzywny, okres przejściowy do 8 lipca 2027 r. |
+| 1 października 2026 r. | czynności sprawdzające: urząd poprawia oczywiste błędy do 10 000 zł |
+
+Projektów zmian zasad kontroli na etapie sejmowym w materiale nie znaleziono (DO WERYFIKACJI).
+
+## 13. Orzecznictwo
+
+Sygnatury tylko na pytanie o źródło. Sprawdzone 5 listopada 2026 r. w CBOSA i SAOS.
+
+| Sygnatura i data | Teza po skutku |
+|---|---|
+| NSA III OSK 1677/22, wyrok z 15 października 2025 r. | Czas kontroli to kolejne dni robocze od wszczęcia do zakończenia, także dni bez obecności kontrolerów. |
+| NSA III OSK 120/23, wyrok z 25 lutego 2026 r. | Inspekcja pracy nie jest związana rocznymi limitami czasu kontroli; liczne sprzeciwy uzasadniają przedłużenie. |
+| NSA I GSK 815/24, postanowienie z 27 czerwca 2024 r. | Zaskarżalne jest tylko postanowienie o kontynuowaniu kontroli; skarga na przewlekłość dopiero po przejściu ścieżki sprzeciwu i zażalenia. |
+| NSA II GSK 417/25 i II GSK 590/25, wyroki z 23 września 2025 r. | Sprzeciw przysługuje od podjęcia czynności do ich faktycznego zakończenia; złożony później jest bezprzedmiotowy. |
+| NSA II GSK 852/25, wyrok z 23 września 2025 r. | Przy umorzeniu spóźnionego sprzeciwu sąd nie ocenia legalności samej kontroli. |
+| NSA I GSK 949/23, wyrok z 11 lutego 2026 r. | Rozpatrując zażalenie w sprawie sprzeciwu, organ nie może przekazać sprawy do ponownego rozpatrzenia. |
+| NSA II FSK 1301/25, wyrok z 25 marca 2026 r. | Gdy kontrola podatkowa została wszczęta prawidłowo (także po nieudanym doręczeniu i wezwaniu), zarzut wadliwego wszczęcia nie blokuje użycia jej dowodów; wady innych czynności ocenia się osobno. |
+| NSA II GSK 2124/22, wyrok z 18 marca 2026 r. | Upoważnienie pracownika do udziału w kontroli wygasa z jej końcem i nie jest pełnomocnictwem do dalszego postępowania. |
+| NSA II OSK 1103/25, postanowienie z 5 lutego 2026 r. | Zawiadomienie o zamiarze kontroli nie wszczyna postępowania i nie podlega zaskarżeniu. |
+| NSA II GSK 2128/23, wyrok z 5 grudnia 2024 r. | Kontrola urzędowa żywności może być bez zawiadomienia. |
+| NSA II GPS 3/13, uchwała 7 sędziów z 13 stycznia 2014 r. | Postępowanie kontrolne nie jest postępowaniem administracyjnym (na tle dawnej ustawy). |
+| NSA I FSK 1239/24, wyrok z 22 stycznia 2025 r. | Zastrzeżenia do protokołu kontroli podatkowej bez podpisu mogą skończyć się uznaniem, że termin nie został dotrzymany. |
+| SN I UK 156/13, wyrok z 3 grudnia 2013 r. | Protokół kontroli ZUS jest dokumentem urzędowym z domniemaniem prawdziwości, które płatnik może obalić dowodami. |
+| SN I UK 526/12, wyrok z 4 czerwca 2013 r. | Ocena inspektora pracy w protokole nie wiąże ZUS. |
+
+Do weryfikacji (nie podawaj jako źródła i nie wymieniaj sygnatury): NSA III OSK 2260/24 co do formy zgody na równoczesne kontrole.
+
+## 14. Rejestr źródeł
+
+| Źródło | Adres | Dostęp | Co potwierdza |
+|---|---|---|---|
+| Prawo przedsiębiorców, tekst jednolity Dz.U. 2025 poz. 1480; deregulacja Dz.U. 2025 poz. 769 | https://eli.gov.pl/eli/DU/2025/1480/ogl ; https://eli.gov.pl/eli/DU/2025/769/ogl | 5.11.2026 | ogólne zasady kontroli, zmiany z 2025 i 2026 r. |
+| Ustawa o Państwowej Inspekcji Pracy, tekst jednolity Dz.U. 2024 poz. 1712; reforma Dz.U. 2026 poz. 473 | https://eli.gov.pl/eli/DU/2024/1712/ogl ; https://eli.gov.pl/eli/DU/2026/473/ogl | 5.11.2026 | kontrola PIP, stosunek pracy, protokół |
+| Ustawa o systemie ubezpieczeń społecznych, tekst jednolity Dz.U. 2026 poz. 199 | https://eli.gov.pl/eli/DU/2026/199/ogl | 5.11.2026 | kontrola ZUS |
+| Ordynacja podatkowa, tekst jednolity Dz.U. 2026 poz. 622; zmiana Dz.U. 2026 poz. 846 | https://eli.gov.pl/eli/DU/2026/622/ogl | 5.11.2026 | kontrola podatkowa, korekta, czynności sprawdzające |
+| Ustawa o KAS, tekst jednolity Dz.U. 2025 poz. 1131 | https://eli.gov.pl/eli/DU/2025/1131/ogl | 5.11.2026 | kontrola celno-skarbowa |
+| Ustawa o ochronie danych osobowych, tekst jednolity Dz.U. 2019 poz. 1781 | https://eli.gov.pl/eli/DU/2019/1781/ogl | 5.11.2026 | kontrola UODO |
+| Ustawa o Państwowej Inspekcji Sanitarnej, Dz.U. 2024 poz. 416; ustawa o Inspekcji Handlowej, Dz.U. 2026 poz. 656 | https://eli.gov.pl/eli/DU/2024/416/ogl ; https://eli.gov.pl/eli/DU/2026/656/ogl | 5.11.2026 | kontrole sanepidu i IH |
+| KPA, KKS, Kodeks karny, Kodeks pracy, KPW | https://eli.gov.pl | 5.11.2026 | pełnomocnik, utrudnianie kontroli, sankcje |
+| Ustawa o Rzeczniku MŚP, Dz.U. 2026 poz. 461 | https://eli.gov.pl/eli/DU/2026/461/ogl | 5.11.2026 | uprawnienia Rzecznika |
+| CBOSA i SAOS | https://orzeczenia.nsa.gov.pl ; https://www.saos.org.pl | 5.11.2026 | orzeczenia z sekcji 13 |

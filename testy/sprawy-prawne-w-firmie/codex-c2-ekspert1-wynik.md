@@ -1,0 +1,41 @@
+1. **BLOKER** — [cudzoziemcy.md:26](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:26>): zastąp ogólny „legalny pobyt” podstawami dopuszczonymi w PRACACUDZ art. 3 ust. 5, ponieważ np. sam polski dyplom i pobyt na wizie turystycznej nie wystarczają do pracy.
+2. **BLOKER** — [cudzoziemcy.md:55](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:55>): przy pracy na podstawie zezwolenia lub oświadczenia podczas postępowania pobytowego dodaj wymóg uprawnienia do pracy bezpośrednio przed złożeniem wniosku, którego wymaga PRACACUDZ art. 3 ust. 3 pkt 2.
+3. **BLOKER** — [przetargi.md:100](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:100>): dodaj termin przedstawiania dalszych dowodów, zasadniczo przed dniem rozprawy lub posiedzenia, wraz z wyjątkami i regułą dni wolnych, ponieważ pominięcie PZP art. 535 ust. 1–2 grozi utratą prawa ich powołania ([tekst ustawy](https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20190002019/U/D20192019Lj.pdf)).
+
+**Zatrudnienie**
+
+1. **WAŻNE** — [zatrudnienie-na-co-dzien.md:36](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:36>): rozdziel dodatkowe dane wymagane ustawą, zwykłe dane przetwarzane za zgodą oraz dane szczególne i karalność, ponieważ zgoda nie zastępuje warunków KP art. 22¹ § 4, art. 22¹ᵃ § 1 i art. 22¹ᵇ § 1.
+2. **WAŻNE** — [zatrudnienie-na-co-dzien.md:42](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:42>): wyłącz zwykłą pracę zdalną ze zwolnienia biurowych pracowników ze szkoleń okresowych, ponieważ KP art. 67³¹ § 3 wyłącza stosowanie tego zwolnienia.
+3. **WAŻNE** — [zatrudnienie-na-co-dzien.md:46](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:46>): uzależnij wydłużenie okresu rozliczeniowego do 12 miesięcy od układu albo porozumienia z reprezentacją pracowników i dodaj przekazanie porozumienia OIP w pięć dni roboczych, zgodnie z KP art. 150 § 3–4.
+4. **WAŻNE** — [zatrudnienie-na-co-dzien.md:58](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:58>): dodaj wyłączenie części urlopu odpowiadającej niewykorzystanemu urlopowi na żądanie z terminu 30 września, wynikające wprost z KP art. 168.
+5. **WAŻNE** — [zatrudnienie-na-co-dzien.md:109](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:109>): zawęż dodany po C1 roczny termin dotyczący zakazu konkurencji do roszczenia z KP art. 101¹ § 2, ponieważ KP art. 291 § 2¹ nie obejmuje nim automatycznie zakazu po ustaniu zatrudnienia.
+
+**B2B**
+
+1. **WAŻNE** — [wspolpraca-b2b.md:33](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/wspolpraca-b2b.md:33>): uzupełnij poprawkę C1 o dwuletnie przedawnienie roszczeń dotyczących zaliczek udzielonych zawodowemu usługodawcy, ponieważ KC art. 751 pkt 1 obejmuje również te roszczenia, obecnie wpadające do „pozostałych” trzyletnich.
+2. **WAŻNE** — [wspolpraca-b2b.md:34](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/wspolpraca-b2b.md:34>): wyłącz programy komputerowe z reguły wynagrodzenia opartej na PRAUT art. 43 ust. 1, ponieważ PRAUT art. 77 ust. 1 wyraźnie wyłącza stosowanie tego przepisu do programów.
+
+**Cudzoziemcy: pozostałe reguły**
+
+1. **WAŻNE** — [cudzoziemcy.md:34](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:34>): dodaj zastrzeżenie dłuższych okresów przechowywania dokumentacji zatrudnienia, ponieważ PRACACUDZ art. 4 ust. 6 nie pozwala zawsze zakończyć retencji po dwóch latach.
+2. **WAŻNE** — [cudzoziemcy.md:40](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:40>): przy zezwoleniu na pracę uwzględnij proporcjonalność wynagrodzenia minimalnego do niepełnego wymiaru z PRACACUDZ art. 30 ust. 2, odróżniając ją od miesięcznego minimum przy zezwoleniu jednolitym.
+3. **WAŻNE** — [cudzoziemcy.md:50](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:50>): dodaj warunek niezmienionego zakresu obowiązków przy zmianie nazwy stanowiska, wymagany przez PRACACUDZ art. 69 pkt 4, także w analogicznych opisach C13 i C22.
+4. **WAŻNE** — [cudzoziemcy.md:125](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:125>): zastąp „umowa przed złożeniem” obowiązkiem przekazania umowy przed powierzeniem pracy, ponieważ PRACACUDZ art. 17 ust. 1 pkt 2 nie wymaga zawarcia jej przed złożeniem wniosku o zezwolenie.
+
+**Przetargi: pozostałe reguły**
+
+1. **WAŻNE** — [przetargi.md:51](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:51>): przy zatrzymaniu wadium za niezłożenie dokumentów dodaj warunek uniemożliwienia wyboru oferty jako najkorzystniejszej, ponieważ sam zawiniony brak dokumentu nie wyczerpuje PZP art. 98 ust. 6 pkt 1.
+2. **WAŻNE** — [przetargi.md:57](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:57>): dopuść również zobowiązanie do naprawienia szkody przy samooczyszczeniu, ponieważ PZP art. 110 ust. 2 pkt 1 nie wymaga w każdym przypadku wcześniejszej zapłaty.
+3. **WAŻNE** — [przetargi.md:58](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:58>): uzupełnij poprawiony trzyletni okres dla PZP art. 109 ust. 1 pkt 2–3 o początek od ostatecznej decyzji albo zdarzenia, ponieważ PZP art. 111 pkt 2 nie wiąże go zawsze z prawomocnym wyrokiem.
+4. **WAŻNE** — [przetargi.md:88](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:88>): dodaj pozakwotowe warunki zmian, zwłaszcza przeszkody w zmianie wykonawcy przy zamówieniach dodatkowych oraz zachowanie ogólnego charakteru umowy we właściwych przypadkach, ponieważ same limity 50 %, 10 % i 15 % nie wystarczają ([PZP art. 455](https://ekomentarzpzp.uzp.gov.pl/prawo-zamowien-publicznych/art-455)).
+
+**NIS2**
+
+1. **WAŻNE** — [nis2.md:27](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/nis2.md:27>): ogranicz przypisanie niekwalifikowanych dostawców usług zaufania do podmiotów ważnych do mikro-, małych i średnich przedsiębiorców, ponieważ duży dostawca może być kluczowy na podstawie KSC art. 5 ust. 1 pkt 1.
+2. **WAŻNE** — [nis2.md:76](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/nis2.md:76>): zastąp dowolne „certyfikaty lub praktykę” wymaganiami ustawowymi dotyczącymi certyfikatów albo trzyletniej praktyki, ewentualnie dwuletniej ze studiami podyplomowymi, z uwzględnieniem KSC art. 15 ust. 2–3.
+3. **WAŻNE** — [nis2.md:99](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/nis2.md:99>): przenieś do operacyjnej listy zgłoszenia wyjątek 24 godzin dla dostawców usług zaufania z KSC art. 11 ust. 1a, ponieważ obecna lista podaje im również 72 godziny.
+4. **WAŻNE** — [nis2.md:53](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/nis2.md:53>): uzupełnij regułę i szkielet SZBI o ustawowy sposób liczenia retencji oraz protokół brakowania przechowywany trwale, ponieważ skrót „dwa lata od wycofania” pomija wymagania KSC art. 10 ust. 7–8.
+
+Nie uruchomiłem walidatora z powodu blokady procesów ani testów odpowiedzi modelu; kopii `references/katalog/` nie recenzowałem.
+
+**BLOKERY DO WYDANIA: TAK**

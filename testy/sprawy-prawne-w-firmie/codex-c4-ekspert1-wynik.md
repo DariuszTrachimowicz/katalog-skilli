@@ -1,0 +1,13 @@
+1. **WAŻNE — [cudzoziemcy.md:55](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:55>):** zamknięta lista podstaw pracy podczas postępowania pobytowego pomija zachowanie swobodnego dostępu z PRACACUDZ art. 3 ust. 1 pkt 18 oraz kontynuację z art. 21 i 71; dopisz te podstawy zamiast wymagać zawsze zezwolenia, oświadczenia albo przypadku z art. 3 ust. 2 pkt 6.
+
+2. **WAŻNE — [cudzoziemcy.md:44](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:44>):** powierzenie innej pracy przez maksymalnie 30 dni wymaga również zachowania pozostałych warunków zezwolenia, więc samo uprzednie powiadomienie wojewody nie wystarcza; dopisz warunek z PRACACUDZ art. 33 ust. 1 także do listy pism w linii 78.
+
+3. **WAŻNE — [przetargi.md:43](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:43>):** ogólna reguła uzupełniania dokumentów pomija odmienny tryb przedmiotowych środków dowodowych; dopisz obowiązek złożenia ich wraz z ofertą oraz ograniczenia uzupełniania z PZP art. 107 ust. 1-3, ponieważ błędu merytorycznego nie naprawia wezwanie z art. 128 ([komentarz UZP](https://ekomentarzpzp.uzp.gov.pl/prawo-zamowien-publicznych/art-107)).
+
+4. **WAŻNE — [wspolpraca-b2b.md:33](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/wspolpraca-b2b.md:33>):** przesunięcie końca przedawnienia na koniec roku przypisano tylko terminowi trzyletniemu, chociaż KC art. 118 zdanie drugie obejmuje również wskazane terminy dwuletnie z art. 646 i 751; dopisz wspólną regułę, aby nie sugerować przedawnienia dokładnie w drugą rocznicę.
+
+5. **WAŻNE — [zatrudnienie-na-co-dzien.md:32](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:32>):** limit dwumiesięcznej próby dotyczy planowanej umowy trwającej co najmniej 6 miesięcy, ale **krócej niż 12 miesięcy**, a nie „od 6 do 12”; popraw granicę, ponieważ przy planowanych dokładnie 12 miesiącach dopuszczalna jest próba trzymiesięczna bez uzasadniania wydłużenia rodzajem pracy (KP art. 25 § 2 i § 2² pkt 2).
+
+W `nis2.md` i punkcie 4.9 `pisma.md` nie stwierdziłem nowych błędów wymagających zgłoszenia. Kopie `references/katalog/` pozostały poza recenzją.
+
+**BLOKERY DO WYDANIA: NIE**

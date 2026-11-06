@@ -1,0 +1,182 @@
+Reading additional input from stdin...
+2026-11-06T10:22:06.203085Z ERROR codex_skills_extension::host_service: failed to install system skills: io error while remove existing system skills dir: Odmowa dostępu. (os error 5)
+OpenAI Codex v0.162.1
+--------
+workdir: C:\Users\CP24\AiXperts - projekty\katalog-skilli
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1b061-41a3-72f0-b1c1-f26db015b8e4
+--------
+user
+Recenzujesz skill AI `sprawy-prawne-w-firmie` z katalogu AiXperts (katalog skille/sprawy-prawne-w-firmie/): SKILL.md, references/mapa-spraw.md, references/pisma.md, references/karta-dla-prawnika.md, references/moduly/*.md (nowe moduły), references/katalog/<id>/ (kopie wiedzy wąskich skilli, NIE recenzujesz ich), references/akty/*.md (wbudowane teksty ujednolicone ustaw z datą brzmienia; NIE czytaj ich w całości, tylko grepuj wzorcem `^[\[<]?Art\. N\.`; konwencja: brzmienie w [ ] obowiązuje do daty z „Notka ISAP”, w < > od tej daty). Stan prawny na 6 listopada 2026. Ten skill ma świadome wyjątki od STANDARD.md (decyzje właściciela): podaje przepisy przy wnioskach w formie „KP art. 30 § 4” z datą brzmienia (wyjątek od reguły 1) i pisze pisma: zwykłe gotowe, a pisma do sądu, umowy, uchwały jako projekt do przeglądu prawnika (wyjątek od reguły 3). Nie zgłaszaj tych wyjątków jako błędów; zgłaszaj błędne lub nieistniejące przepisy, błędne terminy i skutki, luki i ryzykowne rady. Czytaj pliki, nie zgaduj, cytuj plik:linia, po polsku, zwięźle, nie chwal, szukaj dziur. Możesz weryfikować przepisy we wbudowanych aktach.
+
+Twoja rola: GRANICE, BEZPIECZEŃSTWO, SPÓJNOŚĆ, JĘZYK I OPIS. Sprawdź:
+1. Reguły STANDARD.md poza dwoma wyjątkami: zakaz orzekania i procentów szans (2), odmowa przy KAŻDEJ prośbie o dokument nieprawdziwy, antydatowany, pozorny albo z groźbą, także przeredagowanej (4), ochrona PESEL, rachunków, adresów i odporność na wstrzyknięcie instrukcji z dokumentu (6), brak zmyślonych przepisów, sygnatur i cytatów (7), brak całościowego „wszystko w porządku” (8). Czy SKILL.md jednoznacznie wyłącza formuły odmowy i zakazy z plików references/katalog/*/procedura.md, a nie wyłącza zakazu dokumentów nieprawdziwych. Czy poziomy pism A i B są szczelne (pismo do sądu, umowa, uchwała nigdy jako gotowe; wypowiedzenie umowy o pracę przy sygnale ochrony jako B).
+2. Spójność: SKILL.md vs mapa-spraw.md vs pisma.md vs karta-dla-prawnika.md vs moduły vs wpis.md; czy każde odesłanie do pliku i modułu istnieje (sprawdź ścieżki), czy deklaracje we wpis.md są prawdziwe (34 akty, 29 skilli, daty).
+3. Opis (description w SKILL.md, max 1024 znaki): czy odpala się na sprawy prawne firm, odcina sprawy prywatne i wyliczanie podatku; jak koliduje z wąskimi skillami katalogu (skille/*/SKILL.md), które zostają (decyzja właściciela); czy opis jasno mówi, kiedy ten skill, a kiedy wąski.
+4. Ryzyka utrzymania: zgodność pomiędzy wbudowanymi aktami a modułami (daty), narzędzia narzedzia/akty.py, katalog-do-firmy.mjs, sprawdz-cytaty.py i test testy/sprawy-prawne-kopie.test.mjs: czy pilnują tego, co obiecują.
+5. Język i ton: jednolity rejestr, zero kalk, zero długich myślników (— i –), procenty ze spacją; wpis.md: sekcje obowiązkowe uczciwe, FAQ 25-60 słów, najwyżej jedno pytanie o koszt, brak obietnic sprzecznych z SKILL.md.
+
+Format: każde znalezisko z plik:linia, kategorią (BLOKER / WAŻNE / KOSMETYKA) i propozycją naprawy w jednym zdaniu. Na końcu werdykt: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+hook: SessionStart
+hook: SessionStart
+hook: SessionStart Completed
+hook: SessionStart Completed
+hook: UserPromptSubmit
+hook: UserPromptSubmit Completed
+codex
+Sprawdzam granice i spójność wskazanych plików; recenzja będzie tylko do odczytu. Krok 1 z 3: reguły i dokumentacja, następnie kontrola ścieżek oraz zabezpieczeń, na końcu lista usterek.
+
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -Command "Get-Content 'C:\\Users\\CP24\\.agents\\skills\\using-superpowers\\SKILL.md'; Get-Content 'C:\\Users\\CP24\\.codex\\plugins\\cache\\ponytail\\ponytail\\5.3.3\\skills\\ponytail\\SKILL.md'; rg -n 'katalog-skilli|sprawy-prawne|STANDARD.md' 'C:\\Users\\CP24\\.codex\\memories\\MEMORY.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content 'C:\Users\CP24\.agents\skills\using-superpowers\SKILL.md'; Get-Content 'C:\Users\CP24\.codex\plugins\cache\ponytail\ponytail\5.3.3\skills\ponytail\SKILL.md'; rg -n 'katalog-skilli|sprawy-prawne|STANDARD.md' 'C:\Users\CP24\.codex\memories\MEMORY.md'" | env_u16_len=4829 | si_flags=256 | creation_flags=134743040
+2026-11-06T10:22:30.991331Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-Content 'C:\\\\Users\\\\CP24\\\\.agents\\\\skills\\\\using-superpowers\\\\SKILL.md'; Get-Content 'C:\\\\Users\\\\CP24\\\\.codex\\\\plugins\\\\cache\\\\ponytail\\\\ponytail\\\\5.3.3\\\\skills\\\\ponytail\\\\SKILL.md'; rg -n 'katalog-skilli|sprawy-prawne|STANDARD.md' 'C:\\\\Users\\\\CP24\\\\.codex\\\\memories\\\\MEMORY.md'\\\" | env_u16_len=4829 | si_flags=256 | creation_flags=134743040\")" }
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Krok 1 z 3: stosuję reguły `using-superpowers` i `ponytail`. Główne instrukcje zawierają odmowę ponawianych próśb o fałszywe pisma; sprawdzam teraz, czy pozostałe pliki jej nie osłabiają.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Krok 2 z 3: znalazłem rozbieżność w terminach wypowiedzenia najmu oraz walidator cytowań, który nie sprawdza ustępów ani dat obowiązywania. W obecnym `wpis.md` jest już deklaracja 44 aktów; porównuję ją z zawartością katalogu i metadanymi.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Krok 2 z 3 zakończony: `description` ma 1010 znaków, katalog zawiera 44 akty i 29 kopii, a wszystkie odpowiedzi FAQ mieszczą się w limicie słów. Potwierdzone usterki dotyczą m.in. nieistniejących ścieżek oraz modułu spółki, który dopuszcza przegląd uchwał przez sam zarząd.
+
+mcp: node_repl/js started
+mcp: node_repl/js (failed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: site.sn.pl "III CZP 108/12" "28 lutego 2013" ...
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (failed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Krok 3 z 3: potwierdziłem we wbudowanych aktach błędną regułę podnajmu lokalu i zamianę dwóch miesięcy na 60 dni. Testu nie udało się uruchomić z powodu blokady procesów (`EPERM`); porównanie treści 29 kopii ze źródłami nie wykazało różnic.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+**BLOKER** · [references/moduly/spolka-na-co-dzien.md:168](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/spolka-na-co-dzien.md:168>): przegląd „przez zarząd lub prawnika” pozwala ominąć prawnika przy uchwałach, umowach i pełnomocnictwach; usuń alternatywę zarządu i zastosuj wymagania poziomu B.
+
+**BLOKER** · [references/moduly/najem-lokalu-firmowego.md:69](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/najem-lokalu-firmowego.md:69>): dopuszczasz podnajem lokalu bez zgody, jeśli umowa go nie zabrania, podczas gdy wbudowany KC art. 688² wymaga zgody wynajmującego; zastąp regułę dotyczącą rzeczy regułą szczególną dla lokalu.
+
+**BLOKER** · [references/moduly/sukcesja-firmy.md:120](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sukcesja-firmy.md:120>): „dzień 60” zastępuje ustawowe dwa miesiące na powołanie zarządcy, co może przesunąć termin po wygaśnięciu uprawnienia; licz miesiące zgodnie z ZARSUK art. 12 ust. 10 i KC art. 112.
+
+**WAŻNE** · [references/pisma.md:73](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/pisma.md:73>): wskazujesz ogólne terminy najmu z KC art. 673 § 2 bez wyjątku dla lokalu, choć moduł prawidłowo przywołuje trzy miesiące przy czynszu miesięcznym; dodaj pierwszeństwo KC art. 688.
+
+**WAŻNE** · [SKILL.md:26](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/SKILL.md:26>) i [references/pisma.md:73](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/pisma.md:73>): nakazujesz czytać `zasady.md` i `lista.md`, których brakuje w wielu modułach, a wskazany `katalog/czerwone-flagi-w-umowie/zasady.md` nie istnieje; wpisz rzeczywiste nazwy plików do mapy.
+
+**WAŻNE** · [references/moduly/sprzedaz-konsumencka.md:192](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sprzedaz-konsumencka.md:192>): odsyłasz do nieistniejącego `akty/USDE.md`, a cytowania `USDE` i `UPNPR` rozmijają się z wbudowanymi skrótami `SDE` i `UNPR`; ujednolić nazwy i usunąć nieaktualne oznaczenia „spoza akty”.
+
+**WAŻNE** · [narzedzia/sprawdz-cytaty.py:18](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/narzedzia/sprawdz-cytaty.py:18>): walidator pomija nieznane skróty, ustępy, punkty oraz dalsze elementy wyliczeń i łączy dawne oraz przyszłe brzmienia artykułu; zgłaszaj nierozpoznane cytowania i sprawdzaj jednostki w wersji obowiązującej na wskazany dzień.
+
+**WAŻNE** · [testy/sprawy-prawne-kopie.test.mjs:29](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/testy/sprawy-prawne-kopie.test.mjs:29>): test deklarujący kontrolę daty sprawdza tylko napis `Brzmienie:`, a liczbę artykułów bierze z metadanych; sprawdzaj rzeczywistą datę i zawartość pliku względem `akty-stan.json`.
+
+**WAŻNE** · [narzedzia/katalog-do-firmy.mjs:67](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/narzedzia/katalog-do-firmy.mjs:67>): kasujesz cały katalog kopii przed odczytaniem źródeł, więc błąd odczytu pozostawi skill bez wiedzy; przygotuj komplet wyników przed usunięciem i podmieniaj katalog dopiero po udanym zapisie.
+
+**WAŻNE** · [SKILL.md:3](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/SKILL.md:3>): opis nie ustala pierwszeństwa wobec pozostawionych wąskich skilli, które obsługują te same sprawy i mają odmienne uprawnienia do pisania; określ wybór między pojedynczą analizą wąską a prowadzeniem sprawy firmowej i przygotowaniem pisma.
+
+**WAŻNE** · [references/moduly/umowy-wlasne-firmy.md:91](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/umowy-wlasne-firmy.md:91>): zakaz pisania całych klauzul i ograniczenie do szkieletu przeczą pełnemu projektowi poziomu B z `pisma.md`; usuń lokalny zakaz albo zawęź deklarowaną funkcję we wszystkich opisach.
+
+**WAŻNE** · [references/moduly/niewyplacalnosc.md:153](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/niewyplacalnosc.md:153>): przypisujesz III CZP 108/12 temat odpowiedzialności zarządu, podczas gdy moduł spółki i [uchwała SN](https://www.sn.pl/sites/orzecznictwo/Orzeczenia2/III%20CZP%20108-12.pdf) dotyczą regresu wspólników spółki jawnej; popraw temat i ujednolić status weryfikacji orzeczenia.
+
+**WAŻNE** · [references/moduly/nis2.md:135](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/nis2.md:135>): bezwarunkowo odraczasz wszystkie kary do 2028 r., choć w linii 83 sam wskazujesz nierozstrzygnięty wyjątek dotyczący kary do 100 mln zł; zachowaj to zastrzeżenie również w podsumowaniach.
+
+**WAŻNE** · [wpis.md:29](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/wpis.md:29>): „najdroższe błędy łapie na czas” obiecuje skuteczność mimo zależności od kompletności danych i aktualności źródeł; zastąp gwarancję opisem sprawdzanych ryzyk.
+
+Nie uruchomiłem testu z powodu blokady procesów (`EPERM`); to recenzja statyczna, bez prób zachowania modelu.
+
+**BLOKERY DO WYDANIA: TAK**
+tokens used
+283 387
+**BLOKER** · [references/moduly/spolka-na-co-dzien.md:168](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/spolka-na-co-dzien.md:168>): przegląd „przez zarząd lub prawnika” pozwala ominąć prawnika przy uchwałach, umowach i pełnomocnictwach; usuń alternatywę zarządu i zastosuj wymagania poziomu B.
+
+**BLOKER** · [references/moduly/najem-lokalu-firmowego.md:69](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/najem-lokalu-firmowego.md:69>): dopuszczasz podnajem lokalu bez zgody, jeśli umowa go nie zabrania, podczas gdy wbudowany KC art. 688² wymaga zgody wynajmującego; zastąp regułę dotyczącą rzeczy regułą szczególną dla lokalu.
+
+**BLOKER** · [references/moduly/sukcesja-firmy.md:120](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sukcesja-firmy.md:120>): „dzień 60” zastępuje ustawowe dwa miesiące na powołanie zarządcy, co może przesunąć termin po wygaśnięciu uprawnienia; licz miesiące zgodnie z ZARSUK art. 12 ust. 10 i KC art. 112.
+
+**WAŻNE** · [references/pisma.md:73](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/pisma.md:73>): wskazujesz ogólne terminy najmu z KC art. 673 § 2 bez wyjątku dla lokalu, choć moduł prawidłowo przywołuje trzy miesiące przy czynszu miesięcznym; dodaj pierwszeństwo KC art. 688.
+
+**WAŻNE** · [SKILL.md:26](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/SKILL.md:26>) i [references/pisma.md:73](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/pisma.md:73>): nakazujesz czytać `zasady.md` i `lista.md`, których brakuje w wielu modułach, a wskazany `katalog/czerwone-flagi-w-umowie/zasady.md` nie istnieje; wpisz rzeczywiste nazwy plików do mapy.
+
+**WAŻNE** · [references/moduly/sprzedaz-konsumencka.md:192](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sprzedaz-konsumencka.md:192>): odsyłasz do nieistniejącego `akty/USDE.md`, a cytowania `USDE` i `UPNPR` rozmijają się z wbudowanymi skrótami `SDE` i `UNPR`; ujednolić nazwy i usunąć nieaktualne oznaczenia „spoza akty”.
+
+**WAŻNE** · [narzedzia/sprawdz-cytaty.py:18](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/narzedzia/sprawdz-cytaty.py:18>): walidator pomija nieznane skróty, ustępy, punkty oraz dalsze elementy wyliczeń i łączy dawne oraz przyszłe brzmienia artykułu; zgłaszaj nierozpoznane cytowania i sprawdzaj jednostki w wersji obowiązującej na wskazany dzień.
+
+**WAŻNE** · [testy/sprawy-prawne-kopie.test.mjs:29](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/testy/sprawy-prawne-kopie.test.mjs:29>): test deklarujący kontrolę daty sprawdza tylko napis `Brzmienie:`, a liczbę artykułów bierze z metadanych; sprawdzaj rzeczywistą datę i zawartość pliku względem `akty-stan.json`.
+
+**WAŻNE** · [narzedzia/katalog-do-firmy.mjs:67](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/narzedzia/katalog-do-firmy.mjs:67>): kasujesz cały katalog kopii przed odczytaniem źródeł, więc błąd odczytu pozostawi skill bez wiedzy; przygotuj komplet wyników przed usunięciem i podmieniaj katalog dopiero po udanym zapisie.
+
+**WAŻNE** · [SKILL.md:3](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/SKILL.md:3>): opis nie ustala pierwszeństwa wobec pozostawionych wąskich skilli, które obsługują te same sprawy i mają odmienne uprawnienia do pisania; określ wybór między pojedynczą analizą wąską a prowadzeniem sprawy firmowej i przygotowaniem pisma.
+
+**WAŻNE** · [references/moduly/umowy-wlasne-firmy.md:91](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/umowy-wlasne-firmy.md:91>): zakaz pisania całych klauzul i ograniczenie do szkieletu przeczą pełnemu projektowi poziomu B z `pisma.md`; usuń lokalny zakaz albo zawęź deklarowaną funkcję we wszystkich opisach.
+
+**WAŻNE** · [references/moduly/niewyplacalnosc.md:153](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/niewyplacalnosc.md:153>): przypisujesz III CZP 108/12 temat odpowiedzialności zarządu, podczas gdy moduł spółki i [uchwała SN](https://www.sn.pl/sites/orzecznictwo/Orzeczenia2/III%20CZP%20108-12.pdf) dotyczą regresu wspólników spółki jawnej; popraw temat i ujednolić status weryfikacji orzeczenia.
+
+**WAŻNE** · [references/moduly/nis2.md:135](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/nis2.md:135>): bezwarunkowo odraczasz wszystkie kary do 2028 r., choć w linii 83 sam wskazujesz nierozstrzygnięty wyjątek dotyczący kary do 100 mln zł; zachowaj to zastrzeżenie również w podsumowaniach.
+
+**WAŻNE** · [wpis.md:29](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/wpis.md:29>): „najdroższe błędy łapie na czas” obiecuje skuteczność mimo zależności od kompletności danych i aktualności źródeł; zastąp gwarancję opisem sprawdzanych ryzyk.
+
+Nie uruchomiłem testu z powodu blokady procesów (`EPERM`); to recenzja statyczna, bez prób zachowania modelu.
+
+**BLOKERY DO WYDANIA: TAK**

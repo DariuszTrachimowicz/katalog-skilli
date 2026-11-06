@@ -1,0 +1,223 @@
+Reading additional input from stdin...
+OpenAI Codex v0.162.1
+--------
+workdir: C:\Users\CP24\AiXperts - projekty\katalog-skilli
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1b072-4db3-7e71-b1b5-85f4c6e3b293
+--------
+user
+CYKL 2. Po cyklu 1 naniesiono wszystkie uwagi wszystkich ról (około 90, odrzuconych 0; rejestr: testy/sprawy-prawne-w-firmie/poprawki-c1-moduly.md i wyniki codex-c1-*-wynik.md). Sprawdź, czy poprawki są trafne i nie wprowadziły nowych błędów, i szukaj błędów, których cykl 1 nie wychwycił. Nie powtarzaj uwag już naniesionych. Narzędzie narzedzia/sprawdz-cytaty.py sprawdza teraz także ustępy i nieznane skróty aktów.
+
+Jesteś doświadczonym radcą prawnym od prawa pracy, zatrudniania cudzoziemców, zamówień publicznych i cyberbezpieczeństwa (KSC, NIS2). Recenzujesz skill AI `sprawy-prawne-w-firmie` z katalogu AiXperts (katalog skille/sprawy-prawne-w-firmie/): SKILL.md, references/mapa-spraw.md, references/pisma.md, references/karta-dla-prawnika.md, references/moduly/*.md (nowe moduły), references/katalog/<id>/ (kopie wiedzy wąskich skilli, NIE recenzujesz ich), references/akty/*.md (wbudowane teksty ujednolicone ustaw z datą brzmienia; NIE czytaj ich w całości, tylko grepuj wzorcem `^[\[<]?Art\. N\.`; konwencja: brzmienie w [ ] obowiązuje do daty z „Notka ISAP”, w < > od tej daty). Stan prawny na 6 listopada 2026. Ten skill ma świadome wyjątki od STANDARD.md (decyzje właściciela): podaje przepisy przy wnioskach w formie „KP art. 30 § 4” z datą brzmienia (wyjątek od reguły 1) i pisze pisma: zwykłe gotowe, a pisma do sądu, umowy, uchwały jako projekt do przeglądu prawnika (wyjątek od reguły 3). Nie zgłaszaj tych wyjątków jako błędów; zgłaszaj błędne lub nieistniejące przepisy, błędne terminy i skutki, luki i ryzykowne rady. Czytaj pliki, nie zgaduj, cytuj plik:linia, po polsku, zwięźle, nie chwal, szukaj dziur. Możesz weryfikować przepisy we wbudowanych aktach.
+
+Twoja rola: POPRAWNOŚĆ MERYTORYCZNA modułów references/moduly/zatrudnienie-na-co-dzien.md, wspolpraca-b2b.md, cudzoziemcy.md, przetargi.md, nis2.md oraz punktu 4.9 w references/pisma.md. Sprawdź: czy reguły, terminy, kwoty i skutki są zgodne z przepisami (sprawdzaj we wbudowanych aktach KP, PRACACUDZ, CUDZ, PZP, KSC), czy przepis podany przy regule rzeczywiście to stanowi, czy nie ma ryzykownych rad, czy sygnały „tylko prawnik” są kompletne, czy zmiany w toku są oznaczone jako takie, czy orzeczenia nieotwarte są oznaczone.
+
+Format: każde znalezisko z plik:linia, kategorią (BLOKER / WAŻNE / KOSMETYKA) i propozycją naprawy w jednym zdaniu. Na końcu werdykt: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+hook: SessionStart
+hook: SessionStart
+hook: SessionStart Completed
+hook: SessionStart Completed
+hook: UserPromptSubmit
+hook: UserPromptSubmit Completed
+codex
+Sprawdzam wskazane moduły względem aktów i rejestru cyklu 1. Etap 1 z 3: odczyt poprawek i zakresu recenzji; przewidywany czas całości: 20–30 minut.
+
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -Command "Get-Content 'C:\\Users\\CP24\\.agents\\skills\\using-superpowers\\SKILL.md'; Get-Content 'C:\\Users\\CP24\\.codex\\plugins\\cache\\ponytail\\ponytail\\5.3.3\\skills\\ponytail\\SKILL.md'; rg -n 'sprawy-prawne-w-firmie|katalog-skilli' 'C:\\Users\\CP24\\.codex\\memories\\MEMORY.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+2026-11-06T10:41:04.562836Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-Content 'C:\\\\Users\\\\CP24\\\\.agents\\\\skills\\\\using-superpowers\\\\SKILL.md'; Get-Content 'C:\\\\Users\\\\CP24\\\\.codex\\\\plugins\\\\cache\\\\ponytail\\\\ponytail\\\\5.3.3\\\\skills\\\\ponytail\\\\SKILL.md'; rg -n 'sprawy-prawne-w-firmie|katalog-skilli' 'C:\\\\Users\\\\CP24\\\\.codex\\\\memories\\\\MEMORY.md'\\\" | env_u16_len=4829 | si_flags=256 | creation_flags=134743040\")" }
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content 'C:\Users\CP24\.agents\skills\using-superpowers\SKILL.md'; Get-Content 'C:\Users\CP24\.codex\plugins\cache\ponytail\ponytail\5.3.3\skills\ponytail\SKILL.md'; rg -n 'sprawy-prawne-w-firmie|katalog-skilli' 'C:\Users\CP24\.codex\memories\MEMORY.md'" | env_u16_len=4829 | si_flags=256 | creation_flags=134743040
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -NoProfile -Command "Get-Content 'C:\\Users\\CP24\\.agents\\skills\\using-superpowers\\SKILL.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -NoProfile -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content 'C:\Users\CP24\.agents\skills\using-superpowers\SKILL.md'" | env_u16_len=4829 | si_flags=256 | creation_flags=134743040
+2026-11-06T10:41:17.789347Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -NoProfile -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-Content 'C:\\\\Users\\\\CP24\\\\.agents\\\\skills\\\\using-superpowers\\\\SKILL.md'\\\" | env_u16_len=4829 | si_flags=256 | creation_flags=134743040\")" }
+mcp: codex_apps/remote_desktop_commander.read_file started
+mcp: codex_apps/remote_desktop_commander.read_file started
+mcp: codex_apps/remote_desktop_commander.read_file (failed)
+mcp: codex_apps/remote_desktop_commander.read_file (failed)
+mcp: codex_apps/remote_desktop_commander.start_process started
+mcp: codex_apps/remote_desktop_commander.start_process (failed)
+MCP tool call requires approval, but approval policy is never
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 1 z 3: pliki są dostępne do odczytu; terminal blokuje uruchamianie poleceń, więc używam bezpośredniego odczytu. Stosuję zasady `using-superpowers` i Ponytail: recenzja bez zmian w plikach, z dowodem dla każdej uwagi.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: site.gov.pl KSC "2026" "252" "7c" ...
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 1 z 3 zakończony: mam treść pięciu modułów i rejestr wcześniejszych uwag. Etap 2 z 3: sprawdzam pełne brzmienie przywołanych artykułów, szczególnie wyjątki od terminów i obowiązków.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 2 z 3: potwierdziłem nowe luki w warunkach pracy cudzoziemca podczas postępowania pobytowego oraz w skrócie wymagań dla audytorów KSC. Sprawdzam jeszcze procedurę KIO i pisma pracownicze, aby oddzielić błędy od dopuszczalnych uproszczeń.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: site.gov.pl/web/uzp "2026" "535" "dowodów" ...
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: site.pip.gov.pl monitoring "obwieszczeniu" "lub" "regulaminu" ...
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Etap 2 z 3 zakończony: potwierdziłem także pominięcie terminu przedstawienia dowodów przed KIO, którego przekroczenie może spowodować utratę prawa do ich powołania. Etap 3 z 3: porównuję uwagi z cyklem 1 i sprawdzam końcowe numery linii.
+
+web search: 
+web search: site.gov.pl/web/uzp "wykluczenie" "7 ust. 1" "5k" "sankcje" ...
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: site.sn.pl "1012" "przedawnienia" "291" "trzyletni" ...
+codex
+1. **BLOKER** — [cudzoziemcy.md:26](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:26>): zastąp ogólny „legalny pobyt” podstawami dopuszczonymi w PRACACUDZ art. 3 ust. 5, ponieważ np. sam polski dyplom i pobyt na wizie turystycznej nie wystarczają do pracy.
+2. **BLOKER** — [cudzoziemcy.md:55](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:55>): przy pracy na podstawie zezwolenia lub oświadczenia podczas postępowania pobytowego dodaj wymóg uprawnienia do pracy bezpośrednio przed złożeniem wniosku, którego wymaga PRACACUDZ art. 3 ust. 3 pkt 2.
+3. **BLOKER** — [przetargi.md:100](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:100>): dodaj termin przedstawiania dalszych dowodów, zasadniczo przed dniem rozprawy lub posiedzenia, wraz z wyjątkami i regułą dni wolnych, ponieważ pominięcie PZP art. 535 ust. 1–2 grozi utratą prawa ich powołania ([tekst ustawy](https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20190002019/U/D20192019Lj.pdf)).
+
+**Zatrudnienie**
+
+1. **WAŻNE** — [zatrudnienie-na-co-dzien.md:36](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:36>): rozdziel dodatkowe dane wymagane ustawą, zwykłe dane przetwarzane za zgodą oraz dane szczególne i karalność, ponieważ zgoda nie zastępuje warunków KP art. 22¹ § 4, art. 22¹ᵃ § 1 i art. 22¹ᵇ § 1.
+2. **WAŻNE** — [zatrudnienie-na-co-dzien.md:42](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:42>): wyłącz zwykłą pracę zdalną ze zwolnienia biurowych pracowników ze szkoleń okresowych, ponieważ KP art. 67³¹ § 3 wyłącza stosowanie tego zwolnienia.
+3. **WAŻNE** — [zatrudnienie-na-co-dzien.md:46](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:46>): uzależnij wydłużenie okresu rozliczeniowego do 12 miesięcy od układu albo porozumienia z reprezentacją pracowników i dodaj przekazanie porozumienia OIP w pięć dni roboczych, zgodnie z KP art. 150 § 3–4.
+4. **WAŻNE** — [zatrudnienie-na-co-dzien.md:58](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:58>): dodaj wyłączenie części urlopu odpowiadającej niewykorzystanemu urlopowi na żądanie z terminu 30 września, wynikające wprost z KP art. 168.
+5. **WAŻNE** — [zatrudnienie-na-co-dzien.md:109](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:109>): zawęż dodany po C1 roczny termin dotyczący zakazu konkurencji do roszczenia z KP art. 101¹ § 2, ponieważ KP art. 291 § 2¹ nie obejmuje nim automatycznie zakazu po ustaniu zatrudnienia.
+
+**B2B**
+
+1. **WAŻNE** — [wspolpraca-b2b.md:33](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/wspolpraca-b2b.md:33>): uzupełnij poprawkę C1 o dwuletnie przedawnienie roszczeń dotyczących zaliczek udzielonych zawodowemu usługodawcy, ponieważ KC art. 751 pkt 1 obejmuje również te roszczenia, obecnie wpadające do „pozostałych” trzyletnich.
+2. **WAŻNE** — [wspolpraca-b2b.md:34](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/wspolpraca-b2b.md:34>): wyłącz programy komputerowe z reguły wynagrodzenia opartej na PRAUT art. 43 ust. 1, ponieważ PRAUT art. 77 ust. 1 wyraźnie wyłącza stosowanie tego przepisu do programów.
+
+**Cudzoziemcy: pozostałe reguły**
+
+1. **WAŻNE** — [cudzoziemcy.md:34](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:34>): dodaj zastrzeżenie dłuższych okresów przechowywania dokumentacji zatrudnienia, ponieważ PRACACUDZ art. 4 ust. 6 nie pozwala zawsze zakończyć retencji po dwóch latach.
+2. **WAŻNE** — [cudzoziemcy.md:40](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:40>): przy zezwoleniu na pracę uwzględnij proporcjonalność wynagrodzenia minimalnego do niepełnego wymiaru z PRACACUDZ art. 30 ust. 2, odróżniając ją od miesięcznego minimum przy zezwoleniu jednolitym.
+3. **WAŻNE** — [cudzoziemcy.md:50](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:50>): dodaj warunek niezmienionego zakresu obowiązków przy zmianie nazwy stanowiska, wymagany przez PRACACUDZ art. 69 pkt 4, także w analogicznych opisach C13 i C22.
+4. **WAŻNE** — [cudzoziemcy.md:125](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:125>): zastąp „umowa przed złożeniem” obowiązkiem przekazania umowy przed powierzeniem pracy, ponieważ PRACACUDZ art. 17 ust. 1 pkt 2 nie wymaga zawarcia jej przed złożeniem wniosku o zezwolenie.
+
+**Przetargi: pozostałe reguły**
+
+1. **WAŻNE** — [przetargi.md:51](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:51>): przy zatrzymaniu wadium za niezłożenie dokumentów dodaj warunek uniemożliwienia wyboru oferty jako najkorzystniejszej, ponieważ sam zawiniony brak dokumentu nie wyczerpuje PZP art. 98 ust. 6 pkt 1.
+2. **WAŻNE** — [przetargi.md:57](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:57>): dopuść również zobowiązanie do naprawienia szkody przy samooczyszczeniu, ponieważ PZP art. 110 ust. 2 pkt 1 nie wymaga w każdym przypadku wcześniejszej zapłaty.
+3. **WAŻNE** — [przetargi.md:58](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:58>): uzupełnij poprawiony trzyletni okres dla PZP art. 109 ust. 1 pkt 2–3 o początek od ostatecznej decyzji albo zdarzenia, ponieważ PZP art. 111 pkt 2 nie wiąże go zawsze z prawomocnym wyrokiem.
+4. **WAŻNE** — [przetargi.md:88](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:88>): dodaj pozakwotowe warunki zmian, zwłaszcza przeszkody w zmianie wykonawcy przy zamówieniach dodatkowych oraz zachowanie ogólnego charakteru umowy we właściwych przypadkach, ponieważ same limity 50 %, 10 % i 15 % nie wystarczają ([PZP art. 455](https://ekomentarzpzp.uzp.gov.pl/prawo-zamowien-publicznych/art-455)).
+
+**NIS2**
+
+1. **WAŻNE** — [nis2.md:27](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/nis2.md:27>): ogranicz przypisanie niekwalifikowanych dostawców usług zaufania do podmiotów ważnych do mikro-, małych i średnich przedsiębiorców, ponieważ duży dostawca może być kluczowy na podstawie KSC art. 5 ust. 1 pkt 1.
+2. **WAŻNE** — [nis2.md:76](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/nis2.md:76>): zastąp dowolne „certyfikaty lub praktykę” wymaganiami ustawowymi dotyczącymi certyfikatów albo trzyletniej praktyki, ewentualnie dwuletniej ze studiami podyplomowymi, z uwzględnieniem KSC art. 15 ust. 2–3.
+3. **WAŻNE** — [nis2.md:99](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/nis2.md:99>): przenieś do operacyjnej listy zgłoszenia wyjątek 24 godzin dla dostawców usług zaufania z KSC art. 11 ust. 1a, ponieważ obecna lista podaje im również 72 godziny.
+4. **WAŻNE** — [nis2.md:53](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/nis2.md:53>): uzupełnij regułę i szkielet SZBI o ustawowy sposób liczenia retencji oraz protokół brakowania przechowywany trwale, ponieważ skrót „dwa lata od wycofania” pomija wymagania KSC art. 10 ust. 7–8.
+
+Nie uruchomiłem walidatora z powodu blokady procesów ani testów odpowiedzi modelu; kopii `references/katalog/` nie recenzowałem.
+
+**BLOKERY DO WYDANIA: TAK**
+tokens used
+337 748
+1. **BLOKER** — [cudzoziemcy.md:26](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:26>): zastąp ogólny „legalny pobyt” podstawami dopuszczonymi w PRACACUDZ art. 3 ust. 5, ponieważ np. sam polski dyplom i pobyt na wizie turystycznej nie wystarczają do pracy.
+2. **BLOKER** — [cudzoziemcy.md:55](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:55>): przy pracy na podstawie zezwolenia lub oświadczenia podczas postępowania pobytowego dodaj wymóg uprawnienia do pracy bezpośrednio przed złożeniem wniosku, którego wymaga PRACACUDZ art. 3 ust. 3 pkt 2.
+3. **BLOKER** — [przetargi.md:100](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:100>): dodaj termin przedstawiania dalszych dowodów, zasadniczo przed dniem rozprawy lub posiedzenia, wraz z wyjątkami i regułą dni wolnych, ponieważ pominięcie PZP art. 535 ust. 1–2 grozi utratą prawa ich powołania ([tekst ustawy](https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20190002019/U/D20192019Lj.pdf)).
+
+**Zatrudnienie**
+
+1. **WAŻNE** — [zatrudnienie-na-co-dzien.md:36](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:36>): rozdziel dodatkowe dane wymagane ustawą, zwykłe dane przetwarzane za zgodą oraz dane szczególne i karalność, ponieważ zgoda nie zastępuje warunków KP art. 22¹ § 4, art. 22¹ᵃ § 1 i art. 22¹ᵇ § 1.
+2. **WAŻNE** — [zatrudnienie-na-co-dzien.md:42](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:42>): wyłącz zwykłą pracę zdalną ze zwolnienia biurowych pracowników ze szkoleń okresowych, ponieważ KP art. 67³¹ § 3 wyłącza stosowanie tego zwolnienia.
+3. **WAŻNE** — [zatrudnienie-na-co-dzien.md:46](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:46>): uzależnij wydłużenie okresu rozliczeniowego do 12 miesięcy od układu albo porozumienia z reprezentacją pracowników i dodaj przekazanie porozumienia OIP w pięć dni roboczych, zgodnie z KP art. 150 § 3–4.
+4. **WAŻNE** — [zatrudnienie-na-co-dzien.md:58](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:58>): dodaj wyłączenie części urlopu odpowiadającej niewykorzystanemu urlopowi na żądanie z terminu 30 września, wynikające wprost z KP art. 168.
+5. **WAŻNE** — [zatrudnienie-na-co-dzien.md:109](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/zatrudnienie-na-co-dzien.md:109>): zawęż dodany po C1 roczny termin dotyczący zakazu konkurencji do roszczenia z KP art. 101¹ § 2, ponieważ KP art. 291 § 2¹ nie obejmuje nim automatycznie zakazu po ustaniu zatrudnienia.
+
+**B2B**
+
+1. **WAŻNE** — [wspolpraca-b2b.md:33](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/wspolpraca-b2b.md:33>): uzupełnij poprawkę C1 o dwuletnie przedawnienie roszczeń dotyczących zaliczek udzielonych zawodowemu usługodawcy, ponieważ KC art. 751 pkt 1 obejmuje również te roszczenia, obecnie wpadające do „pozostałych” trzyletnich.
+2. **WAŻNE** — [wspolpraca-b2b.md:34](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/wspolpraca-b2b.md:34>): wyłącz programy komputerowe z reguły wynagrodzenia opartej na PRAUT art. 43 ust. 1, ponieważ PRAUT art. 77 ust. 1 wyraźnie wyłącza stosowanie tego przepisu do programów.
+
+**Cudzoziemcy: pozostałe reguły**
+
+1. **WAŻNE** — [cudzoziemcy.md:34](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:34>): dodaj zastrzeżenie dłuższych okresów przechowywania dokumentacji zatrudnienia, ponieważ PRACACUDZ art. 4 ust. 6 nie pozwala zawsze zakończyć retencji po dwóch latach.
+2. **WAŻNE** — [cudzoziemcy.md:40](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:40>): przy zezwoleniu na pracę uwzględnij proporcjonalność wynagrodzenia minimalnego do niepełnego wymiaru z PRACACUDZ art. 30 ust. 2, odróżniając ją od miesięcznego minimum przy zezwoleniu jednolitym.
+3. **WAŻNE** — [cudzoziemcy.md:50](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:50>): dodaj warunek niezmienionego zakresu obowiązków przy zmianie nazwy stanowiska, wymagany przez PRACACUDZ art. 69 pkt 4, także w analogicznych opisach C13 i C22.
+4. **WAŻNE** — [cudzoziemcy.md:125](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/cudzoziemcy.md:125>): zastąp „umowa przed złożeniem” obowiązkiem przekazania umowy przed powierzeniem pracy, ponieważ PRACACUDZ art. 17 ust. 1 pkt 2 nie wymaga zawarcia jej przed złożeniem wniosku o zezwolenie.
+
+**Przetargi: pozostałe reguły**
+
+1. **WAŻNE** — [przetargi.md:51](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:51>): przy zatrzymaniu wadium za niezłożenie dokumentów dodaj warunek uniemożliwienia wyboru oferty jako najkorzystniejszej, ponieważ sam zawiniony brak dokumentu nie wyczerpuje PZP art. 98 ust. 6 pkt 1.
+2. **WAŻNE** — [przetargi.md:57](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:57>): dopuść również zobowiązanie do naprawienia szkody przy samooczyszczeniu, ponieważ PZP art. 110 ust. 2 pkt 1 nie wymaga w każdym przypadku wcześniejszej zapłaty.
+3. **WAŻNE** — [przetargi.md:58](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:58>): uzupełnij poprawiony trzyletni okres dla PZP art. 109 ust. 1 pkt 2–3 o początek od ostatecznej decyzji albo zdarzenia, ponieważ PZP art. 111 pkt 2 nie wiąże go zawsze z prawomocnym wyrokiem.
+4. **WAŻNE** — [przetargi.md:88](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/przetargi.md:88>): dodaj pozakwotowe warunki zmian, zwłaszcza przeszkody w zmianie wykonawcy przy zamówieniach dodatkowych oraz zachowanie ogólnego charakteru umowy we właściwych przypadkach, ponieważ same limity 50 %, 10 % i 15 % nie wystarczają ([PZP art. 455](https://ekomentarzpzp.uzp.gov.pl/prawo-zamowien-publicznych/art-455)).
+
+**NIS2**
+
+1. **WAŻNE** — [nis2.md:27](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/nis2.md:27>): ogranicz przypisanie niekwalifikowanych dostawców usług zaufania do podmiotów ważnych do mikro-, małych i średnich przedsiębiorców, ponieważ duży dostawca może być kluczowy na podstawie KSC art. 5 ust. 1 pkt 1.
+2. **WAŻNE** — [nis2.md:76](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/nis2.md:76>): zastąp dowolne „certyfikaty lub praktykę” wymaganiami ustawowymi dotyczącymi certyfikatów albo trzyletniej praktyki, ewentualnie dwuletniej ze studiami podyplomowymi, z uwzględnieniem KSC art. 15 ust. 2–3.
+3. **WAŻNE** — [nis2.md:99](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/nis2.md:99>): przenieś do operacyjnej listy zgłoszenia wyjątek 24 godzin dla dostawców usług zaufania z KSC art. 11 ust. 1a, ponieważ obecna lista podaje im również 72 godziny.
+4. **WAŻNE** — [nis2.md:53](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/nis2.md:53>): uzupełnij regułę i szkielet SZBI o ustawowy sposób liczenia retencji oraz protokół brakowania przechowywany trwale, ponieważ skrót „dwa lata od wycofania” pomija wymagania KSC art. 10 ust. 7–8.
+
+Nie uruchomiłem walidatora z powodu blokady procesów ani testów odpowiedzi modelu; kopii `references/katalog/` nie recenzowałem.
+
+**BLOKERY DO WYDANIA: TAK**

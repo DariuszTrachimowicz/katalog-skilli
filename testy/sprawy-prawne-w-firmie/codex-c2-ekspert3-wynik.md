@@ -1,0 +1,29 @@
+**BLOKER — [umowy-wlasne-firmy.md:73](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/umowy-wlasne-firmy.md:73>):** Poprawka C1 błędnie przypisuje przewozowi i spedycji dwuletnie przedawnienie z KC art. 751; zastąp je zasadniczo terminami rocznymi z KC art. 778, 792 i 803, z zastrzeżeniem przepisów szczególnych, ponieważ obecna reguła grozi utratą roszczenia ([tekst KC](https://api.sejm.gov.pl/eli/acts/DU/2024/1061/text.pdf)).
+
+**WAŻNE — [pisma.md:81](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/pisma.md:81>):** Nowa reguła utraty rękojmi obejmuje bezwarunkowo wszystkie transakcje między przedsiębiorcami; poprzedź ją kwalifikacją niezawodowego zakupu osoby fizycznej, dla którego właściwe są UPK art. 7aa i 43a albo wyłączenie KC art. 563 przez art. 556⁵ § 1.
+
+**WAŻNE — [umowy-wlasne-firmy.md:93](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/umowy-wlasne-firmy.md:93>):** Instrukcja ograniczania odpowiedzialności wskazuje tylko wyjątek umyślności, co przy umowie producenta pozwala przeoczyć bezwzględny zakaz ograniczania odpowiedzialności za produkt niebezpieczny; dodaj KC art. 449⁹ oraz sprawdzenie szczególnych zakazów przed zaproponowaniem limitu.
+
+**WAŻNE — [umowy-wlasne-firmy.md:56](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/umowy-wlasne-firmy.md:56>):** Zwrot zadatku powiązano z brakiem winy zamiast z brakiem odpowiedzialności, choć strona może odpowiadać również bez własnej winy; odtwórz przesłankę KC art. 394 § 3 i uwzględnij umowne rozszerzenie odpowiedzialności.
+
+**WAŻNE — [sprzedaz-konsumencka.md:38](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sprzedaz-konsumencka.md:38>):** Przy sprzedaży telefonicznej opisano wyłącznie potwierdzenie zawartej umowy, pomijając warunek skuteczności oświadczenia konsumenta; dodaj kolejność z UPK art. 20 ust. 2: potwierdzenie propozycji na trwałym nośniku, następnie utrwalona akceptacja konsumenta.
+
+**WAŻNE — [sprzedaz-konsumencka.md:52](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sprzedaz-konsumencka.md:52>):** Samo wyraźne żądanie rozpoczęcia usługi poza lokalem nie wystarcza do obciążenia klienta po odstąpieniu; dodaj wymóg żądania na trwałym nośniku oraz oświadczenia o przyjęciu informacji do wiadomości zgodnie z UPK art. 15 ust. 3, 35 i 36.
+
+**WAŻNE — [sprzedaz-konsumencka.md:65](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sprzedaz-konsumencka.md:65>):** Sztywne dwa lata pomijają dłuższy określony termin przydatności towaru oraz podstępne zatajenie niezgodności; dodaj wyjątki z UPK art. 43c ust. 1–2, aby nie odmawiać reklamacji wyłącznie z powodu upływu dwóch lat.
+
+**WAŻNE — [sprzedaz-konsumencka.md:101](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sprzedaz-konsumencka.md:101>):** Procedura dostępności pomija obowiązek niezwłocznego poinformowania organu nadzoru o niespełnianiu wymagań przez usługę i podjętych działaniach naprawczych; dodaj DOST art. 32 ust. 2 pkt 5–6, którego naruszenie jest odrębnie sankcjonowane w art. 73 ust. 1 pkt 2 lit. e ([ustawa](https://api.sejm.gov.pl/eli/acts/DU/2024/731/text.html)).
+
+**WAŻNE — [marka-i-tajemnica.md:35](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/marka-i-tajemnica.md:35>):** Dopisane po C1 „dowolny taki okres” pomija oddalenie wniosku po rozpoczęciu lub wznowieniu rzeczywistego używania znaku przed jego złożeniem; dodaj PWP art. 170 ust. 1–2 wraz z wyjątkiem dotyczącym pozornego ratowania ochrony przed spodziewanym wnioskiem ([tekst PWP](https://eli.gov.pl/api/acts/DU/2023/1170/text.pdf)).
+
+**WAŻNE — [marka-i-tajemnica.md:55](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/marka-i-tajemnica.md:55>):** Bezwarunkowa dopuszczalność odsprzedaży oryginalnych towarów z EOG pomija uzasadniony sprzeciw uprawnionego, zwłaszcza po zmianie lub pogorszeniu stanu towaru; dodaj wyjątek z PWP art. 155 ust. 3 ([omówienie PARP](https://www.parp.gov.pl/component/content/article/53924%3Aprodukty-dedykowane-na-rynki-prawo-do-decydowania-o-ich-wprowadzeniu)).
+
+**WAŻNE — [marka-i-tajemnica.md:78](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/marka-i-tajemnica.md:78>):** Ogólne odesłanie do KC art. 442¹ sugeruje stałe dwudziestoletnie przedawnienie szkody z przestępnego wycieku tajemnicy; dodaj ZNK art. 20 ust. 4, który wyłącza § 2 tego przepisu i ustanawia dwadzieścia lat jako granicę maksymalną ([przepis zmieniający](https://api.sejm.gov.pl/eli/acts/DU/2018/1637/text.html)).
+
+**WAŻNE — [mapa-spraw.md:61](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/mapa-spraw.md:61>):** Dodana ścieżka antymonopolowa nadal pomija koncentracje, w tym przejęcie kontroli i utworzenie wspólnego przedsiębiorcy; dodaj kwalifikację według UOKIK art. 13–14 oraz skierowanie do prawnika przed realizacją transakcji objętej obowiązkiem wstrzymania z art. 97.
+
+**WAŻNE — [mapa-spraw.md:94](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/mapa-spraw.md:94>):** Mapa nie obejmuje obowiązków dotyczących odpadów, opakowań i BDO ani nie wyłącza ich z zakresu; dodaj osobną ścieżkę rozpoznania obowiązków i przekazania specjaliście, ponieważ dotyczą również zwykłych firm handlowych ([oficjalna baza BDO](https://bdo.mos.gov.pl/pytania-i-odpowiedzi/)).
+
+Recenzja statyczna; bez testów odpowiedzi modelu i bez recenzowania kopii `references/katalog/`.
+
+**BLOKERY DO WYDANIA: TAK**

@@ -1,0 +1,67 @@
+{
+  "model": {
+    "skala": {
+      "min": 1,
+      "max": 4,
+      "opis": {
+        "1": "brak istotnych okolicznosci podnoszacych ryzyko",
+        "2": "pojedyncze okolicznosci, typowe dla profilu instytucji",
+        "3": "wyrazne okolicznosci wymagajace uwagi",
+        "4": "nasilone okolicznosci, rozwazyc srodki wzmozone"
+      }
+    },
+    "czynniki": [
+      {
+        "id": "gotowka",
+        "nazwa": "Udzial gotowki",
+        "grupa": "produkty",
+        "waga": 40,
+        "uzasadnienie_wagi": "Instytucja obsluguje branze gotowkowe, to dominujace ryzyko z oceny instytucji."
+      },
+      {
+        "id": "struktura",
+        "nazwa": "Przejrzystosc struktury",
+        "grupa": "klient",
+        "waga": 35,
+        "uzasadnienie_wagi": "Klienci ze zlozona struktura utrudniaja ustalenie beneficjenta rzeczywistego."
+      },
+      {
+        "id": "kanal",
+        "nazwa": "Kanal nawiazania relacji",
+        "grupa": "kanal",
+        "waga": 25,
+        "uzasadnienie_wagi": "Czesc relacji nawiazywana w pelni zdalnie, bez kontaktu osobistego."
+      }
+    ],
+    "progi": [
+      { "poziom": "niskie", "od": 1, "do": 2.0 },
+      { "poziom": "standardowe", "od": 2.0, "do": 3.0 },
+      { "poziom": "wysokie", "od": 3.0, "do": 4 }
+    ],
+    "uzasadnienie_progow": "Poziom wysoki obejmuje gorna cwierc skali, bo dominujace ryzyka instytucji (gotowka, struktury) wymagaja wczesnego siegania po srodki wzmozone; granice przyjete przy budowie modelu i opisane w dokumencie modelu.",
+    "grupy_nieuwzglednione": {
+      "geografia": "Klienci i beneficjenci tej instytucji to podmioty krajowe bez transakcji zagranicznych; grupa rozwazona przy budowie modelu i uznana za nieistotna, do przegladu przy zmianie profilu klientow."
+    }
+  },
+  "klient": {
+    "oznaczenie": "klient-K-014",
+    "oceny": [
+      {
+        "czynnik": "gotowka",
+        "ocena": 3,
+        "uzasadnienie": "Klient deklaruje regularne wplaty gotowkowe blisko progow."
+      },
+      {
+        "czynnik": "struktura",
+        "ocena": 2,
+        "uzasadnienie": "Prosta struktura wlascicielska ustalona w badaniu wlasnym, zgodna z wpisem w CRBR."
+      },
+      {
+        "czynnik": "kanal",
+        "ocena": 4,
+        "uzasadnienie": "Relacja w pelni zdalna, dokumenty wylacznie skanem."
+      }
+    ],
+    "flagi_krytyczne": []
+  }
+}

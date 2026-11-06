@@ -1,4 +1,4 @@
-// Minimalny zapis archiwum ZIP metodą "store" (bez kompresji).
+// Minimalny zapis archiwum ZIP: metoda "store", a duże pliki deflate (patrz PROG_KOMPRESJI).
 // Zero zależności zewnętrznych — pliki .skill to małe dokumenty tekstowe,
 // więc kompresja nic tu nie zmienia, a brak zależności oznacza,
 // że ten generator zbuduje się także za trzy lata.
@@ -24,6 +24,12 @@ function crc32(buf) {
 const CZAS_DOS = 0;
 const DATA_DOS = ((2026 - 1980) << 9) | (1 << 5) | 1;
 
+import { deflateRawSync } from "node:zlib";
+
+// Pliki powyżej 64 KB (wbudowane teksty ustaw w skillu sprawy-prawne-w-firmie) kompresujemy metodą deflate
+// z wbudowanego zlib Node; mniejsze zostają w trybie store, więc dotychczasowe paczki są bajt w bajt te same.
+const PROG_KOMPRESJI = 64 * 1024;
+
 export function zbudujZip(wpisy) {
   const lokalne = [];
   const centralne = [];
@@ -32,32 +38,37 @@ export function zbudujZip(wpisy) {
   for (const { nazwa, dane } of wpisy) {
     const nazwaBuf = Buffer.from(nazwa, "utf8");
     const suma = crc32(dane);
+    let zapis = dane, metoda = 0;
+    if (dane.length > PROG_KOMPRESJI) {
+      const d = deflateRawSync(dane, { level: 9 });
+      if (d.length < dane.length * 0.9) { zapis = d; metoda = 8; }
+    }
 
     const naglowek = Buffer.alloc(30);
     naglowek.writeUInt32LE(0x04034b50, 0);
     naglowek.writeUInt16LE(20, 4);
     naglowek.writeUInt16LE(0x0800, 6); // flaga: nazwy w UTF-8
-    naglowek.writeUInt16LE(0, 8);
+    naglowek.writeUInt16LE(metoda, 8);
     naglowek.writeUInt16LE(CZAS_DOS, 10);
     naglowek.writeUInt16LE(DATA_DOS, 12);
     naglowek.writeUInt32LE(suma, 14);
-    naglowek.writeUInt32LE(dane.length, 18);
+    naglowek.writeUInt32LE(zapis.length, 18);
     naglowek.writeUInt32LE(dane.length, 22);
     naglowek.writeUInt16LE(nazwaBuf.length, 26);
     naglowek.writeUInt16LE(0, 28);
 
-    lokalne.push(naglowek, nazwaBuf, dane);
+    lokalne.push(naglowek, nazwaBuf, zapis);
 
     const centralny = Buffer.alloc(46);
     centralny.writeUInt32LE(0x02014b50, 0);
     centralny.writeUInt16LE(20, 4);
     centralny.writeUInt16LE(20, 6);
     centralny.writeUInt16LE(0x0800, 8);
-    centralny.writeUInt16LE(0, 10);
+    centralny.writeUInt16LE(metoda, 10);
     centralny.writeUInt16LE(CZAS_DOS, 12);
     centralny.writeUInt16LE(DATA_DOS, 14);
     centralny.writeUInt32LE(suma, 16);
-    centralny.writeUInt32LE(dane.length, 20);
+    centralny.writeUInt32LE(zapis.length, 20);
     centralny.writeUInt32LE(dane.length, 24);
     centralny.writeUInt16LE(nazwaBuf.length, 28);
     centralny.writeUInt16LE(0, 30);
@@ -68,7 +79,7 @@ export function zbudujZip(wpisy) {
     centralny.writeUInt32LE(offset, 42);
 
     centralne.push(centralny, nazwaBuf);
-    offset += naglowek.length + nazwaBuf.length + dane.length;
+    offset += naglowek.length + nazwaBuf.length + zapis.length;
   }
 
   const bufLokalne = Buffer.concat(lokalne);

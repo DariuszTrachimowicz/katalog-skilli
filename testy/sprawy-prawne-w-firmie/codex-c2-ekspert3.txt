@@ -1,0 +1,174 @@
+Reading additional input from stdin...
+OpenAI Codex v0.162.1
+--------
+workdir: C:\Users\CP24\AiXperts - projekty\katalog-skilli
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: high
+reasoning summaries: none
+session id: 01a1b072-477c-7763-b831-e405d201f967
+--------
+user
+CYKL 2. Po cyklu 1 naniesiono wszystkie uwagi wszystkich ról (około 90, odrzuconych 0; rejestr: testy/sprawy-prawne-w-firmie/poprawki-c1-moduly.md i wyniki codex-c1-*-wynik.md). Sprawdź, czy poprawki są trafne i nie wprowadziły nowych błędów, i szukaj błędów, których cykl 1 nie wychwycił. Nie powtarzaj uwag już naniesionych. Narzędzie narzedzia/sprawdz-cytaty.py sprawdza teraz także ustępy i nieznane skróty aktów.
+
+Jesteś doświadczonym radcą prawnym od prawa konsumenckiego (UPK, UOKiK, ceny, dostępność), własności przemysłowej i nieuczciwej konkurencji oraz prawa umów (wzorce, kary umowne, ograniczenie odpowiedzialności). Recenzujesz skill AI `sprawy-prawne-w-firmie` z katalogu AiXperts (katalog skille/sprawy-prawne-w-firmie/): SKILL.md, references/mapa-spraw.md, references/pisma.md, references/karta-dla-prawnika.md, references/moduly/*.md (nowe moduły), references/katalog/<id>/ (kopie wiedzy wąskich skilli, NIE recenzujesz ich), references/akty/*.md (wbudowane teksty ujednolicone ustaw z datą brzmienia; NIE czytaj ich w całości, tylko grepuj wzorcem `^[\[<]?Art\. N\.`; konwencja: brzmienie w [ ] obowiązuje do daty z „Notka ISAP”, w < > od tej daty). Stan prawny na 6 listopada 2026. Ten skill ma świadome wyjątki od STANDARD.md (decyzje właściciela): podaje przepisy przy wnioskach w formie „KP art. 30 § 4” z datą brzmienia (wyjątek od reguły 1) i pisze pisma: zwykłe gotowe, a pisma do sądu, umowy, uchwały jako projekt do przeglądu prawnika (wyjątek od reguły 3). Nie zgłaszaj tych wyjątków jako błędów; zgłaszaj błędne lub nieistniejące przepisy, błędne terminy i skutki, luki i ryzykowne rady. Czytaj pliki, nie zgaduj, cytuj plik:linia, po polsku, zwięźle, nie chwal, szukaj dziur. Możesz weryfikować przepisy we wbudowanych aktach.
+
+Twoja rola: POPRAWNOŚĆ MERYTORYCZNA modułów references/moduly/sprzedaz-konsumencka.md, marka-i-tajemnica.md, umowy-wlasne-firmy.md, punktów 4.3, 4.4, 4.7, 4.8 i 6 w references/pisma.md oraz references/mapa-spraw.md (czy sprawy trafiają do właściwych modułów, czy żadnego typowego obszaru firmy nie brakuje). Sprawdź zgodność reguł, terminów, kwot i skutków z przepisami (UPK, KC, UOKIK, CENY, SDE, DOST, PWP, ZNK, PRAUT), czy przepis podany przy regule to stanowi, ryzykowne rady i kompletność sygnałów „tylko prawnik”.
+
+Format: każde znalezisko z plik:linia, kategorią (BLOKER / WAŻNE / KOSMETYKA) i propozycją naprawy w jednym zdaniu. Na końcu werdykt: „BLOKERY DO WYDANIA: TAK” albo „BLOKERY DO WYDANIA: NIE”.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+warning: Codex is ignoring 4 unrecognized configuration settings. Check for typos or deprecated settings.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.i-have-adhd@i-have-adhd:hooks/hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:session_start:0:0.trusted_content_hash` is ignored.
+  user (C:\Users\CP24\.codex\config.toml): `hooks.state.ponytail@ponytail:hooks/claude-codex-hooks.json:subagent_start:0:0.trusted_content_hash` is ignored.
+  ... and 1 more ignored settings.
+hook: SessionStart
+hook: SessionStart
+hook: SessionStart Completed
+hook: SessionStart Completed
+hook: UserPromptSubmit
+hook: UserPromptSubmit Completed
+codex
+Czytam rejestr cyklu 1 i wskazane moduły; potem sprawdzę podejrzane reguły w ustawach. Krok 1 z 3; szacowany czas: 20 minut.
+
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -Command "Get-Content 'C:\\Users\\CP24\\.agents\\skills\\using-superpowers\\SKILL.md'; Get-Content 'C:\\Users\\CP24\\.codex\\plugins\\cache\\ponytail\\ponytail\\5.3.3\\skills\\ponytail-review\\SKILL.md'; rg -n 'sprawy-prawne|katalog-skilli' 'C:\\Users\\CP24\\.codex\\memories\\MEMORY.md'" in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content 'C:\Users\CP24\.agents\skills\using-superpowers\SKILL.md'; Get-Content 'C:\Users\CP24\.codex\plugins\cache\ponytail\ponytail\5.3.3\skills\ponytail-review\SKILL.md'; rg -n 'sprawy-prawne|katalog-skilli' 'C:\Users\CP24\.codex\memories\MEMORY.md'" | env_u16_len=4829 | si_flags=256 | creation_flags=134743040
+2026-11-06T10:41:02.379352Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-Content 'C:\\\\Users\\\\CP24\\\\.agents\\\\skills\\\\using-superpowers\\\\SKILL.md'; Get-Content 'C:\\\\Users\\\\CP24\\\\.codex\\\\plugins\\\\cache\\\\ponytail\\\\ponytail\\\\5.3.3\\\\skills\\\\ponytail-review\\\\SKILL.md'; rg -n 'sprawy-prawne|katalog-skilli' 'C:\\\\Users\\\\CP24\\\\.codex\\\\memories\\\\MEMORY.md'\\\" | env_u16_len=4829 | si_flags=256 | creation_flags=134743040\")" }
+exec
+"C:\\Users\\CP24\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe" -NoProfile -Command Get-Location in C:\Users\CP24\AiXperts - projekty\katalog-skilli
+ exited -1 in 0ms:
+Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\Users\CP24\AiXperts - projekty\katalog-skilli | cmd=C:\Users\CP24\AppData\Local\Microsoft\WindowsApps\pwsh.exe -NoProfile -Command "try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Location" | env_u16_len=4829 | si_flags=256 | creation_flags=134743040
+2026-11-06T10:41:07.956943Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"Failed to create unified exec process: CreateProcessAsUserW failed: 5 (Odmowa dostępu.) | cwd=C:\\\\Users\\\\CP24\\\\AiXperts - projekty\\\\katalog-skilli | cmd=C:\\\\Users\\\\CP24\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\pwsh.exe -NoProfile -Command \\\"try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}\\nGet-Location\\\" | env_u16_len=4829 | si_flags=256 | creation_flags=134743040\")" }
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Stosuję `ponytail-review`: zgłoszę tylko ustalenia z konkretnym scenariuszem błędu i propozycją naprawy. Terminal odmawia uruchomienia, więc pliki czytam przez dostępne narzędzie odczytu.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Krok 1 z 3 zakończony: porównałem uwagi cyklu 1 z aktualnymi modułami. Poprawiona reguła przedawnienia przypisuje teraz dwuletni termin także przewozowi i spedycji; sprawdzam ją w KC oraz weryfikuję podstawy procedur ochrony marki.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: site.uprp.gov.pl opłaty zgłoszenie znak towarowy 400 450 90 2026 ...
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Krok 2 z 3: potwierdziłem błąd przedawnienia — przewóz i spedycja mają w KC zasadniczo termin roczny, a nie dwuletni. Znalazłem też pominięty wyjątek przy odsprzedaży markowych towarów oraz brak obowiązku zgłoszenia niedostępności usługi organowi nadzoru.
+
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: site.api.sejm.gov.pl/eli/acts/DU/2016/1823/text.html "Art. 32" ...
+web search: 
+web search: https://api.sejm.gov.pl/eli/acts/DU/2016/1823/text.html
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+web search: 
+web search: 'Art. 32.'
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+Krok 3 z 3: kończę kontrolę nowych ustaleń. Dopisek o „dowolnym” pięcioletnim okresie nieużywania znaku pomija wznowienie używania, a nowa reguła rękojmi B2B nie wyłącza chronionej JDG; sprawdzam też brakujące ścieżki w mapie spraw.
+
+web search: 
+web search: site.bdo.mos.gov.pl "opakowaniach" "wpis" ...
+mcp: node_repl/js started
+mcp: node_repl/js (completed)
+codex
+**BLOKER — [umowy-wlasne-firmy.md:73](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/umowy-wlasne-firmy.md:73>):** Poprawka C1 błędnie przypisuje przewozowi i spedycji dwuletnie przedawnienie z KC art. 751; zastąp je zasadniczo terminami rocznymi z KC art. 778, 792 i 803, z zastrzeżeniem przepisów szczególnych, ponieważ obecna reguła grozi utratą roszczenia ([tekst KC](https://api.sejm.gov.pl/eli/acts/DU/2024/1061/text.pdf)).
+
+**WAŻNE — [pisma.md:81](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/pisma.md:81>):** Nowa reguła utraty rękojmi obejmuje bezwarunkowo wszystkie transakcje między przedsiębiorcami; poprzedź ją kwalifikacją niezawodowego zakupu osoby fizycznej, dla którego właściwe są UPK art. 7aa i 43a albo wyłączenie KC art. 563 przez art. 556⁵ § 1.
+
+**WAŻNE — [umowy-wlasne-firmy.md:93](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/umowy-wlasne-firmy.md:93>):** Instrukcja ograniczania odpowiedzialności wskazuje tylko wyjątek umyślności, co przy umowie producenta pozwala przeoczyć bezwzględny zakaz ograniczania odpowiedzialności za produkt niebezpieczny; dodaj KC art. 449⁹ oraz sprawdzenie szczególnych zakazów przed zaproponowaniem limitu.
+
+**WAŻNE — [umowy-wlasne-firmy.md:56](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/umowy-wlasne-firmy.md:56>):** Zwrot zadatku powiązano z brakiem winy zamiast z brakiem odpowiedzialności, choć strona może odpowiadać również bez własnej winy; odtwórz przesłankę KC art. 394 § 3 i uwzględnij umowne rozszerzenie odpowiedzialności.
+
+**WAŻNE — [sprzedaz-konsumencka.md:38](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sprzedaz-konsumencka.md:38>):** Przy sprzedaży telefonicznej opisano wyłącznie potwierdzenie zawartej umowy, pomijając warunek skuteczności oświadczenia konsumenta; dodaj kolejność z UPK art. 20 ust. 2: potwierdzenie propozycji na trwałym nośniku, następnie utrwalona akceptacja konsumenta.
+
+**WAŻNE — [sprzedaz-konsumencka.md:52](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sprzedaz-konsumencka.md:52>):** Samo wyraźne żądanie rozpoczęcia usługi poza lokalem nie wystarcza do obciążenia klienta po odstąpieniu; dodaj wymóg żądania na trwałym nośniku oraz oświadczenia o przyjęciu informacji do wiadomości zgodnie z UPK art. 15 ust. 3, 35 i 36.
+
+**WAŻNE — [sprzedaz-konsumencka.md:65](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sprzedaz-konsumencka.md:65>):** Sztywne dwa lata pomijają dłuższy określony termin przydatności towaru oraz podstępne zatajenie niezgodności; dodaj wyjątki z UPK art. 43c ust. 1–2, aby nie odmawiać reklamacji wyłącznie z powodu upływu dwóch lat.
+
+**WAŻNE — [sprzedaz-konsumencka.md:101](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sprzedaz-konsumencka.md:101>):** Procedura dostępności pomija obowiązek niezwłocznego poinformowania organu nadzoru o niespełnianiu wymagań przez usługę i podjętych działaniach naprawczych; dodaj DOST art. 32 ust. 2 pkt 5–6, którego naruszenie jest odrębnie sankcjonowane w art. 73 ust. 1 pkt 2 lit. e ([ustawa](https://api.sejm.gov.pl/eli/acts/DU/2024/731/text.html)).
+
+**WAŻNE — [marka-i-tajemnica.md:35](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/marka-i-tajemnica.md:35>):** Dopisane po C1 „dowolny taki okres” pomija oddalenie wniosku po rozpoczęciu lub wznowieniu rzeczywistego używania znaku przed jego złożeniem; dodaj PWP art. 170 ust. 1–2 wraz z wyjątkiem dotyczącym pozornego ratowania ochrony przed spodziewanym wnioskiem ([tekst PWP](https://eli.gov.pl/api/acts/DU/2023/1170/text.pdf)).
+
+**WAŻNE — [marka-i-tajemnica.md:55](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/marka-i-tajemnica.md:55>):** Bezwarunkowa dopuszczalność odsprzedaży oryginalnych towarów z EOG pomija uzasadniony sprzeciw uprawnionego, zwłaszcza po zmianie lub pogorszeniu stanu towaru; dodaj wyjątek z PWP art. 155 ust. 3 ([omówienie PARP](https://www.parp.gov.pl/component/content/article/53924%3Aprodukty-dedykowane-na-rynki-prawo-do-decydowania-o-ich-wprowadzeniu)).
+
+**WAŻNE — [marka-i-tajemnica.md:78](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/marka-i-tajemnica.md:78>):** Ogólne odesłanie do KC art. 442¹ sugeruje stałe dwudziestoletnie przedawnienie szkody z przestępnego wycieku tajemnicy; dodaj ZNK art. 20 ust. 4, który wyłącza § 2 tego przepisu i ustanawia dwadzieścia lat jako granicę maksymalną ([przepis zmieniający](https://api.sejm.gov.pl/eli/acts/DU/2018/1637/text.html)).
+
+**WAŻNE — [mapa-spraw.md:61](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/mapa-spraw.md:61>):** Dodana ścieżka antymonopolowa nadal pomija koncentracje, w tym przejęcie kontroli i utworzenie wspólnego przedsiębiorcy; dodaj kwalifikację według UOKIK art. 13–14 oraz skierowanie do prawnika przed realizacją transakcji objętej obowiązkiem wstrzymania z art. 97.
+
+**WAŻNE — [mapa-spraw.md:94](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/mapa-spraw.md:94>):** Mapa nie obejmuje obowiązków dotyczących odpadów, opakowań i BDO ani nie wyłącza ich z zakresu; dodaj osobną ścieżkę rozpoznania obowiązków i przekazania specjaliście, ponieważ dotyczą również zwykłych firm handlowych ([oficjalna baza BDO](https://bdo.mos.gov.pl/pytania-i-odpowiedzi/)).
+
+Recenzja statyczna; bez testów odpowiedzi modelu i bez recenzowania kopii `references/katalog/`.
+
+**BLOKERY DO WYDANIA: TAK**
+tokens used
+246 719
+**BLOKER — [umowy-wlasne-firmy.md:73](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/umowy-wlasne-firmy.md:73>):** Poprawka C1 błędnie przypisuje przewozowi i spedycji dwuletnie przedawnienie z KC art. 751; zastąp je zasadniczo terminami rocznymi z KC art. 778, 792 i 803, z zastrzeżeniem przepisów szczególnych, ponieważ obecna reguła grozi utratą roszczenia ([tekst KC](https://api.sejm.gov.pl/eli/acts/DU/2024/1061/text.pdf)).
+
+**WAŻNE — [pisma.md:81](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/pisma.md:81>):** Nowa reguła utraty rękojmi obejmuje bezwarunkowo wszystkie transakcje między przedsiębiorcami; poprzedź ją kwalifikacją niezawodowego zakupu osoby fizycznej, dla którego właściwe są UPK art. 7aa i 43a albo wyłączenie KC art. 563 przez art. 556⁵ § 1.
+
+**WAŻNE — [umowy-wlasne-firmy.md:93](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/umowy-wlasne-firmy.md:93>):** Instrukcja ograniczania odpowiedzialności wskazuje tylko wyjątek umyślności, co przy umowie producenta pozwala przeoczyć bezwzględny zakaz ograniczania odpowiedzialności za produkt niebezpieczny; dodaj KC art. 449⁹ oraz sprawdzenie szczególnych zakazów przed zaproponowaniem limitu.
+
+**WAŻNE — [umowy-wlasne-firmy.md:56](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/umowy-wlasne-firmy.md:56>):** Zwrot zadatku powiązano z brakiem winy zamiast z brakiem odpowiedzialności, choć strona może odpowiadać również bez własnej winy; odtwórz przesłankę KC art. 394 § 3 i uwzględnij umowne rozszerzenie odpowiedzialności.
+
+**WAŻNE — [sprzedaz-konsumencka.md:38](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sprzedaz-konsumencka.md:38>):** Przy sprzedaży telefonicznej opisano wyłącznie potwierdzenie zawartej umowy, pomijając warunek skuteczności oświadczenia konsumenta; dodaj kolejność z UPK art. 20 ust. 2: potwierdzenie propozycji na trwałym nośniku, następnie utrwalona akceptacja konsumenta.
+
+**WAŻNE — [sprzedaz-konsumencka.md:52](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sprzedaz-konsumencka.md:52>):** Samo wyraźne żądanie rozpoczęcia usługi poza lokalem nie wystarcza do obciążenia klienta po odstąpieniu; dodaj wymóg żądania na trwałym nośniku oraz oświadczenia o przyjęciu informacji do wiadomości zgodnie z UPK art. 15 ust. 3, 35 i 36.
+
+**WAŻNE — [sprzedaz-konsumencka.md:65](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sprzedaz-konsumencka.md:65>):** Sztywne dwa lata pomijają dłuższy określony termin przydatności towaru oraz podstępne zatajenie niezgodności; dodaj wyjątki z UPK art. 43c ust. 1–2, aby nie odmawiać reklamacji wyłącznie z powodu upływu dwóch lat.
+
+**WAŻNE — [sprzedaz-konsumencka.md:101](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/sprzedaz-konsumencka.md:101>):** Procedura dostępności pomija obowiązek niezwłocznego poinformowania organu nadzoru o niespełnianiu wymagań przez usługę i podjętych działaniach naprawczych; dodaj DOST art. 32 ust. 2 pkt 5–6, którego naruszenie jest odrębnie sankcjonowane w art. 73 ust. 1 pkt 2 lit. e ([ustawa](https://api.sejm.gov.pl/eli/acts/DU/2024/731/text.html)).
+
+**WAŻNE — [marka-i-tajemnica.md:35](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/marka-i-tajemnica.md:35>):** Dopisane po C1 „dowolny taki okres” pomija oddalenie wniosku po rozpoczęciu lub wznowieniu rzeczywistego używania znaku przed jego złożeniem; dodaj PWP art. 170 ust. 1–2 wraz z wyjątkiem dotyczącym pozornego ratowania ochrony przed spodziewanym wnioskiem ([tekst PWP](https://eli.gov.pl/api/acts/DU/2023/1170/text.pdf)).
+
+**WAŻNE — [marka-i-tajemnica.md:55](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/marka-i-tajemnica.md:55>):** Bezwarunkowa dopuszczalność odsprzedaży oryginalnych towarów z EOG pomija uzasadniony sprzeciw uprawnionego, zwłaszcza po zmianie lub pogorszeniu stanu towaru; dodaj wyjątek z PWP art. 155 ust. 3 ([omówienie PARP](https://www.parp.gov.pl/component/content/article/53924%3Aprodukty-dedykowane-na-rynki-prawo-do-decydowania-o-ich-wprowadzeniu)).
+
+**WAŻNE — [marka-i-tajemnica.md:78](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/moduly/marka-i-tajemnica.md:78>):** Ogólne odesłanie do KC art. 442¹ sugeruje stałe dwudziestoletnie przedawnienie szkody z przestępnego wycieku tajemnicy; dodaj ZNK art. 20 ust. 4, który wyłącza § 2 tego przepisu i ustanawia dwadzieścia lat jako granicę maksymalną ([przepis zmieniający](https://api.sejm.gov.pl/eli/acts/DU/2018/1637/text.html)).
+
+**WAŻNE — [mapa-spraw.md:61](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/mapa-spraw.md:61>):** Dodana ścieżka antymonopolowa nadal pomija koncentracje, w tym przejęcie kontroli i utworzenie wspólnego przedsiębiorcy; dodaj kwalifikację według UOKIK art. 13–14 oraz skierowanie do prawnika przed realizacją transakcji objętej obowiązkiem wstrzymania z art. 97.
+
+**WAŻNE — [mapa-spraw.md:94](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/sprawy-prawne-w-firmie/references/mapa-spraw.md:94>):** Mapa nie obejmuje obowiązków dotyczących odpadów, opakowań i BDO ani nie wyłącza ich z zakresu; dodaj osobną ścieżkę rozpoznania obowiązków i przekazania specjaliście, ponieważ dotyczą również zwykłych firm handlowych ([oficjalna baza BDO](https://bdo.mos.gov.pl/pytania-i-odpowiedzi/)).
+
+Recenzja statyczna; bez testów odpowiedzi modelu i bez recenzowania kopii `references/katalog/`.
+
+**BLOKERY DO WYDANIA: TAK**
