@@ -45,7 +45,7 @@ Krótki opis sprawy: kim jest firma (forma prawna, wielkość), co się stało i
 - Teksty aktów mają datę brzmienia; zmiany po tej dacie wychwytuje tylko wtedy, gdy model ma dostęp do internetu, a bez niego mówi, na jaki dzień jest stan.
 - Nie ma wbudowanych rozporządzeń ani aktów unijnych (RODO, AI Act) w pełnym brzmieniu; opiera się na opracowaniach w modułach i oznacza resztę do sprawdzenia.
 - Orzeczeń Sądu Najwyższego nie zawsze może otworzyć automatycznie; takie oznacza jako „do potwierdzenia”, a sprawy, które zależą od orzecznictwa, kieruje do prawnika.
-- Paczka jest duża (około 5 MB, około 16 MB po rozpakowaniu, przez wbudowane teksty ustaw). Mieści się w limicie Claude API (30 MB po rozpakowaniu); limitu wgrywania w claude.ai dokumentacja nie podaje, więc przy komunikacie o zbyt dużym pliku napisz na kontakt@aixperts.pl.
+- Paczka jest duża (około 5 MB, około 16 MB po rozpakowaniu, przez wbudowane teksty ustaw). Wgranie w claude.ai sprawdziliśmy 6 listopada 2026 r. i działa; mieści się też w limicie Claude API (30 MB po rozpakowaniu). Przy komunikacie o zbyt dużym pliku w innym narzędziu napisz na kontakt@aixperts.pl.
 - Nie zna faktów, których nie podasz; pismo z lukami oddaje z polami do uzupełnienia, a wynik analizy zmienia się, gdy dojdą nowe dokumenty.
 
 ## Czego ten skill nie robi celowo
