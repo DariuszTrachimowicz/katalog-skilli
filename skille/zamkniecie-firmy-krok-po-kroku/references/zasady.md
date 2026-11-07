@@ -236,7 +236,7 @@ Do weryfikacji (nie podawaj jako źródła): orzeczenia NSA i WSA o spisie z nat
 | Ustawa o świadczeniach opieki zdrowotnej, t.j. Dz.U. 2025 poz. 1461 | https://api.sejm.gov.pl/eli/acts/DU/2025/1461/text.pdf | 5.11.2026 | składka zdrowotna, rozliczenie roczne |
 | Ustawa o VAT, t.j. Dz.U. 2026 poz. 1263 | https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf | 5.11.2026 | VAT-Z bez terminu, spis z natury, kasy, KSeF |
 | Ustawa o PIT, t.j. Dz.U. 2026 poz. 592; zmiana Dz.U. 2026 poz. 779 | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf | 5.11.2026 | remanent, wykaz, 6 lat, PIT-4R i PIT-11 w dniu zaprzestania |
-| Ustawa z 29.10.2021 o zmianie ustawy o PIT (art. 66 i 89 w brzmieniu z Dz.U. 2023 poz. 1059) | https://api.sejm.gov.pl/eli/acts/DU/2023/1059/text.pdf | 7.11.2026 | księga programem i przesyłana po roku: za 2026 r. czynni VAT, za 2027 r. pozostali |
+| Ustawa z 29.10.2021 o zmianie ustawy o PIT (art. 66 i 89 w brzmieniu z Dz.U. 2023 poz. 1059) | https://api.sejm.gov.pl/eli/acts/DU/2023/1059/text.pdf | 7.11.2026 | księga programem i przesyłana po roku: za 2026 r. podatnicy z JPK_V7M, za 2027 r. pozostali, w tym JPK_V7K |
 | Ustawa o ryczałcie, t.j. Dz.U. 2025 poz. 843 | https://api.sejm.gov.pl/eli/acts/DU/2025/843/text.pdf | 5.11.2026 | wykaz, 3 % i 10 %, karta |
 | Rozporządzenie o KPiR, Dz.U. 2025 poz. 1299 | https://api.sejm.gov.pl/eli/acts/DU/2025/1299/text.pdf | 5.11.2026 | spis z natury przy likwidacji, wycena 14 dni |
 | Rozporządzenie o kasach rejestrujących, Dz.U. 2025 poz. 845 | https://api.sejm.gov.pl/eli/acts/DU/2025/845/text.pdf | 5.11.2026 | zakończenie pracy kasy, 5 dni |
