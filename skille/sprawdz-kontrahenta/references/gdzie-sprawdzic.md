@@ -29,12 +29,12 @@ Czego szukać:
 - **Status wpisu**, aktywny, zawieszony, wykreślony. Zawieszona działalność, która wystawia fakturę, to pytanie do zadania.
 - **Data rozpoczęcia działalności.**
 - **Adres do doręczeń**, bywa inny niż adres wykonywania działalności i to on jest tym, na który realnie dociera korespondencja.
-- **Pełnomocnicy.** CEIDG, w odróżnieniu od KRS, ma rubrykę pełnomocnika, jeśli umowę podpisuje ktoś inny niż właściciel, zajrzyj tam, bo pełnomocnik podpisujący bez wpisu to najczęstsza wada tych umów.
+- **Pełnomocnicy.** CEIDG, w odróżnieniu od KRS, ma rubrykę pełnomocnika, jeśli umowę podpisuje ktoś inny niż właściciel, zajrzyj tam; wpis pełnomocnika do CEIDG jest jednak dobrowolny, więc jego brak sam nie jest wadą, tylko powodem, żeby poprosić o skan pełnomocnictwa.
 - **Świadomość skali odpowiedzialności.** Przy jednoosobowej działalności właściciel odpowiada całym swoim majątkiem; przy spółce z o.o. co do zasady odpowiada spółka. To zmienia realną szansę odzyskania pieniędzy, ale nie mów tego jako oceny prawnej, mów jako powód, dla którego przy spółce sprawdzasz więcej.
 
 ### Spółka cywilna
 
-To nie jest firma, tylko umowa między wspólnikami. Nie ma jej w KRS. Sprawdź **każdego wspólnika osobno** w CEIDG. Spółka cywilna ma własny NIP i REGON, ale stroną umowy są wspólnicy.
+To nie jest firma, tylko umowa między wspólnikami. Nie ma jej w KRS. Sprawdź **każdego wspólnika osobno**: osobę prowadzącą działalność w CEIDG, a wspólnika, który jest spółką, w KRS. Spółka cywilna ma własny NIP i REGON, ale stroną umowy są wspólnicy.
 
 ### Dane statystyczne, wyszukiwarka REGON
 

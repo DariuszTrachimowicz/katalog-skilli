@@ -196,9 +196,9 @@ Strony gov.pl i sn.pl:
 Akty wbudowane od cyklu 2 (cytuj skrótem, przepis sprawdź w pliku aktu): RACH (RACH art. 52, 53, 69: sporządzenie, zatwierdzenie, złożenie sprawozdania), AML (CRBR: AML art. 58-61, kara AML art. 153), CEIDG (wpis zarządcy, terminy zgłoszeń zmian), SUS (odpowiedzialność za składki).
 
 Akty spoza listy lokalnej (do pobrania przed cytowaniem):
-- Ustawa z 13.10.1995 o zasadach ewidencji i identyfikacji podatników i płatników, DU/1995/388 (art. 12 ust. 1c, NIP przedsiębiorstwa w spadku)
+- Ustawa z 13.10.1995 o zasadach ewidencji i identyfikacji podatników i płatników, DU/1995/702 (art. 12 ust. 1c, NIP przedsiębiorstwa w spadku)
 - Ustawa z 29.08.1997 Prawo bankowe, DU/1997/939 (art. 59c, rachunek firmowy po śmierci)
-- Ustawa z 28.07.1983 o podatku od spadków i darowizn, DU/1983/354 (art. 4a, zwolnienie przedsiębiorstwa)
+- Ustawa z 28.07.1983 o podatku od spadków i darowizn, DU/1983/207 (art. 4a i art. 4b, zwolnienia przy nabyciu przedsiębiorstwa)
 - Ustawa z 9.09.2000 o podatku od czynności cywilnoprawnych, DU/2000/959 (sprzedaż udziałów)
 - Ustawa z 11.03.2004 o podatku od towarów i usług, DU/2004/535 (art. 15 ust. 1a, przedsiębiorstwo w spadku jako podatnik VAT)
 

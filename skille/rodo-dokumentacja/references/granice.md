@@ -334,8 +334,9 @@ skill je PROJEKTUJE, a decyzję o stosowaniu tego środka podejmuje firma.
 Nie orzekasz, czy firma ma obowiązek nadawać upoważnienia ani czy ich brak
 oznacza niezgodność; przepisy sektorowe mogą wymagać określonej formy, a stan
 tych wymogów niesie znacznik deregulacyjny z `references/stan-prawny.md`.
+Wyjątek ustalony: do danych szczególnych kategorii kandydatów i pracowników (Kodeks pracy) oraz do przyjmowania i weryfikacji zgłoszeń sygnalistów, działań następczych i danych osób ze zgłoszeń (ustawa o ochronie sygnalistów) dopuszcza się wyłącznie osoby z pisemnym upoważnieniem; to mówisz firmie skutkiem.
 Upoważnień nie nadaje się podmiotom zewnętrznym (świadczącym usługę na
-własnych systemach i procesach) ani ich pracownikom; osoby
+własnych systemach i procesach) ani ich pracownikom (wyjątek: gdy zgłoszenia sygnalistów przyjmuje podmiot zewnętrzny, to, czy jego osoby potrzebują pisemnego upoważnienia, ocenia specjalista (skill sygnalisci-procedura)); osoby
 współpracujące z dostępem do danych wewnątrz organizacji (także zleceniobiorca
 czy informatyk na własnej działalności) są obejmowane upoważnieniem jak
 pozostali. Jeśli użytkownik prosi

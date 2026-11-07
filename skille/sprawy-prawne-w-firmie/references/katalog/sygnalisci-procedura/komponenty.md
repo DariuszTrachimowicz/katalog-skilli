@@ -109,7 +109,7 @@ PROJEKT do przeglądu prawnika, stan prawny materiałów: [data]. Forma dowolna 
 
 | Nr zgłoszenia | Data zgłoszenia | Przedmiot naruszenia | Dane zgłaszającego niezbędne do identyfikacji (lub „anonimowe”) | Dane osoby, której dotyczy zgłoszenie, niezbędne do identyfikacji | Adres do kontaktu zgłaszającego | Działania następcze (co, kto, kiedy) | Data zakończenia sprawy |
 
-Zasady do projektu: dostęp tylko dla upoważnionych w zakresie niezbędnym, osobne przechowywanie od akt osobowych, kopia zapasowa, usunięcie danych 3 lata po zakończeniu roku, w którym zakończono działania następcze lub postępowania; dane bez znaczenia dla sprawy usuwane niezwłocznie [termin: IOD]; kto prowadzi rejestr [DECYZJA]; numeracja [DECYZJA]. Dane osobowe konkretnych osób wpisuje firma, skill zostawia kolumny puste.
+Zasady do projektu: dostęp tylko dla upoważnionych w zakresie niezbędnym, osobne przechowywanie od akt osobowych, kopia zapasowa, usunięcie danych 3 lata po zakończeniu roku, w którym zakończono działania następcze lub postępowania; dane bez znaczenia dla sprawy usuwane niezwłocznie, najpóźniej w 14 dni od ustalenia, że nie mają znaczenia dla sprawy; kto prowadzi rejestr [DECYZJA]; numeracja [DECYZJA]. Dane osobowe konkretnych osób wpisuje firma, skill zostawia kolumny puste.
 
 ## 4. Upoważnienie i zobowiązanie do poufności
 
@@ -153,7 +153,7 @@ PROJEKT do przeglądu prawnika, stan prawny materiałów: [data]. Checklista dla
 5. Działania następcze: plan czynności (dokumenty, rozmowy, zewnętrzna ekspertyza jako wsparcie), zasada poufności, dostęp wyłącznie w niezbędnym zakresie, ujawnienie tożsamości tylko w ustawowych wyjątkach [prawnik].
 6. Informacja zwrotna: reguła 3 miesięcy od potwierdzenia (bez potwierdzenia: od upływu 7 dni od zgłoszenia); treść: planowane lub podjęte działania i ich powody, bez danych osób trzecich.
 7. Zamknięcie: data zakończenia w rejestrze; przekazanie sprawy organom, jeśli wynika z działań następczych [prawnik]; monitorowanie ryzyka odwetu wobec zgłaszającego.
-8. Przechowywanie: 3 lata po zakończeniu roku, w którym zakończono działania następcze lub postępowania; dane bez znaczenia dla sprawy usunięte niezwłocznie [termin: IOD].
+8. Przechowywanie: 3 lata po zakończeniu roku, w którym zakończono działania następcze lub postępowania; dane bez znaczenia dla sprawy usunięte niezwłocznie, najpóźniej w 14 dni od ustalenia, że nie mają znaczenia dla sprawy.
 
 ## 8. Sprawdzenie istniejącej procedury (tryb kontroli)
 

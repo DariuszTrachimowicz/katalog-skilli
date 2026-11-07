@@ -2,9 +2,9 @@
 nazwa: Dokumentacja RODO z mapy danych
 kategoria: Prawo
 status: gotowy
-wersja: 1.1.0
+wersja: 1.1.1
 poziom: Zaawansowany
-aktualizacja: 2026-11-04
+aktualizacja: 2026-11-07
 skrot: "Zamienia mapę danych firmy w pięć projektów dokumentacji RODO: inwentaryzację przetwarzań, rejestr czynności przetwarzania, prostą analizę ryzyka, upoważnienia z ewidencją i rejestr luk. Podstaw prawnych nie dobiera: zostawia je specjaliście z gotowym materiałem pytań."
 korzysc: Masz projekty rejestru czynności i upoważnień z realiów swojej firmy, a do prawnika idziesz z pytaniami.
 szukaj: RODO, rejestr czynności przetwarzania, upoważnienie do przetwarzania danych, ewidencja upoważnień, dokumentacja RODO, ochrona danych osobowych, UODO, rejestr kategorii czynności, analiza ryzyka, mała firma, biuro, gabinet, sklep internetowy, audyt kontrahenta, prawo

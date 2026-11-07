@@ -18,7 +18,7 @@ Każdy fakt zmienia wynik. Brakujący wypisz jako pytanie i oznacz w planie [UZU
 |---|---|
 | Data śmierci i kiedy każdy z możliwych spadkobierców dowiedział się o śmierci i o tym, że dziedziczy | punkt startu terminu 6 miesięcy |
 | Małżonek: czy żyje, czy była separacja, wspólność majątkowa czy rozdzielność | krąg spadkobierców, co wchodzi do spadku |
-| Zstępni zmarłego (dzieci, także przysposobione i poczęte przed śmiercią, a za zmarłe dzieci ich zstępni); gdy zstępnych brak: rodzice, rodzeństwo i zstępni rodzeństwa, dalej dziadkowie i ich zstępni | krąg spadkobierców z ustawy |
+| Zstępni zmarłego (dzieci, także przysposobione i poczęte przed śmiercią, a za zmarłe dzieci ich zstępni); gdy zstępnych brak: rodzice, rodzeństwo i zstępni rodzeństwa, dalej dziadkowie, ich dzieci i wnuki | krąg spadkobierców z ustawy |
 | Czy jest testament, jakiej formy (ręczny, notarialny, ustny), gdzie jest, czy był otwarty | droga sąd czy notariusz, kto dziedziczy |
 | Majątek: nieruchomości (czyje, kiedy kupione), konta, samochód, firma, udziały, ubezpieczenia, dyspozycja wkładem | co wchodzi do spadku, księga wieczysta, podatek |
 | Długi i ich sygnały: listy, wezwania, kredyty, chwilówki, zaległe podatki lub składki, poręczenia | decyzja o przyjęciu lub odrzuceniu, inwentarz |

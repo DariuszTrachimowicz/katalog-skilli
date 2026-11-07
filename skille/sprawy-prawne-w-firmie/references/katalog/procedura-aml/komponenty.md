@@ -45,7 +45,7 @@ Struktura dokumentu:
 5. **Wnioski**: które ryzyka dominują i CO Z TEGO WYNIKA dla procedury
    (np. dominuje gotówka u klientów, więc procedura kładzie nacisk na progi
    i źródło środków). To zdanie łączące spina ocenę z procedurą.
-6. **Zasady przeglądu oceny** (kiedy aktualizować).
+6. **Zasady przeglądu oceny** (kiedy aktualizować; ustawa każe aktualizować ocenę w razie potrzeby, nie rzadziej niż co 2 lata).
 
 Pytania pomocnicze do 3: patrz wywiad w SKILL.md; dopytuj TYLKO o grupy, których
 brakuje.

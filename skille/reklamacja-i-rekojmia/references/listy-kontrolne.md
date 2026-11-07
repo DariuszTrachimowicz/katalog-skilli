@@ -30,7 +30,7 @@ Trzy listy. Otwórz tę, która pasuje do sytuacji. To materiał do Twojej pracy
 ### Co użytkownik musi rozstrzygnąć sam, zanim napisze
 
 - **Czego żąda.** Naprawa, wymiana, obniżenie ceny, wycofanie się z zakupu. Jedno, nie cztery naraz.
-- **Czy to żądanie jest w tej sytuacji pierwsze w kolejce.** Przy rysie na obudowie żądanie zwrotu pieniędzy zwykle wraca odmową i zabiera dwa tygodnie. Przy wadzie, która psuje sens zakupu, jest inaczej, i to sprzedawca musiałby wykazać, że wada jest drobna.
+- **Czy to żądanie jest w tej sytuacji pierwsze w kolejce.** Przy rysie na obudowie żądanie zwrotu pieniędzy zwykle wraca odmową i zabiera dwa tygodnie. Przy wadzie, która psuje sens zakupu, jest inaczej, ale to, że wada jest aż tak poważna, by od razu żądać pieniędzy, trzeba umieć pokazać; przyjęcie, że wada jest istotna, dopóki sprzedawca nie wykaże, że jest drobna, dotyczy samego odstąpienia.
 - **Jaką drogą składa zgłoszenie.** Mail albo list za potwierdzeniem, bo od daty wpływu liczy się termin na odpowiedź.
 - **Którą drogą idzie najpierw, do sprzedawcy czy do gwaranta.** Wybór jednej nie zamyka drugiej: jeśli naprawa gwarancyjna nic nie da, sprawa może wrócić do sprzedawcy, a termin wobec sklepu staje od dnia zawiadomienia sprzedawcy o wadzie, nie od samego oddania rzeczy do serwisu; zachowaj dowód tego zawiadomienia.
 - **Czy ma czym wykazać, że rzecz nie była użytkowana niezgodnie z przeznaczeniem.**
@@ -60,7 +60,7 @@ To lista rzeczy do rozstrzygnięcia przez użytkownika, nie zdań do przepisania
 
 - Kiedy zgłoszenie wpłynęło i czym to potwierdzić. Data wpływu, nie data przeczytania.
 - Czy zgłaszający jest osobą prywatną. Jeśli tak, termin na stanowisko wynosi 14 dni i milczenie działa jak uznanie reklamacji, tak samo przy towarze, przy usłudze i przy treści cyfrowej.
-- Jeśli zgłasza jednoosobowa firma kupująca coś spoza swojej branży: ten konkretny zegar jej nie obejmuje, ale reszta ochrony zbliżonej do konsumenckiej owszem. Nie odpisuj więc „to firma, więc nas to nie dotyczy”.
+- Jeśli zgłasza jednoosobowa firma kupująca coś spoza swojej branży: przy sprzedaży towaru ten konkretny zegar jej nie obejmuje, ale reszta ochrony zbliżonej do konsumenckiej owszem; przy usłudze z konkretnym efektem (np. naprawa, remont) milczenie przez 14 dni może jednak oznaczać uznanie jej żądania. Nie odpisuj więc „to firma, więc nas to nie dotyczy”.
 - Czy w regulaminie firmy nie stoi inny termin, według którego zespół działa po cichu.
 - Czy odpowiedź trafia do zgłaszającego drogą, którą da się udowodnić.
 

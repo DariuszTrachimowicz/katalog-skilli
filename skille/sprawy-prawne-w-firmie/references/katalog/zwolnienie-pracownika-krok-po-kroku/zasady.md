@@ -108,7 +108,7 @@ Upadłość i likwidacja wyłączają konsultację ze związkiem, ochronę przed
 - **PPK:** rozliczenie wpłat przy odejściu i po nim (także od wynagrodzenia wypłaconego po ustaniu zatrudnienia) oraz obowiązki wobec instytucji finansowej: DO WERYFIKACJI na mojeppk.pl lub w umowie o prowadzenie PPK; nie podawaj pewników.
 - **Mienie i dostępy:** protokół zwrotu mienia powierzonego (za nie pracownik odpowiada w pełnej wysokości), odebranie kluczy, kart i dostępów do systemów.
 - **Zakaz konkurencji po ustaniu:** tylko osobna pisemna umowa z osobą mającą dostęp do szczególnie ważnych informacji, z odszkodowaniem co najmniej 25 % wynagrodzenia za okres zakazu. Nie da się go dopisać w wypowiedzeniu. (KP art. 101² i 101³)
-- **Badania:** przy odejściu nie ma ogólnego obowiązku; wyjątek to praca z czynnikami rakotwórczymi lub pyłami zwłókniającymi (badania okresowe także po zakończeniu pracy). (KP art. 229 § 5)
+- **Badania:** przy odejściu nie ma ogólnego obowiązku; wyjątek to praca z czynnikami rakotwórczymi lub pyłami zwłókniającymi (badania okresowe także po rozwiązaniu umowy, jeżeli były pracownik o nie wystąpi). (KP art. 229 § 5)
 
 ## 8. Odwołanie pracownika i skutki wadliwego rozstania
 

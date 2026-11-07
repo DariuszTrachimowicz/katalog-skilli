@@ -13,7 +13,7 @@ Lista mówi, **na co zwrócić uwagę przy wysyłce**. W odpowiedzi używasz jej
 
 **e-Doręczenia.** Od początku 2026 roku to podstawowy kanał elektronicznej korespondencji z urzędami. Adres wygląda tak: `AE:PL-12345-67890-ABCDE-12`, jest przypisany do konkretnej osoby lub firmy i nie da się go przekazać komuś innemu. Po wysłaniu system generuje dowód wysłania, po odebraniu przez urząd, dowód otrzymania. Te dwa dokumenty zastępują pieczątkę wpływu, powiedz, żeby zapisał oba dowody.
 
-Obowiązek posiadania adresu wchodził etapami: najpierw urzędy i część zawodów, potem spółki z rejestru sądowego, potem przedsiębiorcy z CEIDG przy zmianach we wpisie, a ostatnia grupa jednoosobowych działalności ma mieć adres najpóźniej do 30 września 2026 r. Swojego terminu nie zgaduj za użytkownika, sprawdzi go na biznes.gov.pl. Dla osoby prywatnej adres pozostaje dobrowolny. Zanim pismo pójdzie tą drogą, sprawdź w wyszukiwarce na gov.pl, czy urząd ma adres do e-Doręczeń.
+Obowiązek posiadania adresu wchodził etapami: najpierw urzędy i część zawodów, potem spółki z rejestru sądowego, potem przedsiębiorcy z CEIDG przy zmianach we wpisie, a ostatnia grupa jednoosobowych działalności miała mieć adres najpóźniej do 30 września 2026 r., więc dziś obowiązek obejmuje już wszystkie firmy z CEIDG. Czy użytkownik ma już adres, nie zgaduj, sprawdzi to na biznes.gov.pl. Dla osoby prywatnej adres pozostaje dobrowolny. Zanim pismo pójdzie tą drogą, sprawdź w wyszukiwarce na gov.pl, czy urząd ma adres do e-Doręczeń.
 
 **ePUAP.** Wygasa. Uprzedź, że ePUAP przestał być podstawowym kanałem i urzędy odsyłają do e-Doręczeń, przed wysyłką potwierdź w urzędzie, co przyjmuje. Skrzynka technicznie jeszcze działa, ale to droga niepewna.
 
@@ -33,10 +33,10 @@ Jeśli pismo składa firma, sprawdź, kto w niej może je podpisać, podpis osob
 
 ## Terminy
 
-- Termin liczy się od dnia doręczenia pisma z urzędu, nie od jego daty na papierze ani od dnia, w którym użytkownik je przeczytał. Data doręczenia to data odbioru listu albo odebrania wiadomości w systemie.
+- Termin liczy się od dnia doręczenia pisma z urzędu, nie od jego daty na papierze ani od dnia, w którym użytkownik je przeczytał. Data doręczenia to data odbioru listu albo odebrania wiadomości w systemie. Gdy listu nie odebrano mimo awizo, urząd uznaje go za doręczony z upływem ostatniego dnia 14-dniowego okresu przechowania; gdy nie odebrano wiadomości na adresie do e-Doręczeń, za doręczoną uznaje się ją w dniu następującym po upływie 14 dni od jej wpływu. W obu przypadkach termin biegnie mimo nieodebrania.
 - Liczbę dni użytkownik przepisuje z pouczenia na końcu decyzji albo z treści wezwania. Nie podajesz jej z pamięci.
 - Przy wezwaniu do uzupełnienia braków termin jest krótki i liczony od doręczenia wezwania. Spóźnienie oznacza, że sprawa zostaje bez rozpoznania.
-- Gdy termin minął, najpierw ustal, czy można wnieść o jego przywrócenie: przywrócenie nie następuje automatycznie, wymaga wykazania, że spóźnienie nastąpiło bez winy użytkownika, i złożenia spóźnionego pisma razem z wnioskiem. Gdy przywrócenie nie wchodzi w grę, przy decyzji ostatecznej mogą istnieć odrębne tryby; ich warunki sprawdza prawnik. Nie oceniasz szans takiego wniosku.
+- Gdy termin minął, najpierw ustal, czy można wnieść o jego przywrócenie: przywrócenie nie następuje automatycznie, wymaga uprawdopodobnienia, że spóźnienie nastąpiło bez winy użytkownika, oraz złożenia wniosku w krótkim terminie od ustania przyczyny spóźnienia (w sprawie administracyjnej i podatkowej 7 dni; tego terminu nie da się przywrócić) razem ze spóźnionym pismem. Gdy przywrócenie nie wchodzi w grę, przy decyzji ostatecznej mogą istnieć odrębne tryby; ich warunki sprawdza prawnik. Nie oceniasz szans takiego wniosku.
 - Urząd też ma terminy na załatwienie sprawy i obowiązek zawiadomić, gdy ich nie dotrzyma. Gdy sprawa stoi bez żadnej informacji, właściwym pismem jest ponaglenie.
 
 ## Załączniki i opłaty
@@ -44,7 +44,7 @@ Jeśli pismo składa firma, sprawdź, kto w niej może je podpisać, podpis osob
 - Dołączaj kopie, nie oryginały, chyba że urząd wprost żąda oryginału. Oryginał wysłany pocztą zwykle nie wraca.
 - Kopia dokumentu bywa wymagana jako poświadczona za zgodność z oryginałem, czyli z urzędową adnotacją i podpisem na kopii, potwierdzającymi, że jest taka sama jak oryginał. Jeśli pismo tego wymaga, powiedz, że użytkownik załatwia to u notariusza, w urzędzie albo przez pełnomocnika zawodowego, nie wyjaśniaj, kiedy jest to konieczne.
 - Lista załączników w piśmie musi zgadzać się z tym, co faktycznie wychodzi w kopercie. Rozjazd między listą a zawartością to typowa przyczyna wezwania.
-- Część spraw wymaga opłaty skarbowej, najczęściej za złożenie pełnomocnictwa i za wydanie zaświadczenia. Kwotę i numer konta użytkownik sprawdza na stronie BIP urzędu, bo różnią się między gminami i zmieniają się w czasie. Potwierdzenie zapłaty dołącza się do pisma. Nie podajesz kwot z pamięci.
+- Część spraw wymaga opłaty skarbowej, najczęściej za złożenie pełnomocnictwa i za wydanie zaświadczenia. Kwotę i numer konta użytkownik sprawdza na stronie BIP urzędu: numer konta różni się między gminami, a kwoty zmieniają się w czasie. Potwierdzenie zapłaty dołącza się do pisma. Nie podajesz kwot z pamięci.
 - Opłata skarbowa od pełnomocnictwa nie zawsze idzie do tego urzędu, w którym składasz pismo, przy dokumencie papierowym i elektronicznym reguła bywa inna. Sprawdź na stronie BIP urzędu, do którego składasz pełnomocnictwo, na jakie konto zapłacić, i dołącz potwierdzenie przelewu. W piśmie zostaw `[UZUPEŁNIJ: numer konta na opłatę skarbową, sprawdź na BIP urzędu]`. Opłata wniesiona do niewłaściwego urzędu nie zalicza się, trzeba ją wnieść drugi raz.
 
 ## Dowód, że pismo złożono

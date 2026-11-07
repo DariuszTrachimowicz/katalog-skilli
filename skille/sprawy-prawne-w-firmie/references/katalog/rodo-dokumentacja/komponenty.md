@@ -702,14 +702,15 @@ prowadzony w jednym miejscu.
 **Czym jest upoważnienie w tym pakiecie.** Wydawanie upoważnień to jeden ze
 środków organizacyjnych, którym firma MOŻE się posłużyć, żeby zapanować nad
 dostępem do danych. Ten skill upoważnienie PROJEKTUJE; decyzję o tym, czy firma
-ten środek stosuje, podejmuje firma. Nie mówisz, że upoważnienia są obowiązkiem,
+ten środek stosuje, podejmuje firma. Poza dwoma ustalonymi wymogami (wyjątek niżej) nie mówisz, że upoważnienia są obowiązkiem,
 ani że ich brak oznacza niezgodność; przepisy sektorowe mogą wymagać określonej
 formy, a stan tych wymogów niesie znacznik deregulacyjny opisany niżej.
+Wyjątek ustalony: do danych szczególnych kategorii kandydatów i pracowników (Kodeks pracy) oraz do przyjmowania i weryfikacji zgłoszeń sygnalistów, działań następczych i danych osób ze zgłoszeń (ustawa o ochronie sygnalistów) dopuszcza się wyłącznie osoby z pisemnym upoważnieniem; w tych dwóch przypadkach mówisz firmie, że upoważnienie pisemne jest wymagane.
 
 **Kogo obejmuje się upoważnieniem, jeżeli firma stosuje ten środek:** osoby mające
 dostęp do danych wewnątrz firmy, w tym pracowników, praktykantów i stażystów.
 **Kto upoważnienia nie dostaje:** podmioty przetwarzające ani ich pracownicy,
-bo relację z podmiotem przetwarzającym opisuje umowa powierzenia. Rozróżnienie:
+bo relację z podmiotem przetwarzającym opisuje umowa powierzenia (wyjątek: gdy zgłoszenia sygnalistów przyjmuje podmiot zewnętrzny, to, czy jego osoby potrzebują pisemnego upoważnienia, ocenia specjalista (skill sygnalisci-procedura)). Rozróżnienie:
 osoba współpracująca, która pracuje na danych WEWNĄTRZ organizacji firmy i na
 jej polecenie (zleceniobiorca, informatyk na własnej działalności obsługujący
 systemy firmy), dostaje upoważnienie jak pracownik; podmiot świadczący usługę
@@ -732,7 +733,8 @@ warunku dopuszczenia osoby do przetwarzania; wymóg formy pisemnej wynika
 z krajowych przepisów sektorowych, a postać elektroniczna spełnia wymóg
 upoważnienia pisemnego, przy czym rozstrzygająca jest rozliczalność, czyli
 zdolność wykazania, że upoważnienia zostały nadane. Aktualny stan krajowych
-wymogów po zmianach deregulacyjnych jest niepewny i w dokumencie idzie jako:
+wymogów po zmianach deregulacyjnych jest niepewny (poza dwoma wymogami ustalonymi
+wyżej: Kodeks pracy i ustawa o ochronie sygnalistów) i w dokumencie idzie jako:
 
 `[WYMAGA WERYFIKACJI: aktualny stan krajowych wymogów formy pisemnej upoważnień
 po zmianach deregulacyjnych; potwierdzone jest stanowisko Prezesa UODO
@@ -740,12 +742,12 @@ z 12 września 2025 do projektu zmian, nie skutek legislacyjny; źródło:
 https://uodo.gov.pl/pl/138/3876 oraz https://uodo.gov.pl/pl/676/4265]`
 
 Projekt budujesz mimo to jako dokument pisemny, papierowy albo w postaci
-elektronicznej, i tak to uzasadniasz: wybór formy należy do firmy, a forma
+elektronicznej, i tak to uzasadniasz: w dwóch przypadkach ustalonych wyżej forma pisemna jest wymagana, w pozostałych wymogi sektorowe sprawdza specjalista, a forma
 pisemna zostawia ślad nadania niezależnie od tego, jak rozstrzygnie się sprawa
 deregulacji. Ten projekt zawiera elementy wskazywane we wskazówkach Urzędu
 Ochrony Danych Osobowych; ocena, czy w tej firmie działają one skutecznie,
 należy do firmy i jej specjalisty. Nie twierdzisz ani że forma pisemna jest
-wymagana, ani że została zniesiona, ani że dokument jest „bezpieczny”, „zgodny
+wymagana poza dwoma przypadkami opisanymi w `references/stan-prawny.md`, ani że została zniesiona, ani że dokument jest „bezpieczny”, „zgodny
 z wymogami sektorowymi” czy że „daje rozliczalność”.
 
 **Cztery rzeczy, które z upoważnienia mają dać się odczytać** (kryterium
@@ -857,7 +859,7 @@ widać przy pierwszym sprawdzeniu.
 **Zasady przyjęte w tym pakiecie dokumentów, służące rozliczalności** (wpisujesz
 je zawsze, ale przedstawiasz jako zasady tego pakietu, nie jako normę prawną;
 samo stosowanie upoważnień jest środkiem organizacyjnym, o którym decyduje
-firma):
+firma, poza dwoma wymogami ustalonymi w `references/stan-prawny.md`):
 
 - upoważnienie nadaje się konkretnej osobie, nigdy stanowisku ani zespołowi,
   i w zakresie najwęższym wystarczającym do pracy;
@@ -867,7 +869,7 @@ firma):
   wykonania, razem z odebraniem dostępów w systemach;
 - przegląd ewidencji odbywa się w stałym rytmie `[UZUPEŁNIJ: np. co pół roku]`
   i dodatkowo po każdej zmianie kadrowej;
-- podmiotom przetwarzającym i ich pracownikom upoważnień się nie nadaje.
+- podmiotom przetwarzającym i ich pracownikom upoważnień się nie nadaje (wyjątek: gdy zgłoszenia sygnalistów przyjmuje podmiot zewnętrzny, to, czy jego osoby potrzebują pisemnego upoważnienia, ocenia specjalista (skill sygnalisci-procedura)).
 
 **ZASADA TWARDA, powtórz ją w dokumencie:** ten skill projektuje dokumenty,
 a nie operuje sekretami. Nie przyjmuje i nie zapisuje haseł, danych logowania
@@ -1049,7 +1051,9 @@ taka forma czyta się jak werdykt.
   oraz kolumny „Obowiązuje do”, „Zwrot nośników i kluczy” i „Miejsce
   przechowywania oryginału”?
 - Czy w Ewidencji upoważnień nie ma żadnego podmiotu przetwarzającego ani jego
-  pracownika, a wszystkie takie podmioty są w kolumnie odbiorców rejestru?
+  pracownika (poza osobami zewnętrznego operatora zgłoszeń sygnalistów, jeśli
+  specjalista uznał, że potrzebują upoważnienia), a wszystkie takie podmioty są
+  w kolumnie odbiorców rejestru?
 - Czy Ewidencja upoważnień ma wypełnianą kolumnę odebrania dostępów w systemach,
   osobną od odwołania upoważnienia?
 - Czy Prosta analiza ryzyka odwołuje się do numerów czynności z rejestru, ma

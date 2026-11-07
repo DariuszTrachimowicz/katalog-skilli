@@ -2,9 +2,9 @@
 nazwa: e-Doręczenia w firmie
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.6
+wersja: 1.0.7
 poziom: Działa od razu
-aktualizacja: 2026-11-06
+aktualizacja: 2026-11-07
 skrot: Przeprowadza firmę przez e-Doręczenia, od ustalenia grupy harmonogramu i miejsca potwierdzenia terminu, przez założenie adresu, po firmowy rytm pilnowania skrzynki.
 korzysc: Wiesz, jak założyć adres do e-Doręczeń, i masz plan pilnowania skrzynki, także na czas urlopu.
 szukaj: e-doręczenia, edoreczenia, adres do doręczeń elektronicznych, ADE, skrzynka doręczeń, BAE, elektroniczny list polecony, pismo z urzędu, termin październik 2026, fikcja doręczenia, CEIDG, profil zaufany

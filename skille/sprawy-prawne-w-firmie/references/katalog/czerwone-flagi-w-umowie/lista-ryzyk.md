@@ -59,7 +59,7 @@ Lista mówi, **na co patrzeć**. Nie jest treścią do przepisania do odpowiedzi
 - Zakaz pokazania pracy w portfolio.
 - Licencje na czcionki, zdjęcia i wtyczki, kto kupuje, kto odpowiada, kto płaci przy wygaśnięciu.
 - Przy odwrotnej stronie: zapłata za utwór, do którego nie nabywa się praw.
-- Uwaga na typ umowy: przy umowie o pracę prawa do utworów tworzonych w ramach obowiązków przechodzą na pracodawcę z mocy prawa, brak zapisu nie jest wtedy tą samą flagą co przy B2B.
+- Uwaga na typ umowy: przy umowie o pracę prawa do utworów tworzonych w ramach obowiązków przechodzą na pracodawcę z mocy prawa, ale co do zasady z chwilą przyjęcia utworu i tylko w granicach celu umowy o pracę (programy komputerowe bez tego ograniczenia), więc brak zapisu nie jest wtedy tą samą flagą co przy B2B, chyba że pracodawca chce korzystać z utworu szerzej.
 
 ## Zakaz konkurencji
 

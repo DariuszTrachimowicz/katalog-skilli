@@ -282,15 +282,20 @@ upoważnienia przetwarzała dane wyłącznie na polecenie administratora.
   firma. Nie zamieniasz tego na normę, nie piszesz „obejmuje się upoważnieniem"
   ani „firma musi nadać upoważnienia", i nie sugerujesz, że firma wykazująca
   kontrolę nad dostępem inaczej jest niezgodna. Przepisy sektorowe mogą wymagać
-  formy pisemnej; ich stan niesie znacznik deregulacyjny opisany niżej.
+  formy pisemnej; dwa takie wymogi są ustalone (Kodeks pracy, ustawa o ochronie
+  sygnalistów; opisane niżej) i te mówisz jako obowiązek, a stan pozostałych
+  niesie znacznik deregulacyjny opisany niżej.
 - **Upoważnień nie nadaje się podmiotom przetwarzającym ani ich pracownikom.**
   Relacja z podmiotem przetwarzającym opiera się na umowie powierzenia, nie na
-  upoważnieniu. Do ewidencji upoważnień nie wchodzi żaden podmiot zewnętrzny;
+  upoważnieniu (wyjątek: gdy zgłoszenia sygnalistów przyjmuje podmiot zewnętrzny,
+  to, czy jego osoby potrzebują pisemnego upoważnienia, ocenia specjalista).
+  Poza tym wyjątkiem do ewidencji upoważnień nie wchodzi żaden podmiot zewnętrzny;
   odbiorcy zewnętrzni żyją w kolumnie odbiorców rejestru czynności. **Nie
   klasyfikujesz przy tym konkretnego odbiorcy**: czy biuro rachunkowe, dostawca
   platformy albo firma kurierska są w danej sprawie podmiotem przetwarzającym,
   czy odrębnym administratorem, ustala firma ze specjalistą, a pytanie o to
-  wpisujesz do Rejestru luk. Nadawanie upoważnień podmiotom zewnętrznym to błąd
+  wpisujesz do Rejestru luk. Nadawanie upoważnień podmiotom zewnętrznym (poza
+  wyjątkiem wyżej) to błąd
   konstrukcyjny łatwy do popełnienia w dokumentacji małych firm.
 - **Upoważnień nie powinien nadawać inspektor ochrony danych**, bo prowadziłoby
   to do nadzorowania przez inspektora własnej działalności. Administrator może
@@ -321,17 +326,17 @@ pisemnej powinien w myśl zasady rozliczalności być w stanie wykazać, że
 upoważnienia zostały nadane i że istnieje rzeczywista kontrola nad danymi.
 **Czy zmiany weszły w życie i jaki jest stan krajowych wymogów pisemnych
 upoważnień na dzień 24 sierpnia 2026, nie zostało ustalone.** W dokumentach
-i w rozmowie rozwiązujesz to wyłącznie tak:
+i w rozmowie rozwiązujesz to tak (poza dwoma wymogami ustalonymi niżej):
 
 `[WYMAGA WERYFIKACJI: aktualny stan krajowych wymogów formy pisemnej upoważnień
 po zmianach deregulacyjnych; potwierdzone jest stanowisko Prezesa UODO
 z 12 września 2025 do projektu zmian, nie skutek legislacyjny; źródło:
 https://uodo.gov.pl/pl/138/3876 oraz https://uodo.gov.pl/pl/676/4265]`
 
-Nie twierdzisz ani że forma pisemna jest wymagana, ani że została zniesiona.
+Nie twierdzisz, że forma pisemna została zniesiona. Ustalone 7 listopada 2026 w tekstach ustaw (Kodeks pracy w tekście ujednoliconym z 14 października 2026 i ustawa o ochronie sygnalistów, bez zmian oczekujących w bazie ELI): do danych szczególnych kategorii kandydatów i pracowników (Kodeks pracy) oraz do przyjmowania i weryfikacji zgłoszeń sygnalistów, działań następczych i danych osób ze zgłoszeń (ustawa o ochronie sygnalistów) dopuszcza się wyłącznie osoby z pisemnym upoważnieniem. Te dwa wymogi mówisz firmie skutkiem; co do pozostałych ustaw sektorowych nie twierdzisz ani że forma pisemna jest wymagana, ani że została zniesiona, i zostawiasz je do sprawdzenia ze specjalistą.
 Projekt upoważnienia budujesz mimo to jako dokument pisemny (papierowy albo
-w postaci elektronicznej) i tak to uzasadniasz firmie: wybór formy jest decyzją
-firmy, a forma pisemna zostawia ślad nadania niezależnie od tego, jak
+w postaci elektronicznej) i tak to uzasadniasz firmie: w dwóch przypadkach wyżej forma pisemna jest wymagana, w pozostałych wymogi sektorowe sprawdza specjalista,
+a forma pisemna zostawia ślad nadania niezależnie od tego, jak
 rozstrzygnie się sprawa deregulacji. Projekt zawiera elementy wskazywane we
 wskazówkach Urzędu Ochrony Danych Osobowych; ocena, czy w tej firmie działają
 one skutecznie, należy do firmy i jej specjalisty. Nie nazywasz projektu
@@ -380,7 +385,7 @@ UODO rozróżnia dwa poziomy.
    osób, a nie na interesy administratora czy podmiotu przetwarzającego. Jeżeli
    w toku szacowania ryzyka ustalona zostanie wysoka wartość ryzyka, dla danego
    procesu wymagane jest przeprowadzenie oceny skutków. Jeżeli wynik oceny skutków
-   wskazuje wysokie ryzyko, konieczne są uprzednie konsultacje z organem
+   wskazuje, że przetwarzanie powodowałoby wysokie ryzyko, gdyby administrator nie zastosował środków w celu jego zminimalizowania, przed rozpoczęciem przetwarzania konieczne są uprzednie konsultacje z organem
    nadzorczym.
 
 **Tej reguły NIE stosujesz jako reguły decyzyjnej w tym skillu.** Poziom „wysoki"
@@ -469,7 +474,7 @@ złej reguły.
   pod adresem https://uodo.gov.pl/pl/492/2278.
 - Jeżeli naruszenie może powodować wysokie ryzyko naruszenia praw lub wolności
   osoby fizycznej, administrator bez zbędnej zwłoki zawiadamia o naruszeniu także
-  tę osobę, jasnym i prostym językiem.
+  tę osobę, jasnym i prostym językiem; przepisy przewidują wyjątki od tego obowiązku, a czasem zamiast zawiadomień indywidualnych wystarcza komunikat publiczny.
 
 Pierwsza godzina po incydencie i mapowanie zdarzenia to terytorium darmowego
 skilla `rodo-w-malej-firmie`; tutaj odsyłasz do niego oraz pod adresy z rejestru
@@ -514,7 +519,7 @@ specjalistą]`, nigdy jako `[WYMAGA WERYFIKACJI]`.
 Poniższe wartości prawne zmieniają się najczęściej i zawsze idą ze znacznikiem
 `[WYMAGA WERYFIKACJI: ...; źródło: ...]` z pełnym adresem z rejestru źródeł:
 
-- stan krajowych wymogów formy pisemnej upoważnień po zmianach deregulacyjnych;
+- stan krajowych wymogów formy pisemnej upoważnień po zmianach deregulacyjnych, poza dwoma wymogami ustalonymi w sekcji o formie upoważnień (Kodeks pracy, ustawa o ochronie sygnalistów);
 - treść i zakres wykazu operacji wymagających oceny skutków dla ochrony danych;
 - aktualne brzmienie i układ szablonów rejestrów udostępnianych przez UODO;
 - aktualność wskazówek UODO do rejestrowania czynności, bo plik jest aktualizowany
@@ -542,7 +547,8 @@ Przy każdej pozycji podano jedyne dopuszczalne rozwiązanie w treści.
 
 1. **Status legislacyjny deregulacji upoważnień.** Rozwiązanie: znacznik
    `[WYMAGA WERYFIKACJI: ...]` opisany w sekcji o formie upoważnień; sprawdź na
-   https://uodo.gov.pl/pl/138/3876.
+   https://uodo.gov.pl/pl/138/3876. Dwa wymogi ustalone w tej sekcji (Kodeks pracy,
+   ustawa o ochronie sygnalistów) mówisz jako fakt.
 2. **Numery artykułów przepisów sektorowych wymagających pisemnych upoważnień.**
    Rozwiązanie: powołujesz się na same ustawy z nazwy, bez numerów jednostek
    redakcyjnych, i dopisujesz, że dobór przepisu właściwego dla tej firmy należy

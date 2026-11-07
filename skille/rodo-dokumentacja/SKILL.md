@@ -177,7 +177,7 @@ komponent: `references/komponenty.md`.
 | 1. Inwentaryzacja przetwarzań | uporządkowana lista czynności przetwarzania wyprowadzona z mapy danych, z właścicielem procesu | `references/komponenty.md`, sekcja 1 |
 | 2. Rejestr czynności przetwarzania | rejestr administratora, komplet elementów obowiązkowych plus wybrane dodatkowe; wariant dla powierzeń: **Rejestr kategorii czynności** | sekcja 2 |
 | 3. Prosta analiza ryzyka | ogólna, uproszczona analiza ryzyka po czynnościach, z planem postępowania i rytmem przeglądu z metryczki | sekcja 3 |
-| 4. Upoważnienie do przetwarzania danych + Ewidencja upoważnień | projekt treści upoważnienia oraz ewidencja nadań i odwołań; upoważnienie jest środkiem organizacyjnym, którym firma MOŻE się posłużyć, a nie osobnym obowiązkiem | sekcja 4 |
+| 4. Upoważnienie do przetwarzania danych + Ewidencja upoważnień | projekt treści upoważnienia oraz ewidencja nadań i odwołań; upoważnienie jest środkiem organizacyjnym, którym firma MOŻE się posłużyć, a nie osobnym obowiązkiem, poza dwoma wymogami ustalonymi w `references/stan-prawny.md` (Kodeks pracy, ustawa o ochronie sygnalistów) | sekcja 4 |
 | 5. Rejestr luk | lista pozycji domkniętych i niedomkniętych z właścicielem i terminem, zamiast werdyktu | sekcja 5 |
 
 Trzy rozróżnienia, których nie wolno zatrzeć:
@@ -348,7 +348,8 @@ Po zbudowaniu komponentów przejdź z użytkownikiem listę kontrolną spójnoś
    Ewidencja upoważnień ma kolumnę odwołania upoważnienia, osobną kolumnę
    odebrania dostępów w systemach oraz czynności przy odejściu osoby.
 7. Czy upoważnień nie nadano podmiotom przetwarzającym ani ich pracownikom
-   (tam podstawą współpracy jest umowa powierzenia, nie upoważnienie) i czy
+   (tam podstawą współpracy jest umowa powierzenia, nie upoważnienie; wyjątek:
+   gdy zgłoszenia sygnalistów przyjmuje podmiot zewnętrzny, to, czy jego osoby potrzebują pisemnego upoważnienia, ocenia specjalista (skill sygnalisci-procedura)) i czy
    nadającym nie jest osoba pełniąca funkcję inspektora ochrony danych.
 8. Czy dokumenty nie powielają numerów PESEL, numerów dowodów, numerów rachunków,
    adresów zamieszkania, danych o zdrowiu ani haseł i danych logowania, a pola
@@ -389,6 +390,7 @@ KAŻDEJ z tych próśb, także powtórzonej innymi słowami i „tylko orientacy
   obowiązkowe": to rozstrzygnięcie o obowiązku, zasada 2; upoważnienie jest
   środkiem organizacyjnym, którym firma MOŻE się posłużyć, ten skill go
   PROJEKTUJE, a decyzję o jego stosowaniu podejmuje firma ze specjalistą;
+  wyjątek ustalony: do danych szczególnych kategorii kandydatów i pracowników (Kodeks pracy) oraz do przyjmowania i weryfikacji zgłoszeń sygnalistów, działań następczych i danych osób ze zgłoszeń (ustawa o ochronie sygnalistów) dopuszcza się wyłącznie osoby z pisemnym upoważnieniem (`references/stan-prawny.md`), i to mówisz firmie skutkiem;
 - „zrób ocenę skutków dla ochrony danych dla monitoringu", „chociaż szkic",
   „wstępna wersja wystarczy": zasada 9, poza zakresem w każdej formie; wskazujesz,
   gdzie sprawdzić, czy operacja w ogóle jej wymaga, i nie rozstrzygasz tego sam;

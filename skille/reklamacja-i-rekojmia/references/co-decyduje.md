@@ -72,7 +72,7 @@ Przy sprzedaży konsumenckiej obowiązuje kolejność i to ona jest źródłem w
 
 **Dopiero potem** obniżenie ceny albo odstąpienie od umowy, czyli zwrot pieniędzy, gdy sprzedawca odmówił naprawy i wymiany, nie wykonał ich, wykonał, a wada wróciła, albo wykonanie byłoby dla kupującego dużym kłopotem.
 
-**Od razu** o pieniądzach można rozmawiać, gdy wada jest poważna, i to sprzedawca musiałby wykazać, że jest drobna, a nie kupujący, że jest poważna. Przy rysie na obudowie odmowa jest prawdopodobna, przy wadzie, która psuje sens zakupu, nie.
+**Od razu** o pieniądzach można rozmawiać, gdy wada jest na tyle poważna, że uzasadnia pominięcie naprawy i wymiany. Przyjęcie, że wada jest istotna, dopóki sprzedawca nie wykaże, że jest drobna, dotyczy samego odstąpienia od umowy; tego, że wada jest aż tak poważna, by od razu przejść do pieniędzy, nikt z góry nie zakłada. Przy rysie na obudowie odmowa jest prawdopodobna, przy wadzie, która psuje sens zakupu, nie.
 
 Koszty procedury, transport, robocizna, materiały, demontaż i ponowny montaż, obciążają sprzedawcę, nie kupującego.
 
@@ -105,13 +105,13 @@ Opinia rzeczoznawcy nie jest obowiązkowa na etapie reklamacji, żadna ze stron 
 
 Czternastodniowy zegar na stanowisko wobec konsumenta działa też przy usłudze. Milczenie ma ten sam skutek co przy towarze. To pierwsza rzecz, którą mówisz remontowcowi, fryzjerce, szkoleniowcowi i firmie montażowej, bo cała reszta poradników o usługach ten termin przemilcza.
 
-Przy usługach, remont, fryzjer, kurs, sprzątanie, transport, montaż, nie ma za to sformalizowanej ścieżki żądań takiej jak przy towarach. To zmienia resztę rozmowy.
+Przy usługach, remont, fryzjer, kurs, sprzątanie, transport, montaż, ścieżka żądań zależy od tego, na co się umówiono (rozróżnienie niżej): przy konkretnym efekcie, np. remoncie albo montażu, za wady odpowiada się według zasad zbliżonych do sprzedaży (usunięcie wady, obniżenie ceny, odstąpienie przy wadzie istotnej), a przy staraniu takiej sformalizowanej ścieżki nie ma. To zmienia resztę rozmowy.
 
 Praktyczna ścieżka wygląda tak: opisać na piśmie, co miało być, a co jest; wezwać do poprawienia i wyznaczyć konkretny termin; dopiero po bezskutecznym upływie terminu rozmawiać o obniżeniu ceny, o odstąpieniu albo o pokryciu szkody.
 
 Ważne rozróżnienie, które decyduje o tym, czego w ogóle można żądać: czy umówiono się na **konkretny efekt** (uszyta sukienka, wykafelkowana łazienka, wykonana strona), czy na **staranne działanie** (opieka, doradztwo, zajęcia). Przy staraniu trudniej mówić o wadzie, a łatwiej o niewykonaniu tego, co obiecano w umowie lub w opisie oferty.
 
-Przy usługach zamawianych przez internet obowiązuje osobna pułapka: przy odpłatnej usłudze klient traci prawo do odstąpienia po jej pełnym wykonaniu tylko wtedy, gdy wcześniej wyraźnie zgodził się na rozpoczęcie przed upływem terminu na odstąpienie, został uprzedzony, że po wykonaniu usługi to prawo utraci, i przyjął to do wiadomości. Sama zgoda na rozpoczęcie nie wystarcza, a przy umowie z nieumówionej wizyty albo wycieczki ten wyjątek sprawdza się osobno.
+Przy usługach zamawianych przez internet obowiązuje osobna pułapka: przy odpłatnej usłudze klient traci prawo do odstąpienia po jej pełnym wykonaniu tylko wtedy, gdy wcześniej wyraźnie zgodził się na rozpoczęcie przed upływem terminu na odstąpienie, został uprzedzony, że po wykonaniu usługi to prawo utraci, i przyjął to do wiadomości. Sama zgoda na rozpoczęcie nie wystarcza, a przy umowie zawartej podczas nieumówionej wizyty albo wycieczki ten wyjątek w ogóle nie działa.
 
 ## 9. Treści i usługi cyfrowe
 

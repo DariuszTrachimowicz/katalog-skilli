@@ -37,7 +37,7 @@ urzędy zaczynają pisać elektronicznie.
 **Krok 1. Ustal sytuację firmy.** Potrzebujesz pięciu informacji: forma
 działalności (CEIDG czy rejestr przedsiębiorców KRS; fundacja albo
 stowarzyszenie bez wpisu do rejestru przedsiębiorców to inna grupa), rok wpisu,
-czy po 30 czerwca 2025 składano wniosek o ZMIANĘ wpisu w CEIDG (zmiana
+czy po 30 czerwca 2025 składano wniosek o ZMIANĘ wpisu w CEIDG albo o wpis zawieszenia lub wznowienia działalności (zmiana
 uruchamia obowiązek wcześniej), czy firma ma już ADE, kto dziś odbiera pocztę
 firmową. Pytaj tylko o to, czego użytkownik jeszcze nie powiedział; nie zgaduj.
 

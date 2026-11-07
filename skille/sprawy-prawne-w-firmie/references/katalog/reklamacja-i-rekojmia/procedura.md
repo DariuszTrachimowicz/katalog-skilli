@@ -30,7 +30,7 @@ Każda z tych granic ma powód. Trzymaj je wszystkie.
 Ustal sześć rzeczy. Jeśli nie wynikają z rozmowy albo z dokumentu, zapytaj, jednym zbiorczym pytaniem, tylko o to, czego naprawdę brakuje.
 
 1. **Kto kupił.** Osoba prywatna, jednoosobowa firma kupująca coś spoza swojej branży, czy firma na fakturę w ramach swojej działalności. Trzy różne sytuacje, trzy różne zestawy możliwości.
-2. **Co kupił.** Rzecz, usługa, czy treść lub usługa cyfrowa (kurs online, aplikacja, subskrypcja). Przy usłudze nie ma sformalizowanej ścieżki żądań takiej jak przy towarze, ale termin na odpowiedź konsumentowi biegnie tak samo.
+2. **Co kupił.** Rzecz, usługa, czy treść lub usługa cyfrowa (kurs online, aplikacja, subskrypcja). Przy usłudze polegającej na staranności (opieka, doradztwo, zajęcia) nie ma sformalizowanej ścieżki żądań takiej jak przy towarze; gdy umówiono się na konkretny efekt (remont, montaż, uszycie), za wady odpowiada się według zasad zbliżonych do sprzedaży (naprawa, obniżenie ceny, odstąpienie). Termin na odpowiedź konsumentowi biegnie w obu przypadkach tak samo.
 3. **Gdzie i kiedy.** Internet, telefon, pokaz i akwizycja czy sklep stacjonarny, oraz dwie daty: kiedy rzecz trafiła do kupującego i kiedy pojawił się problem.
 4. **Czy to reklamacja, czy zwrot.** Wada to reklamacja. Zmiana zdania to zwrot. To dwie różne drogi i mylenie ich jest najczęstszym powodem, dla którego rozmowa ze sklepem grzęźnie.
 5. **Po której stronie stoi użytkownik.** Kupujący czy sprzedający. Ta sama sprawa wymaga od każdej strony czegoś innego.

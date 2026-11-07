@@ -41,7 +41,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 
 **Kwoty (uprp.gov.pl, odczyt 6.11.2026; podstawa: rozporządzenie RM w sprawie opłat, Dz.U. 2001 nr 90 poz. 1000 ze zm., zmiana Dz.U. 2016 poz. 1623)**
 - Zgłoszenie elektroniczne: 400 zł za pierwszą klasę, 120 zł za każdą kolejną; papierowe: 450 zł plus 120 zł.
-- Opłata za pierwszy okres ochrony: 400 zł za każdą klasę, w terminie 3 miesięcy od doręczenia decyzji warunkowej, plus 90 zł opłaty za publikację (biznes.gov.pl, strona z 2014 r.: kwotę 90 zł potwierdzić).
+- Opłata za pierwszy okres ochrony: 400 zł za każdą klasę, w terminie 3 miesięcy od doręczenia wezwania do jej uiszczenia (PWP art. 224 ust. 1), plus 90 zł opłaty za publikację (rozporządzenie RM w sprawie opłat w brzmieniu Dz.U. 2016 poz. 1623, odczyt api.sejm.gov.pl 7.11.2026).
 - Przedłużenie: 400 zł za klasę, nie wcześniej niż rok przed upływem ochrony; w dodatkowym terminie 6 miesięcy 520 zł za klasę (plus 30 %), termin nieprzywracalny.
 - Sprzeciw: 600 zł. Zgłoszenie wspólne: opłata plus 100 %.
 - Czas: około 6 miesięcy bez sprzeciwu (biznes.gov.pl).

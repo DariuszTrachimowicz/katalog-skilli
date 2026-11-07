@@ -69,7 +69,7 @@ Najpierw dwa, trzy zdania: czy to zawieszenie czy zakończenie, co jest najpilni
 - Warunek: brak pracowników (poza pełnym katalogiem urlopów z `zasady.md`, sekcja 1: macierzyński i na jego warunkach, uzupełniający, wychowawczy, opiekuńczy, rodzicielski bez łączenia z pracą); przy spółce cywilnej zawieszają wszyscy.
 - Wniosek w CEIDG z datą początku (może być wsteczna) i ewentualnie końca; minimum 30 dni (wyjątek: sam pełny luty); bez górnego limitu.
 - ZUS: składki społeczne nie; zdrowotna za miesiąc, w którym zawieszenie zaczyna się w trakcie miesiąca, w całości, za pełne miesiące zawieszenia nie; świadczenia zdrowotne wygasają po 30 dniach.
-- VAT-Z nie trzeba; sprzedaż środka trwałego w zawieszeniu wymaga wcześniejszego zawiadomienia urzędu skarbowego; JPK za okresy zawieszenia co do zasady nie, chyba że były czynności opodatkowane, nabycia wewnątrzwspólnotowe, import usług, korekty albo zwrot.
+- VAT-Z nie trzeba; sprzedaż środka trwałego w zawieszeniu na co najmniej 6 miesięcy wymaga wcześniejszego zawiadomienia urzędu skarbowego; JPK za okresy zawieszenia co do zasady nie, chyba że były czynności opodatkowane, nabycia wewnątrzwspólnotowe, import usług, korekty albo zwrot.
 - Kasa: bez sprzedaży nie trzeba jej wyrejestrowywać ani robić raportów; przed wznowieniem sprawdzić termin przeglądu technicznego (do weryfikacji z serwisem).
 - Nie wolno: nowej bieżącej sprzedaży, nowych zleceń, faktur za nowe usługi. Wolno: odbierać należności, płacić stare zobowiązania, sprzedawać środki trwałe (z normalnym dokumentem sprzedaży), rozwiązywać umowy.
 - Pamiętać: adres do e-Doręczeń nadal obowiązkowy; ponowne nabycie ulgi na start dopiero po 60 miesiącach (kontynuacja ulgi po krótkim zawieszeniu do weryfikacji w ZUS).

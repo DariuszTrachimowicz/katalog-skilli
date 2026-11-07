@@ -2,9 +2,9 @@
 nazwa: Spadek krok po kroku
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.1
+wersja: 1.0.2
 poziom: Działa od razu
-aktualizacja: 2026-11-06
+aktualizacja: 2026-11-07
 skrot: Po śmierci bliskiego układa kolejność kroków i terminy, tłumaczy przyjęcie i odrzucenie spadku, długi, wybór między sądem a notariuszem i zgłoszenie do urzędu skarbowego, buduje teczkę dokumentów i podział zadań w rodzinie.
 korzysc: Wiesz, co po śmierci bliskiego jest pilne, do kiedy zdecydować o spadku i z czym iść do notariusza.
 szukaj: spadek po śmierci, odrzucenie spadku, przyjęcie spadku, długi spadkowe, termin 6 miesięcy, akt poświadczenia dziedziczenia, stwierdzenie nabycia spadku, notariusz czy sąd, SD-Z2, zasiłek pogrzebowy, konto zmarłego, testament, kto dziedziczy, dobrodziejstwo inwentarza, mieszkanie po rodzicach
