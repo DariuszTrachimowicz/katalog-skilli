@@ -181,8 +181,9 @@ def powiadom(zmiany):
     haslo = env.get(w.get("hasloZmienna", "SMTP_HASLO"), "").strip().strip('"')
     m = EmailMessage()
     m["From"], m["To"] = w["nadawca"], cfg["mailKontaktowy"]
-    m["Subject"] = "Akty cytowane w skillach: zmiany (%d)" % len(zmiany)
-    m.set_content("Cotygodniowy przegląd bazy ELI wykrył zmiany w aktach, które cytują skille katalogu:\n\n"
+    m["Subject"] = "Akty cytowane w skillach: zmiany i przypomnienia (%d)" % len(zmiany)
+    m.set_content("Cotygodniowy przegląd bazy ELI: nowe zmiany w aktach, które cytują skille katalogu, "
+                  "i przypomnienia o zmianach wchodzących w życie w najbliższym tygodniu:\n\n"
                   + "\n\n".join(zmiany)
                   + "\n\nDo zrobienia: sprawdzić, czy zmiana dotyczy przepisów, na których opiera się skill "
                     "(python narzedzia/skrypty-skilli/akty_eli.py zmiana ...), poprawka, testy, sędzia, nowa wersja i wydanie.\n")
@@ -200,24 +201,62 @@ def zapisz(stany):
     tymczasowy.replace(STAN)
 
 
-def przebieg(cyt, stare, mail, pobierz, powiadom=powiadom, zapisz=zapisz):
-    """Stan zapisujemy po skutecznym powiadomieniu (awaria poczty nie gubi zmiany); bez --mail tylko wypis."""
+MIGRACJA_DO = "2026-11-07"  # stały punkt odcięcia dla starego pliku stanu (dzień wdrożenia przypomnień)
+PRZYPOMNIJ_DNI = 7  # przypomnienie, gdy zmiana wchodzi w życie w ciągu tylu dni (albo weszła najwyżej tyle dni temu, gdy przebieg wypadł)
+
+
+def przypomnienia(nowe, gdzie, juz, dzis):
+    """Zmiany wchodzące w życie w oknie (dzis - 7 dni, dzis + 7 dni], jeszcze nieprzypomniane: (teksty, klucze)."""
+    d = datetime.date.fromisoformat(dzis)
+    od = (d - datetime.timedelta(days=PRZYPOMNIJ_DNI)).isoformat()
+    do = (d + datetime.timedelta(days=PRZYPOMNIJ_DNI)).isoformat()
+    teksty, klucze = [], []
+    for akt, s in sorted(nowe.items()):
+        for z in s["zmiany"]:
+            id_, data = z.split("@")
+            klucz = "%s>%s" % (z, akt)
+            if not data or not (od < data <= do) or klucz in juz:
+                continue
+            kiedy = "wchodzi w życie %s" % data if data >= dzis else "weszła w życie %s (przypomnienie spóźnione)" % data
+            teksty.append("\n".join(["Przypomnienie: %s, zmiana %s %s" % (s["tytul"], akty_eli.czytelny(id_), kiedy),
+                                      "  skille do przeglądu: %s" % ", ".join(sorted({g[0] for g in gdzie.get(akt, [])}))]
+                                     + ["    %s" % g[1] for g in gdzie.get(akt, [])]))
+            klucze.append(klucz)
+    return teksty, klucze
+
+
+def przebieg(cyt, stare, mail, pobierz, powiadom=powiadom, zapisz=zapisz, dzis=None):
+    """Stan zapisujemy po skutecznym powiadomieniu (awaria poczty nie gubi zmiany); bez --mail tylko wypis.
+
+    Oprócz nowych zmian automat przypomina o zmianach już znanych, które wchodzą w życie w najbliższym tygodniu;
+    przypomniane klucze trzyma w stanie pod "_przypomniane" (bez wpisów starszych niż 60 dni)."""
+    dzis = dzis or datetime.date.today().isoformat()
     nowe, gdzie = przeglad(cyt, pobierz)
     if stare is None:  # brak pliku stanu; pusty stan {} to zwykły przebieg
-        zapisz(nowe)
+        zapisz(dict(nowe, _przypomniane=[]))
         return [], "pierwsze uruchomienie: zapisano stan %d aktów bazowych z %d cytowanych pozycji, bez powiadomienia" % (len(nowe), len(cyt))
-    zm = roznice(stare, nowe, gdzie)
-    if not zm:
-        zapisz(nowe)
-        return [], "bez zmian (%d aktów)" % len(nowe)
+    if "_przypomniane" in stare:
+        juz = set(stare["_przypomniane"] or [])
+    else:  # stan sprzed przypomnień: zmiany obowiązujące w dniu wdrożenia przypomnień były znane i przejrzane
+        juz = {"%s>%s" % (z, akt) for akt, s in nowe.items() for z in s["zmiany"] if z.split("@")[1] and z.split("@")[1] <= MIGRACJA_DO}
+    akty = {k: v for k, v in stare.items() if not k.startswith("_")}
+    zm = roznice(akty, nowe, gdzie)
+    prz, klucze = przypomnienia(nowe, gdzie, juz, dzis)
+    granica = (datetime.date.fromisoformat(dzis) - datetime.timedelta(days=60)).isoformat()
+    stan = dict(nowe, _przypomniane=sorted(k for k in juz | set(klucze) if k.split("@", 1)[1].split(">")[0] >= granica))
+    wszystko = zm + prz
+    if not wszystko:
+        zapisz(stan)
+        return [], "bez zmian i bez zmian wchodzących w życie w tym tygodniu (%d aktów)" % len(nowe)
     if mail:
-        powiadom(zm)
-        zapisz(nowe)
-        return zm, "\n\n".join(zm)
-    return zm, "\n\n".join(zm) + "\n\n(bez --mail stan nie został zapisany; automat powiadomi przy najbliższym przebiegu)"
+        powiadom(wszystko)
+        zapisz(stan)
+        return wszystko, "\n\n".join(wszystko)
+    return wszystko, "\n\n".join(wszystko) + "\n\n(bez --mail stan nie został zapisany; automat powiadomi przy najbliższym przebiegu)"
 
 
 def selftest():
+    _P = lambda *a, **k: przebieg(*a, dzis=k.pop("dzis", "2030-06-01"), **k)
     assert data_linii("| KP | Dz.U. 2026 poz. 1245 | 5.11.2026 | 2026-11-03 |") == "2026-11-05"
     assert data_linii("odczyt 7 listopada 2026 r.") == "2026-11-07"
     assert data_linii("bez daty") is None and data_linii("31.02.2026") is None
@@ -237,11 +276,13 @@ def selftest():
     cyt = {"DU/2026/1245": [("zwolnienie", "skille/zwolnienie/references/zasady.md:5", "KP t.j. Dz.U. 2026 poz. 1245, odczyt 1.11.2026")],
            "DU/2025/1": [("spadek", "skille/spadek/SKILL.md:9", "Dz.U. 2025 poz. 1")]}
     zapisane, wyslane = [], []
-    zm, t = przebieg(cyt, None, True, atrapa, wyslane.append, zapisane.append)
+    zm, t = _P(cyt, None, True, atrapa, wyslane.append, zapisane.append)
     assert zm == [] and len(zapisane) == 1 and wyslane == [] and "pierwsze" in t, t
     stare = zapisane[0]
-    assert set(stare) == {"DU/1974/141", "DU/2025/1"}, stare
-    zm, t = przebieg(cyt, stare, True, atrapa, wyslane.append, zapisane.append)
+    stary_format = {k: v for k, v in stare.items() if k != "_przypomniane"}
+    assert _P(cyt, stary_format, False, atrapa, wyslane.append, lambda x: None, dzis="2026-11-08")[0] == []  # bez spóźnionych przypomnień po migracji
+    assert set(stare) == {"DU/1974/141", "DU/2025/1", "_przypomniane"} and stare["_przypomniane"] == [], stare
+    zm, t = _P(cyt, stare, True, atrapa, wyslane.append, zapisane.append)
     assert zm == [] and wyslane == [] and "bez zmian" in t
     dane["DU/1974/141"]["references"]["Akty zmieniające"].append({"id": "DU/2026/1500", "date": "2026-12-01"})
     zapisane.clear()
@@ -249,45 +290,72 @@ def selftest():
     def zla_poczta(z):
         raise OSError("SMTP")
     try:
-        przebieg(cyt, stare, True, atrapa, zla_poczta, zapisane.append)
+        _P(cyt, stare, True, atrapa, zla_poczta, zapisane.append)
         raise AssertionError("brak błędu poczty")
     except OSError:
         pass
     assert zapisane == []
-    zm, t = przebieg(cyt, stare, True, atrapa, wyslane.append, zapisane.append)
+    zm, t = _P(cyt, stare, True, atrapa, wyslane.append, zapisane.append)
     assert len(zm) == 1 and "Dz.U. 2026 poz. 1500" in zm[0] and "zwolnienie" in zm[0] and len(wyslane) == 1 and len(zapisane) == 1, zm
     zapisane.clear()
-    zm, t = przebieg(cyt, stare, False, atrapa, wyslane.append, zapisane.append)
+    zm, t = _P(cyt, stare, False, atrapa, wyslane.append, zapisane.append)
     assert len(zm) == 1 and zapisane == [] and "nie został zapisany" in t
     # nowy akt w cytatach po pierwszym przebiegu: powiadomienie
     stare2 = stare
     cyt2 = dict(cyt, **{"DU/2025/2": [("remont", "skille/remont/SKILL.md:3", "Dz.U. 2025 poz. 2")]})
     dane["DU/2025/2"] = {"title": "Ustawa Y", "inForce": "IN_FORCE", "references": {}}
-    zm, t = przebieg(cyt2, stare2, False, atrapa, wyslane.append, lambda s: None)
+    zm, t = _P(cyt2, stare2, False, atrapa, wyslane.append, lambda s: None)
     assert len(zm) == 2 and any("Nowy akt w cytatach" in z and "remont" in z for z in zm), zm
     # pozycja, której nie ma w ELI (404), po pierwszym przebiegu: powiadomienie, nie cicha zmiana stanu
     def atrapa404(url, jako_tekst=False):
         if url.endswith("DU/2025/1"):
             raise akty_eli.BladApi("Nie ma takiego aktu w bazie ELI (DU/2025/1).")
         return atrapa(url)
-    zm, t = przebieg(cyt, stare2, False, atrapa404, wyslane.append, lambda s: None)
+    zm, t = _P(cyt, stare2, False, atrapa404, wyslane.append, lambda s: None)
     assert any("nie ma w bazie ELI" in z and "spadek" in z for z in zm), zm
     # inny błąd API przerywa przebieg i raport bez zapisu stanu
     def atrapa429(url, jako_tekst=False):
         raise akty_eli.BladApi("API Sejmu: limit zapytań (429).")
-    for f in (lambda: przebieg(cyt, stare2, True, atrapa429, wyslane.append, zapisane.append), lambda: raport(cyt, atrapa429, dzis="2026-11-07")):
+    for f in (lambda: _P(cyt, stare2, True, atrapa429, wyslane.append, zapisane.append), lambda: raport(cyt, atrapa429, dzis="2026-11-07")):
         try:
             f()
             raise AssertionError("brak błędu przy 429")
         except akty_eli.BladApi:
             pass
     # pusty zapisany stan (wszystkie cytaty usunięte) to nie pierwszy przebieg: nowe akty idą do maila
-    zm, t = przebieg(cyt, {}, False, atrapa, wyslane.append, lambda s: None)
+    zm, t = _P(cyt, {}, False, atrapa, wyslane.append, lambda s: None)
     assert len(zm) == 2 and all("Nowy akt" in z for z in zm), zm
     # pełna lista miejsc w mailu, bez ucinania
     duzo = {"DU/2025/1": [("s%d" % i, "skille/s%d/SKILL.md:%d" % (i, i), "Dz.U. 2025 poz. 1") for i in range(20)]}
-    zm, t = przebieg(duzo, {}, False, atrapa, wyslane.append, lambda s: None)
+    zm, t = _P(duzo, {}, False, atrapa, wyslane.append, lambda s: None)
     assert zm[0].count("SKILL.md:") == 20, zm
+    # przypomnienie: znana zmiana (1500 od 2026-12-01) tydzień wcześniej, raz; stan po udanym mailu
+    stan_po = dict(przeglad(cyt, atrapa)[0], _przypomniane=[])  # stan z już znaną zmianą 1500
+    assert przypomnienia(przeglad(cyt, atrapa)[0], {}, set(), "2026-11-20")[0] == []
+    zapisane.clear(); wyslane.clear()
+    zm, t = _P(cyt, stan_po, True, atrapa, wyslane.append, zapisane.append, dzis="2026-11-25")
+    assert len(zm) == 1 and zm[0].startswith("Przypomnienie") and "Dz.U. 2026 poz. 1500" in zm[0] and "zwolnienie" in zm[0] and len(wyslane) == 1, zm
+    assert any("1500" in k for k in zapisane[0]["_przypomniane"]), zapisane[0]["_przypomniane"]
+    zm, t = _P(cyt, zapisane[0], True, atrapa, wyslane.append, zapisane.append, dzis="2026-11-30")
+    assert zm == [] and len(wyslane) == 1, zm
+    # przebieg wypadł: przypomnienie spóźnione najwyżej 7 dni; awaria poczty nie oznacza przypomnienia
+    zm, t = _P(cyt, stan_po, False, atrapa, wyslane.append, zapisane.append, dzis="2026-12-05")
+    assert len(zm) == 1 and "spóźnione" in zm[0], zm
+    assert _P(cyt, stan_po, False, atrapa, wyslane.append, zapisane.append, dzis="2026-12-09")[0] == []
+    zapisane.clear()
+    try:
+        _P(cyt, stan_po, True, atrapa, zla_poczta, zapisane.append, dzis="2026-11-25")
+        raise AssertionError("brak błędu poczty")
+    except OSError:
+        pass
+    assert zapisane == []
+    # stare wpisy przypomnień są czyszczone po 60 dniach
+    _P(cyt, dict(stan_po, _przypomniane=["DU/2020/1@2020-01-01>DU/1974/141"]), False, atrapa, wyslane.append, zapisane.append, dzis="2030-06-01")
+    assert zapisane[-1]["_przypomniane"] == [], zapisane[-1]
+    # migracja po wypadłym przebiegu: zmiana po dniu odcięcia nadal przypominana (stały punkt, nie „dziś”)
+    stary = {k: v for k, v in stan_po.items() if k != "_przypomniane"}
+    zm, t = _P(cyt, stary, False, atrapa, wyslane.append, lambda x: None, dzis="2026-12-05")
+    assert len(zm) == 1 and "1500" in zm[0] and "spóźnione" in zm[0], zm
     r = raport(cyt, atrapa, dzis="2026-11-07")
     assert len(r) == 1 and "Dz.U. 2026 poz. 1046 (od 2026-11-05)" in r[0] and "Dz.U. 2026 poz. 1500 (wejdzie 2026-12-01)" in r[0], r
     print("selftest OK")
