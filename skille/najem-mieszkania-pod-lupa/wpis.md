@@ -2,7 +2,7 @@
 nazwa: Najem mieszkania pod lupą
 kategoria: Prawo
 status: gotowy
-wersja: 1.2.0
+wersja: 1.2.1
 poziom: Działa od razu
 aktualizacja: 2026-11-07
 skrot: Czyta umowę najmu mieszkania z perspektywy najemcy albo wynajmującego, rozpoznaje rodzaj najmu, wskazuje ryzyka i braki (kaucja, podwyżki, opłaty, wypowiedzenie, naprawy, wizyty), daje pytania przed podpisem, plan odbioru i sprawdza rozliczenie kaucji.

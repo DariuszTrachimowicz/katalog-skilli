@@ -2,7 +2,7 @@
 nazwa: Spadek krok po kroku
 kategoria: Prawo
 status: gotowy
-wersja: 1.2.0
+wersja: 1.2.1
 poziom: Działa od razu
 aktualizacja: 2026-11-07
 skrot: Po śmierci bliskiego układa kolejność kroków i terminy, tłumaczy przyjęcie i odrzucenie spadku, długi, wybór między sądem a notariuszem i zgłoszenie do urzędu skarbowego, buduje teczkę dokumentów i podział zadań w rodzinie.

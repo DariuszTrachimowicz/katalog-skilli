@@ -65,3 +65,16 @@ test("projekty-ustaw.py: test wbudowany bez sieci (etap, nowe procesy, pierwsze 
   assert.equal(py.status, 0, py.stdout + py.stderr);
   assert.match(py.stdout, /selftest OK/);
 });
+
+test("akty-w-skillach.py: test wbudowany bez sieci (akt bazowy, stan po mailu, raport dat)", (t) => {
+  const proby = ["python", "python3", "py"].map((p) => spawnSync(p, ["narzedzia/akty-w-skillach.py", "--selftest"], { encoding: "utf8" }));
+  const py = proby.find((r) => !r.error);
+  if (!py) {
+    const inne = proby.filter((r) => r.error && r.error.code !== "ENOENT");
+    assert.equal(inne.length, 0, "nie udało się uruchomić Pythona: " + inne.map((r) => r.error.code).join(", "));
+    t.skip("brak interpretera Pythona");
+    return;
+  }
+  assert.equal(py.status, 0, py.stdout + py.stderr);
+  assert.match(py.stdout, /selftest OK/);
+});

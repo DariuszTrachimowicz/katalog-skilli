@@ -2,7 +2,7 @@
 nazwa: Zwolnienie pracownika krok po kroku
 kategoria: Prawo
 status: gotowy
-wersja: 1.2.0
+wersja: 1.2.1
 poziom: Działa od razu
 aktualizacja: 2026-11-07
 skrot: Prowadzi pracodawcę przez rozstanie z pracownikiem na umowie o pracę, czyli tryby i ich skutki, ochronę przed zwolnieniem, kalendarz wypowiedzenia, dokumenty i ryzyka w planie, oraz sprawdza wypowiedzenie przygotowane przez kadry.
