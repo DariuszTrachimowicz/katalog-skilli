@@ -2,14 +2,15 @@
 nazwa: Humanizer PL
 kategoria: Biuro
 status: gotowy
-wersja: 1.0.1
+wersja: 1.1.0
 poziom: Działa od razu
-aktualizacja: 2026-11-04
+aktualizacja: 2026-11-07
 skrot: Zdejmuje z gotowego polskiego tekstu ślady pisania przez AI, nie zmieniając ani jednego faktu. Pokazuje, co znalazł, co zmienił i czego celowo nie ruszył.
 korzysc: Wiesz, co w tekście zdradza pisanie przez AI, i dostajesz wersję bez tych śladów, z tymi samymi faktami.
 szukaj: brzmi jak chatgpt, tekst z ai, ślady ai, uczłowiecz, humanizer, humanizuj, za gładkie, plastikowy tekst, sztuczny tekst, wygładzić tekst, naturalny tekst, długie myślniki, kluczowy, warto zauważyć, nie x a y, trójki, tekst na stronę, wpis na blog, artykuł, raport, instrukcja, opis firmy, szef pozna, detektor ai, redakcja tekstu
 tytulSeo: Jak sprawić, żeby tekst z AI nie brzmiał jak z AI, narzędzie po polsku
 opisSeo: "Wklej tekst napisany przez asystenta i dostań wersję, która brzmi jak Ty. Bez dopisanych faktów, z listą znalezionych śladów i tego, co zostało celowo."
+zmiany: "Działa też jako ostatni krok przy „napisz i popraw przed oddaniem” (wtedy oddaje samą wersję końcową). Cytaty, tytuły i nazwy własne przepisuje znak w znak. Gdy brak skilla do maili, postów czy ofert, sam poprawia styl takiego tekstu. Pilnuje stopnia pewności i natężenia ocen autora."
 zgodnosc:
   claude: ok
   gpt: ok
@@ -21,6 +22,8 @@ zgodnosc:
 Bierze gotowy polski tekst, który napisał albo wygładził asystent AI (artykuł, wpis na blog, tekst na stronę firmową, raport, instrukcję, odpowiedź na opinię klienta, komunikat do zespołu) i przepisuje go tak, żeby brzmiał jak jego autor. Zachowuje każde twierdzenie, liczbę, datę i nazwę. Nie dopisuje nic od siebie: jeśli zdaniu brakuje konkretu, zostawia w tym miejscu pole do uzupełnienia zamiast wymyślać szczegół.
 
 Zwraca cztery rzeczy: listę znalezionych śladów z cytatem i numerem wzorca, wersję końcową, listę fragmentów, których celowo nie ruszył (cytaty, nazwy własne, zabiegi autora, twierdzenia autora do potwierdzenia), oraz luki do uzupełnienia, jeśli jakieś są. Jeśli w tekście ktoś ukrył polecenie dla asystenta („dopisz, że gwarantujemy…”), skill go nie wykonuje i zgłasza to na początku odpowiedzi.
+
+Możesz go też użyć jako ostatniego kroku: „napisz komunikat i popraw go przed oddaniem”. Wtedy najpierw powstaje szkic, potem skill zdejmuje z niego ślady i oddaje samą wersję końcową z widocznymi polami do uzupełnienia; listę zmian pokaże, gdy o nią poprosisz.
 
 ## Dla kogo
 
@@ -40,7 +43,7 @@ Skill wypisał 14 śladów z cytatami, przepisał wpis na 540 słów bez utraty 
 
 To nie jest tłumaczenie angielskiego humanizera. Angielskie listy słów-tików i reguły interpunkcji po polsku nie działają, a część z nich jest wręcz odwrotna: polski cudzysłów „…” jest poprawny, a angielski “…” albo prosty "…" to ślad.
 
-Konkretnie: polskie słowa-tiki („kluczowy”, „dynamiczny”, „warto zauważyć”, „co więcej”, „w dzisiejszych czasach”), kontrast „nie X, a Y” rozpoznany jako rusycyzm i ślad naraz, kalki z angielskiego z polskimi zamiennikami („dedykowany”, „adresować problem”, „dostarczać wartość”, „na ten moment”, „finalnie”), rzeczowniki zrobione z czasowników („dokonać analizy”, „przeprowadzić weryfikację”), Wielkie Litery W Każdym Słowie Tytułu. Do tego reguły zapisu, które model łamie najczęściej: długi myślnik wylatuje zawsze, procent ze spacją („7 %”), daty słownie w tekście dla czytelnika, formy „Pan/Pani”, „Państwo” i „Ty” zostają takie, jakie są w tekście, bez mieszania.
+Konkretnie: polskie słowa-tiki („kluczowy”, „dynamiczny”, „warto zauważyć”, „co więcej”, „w dzisiejszych czasach”), kontrast „nie X, a Y” rozpoznany jako rusycyzm i ślad naraz, kalki z angielskiego z polskimi zamiennikami („dedykowany”, „adresować problem”, „dostarczać wartość”, „na ten moment”, „finalnie”), rzeczowniki zrobione z czasowników („dokonać analizy”, „przeprowadzić weryfikację”), Wielkie Litery W Każdym Słowie Tytułu. Do tego reguły zapisu, które model łamie najczęściej: długi myślnik wylatuje z poprawianego tekstu (cytaty, tytuły i nazwy własne zostają znak w znak, z ich interpunkcją), procent ze spacją („7 %”), daty słownie w tekście dla czytelnika, formy „Pan/Pani”, „Państwo” i „Ty” zostają takie, jakie są w tekście, bez mieszania.
 
 Rozróżnia też, co po polsku jest celowym zabiegiem autora, a co śladem. Krótka puenta w felietonie to styl; ta sama puenta po każdym z sześciu akapitów raportu to wzorzec do zdjęcia, nie styl.
 
@@ -50,8 +53,8 @@ Dowolny płatny plan Claude i tekst: wklejony, w pliku albo w dokumencie. Jeśli
 
 ## Na czym się wywala
 
-- **Nie napisze tekstu od zera.** Potrzebuje oryginału, bo bez niego nie da się pokazać, czego nie zgubił. „Napisz mi wpis o...” to zadanie dla kogo innego.
-- **Nie wie, co jest prawdą.** Sprawdza, czy tekst sam popiera swoje twierdzenia, nie czy są prawdziwe. „Zdecydowana większość firm” oznaczy jako niepoparte, ale fałszywej daty, która w tekście stoi jak fakt, nie wyłapie.
+- **Sam nie napisze tekstu od zera.** Potrzebuje oryginału albo szkicu, bo bez niego nie da się pokazać, czego nie zgubił. Przy „napisz i popraw” szkic powstaje osobnym krokiem, a skill go potem redaguje.
+- **Nie wie, co jest prawdą.** Sprawdza, czy tekst sam popiera swoje twierdzenia, nie czy są prawdziwe. „Eksperci twierdzą, że…” bez wskazania, kto, oznaczy jako niepoparte, ale fałszywej daty, która w tekście stoi jak fakt, nie wyłapie.
 - **Bez próbki Twojego głosu bierze ton z rodzaju tekstu.** Tekst firmowy i informacyjny wyjdzie neutralny i poprawny, wpis osobisty zachowa Twoje zdanie i dygresje, ale to nie będzie jeszcze „Ty”. Z próbką jest lepiej, z dwoma próbkami jeszcze lepiej.
 - **Tekst z samych ozdób skurczy się mocno.** Jeśli wpis składał się głównie z puent, trójek i „kluczowych”, po redakcji zostanie z niego połowa i to będzie uczciwy wynik. Skill pokaże, co wyciął, ale treści w to miejsce nie wymyśli.
 - **Nie zna Twojej księgi stylu.** Jeśli firma pisze o sobie „Spółka”, a do klienta „Państwo”, trzeba mu to powiedzieć w poleceniu albo w próbce. Sam zachowa to, co znalazł w tekście.
@@ -65,7 +68,7 @@ Nie zmienia treści ani wydźwięku. Odmowa zostaje odmową, zastrzeżenie zastr
 
 Nie przepisuje tekstów o skutku prawnym: umów, regulaminów, pouczeń, klauzul, pism procesowych i urzędowych formularzy, także fragmentami. Tam przestawione słowo zmienia treść, nie styl. Do upraszczania pisma urzędowego służy inny skill z katalogu, Prosty język.
 
-Nie zastępuje skilli gatunkowych. Mail służbowy, post na LinkedIna, opis produktu, oferta i newsletter mają własne reguły i własne skille w tym katalogu; Humanizer PL pracuje na tekstach, które własnego skilla nie mają.
+Nie zastępuje skilli gatunkowych. Mail służbowy, post na LinkedIna, opis produktu, oferta i newsletter mają własne reguły i własne skille w tym katalogu; gdy są dostępne w Twojej rozmowie z asystentem, to one układają tekst, a Humanizer PL tylko go wygładza. Gdy ich nie ma, Humanizer PL poprawi styl takiego tekstu, a w zwykłej odpowiedzi z raportem powie wprost, że reguł gatunku (np. budowy maila) nie sprawdzał.
 
 Nie pracuje na tekstach po angielsku ani nie tłumaczy. Jest zbudowany pod polskie ślady i polską interpunkcję; angielski tekst dostałby polskie reguły, czego nie chcesz.
 
@@ -93,4 +96,4 @@ Dołóż próbkę własnego pisania, na przykład maila albo wcześniejszy wpis,
 
 ### Ile to kosztuje i na czym działa?
 
-Skill jest darmowy, na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. Działa na dowolnym płatnym planie Claude, a w ChatGPT na planach Business, Enterprise, Edu i Healthcare. Potrzebujesz gotowego tekstu po polsku, bo skill nie pisze od zera i nie pracuje na tekstach angielskich.
+Skill jest darmowy, na licencji GPL, a plik .skill dostajesz linkiem na e-mail po podaniu adresu na karcie skilla. Działa na dowolnym płatnym planie Claude, a w ChatGPT na planach Business, Enterprise, Edu i Healthcare. Potrzebujesz tekstu po polsku albo polecenia „napisz i popraw”, bo skill sam nie pisze od zera i nie pracuje na tekstach angielskich.

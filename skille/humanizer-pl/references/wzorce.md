@@ -4,6 +4,8 @@
 
 Wzorce są ponumerowane od najsilniejszego: §1 do §5 uzasadniają poprawkę po jednym wystąpieniu, a wzorzec oznaczony *słaby w pojedynkę* potrzebuje towarzystwa innych śladów w tym samym fragmencie. Każdy wzorzec opisuje wybór domyślny modelu, a człowiek może zrobić każdy z nich celowo, więc na końcu jest sekcja „Kiedy nie działać”.
 
+**Pierwszeństwo:** przykłady pokazują ruch redakcyjny, a przy sprzeczności wygrywa SKILL.md. Twierdzenie o faktach (warunek, skutek, przyczyna, ocena z natężeniem, stopień pewności, przypisanie opinii) zostaje albo dostaje pole `[UZUPEŁNIJ]`; usuwasz tylko opakowanie, ozdobę i wagę bez treści.
+
 ## Spis treści
 1. A. Inscenizacja zamiast stwierdzenia (§1 do §5): najsilniejsze ślady
 2. B. Rytm z reguły (§6 do §11): trójki, pauzy, kalki, strona bierna
@@ -28,12 +30,13 @@ Najsilniejsze i najczęstsze ślady w dzisiejszej prozie modeli. Reaguj po jedny
 **Przed (rozbite na zdania):**
 > To nie znaczy, że każdy wybór jest równie dobry. To znaczy, że żaden zewnętrzny system nie potwierdzi, który jest właściwy.
 **Po:**
-> Żaden zewnętrzny system nie potwierdzi, który wybór jest właściwy, choć wybory nie są równie dobre.
-> (połowa przecząca zostaje jako treść, bo prostuje przekonanie czytelnika; znika tylko inscenizacja „to nie znaczy, że… to znaczy, że”)
+> Żaden zewnętrzny system nie potwierdzi, który wybór jest właściwy, co nie przesądza, że każdy wybór jest równie dobry.
+> (zastrzeżenie zostaje jako zastrzeżenie, bo prostuje przekonanie czytelnika; znika tylko inscenizacja „to nie znaczy, że… to znaczy, że”)
 **Przed (ucięty ogon):**
 > Opcje biorą się z wybranego elementu, bez zgadywania.
 **Po:**
-> Opcje biorą się z wybranego elementu.
+> Opcje biorą się z wybranego elementu, więc nikt ich nie zgaduje.
+> (doklejony ogon staje się zwykłą częścią zdania, bo niesie twierdzenie; gdyby niczego nie dodawał, wylatuje)
 
 ### 2. Jednozdaniowe puenty i dramatyczne równoważniki
 
@@ -42,7 +45,7 @@ Najsilniejsze i najczęstsze ślady w dzisiejszej prozie modeli. Reaguj po jedny
 **Przed:**
 > Potem przyszedł nowy system. Nie miał preferencji. Żadnych przyzwyczajeń. Żadnej nostalgii za ludzkim gustem. Stare reguły przestały obowiązywać.
 **Po:**
-> Nowy system nie miał preferencji ani przyzwyczajeń. Stare reguły przestały obowiązywać.
+> Potem przyszedł nowy system, który nie miał preferencji ani przyzwyczajeń. Stare reguły przestały obowiązywać.
 **Przed (powtórzona puenta):**
 > Pamięć podręczna oszczędza powtórną pracę.
 >
@@ -67,7 +70,8 @@ Najsilniejsze i najczęstsze ślady w dzisiejszej prozie modeli. Reaguj po jedny
 **Przed (aforyzm):**
 > Symetria to język zaufania. W dzisiejszym świecie wydajność staje się pułapką, gdy zespoły zapominają o warstwie ludzkiej.
 **Po:**
-> Symetria budzi zaufanie. Wydajność staje się pułapką, gdy zespoły zapominają o ludziach.
+> Symetria to język zaufania [UZUPEŁNIJ: doprecyzuj, czy symetria buduje zaufanie, czy je wyraża]. Wydajność staje się pułapką, gdy zespoły zapominają o ludziach.
+> (znika rozbieg „w dzisiejszym świecie”; metafora, której sensu tekst nie rozstrzyga, zostaje z polem zamiast zgadywania)
 
 ### 4. Rozbieg przed myślą
 
@@ -89,12 +93,13 @@ Najsilniejsze i najczęstsze ślady w dzisiejszej prozie modeli. Reaguj po jedny
 **Przed:**
 > Nie chodzi głównie o długość promptu i nie twierdzę, że dokumentacja nie ma znaczenia. Można by to skategoryzować inaczej, ale sprawa jest taka, czy agent potrafi użyć instrukcji w działaniu.
 **Po:**
-> Sprawa jest taka, czy agent potrafi użyć instrukcji w działaniu.
+> Sprawa jest taka, czy agent potrafi użyć instrukcji w działaniu. Długość promptu nie jest tu głównym czynnikiem, a dokumentacja może mieć znaczenie.
+> (znika inscenizacja sporu i pusta uwaga o kategoryzacji; oba zastrzeżenia zostają jako twierdzenia)
 **Przed (fałszywa alternatywa):**
 > Tokeny sesji rotują co 24 godziny. Kuszące byłoby rotować je restartem usługi z crona, ale to wyrzuciłoby wszystkie aktywne sesje. Rotacja odbywa się w miejscu, a klienci odświeżają się niezauważalnie.
 **Po:**
-> Tokeny sesji rotują co 24 godziny w miejscu, a klienci odświeżają się niezauważalnie.
-> (odrzucona alternatywa wylatuje razem ze swoim skutkiem, bo nikt jej nie proponował; gdyby czytelnik realnie ją rozważał, zdanie zostaje)
+> Tokeny sesji rotują co 24 godziny w miejscu, a klienci odświeżają się niezauważalnie. Restart usługi z crona wyrzuciłby wszystkie aktywne sesje.
+> (znika inscenizacja „kuszące byłoby”; skutek restartu to fakt, więc zostaje jako zwykłe zdanie)
 
 ## B. Rytm z reguły
 
@@ -106,12 +111,12 @@ Kształty i interpunkcja stosowane wszędzie, niezależnie od tego, czy sens teg
 **Przed:**
 > Wydarzenie obejmuje prelekcje, panele dyskusyjne i możliwości networkingu. Uczestników czekają innowacje, inspiracje i branżowa wiedza.
 **Po:**
-> W programie są prelekcje, panele i czas na rozmowy z innymi uczestnikami.
-> (trójka z faktów zostaje, trójka z ozdób wylatuje)
+> W programie są prelekcje, panele i czas na rozmowy z innymi uczestnikami. Uczestnicy dostaną też branżową wiedzę [UZUPEŁNIJ: z jakiego zakresu].
+> (trójka z faktów zostaje; z drugiej trójki wylatują ozdoby „innowacje” i „inspiracje”, a obietnica wiedzy zostaje z polem)
 **Przed (skala akapitu):**
 > Kariera może wyglądać obiecująco i się nie udać. Związek może wydawać się ważny i się skończyć. Umiejętność może kosztować lata i zostać bezużyteczna. Te decyzje rzadko się tłumaczą.
 **Po:**
-> Kariera może wyglądać obiecująco i się nie udać. Związek, który wydawał się ważny, może się skończyć, a umiejętność, która kosztowała lata, zostać bezużyteczna. Te decyzje rzadko się tłumaczą.
+> Kariera może wyglądać obiecująco i się nie udać. Związek może wydawać się ważny i się skończyć, a umiejętność może kosztować lata i zostać bezużyteczna. Te decyzje rzadko się tłumaczą.
 
 ### 7. Powtarzane otwarcia zdań
 
@@ -123,8 +128,8 @@ Kształty i interpunkcja stosowane wszędzie, niezależnie od tego, czy sens teg
 
 ### 8. Pauza jako łącznik uniwersalny
 
-**Reguła:** Wersja końcowa nie może zawierać pauzy (długiego myślnika) ani półpauzy. Bez wyjątku, także gdy próbka głosu ich używa. Każdą zamień na kropkę, przecinek, dwukropek lub nawias, albo przepisz zdanie. Dotyczy to też pauz ze spacjami i podwójnego dywizu (` -- `). Dywiz „-” zostaje w wyrazach złożonych („biało-czerwony”) i zakresach („10-15 min”). Myślniki w blokach kodu, kodzie w linii, poleceniach, ścieżkach i adresach zostaw.
-**Problem:** Pauza pozwala nie wybierać, jak dwa człony się łączą, więc model sięga po nią wszędzie. Redaktorzy i dziennikarze też jej używają, ale w tym skillu reguła jest twarda: każda pauza wylatuje, bo to najczęściej rozpoznawany znak automatu.
+**Reguła:** Redagowana proza w wersji końcowej nie może zawierać pauzy (długiego myślnika) ani półpauzy, także gdy próbka głosu ich używa. Każdą zamień na kropkę, przecinek, dwukropek lub nawias, albo przepisz zdanie. Dotyczy to też pauz ze spacjami i podwójnego dywizu (` -- `). Dywiz „-” zostaje w wyrazach złożonych („biało-czerwony”) i zakresach („10-15 min”). Nie ruszaj pauzy ani półpauzy w cytacie dosłownym, tytule i nazwie własnej: przepisujesz je znak w znak (SKILL.md, reguły języka wyjścia). Myślniki w blokach kodu, kodzie w linii, poleceniach, ścieżkach i adresach też zostaw.
+**Problem:** Pauza pozwala nie wybierać, jak dwa człony się łączą, więc model sięga po nią wszędzie. Redaktorzy i dziennikarze też jej używają, ale w redagowanej prozie reguła jest twarda: każda pauza wylatuje, bo to najczęściej rozpoznawany znak automatu. Cytat nie jest prozą autora, więc jego interpunkcji nie poprawiasz.
 **Przed:**
 > Nowa polityka [pauza] ogłoszona bez ostrzeżenia [pauza] dotyczy tysięcy pracowników. Zmiany -- według krytyków dawno spóźnione -- wejdą w życie natychmiast.
 > (w oryginale w miejscu [pauza] stoi długi myślnik)
@@ -134,7 +139,7 @@ Kształty i interpunkcja stosowane wszędzie, niezależnie od tego, czy sens teg
 ### 9. Piętrowe zastrzeżenia
 
 **Szukaj:** gwoli uczciwości, możliwe też, że, potencjalnie mogłoby, można by argumentować, w niektórych przypadkach może, to tylko wniosek, w pewnym sensie, do pewnego stopnia
-**Problem:** Kolejne redakcje dokładają zastrzeżenie za zastrzeżeniem, aż każde twierdzenie brzmi niepewnie; zwykle to naprawa wcześniejszej przesady, a nie prawdziwa wątpliwość. Zostaw zastrzeżenie tylko wtedy, gdy źródło je popiera, a sens go wymaga. Zostaw określenie zakresu, zastrzeżenia prawne i bezpieczeństwa oraz prawdziwe sprostowania. Zwykłe „chyba” czy „zwykle” to ludzki nawyk, nie ślad. *Słaby w pojedynkę.*
+**Problem:** Kolejne redakcje dokładają zastrzeżenie za zastrzeżeniem, aż każde twierdzenie brzmi niepewnie; zwykle to naprawa wcześniejszej przesady, a nie prawdziwa wątpliwość. Zbij piętro zastrzeżeń do jednego, które oddaje stopień pewności autora; nie zamieniaj niepewnego twierdzenia w pewne ani pewnego w niepewne. Zostaw określenie zakresu, zastrzeżenia prawne i bezpieczeństwa oraz prawdziwe sprostowania. Zwykłe „chyba” czy „zwykle” to ludzki nawyk, nie ślad. *Słaby w pojedynkę.*
 **Przed:**
 > Potencjalnie można by argumentować, że polityka mogłaby mieć w pewnym sensie pewien wpływ na wyniki.
 **Po:**
@@ -142,12 +147,12 @@ Kształty i interpunkcja stosowane wszędzie, niezależnie od tego, czy sens teg
 
 ### 10. Kalki z angielskiego
 
-**Szukaj:** dedykowany w znaczeniu „przeznaczony”, „osobny” (książka dedykowana komuś jest poprawna), adresować problem zamiast „rozwiązać”, „zająć się” (adresowanie listu jest poprawne), dostarczać wartość, doświadczenie użytkownika jako wypełniacz, funkcjonalność (zamiast „funkcja”), aplikować (zamiast „stosować”), robić sens (zamiast „mieć sens”), docelowo jako „ostatecznie”, finalnie (zamiast „ostatecznie”, „w końcu”), na ten moment (zamiast „teraz”, „na razie”), w międzyczasie jako łącznik, technologia jako wypełniacz, nazwy stanowisk i działów wielką literą (Dyrektor Marketingu, Dział Sprzedaży), Wielka Litera W Każdym Słowie Tytułu, dni tygodnia i miesiące wielką literą. „Ty” i „Twój” wielką literą to grzeczność, nie ślad; trzymaj formę tekstu wejściowego.
+**Szukaj:** dedykowany w znaczeniu „przeznaczony”, „osobny” (książka dedykowana komuś jest poprawna), adresować problem zamiast „rozwiązać”, „zająć się” (adresowanie listu jest poprawne), dostarczać wartość, doświadczenie użytkownika jako wypełniacz, funkcjonalność (zamiast „funkcja”), aplikować (zamiast „stosować”), robić sens (zamiast „mieć sens”), docelowo jako „ostatecznie”, finalnie (zamiast „ostatecznie”, „w końcu”), na ten moment (zamiast „teraz”, „na razie”), w międzyczasie jako łącznik, technologia jako wypełniacz, nazwy stanowisk i działów wielką literą (Dyrektor Marketingu, Dział Sprzedaży), Wielka Litera W Każdym Słowie Nagłówka redakcyjnego (tytułów cudzych dzieł i nazw własnych nie zmieniasz), dni tygodnia i miesiące wielką literą. „Ty” i „Twój” wielką literą to grzeczność, nie ślad; trzymaj formę tekstu wejściowego.
 **Problem:** Model myśli po angielsku i przekłada słowo po słowie. Zamień kalkę na polski odpowiednik, który pasuje do zdania. Zostaw przyjęte terminy techniczne („deployment”, „commit”), gdy tak mówi branża i próbka. *Słaby w pojedynkę.*
 **Przed:**
 > Dedykowany zespół adresuje problem w Dziale Sprzedaży, dostarczając wartość klientom w każdy Poniedziałek.
 **Po:**
-> Osobny zespół w dziale sprzedaży zajmuje się tym problemem w każdy poniedziałek [UZUPEŁNIJ: co konkretnie klienci z tego mają].
+> Osobny zespół zajmuje się problemem w dziale sprzedaży i w każdy poniedziałek przynosi klientom korzyść [UZUPEŁNIJ: jaką konkretnie].
 
 ### 11. Strona bierna i zdania bez sprawcy
 
@@ -156,7 +161,8 @@ Kształty i interpunkcja stosowane wszędzie, niezależnie od tego, czy sens teg
 **Przed:**
 > Plik konfiguracyjny nie jest wymagany. Wyniki zostają zachowane automatycznie.
 **Po:**
-> Nie potrzebujesz pliku konfiguracyjnego. Wyniki zachowują się same.
+> Plik konfiguracyjny nie jest wymagany. Wyniki zapisują się automatycznie.
+> (pierwsze zdanie bez zmian, bo ma sprawcę i nie ma śladu; w drugim strona bierna ustępuje czynnej)
 
 ## C. Inflacja i pożyczony autorytet
 
@@ -169,7 +175,7 @@ Fakt pod spodem jest zwykle w porządku. Zostaw go, zdejmij ozdoby.
 **Przed:**
 > Ponadto kluczową cechą kuchni somalijskiej jest wykorzystanie mięsa wielbłądziego. Trwałym świadectwem włoskich wpływów kolonialnych jest powszechna obecność makaronu w lokalnym krajobrazie kulinarnym, co odzwierciedla, jak te dania wpisały się w tradycyjną dietę.
 **Po:**
-> W kuchni somalijskiej je się też mięso wielbłądzie. Makaron, który został po kolonii włoskiej, jest nadal powszechny i wszedł do tradycyjnej kuchni.
+> Zasadniczą cechą kuchni somalijskiej jest używanie mięsa wielbłądziego. Makaron, który został po kolonii włoskiej, jest nadal powszechny i wszedł do tradycyjnej kuchni.
 
 ### 13. Napompowana waga
 
@@ -182,8 +188,8 @@ Fakt pod spodem jest zwykle w porządku. Zostaw go, zdejmij ozdoby.
 **Przed (szablonowa sekcja):**
 > Mimo przemysłowego rozkwitu Korattur mierzy się z wyzwaniami typowymi dla miast: korkami i niedoborem wody. Mimo tych wyzwań, dzięki strategicznemu położeniu i bieżącym inicjatywom, Korattur nadal rozwija się jako integralna część wzrostu Ćennaju.
 **Po:**
-> Korattur rozwija się przemysłowo razem z Ćennajem, ale ma korki i braki wody.
-> („strategiczne położenie” i „bieżące inicjatywy” to waga bez treści, więc wylatują)
+> Korattur przeżywa rozkwit przemysłowy, ale ma typowe dla miast problemy: korki i braki wody. Dzięki położeniu i bieżącym inicjatywom [UZUPEŁNIJ: jakim] nadal rozwija się jako część wzrostu Ćennaju.
+> (wylatuje szablon „mimo tych wyzwań” i słowa-waga „strategiczny”, „integralna”; rozkwit, przyczyny i relacja z Ćennajem to twierdzenia autora, więc zostają)
 **Przed (pożegnanie):**
 > Przyszłość firmy rysuje się w jasnych barwach. Przed nami ekscytujące czasy, a to dopiero początek drogi ku doskonałości.
 **Po:**
@@ -202,20 +208,21 @@ Fakt pod spodem jest zwykle w porządku. Zostaw go, zdejmij ozdoby.
 ### 15. Płytkie doczepki imiesłowowe
 
 **Szukaj:** podkreślając, zapewniając, odzwierciedlając, symbolizując, tworząc, stanowiąc, przyczyniając się do, wpisując się w, budując, wspierając; oraz ich wersje z „co”: co podkreśla, co świadczy o, co pokazuje, co sprawia, że
-**Problem:** Imiesłów albo zdanie z „co” jest przyśrubowane do prostego faktu, żeby brzmiał głębiej. Przypisanie go nazwanemu źródłu („Krytyk podkreślił trwały wpływ”) nie czyni go prawdziwym. Zostaw fakt; doczepkę zostaw tylko wtedy, gdy źródło popiera to, co ona twierdzi.
+**Problem:** Imiesłów albo zdanie z „co” jest przyśrubowane do prostego faktu, żeby brzmiał głębiej. Przypisanie go nazwanemu źródłu („Krytyk podkreślił trwały wpływ”) nie czyni go głębszym. Zostaw fakt. Doczepka, która tylko nadaje znaczenie albo symbolikę (odzwierciedla więź, podkreśla wagę), to waga z §13: wylatuje i trafia do „Co znalazłem”. Doczepka z osobnym twierdzeniem o faktach (kto, co, kiedy, jaki skutek) zostaje jako osobne zdanie; gdy tekst go nie popiera, oznacz je `[UZUPEŁNIJ: potwierdź albo podaj źródło]`, nie usuwaj.
 **Przed:**
 > Paleta świątyni w błękicie, zieleni i złocie współgra z naturalnym pięknem regionu, symbolizując teksańskie łubiny, Zatokę Meksykańską i różnorodne krajobrazy, co odzwierciedla głęboką więź społeczności z ziemią.
 **Po:**
-> Świątynia ma kolory błękitu, zieleni i złota; mają przywodzić na myśl teksańskie łubiny, Zatokę Meksykańską i krajobrazy regionu.
+> Świątynia ma kolory błękitu, zieleni i złota, które symbolizują teksańskie łubiny, Zatokę Meksykańską i krajobrazy regionu.
 
 ### 16. Język sprzedażowy
 
 **Szukaj:** bogaty (przenośnie), głęboki, uosabia, zaangażowanie w, naturalne piękno, malowniczo położony, w sercu, przełomowy (przenośnie), renomowany, ceniony, oferujący, szeroki wachlarz, bogata oferta, zapierający dech, obowiązkowy punkt, oszałamiający, najwyższej jakości, idealny dla każdego, nie tylko na co dzień, ale i na wyjście
-**Problem:** Tekst czyta się jak reklamę, zwłaszcza miejsc, kultury, produktów i firm. Powiedz, czym rzecz jest. W opisie produktu zostaw cechy, które da się sprawdzić (skład, wymiar, kolor, krój), a wytnij przymiotniki, których nie da się sprawdzić. Gdy użytkownik podał profil marki z językiem korzyści, korzyści z profilu zostają; ten skill nie zastępuje profilu marki.
+**Problem:** Tekst czyta się jak reklamę, zwłaszcza miejsc, kultury, produktów i firm. Powiedz, czym rzecz jest. W opisie produktu zostaw cechy, które da się sprawdzić (skład, wymiar, kolor, krój), a wytnij przymiotniki-ozdobniki, które nic nie mówią o rzeczy („zapierający dech”, „oszałamiający”). Ocena z treścią (np. o dziedzictwie, jakości, popularności) zostaje, a gdy tekst jej nie popiera, dostaje pole `[UZUPEŁNIJ: potwierdź]`. Gdy użytkownik podał profil marki z językiem korzyści, korzyści z profilu zostają; ten skill nie zastępuje profilu marki.
 **Przed:**
 > Malowniczo położona w zapierającym dech regionie Gonder w Etiopii, Alamata Raya Kobo to tętniące życiem miasto o bogatym dziedzictwie kulturowym i oszałamiającym naturalnym pięknie.
 **Po:**
-> Alamata Raya Kobo to miasto w regionie Gonder w Etiopii.
+> Alamata Raya Kobo to miasto w regionie Gonder w Etiopii, z bogatym dziedzictwem kulturowym [UZUPEŁNIJ: na czym ono polega].
+> (wylatują ozdobniki „malowniczo położona”, „zapierający dech”, „tętniące życiem”, „oszałamiające naturalne piękno”; dziedzictwo to twierdzenie, więc zostaje z polem)
 
 ### 17. Pożyczony autorytet
 
@@ -224,7 +231,8 @@ Fakt pod spodem jest zwykle w porządku. Zostaw go, zdejmij ozdoby.
 **Przed (bezimienny autorytet):**
 > Ze względu na wyjątkowe cechy rzeka Haolai budzi zainteresowanie badaczy i przyrodników. Eksperci uważają, że odgrywa kluczową rolę w regionalnym ekosystemie.
 **Po:**
-> Rzeka Haolai ze względu na nietypowe cechy budzi zainteresowanie badaczy i przyrodników. Odgrywa rolę w regionalnym ekosystemie [UZUPEŁNIJ: kto tak twierdzi i gdzie].
+> Rzeka Haolai ze względu na nietypowe cechy budzi zainteresowanie badaczy i przyrodników. Eksperci [UZUPEŁNIJ: kto i gdzie] uważają, że odgrywa zasadniczą rolę w regionalnym ekosystemie.
+> (przypisanie opinii zostaje, bo to treść; brakuje tylko wskazania, kto ją wyraził)
 **Przed (lista prestiżu):**
 > Jej opinie cytowały Gazeta Wyborcza, BBC, Financial Times i The Hindu. Prowadzi aktywne konta w mediach społecznościowych z ponad 500 000 obserwujących.
 **Po:**
@@ -256,7 +264,7 @@ Szablony i edytory wizualne też dają czyste formatowanie. Śladem jest ozdoba 
 > - **Wydajność:** Wydajność została zwiększona przez zoptymalizowane algorytmy.
 > - **Bezpieczeństwo:** Bezpieczeństwo zostało wzmocnione szyfrowaniem end-to-end.
 **Po:**
-> Nowy interfejs poprawia doświadczenie użytkownika, zoptymalizowane algorytmy zwiększają wydajność, a szyfrowanie end-to-end wzmacnia bezpieczeństwo.
+> Nowy interfejs znacząco poprawił doświadczenie użytkownika, zoptymalizowane algorytmy zwiększyły wydajność, a szyfrowanie end-to-end wzmocniło bezpieczeństwo.
 
 ### 20. Ozdobne nagłówki
 
@@ -273,7 +281,7 @@ Szablony i edytory wizualne też dają czyste formatowanie. Śladem jest ozdoba 
 
 ### 21. Obce cudzysłowy
 
-**Problem:** W polskim tekście dla czytelnika poprawny jest cudzysłów „…” (dolny otwierający, górny zamykający). Ślad to angielski cudzysłów “...” albo prosty "..." w gotowym tekście, a także apostrofy '...' w roli cudzysłowu. W kodzie, plikach konfiguracyjnych i danych zostają proste. Edytory podmieniają cudzysłowy same, więc to *słaby w pojedynkę*.
+**Problem:** W polskim tekście dla czytelnika poprawny jest cudzysłów „…” (dolny otwierający, górny zamykający). Ślad to angielski cudzysłów “...” albo prosty "..." w gotowym tekście, a także apostrofy '...' w roli cudzysłowu. W kodzie, plikach konfiguracyjnych i danych zostają proste. Zewnętrzny cudzysłów wokół cytatu należy do redagowanej prozy i zmieniasz go na polski; znaki wewnątrz cytatu dosłownego i tytułu zostają jak w oryginale. Edytory podmieniają cudzysłowy same, więc jako znak automatu to *słaby w pojedynkę*; sam cudzysłów w redagowanej prozie i tak zmieniasz na polski (reguła języka wyjścia).
 **Przed:**
 > Powiedział, że “projekt idzie zgodnie z planem”, ale inni się nie zgadzali.
 **Po:**
@@ -295,15 +303,17 @@ Opakowanie usuń od razu, bez przepisywania. Treść w środku zostaje.
 ### 23. Zastrzeżenia o granicach wiedzy i zgadywanie
 
 **Szukaj:** na dzień [data], według stanu mojej wiedzy, choć szczegóły są ograniczone, na podstawie dostępnych informacji, niedostępne publicznie, słabo udokumentowane, w dostępnych źródłach, unika rozgłosu, nie ujawnia szczegółów życia prywatnego, prawdopodobnie [dorastał, studiował, zaczął], uważa się, że
-**Problem:** Tekst wspomina, gdzie kończy się wiedza modelu, albo przyznaje, że nie znalazł źródła, i wypełnia lukę prawdopodobnym domysłem. Powiedz, czego źródło nie pokazuje, albo usuń zdanie.
+**Problem:** Tekst wspomina, gdzie kończy się wiedza modelu, albo przyznaje, że nie znalazł źródła, i wypełnia lukę prawdopodobnym domysłem. Zdejmij formułkę o granicy wiedzy. Domysł to twierdzenie autora tekstu: nie usuwaj go sam, zostaw z jego stopniem pewności, dopisz `[UZUPEŁNIJ: potwierdź albo usuń]` i wpisz w „Co znalazłem”; decyzję o wycięciu podejmuje autor.
 **Przed (granica wiedzy):**
 > Choć szczegóły dotyczące założenia firmy nie są szeroko udokumentowane w dostępnych źródłach, wydaje się, że powstała w latach 90.
 **Po:**
-> O założeniu firmy źródła mówią niewiele. (Domysł o latach 90. wylatuje; datę zostaw jako [UZUPEŁNIJ] albo wytnij zdanie.)
+> Szczegóły założenia firmy nie są szeroko udokumentowane w dostępnych źródłach; firma powstała prawdopodobnie w latach 90. [UZUPEŁNIJ: potwierdź datę albo usuń zdanie]
+> (zdanie o źródłach zostaje w swoim zakresie; znika konstrukcja „choć…, wydaje się”, a domysł dostaje pole)
 **Przed (domysł):**
 > Informacje o jej wczesnym życiu nie są publicznie dostępne, co sugeruje, że unika rozgłosu. Prawdopodobnie dorastała w rodzinie z klasy średniej, co ukształtowało jej późniejsze zainteresowanie edukacją.
 **Po:**
-> Informacje o jej wczesnym życiu nie są publicznie dostępne. (Albo pomiń sekcję.)
+> Informacje o jej wczesnym życiu nie są publicznie dostępne, co sugeruje, że unika rozgłosu. Prawdopodobnie dorastała w rodzinie z klasy średniej, co ukształtowało jej późniejsze zainteresowanie edukacją. [UZUPEŁNIJ: potwierdź albo usuń domysły w tym akapicie]
+> (domysły zostają ze swoim stopniem pewności do decyzji autora; ślad zgłaszasz w „Co znalazłem”)
 
 ### 24. Nagłówek powtórzony w pierwszym zdaniu
 
@@ -326,11 +336,11 @@ Opakowanie usuń od razu, bez przepisywania. Treść w środku zostaje.
 **Przed:**
 > Ta funkcja została dodana w miejsce poprzedniego podejścia z iteracją po wszystkich elementach, które powodowało wydajność O(n²).
 **Po:**
-> (W opisie funkcji napisz, co funkcja robi. Zdanie o poprzednim podejściu i jego koszcie O(n²) przenieś do dziennika zmian.)
+> (Gdy użytkownik wskaże dziennik zmian albo inne miejsce, przenieś tam zdanie o poprzednim podejściu i jego koszcie O(n²). Bez takiego miejsca zdanie zostaje w tekście; nie zastępuj go opisem działania funkcji, którego tekst nie podaje, i zgłoś ślad w „Co znalazłem”.)
 **Przed (narracja o metodzie):**
 > Poniższe liczby pochodzą z opublikowanych cenników dostawców; czego nie mogliśmy potwierdzić, oznaczyliśmy zamiast zgadywać.
 **Po:**
-> Ceny pochodzą z opublikowanych cenników dostawców; pozycje bez potwierdzenia są oznaczone.
+> Liczby pochodzą z opublikowanych cenników dostawców; pozycji, których nie dało się potwierdzić, nie zgadywaliśmy, tylko je oznaczyliśmy.
 
 ## F. Pisanie dla złego czytelnika
 
@@ -339,17 +349,17 @@ Model pisze dla czytelnika bez kontekstu, bo to pasuje do największej liczby pr
 ### 26. Tłumaczenie od nowa tego, co czytelnik wie
 
 **Szukaj:** krótka odpowiedź, która powtarza problem, przechodzi przez diagnozę i wykłada dowody, zanim dojdzie do decyzji; zapytanie, polecenie lub liczby wklejone, żeby dowieść, że plan zadziała; tło, które rozmówca sam napisał albo już zaakceptował; sama odpowiedź w ostatniej linijce.
-**Problem:** W odpowiedzi czytelnik ma już kontekst, więc odbudowa nic nie dodaje i grzebie sedno. Każde zdanie z osobna wygląda dobrze, więc to przeżywa redakcję na poziomie zdań. Zacznij od decyzji i zostaw tylko rozumowanie, które zmieniłoby zdanie czytelnika: zwykle jeden fakt, którego nie ma, i link potrzebny do działania. Diagnoza i dowód, że plan zadziała, należą do zgłoszenia lub dokumentu, który przyjdzie potem; recenzent podnoszący temat nie prosi o pełne opracowanie.
+**Problem:** W odpowiedzi czytelnik ma już kontekst, więc odbudowa nic nie dodaje i grzebie sedno. Każde zdanie z osobna wygląda dobrze, więc to przeżywa redakcję na poziomie zdań. Zacznij od decyzji i skróć rozumowanie do tego, co zmieniłoby zdanie czytelnika (osobnych twierdzeń i ocen autora nie usuwaj, tylko je skracaj): zwykle jeden fakt, którego nie ma, i link potrzebny do działania. Diagnoza i dowód, że plan zadziała, należą do zgłoszenia lub dokumentu, który przyjdzie potem; recenzent podnoszący temat nie prosi o pełne opracowanie.
 **Przed:**
 > Tak, masz rację, to obejście, a nie naprawa. Prawdziwa poprawka jest w `MergeService`: przy przenoszeniu elementu pod nowego rodzica powinien aktualizować `pipeline_id` razem z `parent_id`. Błędne wiersze da się odtworzyć z dziennika audytu. Sprawdziłem na QA: 123 scalenia, tylko 6 błędnych wierszy, więc porządek jest mały.
 >
 > Ponieważ `MergeService` jest współdzielony, wolałbym osobne zgłoszenie niż poszerzanie tego PR. Obejście może zostać do tego czasu.
 **Po:**
-> Zgoda, to obejście. Właściwa poprawka jest w `MergeService` (przy przenoszeniu elementu pod nowego rodzica aktualizować `pipeline_id` razem z `parent_id`), błędne wiersze da się odtworzyć z dziennika audytu, na QA było 6 błędnych wierszy przy 123 scaleniach. `MergeService` jest współdzielony, więc wolałbym osobne zgłoszenie; obejście może zostać do tego czasu.
+> Zgoda, to obejście. Właściwa poprawka jest w `MergeService` (przy przenoszeniu elementu pod nowego rodzica aktualizować `pipeline_id` razem z `parent_id`), błędne wiersze da się odtworzyć z dziennika audytu, sprawdziłem na QA: 6 błędnych wierszy przy 123 scaleniach, więc porządek jest mały. `MergeService` jest współdzielony, więc wolałbym osobne zgłoszenie niż poszerzanie tego PR; obejście może zostać do tego czasu.
 
 ## Kiedy nie działać
 
-Każdy wzorzec opisuje wybór domyślny, a człowiek może zrobić każdy z nich celowo. Zostaw obserwowaną frazę w cytacie, tytule, nazwie własnej i we fragmencie, który o niej mówi, zamiast jej używać. Powitania i podpisy w liście lub komentarzu są starsze niż chatboty. Data powstania tekstu nie rozstrzyga, kto go napisał, i o pochodzeniu nie orzekasz. Ludzie oceniający „na czuja” radzą sobie niewiele lepiej niż losowo, a ludzkie pisanie wchłania nawyki AI, więc zabezpieczeniem jest kilka śladów naraz.
+Każdy wzorzec opisuje wybór domyślny, a człowiek może zrobić każdy z nich celowo. Zostaw obserwowaną frazę w cytacie, tytule, nazwie własnej i we fragmencie, który o niej mówi, zamiast jej używać; cytat, tytuł i nazwę własną przepisujesz znak w znak, łącznie z interpunkcją. Tekst bez śladów zostaw bez zmian: poprawiasz tylko miejsca, w których jest wzorzec albo naruszona reguła języka wyjścia ze SKILL.md (pauza, cudzysłów, procent, data w redagowanej prozie); tę typografię poprawiasz zawsze, niezależnie od liczby śladów. Powitania i podpisy w liście lub komentarzu są starsze niż chatboty. Data powstania tekstu nie rozstrzyga, kto go napisał, i o pochodzeniu nie orzekasz. Ludzie oceniający „na czuja” radzą sobie niewiele lepiej niż losowo, a ludzkie pisanie wchłania nawyki AI, więc zabezpieczeniem jest kilka śladów naraz.
 
 Zostaw szczegóły, które niosą głos autora, chyba że szkodzą sensowi:
 
