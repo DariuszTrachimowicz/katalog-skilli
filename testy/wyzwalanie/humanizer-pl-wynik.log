@@ -1,0 +1,25 @@
+Miernik wyzwalania: humanizer-pl
+Zestaw: 20 zapytan (+9 / -9 / 0:2), powtorzenia: 3, tlo: 59 opisow
+OK          [1/20] oczekiwani=humanizer-pl glosy=humanizer-pl,humanizer-pl,humanizer-pl :: uczlowiecz ten wpis na bloga zanim go opublikuje, brzmi jak 
+OK          [2/20] oczekiwani=humanizer-pl glosy=humanizer-pl,humanizer-pl,humanizer-pl :: szef powiedzial ze raport kwartalny brzmi jak pisany przez A
+OK          [3/20] oczekiwani=humanizer-pl glosy=humanizer-pl,humanizer-pl,humanizer-pl :: wygladz mi ten tekst o firmie na strone, jest za gladki i pl
+OK          [4/20] oczekiwani=humanizer-pl glosy=humanizer-pl,humanizer-pl,humanizer-pl :: napisz krotki komunikat na strone, ze od poniedzialku zmieni
+OK          [5/20] oczekiwani=humanizer-pl glosy=humanizer-pl,humanizer-pl,humanizer-pl :: usun z tego artykulu slady AI, dlugie myslniki, "warto zauwa
+OK          [6/20] oczekiwani=humanizer-pl glosy=humanizer-pl,humanizer-pl,humanizer-pl :: odpowiedz na opinie klienta napisal mi chatgpt i brzmi sztuc
+OK          [7/20] oczekiwani=humanizer-pl glosy=humanizer-pl,humanizer-pl,humanizer-pl :: mam instrukcje dla pracownikow wygenerowana przez asystenta,
+OK          [8/20] oczekiwani=humanizer-pl glosy=humanizer-pl,humanizer-pl,humanizer-pl :: ten opis firmy do wniosku o dotacje jest pelen innowacyjnych
+OK          [9/20] oczekiwani=humanizer-pl glosy=humanizer-pl,humanizer-pl,humanizer-pl :: ogarnij ten komunikat do zespolu, bo jest za gladki i wszysc
+OK          [10/20] oczekiwani=mail-po-polsku glosy=mail-po-polsku,mail-po-polsku,mail-po-polsku :: napisz maila do klientki, ze dostawa jej zamowienia opozni s
+OK          [11/20] oczekiwani=mail-po-polsku glosy=mail-po-polsku,mail-po-polsku,mail-po-polsku :: popraw ten mail do szefa, brzmi za ostro, chce przesunac ter
+OK          [12/20] oczekiwani=post-na-linkedin glosy=post-na-linkedin,post-na-linkedin,post-na-linkedin :: zrob post na linkedina o tym, ze skonczylismy wdrozenie crm 
+OK          [13/20] oczekiwani=post-na-linkedin glosy=post-na-linkedin,post-na-linkedin,post-na-linkedin :: popraw ten post na linkedina, zeby nie brzmial jak z chatgpt
+OK          [14/20] oczekiwani=prosty-jezyk/decyzja-z-urzedu-co-dalej glosy=prosty-jezyk,ZADEN,prosty-jezyk :: przepisz to pismo z urzedu skarbowego na ludzki jezyk, nic z
+OK          [15/20] oczekiwani=opisy-produktow glosy=opisy-produktow,opisy-produktow,opisy-produktow :: mam tabele parametrow 50 kurtek z hurtowni, zrob z tego opis
+OK          [16/20] oczekiwani=oferta-handlowa glosy=oferta-handlowa,oferta-handlowa,oferta-handlowa :: uloz oferte dla klienta na nowa strone www za 12 000 zl nett
+OK          [17/20] oczekiwani=notatka-ze-spotkania glosy=notatka-ze-spotkania,notatka-ze-spotkania,notatka-ze-spotkania :: podsumuj ten zapis z teams ze spotkania zespolu, kto co ma z
+OK          [18/20] oczekiwani=newsletter-do-klientow glosy=newsletter-do-klientow,newsletter-do-klientow,newsletter-do-klientow :: napisz newsletter do naszych 800 klientow o swiatecznych god
+OK          [19/20] oczekiwani=ZADEN glosy=ZADEN,ZADEN,ZADEN :: jakie sa typowe cechy tekstow pisanych przez ai?
+OK          [20/20] oczekiwani=ZADEN glosy=ZADEN,ZADEN,ZADEN :: czy detektory tekstu pisanego przez ai sa wiarygodne?
+
+Wynik: 20/20 zgodnych.
+kod 0

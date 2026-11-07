@@ -134,7 +134,8 @@ let zgodne = 0; const problemy = [];
 for (const [i, p] of przypadki.entries()) {
   const glosy = [];
   for (let r = 0; r < powtorzenia; r++) {
-    const w = spawnSync("claude", ["-p", p.zapytanie, "--max-turns", "6"],
+    // tylko skille projektu (atrapy): skille uzytkownika o tych samych nazwach w ~/.claude/skills wypieraly atrapy (7.11.2026)
+    const w = spawnSync("claude", ["-p", p.zapytanie, "--max-turns", "6", "--setting-sources", "project,local"],
       { cwd: proj, encoding: "utf8", timeout: 240000 });
     if (w.error || w.status !== 0 || !w.stdout) { glosy.push("BLAD"); continue; }
     const trafienia = [...new Set([...w.stdout.matchAll(/\[URUCHOMIONY:([\w-]+)\]/g)].map((m) => m[1]))];
