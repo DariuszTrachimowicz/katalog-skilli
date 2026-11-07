@@ -38,10 +38,13 @@ komplet roboczych dokumentów do domknięcia z ekspertem.
 4. **Klauzula AI do umów to SZKIC do prawnika**, nigdy gotowa klauzula do podpisu.
    Dotyczy drugiej strony umowy, więc jej brzmienie domyka prawnik. Skill układa,
    co taka klauzula zwykle obejmuje, nie oświadcza, że jest wiążąca ani wystarczająca.
-5. **Kompetencje AI to osobny obowiązek.** AI Act wymaga, żeby ludzie pracujący z AI
-   rozumieli, czego używają. Dokument tego nie załatwia, załatwia to szkolenie. Skill
-   wskazuje ten obowiązek i odsyła do przeszkolenia zespołu, nie udaje, że sam go
-   spełnia.
+5. **Kompetencje AI to osobny obowiązek.** AI Act wymaga, żeby firma jako dostawca
+   albo podmiot stosujący system AI podejmowała działania wspierające kompetencje AI
+   osób, które w jej imieniu obsługują AI albo z niego korzystają. Od 27 lipca 2026 r.
+   przepis nie wymaga zapewnienia określonego poziomu u każdej osoby, ale obowiązek
+   działań zostaje. Dokument go nie spełnia; szkolenie może być jednym z działań,
+   dobranych do osób i zastosowań AI. Skill wskazuje ten obowiązek, nie udaje, że sam
+   go spełnia.
 
 ## Rozpoznaj, co budujesz
 
@@ -132,11 +135,19 @@ Pełne uzasadnienie każdej reguły: `references/granice.md`. Krótko, ten skill
 
 ## Kompetencje AI, most do przeszkolenia
 
-AI Act wymaga, żeby osoby korzystające z AI w firmie rozumiały, czego używają, jakie
-są granice i ryzyka. Rejestr i polityka tego nie spełniają, one opisują zasady;
-kompetencje buduje przeszkolenie ludzi. Gdy komplet dokumentów jest gotowy, wskaż
-użytkownikowi ten osobny obowiązek i to, że domyka go przeszkolenie zespołu, którego
-zakres zależy od ról w firmie i używanych systemów, nie kolejny plik. To uczciwe
+AI Act wymaga, żeby firma jako dostawca albo podmiot stosujący system AI podejmowała
+działania wspierające kompetencje AI swoich ludzi i innych osób, które w jej imieniu
+obsługują AI albo z niego korzystają (także administratorów i obsługi technicznej).
+Działania dobiera się do wiedzy technicznej, doświadczenia, wykształcenia
+i wyszkolenia tych osób, do tego, do czego AI jest używane, i do osób, wobec których
+jest używane (np. kandydatów przy rekrutacji). Od 27 lipca 2026 r. przepis wprost mówi, że nie chodzi
+o zapewnienie określonego poziomu u każdej osoby, więc nie strasz egzaminem ani
+certyfikatem; obowiązek dotyczy działań i zostaje. Komisja Europejska publikuje
+praktyczne przykłady, jak go spełnić (`[WYMAGA WERYFIKACJI: strona Komisji o AI Act]`).
+Rejestr i polityka tego nie spełniają, one opisują zasady. Gdy komplet dokumentów
+jest gotowy, wskaż użytkownikowi ten osobny obowiązek: potrzebne są działania dobrane
+do ról w firmie i używanych systemów, nie kolejny plik. Szkolenie zespołu może być
+jednym z nich; nie mów, że samo szkolenie automatycznie spełnia obowiązek. To uczciwe
 i naturalnie prowadzi do warsztatu.
 
 ## Samokontrola przed oddaniem
@@ -145,7 +156,7 @@ i naturalnie prowadzi do warsztatu.
 - Czy nigdzie nie orzekasz zgodności ani kategorii ryzyka („jest", zamiast „wygląda na, zweryfikujcie")?
 - Czy fakty prawne zmienne są `[WYMAGA WERYFIKACJI]` ze wskazanym źródłem, nie zaszyte jako pewnik?
 - Czy klauzula do umów ma wyraźną adnotację „szkic do prawnika"?
-- Czy wskazano, że kompetencje AI to osobny obowiązek domykany szkoleniem?
+- Czy wskazano, że kompetencje AI to osobny obowiązek działań dobranych do osób i zastosowań AI (szkolenie jako jedno z nich, nie gwarancja)?
 - Czy jest jedno gotowe zdanie odmowy, powtarzane przy każdej prośbie o orzeczenie?
 - Czy każdy dokument ma metryczkę wersji (wersja, data, właściciel, data przeglądu)?
 - Czy da się to przeskanować i wyjść z odpowiedzią „co mam i co jeszcze muszę domknąć z ekspertem"?

@@ -22,9 +22,16 @@ Zaszycie ich jako pewnik sprawia, że produkt starzeje się w tydzień i myli ku
 `[WYMAGA WERYFIKACJI]` ze wskazaniem źródła (tekst AI Act, Komisja Europejska, polski
 organ nadzoru, biznes.gov.pl) jest uczciwe i trwałe.
 
-**Dlaczego kompetencje AI to osobny obowiązek.** AI Act oczekuje, że ludzie pracujący
-z AI rozumieją, czego używają. Dokument tego nie daje, daje to przeszkolenie. Skill
-wskazuje ten obowiązek wprost i odsyła do szkolenia, zamiast udawać, że plik go spełnia.
+**Dlaczego kompetencje AI to osobny obowiązek.** AI Act oczekuje, że firma jako
+dostawca albo podmiot stosujący system AI podejmie działania wspierające kompetencje AI
+ludzi, którzy w jej imieniu obsługują AI albo z niego korzystają. Od
+27 lipca 2026 r. obowiązuje nowe brzmienie tego przepisu (rozporządzenie (UE) 2026/1744
+z 8 lipca 2026 r., Dz.U. L 24.07.2026, tekst z eur-lex.europa.eu odczytany 7 listopada 2026 r.):
+dawne „zapewnienie wystarczającego poziomu” zastąpiły środki wspierające rozwój
+kompetencji, bez wymogu określonego poziomu u każdej osoby. Dokument tego nie daje.
+Skill wskazuje ten obowiązek wprost i mówi, że szkolenie może być jednym z działań
+dobranych do osób i zastosowań AI, zamiast udawać, że plik albo samo szkolenie go
+spełnia.
 
 **Odmowa przy każdej prośbie.** Model czyta „odmawiam raz" jako zgodę na drugą prośbę.
 Dlatego jedno gotowe zdanie odmowy do powtarzania, i domknięte typowe furtki: „czy

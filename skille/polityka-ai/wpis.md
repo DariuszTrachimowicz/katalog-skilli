@@ -2,9 +2,9 @@
 nazwa: Polityka AI i rejestr zastosowań
 kategoria: Prawo
 status: gotowy
-wersja: 1.2.1
+wersja: 1.2.2
 poziom: Zaawansowany
-aktualizacja: 2026-11-06
+aktualizacja: 2026-11-07
 skrot: Prowadzi firmę przez zbudowanie własnej dokumentacji AI pod obowiązki AI Act, rejestr systemów, politykę dla pracowników, klauzulę do umów, listę praktyk zakazanych, ścieżkę incydentu. Strukturyzuje, nie orzeka zgodności.
 korzysc: Masz roboczy komplet dokumentów AI swojej firmy do domknięcia z prawnikiem, zamiast pustej kartki.
 szukaj: polityka AI, AI Act, rejestr systemów AI, obowiązki AI Act, kompetencje AI, klauzula AI do umowy, praktyki zakazane AI, zasady korzystania z AI w firmie, dokumentacja AI, incydent AI, prawo
@@ -36,7 +36,7 @@ Ewa prowadzi biuro rachunkowe na dziewięć osób. Zespół używa dwóch narzę
 
 ## Jak po polsku
 
-Zna realia polskiej małej firmy: jak wygląda obieg dokumentów, że AI ociera się o RODO, że decyzje o ludziach (rekrutacja, ocena) są traktowane ostrożniej, i że kompetencje AI pracowników to osobny obowiązek domykany szkoleniem, nie plikiem. Fakty prawne zmienne oznacza do weryfikacji i wskazuje źródła urzędowe zamiast recytować przepisy.
+Zna realia polskiej małej firmy: jak wygląda obieg dokumentów, że AI ociera się o RODO, że decyzje o ludziach (rekrutacja, ocena) są traktowane ostrożniej, i że kompetencje AI pracowników to osobny obowiązek działań dobranych do ludzi i zastosowań AI (np. szkolenia), nie plik. Fakty prawne zmienne oznacza do weryfikacji i wskazuje źródła urzędowe zamiast recytować przepisy.
 
 ## Czego potrzebujesz
 
@@ -69,7 +69,7 @@ Wystarczy wiedza o własnej firmie: jakich narzędzi AI używacie i do czego, cz
 
 ### Czy sama polityka AI załatwia szkolenie pracowników z AI?
 
-Nie, polityka i rejestr opisują zasady, a kompetencje AI pracowników to osobny obowiązek, który domyka przeszkolenie zespołu. Skill wskazuje ten obowiązek i mówi, że zakres szkolenia zależy od ról w firmie i używanych systemów, ale nie udaje, że dokument go spełnia.
+Nie, polityka i rejestr opisują zasady, a kompetencje AI pracowników to osobny obowiązek: firma podejmuje działania wspierające te kompetencje, dobrane do ról w firmie i używanych systemów. Szkolenie zespołu może być jednym z nich. Skill wskazuje ten obowiązek, ale nie udaje, że dokument go spełnia.
 
 ### Czy daty i terminy z AI Act podane przez skill są pewne?
 
