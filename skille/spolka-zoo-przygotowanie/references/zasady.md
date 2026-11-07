@@ -97,7 +97,7 @@ Nie wybierasz wariantu i nie liczysz składek; opisujesz cztery warianty do rozm
 
 - **Firma** może być dowolna, ale z dodatkiem „spółka z ograniczoną odpowiedzialnością” (w obrocie wolno „spółka z o.o.” albo „sp. z o.o.”). Kolizje z innymi firmami i znakami towarowymi [WYMAGA WERYFIKACJI: prawnik].
 - **Siedziba** w umowie to miejscowość, a adres podaje się w zgłoszeniu; zmiana adresu w tej samej miejscowości nie wymaga zmiany umowy, zmiana miejscowości wymaga.
-- **Przedmiot działalności** jest obowiązkowy w umowie; istotna zmiana wymaga trzech czwartych głosów. Nowe wpisy podaje się według **PKD 2025**; PKD 2007 stosuje się przejściowo tylko do działalności oznaczonej przed 1 stycznia 2025 r. i najdłużej do 31 grudnia 2026 r. Kody PKD 2007 w projekcie umowy to sygnał nieaktualnego wzoru. Co z istniejącymi wpisami po 2026 r. [WYMAGA WERYFIKACJI].
+- **Przedmiot działalności** jest obowiązkowy w umowie; istotna zmiana wymaga trzech czwartych głosów. Nowe wpisy podaje się według **PKD 2025**; PKD 2007 stosuje się przejściowo tylko do działalności oznaczonej przed 1 stycznia 2025 r. i najdłużej do 31 grudnia 2026 r. Kody PKD 2007 w projekcie umowy to sygnał nieaktualnego wzoru. Istniejące wpisy (stan na 7.11.2026): wniosek do KRS o zamianę kodów PKD 2007 na PKD 2025 złożony do 31 grudnia 2026 r. jest wolny od opłaty sądowej; po tym dniu rejestr sam wykreśla stare kody i wpisuje nowe, gdy powiązanie GUS jest jednoznaczne albo GUS wydał szczegółową interpretację powiązania wieloznacznego; w pozostałych przypadkach kod jest tylko wykreślany; gdy wypadnie kod działalności przeważającej, spółka zgłasza nowy przy pierwszym wniosku o zmianę danych, najpóźniej w 5 lat od dnia wykreślenia, bez zmiany umowy spółki.
 - **Rok obrotowy** to rok kalendarzowy albo inny okres 12 pełnych miesięcy, określony w umowie. Gdy działalność rusza w drugiej połowie roku obrotowego, księgi i sprawozdanie za ten okres można połączyć z rokiem następnym. Pierwszy rok podatkowy może trwać do końca następnego roku kalendarzowego, gdy działalność rusza w drugiej połowie roku kalendarzowego, a rok podatkowy pokrywa się z kalendarzowym. To przesuwa pierwsze sprawozdanie i wygaśnięcie pierwszego mandatu zarządu; decyzja: księgowa.
 - Elementy obowiązkowe umowy: firma i siedziba, przedmiot działalności, wysokość kapitału, czy wspólnik może mieć więcej niż jeden udział, liczba i wartość udziałów każdego wspólnika, czas trwania spółki, jeśli jest oznaczony.
 
@@ -141,7 +141,7 @@ Daty kalendarzowe podajesz tylko warunkowo, gdy użytkownik poda datę podpisani
 
 ## 14. Zmiany z datą i projekty
 
-- 1 stycznia 2025 r.: PKD 2025; PKD 2007 najdłużej do 31 grudnia 2026 r.
+- 1 stycznia 2025 r.: PKD 2025; PKD 2007 najdłużej do 31 grudnia 2026 r., potem zamiana w rejestrach z urzędu (sekcja 10).
 - 29 listopada 2025 r.: koniec ogłaszania wpisów KRS w Monitorze Sądowym i Gospodarczym (bez opłaty 100 zł); od 1 kwietnia 2027 r. akta i wnioski w rejestrze przedsiębiorców tylko elektronicznie.
 - 1 stycznia 2026 r.: nowe brzmienie zasad 9 % CIT.
 - 1 lutego i 1 kwietnia 2026 r.: obowiązkowy KSeF.
@@ -155,7 +155,7 @@ Daty kalendarzowe podajesz tylko warunkowo, gdy użytkownik poda datę podpisani
 |---|---|
 | Kodeks spółek handlowych, t.j. Dz.U. 2024 poz. 18; zmiana Dz.U. 2026 poz. 1440 (od 3.12.2026) | sp. z o.o.: kapitał i udziały (art. 152, 153 i 154 sprawdzone przez autora skilla), wkłady, S24 (art. 158 § 1¹ i 169 § 2 sprawdzone przez autora), spółka w organizacji (art. 162 sprawdzony przez autora), umorzenie i większości (art. 199 § 4, 245, 246 sprawdzone przez autora), organizacja, udziały, zarząd, odpowiedzialność, zgromadzenie |
 | Kodeks cywilny, t.j. Dz.U. 2026 poz. 795; Kodeks rodzinny i opiekuńczy, t.j. Dz.U. 2026 poz. 236 | prokura; majątek wspólny |
-| Ustawa o KRS, t.j. Dz.U. 2025 poz. 869; zmiana Dz.U. 2025 poz. 1556 (uchylenie ogłoszeń w Monitorze od 29.11.2025, sprawdzona przez autora) | zgłoszenie, terminy, sprawozdania |
+| Ustawa o KRS, t.j. Dz.U. 2025 poz. 869; zmiana Dz.U. 2025 poz. 1556 (uchylenie ogłoszeń w Monitorze od 29.11.2025, sprawdzona przez autora); zmiana Dz.U. 2025 poz. 1792 (przejście na PKD 2025 w KRS, art. 20e i 22 ust. 2 ustawy o KRS oraz art. 12 ustawy zmieniającej, odczyt 7.11.2026) | zgłoszenie, terminy, sprawozdania |
 | Ustawa o kosztach sądowych w sprawach cywilnych, t.j. Dz.U. 2025 poz. 1228 (art. 52 sprawdzony przez autora) | 500 zł i 250 zł |
 | Ustawa o podatku od czynności cywilnoprawnych, t.j. Dz.U. 2026 poz. 191; rozporządzenie o taksie notarialnej, t.j. Dz.U. 2024 poz. 1566, zmiana Dz.U. 2026 poz. 1370 | podatek od umowy spółki; taksa |
 | Ustawa o przeciwdziałaniu praniu pieniędzy, t.j. Dz.U. 2025 poz. 644 (art. 60 sprawdzony przez autora; art. 59 i art. 60 ust. 1a pkt 1 i ust. 2 sprawdzone w przeglądzie panelu 6.11.2026) | CRBR 14 dni bez sobót i dni wolnych; początek terminu przy zmianie skutecznej bez wpisu; zakres informacji objętych CRBR |

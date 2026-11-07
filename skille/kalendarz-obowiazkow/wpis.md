@@ -2,9 +2,9 @@
 nazwa: Kalendarz obowiązków
 kategoria: Finanse
 status: gotowy
-wersja: 1.0.5
+wersja: 1.0.6
 poziom: Działa od razu
-aktualizacja: 2026-11-05
+aktualizacja: 2026-11-07
 skrot: Układa jedną listę tego, co w Twojej firmie wraca co miesiąc, co kwartał i raz w roku, z opisem, czego każda pozycja dotyczy i kto ją robi.
 korzysc: Masz jedną listę obowiązków firmy na cały rok i idziesz do księgowej z gotowymi pytaniami.
 szukaj: terminy, ZUS, VAT, podatki, kalendarz, obowiązki firmy, deklaracje, JPK, KSeF, BDO, kasa fiskalna, mała firma

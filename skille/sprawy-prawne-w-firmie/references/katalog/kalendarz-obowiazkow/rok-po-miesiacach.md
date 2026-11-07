@@ -78,6 +78,7 @@ Najgęstszy miesiąc roku i ten, w którym najwięcej rzeczy dzieje się cicho.
 - **Decyzje na przyszły rok**, które trzeba podjąć z księgową, zanim styczeń je zamknie: forma opodatkowania, kwartalne zaliczki, kwartalny VAT, sposób rozliczania składki zdrowotnej, wejście lub wyjście z VAT przy firmach blisko limitu zwolnienia.
 - **Przegląd limitu zwolnienia z VAT**, firmy zbliżające się do progu powinny wiedzieć w grudniu, nie w marcu. Sam próg zmieniał się w ostatnich latach, więc nie podawaj kwoty jako pewnej; wpisz to jako pytanie do księgowej.
 - **Inwentaryzacja i uzgodnienie sald**, firmy na pełnych księgach.
+- **Kody PKD 2025, jednorazowo do końca 2026 r.** Firma, która ma we wpisie kody według starej klasyfikacji (PKD 2007), zamienia je w CEIDG albo w KRS; w KRS taki wniosek złożony do końca 2026 r. jest bez opłaty sądowej. Później rejestr zamienia kody sam tylko tam, gdzie GUS jednoznacznie przypisał nowy kod albo wydał do tego szczegółową interpretację; w KRS pozostałe kody są po prostu wykreślane, a w CEIDG, gdy automatyczna zamiana nie jest możliwa, wpis może zostać wykreślony z urzędu po 31 stycznia 2027 r. Dlatego kody warto sprawdzić w grudniu, sama firma albo z księgową; daty potwierdź na biznes.gov.pl.
 
 ## Bez stałej daty
 
