@@ -419,7 +419,7 @@ obejmuje przedsiębiorcy ani podmiotu zatrudniającego mniej niż 250 osób, chy
    dotyczą,
 2) nie mają charakteru sporadycznego lub obejmują szczególne kategorie danych
    osobowych,
-3) dotyczą wyroków skazujących i naruszeń prawa.
+3) dotyczą wyroków skazujących i czynów zabronionych.
 Wniosek ze wskazówek: wystarczy jedna z tych okoliczności, żeby zwolnienie
 przestało działać. Rozstrzygnięcie, czy któraś zachodzi, należy do firmy i jej
 specjalisty; narzędzie go nie wydaje.
@@ -736,8 +736,9 @@ zdolność wykazania, że upoważnienia zostały nadane. Aktualny stan krajowych
 wymogów po zmianach deregulacyjnych jest niepewny (poza dwoma wymogami ustalonymi
 wyżej: Kodeks pracy i ustawa o ochronie sygnalistów) i w dokumencie idzie jako:
 
-`[WYMAGA WERYFIKACJI: aktualny stan krajowych wymogów formy pisemnej upoważnień
-po zmianach deregulacyjnych; potwierdzone jest stanowisko Prezesa UODO
+`[WYMAGA WERYFIKACJI: aktualny stan wymogów formy pisemnej upoważnień w ustawach
+sektorowych innych niż Kodeks pracy i ustawa o ochronie sygnalistów, po zmianach
+deregulacyjnych; potwierdzone jest stanowisko Prezesa UODO
 z 12 września 2025 do projektu zmian, nie skutek legislacyjny; źródło:
 https://uodo.gov.pl/pl/138/3876 oraz https://uodo.gov.pl/pl/676/4265]`
 

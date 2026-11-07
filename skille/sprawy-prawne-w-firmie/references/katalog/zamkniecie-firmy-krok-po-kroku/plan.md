@@ -59,8 +59,8 @@ Najpierw dwa, trzy zdania: czy to zawieszenie czy zakończenie, co jest najpilni
 | 14 dni | wykreślenie z BDO, jeśli był wpis | właściciel |
 | 20. dzień następnego miesiąca | ostatnie składki ZUS i deklaracje (zdrowotna w pełnej wysokości tylko za miesiąc, w którym podlegałeś ubezpieczeniu choćby jeden dzień (nie za miesiąc w całości objęty zawieszeniem)); ryczałt za ostatni miesiąc (przy kwartalnym: do 20. dnia miesiąca po kwartale zakończenia) | księgowa |
 | 25. dzień następnego miesiąca | rozliczenie miesięczne: ostatni JPK z informacją o spisie z natury i VAT od spisu; rozliczenie kwartalne: część ewidencyjna JPK za każdy miesiąc, a deklaracja z informacją o spisie i zapłata w terminie za kwartał obejmujący dzień zaprzestania (ustal z księgową) | księgowa |
-| Do 30 kwietnia następnego roku | zeznanie roczne (skala, liniowy, ryczałt; karta: osobna ścieżka do weryfikacji); ewentualnie elektroniczna księga (do weryfikacji) | księgowa |
-| Do 20 maja następnego roku | rozliczenie roczne składki zdrowotnej w deklaracji za kwiecień (skala, liniowy, ryczałt; nie karta); potem sprawdzenie nadpłaty i wniosku o zwrot (termin do weryfikacji) | księgowa, ZUS |
+| Do 30 kwietnia następnego roku | zeznanie roczne (skala, liniowy, ryczałt; karta: osobna ścieżka do weryfikacji); w tym samym terminie elektroniczna księga (za 2026 r. u czynnych podatników VAT, od 2027 r. u pozostałych) | księgowa |
+| Do 20 maja następnego roku | rozliczenie roczne składki zdrowotnej w deklaracji za kwiecień (skala, liniowy, ryczałt; nie karta); potem sprawdzenie nadpłaty i wniosek o zwrot w eZUS w miesiąc od 30 kwietnia (po terminie bez rozpoznania) | księgowa, ZUS |
 | Przez 6 lat | sprzedaż majątku z firmy rozliczana jak przychód z działalności (nieruchomości i karta: do weryfikacji) | właściciel z księgową |
 | Lata | przechowywanie dokumentów | właściciel albo przechowawca |
 

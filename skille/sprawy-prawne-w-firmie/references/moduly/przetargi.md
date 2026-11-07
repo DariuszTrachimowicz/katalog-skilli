@@ -98,7 +98,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 49. Przy umowach na ponad 12 miesięcy zamawiający płaci częściami po wykonaniu części albo udziela zaliczek. (PZP art. 443 ust. 1)
 50. Przy robotach na ponad 12 miesięcy kolejne płatności zależą od dowodów zapłaty podwykonawcom; brak dowodów wstrzymuje wypłatę w odpowiedniej części. (PZP art. 447 ust. 1-2)
 50a. Przy robotach budowlanych zamawiający płaci bezpośrednio podwykonawcy wymagalne wynagrodzenie, gdy wykonawca uchyla się od zapłaty, jeżeli umowę o podwykonawstwo robót zamawiający zaakceptował, a umowę na dostawy lub usługi mu przedłożono; dotyczy to tylko należności powstałych po akceptacji albo przedłożeniu i obejmuje samo wynagrodzenie, bez odsetek. (PZP art. 465 ust. 1-3) Przed zapłatą zamawiający daje wykonawcy co najmniej 7 dni na uwagi, a po uwagach może nie zapłacić, złożyć kwotę do depozytu sądowego albo zapłacić, jeżeli podwykonawca wykaże zasadność. (PZP art. 465 ust. 4-5) Umowa podwykonawcza nie może ustalać kar umownych ani warunków zapłaty mniej korzystnie dla podwykonawcy niż umowa wykonawcy z zamawiającym. (PZP art. 463) Pierwszy krok podwykonawcy: pismo do zamawiającego z umową, dowodem jej akceptacji albo przedłożenia, fakturą i dowodem wymagalności (poziom A); pismo nie zapewnia, że zamawiający zapłaci.
-51. Zamawiający musi odbierać ustrukturyzowane faktury elektroniczne przesłane przez Platformę Elektronicznego Fakturowania, a wykonawca nie musi ich tą drogą wysyłać. (ustawa o elektronicznym fakturowaniu w zamówieniach publicznych, art. 4 ust. 1-2, t.j. Dz. U. 2026 poz. 276 [spoza plików lokalnych, odczyt PDF z api.sejm.gov.pl 2026-11-06]) Niezależnie od tego obowiązuje KSeF (zob. A2 pkt 52); relacji KSeF i PEF dla konkretnego zamawiającego nie weryfikowałem w źródle UZP [WYMAGA WERYFIKACJI].
+51. Zamawiający musi odbierać ustrukturyzowane faktury elektroniczne przesłane przez Platformę Elektronicznego Fakturowania, a wykonawca nie musi ich tą drogą wysyłać. (ustawa o elektronicznym fakturowaniu w zamówieniach publicznych, art. 4 ust. 1-2, t.j. Dz. U. 2026 poz. 276 [spoza plików lokalnych, odczyt PDF z api.sejm.gov.pl 2026-11-06]) Niezależnie od tego obowiązuje KSeF (zob. A2 pkt 52): według Ministerstwa Finansów od 1 lutego 2026 r. faktury odbiera się przez KSeF, a integracja KSeF i PEF miała od tej daty zapewnić przesyłanie faktur z PEF do KSeF 2.0 (pytania i odpowiedzi KSeF 2.0, ksef.podatki.gov.pl, odczyt 2026-11-07); ustawa o e-fakturowaniu tej relacji nie reguluje.
 52. Spór z umowy można skierować do mediacji przed Sądem Polubownym przy Prokuratorii Generalnej. (PZP art. 591 ust. 1)
 
 ### B3. Co firma może zrobić sama i jakie pisma przygotuje skill
@@ -160,7 +160,7 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 - Tekst jednolity PZP: Dz. U. 2026 poz. 793 (obwieszczenie z 27 maja 2026 r.).
 - Dz. U. 2026 poz. 1347 (od 2026-12-01): drobna zmiana art. 214 i 364 PZP (biogaz), bez znaczenia dla typowej firmy.
 - Druk sejmowy nr 3003 (rządowy projekt ustawy o środkach ograniczających, wpłynął 2026-08-06): krajowe środki ograniczające wobec osób i podmiotów z listy ministra spraw wewnętrznych obejmą m.in. wykluczenie z postępowań i konkursów według PZP, z zamówień poniżej progu z PZP art. 2 ust. 1 i z zamówień z wyłączeniem PZP (art. 6 ust. 1 pkt 4 w brzmieniu druku). Status wg api.sejm.gov.pl: III czytanie 2026-11-06, ustawa uchwalona przez Sejm; dalej Senat i Prezydent, więc to jeszcze nie obowiązujące prawo, a tekst uchwalony może różnić się od druku (odczyt 2026-11-06).
-- Ustrukturyzowane faktury: t.j. ustawy o e-fakturowaniu Dz. U. 2026 poz. 276; integracja PEF z KSeF od 2026-02-01 wg materiałów MF z wyników wyszukiwania [WYMAGA WERYFIKACJI w źródle UZP lub MF].
+- Ustrukturyzowane faktury: t.j. ustawy o e-fakturowaniu Dz. U. 2026 poz. 276 (KSeF w niej nie występuje); integracja PEF z KSeF od 2026-02-01 według zapowiedzi MF: faktury z PEF mają trafiać do KSeF 2.0 (pytania i odpowiedzi KSeF 2.0, ksef.podatki.gov.pl, odczyt 2026-11-07).
 
 ### B8. Rejestr źródeł (moduł B)
 
@@ -200,5 +200,5 @@ Wczytaj, gdy `mapa-spraw.md` wskazuje ten moduł. Reguły po skutku z podstawą 
 ### Kwestie sporne i niepewne (przedstawiaj jako pytania do prawnika, nie jako regułę)
 
 1. Intertemporalność progu 170 000 zł (art. 7-10 ustawy z 25 lipca 2025 r.).
-2. Relacja Platformy Elektronicznego Fakturowania i KSeF u danego zamawiającego: tylko z wyników wyszukiwania.
+2. Relacja Platformy Elektronicznego Fakturowania i KSeF u danego zamawiającego: jest tylko zapowiedź MF (ksef.podatki.gov.pl), bez przepisu w ustawie o e-fakturowaniu.
 3. KIO 8/25: data z nagłówka w wynikach wyszukiwania.

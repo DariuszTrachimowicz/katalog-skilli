@@ -154,7 +154,7 @@ Podstawa: u.s.u.s. art. 23, 24, 98; KP art. 281, 291; u.m.w. art. 8e; KK art. 21
 | 1 stycznia 2027 r. | płaca minimalna 4 950 zł, stawka 32,30 zł |
 | do 8 lipca 2027 r. | okno na dobrowolne zawarcie umowy o pracę bez odpowiedzialności za wykroczenie |
 
-- **Projekty:** projektu oskładkowania umów o dzieło albo wszystkich zleceń w Sejmie nie znaleziono (5 listopada 2026 r.); prace rządowe poza Sejmem: DO WERYFIKACJI. Mów o tym tylko jako o możliwym kierunku, nie jako o prawie. W Sejmie są projekty poselskie (płaca minimalna, limit małego ZUS plus 200 000 zł, dobrowolny ZUS), nieuchwalone.
+- **Projekty:** projektu oskładkowania umów o dzieło albo wszystkich zleceń w Sejmie nie znaleziono (5 listopada 2026 r.); rządowego projektu w wykazie prac legislacyjnych (legislacja.gov.pl) też nie znaleziono (wyszukiwanie po tytułach, 7 listopada 2026 r.). Mów o tym tylko jako o możliwym kierunku, nie jako o prawie. W Sejmie są projekty poselskie (płaca minimalna, limit małego ZUS plus 200 000 zł, dobrowolny ZUS), nieuchwalone.
 - **Bezpłatna pomoc:** porady prawne inspekcji pracy (okręgowe inspektoraty, infolinia), nieodpłatna pomoc prawna w powiecie (dla osoby, której nie stać na prawnika, także jednoosobowej firmy bez pracowników, na podstawie oświadczenia), Krajowa Informacja Skarbowa (podatki), konsultanci ZUS.
 
 Podstawa: ustawy i rozporządzenia z sekcji 12; ustawa o nieodpłatnej pomocy prawnej art. 4, 5 (odczytane podczas sprawdzania źródeł do skilla nakaz-zaplaty-co-dalej).
@@ -175,8 +175,9 @@ Sygnatury tylko na pytanie o źródło. SN sprawdzone 5 listopada 2026 r. w SAOS
 | SN II UK 315/10, wyrok z 6 kwietnia 2011 r. | ZUS może uznać „dzieło” tłumacza za umowę o świadczenie usług przy długotrwałej, powtarzalnej pracy za stałe miesięczne wynagrodzenie. |
 | SN I PKN 127/00, wyrok z 5 grudnia 2000 r. | Umowa nazwana umową o dzieło może zostać uznana za umowę o pracę. |
 | SN III PK 96/15, wyrok z 14 kwietnia 2016 r. | Pozew o ustalenie stosunku pracy się nie przedawnia, ale nie przerywa przedawnienia roszczeń o świadczenia. |
+| SN II USKP 213/21, wyrok z 25 października 2022 r. | Umowa o dzieło jako umowa rezultatu musi zawierać kryteria, według których da się sprawdzić jej wykonanie. |
 
-Do weryfikacji (nie podawaj jako źródła): orzecznictwo SN z lat 2017 do 2026; orzeczenia powołane w uzasadnieniach, nieotwarte.
+Do weryfikacji (nie podawaj jako źródła): pozostałe orzecznictwo SN z lat 2017 do 2026 poza powołanym wyżej (przegląd API SN 7.11.2026 objął wybór); orzeczenia powołane w uzasadnieniach, nieotwarte.
 
 ## 12. Rejestr źródeł
 

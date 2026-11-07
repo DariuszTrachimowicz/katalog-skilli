@@ -111,7 +111,7 @@ Szczegółowy katalog obowiązków z ustawy o ochronie praw lokatorów (niżej, 
 
 ## 8. Podatki i formalności
 
-- **Najem prywatny (bez działalności):** wyłącznie ryczałt od przychodów: 8,5 % do 100 000 zł przychodu w roku i 12,5 % od nadwyżki, od przychodu bez kosztów; małżonkowie przy wspólności rozliczają po połowie albo, po oświadczeniu, jeden z progiem 200 000 zł; wpłaty miesięcznie do 20. dnia następnego miesiąca (kwartalnie: DO WERYFIKACJI), zeznanie PIT-28 od 15 lutego do 30 kwietnia następnego roku; bez obowiązku ewidencji. Stawki bez zmian w 2026 r. Zaległości i korekty: urząd skarbowy lub doradca podatkowy. (ustawa o ryczałcie art. 2, 6, 12, 15, 21; podatki.gov.pl)
+- **Najem prywatny (bez działalności):** wyłącznie ryczałt od przychodów: 8,5 % do 100 000 zł przychodu w roku i 12,5 % od nadwyżki, od przychodu bez kosztów; małżonkowie przy wspólności rozliczają po połowie albo, po oświadczeniu, jeden z progiem 200 000 zł; wpłaty miesięcznie do 20. dnia następnego miesiąca, a przy spełnieniu warunków ustawy kwartalnie do 20. dnia miesiąca po kwartale (za grudzień i za IV kwartał do 20 stycznia; wybór kwartału zaznacza się w PIT-28), zeznanie PIT-28 od 15 lutego do 30 kwietnia następnego roku; bez obowiązku ewidencji. Stawki bez zmian w 2026 r. Zaległości i korekty: urząd skarbowy lub doradca podatkowy. (ustawa o ryczałcie art. 2, 6, 12, 15, 21; podatki.gov.pl, odczyt 7.11.2026)
 - **Najem w działalności:** do wyboru skala, liniowy albo ryczałt (8,5 % i 12,5 %); ewidencja obowiązkowa; najem okazjonalny niedostępny, dostępny instytucjonalny. VAT: DO WERYFIKACJI.
 - **Umowa najmu nie podlega podatkowi od czynności cywilnoprawnych ani opłacie skarbowej.** (ustawa o PCC art. 1; ustawa o opłacie skarbowej)
 - **Meldunek:** obowiązek zameldowania (w 30 dni od przybycia, przy pobycie ponad 3 miesiące) nadal istnieje, ale obywatel polski nie płaci kary za jego brak; zameldowanie nie daje prawa do lokalu i nie utrudnia zakończenia najmu. (ustawa o ewidencji ludności art. 24 do 28, 59)
@@ -166,5 +166,5 @@ Brak orzeczeń SN w materiale (nie podawaj sygnatur): skutki niezgłoszenia najm
 | Prawo energetyczne, Dz.U. 2026 poz. 43 | https://eli.gov.pl/eli/DU/2026/43/ogl | 5.11.2026 | rozliczanie ciepła |
 | Sejm, proces ustawy o najmie krótkoterminowym (druk 2865) | https://api.sejm.gov.pl/sejm/term10/processes/2865 | 5.11.2026 | uchwalenie przez Sejm 8 października 2026 r. |
 | Opłata miejscowa, Dz.U. 2026 poz. 1354 | https://eli.gov.pl/eli/DU/2026/1354/ogl | 5.11.2026 | od 1 stycznia 2027 r. |
-| podatki.gov.pl, dochody z najmu | https://podatki.gov.pl/podatki-osobiste/pit/informacje-podstawowe/co-jest-opodatkowane/dochody-z-najmu | 5.11.2026 | stawki, progi, PIT-28 |
+| podatki.gov.pl, dochody z najmu (aktualizacja 4.11.2026) | https://podatki.gov.pl/podatki-osobiste/pit/informacje-podstawowe/co-jest-opodatkowane/dochody-z-najmu | 5.11.2026, 7.11.2026 | stawki, progi, PIT-28, wpłaty kwartalne |
 | SAOS | https://www.saos.org.pl | 5.11.2026 | orzeczenia z sekcji 11 |

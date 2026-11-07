@@ -2,9 +2,9 @@
 nazwa: Nakaz zapłaty, co dalej
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.6
+wersja: 1.0.7
 poziom: Działa od razu
-aktualizacja: 2026-11-06
+aktualizacja: 2026-11-07
 skrot: Wyjaśnia nakaz zapłaty, pozew, wezwanie od windykatora albo pismo komornika, czyli co to za pismo, ile jest czasu i od kiedy go liczyć, sprzeciw albo zarzuty i ich koszt, skutki braku reakcji, ugoda i raty, oraz układa teczkę dla prawnika.
 korzysc: Wiesz, co to za pismo, ile masz czasu i jakie masz drogi, zanim termin minie.
 szukaj: nakaz zapłaty, sprzeciw od nakazu zapłaty, zarzuty od nakazu, e-Sąd, elektroniczne postępowanie upominawcze, awizo z sądu, termin na sprzeciw, pozew o zapłatę, wyrok zaoczny, wezwanie przedsądowe, windykator, fundusz sekurytyzacyjny, przedawnienie długu, komornik zajął konto, kwota wolna od zajęcia

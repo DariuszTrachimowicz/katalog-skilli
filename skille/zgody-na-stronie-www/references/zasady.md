@@ -106,7 +106,7 @@ Według przepisów, wyroków TSUE, wspólnego stanowiska europejskich organów (
 - **Cookies (urząd komunikacji elektronicznej, Prezes UKE):** kara do 3 % przychodu z poprzedniego roku; gdy w poprzednim roku firma nie miała przychodu albo miała do 500 000 zł, urząd bierze pod uwagę średni przychód z 3 lat, a gdy i on nie przekracza 500 000 zł, kara może wynieść do 15 000 zł. Równolegle UODO, gdy przetwarzane są dane osobowe.
 - **Marketing bez zgody (Prezes UKE):** kara do 3 % przychodu z poprzedniego roku albo do 1 000 000 zł, przy czym stosuje się kwotę wyższą; łagodniejszy próg dla małych firm tu nie działa. Do tego wykroczenie ścigane na żądanie adresata (grzywna), roszczenia konkurentów (czyn nieuczciwej konkurencji) i RODO.
 - **RODO (Prezes UODO):** za naruszenie warunków zgody, praw osób i zasad przekazywania danych do 20 000 000 euro albo 4 % rocznego światowego obrotu (wyższa kwota); za naruszenia m.in. zasad ochrony danych w fazie projektowania do 10 000 000 euro albo 2 %.
-- **Praktyka na 5.11.2026:** w bazie UODO brak kary za sam baner cookies, Google Analytics czy piksel; sądy uchylały decyzje UODO o cookies z przyczyn dowodowych. Opublikowanych kar UKE na nowych przepisach nie znaleziono [WYMAGA WERYFIKACJI: BIP UKE nieprzeszukany]. Brak praktyki nie oznacza braku ryzyka, a skarga odwiedzającego albo konkurenta może uruchomić postępowanie.
+- **Praktyka na 5.11.2026:** w bazie UODO brak kary za sam baner cookies, Google Analytics czy piksel; sądy uchylały decyzje UODO o cookies z przyczyn dowodowych. Opublikowanych kar UKE na nowych przepisach nie znaleziono (BIP UKE, działy Decyzje i Kary pieniężne, przejrzane 7 listopada 2026 r.). Brak praktyki nie oznacza braku ryzyka, a skarga odwiedzającego albo konkurenta może uruchomić postępowanie.
 - Kwoty podajesz tylko jako ogólną informację o skali, przytaczając je dokładnie jak wyżej, bez zaokrągleń; nie wyliczasz kary ani ryzyka dla konkretnej firmy, także w przybliżeniu.
 
 ## 11. Zmiany 2024 do 2026 i to, co dopiero zapowiedziane
@@ -122,7 +122,7 @@ Według przepisów, wyroków TSUE, wspólnego stanowiska europejskich organów (
 - 13 listopada 2025 r.: wyrok TSUE o newsletterze i wyjątku dla klientów (w Polsce wyjątek niewdrożony).
 
 **Tylko zapowiedziane (nie obowiązuje na 5.11.2026):**
-- Unijny pakiet „Digital Omnibus” (wniosek Komisji z 19 listopada 2025 r.): m.in. odmowa cookies jednym przyciskiem, zakaz ponownego pytania przez kilka miesięcy, zwolnienie prostego pomiaru odbiorców ze zgody, sygnały z przeglądarki. Parlament Europejski nie głosował, Rada przyjęła stanowisko negocjacyjne 21 października 2026 r. [WYMAGA WERYFIKACJI: szczegóły stanowiska Rady]. Nic z tego nie obowiązuje; nie radzisz „analityka bez zgody, bo Omnibus”.
+- Unijny pakiet „Digital Omnibus” (wniosek Komisji z 19 listopada 2025 r.): m.in. odmowa cookies jednym przyciskiem, zakaz ponownego pytania przez kilka miesięcy, zwolnienie prostego pomiaru odbiorców ze zgody, sygnały z przeglądarki. Parlament Europejski nie głosował, Rada przyjęła stanowisko negocjacyjne 21 października 2026 r.: przepisy o cookies zostają w dyrektywie o e-prywatności, z szerszymi wyjątkami od zgody (np. świadczenie usługi, pomiar liczby odbiorców, bezpieczeństwo urządzenia) (komunikat Rady, consilium.europa.eu, odczyt 7 listopada 2026 r.). Nic z tego nie obowiązuje; nie radzisz „analityka bez zgody, bo Omnibus”.
 
 ## 12. Granice skilla
 

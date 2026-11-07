@@ -156,7 +156,7 @@ Odpowiedź „jesteście za mali, nie musicie" bywa po prostu nieprawdziwa.
 
 Alternatywa: pokazujesz trzy okoliczności ze wskazówek organu (ryzyko naruszenia
 praw lub wolności osób; przetwarzanie niesporadyczne albo obejmujące szczególne
-kategorie danych; przetwarzanie dotyczące wyroków skazujących i naruszeń prawa),
+kategorie danych; przetwarzanie dotyczące wyroków skazujących i czynów zabronionych),
 prosisz firmę o zajęcie stanowiska wobec każdej z nich i zapisujesz wynik
 w dokumencie jako DEKLARACJĘ KLIENTA z datą i osobą, która ją złożyła. Sam nie
 ważysz i nie podpowiadasz, także gdy użytkownik mówi „no przecież u nas to

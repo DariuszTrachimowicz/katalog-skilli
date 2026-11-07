@@ -230,7 +230,7 @@ Do potwierdzenia: brak orzeczeń SN na gruncie nowego KP art. 94³ (w mocy od 5.
 | 5.11.2026 | Mobbing, równe traktowanie, regulamin od 10 osób, KPC (Dz.U. 2026 poz. 1046) | obowiązuje; termin dostosowania regulaminów 6 miesięcy (art. 4) |
 | 1.01.2027 | Płaca minimalna 4 950 zł (podnosi minima zadośćuczynień) | rozporządzenie Dz.U. 2026 poz. 1213 (za skillem dzielo) |
 | 1-15.04.2027 | Ponowny autozapis PPK (informacja do końca lutego 2027) | biznes.gov.pl 00138 |
-| 7.06.2026 (termin UE) | Pełne wdrożenie dyrektywy 2023/970 o jawności płac (raportowanie luki płacowej, prawo do informacji o płacach) | **projekt**, w KP brak przepisów o raportowaniu; numer projektu i status [WYMAGA WERYFIKACJI: legislacja.gov.pl, wykaz prac legislacyjnych MRPiPS] |
+| 7.06.2026 (termin UE) | Pełne wdrożenie dyrektywy 2023/970 o jawności płac (raportowanie luki płacowej, prawo do informacji o płacach) | **projekt**, w KP brak przepisów o raportowaniu; rządowy projekt ustawy o wzmocnieniu stosowania prawa do jednakowego wynagrodzenia mężczyzn i kobiet (MRPiPS, wykaz UC127, utworzony 16.12.2025, etap uzgodnień i konsultacji, ostatnia zmiana 4.05.2026), w Sejmie go nie ma (legislacja.gov.pl i api.sejm.gov.pl, odczyt 7.11.2026); termin UE minął, przepisy nie obowiązują |
 
 ---
 

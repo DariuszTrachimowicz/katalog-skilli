@@ -2,7 +2,7 @@
 nazwa: e-Doręczenia w firmie
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.7
+wersja: 1.0.8
 poziom: Działa od razu
 aktualizacja: 2026-11-07
 skrot: Przeprowadza firmę przez e-Doręczenia, od ustalenia grupy harmonogramu i miejsca potwierdzenia terminu, przez założenie adresu, po firmowy rytm pilnowania skrzynki.

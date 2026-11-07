@@ -89,7 +89,7 @@ obejmuje przedsiębiorcy ani podmiotu zatrudniającego mniej niż 250 osób, chy
    dotyczą,
 2) nie mają charakteru sporadycznego lub obejmują szczególne kategorie danych
    osobowych,
-3) dotyczą wyroków skazujących i naruszeń prawa.
+3) dotyczą wyroków skazujących i czynów zabronionych.
 Wniosek ze wskazówek: wystarczy jedna z tych okoliczności, żeby zwolnienie
 przestało działać. Rozstrzygnięcie, czy któraś zachodzi, należy do firmy i jej
 specjalisty; narzędzie go nie wydaje.

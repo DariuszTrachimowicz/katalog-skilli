@@ -100,7 +100,7 @@ Pisma:
 
 | Źródło | Co potwierdza |
 |---|---|
-| Rozporządzenie 2016/679 (RODO), tekst urzędowy Dz. Urz. UE L 119 z 4.5.2016: https://www.gov.pl/attachment/6ad1668e-e043-4c47-8455-870a6dd1ea80 | art. 6 ust. 1 lit. f, 12 ust. 3-6, 13 ust. 1, 14 ust. 3, 21 ust. 2 i 3, 33 ust. 1-5, 34 ust. 1-4, 35 ust. 1 i 3 (otwarte i przeczytane 6.11.2026; plik to wydanie z 2016 r., bez sprostowania polskiej wersji z 2018 r. [WYMAGA WERYFIKACJI: czy sprostowanie zmienia brzmienie tych artykułów, eur-lex]) |
+| Rozporządzenie 2016/679 (RODO), tekst urzędowy Dz. Urz. UE L 119 z 4.5.2016: https://www.gov.pl/attachment/6ad1668e-e043-4c47-8455-870a6dd1ea80 | art. 6 ust. 1 lit. f, 12 ust. 3-6, 13 ust. 1, 14 ust. 3, 21 ust. 2 i 3, 33 ust. 1-5, 34 ust. 1-4, 35 ust. 1 i 3 (otwarte i przeczytane 6.11.2026; plik to wydanie z 2016 r.; sprostowanie polskiej wersji, Dz.U. UE L 127 z 23.5.2018, otwarte w eur-lex.europa.eu 7.11.2026, z tych przepisów zmienia tylko art. 13 ust. 1 lit. f (informacja o sposobach uzyskania kopii zabezpieczeń) i art. 35 ust. 3 lit. b („czynów zabronionych” zamiast „naruszeń prawa”)) |
 | akty/UODO.md (t.j. Dz.U. 2019 poz. 1781 ze zm.) | art. 8, 10, 11, 65, 79, 81, 92, 93, 107 |
 | akty/PKE.md, akty/KP.md, akty/ZNK.md | PKE art. 398 ust. 1 i 4, art. 446 ust. 5; KP art. 22²; ZNK art. 11 |
 | Wytyczne EROD 3/2019 w sprawie przetwarzania danych osobowych przez urządzenia wideo, wersja 2.0, polska wersja: https://uodo.gov.pl/pl/file/3704 | pkt 111-117 (dwie warstwy informacji), pkt 121 (kilka dni, uzasadnienie ponad 72 godziny); otwarte 6.11.2026 |

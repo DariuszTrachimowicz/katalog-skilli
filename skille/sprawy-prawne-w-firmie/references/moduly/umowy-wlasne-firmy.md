@@ -157,7 +157,7 @@ Dokumenty (umowy i klauzule jako pełny projekt na poziomie B, czyli projekt do 
 
 - **27.11.2025**: KC art. 385⁵ § 1¹ (oświadczenie o charakterze zawodowym umowy) (Dz.U. 2025 poz. 1172).
 - **4.12.2025**: zmiana KC ustawą z 9.10.2025 (Dz.U. 2025 poz. 1508); treści nie analizowano, wpływ na moduł do sprawdzenia.
-- **18.04.2026**: koniec mocy rejestru klauzul niedozwolonych UOKiK (według rejestru skilla `regulamin-sklepu-checklista`; nie weryfikowano samodzielnie).
+- **18.04.2026**: koniec mocy rejestru klauzul niedozwolonych UOKiK: wpisy działały najdłużej 10 lat od 17.04.2016, czyli do 17.04.2026, a uchylenie przepisu KPC o rejestrze weszło w życie po upływie tych 10 lat (ustawa z 5.08.2015 o zmianie ustawy o ochronie konkurencji i konsumentów, art. 9 i art. 12, Dz.U. 2015 poz. 1634, odczyt z api.sejm.gov.pl 2026-11-07).
 - **14.10.2026**: zmiana ustawy o CEIDG (Dz.U. 2026 poz. 507), która według notki ISAP zmienia też KC z wejściem części przepisów 1.11.2028; treści nie analizowano.
 - **ZATORY**: tekst ujednolicony z 2023 r.; stan zmian według rejestru `moduly/spory-z-kontrahentem.md`, sekcja 7.
 

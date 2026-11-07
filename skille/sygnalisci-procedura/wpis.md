@@ -2,7 +2,7 @@
 nazwa: Procedura dla sygnalistów
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.5
+wersja: 1.0.6
 poziom: Działa od razu
 aktualizacja: 2026-11-07
 skrot: Buduje z firmą projekt procedury zgłoszeń wewnętrznych dla sygnalistów wraz z rejestrem, upoważnieniami, klauzulą informacyjną, planem wdrożenia i kartą obsługi zgłoszenia, albo sprawdza procedurę, którą już macie.

@@ -31,7 +31,7 @@ Kolumna „Podstawa” i rejestr na końcu służą wyłącznie Tobie do weryfik
 | Kontrola celno-skarbowa (KAS) | nie | nie (do 3 miesięcy, przedłużenie pisemne z przyczynami i nowym terminem) | nie | nie ma; w zakresie podatkowym 14 dni od doręczenia wyniku na korektę (inne zakresy: DO WERYFIKACJI) |
 | UODO | DO WERYFIKACJI (ustawa milczy, ogólne zasady co do zasady się stosują) | tak (oraz 30 dni od upoważnienia) | co do zasady tak | 7 dni: podpis albo pisemne zastrzeżenia; milczenie = odmowa podpisu |
 | Sanepid | tak, ale kontrola żywności może być bez zawiadomienia | nie przy bezpieczeństwie żywności | tak | ustawa nie określa terminu: DO WERYFIKACJI |
-| Inspekcja Handlowa | tak; zakup kontrolny wyłączony z zasad o zawiadomieniu, upoważnieniu, obecności, miejscu, równoczesnych kontrolach, limitach i książce kontroli | tak (poza zakupem kontrolnym) | tak (przy zakupie kontrolnym brak tych przesłanek, DO WERYFIKACJI) | uwagi od razu albo na piśmie w 7 dni od przedstawienia |
+| Inspekcja Handlowa | tak; zakup kontrolny wyłączony z zasad o zawiadomieniu, upoważnieniu, obecności, miejscu, równoczesnych kontrolach, limitach i książce kontroli | tak (poza zakupem kontrolnym) | tak (przy zakupie kontrolnym tylko gdy organ ponownie kontroluje to samo albo kontroluje planowo częściej, niż pozwala kategoria ryzyka; sprzeciw nie wstrzymuje wtedy czynności) | uwagi od razu albo na piśmie w 7 dni od przedstawienia |
 
 Podstawa: PP art. 45 do 65; ustawa o PIP art. 24, 31; ustawa o systemie ubezpieczeń społecznych art. 86 do 92a; Ordynacja podatkowa art. 281 do 292; ustawa o KAS art. 62 do 93; ustawa o ochronie danych osobowych art. 78 do 91; ustawa o inspekcji sanitarnej art. 37; ustawa o Inspekcji Handlowej art. 20, 22b.
 

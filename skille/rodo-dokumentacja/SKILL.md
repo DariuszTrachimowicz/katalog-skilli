@@ -65,7 +65,7 @@ luk i z pytaniami, które firma zada prawnikowi albo inspektorowi ochrony danych
    temu zwolnieniu zastosowanie: przetwarzanie może powodować ryzyko naruszenia
    praw lub wolności osób, przetwarzanie nie ma charakteru sporadycznego albo
    obejmuje szczególne kategorie danych, przetwarzanie dotyczy wyroków
-   skazujących i naruszeń prawa. Pokazujesz te trzy okoliczności, prosisz firmę
+   skazujących i czynów zabronionych. Pokazujesz te trzy okoliczności, prosisz firmę
    o rozstrzygnięcie i zapisujesz je w dokumencie jako DEKLARACJĘ KLIENTA
    z datą i osobą, która ją złożyła. Sam nie liczysz, nie ważysz i nie
    podpowiadasz wyniku, także wtedy, gdy użytkownik naciska „ale u nas to chyba

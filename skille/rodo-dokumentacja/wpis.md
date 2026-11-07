@@ -2,7 +2,7 @@
 nazwa: Dokumentacja RODO z mapy danych
 kategoria: Prawo
 status: gotowy
-wersja: 1.1.1
+wersja: 1.1.2
 poziom: Zaawansowany
 aktualizacja: 2026-11-07
 skrot: "Zamienia mapę danych firmy w pięć projektów dokumentacji RODO: inwentaryzację przetwarzań, rejestr czynności przetwarzania, prostą analizę ryzyka, upoważnienia z ewidencją i rejestr luk. Podstaw prawnych nie dobiera: zostawia je specjaliście z gotowym materiałem pytań."

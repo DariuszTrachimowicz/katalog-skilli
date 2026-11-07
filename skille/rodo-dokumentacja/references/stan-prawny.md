@@ -89,7 +89,7 @@ chyba że wykonywane czynności przetwarzania:
 1. mogą powodować ryzyko naruszenia praw lub wolności osób, których dane dotyczą,
 2. nie mają charakteru sporadycznego lub obejmują szczególne kategorie danych
    osobowych,
-3. dotyczą wyroków skazujących i naruszeń prawa.
+3. dotyczą wyroków skazujących i czynów zabronionych (brzmienie po sprostowaniu polskiej wersji RODO, Dz.U. UE L 127 z 23.5.2018, eur-lex.europa.eu, odczyt 7.11.2026; wcześniejsze wydanie mówiło „naruszeń prawa”).
 
 Wyjątek wprowadzono ze względu na szczególną sytuację mikroprzedsiębiorstw oraz
 małych i średnich przedsiębiorstw.
@@ -323,12 +323,14 @@ z 12 września 2025 w sprawie deregulacji ocenił, że pisemne upoważnienie nie
 rozwiązania nadmiarowe; zastrzegł przy tym, że administrator rezygnujący z formy
 pisemnej powinien w myśl zasady rozliczalności być w stanie wykazać, że
 upoważnienia zostały nadane i że istnieje rzeczywista kontrola nad danymi.
-**Czy zmiany weszły w życie i jaki jest stan krajowych wymogów pisemnych
-upoważnień na dzień 24 sierpnia 2026, nie zostało ustalone.** W dokumentach
+**Stan na 7 listopada 2026: w Kodeksie pracy i w ustawie o ochronie sygnalistów
+wymóg pisemnego upoważnienia nadal obowiązuje (niżej); stan pozostałych ustaw
+sektorowych po zmianach deregulacyjnych nie został ustalony.** W dokumentach
 i w rozmowie rozwiązujesz to tak (poza dwoma wymogami ustalonymi niżej):
 
-`[WYMAGA WERYFIKACJI: aktualny stan krajowych wymogów formy pisemnej upoważnień
-po zmianach deregulacyjnych; potwierdzone jest stanowisko Prezesa UODO
+`[WYMAGA WERYFIKACJI: aktualny stan wymogów formy pisemnej upoważnień w ustawach
+sektorowych innych niż Kodeks pracy i ustawa o ochronie sygnalistów, po zmianach
+deregulacyjnych; potwierdzone jest stanowisko Prezesa UODO
 z 12 września 2025 do projektu zmian, nie skutek legislacyjny; źródło:
 https://uodo.gov.pl/pl/138/3876 oraz https://uodo.gov.pl/pl/676/4265]`
 
