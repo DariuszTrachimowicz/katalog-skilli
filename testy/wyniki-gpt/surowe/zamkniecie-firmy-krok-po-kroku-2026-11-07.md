@@ -1,0 +1,17 @@
+**KPiR przekazuje się rocznie, nie co miesiąc. Jeśli zakończysz działalność 30 listopada 2026 r., zdrowotnej za grudzień z tej firmy co do zasady już nie zapłacisz. W grudniu pozostanie jednak płatność za listopad.**
+
+Przy Twojej JDG na skali, z czynnym VAT i bez pracowników:
+
+1. **Termin wysłania księgi zależy od sposobu rozliczania VAT.** Przy miesięcznym **JPK_V7M** obowiązek obejmuje już księgę za 2026 r. Jeśli zamkniesz firmę 30 listopada, prześlesz ją elektronicznie po zakończeniu roku, co do zasady **do 30 kwietnia 2027 r.** Zamknięcie firmy tego obowiązku nie usuwa. Przy kwartalnym **JPK_V7K** obowiązek zaczyna się dopiero za 2027 r., więc samo zamknięcie w listopadzie 2026 r. nie powoduje obowiązkowej rocznej wysyłki KPiR za 2026 r. Sam status czynnego VAT nie wystarcza do rozstrzygnięcia. [Informacja MF o etapach obowiązku](https://www.gov.pl/web/kas/struktury-jpk-w-podatkach-dochodowych).
+
+2. **Wysyłasz plik JPK_PKPIR, czyli księgę w wymaganym formacie elektronicznym.** Wydruk ani PDF nie zastępują tego pliku. Odpowiednio dochodzi JPK_ST z ewidencją środków trwałych i wartości niematerialnych i prawnych, jeżeli ją prowadzisz. Roczny JPK jest osobnym obowiązkiem od zeznania PIT i od bieżących plików VAT. **Nie wprowadzono od 1 lipca 2026 r. miesięcznej wysyłki KPiR dla każdego.** [Informacje MF o dokumentacji elektronicznej](https://www.gov.pl/web/kas/nowe-zasady-dokumentacji-ksiegowej-w-podatku-pit-od-2026-r-wazne-informacje).
+
+3. **Na dzień zamknięcia sporządzasz remanent likwidacyjny do KPiR**, czyli spis pozostałych towarów, materiałów i innych pozycji objętych takim spisem. Przy usługach IT może być zerowy, ale trzeba go sporządzić i ująć w księdze. Samego dokumentu remanentu ani wykazu pozostałego majątku nie wysyłasz osobno do urzędu. Przy czynnym VAT istnieje odrębny spis do VAT, który może obejmować także sprzęt; informację o nim przekazuje się najpóźniej z deklaracją za okres zakończenia działalności. [Poradnik podatki.gov.pl](https://podatki.gov.pl/poradniki-i-informatory/zakonczenie-dzialalnosci-gospodarczej).
+
+4. **Ostatnia miesięczna zdrowotna będzie za listopad.** Jeśli działalność i ubezpieczenie zakończą się 30 listopada, składkę za listopad oraz ostatnią miesięczną ZUS DRA rozliczasz w grudniu. Termin to 20. dzień następnego miesiąca; ponieważ 20 grudnia 2026 r. przypada w niedzielę, co do zasady będzie to **21 grudnia 2026 r.**, do potwierdzenia w ZUS. Za grudzień z zamkniętej działalności składki już nie będzie. [ZUS: okres ubezpieczenia i terminy](https://www.zus.pl/documents/10182/298188/Lekcje%2Bz%2BZUS%2B-%2Bmateria%C5%82y%2Bdla%2Bucznia%2B-%2BLekcja%2B4_2022.pdf/6eae0818-3747-6408-fb8b-c589c9211963).
+
+5. **Pozostanie roczne rozliczenie zdrowotnej za 2026 r.** Według obecnej reguły złożysz je w ZUS DRA za kwiecień 2027 r., co do zasady **do 20 maja 2027 r.**, mimo zamknięcia firmy. Może z niego wyniknąć dopłata albo nadpłata. [ZUS o obowiązku również po likwidacji](https://www.zus.pl/-/roczne-rozliczenie-sk%C5%82adki-na-ubezpieczenie-zdrowotne-wa%C5%BCne-informacje).
+
+Stan materiału skilla: 5 listopada 2026 r.; informacje uzupełnione źródłami urzędowymi odczytanymi 7 listopada. Nie sprawdzałem Twojego programu ani zapisów księgi.
+
+**Teraz otwórz ostatni wysłany JPK VAT i sprawdź oznaczenie: JPK_V7M czy JPK_V7K. To rozstrzyga pierwszy termin wysyłki księgi.**

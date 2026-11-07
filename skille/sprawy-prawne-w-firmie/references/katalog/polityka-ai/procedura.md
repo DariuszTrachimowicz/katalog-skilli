@@ -168,3 +168,4 @@ Kancelaria Sejmu udostępnia oficjalne, bezpłatne API Dziennika Ustaw (baza ELI
 - Czy jest jedno gotowe zdanie odmowy, powtarzane przy każdej prośbie o orzeczenie?
 - Czy każdy dokument ma metryczkę wersji (wersja, data, właściciel, data przeglądu)?
 - Czy da się to przeskanować i wyjść z odpowiedzią „co mam i co jeszcze muszę domknąć z ekspertem"?
+- Czy w odpowiedzi nie ma pauz ani półpauz (także w pierwszym zdaniu: „Nie. …” albo „Nie, …”, nigdy pauza po „Nie”), procenty są ze spacją („80 %”, także gdy użytkownik napisał inaczej), a odpowiedź nie odsyła do plików skilla?

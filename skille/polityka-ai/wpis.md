@@ -2,7 +2,7 @@
 nazwa: Polityka AI i rejestr zastosowań
 kategoria: Prawo
 status: gotowy
-wersja: 1.3.0
+wersja: 1.3.1
 poziom: Zaawansowany
 aktualizacja: 2026-11-07
 skrot: Prowadzi firmę przez zbudowanie własnej dokumentacji AI pod obowiązki AI Act, rejestr systemów, politykę dla pracowników, klauzulę do umów, listę praktyk zakazanych, ścieżkę incydentu. Strukturyzuje, nie orzeka zgodności.
