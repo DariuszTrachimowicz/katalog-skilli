@@ -2,9 +2,9 @@
 nazwa: Sprawy prawne w firmie
 kategoria: Prawo
 status: gotowy
-wersja: 1.1.5
+wersja: 1.1.6
 poziom: Działa od razu
-aktualizacja: 2026-11-06
+aktualizacja: 2026-11-07
 skrot: Jeden skill prawny dla firmy bez prawnika na etacie. Sam dobiera moduł do sprawy (umowy, zatrudnienie i B2B, cudzoziemcy, dane osobowe i NIS2, spółka, sukcesja, sprzedaż konsumencka, urzędy i procedury podatkowe, spory, niewypłacalność, marka, najem lokalu, przetargi, pierwsza reakcja w sprawach karnych), sprawdza przepisy we wbudowanych kodeksach i ustawach, pokazuje drogi działania, pisze pisma i przygotowuje kartę sprawy dla prawnika.
 korzysc: Firma wie, co zrobić sama i kiedy iść do prawnika, a prawnik dostaje sprawę gotową do decyzji.
 szukaj: sprawy prawne w firmie bez prawnika, dział prawny w małej firmie, AI prawnik dla firmy, wezwanie do zapłaty wzór pisma, kara umowna miarkowanie, potrącenie wierzytelności, pismo do pracownika kara porządkowa, wypowiedzenie umowy z kontrahentem, odpowiedź na reklamację konsumenta 14 dni, odpowiedzialność zarządu za długi spółki, zatrudnienie cudzoziemca 2026, NIS2 czy moja firma podlega, najem lokalu użytkowego wypowiedzenie, przetarg odwołanie do KIO, znak towarowy zgłoszenie, karta sprawy dla prawnika, kodeks pracy 2026 mobbing, zwolnienie lekarskie kontrola pracodawcy, wypadek przy pracy co robić, czynny żal korekta deklaracji, przeszukanie w firmie, wyciek danych osobowych zgłoszenie UODO

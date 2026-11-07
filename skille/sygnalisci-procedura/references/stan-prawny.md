@@ -52,7 +52,7 @@ Ustawa jest młoda. Pełnotekstowe przeszukanie oficjalnej bazy orzeczeń SN (re
 - Tekst ustawy i jej zmiany: isap.sejm.gov.pl (Dz.U. 2024 poz. 928).
 - Wyjaśnienia Ministerstwa Rodziny, Pracy i Polityki Społecznej: gov.pl/web/rodzina/sygnalisci-w-pytaniach-i-odpowiedziach oraz gov.pl/web/rodzina/ochrona-sygnalistow.
 - Zgłoszenia zewnętrzne i porady dla sygnalistów: gov.pl/web/sygnalisci (Rzecznik Praw Obywatelskich) [WYMAGA WERYFIKACJI: aktualny adres i kanały].
-- Kontrole i infolinia: Państwowa Inspekcja Pracy (pip.gov.pl) [WYMAGA WERYFIKACJI: zakres kontroli PIP w sprawach sygnalistów].
+- Państwowa Inspekcja Pracy (pip.gov.pl): przepisy o ochronie sygnalistów nie dają jej osobnych uprawnień kontrolnych. Przy kontroli PIP może zbadać, czy działania wobec pracownika po zgłoszeniu naruszają prawo pracy; nie rozstrzyga, czy stanowią odwet w rozumieniu przepisów o ochronie sygnalistów (to ocenia sąd). Infolinia PIP udziela porad z prawa pracy, także dotyczących uprawnień pracowniczych sygnalistów (poz. 16 rejestru).
 
 ## Rejestr źródeł
 
@@ -74,3 +74,4 @@ Ustawa jest młoda. Pełnotekstowe przeszukanie oficjalnej bazy orzeczeń SN (re
 | 13 | Orzecznictwo: brak wydzielonej statystyki spraw w sądach powszechnych, brak wytycznych Prokuratora Generalnego, 79 spraw karnych w prokuraturze bez aktu oskarżenia (do 21.09.2026) | odpowiedź Ministerstwa Sprawiedliwości z 16.10.2026 na interpelację nr 19392 (api.sejm.gov.pl/sejm/term10/interpellations/19392, załącznik i19392-o1.pdf) | odczytane 6 listopada 2026 |
 | 14 | Orzeczenia SN na gruncie ustawy | repozytorium2.sn.pl (oficjalne API SN), wyszukiwanie pełnotekstowe 6 listopada 2026: brak orzeczeń merytorycznych; o działaniu w czasie I KK 142/25 (27.05.2025) i I PSK 80/26 (27.01.2026), pełne teksty przeczytane | sprawdzone dla SN; sądy powszechne DO WERYFIKACJI |
 | 15 | Kara TSUE dla Polski za opóźnione wdrożenie dyrektywy 2019/1937: ryczałt 7 mln euro i 40 tys. euro dziennie | wyrok TSUE z 25.04.2024, C-147/23 Komisja przeciwko Polsce (eur-lex.europa.eu, CELEX 62023CJ0147) | sentencja odczytana 6 listopada 2026 |
+| 16 | Rola PIP: brak osobnych uprawnień kontrolnych w przepisach o ochronie sygnalistów, kontrola tylko w zakresie prawa pracy, infolinia z poradami | ustawa o ochronie sygnalistów (brak przepisu o PIP, tekst Dz.U. 2024 poz. 928); ustawa o Państwowej Inspekcji Pracy art. 10 ust. 1 pkt 1 (Dz.U. 2024 poz. 1712); stanowisko Głównego Inspektora Pracy, „Inspektor Pracy” 9/2024, s. 22, i komunikat krakow.pip.gov.pl o infolinii dla sygnalistów | teksty ustaw sprawdzone przez sędziego (Codex) 7 listopada 2026; stanowisko i komunikat PIP wskazane przez sędziego, strony pip.gov.pl blokują odczyt automatyczny (CAPTCHA), DO WERYFIKACJI
