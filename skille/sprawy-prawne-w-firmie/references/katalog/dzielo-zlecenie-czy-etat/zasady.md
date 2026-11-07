@@ -176,8 +176,14 @@ Sygnatury tylko na pytanie o źródło. SN sprawdzone 5 listopada 2026 r. w SAOS
 | SN I PKN 127/00, wyrok z 5 grudnia 2000 r. | Umowa nazwana umową o dzieło może zostać uznana za umowę o pracę. |
 | SN III PK 96/15, wyrok z 14 kwietnia 2016 r. | Pozew o ustalenie stosunku pracy się nie przedawnia, ale nie przerywa przedawnienia roszczeń o świadczenia. |
 | SN II USKP 213/21, wyrok z 25 października 2022 r. | Umowa o dzieło jako umowa rezultatu musi zawierać kryteria, według których da się sprawdzić jej wykonanie. |
+| SN II UK 589/17, wyrok z 21 lutego 2019 r. | Dzieło to jednorazowy, sprawdzalny rezultat określony przy zawarciu umowy; redakcja i korekta książek według przyjętych wzorców pracy, bez takiego rezultatu, nie są dziełem. |
+| SN I UK 83/19, wyrok z 21 października 2020 r. | Proste, powtarzalne prace fizyczne na budowie rozliczane od powierzchni nie są dziełem; liczba metrów mierzy nakład pracy, nie jest cechą dzieła. |
+| SN III USKP 57/21, wyrok z 6 maja 2021 r. | Gdy liczy się powtarzalna praca mierzona ilością (czasem) i starannością, a nie jednostkowy rezultat, umowa nie jest dziełem, nawet jeśli praca daje określony wynik, np. wykonywanie wielu takich samych katalogów według wzornika. |
+| SN II USKP 3/23, wyrok z 11 czerwca 2024 r. | Tłumaczenia typowych dokumentów, gdy umowa określa tylko czynności, a nie zindywidualizowany rezultat, który da się sprawdzić, to usługi, do których stosuje się przepisy o zleceniu, mimo kwalifikacji tłumacza. |
+| SN II USKP 132/23, wyrok z 26 listopada 2024 r. | Jednorazowe opracowanie z terminem, którego parametry i wieloetapowy odbiór określił zamawiający, może być dziełem; szczegółowe wytyczne służą wtedy sprawdzeniu rezultatu i same nie przesądzają o usłudze. |
+| SN I USKP 144/23, wyrok z 4 marca 2025 r. | Wykonanie umówionej liczby takich samych rzeczy według szablonu zamawiającego, z jego materiałów i bez indywidualnych parametrów poszczególnych sztuk, nie jest dziełem; proste, powtarzalne czynności z reguły nie są dziełem. |
 
-Do weryfikacji (nie podawaj jako źródła): pozostałe orzecznictwo SN z lat 2017 do 2026 poza powołanym wyżej (przegląd API SN 7.11.2026 objął wybór); orzeczenia powołane w uzasadnieniach, nieotwarte.
+Do weryfikacji (nie podawaj jako źródła): orzeczenia powołane w uzasadnieniach, nieotwarte. Przegląd API SN 7.11.2026 objął 110 wyroków SN z lat 2017-2026 o umowie o dzieło i pracach powtarzalnych (przesiane w pełnym tekście, 15 uzasadnień przeczytanych w części SN, postanowienia o odmowie przyjęcia skargi pominięte); rozbieżności linii nie stwierdzono.
 
 ## 12. Rejestr źródeł
 
@@ -198,3 +204,4 @@ Do weryfikacji (nie podawaj jako źródła): pozostałe orzecznictwo SN z lat 20
 | biznes.gov.pl, składki przedsiębiorcy | https://www.biznes.gov.pl/pl/portal/00274 | 5.11.2026 | 5 652 zł, 1 441,80 zł |
 | gov.pl, RUD i staż | https://www.gov.pl/web/rodzina/obowiazek-zglaszania-do-zus-umow-o-dzielo-zawieranych-od-1-stycznia-2021-r ; https://www.gov.pl/web/rodzina/staz-pracy-qa | 5.11.2026 | RUD od 2021 r. i wyłączenia według materiałów, staż przez eZUS |
 | SAOS, orzeczenia SN | https://www.saos.org.pl/judgments/98372 (oraz 165312, 168364, 244616, 100727, 243135, 101214, 94657, 80133, 245112) | 5.11.2026 | orzeczenia z sekcji 11 |
+| API orzeczeń SN (repozytorium2.sn.pl) | https://repozytorium2.sn.pl/api/v1/orzeczenia | 7.11.2026 | orzeczenia z sekcji 11 z lat 2017-2026 (II UK 589/17, I UK 83/19, III USKP 57/21, II USKP 213/21, II USKP 3/23, II USKP 132/23, I USKP 144/23) |

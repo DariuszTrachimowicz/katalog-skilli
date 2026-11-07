@@ -233,7 +233,7 @@ Podstawa: ustawa o nieodpłatnej pomocy prawnej art. 4, 5; ustawa z 26 lipca 202
 
 ## 18. Orzecznictwo
 
-Sygnatury tylko na pytanie o źródło. SN sprawdzone 5 listopada 2026 r. w SAOS (treść przeczytana; baza SN w SAOS kończy się ok. 2016 r.); TSUE w polskiej wersji z repozytorium Urzędu Publikacji UE.
+Sygnatury tylko na pytanie o źródło. SN sprawdzone 5 listopada 2026 r. w SAOS (treść przeczytana; baza SN w SAOS kończy się ok. 2016 r.), orzeczenia SN po 2016 r. 7 listopada 2026 r. w API SN (repozytorium2.sn.pl, pełny tekst); TSUE w polskiej wersji z repozytorium Urzędu Publikacji UE.
 
 | Sygnatura i data | Teza po skutku |
 |---|---|
@@ -247,12 +247,14 @@ Sygnatury tylko na pytanie o źródło. SN sprawdzone 5 listopada 2026 r. w SAOS
 | SN I CSK 633/10, wyrok z 11 sierpnia 2011 r. | Roszczenia majątkowe przedawniają się według ogólnych terminów, o naprawienie szkody według przepisów o czynach niedozwolonych. |
 | SN I CSK 109/13, wyrok z 6 grudnia 2013 r. | Wykorzystanie fragmentów filmu w reklamie bez uzgodnienia z twórcą narusza integralność i rzetelne wykorzystanie. |
 | SN V CSK 599/14, wyrok z 3 czerwca 2015 r. | Przeniesienie elementów grafiki na produkt z pominięciem części i bez wskazania autora narusza integralność. |
+| SN IV CSKP 44/21, wyrok z 14 października 2021 r. | Pól eksploatacji nie trzeba wyliczać, ale muszą dać się ustalić z umowy według zwykłych zasad wykładni, a wątpliwości rozstrzyga się na korzyść twórcy; reguła o sposobie korzystania zgodnym z charakterem i przeznaczeniem utworu nie zastępuje pól, których umowa w ogóle nie wskazuje. |
+| SN II CSKP 213/21, wyrok z 15 października 2021 r. | Licencja niewyłączna nie wymaga szczególnej formy i może wynikać z zachowania stron; w sprawie obejmowała korzystanie zgodne z charakterem i przeznaczeniem utworów znanym twórczyni; bez wyraźnego postanowienia o przeniesieniu praw przyjmuje się licencję. |
 | TSUE C-5/08 Infopaq, wyrok z 16 lipca 2009 r. | Ochrona obejmuje elementy będące wyrazem własnej twórczości intelektualnej autora. |
 | TSUE C-145/10 Painer, wyrok z 1 grudnia 2011 r. | Fotografia portretowa jest chroniona, gdy wynika ze swobodnych i twórczych wyborów autora. |
 | TSUE C-683/17 Cofemel, wyrok z 12 września 2019 r. | Sam efekt estetyczny nie przesądza o ochronie. |
 | TSUE C-833/18 Brompton, wyrok z 11 czerwca 2020 r. | Forma częściowo techniczna jest chroniona, gdy wyraża swobodne i twórcze wybory autora. |
 
-Do weryfikacji (nie podawaj jako źródła i nie wymieniaj sygnatury): orzeczenia SN po 2016 r. o polach eksploatacji, formie i licencji dorozumianej; orzeczenie o zwrocie „na wszystkich znanych polach eksploatacji”; postanowienie SN cytowane w III CK 124/05 o formie licencji niewyłącznej; sprawa TSUE o AI i prawie autorskim; orzecznictwo o wymianie skanów i podpisie zaufanym; jakiekolwiek orzeczenie wprost o wynikach AI.
+Do weryfikacji (nie podawaj jako źródła i nie wymieniaj sygnatury): orzeczenie o samym zwrocie „na wszystkich znanych polach eksploatacji” (w API SN 7.11.2026 brak rozstrzygnięcia tej formuły, zwrot występuje tylko w opisie umowy w II CSKP 1374/22); postanowienie SN z 19 listopada 2002 r., V KKN 323/01, cytowane w III CK 124/05 o formie licencji niewyłącznej (brak w API SN; tę regułę potwierdza II CSKP 213/21); sprawa TSUE o AI i prawie autorskim; orzecznictwo o wymianie skanów i podpisie zaufanym przy przeniesieniu praw (w API SN brak orzeczenia na gruncie prawa autorskiego); jakiekolwiek orzeczenie wprost o wynikach AI.
 
 ## 19. Rejestr źródeł
 
@@ -270,4 +272,5 @@ Do weryfikacji (nie podawaj jako źródła i nie wymieniaj sygnatury): orzeczeni
 | Rozporządzenie (UE) 2024/1689 i zmiana 2026/1744 | http://publications.europa.eu/resource/celex/32024R1689 ; http://publications.europa.eu/resource/celex/32026R1744 | 5.11.2026 | przejrzystość treści AI, terminy |
 | Ustawa o nieodpłatnej pomocy prawnej, Dz.U. 2026 poz. 44 (z nowelizacją Dz.U. 2025 poz. 1166 od 1.01.2026; art. 4 i 5 odczytane w researchu skilla nakaz-zaplaty-co-dalej) | https://eli.gov.pl/eli/DU/2026/44/ogl | 5.11.2026 | pomoc prawna, oświadczenie ustne przy poradzie zdalnej, jednoosobowa firma bez pracowników |
 | SAOS (orzeczenia SN) | https://www.saos.org.pl | 5.11.2026 | orzeczenia z sekcji 18 |
+| API orzeczeń SN (repozytorium2.sn.pl) | https://repozytorium2.sn.pl/api/v1/orzeczenia | 7.11.2026 | orzeczenia SN po 2016 r. z sekcji 18 (IV CSKP 44/21, II CSKP 213/21) |
 | Wyroki TSUE (PL) | http://publications.europa.eu/resource/celex/62008CJ0005 i analogicznie | 5.11.2026 | Infopaq, Painer, Cofemel, Brompton |

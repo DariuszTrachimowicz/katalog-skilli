@@ -245,3 +245,7 @@
 - Błędy znalezione przy okazji: wyrok II W 58/23 w module cudzoziemcy dotyczył wykroczenia drogowego (usunięty); skill rodo-dokumentacja używał brzmienia RODO sprzed sprostowania z 2018 r. („naruszeń prawa” zamiast „czynów zabronionych”, 5 miejsc); data e-księgi w zamkniecie-firmy (1 lipca 2026 r. zamiast przesyłania za 2026 r. u czynnych podatników VAT i za 2027 r. u pozostałych); sprzeciw przy zakupie kontrolnym opisany za szeroko; C-632/17 to postanowienie, nie wyrok.
 - Grupa D: sekcja o pułapce deregulacyjnej w rodo-dokumentacja przeredagowana (Kodeks pracy i ustawa o ochronie sygnalistów potwierdzone, niepewność tylko dla pozostałych ustaw sektorowych).
 - Grupa B po tej rundzie: 6 + 2 = 8 pozycji dla Michała.
+
+## Grupa B (7 listopada 2026, wieczorem)
+
+8 pozycji sprawdzonych bez Michała (wynik w `docs/dla-michala-2026-11-07.md`): 6 zamkniętych, 2 częściowo (najem: brak SN; remont po C-97/22: brak orzeczeń). Do baz płatnych zostają 4 drobne pozycje opisane w tamtym pliku.

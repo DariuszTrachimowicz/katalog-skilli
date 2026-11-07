@@ -22,3 +22,18 @@ Michał, w skillach prawnych katalogu zostało 8 miejsc, których nie da się sp
 8. **Umowa o dzieło a orzecznictwo SN 2017-2026.** Sprawdzono 6 z 29 trafień w API SN. Pytanie: które orzeczenia z tego okresu są dziś najważniejsze dla odróżnienia dzieła od zlecenia (zwłaszcza przy pracach powtarzalnych)?
 
 Wyniki wpiszę do skilli i oznaczę pozycje jako zamknięte. Lista w repo: `docs/do-sprawdzenia-podzial.md` (grupa B).
+
+## Wynik (7 listopada 2026, po południu): zrobione bez Michała
+
+Na polecenie Darka sprawdzone automatycznie (CBOSA tylko za zgodą Darka, 8 zapytań w jego przeglądarce; pełne teksty z /doc/ w `docs/orzeczenia-nsa/`; API SN; portale sądów apelacyjnych; serwis TK):
+
+1. Cztery wyroki III FSK: tezy zgodne, uzupełnione daty, formy i adresy; doprecyzowana teza III FSK 656/25.
+2. III OSK 2260/24 (27.01.2026): NSA nie oceniał formy zgody; prawomocny WSA w Olsztynie II SA/Ol 320/24 uznał zgodę ustną odnotowaną przez kontrolujących (bez sprzeciwu i zastrzeżeń) za wystarczającą.
+3. „NSA 19.02.2026” to III OSK 378/23: telefon z ofertą po cofnięciu zgody narusza RODO (uzasadniony interes przegrywa); zdanie w skillu zawężone do marketingu telefonicznego. III OSK 2595/22 i 18/23 dotyczą tego, kiedy IP i cookies są danymi osobowymi (rejestr poprawiony).
+4. Najem lokalu: SA Katowice V ACa 163/13 (685¹ także przy czasie oznaczonym, brak zgody kończy najem), reguła dla umów sprzed 2005 r.; orzeczenia SN brak.
+5. Osoba najbliższa: TK P 27/13 (12.03.2014) i uchwała SN I KZP 26/04: obowiązek wskazania trwa przy wykroczeniu.
+6. Remont po C-97/22: polskiego orzeczenia w bezpłatnych źródłach brak, oznaczenie zostaje.
+7. Prawa autorskie: IV CSKP 44/21, II CSKP 213/21 dopisane; o „wszystkich znanych polach” i skanach brak orzeczeń SN.
+8. Dzieło: 110 wyroków SN 2017-2026 przesianych, 6 dopisanych do tabeli.
+
+**Zostaje dla Michała (bazy płatne, opcjonalnie):** polskie orzecznictwo po C-97/22 (remont); linia SN o podwyżce czynszu przy najmie terminowym; postanowienie SN V KKN 323/01; wyroki WSA II SA/Wa 715/22 i 2124/25 (zgody na stronie).

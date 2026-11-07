@@ -59,7 +59,7 @@ Terminy liczone od doręczenia, chyba że wskazano inaczej (w procedurze adminis
 | Mandat przy wręczeniu | przyjęcie albo odmowa | od razu | funkcjonariusz | odmowa: sprawa w sądzie |
 | Mandat prawomocny | wniosek o uchylenie, tylko z wąskich przyczyn (w części nadwyżki, gdy grzywna ponad limit) | co do zasady 7 dni od uprawomocnienia; wyjątkowo w każdym czasie | sąd właściwy dla miejsca nałożenia | zwrot grzywny w zakresie uchylenia |
 | Mandat zaoczny | zapłata | 14 dni od wystawienia (mandat zostawiony na miejscu) albo od doręczenia (mandat doręczony) | organ wskazany | brak zapłaty: wniosek do sądu |
-| Wezwanie do wskazania kierującego | wskazanie | termin z wezwania | organ wzywający | niewskazanie to osobne wykroczenie (wyjątek: pojazd użyty wbrew woli i wiedzy właściciela przez nieznaną osobę, czemu nie mógł zapobiec) |
+| Wezwanie do wskazania kierującego | wskazanie | termin z wezwania | organ wzywający | niewskazanie to osobne wykroczenie (wyjątek: pojazd użyty wbrew woli i wiedzy właściciela przez nieznaną osobę, czemu nie mógł zapobiec; gdy wskazanie naraziłoby osobę najbliższą na odpowiedzialność za przestępstwo, a nie tylko za wykroczenie, granice obowiązku z prawnikiem, zob. zasady) |
 | Uchybiony termin procesowy | prośba o przywrócenie + samo pismo | 7 dni od ustania przeszkody | urząd; przy skardze do sądu wniosek za pośrednictwem urzędu razem ze skargą | wymaga braku winy; nie dotyczy terminów materialnych; przy mandacie do weryfikacji |
 
 ## 3. Szablon odpowiedzi w trybie 1
