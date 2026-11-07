@@ -1,0 +1,168 @@
+{
+  "opis": "Projekty ustaw, o których mówią skille katalogu. Automat (narzedzia/projekty-ustaw.py, cron na VPS w poniedziałki) sprawdza w API Sejmu etap każdego procesu i nowe procesy dla fraz; przy zmianie pisze na adres kontaktowy katalogu. Po zmianie: przegląd skilli z kolumny skille.",
+  "procesy": [
+    {
+      "nr": "2865",
+      "nazwa": "Najem krótkoterminowy (usługi hotelarskie)",
+      "skille": [
+        "najem-mieszkania-pod-lupa",
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "3085",
+      "nazwa": "UD260: upadłość konsumencka (Prawo upadłościowe, restrukturyzacyjne, KRZ)",
+      "skille": [
+        "upadlosc-konsumencka-przygotowanie",
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "1263",
+      "nazwa": "Prawo restrukturyzacyjne i inne ustawy",
+      "skille": [
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "2027",
+      "nazwa": "Kodeks spółek handlowych i inne ustawy",
+      "skille": [
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "2737",
+      "nazwa": "Kodeks spółek handlowych (druk 2737)",
+      "skille": [
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "1311",
+      "nazwa": "Krajowy Rejestr Sądowy i inne ustawy",
+      "skille": [
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "1304",
+      "nazwa": "KPC, KC i inne ustawy (druk 1304)",
+      "skille": [
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "1425",
+      "nazwa": "Kodeks cywilny (druk 1425)",
+      "skille": [
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "1442",
+      "nazwa": "Kodeks postępowania cywilnego (druk 1442)",
+      "skille": [
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "1449",
+      "nazwa": "CEIDG (druk 1449)",
+      "skille": [
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "2076",
+      "nazwa": "CEIDG (druk 2076)",
+      "skille": [
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "2447",
+      "nazwa": "Ochrona praw lokatorów (projekt poselski, druk 2447)",
+      "skille": [
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "3003",
+      "nazwa": "Ustawa o środkach ograniczających",
+      "skille": [
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "3004",
+      "nazwa": "Krajowy Rejestr Sądowy i inne ustawy (druk 3004)",
+      "skille": [
+        "pelnomocnictwo-w-firmie",
+        "spolka-zoo-przygotowanie",
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "3008",
+      "nazwa": "Mediatorzy sądowi",
+      "skille": [
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "3163",
+      "nazwa": "Przeciwdziałanie praniu pieniędzy (AML, druk 3163)",
+      "skille": [
+        "sprawy-prawne-w-firmie",
+        "procedura-aml"
+      ]
+    },
+    {
+      "nr": "3299",
+      "nazwa": "Kodeks postępowania cywilnego (druk 3299)",
+      "skille": [
+        "nakaz-zaplaty-co-dalej",
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "nr": "1440",
+      "nazwa": "KSH, odpowiedzialność podmiotów zbiorowych i AML (druk 1440)",
+      "skille": [
+        "sprawy-prawne-w-firmie"
+      ]
+    }
+  ],
+  "szukaj": [
+    {
+      "fraza": "jednakowego wynagrodzenia",
+      "nazwa": "UC127: jawność płac i luka płacowa (dyrektywa 2023/970)",
+      "skille": [
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "fraza": "o prawach konsumenta",
+      "nazwa": "UC154 i UC169: prawo do naprawy, przycisk odstąpienia",
+      "skille": [
+        "regulamin-sklepu-checklista",
+        "sprawy-prawne-w-firmie"
+      ]
+    },
+    {
+      "fraza": "o ochronie sygnalistów",
+      "nazwa": "Nowelizacja ustawy o ochronie sygnalistów",
+      "skille": [
+        "sygnalisci-procedura"
+      ]
+    },
+    {
+      "fraza": "testament",
+      "nazwa": "Reforma testamentów",
+      "skille": [
+        "spadek-krok-po-kroku"
+      ]
+    }
+  ]
+}

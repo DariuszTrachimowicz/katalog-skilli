@@ -61,6 +61,16 @@ Sąd Najwyższy udostępnia oficjalne, bezpłatne API (repozytorium2.sn.pl). Gdy
 - API obejmuje tylko Sąd Najwyższy. Orzeczeń NSA, sądów powszechnych i Trybunału Konstytucyjnego skrypt nie sprawdza; dla nich zostaje rejestr i zastrzeżenie.
 - Bez uruchamiania kodu, ale z pobieraniem stron, to samo daje adres `https://repozytorium2.sn.pl/api/v1/orzeczenia?sygnatura=III%20CZP%2084%2F22` (lista z id, datą i formą; pełny tekst pod `https://repozytorium2.sn.pl/api/v1/orzeczenia/<id>/plik/html`).
 
+## Aktualność przepisów na żywo
+
+Kancelaria Sejmu udostępnia oficjalne, bezpłatne API Dziennika Ustaw (baza ELI). Gdy środowisko pozwala uruchamiać kod z dostępem do sieci, korzystaj z dołączonego skryptu `scripts/akty_eli.py` (na Windows `python` albo `py`, na Linux i macOS także `python3`):
+
+- Zanim oprzesz wniosek na przepisie z rejestru źródeł skilla, sprawdź akt: `python scripts/akty_eli.py sprawdz "Dz.U. 2026 poz. 795"` (adres tekstu jednolitego z rejestru; gdy rejestr albo spis aktów podaje datę brzmienia, zawsze dodaj `--od` z tą datą w formacie RRRR-MM-DD, a gdy rejestr podaje sam akt, a nie tekst jednolity, `--od` jest obowiązkowe; bez niego skrypt przyjmuje datę stanu tekstu jednolitego). Skrypt pokazuje, czy akt obowiązuje, najnowszy tekst jednolity i zmiany wchodzące w życie po dacie stanu, także przyszłe.
+- Gdy jest zmiana po dacie stanu, sprawdź, czy dotyczy przepisu, na którym się opierasz: `python scripts/akty_eli.py zmiana "Dz.U. 2026 poz. 184" --szukaj "art. 498"`. Jeśli dotyczy albo nie da się tego ustalić (np. akt zmieniający jest tylko w PDF), mówisz o tym wprost i oznaczasz wniosek `[WYMAGA WERYFIKACJI: zmiana Dz.U. ..., adres z wyniku skryptu]`; nie opierasz się bez zastrzeżenia na brzmieniu z rejestru.
+- Wynik skryptu to sygnał, że brzmienie mogło się zmienić, a nie analiza prawna. Podajesz źródło (baza ELI Kancelarii Sejmu) i datę odczytu; dalej mówisz po skutku, z podstawami tylko tam, gdzie skill je podaje.
+- Zapytania pojedynczo. Bez sieci albo przy błędzie mówisz o stanie z rejestru źródeł z jego datą.
+- Bez uruchamiania kodu, ale z pobieraniem stron: otwórz adres tekstu jednolitego, np. `https://api.sejm.gov.pl/eli/acts/DU/2026/795`, odczytaj w polu „references” pod kluczem „Tekst jednolity dla aktu” akt bazowy i otwórz jego adres (np. `https://api.sejm.gov.pl/eli/acts/DU/1964/93`); dopiero tam, pod kluczem „Akty zmieniające”, są zmiany z datami wejścia w życie. Sam odczyt obwieszczenia nie wystarcza.
+
 ## Samokontrola przed oddaniem
 
 Sprawdź, czy: tryb, strona i fakty ustalone; kwalifikacja opisana jako przewaga cech, nie rozstrzygnięcie; nie ma treści umowy ani przykładowych zapisów; nie ma wyliczonych kwot poza zasadami z datą stanu; obejście oddzielone od wariantów do omówienia z prawnikiem; brak „jedynego” albo „bezpiecznego” wariantu; nie ma artykułów ani linków do aktów; dane identyfikujące niepowielone; anomalie zgłoszone w pierwszym zdaniu; w wyjściu nie ma pauz ani półpauz.

@@ -2,7 +2,7 @@
 nazwa: Remont, umowa i odbiór
 kategoria: Prawo
 status: gotowy
-wersja: 1.1.0
+wersja: 1.2.0
 poziom: Działa od razu
 aktualizacja: 2026-11-07
 skrot: Prowadzi osobę prywatną przez remont albo budowę zlecane ekipie (co powinno być w umowie, ryczałt czy kosztorys, zaliczka czy zadatek, harmonogram, kary, materiały, podwykonawcy, odbiór i usterki, rękojmia, umowa podpisana w domu, gdy ekipa się spóźnia, partaczy albo znika), układa kalendarz terminów, teczkę dowodów i pytania do prawnika albo rzeczoznawcy oraz sprawdza umowę albo protokół według listy kontrolnej.

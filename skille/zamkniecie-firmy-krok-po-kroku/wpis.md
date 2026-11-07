@@ -2,7 +2,7 @@
 nazwa: Zamknięcie firmy krok po kroku
 kategoria: Prawo
 status: gotowy
-wersja: 1.1.0
+wersja: 1.2.0
 poziom: Działa od razu
 aktualizacja: 2026-11-07
 skrot: Prowadzi przedsiębiorcę z jednoosobową działalnością przez zawieszenie albo zamknięcie firmy, czyli kolejność zgłoszeń do CEIDG, ZUS i urzędu skarbowego, spis z natury i VAT przy likwidacji, kasę fiskalną, pracowników, umowy i przechowywanie dokumentów, z kalendarzem i pytaniami do księgowej.

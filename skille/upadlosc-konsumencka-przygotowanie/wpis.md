@@ -2,7 +2,7 @@
 nazwa: Upadłość konsumencka, przygotowanie
 kategoria: Prawo
 status: gotowy
-wersja: 1.1.0
+wersja: 1.2.0
 poziom: Działa od razu
 aktualizacja: 2026-11-07
 skrot: Tłumaczy, jak przebiega upadłość konsumencka i co z niej wynika, porządkuje Twoje długi, majątek i dokumenty w teczkę pod wniosek do Krajowego Rejestru Zadłużonych i sprawdza kompletność wniosku, który sam przygotowałeś.
