@@ -2,7 +2,7 @@
 nazwa: Spółka z o.o., przygotowanie
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.3
+wersja: 1.1.0
 poziom: Działa od razu
 aktualizacja: 2026-11-07
 skrot: Przed rejestracją spółki z o.o. układa teczkę decyzji wspólników (udziały, wkłady, zarząd i reprezentacja, wyjście wspólnika, śmierć, małżonkowie, impas 50/50, zakaz konkurencji, PKD 2025, rok obrotowy) z tym, co dzieje się bez zapisu w umowie, porównuje S24 z notariuszem, podaje koszty jako reguły, kalendarz po wpisie (NIP-8, CRBR, VAT-R, ZUS, księgi) i sprawdza wklejony projekt umowy.

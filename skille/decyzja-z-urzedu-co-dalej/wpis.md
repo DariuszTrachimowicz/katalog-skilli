@@ -2,7 +2,7 @@
 nazwa: Decyzja z urzędu, co dalej
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.4
+wersja: 1.1.0
 poziom: Działa od razu
 aktualizacja: 2026-11-07
 skrot: Rozpoznaje pismo z urzędu (decyzja, postanowienie, kara, decyzja podatkowa, upomnienie, tytuł wykonawczy, mandat, wezwanie), ustala, od kiedy biegnie termin (awizo, e-Doręczenia, pełnomocnik), układa kalendarz z warunkową datą, opisuje drogi i ich skutki (odwołanie, wniosek o ponowne rozpatrzenie, zażalenie, skarga, sprzeciw, przywrócenie terminu, wstrzymanie, raty, zarzut w egzekucji) i daje teczkę oraz pytania do prawnika.

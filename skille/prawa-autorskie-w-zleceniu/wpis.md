@@ -2,7 +2,7 @@
 nazwa: Prawa autorskie w zleceniu
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.3
+wersja: 1.1.0
 poziom: Działa od razu
 aktualizacja: 2026-11-07
 skrot: Wyjaśnia zleceniodawcy i wykonawcy, kto ma prawa autorskie do zamówionego logo, kodu, zdjęć albo tekstu, czym różni się przeniesienie od licencji, co musi być na piśmie, czego brakuje w klauzuli i jakie pytania zadać prawnikowi.

@@ -2,7 +2,7 @@
 nazwa: Dzieło, zlecenie czy etat
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.5
+wersja: 1.1.0
 poziom: Działa od razu
 aktualizacja: 2026-11-07
 skrot: Z opisu współpracy pokazuje, do której umowy co do zasady pasuje układ (umowa o pracę, zlecenie, dzieło, B2B), jakie są skutki składkowe i podatkowe wariantów, co wygląda jak ukryty etat i czym grozi kontrola inspekcji pracy, ZUS albo urzędu skarbowego.
