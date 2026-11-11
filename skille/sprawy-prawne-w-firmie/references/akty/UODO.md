@@ -1,11 +1,11 @@
 # Ustawa o ochronie danych osobowych (UODO)
 
 - Akt: Ustawa z dnia 10 maja 2018 r. o ochronie danych osobowych (ELI DU/2018/1000).
-- Brzmienie: tekst ujednolicony Kancelarii Sejmu z dnia 2026-08-18, opracowany na podstawie: t.j. Dz. U. z 2019 r. poz. 1781, z 2026 r. poz. 252, 548, 1003.
+- Brzmienie: tekst ujednolicony Kancelarii Sejmu z dnia 2026-11-09, opracowany na podstawie: t.j. Dz. U. z 2019 r. poz. 1781, z 2026 r. poz. 252, 548, 1003.
 - Brzmienie w nawiasach kwadratowych [ ] obowiązuje do dnia podanego w notce ISAP, brzmienie w nawiasach ostrych < > od tego dnia. Jeśli data z notki już minęła, stosuj brzmienie w < >.
 - Moc wiążącą ma tekst ogłoszony w Dzienniku Ustaw; to jest kopia robocza do wyszukiwania. Przypisy pominięte, półpauzy zamienione na dywiz, indeksy górne jako znaki indeksu (np. Art. 22¹).
-- Pobrano z api.sejm.gov.pl 2026-11-06. Źródło: https://api.sejm.gov.pl/eli/acts/DU/2018/1000/text/U/D20181000Lj.pdf
-- Zmiany z datą wejścia w życie po dniu pobrania (sprawdź, czy tekst już je uwzględnia): brak w bazie ELI.
+- Pobrano z api.sejm.gov.pl 2026-11-11. Źródło: https://api.sejm.gov.pl/eli/acts/DU/2018/1000/text/U/D20181000Lj.pdf
+- Zmiany z datą wejścia w życie po dacie tekstu, których tekst nie wymienia w podstawie (sprawdź, czy już je uwzględnia): brak w bazie ELI.
 - Przy dostępie do sieci sprawdź aktualność na isap.sejm.gov.pl albo dziennikustaw.gov.pl.
 
 Dz. U. 2018 poz. 1000 U S TAWA z dnia 10 maja 2018 r. o ochronie danych osobowych
@@ -269,9 +269,8 @@ Art. 57. 1. Administrator może wystąpić do Prezesa Urzędu z wnioskiem o prze
 Art. 58. Jeżeli Prezes Urzędu, na podstawie posiadanych informacji, uzna, że doszło do naruszenia przepisów dotyczących przetwarzania danych osobowych, może żądać wszczęcia postępowania dyscyplinarnego lub innego przewidzianego prawem postępowania przeciwko osobom, które dopuściły się naruszeń, i poinformowania go, w określonym terminie, o wynikach tego postępowania i podjętych działaniach.
 
 Art. 59. 1. Prezes Urzędu w sprawach ochrony danych osobowych współpracuje z niezależnymi organami nadzorczymi powołanymi na podstawie art. 91 rozporządzenia 2016/679. 2. Prezes Urzędu może zawrzeć z organami, o których mowa w ust. 1, porozumienie o współpracy i wzajemnym przekazywaniu informacji.
-> Notka ISAP: Dodany art. 59a wejdzie w życie z dn. 28.10.2026 r. (Dz. U. z 2026 r. poz. 1003).
 
-<Art. 59a. Prezes Urzędu współpracuje z Komisją Rozwoju i Bezpieczeństwa Sztucznej Inteligencji.>
+Art. 59a. Prezes Urzędu współpracuje z Komisją Rozwoju i Bezpieczeństwa Sztucznej Inteligencji.
 
 ## Rozdział 7 Postępowanie w sprawie naruszenia przepisów o ochronie danych osobowych
 

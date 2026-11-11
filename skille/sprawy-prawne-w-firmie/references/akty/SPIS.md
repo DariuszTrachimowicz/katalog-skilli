@@ -14,18 +14,18 @@ Plik aktu: `references/akty/<SKRÓT>.md`. Szukaj przepisu wzorcem `Art. 30.` alb
 | KPA | Kodeks postępowania administracyjnego | 2025-12-12 | t.j. Dz. U. z 2025 r. poz. 1691 |
 | OP | Ordynacja podatkowa | 2026-10-08 | t.j. Dz. U. z 2026 r. poz. 622, 825, 846, 875, 1098, 1154, 1206 |
 | PPSA | Prawo o postępowaniu przed sądami administracyjnymi | 2026-10-09 | t.j. Dz. U. z 2026 r. poz. 143, 846 |
-| UODO | Ustawa o ochronie danych osobowych | 2026-08-18 | t.j. Dz. U. z 2019 r. poz. 1781, z 2026 r. poz. 252, 548, 1003 |
+| UODO | Ustawa o ochronie danych osobowych | 2026-11-09 | t.j. Dz. U. z 2019 r. poz. 1781, z 2026 r. poz. 252, 548, 1003 |
 | UPK | Ustawa o prawach konsumenta | 2026-10-29 | t.j. Dz. U. z 2026 r. poz. 1244, 1353 |
 | UOKIK | Ustawa o ochronie konkurencji i konsumentów | 2026-10-16 | t.j. Dz. U. z 2025 r. poz. 1714, z 2026 r. poz. 1296 |
 | CENY | Ustawa o informowaniu o cenach towarów i usług | 2023-02-02 | t.j. Dz. U. z 2023 r. poz. 168 |
 | SDE | Ustawa o świadczeniu usług drogą elektroniczną | 2026-10-16 | t.j. Dz. U. z 2024 r. poz. 1513, z 2026 r. poz. 1296 |
 | DOST | Ustawa o zapewnianiu spełniania wymagań dostępności niektórych produktów i usług | 2024-05-17 | tekst ogłoszony |
 | ZATORY | Ustawa o przeciwdziałaniu nadmiernym opóźnieniom w transakcjach handlowych | 2023-09-27 | t.j. Dz. U. z 2023 r. poz. 1790 |
-| KOSZTY | Ustawa o kosztach sądowych w sprawach cywilnych | 2026-08-18 | t.j. Dz. U. z 2025 r. poz. 1228, z 2026 r. poz. 346, 473, 1003 |
+| KOSZTY | Ustawa o kosztach sądowych w sprawach cywilnych | 2026-11-09 | t.j. Dz. U. z 2025 r. poz. 1228, z 2026 r. poz. 346, 473, 1003 |
 | PU | Prawo upadłościowe | 2026-10-09 | t.j. Dz. U. z 2026 r. poz. 913, 1206 |
 | PR | Prawo restrukturyzacyjne | 2026-10-08 | t.j. Dz. U. z 2026 r. poz. 533, 1206 |
 | PZP | Prawo zamówień publicznych | 2026-07-28 | t.j. Dz. U. z 2026 r. poz. 793 |
-| KSC | Ustawa o krajowym systemie cyberbezpieczeństwa | 2026-10-08 | t.j. Dz. U. z 2026 r. poz. 20, 252, 815, 1003, 1206 |
+| KSC | Ustawa o krajowym systemie cyberbezpieczeństwa | 2026-11-09 | t.j. Dz. U. z 2026 r. poz. 20, 252, 815, 1003, 1206 |
 | CUDZ | Ustawa o cudzoziemcach | 2026-04-07 | t.j. Dz. U. z 2025 r. poz. 1079, 1794, z 2026 r. poz. 203 |
 | PRACACUDZ | Ustawa o warunkach dopuszczalności powierzania pracy cudzoziemcom | 2026-06-17 | Dz. U. z 2025 r. poz. 621, 1794, z 2026 r. poz. 203, 473, 734 |
 | ZNK | Ustawa o zwalczaniu nieuczciwej konkurencji | 2026-01-30 | t.j. Dz. U. z 2026 r. poz. 85 |
@@ -42,7 +42,7 @@ Plik aktu: `references/akty/<SKRÓT>.md`. Szukaj przepisu wzorcem `Art. 30.` alb
 | PIP | Ustawa o Państwowej Inspekcji Pracy | 2026-07-31 | t.j. Dz. U. z 2024 r. poz. 1712, z 2025 r. poz. 321, 368, 620, 769, z 2026 r. poz. 160, 473 |
 | PPK | Ustawa o pracowniczych planach kapitałowych | 2026-07-29 | t.j. Dz. U. z 2026 r. poz. 192, 989 |
 | MINWYN | Ustawa o minimalnym wynagrodzeniu za pracę | 2024-12-16 | t.j. Dz. U. z 2024 r. poz. 1773 |
-| SUS | Ustawa o systemie ubezpieczeń społecznych | 2026-10-16 | t.j. Dz. U. z 2026 r. poz. 199, 252, 426, 473, 507, 734 |
+| SUS | Ustawa o systemie ubezpieczeń społecznych | 2026-11-09 | t.j. Dz. U. z 2026 r. poz. 199, 252, 426, 473, 507, 734 |
 | CEIDG | Ustawa o CEIDG i Punkcie Informacji dla Przedsiębiorcy | 2026-10-16 | t.j. Dz. U. z 2026 r. poz. 30, 507, 734 |
 | RACH | Ustawa o rachunkowości | 2026-10-08 | t.j. Dz. U. z 2026 r. poz. 522, 640, 644, 1206 |
 | AML | Ustawa o przeciwdziałaniu praniu pieniędzy oraz finansowaniu terroryzmu | 2026-10-08 | t.j. Dz. U. z 2025 r. poz. 644, 1669, z 2026 r. poz. 875, 1206 |

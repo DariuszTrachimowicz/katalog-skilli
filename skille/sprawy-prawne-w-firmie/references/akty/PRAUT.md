@@ -4,8 +4,8 @@
 - Brzmienie: tekst ujednolicony Kancelarii Sejmu z dnia 2026-10-16, opracowany na podstawie: t.j. Dz. U. z 2025 r. poz. 24, z 2026 r. poz. 1296.
 - Brzmienie w nawiasach kwadratowych [ ] obowiązuje do dnia podanego w notce ISAP, brzmienie w nawiasach ostrych < > od tego dnia. Jeśli data z notki już minęła, stosuj brzmienie w < >.
 - Moc wiążącą ma tekst ogłoszony w Dzienniku Ustaw; to jest kopia robocza do wyszukiwania. Przypisy pominięte, półpauzy zamienione na dywiz, indeksy górne jako znaki indeksu (np. Art. 22¹).
-- Pobrano z api.sejm.gov.pl 2026-11-06. Źródło: https://api.sejm.gov.pl/eli/acts/DU/1994/83/text/U/D19940083Lj.pdf
-- Zmiany z datą wejścia w życie po dniu pobrania (sprawdź, czy tekst już je uwzględnia): brak w bazie ELI.
+- Pobrano z api.sejm.gov.pl 2026-11-11. Źródło: https://api.sejm.gov.pl/eli/acts/DU/1994/83/text/U/D19940083Lj.pdf
+- Zmiany z datą wejścia w życie po dacie tekstu, których tekst nie wymienia w podstawie (sprawdź, czy już je uwzględnia): Dz.U. 2026 poz. 1477, weszła w życie 2026-11-10.
 - Przy dostępie do sieci sprawdź aktualność na isap.sejm.gov.pl albo dziennikustaw.gov.pl.
 
 Dz. U. 1994 Nr 24 poz. 83 U S TAWA z dnia 4 lutego 1994 r. o prawie autorskim i prawach pokrewnych

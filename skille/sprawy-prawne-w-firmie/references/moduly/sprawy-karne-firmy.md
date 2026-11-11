@@ -140,6 +140,7 @@ Orzeczenia otwarte w pełnym tekście (repozytorium SN, 6.11.2026): wyrok SN z 2
 | Akt | Co | Status (6.11.2026) | Źródło |
 |---|---|---|---|
 | Dz. U. z 2026 r. poz. 846 | KKS: mandat karny zaoczny za wykroczenie skarbowe stwierdzone pod nieobecność sprawcy; zgodą jest zapłata grzywny w 14 dni od doręczenia mandatu, mandat staje się prawomocny z chwilą zapłaty w terminie; zmiana podstaw uchylenia (KKS art. 137 § 1 i § 3, KKS art. 138 § 1 pkt 3, § 4 i § 5a, KKS art. 140 § 1, brzmienia w < >). Do 26.12.2026 nie stosujesz; potem tylko do mandatów nakładanych od tej daty. | wchodzi 26.12.2026 | notki ISAP w KKS.md |
+| Dz. U. z 2026 r. poz. 1466 | KK: obowiązkowy zakaz prowadzenia pojazdów przy skazaniu za katastrofę w komunikacji i jej bezpośrednie niebezpieczeństwo (nowe § 1b i 1c w art. 42, zmiana art. 84 § 2); bez wpływu na reguły tego modułu, wbudowany tekst KK jeszcze jej nie zawiera | wchodzi w życie 21.11.2026 (odczyt tekstu ogłoszonego 11.11.2026) | https://api.sejm.gov.pl/eli/acts/DU/2026/1466 |
 
 ---
 

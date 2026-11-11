@@ -4,8 +4,8 @@
 - Brzmienie: tekst ujednolicony Kancelarii Sejmu z dnia 2026-10-29, opracowany na podstawie: t.j. Dz. U. z 2026 r. poz. 1342.
 - Brzmienie w nawiasach kwadratowych [ ] obowiązuje do dnia podanego w notce ISAP, brzmienie w nawiasach ostrych < > od tego dnia. Jeśli data z notki już minęła, stosuj brzmienie w < >.
 - Moc wiążącą ma tekst ogłoszony w Dzienniku Ustaw; to jest kopia robocza do wyszukiwania. Przypisy pominięte, półpauzy zamienione na dywiz, indeksy górne jako znaki indeksu (np. Art. 22¹).
-- Pobrano z api.sejm.gov.pl 2026-11-06. Źródło: https://api.sejm.gov.pl/eli/acts/DU/1997/553/text/U/D19970553Lj.pdf
-- Zmiany z datą wejścia w życie po dniu pobrania (sprawdź, czy tekst już je uwzględnia): brak w bazie ELI.
+- Pobrano z api.sejm.gov.pl 2026-11-11. Źródło: https://api.sejm.gov.pl/eli/acts/DU/1997/553/text/U/D19970553Lj.pdf
+- Zmiany z datą wejścia w życie po dacie tekstu, których tekst nie wymienia w podstawie (sprawdź, czy już je uwzględnia): Dz.U. 2026 poz. 1466, wchodzi w życie 2026-11-21.
 - Przy dostępie do sieci sprawdź aktualność na isap.sejm.gov.pl albo dziennikustaw.gov.pl.
 
 > Notka ISAP: Opracowano na podstawie: t.j. Dz. U. z 2026 r. poz. 1342.

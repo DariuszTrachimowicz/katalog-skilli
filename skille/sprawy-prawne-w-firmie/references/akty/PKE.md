@@ -4,8 +4,8 @@
 - Brzmienie: tekst ujednolicony Kancelarii Sejmu z dnia 2026-10-16, opracowany na podstawie: Dz. U. z 2024 r. poz. 1221, z 2025 r. poz. 637, 820, z 2026 r. poz. 252, 815, 1296.
 - Brzmienie w nawiasach kwadratowych [ ] obowiązuje do dnia podanego w notce ISAP, brzmienie w nawiasach ostrych < > od tego dnia. Jeśli data z notki już minęła, stosuj brzmienie w < >.
 - Moc wiążącą ma tekst ogłoszony w Dzienniku Ustaw; to jest kopia robocza do wyszukiwania. Przypisy pominięte, półpauzy zamienione na dywiz, indeksy górne jako znaki indeksu (np. Art. 22¹).
-- Pobrano z api.sejm.gov.pl 2026-11-06. Źródło: https://api.sejm.gov.pl/eli/acts/DU/2024/1221/text/U/D20241221Lj.pdf
-- Zmiany z datą wejścia w życie po dniu pobrania (sprawdź, czy tekst już je uwzględnia): brak w bazie ELI.
+- Pobrano z api.sejm.gov.pl 2026-11-11. Źródło: https://api.sejm.gov.pl/eli/acts/DU/2024/1221/text/U/D20241221Lj.pdf
+- Zmiany z datą wejścia w życie po dacie tekstu, których tekst nie wymienia w podstawie (sprawdź, czy już je uwzględnia): brak w bazie ELI.
 - Przy dostępie do sieci sprawdź aktualność na isap.sejm.gov.pl albo dziennikustaw.gov.pl.
 
 Dz. U. 2024 poz. 1221 U S TAWA z dnia 12 lipca 2024 r. Prawo komunikacji elektronicznej

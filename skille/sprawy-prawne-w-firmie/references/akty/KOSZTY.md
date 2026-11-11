@@ -1,15 +1,15 @@
 # Ustawa o kosztach sądowych w sprawach cywilnych (KOSZTY)
 
 - Akt: Ustawa z dnia 28 lipca 2005 r. o kosztach sądowych w sprawach cywilnych (ELI DU/2005/1398).
-- Brzmienie: tekst ujednolicony Kancelarii Sejmu z dnia 2026-08-18, opracowany na podstawie: t.j. Dz. U. z 2025 r. poz. 1228, z 2026 r. poz. 346, 473, 1003.
+- Brzmienie: tekst ujednolicony Kancelarii Sejmu z dnia 2026-11-09, opracowany na podstawie: t.j. Dz. U. z 2025 r. poz. 1228, z 2026 r. poz. 346, 473, 1003.
 - Brzmienie w nawiasach kwadratowych [ ] obowiązuje do dnia podanego w notce ISAP, brzmienie w nawiasach ostrych < > od tego dnia. Jeśli data z notki już minęła, stosuj brzmienie w < >.
 - Moc wiążącą ma tekst ogłoszony w Dzienniku Ustaw; to jest kopia robocza do wyszukiwania. Przypisy pominięte, półpauzy zamienione na dywiz, indeksy górne jako znaki indeksu (np. Art. 22¹).
-- Pobrano z api.sejm.gov.pl 2026-11-06. Źródło: https://api.sejm.gov.pl/eli/acts/DU/2005/1398/text/U/D20051398Lj.pdf
-- Zmiany z datą wejścia w życie po dniu pobrania (sprawdź, czy tekst już je uwzględnia): Dz.U. 2026 poz. 346, wchodzi w życie 2028-09-30.
+- Pobrano z api.sejm.gov.pl 2026-11-11. Źródło: https://api.sejm.gov.pl/eli/acts/DU/2005/1398/text/U/D20051398Lj.pdf
+- Zmiany z datą wejścia w życie po dacie tekstu, których tekst nie wymienia w podstawie (sprawdź, czy już je uwzględnia): brak w bazie ELI.
 - Przy dostępie do sieci sprawdź aktualność na isap.sejm.gov.pl albo dziennikustaw.gov.pl.
 
-Dz. U. 2005 Nr 167 poz. 1398 U S TAWA z dnia 28 lipca 2005 r. o kosztach sądowych w sprawach cywilnych
 > Notka ISAP: Opracowano na podstawie: t.j. Dz. U. z 2025 r. poz. 1228, z 2026 r. poz. 346, 473, 1003.
+U S TAWA z dnia 28 lipca 2005 r. o kosztach sądowych w sprawach cywilnych
 
 ## TYTUŁ I Przepisy ogólne
 
@@ -35,9 +35,7 @@ a) o wznowienie postępowania,
 b) o uchylenie wyroku sądu polubownego,
 c) na orzeczenie referendarza sądowego,
 d) na czynności komornika;
-[9) odwołanie od decyzji oraz zażalenie na postanowienie Prezesa Urzędu Ochrony Konkurencji i Konsumentów, Prezesa Urzędu Regulacji Energetyki, Prezesa Urzędu Komunikacji Elektronicznej, Prezesa Urzędu Transportu Kolejowego, Przewodniczącego Krajowej Rady Radiofonii i Telewizji oraz organu regulacyjnego, o którym mowa w ustawie z dnia 7 czerwca 2001 r. o zbiorowym zaopatrzeniu w wodę i zbiorowym odprowadzaniu ścieków (Dz. U. z 2024 r. poz. 757).]
-<9) odwołanie od decyzji oraz zażalenie na postanowienie Prezesa Urzędu Ochrony Konkurencji i Konsumentów, Prezesa Urzędu Regulacji Energetyki, Prezesa Urzędu Komunikacji Elektronicznej, Prezesa Urzędu Transportu Kolejowego, Przewodniczącego Krajowej Rady Radiofonii i Telewizji, Komisji Rozwoju i Bezpieczeństwa Sztucznej Inteligencji oraz organu regulacyjnego, o którym mowa w ustawie z dnia 7 czerwca 2001 r. o zbiorowym zaopatrzeniu w wodę i zbiorowym odprowadzaniu ścieków (Dz. U. z 2024 r. poz. 757 oraz z 2026 r. poz. 605).> 3. Opłacie podlega wniosek o wydanie na podstawie akt: odpisu, wypisu, zaświadczenia, wyciągu, innego dokumentu oraz kopii, a nadto wniosek o wydanie odpisu księgi wieczystej (opłata kancelaryjna).
-> Notka ISAP: Nowe brzmienie pkt 9 w ust. 2 w art. 3 wejdzie w życie z dn. 28.10.2026 r. (Dz. U. z 2026 r. poz. 1003).
+9) odwołanie od decyzji oraz zażalenie na postanowienie Prezesa Urzędu Ochrony Konkurencji i Konsumentów, Prezesa Urzędu Regulacji Energetyki, Prezesa Urzędu Komunikacji Elektronicznej, Prezesa Urzędu Transportu Kolejowego, Przewodniczącego Krajowej Rady Radiofonii i Telewizji, Komisji Rozwoju i Bezpieczeństwa Sztucznej Inteligencji oraz organu regulacyjnego, o którym mowa w ustawie z dnia 7 czerwca 2001 r. o zbiorowym zaopatrzeniu w wodę i zbiorowym odprowadzaniu ścieków (Dz. U. z 2024 r. poz. 757 oraz z 2026 r. poz. 605). 3. Opłacie podlega wniosek o wydanie na podstawie akt: odpisu, wypisu, zaświadczenia, wyciągu, innego dokumentu oraz kopii, a nadto wniosek o wydanie odpisu księgi wieczystej (opłata kancelaryjna).
 
 Art. 4. 1. Pismo wnoszone przez kilka osób podlega jednej opłacie. Jeżeli jednak przedmiotem sprawy są roszczenia lub zobowiązania jednego rodzaju i oparte na jednakowej podstawie faktycznej i prawnej (współuczestnictwo formalne), każdy współuczestnik uiszcza opłatę oddzielnie, stosownie do swojego roszczenia lub zobowiązania. 2. Opłatę od wniosku o dokonanie wpisu w księdze wieczystej pobiera się od osoby, która wystąpiła z takim wnioskiem, także wówczas, gdy na jego podstawie mają być ujawnione prawa osób, które nie są wnioskodawcami. 3. (uchylony)
 
@@ -226,8 +224,7 @@ Art. 31. Opłatę stałą w kwocie 1500 złotych pobiera się od pozwu:
 
 [Art. 32. 1. Opłatę stałą w kwocie 1000 złotych pobiera się od odwołania od decyzji Prezesa Urzędu Ochrony Konkurencji i Konsumentów, Prezesa Urzędu Regulacji Energetyki, Prezesa Urzędu Komunikacji Elektronicznej oraz Prezesa Urzędu Transportu Kolejowego, a także od apelacji, skargi kasacyjnej i skargi o stwierdzenie niezgodności z prawem prawomocnego orzeczenia w takiej sprawie. 2. Opłatę stałą w kwocie 500 złotych pobiera się od zażalenia na postanowienie Prezesa Urzędu Ochrony Konkurencji i Konsumentów, Prezesa Urzędu Regulacji Energetyki, Prezesa Urzędu Komunikacji Elektronicznej oraz Prezesa Urzędu Transportu Kolejowego. 3. (uchylony) 4. (uchylony)]
 
-<Art. 32. 1. Opłatę stałą w kwocie 1000 złotych pobiera się od odwołania od decyzji Prezesa Urzędu Ochrony Konkurencji i Konsumentów, Prezesa Urzędu Regulacji Energetyki, Prezesa Urzędu Komunikacji Elektronicznej, Prezesa Urzędu Transportu Kolejowego oraz Komisji Rozwoju i Bezpieczeństwa Sztucznej Inteligencji, a także od apelacji, skargi kasacyjnej i skargi o stwierdzenie niezgodności z prawem prawomocnego orzeczenia w takiej sprawie. 2. Opłatę stałą w kwocie 500 złotych pobiera się od zażalenia na postanowienie Prezesa Urzędu Ochrony Konkurencji i Konsumentów, Prezesa Urzędu Regulacji Energetyki, Prezesa Urzędu Komunikacji Elektronicznej, Prezesa Urzędu Transportu Kolejowego oraz Komisji Rozwoju i Bezpieczeństwa Sztucznej Inteligencji.>
-> Notka ISAP: Nowe brzmienie art. 32 wejdzie w życie z dn. 28.10.2026 r. (Dz. U. z 2026 r. poz. 1003).
+Art. 32. 1. Opłatę stałą w kwocie 1000 złotych pobiera się od odwołania od decyzji Prezesa Urzędu Ochrony Konkurencji i Konsumentów, Prezesa Urzędu Regulacji Energetyki, Prezesa Urzędu Komunikacji Elektronicznej, Prezesa Urzędu Transportu Kolejowego oraz Komisji Rozwoju i Bezpieczeństwa Sztucznej Inteligencji, a także od apelacji, skargi kasacyjnej i skargi o stwierdzenie niezgodności z prawem prawomocnego orzeczenia w takiej sprawie. 2. Opłatę stałą w kwocie 500 złotych pobiera się od zażalenia na postanowienie Prezesa Urzędu Ochrony Konkurencji i Konsumentów, Prezesa Urzędu Regulacji Energetyki, Prezesa Urzędu Komunikacji Elektronicznej, Prezesa Urzędu Transportu Kolejowego oraz Komisji Rozwoju i Bezpieczeństwa Sztucznej Inteligencji.
 
 Art. 32a. 1. Opłatę stałą w kwocie 100 złotych pobiera się od odwołania od decyzji organu regulacyjnego, o którym mowa w ustawie z dnia 7 czerwca 2001 r. o zbiorowym zaopatrzeniu w wodę i zbiorowym odprowadzaniu ścieków, a także od apelacji, skargi kasacyjnej i skargi o stwierdzenie niezgodności z prawem prawomocnego orzeczenia w takiej sprawie. 2. Opłatę stałą w kwocie 50 złotych pobiera się od zażalenia na postanowienie organu regulacyjnego, o którym mowa w ustawie z dnia 7 czerwca 2001 r. o zbiorowym zaopatrzeniu w wodę i zbiorowym odprowadzaniu ścieków.
 

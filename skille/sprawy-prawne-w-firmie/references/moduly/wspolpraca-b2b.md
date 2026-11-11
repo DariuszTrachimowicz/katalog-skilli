@@ -98,6 +98,7 @@ Wszystkie pozycje sprawdzono w pełnym tekście (API SN, 6.11.2026). Orzeczenia 
 |---|---|---|
 | 8.07.2026 | Reforma PIP: polecenie i decyzja o stosunku pracy, kontrola także firm niebędących pracodawcami, grzywny 2 000-60 000 zł (Dz.U. 2026 poz. 473) | obowiązuje (ELI odczytane 6.11.2026) |
 | 5.11.2026 | Do spraw, które sąd rejonowy rozpoznaje bez względu na wartość (już wcześniej m.in. ustalenie stosunku pracy i odwołania od decyzji PIP), doszły sprawy o ochronę dóbr osobistych, mobbing i naruszenie zasady równego traktowania (KPC art. 461 § 1¹ w brzmieniu z Dz.U. 2026 poz. 1046) | obowiązuje |
+| 10.11.2026 | Prawo autorskie: zmiana zasad dofinansowania wynagrodzeń za użyczanie egzemplarzy przez biblioteki (art. 35¹ ust. 7, nowy art. 127², Dz.U. 2026 poz. 1477); bez wpływu na umowy o przeniesienie praw i licencje z kontraktorami, wbudowany tekst PRAUT jeszcze jej nie zawiera | obowiązuje (tekst ogłoszony odczytany 11.11.2026) |
 | 8.07.2027 | Koniec okna na dobrowolne zawarcie umowy o pracę bez odpowiedzialności za wykroczenie (umowy cywilne sprzed 8.07.2026) | za skillem dzielo |
 | 1.01.2027 | Stawka minimalna 32,30 zł | za skillem dzielo |
 | projekt | Oskładkowanie wszystkich umów cywilnych | nie znaleziono w Sejmie (za skillem dzielo, 5.11.2026) |

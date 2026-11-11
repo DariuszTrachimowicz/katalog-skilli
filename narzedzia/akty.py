@@ -30,6 +30,21 @@ def bez_pauz(t):
     return t.replace(chr(0x2013), "-").replace(chr(0x2014), "-")
 
 
+def poza_tekstem(zmiany, data_tekstu, podstawa, tekst=""):
+    """Akty zmieniające z datą wejścia w życie po dacie tekstu, których tekst nie wymienia
+    ani w swojej podstawie, ani w notkach ISAP (notka = tekst ma już oba brzmienia)."""
+    lata = {}  # "z 2026 r. poz. 468, 473" -> {"2026": {"468", "473"}}
+    for rok, pozycje in re.findall(r"(\d{4}) r\.\s*(?:poz\.\s*)?([\d, ]+)", podstawa or ""):
+        lata.setdefault(rok, set()).update(re.findall(r"\d+", pozycje))
+    wyn = []
+    for z in zmiany:
+        _, rok, poz = z["id"].split("/")
+        w_notce = re.search(rf"z {rok} r\.\s*poz\.[^)\n]*\b{poz}\b", tekst)
+        if z.get("date", "") > data_tekstu and poz not in lata.get(rok, set()) and not w_notce:
+            wyn.append((z["date"], z["id"]))
+    return sorted(wyn)
+
+
 def pobierz(url):
     req = urllib.request.Request(url, headers={"User-Agent": "katalog-skilli-akty/1.0"})
     with urllib.request.urlopen(req, timeout=120) as r:
@@ -208,15 +223,16 @@ def przetworz(akt, dzis):
     m_podst = re.match(r"(.*?poz\.\s*[\d, ]+(?:,?\s*z \d{4} r\.\s*(?:poz\.\s*)?[\d, ]+)*)", podst)
     podst = m_podst.group(1).rstrip(" ,.") if m_podst else podst  # sama lista pozycji, bez śmieci z ramki ISAP
     zmiany = meta.get("references", {}).get("Akty zmieniające", [])
-    przyszle = sorted((z["date"], z["id"]) for z in zmiany if z.get("date", "") > dzis)
-    przyszle_txt = [f"Dz.U. {i.split('/')[1]} poz. {i.split('/')[2]}, wchodzi w życie {d}" for d, i in przyszle]
+    # Liczy się data tekstu, nie pobrania: zmiana, która weszła w życie między nimi, też może nie być w tekście.
+    przyszle = poza_tekstem(zmiany, data_u.group(1) if data_u else dzis, podst, tekst)
+    przyszle_txt = [f"Dz.U. {i.split('/')[1]} poz. {i.split('/')[2]}, {'wchodzi' if d > dzis else 'weszła'} w życie {d}" for d, i in przyszle]
     nag = [f"# {akt['nazwa']} ({akt['skrot']})", "",
            f"- Akt: {meta['title'].rstrip('.')} (ELI {akt['eli']}).",
            f"- Brzmienie: {rodzaj}" + (f" z dnia {data_u.group(1)}" if data_u else "") + (f", opracowany na podstawie: {podst}" if podst else "") + ".",
            "- Brzmienie w nawiasach kwadratowych [ ] obowiązuje do dnia podanego w notce ISAP, brzmienie w nawiasach ostrych < > od tego dnia. Jeśli data z notki już minęła, stosuj brzmienie w < >.",
            "- Moc wiążącą ma tekst ogłoszony w Dzienniku Ustaw; to jest kopia robocza do wyszukiwania. Przypisy pominięte, półpauzy zamienione na dywiz, indeksy górne jako znaki indeksu (np. Art. 22¹).",
            f"- Pobrano z api.sejm.gov.pl {dzis}. Źródło: {url}",
-           "- Zmiany z datą wejścia w życie po dniu pobrania (sprawdź, czy tekst już je uwzględnia): " + ("; ".join(przyszle_txt) if przyszle_txt else "brak w bazie ELI") + ".",
+           "- Zmiany z datą wejścia w życie po dacie tekstu, których tekst nie wymienia w podstawie (sprawdź, czy już je uwzględnia): " + ("; ".join(przyszle_txt) if przyszle_txt else "brak w bazie ELI") + ".",
            "- Przy dostępie do sieci sprawdź aktualność na isap.sejm.gov.pl albo dziennikustaw.gov.pl.", ""]
     plik = CEL / f"{akt['skrot']}.md"
     # zapis atomowy: plik tymczasowy, podmiana dopiero po kontroli konwersji
