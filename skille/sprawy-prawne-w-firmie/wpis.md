@@ -2,7 +2,7 @@
 nazwa: Sprawy prawne w firmie
 kategoria: Prawo
 status: gotowy
-wersja: 1.6.1
+wersja: 1.6.2
 poziom: Działa od razu
 aktualizacja: 2026-11-11
 zmiany: Doszedł wbudowany Kodeks rodzinny i opiekuńczy (45. akt) i cztery wzory pism karnych dla firmy: zawiadomienie o przestępstwie, zażalenie na odmowę wszczęcia albo umorzenie, sprzeciw od wyroku nakazowego i wniosek o raty grzywny.

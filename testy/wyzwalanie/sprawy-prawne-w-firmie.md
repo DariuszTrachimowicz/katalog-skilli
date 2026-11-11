@@ -20,7 +20,7 @@
 - Przygotuj ofertę handlową dla sieci hoteli na nasze usługi sprzątania, trzy pakiety cenowe. | wlasciciel: oferta-handlowa,oferta-behawioralna
 - Klient spóźnia się 5 dni z płatnością faktury, napisz uprzejme przypomnienie, pierwsze, bez straszenia. | wlasciciel: windykacja-miekka
 - Muszę porozmawiać z pracownikiem o tym, że jego wyniki spadły, jak poprowadzić taką rozmowę, żeby się nie obraził? | wlasciciel: trudna-rozmowa,rozmowa-oceniajaca
-- Zrób mi z tych faktur PDF tabelę do Excela: numer, data, kontrahent, netto, VAT, brutto. | wlasciciel: faktura-do-tabeli
 
-0 Ile wynosi okres wypowiedzenia umowy o pracę po 4 latach stażu?
++ Ile wynosi okres wypowiedzenia umowy o pracę po 4 latach stażu?
+0 Ile to jest 23 % z 2 400 zł?
 0 Co to jest KRS?
