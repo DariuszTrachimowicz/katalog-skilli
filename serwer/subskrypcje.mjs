@@ -5,7 +5,7 @@ import {dirname} from 'node:path';
 import {randomBytes,randomUUID,createHash} from 'node:crypto';
 export const VERSION='2026-09-09';
 export const SCOPE='aixperts-dx-marketing';
-export const ORIGINS=Object.freeze({'aixperts-newsletter':'https://aixperts.pl','dx-newsletter':'https://d-x.pl','katalog-newsletter':'https://skille.aixperts.pl','pracownia-newsletter':'https://pracownia.aixperts.pl'});
+export const ORIGINS=Object.freeze({'aixperts-newsletter':'https://aixperts.pl','dx-newsletter':'https://d-x.pl','katalog-newsletter':'https://skille.aixperts.pl','pracownia-newsletter':'https://pracownia.aixperts.pl','dewellux-newsletter':'https://dewellux.pl'});
 const INTERNAL_ORIGINS=Object.freeze({'portal-kontakt':'https://aixperts.pl','portal-warsztaty':'https://aixperts.pl','katalog-pobranie':'https://skille.aixperts.pl'});
 export const TEXT=Object.freeze({email:'Chcę otrzymywać od D-X.PL Michał Jaśkiewicz newsletter e-mail o ofertach, nowościach i promocjach AiXperts i Digital Xperts. Zgodę mogę wycofać w każdej chwili.',sms:'Chcę otrzymywać od D-X.PL Michał Jaśkiewicz wiadomości SMS o ofertach, nowościach i promocjach AiXperts i Digital Xperts na podany numer telefonu. Zgodę mogę wycofać w każdej chwili.'});
 const hash=x=>createHash('sha256').update(x).digest('hex');
