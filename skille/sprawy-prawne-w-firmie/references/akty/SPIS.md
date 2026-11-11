@@ -6,6 +6,7 @@ Plik aktu: `references/akty/<SKRÓT>.md`. Szukaj przepisu wzorcem `Art. 30.` alb
 |---|---|---|---|
 | KC | Kodeks cywilny | 2026-11-03 | t.j. Dz. U. z 2026 r. poz. 795 |
 | KPC | Kodeks postępowania cywilnego | 2026-10-16 | t.j. Dz. U. z 2026 r. poz. 468, 473, 830, 1003, 1046, 1296 |
+| KRO | Kodeks rodzinny i opiekuńczy | 2026-07-10 | t.j. Dz. U. z 2026 r. poz. 236 |
 | KP | Kodeks pracy | 2026-10-14 | t.j. Dz. U. z 2026 r. poz. 1245 |
 | KK | Kodeks karny | 2026-10-29 | t.j. Dz. U. z 2026 r. poz. 1342 |
 | KPK | Kodeks postępowania karnego | 2026-07-17 | t.j. Dz. U. z 2026 r. poz. 490, 421, 638, 760, 882, 901 |

@@ -1,6 +1,6 @@
 # Wzory pism rodzinnych
 
-Wczytaj, gdy użytkownik prosi o pismo do sądu w sprawie rodzinnej (alimenty, rozwód, separacja, dzieci, majątek małżonków). To sprawy prywatne, poza modułami tego skilla: nie prowadzisz ich analizy i nie masz wbudowanego Kodeksu rodzinnego i opiekuńczego. Układasz tylko pismo z wzoru, z faktów użytkownika, zawsze jako poziom B z `pisma.md`.
+Wczytaj, gdy użytkownik prosi o pismo do sądu w sprawie rodzinnej (alimenty, rozwód, separacja, dzieci, majątek małżonków). To sprawy prywatne, poza modułami tego skilla: nie prowadzisz ich analizy i nie oceniasz szans. Układasz pismo z wzoru, z faktów użytkownika, zawsze jako poziom B z `pisma.md`; przepisy prawa rodzinnego sprawdzasz we wbudowanym Kodeksie rodzinnym i opiekuńczym (akt KRO).
 
 ## Spis treści
 
@@ -22,8 +22,8 @@ Wczytaj, gdy użytkownik prosi o pismo do sądu w sprawie rodzinnej (alimenty, r
 
 ## 1. Zasady dla pism rodzinnych
 
-- **Powiedz to raz, na początku odpowiedzi:** sprawa rodzinna jest poza zakresem skilla dla firm, więc dostajesz projekt pisma ułożony z urzędowego wzoru i z Twoich faktów, bez analizy sprawy; przepisów prawa rodzinnego nie sprawdzałem w tekście ustawy. Przy rozwodzie i separacji wskaż skill `rozwod-za-porozumieniem`, jeśli jest dostępny.
-- **Przepisy.** Kodeks rodzinny i opiekuńczy nie jest wbudowany: nie podajesz jego artykułów ani terminów z pamięci, także w piśmie. Podstawę materialną zostawiasz jako `[WYMAGA WERYFIKACJI: Kodeks rodzinny i opiekuńczy, isap.sejm.gov.pl]` albo podajesz tylko wtedy, gdy przed chwilą otworzyłeś tekst ustawy w oficjalnym serwisie (reguła z SKILL.md). Przepisy procedury (KPC) sprawdzasz w pliku aktu jak zawsze.
+- **Powiedz to raz, na początku odpowiedzi:** sprawa rodzinna jest poza zakresem skilla dla firm, więc dostajesz projekt pisma ułożony z urzędowego wzoru i z Twoich faktów, z przepisami sprawdzonymi w tekście kodeksu, ale bez analizy sprawy i orzecznictwa. Przy rozwodzie i separacji wskaż skill `rozwod-za-porozumieniem`, jeśli jest dostępny.
+- **Przepisy.** Kodeks rodzinny i opiekuńczy jest wbudowany (`akty/KRO.md`): każdy przepis prawa rodzinnego, który podajesz w odpowiedzi albo w piśmie, najpierw znajdujesz w tym pliku i czytasz cały artykuł, tak jak przepisy procedury w KPC; nic z pamięci. Skill nie ma modułu ani rejestru orzeczeń dla spraw rodzinnych, więc nie podajesz orzecznictwa, widełek kwot ani „typowych” rozstrzygnięć; czego w tekście kodeksu nie ma, oznaczasz `[WYMAGA WERYFIKACJI: co, gdzie]`.
 - **Fakty tylko od użytkownika.** Nie dopisujesz kosztów utrzymania, zarobków, przyczyn rozpadu małżeństwa, zachowań drugiej strony ani dat. Kwot alimentów nie proponujesz i nie wyliczasz „typowych”; wpisujesz kwotę podaną przez użytkownika albo `[UZUPEŁNIJ: kwota]`.
 - **Jedno żądanie na wybór.** Urzędowe wzory mają warianty („bez orzekania o winie/z winy pozwanego”, „pozbawienie/ograniczenie/zawieszenie”). O wybór pytasz użytkownika jednym pytaniem i wpisujesz jeden wariant; nie zostawiasz ukośników ani gwiazdek i nie wybierasz za niego.
 - **Dane dzieci i zdrowie.** W piśmie są tylko dane, których to pismo wymaga i które podał użytkownik. W odpowiedzi obok pisma nie powtarzasz numerów PESEL, adresów ani informacji o zdrowiu.
@@ -67,7 +67,7 @@ W każdym pozwie i wniosku, po punktach żądania, stoi zdanie o mediacji: `Stro
 
 ## 3. Pozew o alimenty
 
-Karta 61/K/UU/SR, sąd rejonowy, wydział rodzinny i nieletnich. Powództwo można wytoczyć według miejsca zamieszkania osoby uprawnionej (KPC art. 32). Wartość przedmiotu sporu to suma świadczeń za rok, a gdy świadczenia mają trwać krócej niż rok, za cały czas ich trwania (KPC art. 22). Wyrokowi zasądzającemu alimenty sąd nadaje rygor natychmiastowej wykonalności z urzędu w zakresie z KPC art. 333 § 1. Czy pozew podlega opłacie: `[WYMAGA WERYFIKACJI: akt KOSZTY]`.
+Karta 61/K/UU/SR, sąd rejonowy, wydział rodzinny i nieletnich. Podstawy: obowiązek rodziców wobec dziecka, które nie może jeszcze utrzymać się samodzielnie, chyba że dochody z majątku dziecka wystarczają na jego utrzymanie i wychowanie (KRO art. 133 § 1), zakres według usprawiedliwionych potrzeb uprawnionego i możliwości zarobkowych i majątkowych zobowiązanego (KRO art. 135 § 1), niezaspokojone potrzeby sprzed pozwu jako odpowiednia suma (KRO art. 137 § 2). Powództwo można wytoczyć według miejsca zamieszkania osoby uprawnionej (KPC art. 32). Wartość przedmiotu sporu to suma świadczeń za rok, a gdy świadczenia mają trwać krócej niż rok, za cały czas ich trwania (KPC art. 22). Wyrokowi zasądzającemu alimenty sąd nadaje rygor natychmiastowej wykonalności z urzędu w zakresie z KPC art. 333 § 1. Czy pozew podlega opłacie: `[WYMAGA WERYFIKACJI: akt KOSZTY]`.
 
 ```
 @wps: Wartość przedmiotu sporu: [UZUPEŁNIJ: suma świadczeń za rok albo za krótszy okres żądania, w pełnych złotych]
@@ -96,7 +96,7 @@ Załączniki: odpis aktu urodzenia dziecka, dowody z uzasadnienia, odpis pozwu z
 
 ## 4. Pozew o podwyższenie albo obniżenie alimentów
 
-Karty 62/K/UU/SR (podwyższenie) i 63/K/UU/SR (obniżenie). Według kart usług w uzasadnieniu wykazuje się zmianę, która zaszła od poprzedniego wyroku albo ugody, po stronie potrzeb uprawnionego albo możliwości zarobkowych i majątkowych zobowiązanego; przesłanki zmiany alimentów: `[WYMAGA WERYFIKACJI: Kodeks rodzinny i opiekuńczy]`. Opisujesz stan z dnia poprzedniego orzeczenia i stan obecny, oba z faktów użytkownika. Przy obniżeniu wartość przedmiotu sporu liczy się od różnicy kwot: `[WYMAGA WERYFIKACJI: sposób liczenia wartości przedmiotu sporu i opłata, akt KOSZTY i KPC art. 22]`.
+Karty 62/K/UU/SR (podwyższenie) i 63/K/UU/SR (obniżenie). Według kart usług w uzasadnieniu wykazuje się zmianę, która zaszła od poprzedniego wyroku albo ugody, po stronie potrzeb uprawnionego albo możliwości zarobkowych i majątkowych zobowiązanego. Podstawa: w razie zmiany stosunków można żądać zmiany orzeczenia albo umowy o alimentach (KRO art. 138), a zakres alimentów zależy od usprawiedliwionych potrzeb uprawnionego i od zarobkowych i majątkowych możliwości zobowiązanego (KRO art. 135 § 1). Opisujesz stan z dnia poprzedniego orzeczenia i stan obecny, oba z faktów użytkownika. Przy obniżeniu wartość przedmiotu sporu liczy się od różnicy kwot: `[WYMAGA WERYFIKACJI: sposób liczenia wartości przedmiotu sporu i opłata, akt KOSZTY i KPC art. 22]`.
 
 ```
 @wps: Wartość przedmiotu sporu: [UZUPEŁNIJ: kwota w pełnych złotych]
@@ -122,7 +122,7 @@ Załączniki: dowód uiszczenia opłaty od pozwu (jeśli wymagana), odpis poprze
 
 ## 5. Pozew o ustalenie wygaśnięcia obowiązku alimentacyjnego
 
-Karta 64/K/UU/SR. Według karty uzasadnienie pokazuje zmianę, z której powód wywodzi ustanie obowiązku (np. zakończenie nauki, podjęcie pracy), i dzień, od którego obowiązek ma być uznany za wygasły; kiedy obowiązek ustaje: `[WYMAGA WERYFIKACJI: Kodeks rodzinny i opiekuńczy]`.
+Karta 64/K/UU/SR. Według karty uzasadnienie pokazuje zmianę, z której powód wywodzi ustanie obowiązku (np. zakończenie nauki, podjęcie pracy), i dzień, od którego obowiązek ma być uznany za wygasły. Rodzice są obowiązani do alimentów wobec dziecka, które nie jest jeszcze w stanie utrzymać się samodzielnie, chyba że dochody z majątku dziecka wystarczają na jego utrzymanie i wychowanie; wobec dziecka pełnoletniego mogą się od nich uchylić, gdy są połączone z nadmiernym dla nich uszczerbkiem albo dziecko nie dokłada starań, żeby móc utrzymać się samodzielnie (KRO art. 133 § 1 i 3). Te przepisy nie podają wieku, w którym obowiązek ustaje (KRO art. 133 § 1 i 3), więc o wyniku decydują fakty i dowody. Roszczenia o alimenty przedawniają się z upływem trzech lat (KRO art. 137 § 1); to ważne przy zaległościach.
 
 ```
 @wps: Wartość przedmiotu sporu: [UZUPEŁNIJ: kwota w pełnych złotych]
@@ -224,11 +224,11 @@ Wnoszę o:
 [UZUPEŁNIJ: praca, zarobki i majątek każdego z małżonków]
 ```
 
-Załączniki: dowód uiszczenia opłaty od pozwu, odpis skrócony aktu małżeństwa, odpisy skrócone aktów urodzenia małoletnich dzieci, dowody z uzasadnienia, odpis pozwu i załączników dla pozwanego. Przy zgodnym żądaniu separacji małżonków bez wspólnych małoletnich dzieci istnieje osobny wniosek obojga małżonków: `[WYMAGA WERYFIKACJI: tryb i sąd, Kodeks rodzinny i opiekuńczy oraz KPC]`.
+Załączniki: dowód uiszczenia opłaty od pozwu, odpis skrócony aktu małżeństwa, odpisy skrócone aktów urodzenia małoletnich dzieci, dowody z uzasadnienia, odpis pozwu i załączników dla pozwanego. Podstawy: rozwód wymaga zupełnego i trwałego rozkładu pożycia i nie jest dopuszczalny m.in. wtedy, gdy ucierpiałoby dobro wspólnych małoletnich dzieci (KRO art. 56 § 1 i 2); sąd orzeka o winie, chyba że małżonkowie zgodnie żądają zaniechania (KRO art. 57 § 1 i 2); w wyroku rozstrzyga o władzy rodzicielskiej nad wspólnym małoletnim dzieckiem, kontaktach i kosztach jego utrzymania oraz uwzględnia pisemne porozumienie rodziców zgodne z dobrem dziecka (KRO art. 58 § 1); o kontaktach nie orzeka na zgodny wniosek stron (KRO art. 58 § 1b), a o sposobie korzystania ze wspólnego mieszkania orzeka wtedy, gdy małżonkowie je zajmują (KRO art. 58 § 2). Separacja wymaga zupełnego rozkładu pożycia; nie jest dopuszczalna, gdy ucierpiałoby dobro wspólnych małoletnich dzieci albo byłaby sprzeczna z zasadami współżycia społecznego, a małżonkom bez wspólnych małoletnich dzieci sąd może ją orzec na zgodne żądanie (KRO art. 61¹ § 1-3); tryb takiego zgodnego wniosku: `[WYMAGA WERYFIKACJI: KPC, postępowanie nieprocesowe w sprawach o separację]`.
 
 ## 8. Wniosek o uregulowanie kontaktów z dzieckiem
 
-Karta 68/K/UU/SR, postępowanie nieprocesowe. Właściwy wyłącznie jest sąd opiekuńczy miejsca zamieszkania osoby, której postępowanie dotyczy, czyli dziecka, a przy braku miejsca zamieszkania miejsca jej pobytu (KPC art. 569 § 1). Strony: `Wnioskodawca:` i `Uczestnik:`.
+Karta 68/K/UU/SR, postępowanie nieprocesowe. Rodzice i dziecko mają prawo i obowiązek utrzymywania kontaktów niezależnie od władzy rodzicielskiej (KRO art. 113 § 1); gdy dziecko mieszka stale u jednego z rodziców i rodzice nie mogą się porozumieć, o kontaktach rozstrzyga sąd opiekuńczy (KRO art. 113¹ § 1). Właściwy wyłącznie jest sąd opiekuńczy miejsca zamieszkania osoby, której postępowanie dotyczy, czyli dziecka, a przy braku miejsca zamieszkania miejsca jej pobytu (KPC art. 569 § 1). Strony: `Wnioskodawca:` i `Uczestnik:`.
 
 ```
 @tytul: WNIOSEK O UREGULOWANIE KONTAKTÓW Z DZIECKIEM
@@ -251,7 +251,7 @@ Załączniki: dowód uiszczenia opłaty od wniosku, odpis aktu urodzenia dziecka
 
 ## 9. Wnioski o władzę rodzicielską
 
-Karty 65/K/UU/SR (pozbawienie, ograniczenie albo zawieszenie) i 72/K/UU/SR (przywrócenie), postępowanie nieprocesowe, sąd jak we wzorze 8 (KPC art. 569 § 1). To sprawy o najcięższych skutkach dla dziecka: zawsze karta dla prawnika, a przy opisie zagrożenia dziecka najpierw punkt „Zagrożenie” z zasad. Wybór między pozbawieniem, ograniczeniem a zawieszeniem należy do użytkownika po rozmowie z prawnikiem; nie podpowiadasz „mocniejszego” wariantu.
+Karty 65/K/UU/SR (pozbawienie, ograniczenie albo zawieszenie) i 72/K/UU/SR (przywrócenie), postępowanie nieprocesowe, sąd jak we wzorze 8 (KPC art. 569 § 1). Podstawy różnią się przesłankami: zarządzenia przy zagrożeniu dobra dziecka (KRO art. 109 § 1 i 2), zawieszenie przy przemijającej przeszkodzie (KRO art. 110 § 1), pozbawienie przy trwałej przeszkodzie, nadużywaniu władzy albo rażącym zaniedbywaniu obowiązków i przywrócenie po ustaniu przyczyny (KRO art. 111 § 1 i 2); przeczytaj właściwy artykuł, zanim wpiszesz żądanie. To sprawy o najcięższych skutkach dla dziecka: zawsze karta dla prawnika, a przy opisie zagrożenia dziecka najpierw punkt „Zagrożenie” z zasad. Wybór między pozbawieniem, ograniczeniem a zawieszeniem należy do użytkownika po rozmowie z prawnikiem; nie podpowiadasz „mocniejszego” wariantu.
 
 ```
 @tytul: WNIOSEK O [UZUPEŁNIJ: jeden wariant: POZBAWIENIE; OGRANICZENIE; ZAWIESZENIE; PRZYWRÓCENIE] WŁADZY RODZICIELSKIEJ
@@ -269,7 +269,7 @@ Załączniki: dowód uiszczenia opłaty od wniosku, odpis aktu urodzenia dziecka
 
 ## 10. Wniosek o rozstrzygnięcie w istotnej sprawie dziecka
 
-Karta 67/K/UU/SR, gdy rodzice nie mogą się porozumieć (np. paszport, wyjazd za granicę, zmiana szkoły, zabieg medyczny, zmiana imienia albo nazwiska). Sąd jak we wzorze 8 (KPC art. 569 § 1).
+Karta 67/K/UU/SR, gdy rodzice nie mogą się porozumieć (np. paszport, wyjazd za granicę, zmiana szkoły, zabieg medyczny, zmiana imienia albo nazwiska): gdy władza rodzicielska przysługuje obojgu rodzicom, o istotnych sprawach dziecka rozstrzygają wspólnie, a przy braku porozumienia sąd opiekuńczy (KRO art. 97 § 1 i 2); najpierw ustal więc, czy drugi rodzic ma władzę rodzicielską. Sąd jak we wzorze 8 (KPC art. 569 § 1).
 
 ```
 @tytul: WNIOSEK O ROZSTRZYGNIĘCIE W ISTOTNEJ SPRAWIE DZIECKA
@@ -289,7 +289,7 @@ Załączniki: dowód uiszczenia opłaty od wniosku, odpis aktu urodzenia dziecka
 
 ## 11. Wniosek o zezwolenie na czynność przekraczającą zwykły zarząd majątkiem dziecka
 
-Karta 66/K/UU/SR (np. sprzedaż rzeczy albo nieruchomości dziecka, odrzucenie spadku w imieniu dziecka). Sąd jak we wzorze 8 (KPC art. 569 § 1), ale gdy czynnością jest proste przyjęcie albo odrzucenie spadku, a toczy się postępowanie o stwierdzenie nabycia spadku, zezwolenie wydaje sąd spadku (KPC art. 640¹ § 1). Czy odrzucenie spadku w imieniu dziecka w danym układzie rodzinnym w ogóle wymaga zezwolenia sądu: `[WYMAGA WERYFIKACJI: Kodeks rodzinny i opiekuńczy]`. Przy odrzuceniu spadku biegnie termin ustawowy: nie podajesz go z pamięci, kierujesz do skilla `spadek-krok-po-kroku`, jeśli jest dostępny, i do prawnika albo notariusza.
+Karta 66/K/UU/SR (np. sprzedaż rzeczy albo nieruchomości dziecka, odrzucenie spadku w imieniu dziecka). Sąd jak we wzorze 8 (KPC art. 569 § 1), ale gdy czynnością jest proste przyjęcie albo odrzucenie spadku, a toczy się postępowanie o stwierdzenie nabycia spadku, zezwolenie wydaje sąd spadku (KPC art. 640¹ § 1). Rodzice nie mogą bez zezwolenia sądu dokonywać czynności przekraczających zwykły zarząd majątkiem dziecka (KRO art. 101 § 3). Wyjątek: gdy dziecko dziedziczy, bo spadek wcześniej odrzucił rodzic, odrzucenie spadku w imieniu dziecka nie wymaga zezwolenia, jeżeli dokonują go rodzice wspólnie albo jedno za zgodą drugiego (oboje z władzą rodzicielską w tym zakresie) i spadek odrzucają też inni zstępni rodziców tego dziecka; przy braku porozumienia rodziców zezwolenie jest potrzebne (KRO art. 101 § 4). Najpierw ustal więc, czy wniosek w ogóle jest potrzebny. Przy odrzuceniu spadku biegnie termin ustawowy: nie podajesz go z pamięci, kierujesz do skilla `spadek-krok-po-kroku`, jeśli jest dostępny, i do prawnika albo notariusza.
 
 ```
 @tytul: WNIOSEK O ZEZWOLENIE NA DOKONANIE CZYNNOŚCI PRZEKRACZAJĄCEJ ZAKRES ZWYKŁEGO ZARZĄDU MAJĄTKIEM DZIECKA
@@ -307,7 +307,7 @@ Załączniki: dowód uiszczenia opłaty od wniosku, odpis aktu urodzenia dziecka
 
 ## 12. Pozew o ustalenie albo zaprzeczenie ojcostwa
 
-Karty 69/K/UU/SR i 70/K/UU/SR, sąd rejonowy (KPC art. 17), przy ustaleniu można według miejsca zamieszkania osoby uprawnionej (KPC art. 32). Kto może pozwać, kogo trzeba pozwać i w jakim terminie, wynika z Kodeksu rodzinnego i opiekuńczego: `[WYMAGA WERYFIKACJI: legitymacja, pozwani i termin, Kodeks rodzinny i opiekuńczy]`. Przy zaprzeczeniu ojcostwa termin bywa krótki i liczy się od dowiedzenia się o okolicznościach, więc od razu karta dla prawnika.
+Karty 69/K/UU/SR i 70/K/UU/SR, sąd rejonowy (KPC art. 17), przy ustaleniu można według miejsca zamieszkania osoby uprawnionej (KPC art. 32). Ustalenia ojcostwa mogą żądać dziecko, matka i domniemany ojciec; matka i domniemany ojciec nie mogą pozwać po osiągnięciu przez dziecko pełnoletności, a gdy dziecko zmarło wcześniej, mogą to zrobić do dnia, w którym osiągnęłoby pełnoletność (KRO art. 84 § 1 i 2). Dziecko albo matka pozywa domniemanego ojca, a gdy ten nie żyje, kuratora ustanowionego przez sąd opiekuńczy; domniemany ojciec pozywa dziecko i matkę, gdy matka nie żyje samo dziecko, a gdy dziecko nie żyje kuratora (KRO art. 84 § 3 i 4); po śmierci dziecka, które wytoczyło powództwo, ustalenia mogą dochodzić jego zstępni (KRO art. 84 § 5). Zaprzeczenie ojcostwa: mąż matki i matka mają rok od dnia, w którym dowiedzieli się, że dziecko nie pochodzi od męża matki, nie później niż do pełnoletności dziecka (KRO art. 63, KRO art. 69 § 1), a dziecko rok od dowiedzenia się, liczony najwcześniej od pełnoletności (KRO art. 70 § 1); kogo pozwać, czytasz w tych samych przepisach (KRO art. 69 § 2, KRO art. 70 § 2). Terminy roczne mają wyjątki przy ubezwłasnowolnieniu całkowitym albo chorobie psychicznej uprawnionego, stosowane też odpowiednio do matki i dziecka (KRO art. 64, KRO art. 65, KRO art. 69 § 3, KRO art. 70 § 3). Dzień początkowy terminu ustalasz z faktów użytkownika i podajesz warunkowo; przy zaprzeczeniu ojcostwa od razu karta dla prawnika.
 
 ```
 @tytul: POZEW O [UZUPEŁNIJ: USTALENIE albo ZAPRZECZENIE] OJCOSTWA
@@ -327,7 +327,7 @@ Załączniki: dowód uiszczenia opłaty od pozwu (jeśli wymagana), odpis aktu u
 
 ## 13. Pozew o ustanowienie rozdzielności majątkowej
 
-Karta 71/K/UU/SR, sąd rejonowy (KPC art. 17). Częsty przypadek w firmie: małżonek przedsiębiorcy albo wspólnika chce oddzielić majątek od ryzyka działalności. Żądanie rozdzielności z datą wcześniejszą niż dzień wytoczenia powództwa wymaga szczególnych okoliczności i dodatkowego odpisu pozwu dla prokuratora (tak karta usługi): `[WYMAGA WERYFIKACJI: przesłanki, Kodeks rodzinny i opiekuńczy]`. Od jakiego dnia rozdzielność działa i co oznacza dla długów sprzed tej daty oraz dla wierzycieli, nie przesądzasz: `[WYMAGA WERYFIKACJI: Kodeks rodzinny i opiekuńczy]` i pytanie do prawnika w karcie. Sąd nie może oprzeć wyroku wyłącznie na uznaniu powództwa ani przyznaniu faktów (KPC art. 452), więc uzasadnienie musi mieć dowody także przy zgodzie małżonka.
+Karta 71/K/UU/SR, sąd rejonowy (KPC art. 17). Częsty przypadek w firmie: małżonek przedsiębiorcy albo wspólnika chce oddzielić majątek od ryzyka działalności. Rozdzielności można żądać z ważnych powodów (KRO art. 52 § 1). Powstaje ona z dniem oznaczonym w wyroku, a z dniem wcześniejszym niż wytoczenie powództwa sąd może ją ustanowić tylko w wyjątkowych wypadkach, w szczególności gdy małżonkowie żyli w rozłączeniu (KRO art. 52 § 2); przy takim żądaniu karta usługi każe dołączyć dodatkowy odpis pozwu dla prokuratora. Co rozdzielność oznacza dla długów sprzed tej daty i dla wierzycieli, nie przesądzasz: to pytanie do prawnika w karcie. Sąd nie może oprzeć wyroku wyłącznie na uznaniu powództwa ani przyznaniu faktów (KPC art. 452), więc uzasadnienie musi mieć dowody także przy zgodzie małżonka.
 
 ```
 @tytul: POZEW O USTANOWIENIE ROZDZIELNOŚCI MAJĄTKOWEJ
@@ -375,7 +375,7 @@ Załączniki: dowód uiszczenia opłaty od wniosku, dokument, z którego wynika 
 
 ## 15. Wnioski o zezwolenie na zawarcie małżeństwa
 
-Karty 73/K/UU/SR (zwolnienie cudzoziemca od złożenia dokumentu stwierdzającego możność zawarcia małżeństwa) i 74/K/UU/SR (zezwolenie dla małoletniej, która ukończyła 16 lat), postępowanie nieprocesowe, wydział rodzinny i nieletnich. Przesłanki: `[WYMAGA WERYFIKACJI: Kodeks rodzinny i opiekuńczy]`. Część właściwa (jeden z dwóch tytułów i jedno z dwóch żądań):
+Karty 73/K/UU/SR (zwolnienie cudzoziemca od złożenia dokumentu stwierdzającego możność zawarcia małżeństwa) i 74/K/UU/SR (zezwolenie dla małoletniej, która ukończyła 16 lat), postępowanie nieprocesowe, wydział rodzinny i nieletnich. Sąd opiekuńczy może z ważnych powodów zezwolić na zawarcie małżeństwa kobiecie, która ukończyła 16 lat, gdy z okoliczności wynika, że małżeństwo będzie zgodne z dobrem założonej rodziny (KRO art. 10 § 1). Przesłanki zwolnienia cudzoziemca od złożenia dokumentu: `[WYMAGA WERYFIKACJI: Prawo o aktach stanu cywilnego i KPC, akty niewbudowane w tym zakresie]`. Część właściwa (jeden z dwóch tytułów i jedno z dwóch żądań):
 
 ```
 @tytul: [UZUPEŁNIJ: WNIOSEK O ZWOLNIENIE OD OBOWIĄZKU PRZEDSTAWIENIA DOKUMENTU POTRZEBNEGO DO ZAWARCIA MAŁŻEŃSTWA albo WNIOSEK O ZEZWOLENIE NA ZAWARCIE MAŁŻEŃSTWA]

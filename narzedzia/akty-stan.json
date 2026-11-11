@@ -30,6 +30,21 @@
   "sha256_pdf": "930426fab048a4b76e18a64d2e29b5d44ae98d9c821ff3b81560ee66b191508f"
  },
  {
+  "skrot": "KRO",
+  "eli": "DU/1964/59",
+  "nazwa": "Kodeks rodzinny i opiekuńczy",
+  "rodzaj": "tekst ujednolicony Kancelarii Sejmu",
+  "data_tekstu": "2026-07-10",
+  "podstawa": "t.j. Dz. U. z 2026 r. poz. 236",
+  "changeDate": "2026-07-10T11:02:11",
+  "liczba_zmian": 39,
+  "pobrano": "2026-11-11",
+  "stron_pdf": 58,
+  "bajty_md": 129853,
+  "artykulow": 247,
+  "sha256_pdf": "4fe6b3d6e72630ac3be38b5b6acc24c36be99b40d4f73c2fc34e516d40958f2e"
+ },
+ {
   "skrot": "KP",
   "eli": "DU/1974/141",
   "nazwa": "Kodeks pracy",

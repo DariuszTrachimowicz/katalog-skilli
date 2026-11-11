@@ -2,10 +2,10 @@
 nazwa: Sprawy prawne w firmie
 kategoria: Prawo
 status: gotowy
-wersja: 1.4.2
+wersja: 1.5.0
 poziom: Działa od razu
 aktualizacja: 2026-11-11
-zmiany: Doszło 13 wzorów pism do sądu i komornika, 17 wzorów pism rodzinnych oraz skrypt, który składa pismo w pliku DOCX. Teksty Kodeksu karnego i prawa autorskiego mają oznaczone zmiany z listopada 2026 r.
+zmiany: Doszedł wbudowany Kodeks rodzinny i opiekuńczy (45. akt): pisma rodzinne z wzorów mają teraz przepisy sprawdzone w tekście kodeksu.
 skrot: Jeden skill prawny dla firmy bez prawnika na etacie. Sam dobiera moduł do sprawy (umowy, zatrudnienie i B2B, cudzoziemcy, dane osobowe i NIS2, spółka, sukcesja, sprzedaż konsumencka, urzędy i procedury podatkowe, spory, niewypłacalność, marka, najem lokalu, przetargi, pierwsza reakcja w sprawach karnych), sprawdza przepisy we wbudowanych kodeksach i ustawach, pokazuje drogi działania, pisze pisma i przygotowuje kartę sprawy dla prawnika.
 korzysc: Firma wie, co zrobić sama i kiedy iść do prawnika, a prawnik dostaje sprawę gotową do decyzji.
 szukaj: sprawy prawne w firmie bez prawnika, dział prawny w małej firmie, AI prawnik dla firmy, wezwanie do zapłaty wzór pisma, odpowiedź na pozew wzór, sprzeciw od nakazu zapłaty wzór, pozew o zapłatę wzór docx, pozew o alimenty wzór, odpowiedź na pozew o alimenty, wniosek o kontakty z dzieckiem wzór, kara umowna miarkowanie, potrącenie wierzytelności, pismo do pracownika kara porządkowa, wypowiedzenie umowy z kontrahentem, odpowiedź na reklamację konsumenta 14 dni, odpowiedzialność zarządu za długi spółki, zatrudnienie cudzoziemca 2026, NIS2 czy moja firma podlega, najem lokalu użytkowego wypowiedzenie, przetarg odwołanie do KIO, znak towarowy zgłoszenie, karta sprawy dla prawnika, kodeks pracy 2026 mobbing, zwolnienie lekarskie kontrola pracodawcy, wypadek przy pracy co robić, czynny żal korekta deklaracji, przeszukanie w firmie, wyciek danych osobowych zgłoszenie UODO
@@ -35,7 +35,7 @@ Marta, prezes software house'u na 35 osób, opisuje klienta, który nie płaci t
 
 ## Jak po polsku
 
-Ma wbudowane 44 akty w brzmieniu z baz Sejmu (tekst ujednolicony z datą, od 2023 r. do 5 listopada 2026 r.): Kodeks cywilny, postępowania cywilnego, pracy, karny, postępowania karnego, karny skarbowy, spółek handlowych, postępowania administracyjnego, Ordynację podatkową, ustawę o postępowaniu przed sądami administracyjnymi oraz ustawy o prawach konsumenta, ochronie danych, zatorach płatniczych, upadłości i restrukturyzacji, zamówieniach publicznych, cyberbezpieczeństwie, cudzoziemcach, znakach towarowych, nieuczciwej konkurencji, inspekcji pracy, ZUS, rachunkowości, przeciwdziałaniu praniu pieniędzy, Prawo komunikacji elektronicznej i inne. Zna zmiany wchodzące w życie (na przykład nowe przepisy o mobbingu od 5 listopada 2026 r.), orzeczenia Sądu Najwyższego i sądów administracyjnych wybrane do modułów, polskie pisma i ich formę oraz wiedzę 29 wyspecjalizowanych skilli prawnych tego katalogu. Przy dostępie do internetu sprawdza zmiany na stronach gov.pl i sn.pl.
+Ma wbudowane 45 aktów w brzmieniu z baz Sejmu (tekst ujednolicony z datą, od 2023 r. do 5 listopada 2026 r.): Kodeks cywilny, postępowania cywilnego, rodzinny i opiekuńczy, pracy, karny, postępowania karnego, karny skarbowy, spółek handlowych, postępowania administracyjnego, Ordynację podatkową, ustawę o postępowaniu przed sądami administracyjnymi oraz ustawy o prawach konsumenta, ochronie danych, zatorach płatniczych, upadłości i restrukturyzacji, zamówieniach publicznych, cyberbezpieczeństwie, cudzoziemcach, znakach towarowych, nieuczciwej konkurencji, inspekcji pracy, ZUS, rachunkowości, przeciwdziałaniu praniu pieniędzy, Prawo komunikacji elektronicznej i inne. Zna zmiany wchodzące w życie (na przykład nowe przepisy o mobbingu od 5 listopada 2026 r.), orzeczenia Sądu Najwyższego i sądów administracyjnych wybrane do modułów, polskie pisma i ich formę oraz wiedzę 29 wyspecjalizowanych skilli prawnych tego katalogu. Przy dostępie do internetu sprawdza zmiany na stronach gov.pl i sn.pl.
 
 ## Czego potrzebujesz
 
@@ -52,7 +52,7 @@ Krótki opis sprawy: kim jest firma (forma prawna, wielkość), co się stało i
 
 ## Czego ten skill nie robi celowo
 
-Nie zastępuje prawnika w sprawach z sygnałem „tylko prawnik” (sąd, obrona w sprawie karnej, niewypłacalność, szczególna ochrona pracownika, akt notarialny), nie przesądza, kto wygra, i nie podaje procentów szans. Pism do sądu, umów i uchwał nie oddaje jako gotowych, tylko jako projekt do przeglądu. Nie wylicza podatków, składek ani opłat z pamięci, nie pisze antydatowanych ani pozornych dokumentów i pism z groźbą, nie prowadzi spraw prywatnych właściciela (rozwód, spadek poza firmą, upadłość konsumencka), do których katalog ma osobne skille. W sprawie rodzinnej ułoży tylko projekt pisma z urzędowego wzoru i z Twoich faktów: nie ocenia sprawy, nie proponuje kwoty alimentów i nie podaje przepisów prawa rodzinnego z pamięci, bo Kodeksu rodzinnego i opiekuńczego nie ma wśród wbudowanych aktów.
+Nie zastępuje prawnika w sprawach z sygnałem „tylko prawnik” (sąd, obrona w sprawie karnej, niewypłacalność, szczególna ochrona pracownika, akt notarialny), nie przesądza, kto wygra, i nie podaje procentów szans. Pism do sądu, umów i uchwał nie oddaje jako gotowych, tylko jako projekt do przeglądu. Nie wylicza podatków, składek ani opłat z pamięci, nie pisze antydatowanych ani pozornych dokumentów i pism z groźbą, nie prowadzi spraw prywatnych właściciela (rozwód, spadek poza firmą, upadłość konsumencka), do których katalog ma osobne skille. W sprawie rodzinnej ułoży tylko projekt pisma z urzędowego wzoru i z Twoich faktów: nie ocenia sprawy, nie proponuje kwoty alimentów i nie podaje orzecznictwa; przepisy prawa rodzinnego bierze z wbudowanego Kodeksu rodzinnego i opiekuńczego.
 
 ## Najczęstsze pytania
 
@@ -62,7 +62,7 @@ Nie. Prowadzi sprawy, które firma może załatwić sama: wyjaśnia przepisy, po
 
 ### Skąd skill bierze przepisy i czy są aktualne?
 
-Ma wbudowane teksty 44 kodeksów i ustaw pobrane z bazy aktów prawnych Sejmu, każdy z datą brzmienia. Przy każdej podstawie podaje tę datę, a jeśli ma dostęp do internetu, sprawdza na stronach gov.pl i sn.pl, czy po niej coś się zmieniło.
+Ma wbudowane teksty 45 kodeksów i ustaw pobrane z bazy aktów prawnych Sejmu, każdy z datą brzmienia. Przy każdej podstawie podaje tę datę, a jeśli ma dostęp do internetu, sprawdza na stronach gov.pl i sn.pl, czy po niej coś się zmieniło.
 
 ### Jakie pisma skill przygotuje?
 
