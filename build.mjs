@@ -592,6 +592,7 @@ function stronaGlowna(skille) {
     </div>
     <div id="lista">${grupy}</div>
     <div class="pusto" id="pusto" hidden><b>Nic nie pasuje do tego hasła.</b>Spróbuj prostszego słowa albo <a href="#test">zrób test dopasowania</a>.</div>
+    <p class="dl-bonus kat-bonus"><b>Wolisz wszystkie naraz?</b> <a href="#newsletter">Zapisz się na newsletter</a>, a po potwierdzeniu adresu dostaniesz mailem ${komplet(LICZBA_GOTOWYCH)} w jednym pliku.</p>
   </div>
 </section>
 
