@@ -102,6 +102,14 @@ test('usługa: newsletter przy pobraniu, mail z paczką bez reklam, bonus po pot
   const zip = await pobierzKomplet();
   assert.match(zip.headers.get('content-type'), /zip/);
   assert.equal(await zip.text(), 'synthetic-komplet');
+  // Zapis z Dewellux: ten sam rejestr, ale bez bonusu katalogu w mailu i na stronie potwierdzenia.
+  const przedDx = mails.length;
+  const dx = await fetch(base + '/api/subskrypcje', { method: 'POST', headers: { 'Content-Type': 'application/json', Origin: 'https://dewellux.pl' }, body: JSON.stringify({ email: 'dewellux@example.com', telefon: '', zgodaEmail: true, zgodaSms: false, wersja: '2026-09-09', zrodlo: 'dewellux-newsletter', requestId: crypto.randomUUID() }) });
+  assert.equal(dx.status, 200);
+  const mailDx = mails.slice(przedDx).find((m) => /Potwierdź newsletter/.test(m.subject));
+  assert.ok(mailDx, 'mail potwierdzający dla zapisu z Dewellux');
+  assert.doesNotMatch(mailDx.text + mailDx.html, /api\/komplet|Bonus/);
+  assert.doesNotMatch(await (await potwierdzPost(linki(mailDx).find((u) => u.includes('/potwierdz')))).text(), /Pobierz komplet skilli/);
   assert.ok((await zapisy()).some((r) => r.typ === 'komplet-pobranie' && r.email === 'tak@example.invalid'));
 
   // 3. Po wypisie bonus z maila potwierdzającego nadal działa (wypis bez szkody).

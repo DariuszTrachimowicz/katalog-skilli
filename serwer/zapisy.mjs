@@ -79,6 +79,8 @@ const crmInbox=createEventInbox({dir:dirname(C.plikDanych),keyFile:process.env.A
 const KOMPLET = join(KORZEN, "paczki", "komplet-skilli.zip");
 const liczbaKompletu = () => SKILLE.filter((s) => s.gotowy).length;
 
+// Komplet skilli jest zachętą katalogu; zapis z Dewellux dotyczy innego produktu, więc bonusu nie proponujemy.
+const zBonusem = (zrodlo) => zrodlo !== 'dewellux-newsletter' && existsSync(KOMPLET);
 const blokBonusu = (confirmToken) => `<div class="note"><strong>Twój bonus:</strong> ${komplet(liczbaKompletu())} w jednym pliku ZIP. W środku osobne pliki .skill, każdy wgrywasz jak zwykle. Link działa także po wypisie.</div><a class="button" href="${BAZA}/api/komplet?t=${encodeURIComponent(confirmToken)}">Pobierz komplet skilli</a>`;
 
 async function mailSubskrypcji(requestId) {
@@ -87,7 +89,7 @@ async function mailSubskrypcji(requestId) {
   let accepted=false;
   try {
   // Link do bonusu jest w mailu potwierdzającym na stałe (zadziała dopiero po potwierdzeniu, także po wypisie).
-  const bonus=existsSync(KOMPLET)?{url:`${BAZA}/api/komplet?t=${r.delivery.confirmToken}`,opis:komplet(liczbaKompletu())}:null;
+  const bonus=zBonusem(r.source)?{url:`${BAZA}/api/komplet?t=${r.delivery.confirmToken}`,opis:komplet(liczbaKompletu())}:null;
   accepted=await wyslijMail({do:r.email,...newsletterConfirmation({base:BAZA_SUBSKRYPCJI,delivery:r.delivery,bonus})}); }
   finally { subskrypcje.finishMail(requestId,accepted); }
 }
@@ -546,7 +548,7 @@ const serwer = createServer(async (req, res) => {
         const token=form.get('t')||'';
         const preference=subskrypcje.find(token,confirm?'confirm_hash':'unsubscribe_hash');
         if(req.method==='GET')return sendSubscriptionPage(res,subscriptionForm({confirm,preference,token,statuses:{email:subskrypcje.status(preference.request_id,'email'),sms:subskrypcje.status(preference.request_id,'sms')}}));
-        if(confirm){const status=subskrypcje.confirm(token);return sendSubscriptionPage(res,subscriptionResult({confirm:true,status,hasSms:!!preference.consent_sms,extra:status==='potwierdzona'&&existsSync(KOMPLET)?blokBonusu(token):''}));}
+        if(confirm){const status=subskrypcje.confirm(token);return sendSubscriptionPage(res,subscriptionResult({confirm:true,status,hasSms:!!preference.consent_sms,extra:status==='potwierdzona'&&zBonusem(preference.source)?blokBonusu(token):''}));}
         const channel=form.get('kanal');
         // Legacy guard reads this file immediately before SMTP. Persist its block first;
         // a failed second write returns 503 but cannot leave a fresh legacy permission.
