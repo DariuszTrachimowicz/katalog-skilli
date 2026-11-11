@@ -110,6 +110,14 @@ test('usługa: newsletter przy pobraniu, mail z paczką bez reklam, bonus po pot
   assert.ok(mailDx, 'mail potwierdzający dla zapisu z Dewellux');
   assert.doesNotMatch(mailDx.text + mailDx.html, /api\/komplet|Bonus/);
   assert.doesNotMatch(await (await potwierdzPost(linki(mailDx).find((u) => u.includes('/potwierdz')))).text(), /Pobierz komplet skilli/);
+  // Stan i wypis jednej prośby tokenem z odpowiedzi na zapis (ekran „Moje konto” w Dewellux).
+  const tokenDx = t64((await dx.json()).wypisUrl);
+  const stan = async (t) => { const r = await fetch(base + '/api/subskrypcje/stan', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams({ t }) }); return [r.status, (await r.json()).email]; };
+  assert.deepEqual(await stan(tokenDx), [200, 'potwierdzona']);
+  assert.equal((await stan('0'.repeat(64)))[0], 400);
+  assert.equal((await fetch(base + '/api/subskrypcje/stan?t=' + tokenDx)).status, 405);
+  assert.equal((await fetch(base + '/api/subskrypcje/wypisz', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams({ t: tokenDx, kanal: 'email' }) })).status, 200);
+  assert.deepEqual(await stan(tokenDx), [200, 'wycofana']);
   assert.ok((await zapisy()).some((r) => r.typ === 'komplet-pobranie' && r.email === 'tak@example.invalid'));
 
   // 3. Po wypisie bonus z maila potwierdzającego nadal działa (wypis bez szkody).

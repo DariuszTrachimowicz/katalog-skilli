@@ -539,6 +539,14 @@ const serwer = createServer(async (req, res) => {
         return odpowiedz(res,200,accepted.result);
       }catch(e){return odpowiedz(res,e.status||503,{ok:false,blad:e.status?e.message:'Nie potwierdzono trwałego zapisu. Ponów z tym samym identyfikatorem.'});}
     }
+    // Stan jednej prośby dla serwisu, który ją złożył (np. Dewellux): kluczem jest token wypisu tej prośby z odpowiedzi na zapis.
+    if(url.pathname==='/api/subskrypcje/stan') {
+      res.setHeader('Referrer-Policy','no-referrer');
+      if(req.method!=='POST')return odpowiedz(res,405,{ok:false});
+      try {const p=subskrypcje.find(new URLSearchParams(await czytajCialo(req)).get('t')||'','unsubscribe_hash');
+        return odpowiedz(res,200,{ok:true,email:subskrypcje.status(p.request_id,'email')});
+      }catch(e){return odpowiedz(res,e.status||503,{ok:false});}
+    }
     if(['/api/subskrypcje/potwierdz','/api/subskrypcje/wypisz'].includes(url.pathname)) {
       res.setHeader('Referrer-Policy','no-referrer');
       const confirm=url.pathname.endsWith('/potwierdz');
