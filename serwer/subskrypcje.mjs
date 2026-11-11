@@ -10,7 +10,8 @@ const INTERNAL_ORIGINS=Object.freeze({'portal-kontakt':'https://aixperts.pl','po
 export const TEXT=Object.freeze({email:'Chcę otrzymywać od D-X.PL Michał Jaśkiewicz newsletter e-mail o ofertach, nowościach i promocjach AiXperts i Digital Xperts. Zgodę mogę wycofać w każdej chwili.',sms:'Chcę otrzymywać od D-X.PL Michał Jaśkiewicz wiadomości SMS o ofertach, nowościach i promocjach AiXperts i Digital Xperts na podany numer telefonu. Zgodę mogę wycofać w każdej chwili.'});
 const hash=x=>createHash('sha256').update(x).digest('hex');
 const fail=(status,message)=>{throw Object.assign(new Error(message),{status});};
-export function normalizePhone(value){const p=String(value??'').trim().replace(/[ ()-]/g,'');return /^\+[1-9]\d{7,14}$/.test(p)?p:null;}
+// Polski numer wystarczy podać jako 9 cyfr: prefiks +48 dopisuje serwer, w rejestrze jest zawsze pełny numer.
+export function normalizePhone(value){let p=String(value??'').trim().replace(/[ ()-]/g,'');if(/^\d{9}$/.test(p))p='+48'+p;return /^\+[1-9]\d{7,14}$/.test(p)?p:null;}
 export function appendDurable(path,row){const fd=openSync(path,'a',0o600);try{const b=Buffer.from(JSON.stringify(row)+'\n');let n=0;while(n<b.length)n+=writeSync(fd,b,n,b.length-n);fsyncSync(fd);}finally{closeSync(fd);}if(process.platform!=='win32'){const d=openSync(dirname(path),'r');try{fsyncSync(d);}finally{closeSync(d);}}return row;}
 export function createSubscriptions(path,{publicBase='https://skille.aixperts.pl'}={}){
   if(!['https://skille.aixperts.pl','https://newsletter.aixperts.pl'].includes(publicBase))throw new Error('Invalid subscription public base');
@@ -29,7 +30,7 @@ export function createSubscriptions(path,{publicBase='https://skille.aixperts.pl
     const email=String(body.email||'').trim().toLowerCase();
     if((body.zgodaEmail||email)&&(email.length>254||! /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)))fail(400,'Podaj poprawny adres e-mail.');
     const phone=normalizePhone(body.telefon);
-    if(body.zgodaSms&&!phone)fail(400,'Podaj telefon z prefiksem kraju, np. +48.');
+    if(body.zgodaSms&&!phone)fail(400,'Podaj poprawny numer telefonu, np. 500 100 200.');
     const canonical={email,telefon:String(body.telefon??'').trim(),zgodaEmail:body.zgodaEmail,zgodaSms:body.zgodaSms,wersja:VERSION,zrodlo:body.zrodlo};
     const fingerprint=hash(JSON.stringify(canonical));
     const old=rows().find(r=>r.type==='subscription-request'&&r.request_id===body.requestId);
@@ -57,7 +58,7 @@ export function createSubscriptions(path,{publicBase='https://skille.aixperts.pl
     if(!emailChosen&&!smsChosen)return result;
     const validVersion=body.wersjaZgodySms===VERSION;
     const validSms=validVersion&&!!normalizePhone(body.telefon);
-    if(smsChosen&&!validSms){result.sms='odrzucona';result.powod='Nie zapisano SMS: podaj numer z prefiksem kraju i zaakceptuj aktualną treść zgody.';}
+    if(smsChosen&&!validSms){result.sms='odrzucona';result.powod='Nie zapisano SMS: podaj poprawny numer telefonu i zaakceptuj aktualną treść zgody.';}
     if(emailChosen&&!validVersion){result.email='odrzucona';result.powod='Nie zapisano newslettera: odśwież treść zgody.';}
     if(!(emailChosen&&validVersion)&&!(smsChosen&&validSms))return result;
     try{const saved=subscribe({email:body.email,telefon:body.telefon||'',zgodaEmail:emailChosen&&validVersion,zgodaSms:smsChosen&&validSms,wersja:VERSION,zrodlo:source,requestId:body.requestId},origin,true);

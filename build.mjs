@@ -305,8 +305,8 @@ function formularzPobrania(idPaczki) {
     <form class="dl-form" data-bonus="${komplet(LICZBA_GOTOWYCH)}" onsubmit="event.preventDefault();poprosOPaczke(this,'${idPaczki}')">
       <label class="sr-only" for="dl-mail-${idPaczki}">Adres e-mail do wysyłki linku</label>
       <input type="email" name="email" id="dl-mail-${idPaczki}" required placeholder="twoj@adres.pl" autocomplete="email">
-      <label class="sr-only" for="dl-phone-${idPaczki}">Telefon z prefiksem kraju, opcjonalnie</label>
-      <input type="tel" name="telefon" id="dl-phone-${idPaczki}" placeholder="Telefon, np. +48 500 100 200 (opcjonalnie)" autocomplete="tel">
+      <label class="sr-only" for="dl-phone-${idPaczki}">Telefon, opcjonalnie</label>
+      <input type="tel" name="telefon" id="dl-phone-${idPaczki}" placeholder="Telefon, np. 500 100 200 (opcjonalnie)" autocomplete="tel">
       <label class="dl-zgoda aix-sub-choice" data-aix-sms-phone="#dl-phone-${idPaczki}" hidden><input type="checkbox" name="zgodaSms" disabled> <span>Chcę otrzymywać od D-X.PL Michał Jaśkiewicz wiadomości SMS o ofertach, nowościach i promocjach AiXperts i Digital Xperts na podany numer telefonu. Zgodę mogę wycofać w każdej chwili.</span></label>
       <p class="dl-bonus"><b>Bonus dla zapisanych na newsletter:</b> ${komplet(LICZBA_GOTOWYCH)} w jednym pliku, mailem po potwierdzeniu zapisu.</p>
       <label class="dl-zgoda"><input type="checkbox" name="zgodaEmail"> <span>${esc(TEKST_ZGODY.email)}</span></label>

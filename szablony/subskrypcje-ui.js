@@ -35,9 +35,9 @@
       <p class="aix-sub-intro">Nowości, narzędzia i szkolenia AiXperts oraz Digital Xperts. Ty wybierasz kanał kontaktu.</p>
       <div class="aix-sub-fields">
         <label for="${id}-email">Adres e-mail <span>(dla newslettera)</span><input id="${id}-email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="twoj@adres.pl"></label>
-        <label for="${id}-phone">Telefon <span>(opcjonalnie)</span><input id="${id}-phone" name="telefon" type="tel" autocomplete="tel" maxlength="24" placeholder="np. +48 500 100 200" aria-describedby="${id}-phone-help"></label>
+        <label for="${id}-phone">Telefon <span>(opcjonalnie)</span><input id="${id}-phone" name="telefon" type="tel" autocomplete="tel" maxlength="24" placeholder="np. 500 100 200" aria-describedby="${id}-phone-help"></label>
       </div>
-      <p class="aix-sub-help" id="${id}-phone-help">Podaj numer z prefiksem kraju, jeśli chcesz wybrać SMS.</p>
+      <p class="aix-sub-help" id="${id}-phone-help">Podaj numer, jeśli chcesz wybrać SMS. Przy polskim numerze wystarczy 9 cyfr.</p>
       <label class="aix-sub-choice"><input type="checkbox" name="zgodaEmail"><span>${EMAIL}</span></label>
       <label class="aix-sub-choice" data-aix-sms-row hidden><input type="checkbox" name="zgodaSms" disabled><span>${SMS}</span></label>
       <p class="aix-sub-help">Wybory są dobrowolne. E-mail potwierdzisz linkiem. SMS wymaga osobnego potwierdzenia numeru przed rozpoczęciem wysyłki. <a href="https://skille.aixperts.pl/prywatnosc/" target="_blank" rel="noopener">Prywatność i kontakt</a>.</p>
@@ -58,8 +58,8 @@
       status.textContent = '';
       if (!payload.zgodaEmail && !payload.zgodaSms) { status.textContent = 'Wybierz e-mail lub SMS, aby zapisać subskrypcję.'; return; }
       if (payload.zgodaEmail && (!payload.email || !email.validity.valid)) { status.textContent = 'Podaj poprawny adres e-mail dla newslettera.'; email.focus(); return; }
-      if (payload.zgodaSms && !/^\+[1-9]\d{7,14}$/.test(payload.telefon.replace(/[\s()-]/g,''))) {
-        status.textContent = 'Podaj telefon z prefiksem kraju, np. +48 500 100 200.'; phone.focus(); return;
+      if (payload.zgodaSms && !/^(\+[1-9]\d{7,14}|\d{9})$/.test(payload.telefon.replace(/[\s()-]/g,''))) {
+        status.textContent = 'Podaj poprawny numer telefonu, np. 500 100 200.'; phone.focus(); return;
       }
       const signature = JSON.stringify(payload);
       if (signature !== lastPayload) { requestId = crypto.randomUUID(); lastPayload = signature; }
