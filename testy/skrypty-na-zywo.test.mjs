@@ -9,6 +9,7 @@ import { join } from "node:path";
 const SKRYPTY = [
   { plik: "orzeczenia_sn.py", sekcja: /## Orzeczenia SN na żywo/, adres: /repozytorium2\.sn\.pl/, min: 15 },
   { plik: "akty_eli.py", sekcja: /## Aktualność przepisów na żywo/, adres: /api\.sejm\.gov\.pl\/eli/, min: 20 },
+  { plik: "pismo_docx.py", sekcja: /## Pismo jako plik/, adres: /references\/wzory-pism\.md/, min: 1 },
 ];
 const PAUZY = new RegExp("[" + String.fromCharCode(0x2014, 0x2013) + "]");
 

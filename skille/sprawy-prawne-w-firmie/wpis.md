@@ -2,12 +2,13 @@
 nazwa: Sprawy prawne w firmie
 kategoria: Prawo
 status: gotowy
-wersja: 1.3.2
+wersja: 1.4.0
 poziom: Działa od razu
-aktualizacja: 2026-11-07
+aktualizacja: 2026-11-11
+zmiany: Doszło 13 wzorów pism do sądu i komornika, 17 wzorów pism rodzinnych oraz skrypt, który składa pismo w pliku DOCX w układzie pisma procesowego.
 skrot: Jeden skill prawny dla firmy bez prawnika na etacie. Sam dobiera moduł do sprawy (umowy, zatrudnienie i B2B, cudzoziemcy, dane osobowe i NIS2, spółka, sukcesja, sprzedaż konsumencka, urzędy i procedury podatkowe, spory, niewypłacalność, marka, najem lokalu, przetargi, pierwsza reakcja w sprawach karnych), sprawdza przepisy we wbudowanych kodeksach i ustawach, pokazuje drogi działania, pisze pisma i przygotowuje kartę sprawy dla prawnika.
 korzysc: Firma wie, co zrobić sama i kiedy iść do prawnika, a prawnik dostaje sprawę gotową do decyzji.
-szukaj: sprawy prawne w firmie bez prawnika, dział prawny w małej firmie, AI prawnik dla firmy, wezwanie do zapłaty wzór pisma, kara umowna miarkowanie, potrącenie wierzytelności, pismo do pracownika kara porządkowa, wypowiedzenie umowy z kontrahentem, odpowiedź na reklamację konsumenta 14 dni, odpowiedzialność zarządu za długi spółki, zatrudnienie cudzoziemca 2026, NIS2 czy moja firma podlega, najem lokalu użytkowego wypowiedzenie, przetarg odwołanie do KIO, znak towarowy zgłoszenie, karta sprawy dla prawnika, kodeks pracy 2026 mobbing, zwolnienie lekarskie kontrola pracodawcy, wypadek przy pracy co robić, czynny żal korekta deklaracji, przeszukanie w firmie, wyciek danych osobowych zgłoszenie UODO
+szukaj: sprawy prawne w firmie bez prawnika, dział prawny w małej firmie, AI prawnik dla firmy, wezwanie do zapłaty wzór pisma, odpowiedź na pozew wzór, sprzeciw od nakazu zapłaty wzór, pozew o zapłatę wzór docx, pozew o alimenty wzór, odpowiedź na pozew o alimenty, wniosek o kontakty z dzieckiem wzór, kara umowna miarkowanie, potrącenie wierzytelności, pismo do pracownika kara porządkowa, wypowiedzenie umowy z kontrahentem, odpowiedź na reklamację konsumenta 14 dni, odpowiedzialność zarządu za długi spółki, zatrudnienie cudzoziemca 2026, NIS2 czy moja firma podlega, najem lokalu użytkowego wypowiedzenie, przetarg odwołanie do KIO, znak towarowy zgłoszenie, karta sprawy dla prawnika, kodeks pracy 2026 mobbing, zwolnienie lekarskie kontrola pracodawcy, wypadek przy pracy co robić, czynny żal korekta deklaracji, przeszukanie w firmie, wyciek danych osobowych zgłoszenie UODO
 tytulSeo: Sprawy prawne w firmie: analiza, pisma i karta dla prawnika
 opisSeo: "Skill AI po polsku dla firm bez prawnika: dobiera moduł do sprawy, sprawdza przepisy we wbudowanych kodeksach, pisze pisma i kartę dla prawnika."
 zgodnosc:
@@ -18,7 +19,7 @@ zgodnosc:
 
 ## Co robi
 
-Prowadzi sprawę prawną firmy od pierwszego opisu do decyzji: pyta o biegnące terminy, zbiera fakty, czyta wklejone dokumenty, sam wybiera właściwy moduł (umowy, zatrudnienie i współpraca B2B, cudzoziemcy, dane osobowe (wyciek, żądania osób, kamery w lokalu, marketing do firm) i cyberbezpieczeństwo, spółka i sukcesja, sprzedaż do konsumentów, urzędy i kontrole, procedury podatkowe (interpretacja, korekta deklaracji, raty i odroczenie, egzekucja, koncesje), spory i windykacja, niewypłacalność, marka i tajemnica firmy, najem lokalu, przetargi, pierwsza reakcja w sprawach karnych i karnych skarbowych (przeszukanie, świadek, mandat skarbowy, czynny żal, firma pokrzywdzona oszustwem)), sprawdza przepisy we wbudowanych tekstach kodeksów i ustaw z datą ich brzmienia i pokazuje dwie do czterech dróg działania. Pisze pisma: zwykłe gotowe do wysłania, a pisma do sądu, umowy i uchwały jako projekt do przeglądu przez prawnika. Gdy sprawa wymaga specjalisty, przygotowuje jednostronicową kartę sprawy z konkretnym pytaniem do rozstrzygnięcia.
+Prowadzi sprawę prawną firmy od pierwszego opisu do decyzji: pyta o biegnące terminy, zbiera fakty, czyta wklejone dokumenty, sam wybiera właściwy moduł (umowy, zatrudnienie i współpraca B2B, cudzoziemcy, dane osobowe (wyciek, żądania osób, kamery w lokalu, marketing do firm) i cyberbezpieczeństwo, spółka i sukcesja, sprzedaż do konsumentów, urzędy i kontrole, procedury podatkowe (interpretacja, korekta deklaracji, raty i odroczenie, egzekucja, koncesje), spory i windykacja, niewypłacalność, marka i tajemnica firmy, najem lokalu, przetargi, pierwsza reakcja w sprawach karnych i karnych skarbowych (przeszukanie, świadek, mandat skarbowy, czynny żal, firma pokrzywdzona oszustwem)), sprawdza przepisy we wbudowanych tekstach kodeksów i ustaw z datą ich brzmienia i pokazuje dwie do czterech dróg działania. Pisze pisma: zwykłe gotowe do wysłania, a pisma do sądu, umowy i uchwały jako projekt do przeglądu przez prawnika. Gdy sprawa wymaga specjalisty, przygotowuje jednostronicową kartę sprawy z konkretnym pytaniem do rozstrzygnięcia. Pisma do sądu i komornika układa według 13 wzorów, w większości opartych na urzędowych wzorach Ministerstwa Sprawiedliwości, między innymi pozwu o zapłatę, odpowiedzi na pozew, sprzeciwu od nakazu zapłaty i apelacji. Tam, gdzie asystent może uruchamiać kod, oddaje pismo jako plik DOCX w układzie pisma procesowego: data i sąd po prawej, strony pod sobą, tytuł na środku, pola do uzupełnienia zaznaczone na żółto. Na prośbę ułoży też z urzędowego wzoru projekt pisma do sądu rodzinnego (alimenty, rozwód, kontakty z dzieckiem, podział majątku), choć samych spraw rodzinnych nie prowadzi.
 
 ## Dla kogo
 
@@ -46,11 +47,12 @@ Krótki opis sprawy: kim jest firma (forma prawna, wielkość), co się stało i
 - Nie ma wbudowanych rozporządzeń ani aktów unijnych (RODO, AI Act) w pełnym brzmieniu; opiera się na opracowaniach w modułach i oznacza resztę do sprawdzenia.
 - Orzeczeń Sądu Najwyższego nie zawsze może otworzyć automatycznie; takie oznacza jako „do potwierdzenia”, a sprawy, które zależą od orzecznictwa, kieruje do prawnika.
 - Paczka jest duża (około 5 MB, około 16 MB po rozpakowaniu, przez wbudowane teksty ustaw). Wgranie w claude.ai sprawdziliśmy 6 listopada 2026 r. i działa; mieści się też w limicie Claude API (30 MB po rozpakowaniu). Przy komunikacie o zbyt dużym pliku w innym narzędziu napisz na kontakt@aixperts.pl.
+- Plik DOCX powstaje tylko tam, gdzie asystent może uruchamiać kod, na przykład w Claude z wykonywaniem kodu. W zwykłym oknie rozmowy dostajesz pismo jako tekst w tym samym układzie. Wzór daje układ pisma i nie zastępuje urzędowego formularza, gdy sąd go wymaga.
 - Nie zna faktów, których nie podasz; pismo z lukami oddaje z polami do uzupełnienia, a wynik analizy zmienia się, gdy dojdą nowe dokumenty.
 
 ## Czego ten skill nie robi celowo
 
-Nie zastępuje prawnika w sprawach z sygnałem „tylko prawnik” (sąd, obrona w sprawie karnej, niewypłacalność, szczególna ochrona pracownika, akt notarialny), nie przesądza, kto wygra, i nie podaje procentów szans. Pism do sądu, umów i uchwał nie oddaje jako gotowych, tylko jako projekt do przeglądu. Nie wylicza podatków, składek ani opłat z pamięci, nie pisze antydatowanych ani pozornych dokumentów i pism z groźbą, nie zajmuje się sprawami prywatnymi właściciela (rozwód, spadek poza firmą, upadłość konsumencka), do których katalog ma osobne skille.
+Nie zastępuje prawnika w sprawach z sygnałem „tylko prawnik” (sąd, obrona w sprawie karnej, niewypłacalność, szczególna ochrona pracownika, akt notarialny), nie przesądza, kto wygra, i nie podaje procentów szans. Pism do sądu, umów i uchwał nie oddaje jako gotowych, tylko jako projekt do przeglądu. Nie wylicza podatków, składek ani opłat z pamięci, nie pisze antydatowanych ani pozornych dokumentów i pism z groźbą, nie prowadzi spraw prywatnych właściciela (rozwód, spadek poza firmą, upadłość konsumencka), do których katalog ma osobne skille. W sprawie rodzinnej ułoży tylko projekt pisma z urzędowego wzoru i z Twoich faktów: nie ocenia sprawy, nie proponuje kwoty alimentów i nie podaje przepisów prawa rodzinnego z pamięci, bo Kodeksu rodzinnego i opiekuńczego nie ma wśród wbudowanych aktów.
 
 ## Najczęstsze pytania
 
@@ -64,7 +66,7 @@ Ma wbudowane teksty 44 kodeksów i ustaw pobrane z bazy aktów prawnych Sejmu, k
 
 ### Jakie pisma skill przygotuje?
 
-Zwykłe pisma, np. wezwanie do zapłaty lub odpowiedź na reklamację, przygotuje do wysłania po sprawdzeniu faktów i uzupełnieniu danych; przy sygnale wymagającym prawnika odda projekt do przeglądu. Pozew, sprzeciw, umowę, uchwałę czy pełnomocnictwo przygotuje jako projekt z dopiskiem, że przed użyciem powinien go przejrzeć prawnik.
+Zwykłe pisma, np. wezwanie do zapłaty lub odpowiedź na reklamację, przygotuje do wysłania po sprawdzeniu faktów i uzupełnieniu danych; przy sygnale wymagającym prawnika odda projekt do przeglądu. Pozew, sprzeciw, umowę, uchwałę czy pełnomocnictwo przygotuje jako projekt z dopiskiem, że przed użyciem powinien go przejrzeć prawnik. Pisma do sądu układa według wzorów, w większości opartych na urzędowych wzorach Ministerstwa Sprawiedliwości, i może je oddać jako plik DOCX.
 
 ### Co to jest karta sprawy dla prawnika?
 
