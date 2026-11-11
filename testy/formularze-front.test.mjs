@@ -13,8 +13,9 @@ const fixtures = [
 function prepare(fixture, reply) {
   const html=readFileSync(fileURLToPath(new URL(`../../portal-tymczasowy/${fixture.dir}/index.html`,import.meta.url)),'utf8');
   const nodes=new Map();
-  const node=id=>{if(!nodes.has(id))nodes.set(id,{value:'',style:{display:''},checked:false,disabled:false,textContent:'',innerHTML:'',href:'',classList:{add(){},remove(){}},addEventListener(type,fn){this[type]=fn;},scrollIntoView(){}});return nodes.get(id);};
+  const node=id=>{if(!nodes.has(id))nodes.set(id,{value:'',style:{display:''},checked:false,disabled:false,textContent:'',innerHTML:'',href:'',classList:{add(){},remove(){}},addEventListener(type,fn){this[type]=fn;},scrollIntoView(){},focus(){}});return nodes.get(id);};
   for(const id of ['imie','email','telefon','firma','rola','cel','uwagi','wiadomosc','brakuje','branza'])node(id).value=id==='email'?'synthetic@example.invalid':id==='telefon'?'+48123456789':'Dane fikcyjne';
+  node('temat').value='inne';
   node('podziekowanie').style.display='none';
   const form=node(fixture.id);
   for(const id of ['imie','email','firma','rola','cel','uwagi','wiadomosc','brakuje','branza','token'])form[id]=node(id);
@@ -58,3 +59,19 @@ for(const fixture of fixtures) {
     assert.equal(state.node('blad').style.display,'block');
   });
 }
+
+test('popros-o-kontakt: temat jest wymagany, a pułapka i temat idą do usługi formularzy',async()=>{
+  const fixture=fixtures[0];
+  let state=prepare(fixture,{ok:true,json:async()=>({ok:true})});
+  state.node('temat').value='';
+  await state.submit();
+  assert.equal(state.request(),undefined);
+  assert.equal(state.node('blad').style.display,'block');
+  assert.notEqual(state.node('podziekowanie').style.display,'block');
+  state=prepare(fixture,{ok:true,json:async()=>({ok:true})});
+  state.node('temat').value='oferta';
+  await state.submit();
+  const body=new URLSearchParams(state.request().opts.body);
+  assert.equal(body.get('temat'),'oferta');
+  assert.equal(body.get('www'),'');
+});

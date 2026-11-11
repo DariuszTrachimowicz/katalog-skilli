@@ -440,7 +440,19 @@ const FORMULARZE_CRM = new Map([
   ["/api/formularze/kontakt", "87e5882626066318a1a971647a7f5dd6"],
   ["/api/formularze/ankieta-warsztatowa", "c7149ad2caa50c335e10ebc746482192"],
 ]);
-const POLA_CRM = { name: 200, email: 254, company: 200, phonenumber: 30, description: 8000, skad: 100 };
+const POLA_CRM = { name: 200, email: 254, company: 200, phonenumber: 30, description: 8000, skad: 100, temat: 20, www: 200 };
+// Temat wybierany w formularzu kontaktowym. Etykieta trafia do opisu leada jako linia „Temat: …”;
+// po ostatniej CRM rozpoznaje ofertę wysłaną do nas (crm-centrum/lead_labels.py, OFFER_MARKER).
+const TEMATY_KONTAKTU = { szkolenie: "szkolenie lub warsztat", wdrozenie: "wdrożenie AI w firmie", skille: "skille z katalogu",
+  inne: "inna sprawa", oferta: "oferta usług dla AiXperts" };
+// Skróty adresów nadawców oznaczonych w CRM jako Śmieci; plik co minutę zapisuje import Centrum.
+const PLIK_BLOKADY = join(dirname(C.plikDanych), "blokada-formularzy.json");
+function nadawcaZablokowany(email) {
+  const adres = String(email || "").trim().toLowerCase();
+  if (!adres) return false;
+  try { return JSON.parse(readFileSync(PLIK_BLOKADY, "utf8")).sha256.includes(createHash("sha256").update(adres).digest("hex")); }
+  catch { return false; } // brak albo uszkodzenie listy nie może zatrzymać formularza
+}
 const POLA_SUBSKRYPCJI={zgodaEmail:5,zgodaSms:5,wersjaZgodySms:10,requestId:36};
 const BLAD_FORMULARZA = "Nie możemy potwierdzić przyjęcia formularza. Skontaktuj się z nami: kontakt@aixperts.pl.";
 const potwierdzeniaWToku = new Map();
@@ -456,6 +468,17 @@ async function formularzDoCrm(req, res, klucz) {
     }
     widziane.add(nazwa);
   }
+  // Pułapka na automaty: pole niewidoczne dla ludzi. Wypełnione zgłoszenie dostaje pozorny sukces i nigdzie nie trafia.
+  if ((pola.get("www") || "") !== "") return odpowiedz(res, 200, { ok: true });
+  pola.delete("www");
+  const temat = pola.get("temat") || "";
+  if (temat !== "" && !Object.hasOwn(TEMATY_KONTAKTU, temat)) return odpowiedz(res, 400, { ok: false, blad: "Nieprawidłowe pola formularza." });
+  pola.delete("temat");
+  // Ostatnią linię opisu z formularza kontaktowego zawsze ustala serwer: CRM ufa tylko jej, nie treści wiadomości.
+  if (temat || klucz === FORMULARZE_CRM.get("/api/formularze/kontakt"))
+    pola.set("description", `${(pola.get("description") || "").slice(0, POLA_CRM.description - 60)}\nTemat: ${TEMATY_KONTAKTU[temat] || "nie wybrano"}`);
+  // Nadawca oznaczony w CRM jako Śmieci: bez kolejnego leada, zadania i zapisu na newsletter.
+  if (nadawcaZablokowany(pola.get("email"))) return odpowiedz(res, 200, { ok: true });
   const wybor={email:pola.get('email'),telefon:pola.get('phonenumber'),zgodaEmail:pola.get('zgodaEmail')==='true',zgodaSms:pola.get('zgodaSms')==='true',wersjaZgodySms:pola.get('wersjaZgodySms'),requestId:pola.get('requestId')};
   for(const key of Object.keys(POLA_SUBSKRYPCJI))pola.delete(key);
   pola.set("key", klucz);
