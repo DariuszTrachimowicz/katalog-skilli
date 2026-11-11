@@ -20,12 +20,16 @@ Wczytaj, gdy przygotowujesz pismo do sądu albo komornika (zawsze poziom B z `pi
 14. Wniosek o klauzulę wykonalności albo stwierdzenie prawomocności
 15. Wniosek o sprostowanie oczywistej omyłki
 16. Pismo do kontrahenta albo urzędu (układ)
+17. Zawiadomienie o przestępstwie (firma pokrzywdzona)
+18. Zażalenie na odmowę wszczęcia albo umorzenie postępowania
+19. Sprzeciw od wyroku nakazowego
+20. Wniosek o rozłożenie grzywny na raty
 
 ## 1. Skąd są wzory i jak ich używać
 
-- **Źródło.** Wzory 4, 6-8 i 10-15 odtwarzają układ urzędowych wzorów z kart usług Ministerstwa Sprawiedliwości dla biur obsługi interesantów sądów (serwis wsoi.ms.gov.pl) i wzoru Sądu Okręgowego w Warszawie (wzór 15), pobranych 4 października 2026 r. Numer karty stoi przy wzorze. Wzory 3, 5 i 16 są własne, ułożone z wymogów pisma procesowego (KPC art. 126 § 1 i 2), bo urzędowego wzoru nie ma.
+- **Źródło.** Wzory 4, 6-8 i 10-15 odtwarzają układ urzędowych wzorów z kart usług Ministerstwa Sprawiedliwości dla biur obsługi interesantów sądów (serwis wsoi.ms.gov.pl) i wzoru Sądu Okręgowego w Warszawie (wzór 15), pobranych 4 października 2026 r. Numer karty stoi przy wzorze. Wzory 3, 5, 16 i 17 są własne, ułożone z wymogów pisma procesowego (KPC art. 126 § 1 i 2, w sprawach karnych KPK art. 119 § 1), bo urzędowego wzoru nie ma. Wzory 18-20 odtwarzają układ kart usług dla spraw karnych.
 - **Wzór to układ, nie lista wymogów.** Wymogi formalne każdorazowo sprawdź w pliku aktu (przy wzorze jest przepis, od którego zacząć). Urzędowy wzór mógł nie nadążyć za zmianą przepisu; gdy różni się od aktu, stosujesz akt.
-- **Terminy, opłaty, sąd.** Termin podajesz jako regułę z podstawą i tylko warunkowo jako datę. Opłaty nie wpisujesz z pamięci: `[WYMAGA WERYFIKACJI: opłata według ustawy o kosztach sądowych, akt KOSZTY]`. Sąd, wydział i sygnaturę bierzesz z dokumentu użytkownika; gdy ich nie ma, `[UZUPEŁNIJ: …]`.
+- **Terminy, opłaty, sąd.** Termin podajesz jako regułę z podstawą i tylko warunkowo jako datę. Opłaty nie wpisujesz z pamięci: w sprawach cywilnych wskazujesz regułę z aktu KOSZTY (przepis i data brzmienia), a w sprawach karnych (wzory 17-20) koszty reguluje osobna ustawa, której skill nie ma, więc niczego nie wskazujesz; w obu przypadkach zawsze oznaczasz `[WYMAGA WERYFIKACJI: opłata według ustawy o kosztach sądowych, potwierdź w sądzie albo na gov.pl]`, także gdy kwotę odczytałeś z pliku aktu (`pisma.md`, punkt 5.4). Sąd, wydział i sygnaturę bierzesz z dokumentu użytkownika; gdy ich nie ma, `[UZUPEŁNIJ: …]`.
 - **Formularz urzędowy.** Gdy pouczenie doręczone z orzeczeniem albo przepis wymaga urzędowego formularza (KPC art. 125 § 2), mówisz to wprost i przygotowujesz treść do przeniesienia do formularza; sam wzór go nie zastępuje. Skarga na czynności komornika może być wniesiona na urzędowym formularzu (KPC art. 767 § 3¹).
 - **Kanał wniesienia.** Gdy pismo w tej sprawie musi iść przez system teleinformatyczny, wniesione inaczej nie wywołuje skutków (KPC art. 125 § 2¹); ustal to przed oddaniem pliku (`pisma.md`, punkt 5).
 - **Fakty tylko od użytkownika.** Wzór nie dodaje żądań, zarzutów ani dowodów. Punkty wzoru, których użytkownik nie potwierdził, zostają jako `[UZUPEŁNIJ: …]` albo wypadają; nie zostawiasz w piśmie wariantów „w całości/w części” ani gwiazdek „niepotrzebne skreślić”.
@@ -500,3 +504,114 @@ NIP: [UZUPEŁNIJ: NIP]
 @zalaczniki:
 [UZUPEŁNIJ: załączniki albo usuń ten blok]
 ```
+
+## 17. Zawiadomienie o przestępstwie (firma pokrzywdzona)
+
+Wzór własny (urzędowej karty nie ma), zawsze poziom B i zawsze po lekturze `moduly/sprawy-karne-firmy.md`. Każdy, kto dowiedział się o przestępstwie ściganym z urzędu, ma społeczny obowiązek zawiadomić prokuratora albo Policję (KPK art. 304 § 1). Zawiadomienie opisuje fakty i dowody; kwalifikację prawną czynu zostawiasz organowi i prawnikowi. Nie łączysz zawiadomienia z wezwaniem do zapłaty ani z zapowiedzią wycofania go po zapłacie (`pisma.md`, punkt 2.7). Wymogi pisma, w tym dane kontaktowe albo oświadczenie o ich braku w pierwszym piśmie w sprawie: KPK art. 119 § 1.
+
+```
+@projekt
+@data: [UZUPEŁNIJ: miejscowość], dnia [UZUPEŁNIJ: data]
+
+@adresat:
+[UZUPEŁNIJ: prokuratura rejonowa albo jednostka Policji właściwa dla miejsca czynu]
+[UZUPEŁNIJ: adres]
+
+@strony:
+Zawiadamiający: [UZUPEŁNIJ: firma, adres siedziby, numer KRS albo NIP]
+reprezentowany przez: [UZUPEŁNIJ: imię, nazwisko i funkcja]
+[UZUPEŁNIJ: numer telefonu, telefaksu i adres e-mail albo oświadczenie, że ich nie ma]
+
+@tytul: ZAWIADOMIENIE O PODEJRZENIU POPEŁNIENIA PRZESTĘPSTWA
+
+Zawiadamiam o podejrzeniu popełnienia przestępstwa na szkodę [UZUPEŁNIJ: firma] i wnoszę o wszczęcie postępowania oraz o zawiadomienie mnie o jego wszczęciu albo odmowie wszczęcia.
+
+# UZASADNIENIE
+
+[UZUPEŁNIJ: co się stało, kiedy i gdzie, w kolejności zdarzeń; same fakty]
+
+[UZUPEŁNIJ: kto mógł to zrobić i skąd to przypuszczenie; przy braku wiedzy: sprawca nieznany]
+
+[UZUPEŁNIJ: szkoda: kwota i sposób jej wyliczenia]
+
+[UZUPEŁNIJ: dowody: dokumenty, korespondencja, zapisy z systemów, świadkowie z imieniem, nazwiskiem i adresem do wezwania]
+
+@podpis:
+[UZUPEŁNIJ: imię, nazwisko i funkcja osoby uprawnionej do reprezentacji]
+
+@zalaczniki:
+[UZUPEŁNIJ: dokument wykazujący umocowanie osoby podpisującej]
+[UZUPEŁNIJ: dowody wymienione w uzasadnieniu, każdy w osobnej linii]
+```
+
+## 18. Zażalenie na odmowę wszczęcia albo umorzenie postępowania
+
+Układ według karty 59/K/UU/SR. Na postanowienie o odmowie wszczęcia śledztwa zażalenie przysługuje m.in. pokrzywdzonemu, a na postanowienie o umorzeniu stronom (KPK art. 306 § 1 i 1a). Termin: 7 dni od doręczenia postanowienia (KPK art. 460); to termin zawity, a czynność po jego upływie jest bezskuteczna (KPK art. 122 § 1 i 2). Kto rozpoznaje zażalenie, zależy od trybu: co do zasady sąd właściwy do rozpoznania sprawy (KPK art. 465 § 2); gdy postanowienie wydał prowadzący postępowanie inny niż prokurator i prokurator go nie zatwierdził, prokurator sprawujący nadzór (KPK art. 465 § 3); postanowienie Policji o odmowie wszczęcia albo umorzeniu zatwierdza jednak prokurator (KPK art. 305 § 3, KPK art. 325e § 2), a wtedy co do zasady rozpoznaje je sąd; przy umorzeniu dochodzenia z wpisaniem sprawy do rejestru przestępstw zażalenie wnosi się do prokuratora nadzorującego dochodzenie, który kieruje je do sądu, jeśli się do niego nie przychyli (KPK art. 325e § 4); w sprawie z oskarżenia prywatnego umorzonej albo niewszczętej z braku interesu społecznego prokurator nadrzędny (KPK art. 465 § 2a); a gdy to już ponowna odmowa albo umorzenie po wcześniejszym uchyleniu postanowienia przez sąd, tylko prokurator nadrzędny (KPK art. 330 § 2). Adresata i pośrednika przepisujesz z pouczenia pod postanowieniem; bez pouczenia zadajesz jedno pytanie o rodzaj postanowienia, organ, który je wydał, i o to, czy zatwierdził je prokurator. Skarżący wskazuje zaskarżone rozstrzygnięcie i to, czego się domaga (KPK art. 427 § 1).
+
+```
+@projekt
+@data: [UZUPEŁNIJ: miejscowość], dnia [UZUPEŁNIJ: data]
+
+@sad:
+[UZUPEŁNIJ: sąd albo prokurator wskazany w pouczeniu jako rozpoznający zażalenie]
+[UZUPEŁNIJ: wydział albo jednostka]
+za pośrednictwem
+[UZUPEŁNIJ: organ wskazany w pouczeniu, zwykle ten, który wydał postanowienie; usuń dwie linie, jeśli pouczenie nie wskazuje pośrednika]
+[UZUPEŁNIJ: adres]
+
+@strony:
+Skarżący: [UZUPEŁNIJ: firma, adres siedziby, numer KRS albo NIP], pokrzywdzony
+reprezentowany przez: [UZUPEŁNIJ: imię, nazwisko i funkcja]
+[UZUPEŁNIJ: numer telefonu, telefaksu i adres e-mail albo oświadczenie, że ich nie ma]
+
+@sygnatura: Sygn. akt: [UZUPEŁNIJ: sygnatura z postanowienia]
+
+@tytul: ZAŻALENIE
+@podtytul: na postanowienie o [UZUPEŁNIJ: odmowie wszczęcia albo umorzeniu] [UZUPEŁNIJ: śledztwa albo dochodzenia] z dnia [UZUPEŁNIJ: data]
+
+Zaskarżam w całości postanowienie [UZUPEŁNIJ: organ] z dnia [UZUPEŁNIJ: data], doręczone dnia [UZUPEŁNIJ: data doręczenia], i wnoszę o jego uchylenie oraz przekazanie sprawy do dalszego prowadzenia.
+
+# UZASADNIENIE
+
+[UZUPEŁNIJ: czego organ nie ustalił albo nie sprawdził: pominięty dowód, nieprzesłuchany świadek, niezbadany dokument]
+
+[UZUPEŁNIJ: fakty i dowody, które przemawiają za prowadzeniem postępowania]
+
+@podpis:
+[UZUPEŁNIJ: imię, nazwisko i funkcja osoby uprawnionej do reprezentacji]
+
+@zalaczniki:
+[UZUPEŁNIJ: dowody wymienione w uzasadnieniu, każdy w osobnej linii]
+```
+
+## 19. Sprzeciw od wyroku nakazowego
+
+Układ według karty 60/K/UU/SR. Oskarżony i oskarżyciel mogą wnieść sprzeciw do sądu, który wydał wyrok nakazowy, w terminie zawitym 7 dni od doręczenia wyroku; sprzeciw wniesiony po terminie nie zostanie przyjęty (KPK art. 506 § 1 i 2). Po sprzeciwie wyrok traci moc i sprawa idzie na zasadach ogólnych, a sąd nie jest związany treścią wyroku nakazowego, więc kara może być inna, także surowsza (KPK art. 506 § 3 i 6); mówisz to użytkownikowi przed oddaniem pisma. Sprzeciw dotyczy osoby oskarżonej, nie firmy, a obronę prowadzi prawnik: skill układa tylko pismo, żeby termin nie upadł, i od razu kieruje do obrońcy. Uzasadnienie nie jest obowiązkowe (tak karta usługi), więc przy braku czasu wystarcza sam sprzeciw.
+
+```
+@projekt
+@data: [UZUPEŁNIJ: miejscowość], dnia [UZUPEŁNIJ: data]
+
+@sad:
+[UZUPEŁNIJ: sąd, który wydał wyrok nakazowy]
+[UZUPEŁNIJ: wydział karny]
+[UZUPEŁNIJ: adres sądu]
+
+@strony:
+Oskarżony: [UZUPEŁNIJ: imię i nazwisko]
+[UZUPEŁNIJ: adres]
+[UZUPEŁNIJ: numer telefonu, telefaksu i adres e-mail albo oświadczenie, że ich nie ma]
+
+@sygnatura: Sygn. akt: [UZUPEŁNIJ: sygnatura z wyroku]
+
+@tytul: SPRZECIW OD WYROKU NAKAZOWEGO
+
+Wnoszę sprzeciw od wyroku nakazowego [UZUPEŁNIJ: sąd] z dnia [UZUPEŁNIJ: data wyroku], sygn. akt [UZUPEŁNIJ: sygnatura], doręczonego mi dnia [UZUPEŁNIJ: data doręczenia].
+
+@podpis:
+[UZUPEŁNIJ: imię i nazwisko oskarżonego]
+```
+
+## 20. Wniosek o rozłożenie grzywny na raty
+
+Układ według karty 57/K/UU/SR. Podstawa i warunki (okres rat, przesłanki) są w Kodeksie karnym wykonawczym, który nie jest wbudowany: `[WYMAGA WERYFIKACJI: Kodeks karny wykonawczy, isap.sejm.gov.pl]`. Wniosek składa skazany do sądu, który wydał wyrok; fakty o sytuacji majątkowej i rodzinnej tylko od użytkownika, z dokumentami. Użyj zapisu wzoru 19 ze zmianami: strona `Skazany:`, tytuł `WNIOSEK O ROZŁOŻENIE GRZYWNY NA RATY`, treść `Wnoszę o rozłożenie na [UZUPEŁNIJ: liczba] rat grzywny w kwocie [UZUPEŁNIJ: kwota] zł orzeczonej wyrokiem [UZUPEŁNIJ: sąd] z dnia [UZUPEŁNIJ: data], sygn. akt [UZUPEŁNIJ: sygnatura]`, dodaj `# UZASADNIENIE` z polem `[UZUPEŁNIJ: dochody, koszty utrzymania, osoby na utrzymaniu, dlaczego jednorazowa zapłata nie jest możliwa, z dowodem]` i blok załączników z dowodami.
