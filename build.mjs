@@ -207,6 +207,12 @@ ${tresc}
     <p class="prawne"><a href="/regulamin/">Regulamin</a> · <a href="/prywatnosc/">Prywatność</a> · <a href="/llms.txt">llms.txt</a> · Katalog nie jest powiązany z Anthropic, OpenAI ani Google.</p>
   </div>
 </footer>
+${["/regulamin/", "/prywatnosc/", "/404.html"].includes(sciezka) ? "" : `<aside class="nw-pasek" id="nw-pasek" aria-label="Newsletter" hidden>
+  <p><b>Nowe skille i zmiany w przepisach.</b> Jeden mail raz na jakiś czas. Bonus na start: ${komplet(LICZBA_GOTOWYCH)} w jednym pliku.</p>
+  <a class="btn" href="${sciezka === "/" ? "" : "/"}#newsletter">Zapisz się</a>
+  <button type="button">Zamknij</button>
+</aside>
+<script>(function(){var p=document.getElementById("nw-pasek"),k="nw-pasek-zamkniety";try{if(sessionStorage.getItem(k)==="1")return}catch(e){}function z(){p.hidden=true;try{sessionStorage.setItem(k,"1")}catch(e){}}setTimeout(function(){p.hidden=false},4000);p.querySelector("button").addEventListener("click",z);p.querySelector("a").addEventListener("click",z)})();</script>`}
 ${tresc.includes('class="polec"') ? SKRYPT_POLEC : ""}
 ${skrypt}
 </body>
