@@ -2,7 +2,7 @@
 nazwa: Sprawy prawne w firmie
 kategoria: Prawo
 status: gotowy
-wersja: 1.5.0
+wersja: 1.5.1
 poziom: Działa od razu
 aktualizacja: 2026-11-11
 zmiany: Doszedł wbudowany Kodeks rodzinny i opiekuńczy (45. akt): pisma rodzinne z wzorów mają teraz przepisy sprawdzone w tekście kodeksu.
