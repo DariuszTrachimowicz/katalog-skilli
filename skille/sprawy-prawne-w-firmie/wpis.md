@@ -2,7 +2,7 @@
 nazwa: Sprawy prawne w firmie
 kategoria: Prawo
 status: gotowy
-wersja: 1.4.1
+wersja: 1.4.2
 poziom: Działa od razu
 aktualizacja: 2026-11-11
 zmiany: Doszło 13 wzorów pism do sądu i komornika, 17 wzorów pism rodzinnych oraz skrypt, który składa pismo w pliku DOCX. Teksty Kodeksu karnego i prawa autorskiego mają oznaczone zmiany z listopada 2026 r.

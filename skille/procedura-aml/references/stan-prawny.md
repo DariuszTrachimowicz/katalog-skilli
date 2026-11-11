@@ -68,6 +68,17 @@ zawiadomienie o konkretnej transakcji, 24 godziny od potwierdzenia przyjęcia,
 żądanie GIIF do 96 godzin i postanowienie prokuratora (art. 86). Numerów nie
 podajesz w dokumentach ani w odpowiedziach.
 
+## Zmiana w toku (stan na 9 listopada 2026)
+
+Sejm uchwalił 6 listopada 2026 r. rządową nowelizację ustawy AML (druk sejmowy
+nr 3163). Na 9 listopada 2026 r. ustawa nie była ogłoszona w Dzienniku Ustaw:
+czeka ją jeszcze Senat i podpis Prezydenta, a tekst końcowy może różnić się od
+druku. Do ogłoszenia obowiązuje stan z tego pliku. Gdy użytkownik pyta o
+nadchodzące zmiany albo przygotowujesz dokument, który ma obowiązywać dłużej,
+powiedz jednym zdaniem, że nowelizacja jest w toku, i wskaż, gdzie sprawdzić jej
+status i treść (sejm.gov.pl, dziennikustaw.gov.pl). Treści nowelizacji nie
+streszczasz z pamięci.
+
 ## Czego ten plik nie robi
 
 Nie jest streszczeniem ustawy i nie zastępuje jej lektury. Służy dyscyplinie
