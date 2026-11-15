@@ -105,6 +105,7 @@ Wczytaj zawsze przy kwalifikacji sprawy (krok 2 w SKILL.md). Sprawa często doty
 | Sprawa | Moduł główny | Akty |
 |---|---|---|
 | Udział w przetargu, wykluczenie, rażąco niska cena, odwołanie do KIO, umowa z zamawiającym | `moduly/przetargi.md` | PZP |
+| Przeczytanie SWZ przed ofertą: kalendarz, wadium, warunki udziału, kryteria, dokumenty, ryzyka projektu umowy (karta przetargu, skrypt kalendarza) | `katalog/swz-pod-lupa/`, potem `moduly/przetargi.md` przy piśmie do zamawiającego | PZP |
 
 ## 9a. Sprawy karne związane z firmą
 

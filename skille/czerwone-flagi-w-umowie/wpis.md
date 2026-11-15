@@ -2,9 +2,10 @@
 nazwa: Czerwone flagi w umowie
 kategoria: Prawo
 status: gotowy
-wersja: 1.0.8
+wersja: 1.0.9
 poziom: Działa od razu
-aktualizacja: 2026-11-07
+aktualizacja: 2026-11-15
+zmiany: Projekt umowy z przetargu publicznego (razem z SWZ) oddaje nowemu skillowi „SWZ pod lupą”.
 skrot: Czyta umowę, którą masz podpisać, i mówi po ludzku, na co uważać. Na koniec daje gotowe pytania do prawnika.
 korzysc: Wiesz, na co uważać w umowie, zanim ją podpiszesz, i idziesz do prawnika z gotowymi pytaniami.
 szukaj: umowa, kontrakt, prawnik, ryzyko, kara umowna, zakaz konkurencji, freelancer, B2B, najem
