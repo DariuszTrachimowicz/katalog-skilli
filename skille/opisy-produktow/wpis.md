@@ -2,9 +2,9 @@
 nazwa: Opisy produktów
 kategoria: Marketing
 status: gotowy
-wersja: 1.0.2
+wersja: 1.0.3
 poziom: Działa od razu
-aktualizacja: 2026-11-04
+aktualizacja: 2026-11-15
 skrot: Z tabeli parametrów robi gotowy opis produktu po polsku. Pokazuje, skąd wzięło się każde zdanie oraz czego w danych brakuje.
 korzysc: Masz opisy produktów, w których każde zdanie wynika z Twoich danych, i wiesz, czego w nich brakuje.
 szukaj: opis produktu, sklep internetowy, e-commerce, karta produktu, Allegro, copywriting, specyfikacja, hurtownia, parametry, marketplace
@@ -83,7 +83,7 @@ Nie, brak zostaje brakiem: skill wstawia puste pole do uzupełnienia i wypisuje 
 
 ### Czy skill napisze opisy produktów na Allegro?
 
-Tak, przed pisaniem pyta, gdzie opis pójdzie, bo własny sklep, Allegro i inne platformy mają różne limity długości i pola. Gdy pole opisu przyjmuje tylko zwykły tekst, poda parametry jako listę zamiast tabeli. Słów kluczowych nie dobierze, bo nie widzi Twojego sklepu ani tego, czego szukają klienci.
+Napisze, ale do tekstów na Allegro, także do samego opisu, służy osobny skill „Oferta na Allegro”: liczy znaki tytułu, zna pola formularza i zasady opisu Allegro. Ten skill pyta, gdzie opis pójdzie, i przy zwykłym tekście poda parametry jako listę zamiast tabeli. Słów kluczowych nie dobierze, bo nie widzi Twojego sklepu.
 
 ### Czy AI napisze opis suplementu albo kosmetyku?
 

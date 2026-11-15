@@ -1,6 +1,6 @@
 ---
 name: opisy-produktow
-description: 'Z tabeli parametrów, specyfikacji albo karty katalogowej robi teksty na kartę produktu, nazwę, krótki i rozwinięty opis, parametry, „warto wiedzieć przed zakupem”, podpinając każde zdanie do pola w danych i wypisując braki. Uruchamiaj przy „napisz opis produktu”, „zrób opisy do sklepu”, „ujednolić opisy”, „wystawiam to na Allegro”, także bez tych słów: plik z hurtowni i pytanie, co dalej; dwieście pozycji bez czasu; karty z tym samym tekstem; opisy jak z automatu. Nie dopisuj cech, wymiarów, składu ani certyfikatów spoza danych. NIE uruchamiaj do czyszczenia pliku, porzadkowanie-arkusza; do wniosków z danych, co-mowi-arkusz; do oferty dla firmy, oferta-handlowa; do maila do bazy, newsletter-do-klientow; do ceny, wycena-uslugi.'
+description: 'Z tabeli parametrów, specyfikacji albo karty katalogowej robi teksty na kartę produktu, nazwę, krótki i rozwinięty opis, parametry, „warto wiedzieć przed zakupem”, podpinając każde zdanie do pola w danych i wypisując braki. Uruchamiaj przy „napisz opis produktu”, „zrób opisy do sklepu”, „ujednolić opisy”, także bez tych słów: plik z hurtowni i pytanie, co dalej; dwieście pozycji bez czasu; karty z tym samym tekstem; opisy jak z automatu. Nie dopisuj cech, wymiarów, składu ani certyfikatów spoza danych. NIE uruchamiaj do czyszczenia pliku, porzadkowanie-arkusza; do wniosków z danych, co-mowi-arkusz; do oferty dla firmy, oferta-handlowa; do maila do bazy, newsletter-do-klientow; do ceny, wycena-uslugi; do oferty na Allegro (tytuł, parametry, opis w edytorze Allegro), oferta-allegro.'
 ---
 
 # Opisy produktów
@@ -50,7 +50,7 @@ Opis produktu jest częścią oferty. Cecha, którą dopiszesz, staje się obiet
 Ustal pięć rzeczy. Jeśli nie wynikają z tego, co dostałeś, zapytaj jednym zbiorczym pytaniem, nie po kolei.
 
 1. **Co to za produkt i dla kogo.** Kto go kupuje i po co. Bez tego opis będzie o parametrach, nie o zastosowaniu.
-2. **Gdzie opis pójdzie.** Własny sklep, Allegro, inna platforma sprzedażowa, karta w hurtowni. Każde miejsce ma inne limity długości i inne pola, platformy obcinają tytuł, a nagłówki i tabele nie zawsze się przenoszą.
+2. **Gdzie opis pójdzie.** Własny sklep, inna platforma sprzedażowa, karta w hurtowni. Gdy tekst ma trafić na Allegro, także sam opis, a w sesji jest skill `oferta-allegro`, ma on pierwszeństwo, bo zna zasady i pola Allegro; gdy go nie ma, piszesz opis sam. Każde miejsce ma inne limity długości i inne pola, platformy obcinają tytuł, a nagłówki i tabele nie zawsze się przenoszą.
 3. **Ton.** Na „Ty” czy na „Państwo”, rzeczowy czy ciepły. Trzymasz jeden w całej partii, spójność jest tu ważniejsza niż uroda pojedynczego zdania.
 4. **Długość.** Krótki opis nad przyciskiem kupna, opis rozwinięty, czy oba. Domyślnie oba.
 5. **Skąd są dane.** Od producenta, z hurtowni, z pomiaru własnego, czy przepisane z konkurencji. Jeśli przepisane od konkurencji, powiedz wprost, że przy opisie przepisanym od konkurencji nie wiesz, czy dotyczy tego samego wariantu, a identyczny tekst w kilku sklepach zwykle nie daje przewagi w wyszukiwarce.

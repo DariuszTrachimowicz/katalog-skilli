@@ -1,0 +1,29 @@
+Miernik wyzwalania: oferta-allegro
+Zestaw: 21 zapytan (+10 / -9 / 0:2), powtorzenia: 3, tlo: 60 opisow
+UWAGA: zestaw/tryb DYMNY, wynik nie zalicza bramki terytorium (pelny: >=8 plus, >=8 minus, >=2 zero, 16-20 zapytan, >=3 powtorzenia, pelne tlo).
+OK          [1/21] oczekiwani=oferta-allegro glosy=oferta-allegro,oferta-allegro,oferta-allegro :: wystawiam na allegro kurtke puchowa nordvik selja, damska, r
+OK          [2/21] oczekiwani=oferta-allegro glosy=oferta-allegro,oferta-allegro,oferta-allegro :: moja oferta na allegro nie wyswietla sie w wyszukiwarce, tyt
+OK          [3/21] oczekiwani=oferta-allegro glosy=oferta-allegro,oferta-allegro,oferta-allegro :: mam 30 produktow z hurtowni w excelu i chce je wrzucic na al
+OK          [4/21] oczekiwani=oferta-allegro glosy=oferta-allegro,oferta-allegro,oferta-allegro :: zaczynam sprzedawac na allegro jako mala firma, rekodzielo: 
+OK          [5/21] oczekiwani=oferta-allegro glosy=oferta-allegro,oferta-allegro,oferta-allegro :: ogarnij mi ogloszenie na allegro na uzywany rower trekkingow
+ROZJAZD     [6/21] oczekiwani=oferta-allegro glosy=ZADEN,oferta-allegro,ZADEN :: klient na allegro pisze ze w parametrach nie bylo wymiarow i
+OK          [7/21] oczekiwani=oferta-allegro glosy=oferta-allegro,oferta-allegro,oferta-allegro :: jakie slowa dac w tytule oferty allegro na etui do iphone 15
+OK          [8/21] oczekiwani=oferta-allegro glosy=oferta-allegro,oferta-allegro,oferta-allegro :: przepisz opis z mojego sklepu na edytor allegro, tam nie ma 
+OK          [9/21] oczekiwani=oferta-allegro glosy=oferta-allegro,oferta-allegro,oferta-allegro :: sprzedaje czesci samochodowe na allegro, klocki hamulcowe br
+OK          [10/21] oczekiwani=oferta-allegro glosy=oferta-allegro,oferta-allegro,oferta-allegro :: napisz sam opis lampy ogrodowej do mojej oferty na allegro, 
+OK          [11/21] oczekiwani=opisy-produktow glosy=opisy-produktow,opisy-produktow,opisy-produktow :: mam tabele parametrow 40 lamp z hurtowni, zrob z tego opisy 
+OK          [12/21] oczekiwani=opisy-produktow glosy=opisy-produktow,opisy-produktow,opisy-produktow :: napisz opis produktu do mojego sklepu internetowego na wooco
+OK          [13/21] oczekiwani=reklamacja-i-rekojmia/mail-po-polsku glosy=reklamacja-i-rekojmia,reklamacja-i-rekojmia,reklamacja-i-rekojmia :: klient z allegro chce zwrocic kurtke po 20 dniach i grozi ne
+OK          [14/21] oczekiwani=regulamin-sklepu-checklista glosy=regulamin-sklepu-checklista,regulamin-sklepu-checklista,regulamin-sklepu-checklista :: sprawdz regulamin mojego sklepu internetowego, czy ma wszyst
+OK          [15/21] oczekiwani=regulamin-pod-lupa glosy=regulamin-pod-lupa,regulamin-pod-lupa,regulamin-pod-lupa :: przeczytaj regulamin allegro smart dla sprzedajacych i powie
+OK          [16/21] oczekiwani=wycena-uslugi glosy=wycena-uslugi,wycena-uslugi,wycena-uslugi :: policz mi ile powinnam brac za uslugi fotografii produktowej
+OK          [17/21] oczekiwani=co-mowi-arkusz glosy=co-mowi-arkusz,co-mowi-arkusz,co-mowi-arkusz :: mam eksport sprzedazy z allegro za pazdziernik w excelu, pow
+OK          [18/21] oczekiwani=newsletter-do-klientow glosy=newsletter-do-klientow,newsletter-do-klientow,newsletter-do-klientow :: napisz newsletter do 1200 klientow sklepu o swiatecznej wysy
+OK          [19/21] oczekiwani=oferta-handlowa glosy=oferta-handlowa,oferta-handlowa,oferta-handlowa :: uloz oferte dla hurtowni budowlanej na dostawe 500 sztuk nas
+OK          [20/21] oczekiwani=ZADEN glosy=ZADEN,ZADEN,ZADEN :: ile kosztuje prowizja allegro w kategorii elektronika?
+OK          [21/21] oczekiwani=ZADEN glosy=ZADEN,ZADEN,ZADEN :: co to jest allegro smart?
+
+Wynik: 20/21 zgodnych (DYMNY).
+  ROZJAZD: oczekiwani=oferta-allegro, glosy=ZADEN,oferta-allegro,ZADEN :: klient na allegro pisze ze w parametrach nie bylo wymiarow i zwraca towar, spraw
+
+Kolizje do rozstrzygniecia ruchami z komendy terytorium.
