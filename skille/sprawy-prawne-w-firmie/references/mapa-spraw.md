@@ -67,6 +67,7 @@ Wczytaj zawsze przy kwalifikacji sprawy (krok 2 w SKILL.md). Sprawa często doty
 | Sprzedaż do konsumentów w innych państwach (oferta kierowana za granicę) | `moduly/sprzedaz-konsumencka.md` (część o sprzedaży za granicę); wybór prawa: prawnik | UPK (rozporządzenie Rzym I poza wbudowanymi aktami) |
 | Blokada konta sprzedawcy, usunięcie oferty albo ograniczenie sprzedaży przez platformę (marketplace) | `moduly/umowy-wlasne-firmy.md` + `moduly/sprzedaz-konsumencka.md` (część o platformach) | KC, SDE |
 | Regulamin własnego sklepu | `katalog/regulamin-sklepu-checklista/` | UPK, SDE |
+| Komunikat o obniżce ceny (najniższa cena z 30 dni, baner, newsletter, plakat) | `katalog/promocja-omnibus/` | CENY |
 | Reklamacja, rękojmia, gwarancja (po obu stronach) | `katalog/reklamacja-i-rekojmia/` | KC, UPK |
 
 ## 6. Urzędy i kontrole

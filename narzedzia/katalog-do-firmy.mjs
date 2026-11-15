@@ -17,7 +17,7 @@ export const ZRODLA = [
   "czerwone-flagi-w-umowie", "co-wlasciwie-podpisuje", "przed-podpisem-nda", "sprawdz-kontrahenta",
   "pelnomocnictwo-w-firmie", "dzielo-zlecenie-czy-etat", "zwolnienie-pracownika-krok-po-kroku",
   "prawa-autorskie-w-zleceniu", "rodo-dokumentacja", "rodo-w-malej-firmie", "zgody-na-stronie-www",
-  "regulamin-sklepu-checklista", "regulamin-pod-lupa", "reklamacja-i-rekojmia", "pismo-urzedowe",
+  "regulamin-sklepu-checklista", "promocja-omnibus", "regulamin-pod-lupa", "reklamacja-i-rekojmia", "pismo-urzedowe",
   "decyzja-z-urzedu-co-dalej", "kontrola-z-urzedu", "e-doreczenia-w-firmie", "sygnalisci-procedura",
   "polityka-ai", "windykacja-miekka", "kalendarz-obowiazkow", "ksef-procedury", "procedura-aml",
   "najem-mieszkania-pod-lupa", "remont-umowa-i-odbior", "nakaz-zaplaty-co-dalej",
