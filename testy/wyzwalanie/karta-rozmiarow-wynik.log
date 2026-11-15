@@ -1,0 +1,24 @@
+Miernik wyzwalania: karta-rozmiarow
+Zestaw: 20 zapytan (+9 / -9 / 0:2), powtorzenia: 3, tlo: 62 opisow
+OK          [1/20] oczekiwani=karta-rozmiarow glosy=karta-rozmiarow,karta-rozmiarow,karta-rozmiarow :: zrob mi tabele rozmiarow do sklepu z tego, co przyslala szwa
+OK          [2/20] oczekiwani=karta-rozmiarow glosy=karta-rozmiarow,karta-rozmiarow,karta-rozmiarow :: klientki ciagle zwracaja sukienki bo za male, mam tabele wym
+OK          [3/20] oczekiwani=karta-rozmiarow glosy=karta-rozmiarow,karta-rozmiarow,karta-rozmiarow :: napisz tekst jak sie zmierzyc do naszej rozmiarowki spodni: 
+OK          [4/20] oczekiwani=karta-rozmiarow glosy=karta-rozmiarow,karta-rozmiarow,karta-rozmiarow :: mam arkusz od hurtowni obuwia z dlugoscia wkladki w mm dla r
+OK          [5/20] oczekiwani=karta-rozmiarow glosy=karta-rozmiarow,karta-rozmiarow,karta-rozmiarow :: sprawdz czy ta tabela rozmiarow nie ma bledow zanim wrzuce j
+OK          [6/20] oczekiwani=karta-rozmiarow glosy=karta-rozmiarow,karta-rozmiarow,karta-rozmiarow :: przepisz rozmiarowke stanikow od producenta na nasza strone:
+OK          [7/20] oczekiwani=karta-rozmiarow glosy=karta-rozmiarow,karta-rozmiarow,karta-rozmiarow :: rozmiary dzieciece 98/104, 110/116, 122/128 ze wzrostem i ob
+OK          [8/20] oczekiwani=karta-rozmiarow glosy=karta-rozmiarow,karta-rozmiarow,karta-rozmiarow :: ogarnij mi rozmiarowke do kurtek, producent dal wymiary prod
+OK          [9/20] oczekiwani=karta-rozmiarow glosy=karta-rozmiarow,karta-rozmiarow,karta-rozmiarow :: potrzebuje karty rozmiarow do allegro bez tabeli, w punktach
+OK          [10/20] oczekiwani=opisy-produktow glosy=opisy-produktow,opisy-produktow,opisy-produktow :: napisz opis sukienki lnianej do sklepu z tabeli parametrow: 
+OK          [11/20] oczekiwani=oferta-allegro glosy=oferta-allegro,oferta-allegro,oferta-allegro :: wystawiam sukienke na allegro, zrob tytul, parametry i opis 
+OK          [12/20] oczekiwani=reklamacja-i-rekojmia glosy=reklamacja-i-rekojmia,reklamacja-i-rekojmia,reklamacja-i-rekojmia :: klientka chce zwrocic buty bo okazaly sie za male, minelo 20
+OK          [13/20] oczekiwani=promocja-omnibus glosy=promocja-omnibus,promocja-omnibus,promocja-omnibus :: sprawdz baner na black friday z przekreslonymi cenami sukien
+OK          [14/20] oczekiwani=co-mowi-arkusz glosy=co-mowi-arkusz,co-mowi-arkusz,co-mowi-arkusz :: mam w excelu zestawienie zwrotow za kwartal z kolumnami prod
+OK          [15/20] oczekiwani=porzadkowanie-arkusza glosy=porzadkowanie-arkusza,porzadkowanie-arkusza,porzadkowanie-arkusza :: scal trzy arkusze rozmiarowek od roznych hurtowni w jeden pl
+OK          [16/20] oczekiwani=mail-po-polsku glosy=mail-po-polsku,mail-po-polsku,mail-po-polsku :: napisz maila do szwalni, ze tabela rozmiarow sie nie zgadza 
+OK          [17/20] oczekiwani=newsletter-do-klientow glosy=newsletter-do-klientow,newsletter-do-klientow,newsletter-do-klientow :: napisz newsletter do klientek o nowej kolekcji sukienek lnia
+OK          [18/20] oczekiwani=wycena-uslugi glosy=wycena-uslugi,wycena-uslugi,wycena-uslugi :: policz ile powinnam brac za szycie sukienki na miare, zeby w
+OK          [19/20] oczekiwani=ZADEN glosy=ZADEN,ZADEN,ZADEN :: jaki rozmiar to 38 w rozmiarach brytyjskich?
+OK          [20/20] oczekiwani=ZADEN glosy=ZADEN,ZADEN,ZADEN :: jak sie mierzy obwod bioder?
+
+Wynik: 20/20 zgodnych.
