@@ -40,7 +40,7 @@ Paweł wkleja wiersz z arkusza. Dostaje tytuł „Lampa solarna ścienna z czujn
 
 ## Jak po polsku
 
-Skill pracuje na zasadach Allegro sprawdzonych 15 listopada 2026 w pomocy dla sprzedających i dokumentacji Allegro, z datą i źródłem przy każdej regule. Wie na przykład, że tytuł ma od 12 do 75 znaków i co najmniej 3 słowa, że znak „&” liczy się jak pięć znaków, że wyszukiwarka Allegro czyta tytuły, parametry i kategorie, ale nie opisy, że oferty wielowariantowe wyłączono w kwietniu 2026, a oferta łączy się z produktem z katalogu po kodzie EAN.
+Skill pracuje na zasadach Allegro sprawdzonych 15 listopada 2026 w pomocy dla sprzedających i dokumentacji Allegro, z datą i źródłem przy każdej regule. Wie na przykład, że tytuł ma od 12 do 75 znaków i co najmniej 3 słowa, że znak „&” liczy się jak pięć znaków, że wyszukiwarka Allegro czyta tytuły, parametry i kategorie, ale nie opisy, że oferty wielowariantowe wyłączono w kwietniu 2026, a oferta łączy się z produktem z katalogu po kodzie EAN albo kodzie producenta.
 
 Pilnuje polskiego zapisu: jednostki ze spacją (`78 cm`, `2400 mAh`), przecinek dziesiętny, cena `459 zł`, przymiotniki w tytule w kolejności, w jakiej ludzie wpisują frazę („kurtka puchowa damska”). Odróżnia opis od pól formularza: dane producenta i osoby odpowiedzialnej w UE, ostrzeżenia, zwroty i reklamacje wpisuje się osobno, nie w opisie.
 
