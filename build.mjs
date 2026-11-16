@@ -821,6 +821,8 @@ for (const s of skille) {
   const pliki = s.pliki.map((p) => (p.nazwa === `${s.id}/SKILL.md` ? zMetryczka(p, s) : p));
   pliki.push({ nazwa: `${s.id}/LICENSE.txt`, dane: Buffer.from(TEKST_LICENCJI, "utf8") });
   pliki.push({ nazwa: `${s.id}/LICENCJA.txt`, dane: Buffer.from(notkaLicencyjna(s), "utf8") });
+  // claude.ai odrzuca paczkę z ponad 200 plikami; build przerywa, zamiast wydać paczkę, której nie da się wgrać.
+  if (pliki.length > 200) throw new Error(`Paczka ${s.id}: ${pliki.length} plików, limit claude.ai to 200`);
   const zip = zbudujZip(pliki);
   zapisz(join(KORZEN, "paczki", `${s.id}.skill`), zip);
   console.log(`  paczka  paczki/${s.id}.skill  (${pliki.length} plików, ${(zip.length / 1024).toFixed(1)} KB)`);

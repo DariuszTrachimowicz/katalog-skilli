@@ -11,6 +11,7 @@ import { fileURLToPath } from "node:url";
 
 const KORZEN = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CEL = join(KORZEN, "skille", "sprawy-prawne-w-firmie", "references", "katalog");
+const WSPOLNE = join(KORZEN, "skille", "sprawy-prawne-w-firmie", "scripts");
 
 // Wąskie skille, z których korzysta skill firmowy (inwentaryzacja z 6 XI 2026).
 export const ZRODLA = [
@@ -26,7 +27,7 @@ export const ZRODLA = [
 
 const NAGLOWEK_PROCEDURY = (id) =>
   `<!-- Kopia z skille/${id}/SKILL.md (bez frontmatter), generowana: node narzedzia/katalog-do-firmy.mjs. Nie edytuj tutaj. -->\n` +
-  `> W skillu sprawy-prawne-w-firmie ten plik jest źródłem wiedzy i kolejności kroków. Ścieżki scripts/, assets/ i references/ z tego pliku są względem katalogu references/katalog/${id}/ (pliki z references/ leżą bezpośrednio w nim). Formuły odmowy, zakaz pisania pism i zakaz podawania artykułów z tego pliku NIE obowiązują: obowiązują zasady z nadrzędnego SKILL.md (poziomy pism, artykuły z wbudowanych aktów, karta dla prawnika).\n\n`;
+  `> W skillu sprawy-prawne-w-firmie ten plik jest źródłem wiedzy i kolejności kroków. Ścieżki scripts/, assets/ i references/ z tego pliku są względem katalogu references/katalog/${id}/ (pliki z references/ leżą bezpośrednio w nim). Formuły odmowy, zakaz pisania pism i zakaz podawania artykułów z tego pliku NIE obowiązują: obowiązują zasady z nadrzędnego SKILL.md (poziomy pism, artykuły z wbudowanych aktów, karta dla prawnika). Wspólnych skryptów (akty_eli.py, orzeczenia_sn.py) nie ma w tym katalogu: uruchamiaj je ze scripts/ w katalogu głównym skilla.\n\n`;
 const NAGLOWEK_REF = (id, plik) =>
   `<!-- Kopia z skille/${id}/references/${plik}, generowana: node narzedzia/katalog-do-firmy.mjs. Nie edytuj tutaj. -->\n`;
 
@@ -41,8 +42,15 @@ export function oczekiwane() {
       for (const f of readdirSync(ref).filter((f) => f.endsWith(".md")).sort())
         out.set(`${id}/${f}`, NAGLOWEK_REF(id, f) + readFileSync(join(ref, f), "utf8").replace(/\r\n/g, "\n"));
     // Skrypty i dane, na które powołuje się procedura (np. ocena ryzyka AML), kopiowane bajt w bajt.
+    // Skrypt identyczny z tym w scripts/ skilla firmowego nie jest kopiowany: claude.ai przyjmuje
+    // najwyżej 200 plików w paczce, a 31 kopii akty_eli.py i orzeczenia_sn.py przekroczyło limit.
     for (const pod of ["scripts", "assets"])
-      for (const rel of plikiRek(join(dir, pod))) out.set(`${id}/${pod}/${rel}`, readFileSync(join(dir, pod, rel)));
+      for (const rel of plikiRek(join(dir, pod))) {
+        const dane = readFileSync(join(dir, pod, rel));
+        const wspolny = join(WSPOLNE, rel);
+        if (pod === "scripts" && existsSync(wspolny) && Buffer.compare(dane, readFileSync(wspolny)) === 0) continue;
+        out.set(`${id}/${pod}/${rel}`, dane);
+      }
   }
   return out;
 }

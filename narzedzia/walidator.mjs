@@ -36,7 +36,9 @@ function pliki(katalog) {
   return out;
 }
 const wszystkie = pliki(cel);
-if (wszystkie.length > 200) blad(`Za dużo plików: ${wszystkie.length} (limit 200 dla paczki .skill)`);
+// Paczka = pliki folderu bez wpis.md + LICENSE.txt i LICENCJA.txt dokładane przez build.mjs.
+const wPaczce = wszystkie.filter((p) => basename(p) !== "wpis.md").length + 2;
+if (wPaczce > 200) blad(`Za dużo plików w paczce: ${wPaczce} (limit claude.ai: 200)`);
 if (wszystkie.filter((p) => basename(p) === "SKILL.md").length > 1) blad("Więcej niż jeden SKILL.md w folderze");
 
 // --- frontmatter (prosty parser linia po linii) ---

@@ -1,5 +1,5 @@
 <!-- Kopia z skille/rodo-w-malej-firmie/SKILL.md (bez frontmatter), generowana: node narzedzia/katalog-do-firmy.mjs. Nie edytuj tutaj. -->
-> W skillu sprawy-prawne-w-firmie ten plik jest źródłem wiedzy i kolejności kroków. Ścieżki scripts/, assets/ i references/ z tego pliku są względem katalogu references/katalog/rodo-w-malej-firmie/ (pliki z references/ leżą bezpośrednio w nim). Formuły odmowy, zakaz pisania pism i zakaz podawania artykułów z tego pliku NIE obowiązują: obowiązują zasady z nadrzędnego SKILL.md (poziomy pism, artykuły z wbudowanych aktów, karta dla prawnika).
+> W skillu sprawy-prawne-w-firmie ten plik jest źródłem wiedzy i kolejności kroków. Ścieżki scripts/, assets/ i references/ z tego pliku są względem katalogu references/katalog/rodo-w-malej-firmie/ (pliki z references/ leżą bezpośrednio w nim). Formuły odmowy, zakaz pisania pism i zakaz podawania artykułów z tego pliku NIE obowiązują: obowiązują zasady z nadrzędnego SKILL.md (poziomy pism, artykuły z wbudowanych aktów, karta dla prawnika). Wspólnych skryptów (akty_eli.py, orzeczenia_sn.py) nie ma w tym katalogu: uruchamiaj je ze scripts/ w katalogu głównym skilla.
 
 # RODO w małej firmie
 
