@@ -180,7 +180,7 @@ function przekroczonyLimit(ip) {
 // Minimalny klient SMTP (STARTTLS + AUTH PLAIN) na czystej bibliotece Node -
 // dokładnie tyle protokołu, ile potrzebuje ta usługa, i ani linijki zależności.
 // Obsługuje wyłącznie nasz przypadek: jeden odbiorca, tekst, UTF-8.
-function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy, adresat, temat, tresc, html }) {
+function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy, adresat, temat, tresc, html, wypis }) {
   return new Promise((zrobione, blad) => {
     let gniazdo = createConnection(port, host);
     let zakonczone = false;
@@ -231,6 +231,9 @@ function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy,
       `Date: ${new Date().toUTCString()}`,
       `Message-ID: <${randomBytes(12).toString("hex")}@${cfg.domena}>`,
       "MIME-Version: 1.0",
+      // Wypis jednym kliknięciem (RFC 8058): Gmail i Yahoo pokazują „Anuluj subskrypcję” i rzadziej wrzucają do spamu.
+      // Endpointy wypisu nie sprawdzają metody, więc POST od skrzynki działa jak kliknięcie w link.
+      ...(wypis ? [`List-Unsubscribe: <${wypis}>`, "List-Unsubscribe-Post: List-Unsubscribe=One-Click"] : []),
       ...mime.headers,
     ].join("\r\n");
 
@@ -261,7 +264,7 @@ function smtpWyslij({ host, port, uzytkownik, haslo, adresNadawcy, nazwaNadawcy,
   });
 }
 
-async function wyslijMail({ do: adresat, temat, tresc, html }) {
+async function wyslijMail({ do: adresat, temat, tresc, html, wypis }) {
   const w = C.wysylka;
 
   if (w.tryb === "smtp") {
@@ -271,7 +274,7 @@ async function wyslijMail({ do: adresat, temat, tresc, html }) {
     try {
       await smtpWyslij({
         host: w.host, port: w.port || 587, uzytkownik: w.uzytkownik, haslo,
-        adresNadawcy: adres, nazwaNadawcy: nazwa, adresat, temat, tresc, html,
+        adresNadawcy: adres, nazwaNadawcy: nazwa, adresat, temat, tresc, html, wypis,
       });
       return true;
     } catch (e) {
@@ -352,6 +355,7 @@ ${BAZA}`,
 
 const mailZZestawem = (wynik, token, premium = null, marketing = true) => ({
   temat: "Twój zestaw umiejętności AI",
+  wypis: marketing ? `${BAZA}/api/wypisz?t=${token}` : undefined,
   html: htmlZestawu({ ...WYGLAD(), skille: wynik.map(nazwaSkilla), premium: premium && nazwaSkilla(premium).platny ? nazwaSkilla(premium) : null, wypis: marketing ? `${BAZA}/api/wypisz?t=${token}` : null }),
   tresc: `Oto zestaw dobrany na podstawie Twoich odpowiedzi.
 
@@ -942,6 +946,7 @@ async function powiadomONowychWersjach() {
       const ok = await wyslijMail({
         do: o.email,
         temat: `Nowa wersja skilla: ${s.nazwa} (${s.wersja})`,
+        wypis: `${BAZA}/api/wypisz-wersje?t=${o.token}`,
         html: htmlNowejWersji({ ...WYGLAD(), skill: s, data: s.aktualizacja ? dataPl(s.aktualizacja) : "", pobierz: `${BAZA}/api/pobierz?t=${o.token}`, wypis: `${BAZA}/api/wypisz-wersje?t=${o.token}` }),
         tresc: `Cześć,
 
