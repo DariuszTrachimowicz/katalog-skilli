@@ -1,0 +1,35 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie: pozostał wyciek telefonu. Etap 3/3 zakończony, bez edycji plików.**
+
+Własne próby: `python -X utf8 -B -c`, import `maskuj` i `analiza`, kontrola `drukuj` i `zapisz_csv` w pamięci.
+
+| Zgłoszenie C9 | Ocena i wynik własnej próby |
+|---|---|
+| Drugi etykietowany telefon | **NAPRAWIONE.** `telefon: 600.100.200, tel. 500.200.100` → `telefon [telefon], tel. [telefon]`. Trzecia etykieta również działa. [wyciag.py:237](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:237>) |
+| Numer po `zam.` | **NAPRAWIONE.** `Abonament tel. za listopad, zam. nr 123456789` pozostaje identyczne. [wyciag.py:162](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:162>) |
+| Data RRRRMMDD | **NAPRAWIONE.** `Abonament tel. za 20261101 FV 42/2026` pozostaje identyczne. [wyciag.py:210](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:210>) |
+| Telefon poprzedzony datą | **NAPRAWIONE w zakresie wycieku.** `telefon 01.11.2026 600.100.200` → `telefon [telefon]`. Numer znika, lecz data również; patrz znalezisko 2. [wyciag.py:217](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:217>) |
+
+`--selftest`: **OK**. Oba pliki uruchomione; sumy zgodne:
+
+| Plik | Wpływy PLN | Wydatki PLN | Poza sumami |
+|---|---:|---:|---|
+| A-mbank | 4 130,00 | -7 324,38 | VAT -230,00 |
+| C-pekao | 4 500,00 | -4 108,30 | EUR -55,00 |
+
+Regresje: **6660 kontroli** etykietowanych telefonów, PESEL i adresów przeszło w obu wyjściach, w trzech polach układów A/C. **32 typowe przypadki zachowania treści i 256 kontroli wyjść** przeszły: kwoty z przecinkiem, daty, FV, NIP, zamówienia oraz słowa `hotel`, `komis`, `telewizja`, `komputer`. Rozszerzone próby ujawniły poniższe błędy.
+
+Znaleziska:
+
+1. **BLOKER: drugi telefon pod wspólną etykietą pozostaje jawny.**  
+   `tel. 600.100.200, 500.200.100` → `tel. [telefon], 500.200.100`. To realistyczna lista kontaktów. Wyciek potwierdzony w **12/12 kombinacji**: oba wyjścia, trzy pola, układy A/C. Reszta przechodzi ponownie tylko przez rozpoznawanie etykiet. [wyciag.py:237](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:237>).
+
+2. **WAŻNE: maskowanie telefonu usuwa wcześniejszą datę lub dokument.**  
+   `tel. FV 123456789, 600.100.200` → `tel. [telefon]`. Analogicznie znikają poprzedzające telefon data, NIP i `zam. nr`. Potwierdzone w obu wyjściach A/C. Funkcja zwraca koniec numeru, a zamiana usuwa cały poprzedzający fragment wartości. [wyciag.py:223](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:223>), [wyciag.py:237](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:237>).
+
+3. **WAŻNE: kwota z kropką w opisie staje się telefonem.**  
+   `Abonament tel. 12345.67 PLN` → `Abonament tel. [telefon] PLN` w obu wyjściach. Próba konstrukcyjna; oddzielna kolumna kwoty i suma pozostają poprawne. [wyciag.py:218](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:218>).
+
+Nie sprawdzano fizycznego zapisu ani otwierania w Excelu. Ryzyko wydania: ujawnienie drugiego telefonu pod wspólną etykietą.
+
+BLOKERY DO WYDANIA: TAK

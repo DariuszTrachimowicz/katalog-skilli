@@ -1,0 +1,55 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie. Krok 3/3 zakończony: pozostają blokery dotyczące sum i ujawniania danych.**
+
+Uruchomiono selftest (`OK`), oba CSV, 48 własnych przypadków oraz 13 dodatkowych reprodukcji. Eksport sprawdzono w pamięci.
+
+| CSV | Wpływy PLN | Wydatki PLN | Poza sumami PLN |
+|---|---:|---:|---|
+| A-mbank | 4 130,00 | −7 324,38 | przeksięgowanie VAT −230,00 |
+| C-pekao | 4 500,00 | −4 108,30 | −55 EUR |
+
+Ścieżki `scripts/`, `references/`, `SKILL.md` i `wpis.md` dotyczą `skille/wyciag-bankowy-do-tabeli/`.
+
+**Weryfikacja 5 blokerów z cyklu 2**
+
+| Nr | Status | Dowód i wynik własnego przypadku |
+|---|---|---|
+| B1. Zwykły wydatek wyłączany jako VAT | **CZĘŚCIOWO** | `scripts/wyciag.py:341`: `OPŁATA ZA PRZEKSIĘGOWANIE NA RACH. VAT`, −5 zł, zostaje wydatkiem. Jednak `Typ operacji=PRZELEW WYCHODZĄCY`, `Opis transakcji=Przeksięgowanie na rach. VAT`, −100 zł, nadal daje **wydatki 0** przez `scripts/wyciag.py:343`. |
+| B2. Utrata operacji | **CZĘŚCIOWO** | `scripts/wyciag.py:255`: pusta data i `20261131` przy −99 zł powodują `SUMY NIEPEŁNE`. Niedomknięty cudzysłów po 60 operacjach daje 61 zamiast 62 operacji, −70 zamiast −120 zł, ale już z ostrzeżeniem (`scripts/wyciag.py:219`). Data `2026-11-XX` nadal usuwa −99 zł **bez ostrzeżenia**. |
+| B3. Konflikt EUR/PLN | **NAPRAWIONE** | `scripts/wyciag.py:266`: `-55 EUR` z kolumną `PLN` trafia poza sumy; otrzymałem `SUMY NIEPEŁNE` i wskazanie wiersza. |
+| B4. Nieuzasadniona zgodność salda | **CZĘŚCIOWO** | `scripts/wyciag.py:443`, `scripts/wyciag.py:445`: jedna data z `+100/saldo 100`, `−20/saldo 0` oraz nieczytelna kwota dają „nie sprawdzono”. Jednak pominięcie −99 przy `2026-11-XX` pozwala nadal uzyskać **„zgodna”**. |
+| B5. Dane osobowe w wyjściu | **CZĘŚCIOWO** | `scripts/wyciag.py:197`, `scripts/wyciag.py:200`: `PESEL 800101-12345` i `adres: Warszawa, Kwiatowa 5` są maskowane. Błąd kwoty nie pokazuje surowej wartości (`scripts/wyciag.py:281`). Jednak `PESEL 440514-01458 PLN` i `FV +48 600 100 200` pozostają jawne **w terminalu i CSV**. |
+
+**Weryfikacja 5 ważnych uwag z cyklu 2**
+
+| Nr | Status | Dowód i wynik własnego przypadku |
+|---|---|---|
+| W1. Nadmierne maskowanie dokumentów i kwot | **NAPRAWIONE** dla wskazanych przypadków | `scripts/wyciag.py:167`, `scripts/wyciag.py:183`: `FV 123456789`, `FV 12-345/2026`, `kwota 123 456 789 PLN` pozostają bez zmian. IBAN DE z doklejonym `FV12` daje `…3000FV12`. |
+| W2. Numer dokumentu rozpoznawany jako US/ZUS | **CZĘŚCIOWO** | `scripts/wyciag.py:313`: poprawne NRB bezpośrednio po `FV` nie daje US/ZUS; w kolumnie rachunku znaczniki działają. Jednak `FV nr 41 1010 0071 2222 9876 5432 1098` nadal daje **US**. |
+| W3. Kolizje wyzwalania | **CZĘŚCIOWO** | `SKILL.md:3`, `testy/wyzwalanie/wyciag-bankowy-do-tabeli.md:24`: dodano raport z gotowych sum. Próby statyczne „surowy CSV bankowy, wyjaśnij trendy” oraz „surowy CSV bankowy, napisz raport dla zarządu” nadal nie mają jednoznacznego rozdzielenia ani obu odpowiedników w zestawie. |
+| W4. MT940/CSV i KSeF | **NAPRAWIONE** | `references/wyciagi.md:40`, `references/wyciagi.md:48`: format źródłowy przykładów oznaczono. Własna kontrola tekstowa: **0 wystąpień KSeF**, poboczna instrukcja usunięta. |
+| W5. Deklaracja obsługi ING | **NAPRAWIONE** | `SKILL.md:3`, `wpis.md:76`: opis wymienia sprawdzone układy i pozostałe po sprawdzeniu nagłówków. Własna kontrola: ING nie występuje w `description`; FAQ wymaga prawdziwego pliku. |
+
+**Kosmetyka C2: NAPRAWIONE.** `scripts/wyciag.py:492`: własny wydruk zawiera „okres od 1 listopada 2026 do 2 listopada 2026”; ISO pozostaje w tabeli.
+
+**Znaleziska wymagające zmian: blokery**
+
+1. **BLOKER — regresja maskowania.** `scripts/wyciag.py:167`, `scripts/wyciag.py:188`: kontekst dokumentu lub następująca waluta wyłącza ochronę także dla jawnego PESEL i telefonu. Potwierdzone oba wyjścia: `scripts/wyciag.py:500`, `scripts/wyciag.py:531`. **Zmiana:** jawne etykiety danych osobowych i telefon z `+48` muszą mieć pierwszeństwo przed wyjątkiem dokumentu/kwoty.
+
+2. **BLOKER — ciche pomijanie operacji i zmiana błędnej kwoty.** `scripts/wyciag.py:255`: `2026-11-XX;-99` znika bez uwagi, a saldo może dostać „zgodna”. Dodatkowo `scripts/wyciag.py:133` zmienia `1+2` na **12** bez ostrzeżenia. **Zmiana:** rozpoznawać stopki po ich treści; pozostałe błędne daty oznaczać jako nieodczytane. Plus dopuszczać wyłącznie jako pojedynczy znak początkowy.
+
+3. **BLOKER — błędne sumy VAT w obu kierunkach.** `scripts/wyciag.py:343`: swobodny opis przy zwykłym typie przelewu nadal usuwa −100 zł z wydatków. Odwrotnie, `scripts/wyciag.py:341` pozostawia prawidłowe przeksięgowanie −23 zł w wydatkach, gdy odziedziczony tytuł zawiera `/TXT/opłata za usługi`. **Zmiana:** wybierać strukturalne pole typu operacji; opłaty rozpoznawać po typie, bez globalnego wykluczenia przez słowo w tytule. Cztery podstawowe warianty mBank/PKO bez tego dodatku przechodzą.
+
+4. **BLOKER — mieszanie walut w osobnych kolumnach.** `scripts/wyciag.py:264`, `scripts/wyciag.py:276`: `Uznania=100 PLN`, `Obciążenia=55 EUR` daje **45 PLN wpływu bez uwagi**. **Zmiana:** sprawdzać wszystkie sufiksy przed odejmowaniem; różne waluty blokują sumowanie wiersza.
+
+**Znaleziska wymagające zmian: ważne**
+
+1. **WAŻNE — fałszywe „SUMY NIEPEŁNE” dla stopki.** `scripts/wyciag.py:255`: `;-10;Suma obciążeń` pod nagłówkiem `Data;Kwota;Opis` jest zgłaszane jako utracona operacja. Stopki z `Suma`, `Łącznie` lub `#Saldo końcowe` w kolumnie daty przechodzą. **Zmiana:** sprawdzać etykiety podsumowań również w pozostałych polach.
+
+2. **WAŻNE — nadal fałszywe US po numerze faktury.** `scripts/wyciag.py:160`, `scripts/wyciag.py:313`: wariant `FV nr [NRB]` omija wyjątek. **Zmiana:** uwzględnić oznaczenie `nr`; dla rachunku wyciąganego z opisu wymagać kontekstu rachunku.
+
+3. **WAŻNE — nierozstrzygnięte wyzwalanie według celu.** `SKILL.md:3`, `testy/wyzwalanie/wyciag-bankowy-do-tabeli.md:14`: granica nadal zależy głównie od gotowości danych. **Zmiana:** określić właściciela zadania przy analizie trendów i raporcie z surowego CSV; dodać oba przypadki do testów.
+
+Bez edycji plików; bez uruchamiania modelowego wyzwalania i Excela. Eksport sprawdzono w pamięci.
+
+BLOKERY DO WYDANIA: TAK

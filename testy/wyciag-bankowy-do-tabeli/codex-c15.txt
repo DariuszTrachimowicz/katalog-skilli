@@ -1,0 +1,27 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie: pozostał realistyczny wyciek telefonu. Krok 3/3 zakończony, bez edycji plików.**
+
+Odwołania poniżej dotyczą `skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py`. Własne próby wykonano przez `python -X utf8 -B -c`, z importem `maskuj` i `analiza`.
+
+| Znalezisko C14 | Ocena i własna próba |
+|---|---|
+| Wieloliniowe pole ujawnia dane osoby | **NAPRAWIONE.** PESEL i telefon zastępowane znacznikami; `adres: Warszawa\nKwiatowa 5/3` → `adres [adres]`. LF i CRLF, dane A/C, trzy pola tekstowe, `drukuj` i `zapisz_csv`: **72/72 kontroli bez wycieku**. `wyciag.py:206`. |
+| Separatory PESEL | **NAPRAWIONE.** `PESEL: 440514:01458` → `PESEL: [PESEL]`; analogicznie średnik, półpauza, pauza i dywiz. **60/60 kontroli** obu wyjść. `wyciag.py:238`. |
+
+`--selftest`: **OK**. Usunięcie każdej poprawki wyłącznie w pamięci powodowało niepowodzenie selftestu.
+
+| Plik uruchomiony przez CLI | Wpływy PLN | Wydatki PLN | Poza sumami |
+|---|---:|---:|---|
+| A-mbank.csv | 4 130,00 | -7 324,38 | VAT -230,00 |
+| C-pekao.csv | 4 500,00 | -4 108,30 | EUR -55,00 |
+
+Regresje: **34 przypadki, 408 kontroli wyjść zaliczonych** dla kwot, dat, faktur, NIP, zamówień i słów zawierających „tel”/„kom”. Same słowa pozostają zachowane. Nieoznaczone ciągi dziewięciu cyfr nadal podlegają ogólnemu maskowaniu telefonu (`wyciag.py:261`).
+
+Etykietowane dane osoby: **192/204 kontrole bez wycieku**. Wszystkie 12 niepowodzeń dotyczy poniższego znaleziska.
+
+1. **BLOKER — etykieta `kom:` nie uruchamia maskowania numeru z kropkami.**  
+   `zwrot za naprawę, kom: 600.100.200` pozostawia telefon jawny w `drukuj` i `zapisz_csv`. Potwierdzone na A/C, w kontrahencie, tytule i opisie: **12/12 wycieków**, sumy zachowane. Przyczyna: wzorzec rozpoznaje `kom.`, lecz pomija `kom:` (`wyciag.py:252`); ogólny wzorzec telefonu pomija kropki (`wyciag.py:261`). Wyjścia: `wyciag.py:574`, `wyciag.py:575`, `wyciag.py:610`. Poprawka powinna rozpoznawać samodzielne `kom` również przed dwukropkiem, z zachowaniem granicy słowa.
+
+Nie sprawdzano fizycznego zapisu ani Excela; `zapisz_csv` przechwycono w pamięci. Następny krok: poprawić rozpoznawanie `kom:` w `wyciag.py:252`.
+
+BLOKERY DO WYDANIA: TAK

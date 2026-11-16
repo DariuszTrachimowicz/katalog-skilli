@@ -1,0 +1,38 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie. Etap 3/3 zakończony; bez edycji plików.**
+
+Własne próby wykonano przez `python -X utf8 -B -c`, z importem `maskuj` i `analiza`. Każda reprodukcja C11: **12/12 kontroli** — `drukuj` i `zapisz_csv`, trzy pola, układy A/C.
+
+| Znalezisko C11 | Ocena i wynik własnej próby |
+|---|---|
+| Połączenie liczb ujawnia telefon | **NAPRAWIONE.** `tel. NIP 5260000001 600.100.200` → `tel. NIP 5260000001 [telefon]`; dwa telefony oddzielone spacją → `[telefon]`. `wyciag.py:223`, `:226`. |
+| Podwójna spacja w PESEL | **NAPRAWIONE.** `PESEL: 440514  01458` → `PESEL [PESEL]`. `wyciag.py:235`. |
+| Telefon zabiera rok faktury | **NAPRAWIONE.** `tel. FV 42/2026 600.100.200` → `tel. FV 42/2026 [telefon]`. `wyciag.py:223`. |
+| Grupowana kwota dziesiętna znika | **NAPRAWIONE.** `Abonament tel. 12 345.67 PLN` pozostaje identyczne. `wyciag.py:222`. |
+
+`--selftest`: **OK**. Oba pliki `dane/*.csv` uruchomione:
+
+| Plik | Wpływy PLN | Wydatki PLN | Poza sumami |
+|---|---:|---:|---|
+| A | 4 130,00 | -7 324,38 | VAT −230,00 |
+| C | 4 500,00 | -4 108,30 | EUR −55,00 |
+
+Regresje: **89/97 przypadków zachowania treści poprawnych**; osiem niepoprawnych dotyczy numerów dokumentów opisanych poniżej. Kwoty, daty oraz sprawdzone słowa zawierające „tel” i „kom” zachowane. **3084 kontrole typowych etykietowanych telefonów, PESEL i adresów bez wycieku**, w obu wyjściach.
+
+Znaleziska końcowe; każde potwierdzone również po wstawieniu wartości do rzeczywistych układów A/C, **12/12 kontroli**:
+
+1. **BLOKER — uszkadzanie numerów faktur i zamówień z prefiksem literowym.**  
+   `FV FS/123456789/2026` → `FV FS/[telefon]/2026`; `zamówienie AB-123456789/2026` → `zamówienie AB-[telefon]/2026`. To realistyczne formaty tytułu przelewu. Końcowy wzorzec telefonu ponownie przetwarza wcześniej osłonięty dokument; kontekst nie uwzględnia prefiksu. **`wyciag.py:162`, `:258`**.
+
+2. **WAŻNE — osłona NIP obejmuje tylko pierwszą grupę cyfr.**  
+   `telefon: NIP 526 00 00 001` → `telefon: NIP 526 [telefon]`. Pozostałe cyfry NIP zostają potraktowane jako telefon. **`wyciag.py:223`, `:226`**.
+
+3. **WAŻNE — nietypowe separatory pozostawiają dane jawne.**  
+   `tel. (22) 600/10/20` oraz `PESEL: 440514/01458` pozostają identyczne. Próby konstrukcyjne, bez potwierdzenia takich zapisów w dostarczonych eksportach. **`wyciag.py:226`, `:235`**.
+
+4. **WAŻNE — średnik wewnątrz wartości adresu kończy maskowanie.**  
+   Cytowane pole CSV `adres: Warszawa; Kwiatowa 5/3` → `adres [adres]; Kwiatowa 5/3`. Próba konstrukcyjna; parser CSV poprawnie zachowuje jedno pole, lecz maskowanie traktuje średnik jako jego koniec. **`wyciag.py:251`**.
+
+Nie sprawdzano fizycznego zapisu ani Excela; `zapisz_csv` wykonano w pamięci. Ryzyko wydania: utrata numerów dokumentów w wynikowym CSV.
+
+BLOKERY DO WYDANIA: TAK

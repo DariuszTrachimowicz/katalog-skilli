@@ -1,0 +1,27 @@
+Miernik wyzwalania: wyciag-bankowy-do-tabeli
+Zestaw: 20 zapytan (+10 / -8 / 0:2), powtorzenia: 3, tlo: 64 opisow
+OK          [1/20] oczekiwani=wyciag-bankowy-do-tabeli glosy=wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli :: mam historie rachunku z mbanku w csv za pazdziernik, rozpisz
+OK          [2/20] oczekiwani=wyciag-bankowy-do-tabeli glosy=wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli :: pobralem z ipko wyciag csv i w excelu wszystko jest w jednej
+OK          [3/20] oczekiwani=wyciag-bankowy-do-tabeli glosy=wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli :: posortuj wydatki z konta firmowego z ostatnich 3 miesiecy na
+OK          [4/20] oczekiwani=wyciag-bankowy-do-tabeli glosy=wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli :: zrob zestawienie z historii rachunku w pekao dla ksiegowej, 
+OK          [5/20] oczekiwani=wyciag-bankowy-do-tabeli glosy=wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli :: mamy split payment i rachunek vat, w wyciagu z santandera du
+OK          [6/20] oczekiwani=wyciag-bankowy-do-tabeli glosy=wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli :: sprawdz czy saldo w tym pliku z banku sie zgadza i czy nie m
+OK          [7/20] oczekiwani=wyciag-bankowy-do-tabeli glosy=wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli :: eksport operacji z aliora za listopad, ile zaplacilismy do u
+OK          [8/20] oczekiwani=wyciag-bankowy-do-tabeli glosy=wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli :: rozliczamy sie ze wspolokatorem, mam historie konta w csv, w
+OK          [9/20] oczekiwani=wyciag-bankowy-do-tabeli glosy=wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli :: mam surowy csv z historii konta firmowego za caly rok, rozpi
+OK          [10/20] oczekiwani=wyciag-bankowy-do-tabeli glosy=wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli,wyciag-bankowy-do-tabeli :: wrzucam surowy eksport z mbanku za kwartal, zrob z niego zes
+OK          [11/20] oczekiwani=faktura-do-tabeli glosy=faktura-do-tabeli,faktura-do-tabeli,faktura-do-tabeli :: przepisz te 25 faktur w pdf do tabeli z nip, kwotami netto i
+OK          [12/20] oczekiwani=porzadkowanie-arkusza glosy=porzadkowanie-arkusza,porzadkowanie-arkusza,porzadkowanie-arkusza :: uporzadkuj ten arkusz z zamowieniami od trzech handlowcow, r
+OK          [13/20] oczekiwani=co-mowi-arkusz glosy=co-mowi-arkusz,co-mowi-arkusz,co-mowi-arkusz :: mam gotowe zestawienie kosztow z excela za rok, co z niego w
+OK          [14/20] oczekiwani=przygotowanie-do-ksiegowej glosy=przygotowanie-do-ksiegowej,przygotowanie-do-ksiegowej,przygotowanie-do-ksiegowej :: co musze wyslac ksiegowej do 10 grudnia, mam stos paragonow 
+OK          [15/20] oczekiwani=windykacja-miekka glosy=windykacja-miekka,windykacja-miekka,windykacja-miekka :: klient nie zaplacil faktury od 40 dni, napisz przypomnienie
+OK          [16/20] oczekiwani=kalendarz-obowiazkow glosy=kalendarz-obowiazkow,kalendarz-obowiazkow,kalendarz-obowiazkow :: zrob mi liste stalych platnosci firmy na caly rok, zus, vat,
+ROZJAZD     [17/20] oczekiwani=raport-miesieczny glosy=ZADEN,ZADEN,ZADEN :: przygotuj raport miesieczny dla zarzadu z tych liczb sprzeda
+OK          [18/20] oczekiwani=raport-miesieczny glosy=raport-miesieczny,raport-miesieczny,raport-miesieczny :: mam juz sumy z wyciagu za pazdziernik: wplywy 48 tys, wydatk
+OK          [19/20] oczekiwani=ZADEN glosy=ZADEN,ZADEN,ZADEN :: co to jest mikrorachunek podatkowy?
+OK          [20/20] oczekiwani=ZADEN glosy=ZADEN,ZADEN,ZADEN :: jak pobrac historie rachunku w csv w aplikacji mbanku?
+
+Wynik: 19/20 zgodnych.
+  ROZJAZD: oczekiwani=raport-miesieczny, glosy=ZADEN,ZADEN,ZADEN :: przygotuj raport miesieczny dla zarzadu z tych liczb sprzedazy i kosztow
+
+Kolizje do rozstrzygniecia ruchami z komendy terytorium.

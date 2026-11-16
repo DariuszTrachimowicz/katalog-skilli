@@ -1,0 +1,36 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie. Krok 3/3 zakończony: pozostają wycieki danych osoby.**
+
+`--selftest`: **OK**. Własne próby przez `python -B -X utf8 -c`, z importem `maskuj` i `analiza`; `drukuj` i `zapisz_csv` sprawdzone w pamięci. Bez edycji plików.
+
+| CSV | Wpływy PLN | Wydatki PLN | Poza sumami |
+|---|---:|---:|---|
+| A-mbank | 4 130,00 | −7 324,38 | VAT −230,00 |
+| C-pekao | 4 500,00 | −4 108,30 | EUR −55,00 |
+
+| Znalezisko C4 | Status | Wynik własnej próby |
+|---|---|---|
+| Wyciek danych | **CZĘŚCIOWO** | Wszystkie cztery reprodukcje C4 zamaskowane. Inne realistyczne zapisy nadal jawne; szczegóły poniżej. |
+| Stopki | **CZĘŚCIOWO** | `Obciążenia razem` i `Uznania razem` pomijane poprawnie. `2026-11-XX;-99;Saldo za fakturę` daje ostrzeżenie, ale `;-99;Saldo za fakturę` nadal znika bez ostrzeżenia. [wyciag.py:277](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:277>) |
+| Faktura jako US | **CZĘŚCIOWO** | `FV VAT nr [NRB]` już bez US. `Faktura VAT numer [ten sam NRB]` nadal daje `US` i „Podatki (US)”. Przypadek syntetyczny. [wyciag.py:337](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:337>) |
+| „Rodzaj operacji” | **NAPRAWIONE** | Dla `PRZELEW WYCHODZĄCY` oraz opisu przeksięgowania VAT wydatek pozostaje **−100**, przeksięgowań **0**. Tak samo dla „Rodzaj transakcji”. [wyciag.py:261](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:261>) |
+
+Zwykłe kwoty, daty, NIP i krótkie numery faktur przechodzą próby. Maskowanie po etykietach ma jednak regresje opisane poniżej.
+
+Pozostające znaleziska:
+
+1. **BLOKER — realistyczne dane nadal wyciekają.** `PESEL nr 440 514 01458`, `telefon: +49 151 12345678` oraz `adres zamieszkania Warszawa, Kwiatowa 5` pozostają jawne. Potwierdzone w **9/9 kombinacji**: trzy zapisy × pola Tytuł/Opis/Kontrahent, zarówno w `drukuj`, jak i `zapisz_csv`. Przyczyny: ograniczone separatory PESEL, telefon obsługujący prefiks +48 oraz wymagany dwukropek adresu. [wyciag.py:210](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:210>), [wyciag.py:220](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:220>).
+
+2. **WAŻNE — etykieta telefonu niszczy daty i identyfikatory.** `Abonament tel. 01.11.2026` → `Abonament tel. [telefon]`; `Telefon FV nr 123456789`, `telefon zamówienie nr 123456789` i `telefon NIP 5260000001` tracą numery. Syntetyczna kwota `telefon 123 456,78 PLN` → `telefon [telefon],78 PLN`. Datę potwierdzono również w obu wyjściach. [wyciag.py:211](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:211>).
+
+3. **WAŻNE — „tel”/„kom” wewnątrz słów nadal wyzwala maskowanie.** Każde z `hotel`, `komis`, `telewizja`, `komunikacja` przed `123456789 PLN` powoduje zastąpienie liczby przez `[telefon]`. Próby syntetyczne; brak granicy początku słowa w etykiecie. [wyciag.py:163](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:163>).
+
+4. **WAŻNE — stopka nadal może ukryć uszkodzoną operację.** `;-99;Saldo za fakturę` pomijane bez `SUMY NIEPEŁNE`. Przypadek syntetyczny. [wyciag.py:277](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:277>).
+
+5. **WAŻNE — rozszerzony opis faktury nadal daje fałszywy US.** `Faktura VAT numer 41 1010 0071 2222 9876 5432 1098` otrzymuje kategorię podatkową. Przypadek syntetyczny. [wyciag.py:337](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:337>).
+
+Nie sprawdzano Excela ani fizycznego zapisu CSV; wykonanie eksportera sprawdzono w pamięci. Ryzyko wydania: ujawnienie danych osobowych.
+
+BLOKERY DO WYDANIA: TAK
+
+

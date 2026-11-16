@@ -1,0 +1,41 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie. Krok 3/3 zakończony: maskowanie nadal ujawnia dane osoby.**
+
+Selftest: `OK`. Uruchomiono oba CSV, próby eksploracyjne i końcowy zestaw 22 własnych przypadków przez `python -c`: **13 PASS, 9 FAIL**. Terminal i eksport CSV sprawdzono w pamięci, bez edycji plików.
+
+| CSV | Wpływy PLN | Wydatki PLN | Poza sumami PLN |
+|---|---:|---:|---|
+| A-mbank | 4 130,00 | −7 324,38 | VAT −230,00 |
+| C-pekao | 4 500,00 | −4 108,30 | −55 EUR |
+
+Ścieżki `scripts/`, `references/` i `SKILL.md` poniżej dotyczą `skille/wyciag-bankowy-do-tabeli/`.
+
+**Siedem znalezisk z cyklu 3**
+
+| Znalezisko | Status | Dowód i wynik własnej próby |
+|---|---|---|
+| B1. Maskowanie | **CZĘŚCIOWO** | `scripts/wyciag.py:201`, `scripts/wyciag.py:212`: dokładne reprodukcje `PESEL 440514-01458 PLN`, `FV +48 600 100 200` oraz `FV tel. 600100200` są maskowane. Nadal jawne: `FV telefon kontaktowy: 600100200 PLN` oraz telefon z nawiasami. Potwierdzone w terminalu i CSV. |
+| B2. Błędna data i `1+2` | **CZĘŚCIOWO** | `scripts/wyciag.py:134`, `scripts/wyciag.py:271`: `1+2` i `2026-11-XX;-99` dają `SUMY NIEPEŁNE`; saldo pozostaje niesprawdzone. Jednak dodanie tytułu `Saldo za fakturę` powoduje pominięcie −99 bez ostrzeżenia i ponowne „zgodna”. |
+| B3. Sumy VAT | **NAPRAWIONE** | `scripts/wyciag.py:255`, `scripts/wyciag.py:312`, `scripts/wyciag.py:363`: zwykły `PRZELEW WYCHODZĄCY` z opisem przeksięgowania pozostawia −100 zł w wydatkach. Przeksięgowanie −23 zł z `/TXT/opłata za usługi` wypada z sum. Cztery podstawowe warianty mBank/PKO w obu kierunkach również wypadają. |
+| B4. Waluty osobnych kolumn | **NAPRAWIONE** | `scripts/wyciag.py:280`, `scripts/wyciag.py:283`: `Uznania=100 PLN`, `Obciążenia=55 EUR` blokuje wiersz i daje `SUMY NIEPEŁNE`. Dodatkowy poprawny wiersz +10 zł daje wpływy 10 zł, bez pozornych 45 zł. |
+| W1. Stopka z kwotą | **CZĘŚCIOWO** | `scripts/wyciag.py:227`, `scripts/wyciag.py:271`: dokładne `;-10;Suma obciążeń` jest pomijane bez uwag. Tak samo `Łącznie`, `#Saldo końcowe`, `Obroty`. Jednak `;-10;Obciążenia razem` i `;100;Uznania razem` nadal powodują fałszywe `SUMY NIEPEŁNE`. |
+| W2. Faktura jako US | **CZĘŚCIOWO** | `scripts/wyciag.py:162`, `scripts/wyciag.py:330`: `FV nr [NRB]` nie daje US. Wariant `FV VAT nr [ten sam NRB]` nadal daje `US` i kategorię „Podatki (US)” dla −10 zł. |
+| W3. Wyzwalanie według celu | **NAPRAWIONE statycznie** | `SKILL.md:177`, `SKILL.md:178`, `testy/wyzwalanie/wyciag-bankowy-do-tabeli.md:13`, `testy/wyzwalanie/wyciag-bankowy-do-tabeli.md:14`: własne próby „surowy CSV, wyjaśnij trendy” i „surowy CSV, raport dla zarządu” mają kolejność: najpierw tabela, potem odpowiednio `co-mowi-arkusz` lub `raport-miesieczny`. |
+
+**Znaleziska pozostające do zmiany**
+
+1. **BLOKER: wyciek danych w terminalu i CSV.**  
+   `scripts/wyciag.py:201`, `scripts/wyciag.py:212`, `scripts/wyciag.py:213`, `scripts/wyciag.py:215`. Jawne pozostają m.in. `tel. +48 (600) 100-200`, `PESEL: 440 514 01458`, `adres zamieszkania: Warszawa, Kwiatowa 5` i `FV telefon kontaktowy: 600100200 PLN`. Wyjścia potwierdzone przez `drukuj` i `zapisz_csv`. **Zmiana:** najpierw maskować jawnie opisane dane osoby, z obsługą grupowania cyfr, nawiasów i pełnych etykiet; dopiero potem stosować wyjątki dokumentu i kwoty.
+
+2. **WAŻNE: rozpoznawanie stopek zarówno odrzuca podsumowania, jak i ukrywa uszkodzone operacje.**  
+   `scripts/wyciag.py:227`, `scripts/wyciag.py:271`. `Obciążenia razem` daje fałszywe ostrzeżenie, natomiast błędna data z tytułem `Saldo za fakturę` usuwa operację bez ostrzeżenia. **Zmiana:** rozpoznawać strukturę wiersza podsumowania; sam początek dowolnego pola nie wystarcza. Warianty syntetyczne, bez potwierdzenia w rzeczywistym eksporcie banku.
+
+3. **WAŻNE: numer faktury nadal może zostać odbiorcą podatku.**  
+   `scripts/wyciag.py:162`, `scripts/wyciag.py:330`. `FV VAT nr 41 1010 0071 2222 9876 5432 1098` daje kategorię podatkową. **Zmiana:** dla rachunku wyciąganego ze swobodnego tekstu wymagać kontekstu rachunku, zamiast rozszerzać samą listę wyjątków faktury. Przypadek syntetyczny.
+
+4. **WAŻNE: „Rodzaj operacji” nie trafia do mapowania typu.**  
+   `scripts/wyciag.py:70`, `scripts/wyciag.py:255`. Przy `Rodzaj operacji=PRZELEW WYCHODZĄCY` i `Opis transakcji=Przeksięgowanie na rach. VAT` wydatek −100 zł wypada z sum. **Zmiana:** mapować `Rodzaj operacji/transakcji` jako pole typu i stosować jego pierwszeństwo. Układ syntetyczny, bez potwierdzonego eksportu banku.
+
+Nie uruchamiałem modelowego wyzwalania ani Excela. Eksport CSV sprawdzono wyłącznie w pamięci.
+
+BLOKERY DO WYDANIA: TAK

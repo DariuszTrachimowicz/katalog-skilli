@@ -1,0 +1,24 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie. Krok 3/3 zakończony; bez edycji plików.**
+
+1. **Bloker C15: NAPRAWIONE.** Własna próba `python -X utf8 -B -c`, z importem `maskuj` i `analiza`:  
+   `zwrot za naprawę, kom: 600.100.200` → `zwrot za naprawę, kom: [telefon]`.  
+   Pełne parsowanie A/C, trzy pola tekstowe, oba wyjścia: **0/12 wycieków**. Działają również `kom`, `gsm`, `mob.` i telefon z kropkami bez etykiety. `skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:252`, `wyciag.py:261`.
+
+2. **Testy:** `--selftest`: **OK**. Uruchomiono wszystkie CSV z podanego katalogu:
+
+   | Plik | Wpływy PLN | Wydatki PLN | Poza sumami |
+   |---|---:|---:|---|
+   | A-mbank.csv | 4 130,00 | -7 324,38 | VAT −230,00 |
+   | C-pekao.csv | 4 500,00 | -4 108,30 | EUR −55,00 |
+
+   Regresje kwot, dat, faktur, NIP, zamówień i słów zawierających „tel”/„kom”: **456/456 kontroli**. Etykietowane PESEL, telefony i adresy: **1236/1236 kontroli** przeszło; dodatkowy przypadek poniżej ujawnił lukę.
+
+3. **Znalezisko: BLOKER — adres po `adr:` pozostaje jawny.**  
+   `zwrot, adr: Warszawa, Kwiatowa 5/3` przechodzi przez `maskuj` bez zmian. Pełna próba CSV A/C, w kontrahencie, tytule i opisie: **12/12 wycieków** w `drukuj` i `zapisz_csv`; sumy zachowane. Wzorzec dopuszcza wyłącznie `adr.`, pomijając realistyczny skrót `adr:`. Przyczyna: `wyciag.py:254`; wyjścia: `wyciag.py:574`, `wyciag.py:575`, `wyciag.py:610`. **Poprawka: dodać samodzielne `adr` przed dwukropkiem, zachowując granicę słowa.**
+
+Nie sprawdzano fizycznego zapisu ani Excela; `zapisz_csv` przechwycono w pamięci.
+
+BLOKERY DO WYDANIA: TAK
+
+

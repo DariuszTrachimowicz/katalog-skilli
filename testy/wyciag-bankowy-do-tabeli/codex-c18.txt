@@ -1,0 +1,23 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Cykl 18: krok 3/3 zakończony. Brak blokerów; jedno znalezisko WAŻNE.**
+
+1. **C17, bloker FS: NAPRAWIONE.** Własna próba `python -X utf8 -B -c`, z importem `maskuj` i `analiza`: `Zapłata FS 202611001` pozostaje bez zmian. Potwierdzone **12/12 kontroli**: A/C × trzy pola × `drukuj`/`zapisz_csv`. Kod: `skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:162`.
+
+2. **C17, kwota: NAPRAWIONE.** `Abonament tel. kwota 123 456 789 PLN` pozostaje bez zmian, również **12/12 kontroli** obu wyjść. Kod: `skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:224`.
+
+3. **Testy zaliczone:** `--selftest`: **OK**; uruchomiono wszystkie CSV z podanego katalogu.
+
+   | Plik | Wpływy PLN | Wydatki PLN | Poza sumami |
+   |---|---:|---:|---|
+   | A | 4 130,00 | −7 324,38 | VAT −230,00 |
+   | C | 4 500,00 | −4 108,30 | EUR −55,00 |
+
+   Regresje kwot, dat, faktur, NIP, zamówień oraz słów zawierających „tel”/„kom”: **109 przypadków, 1308 kontroli wyjść, zero błędów maskowania**. Dane osoby z etykietami: **126 przypadków, 1512 kontroli, zero wycieków**.
+
+4. **WAŻNE — niepełna osłona walut, przypadki syntetyczne.** `Abonament tel. 123456789 CHF` → `Abonament tel. [telefon] CHF`; analogicznie GBP. Każdy przypadek zmieniony w **12/12 kontroli**. Lista walut w osłonie telefonu pomija CHF/GBP: `skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:224`. Poprawka: ujednolicić ją z listą w `skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:171`. Sumy operacji pozostają poprawne.
+
+Bez edycji plików. `zapisz_csv` sprawdzono w pamięci; nie sprawdzano fizycznego zapisu ani Excela.
+
+BLOKERY DO WYDANIA: NIE
+
+

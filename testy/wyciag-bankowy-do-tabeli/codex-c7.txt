@@ -1,0 +1,29 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie. Krok 3/3 zakończony: pozostał wyciek danych osoby.**
+
+Próby: `python -X utf8 -B -c`, import `maskuj` i `analiza`; kontrola `drukuj` oraz `zapisz_csv` w pamięci. Bez edycji plików.
+
+| Znalezisko C6 | Status | Wynik własnej próby |
+|---|---|---|
+| Telefon z „nr” | **NAPRAWIONE** | `telefon nr: 22 600 10 20`, `tel. nr 22 600 10 20`, `telefon numer 22 600 10 20` znikają w obu wyjściach, w kontrahencie, tytule i opisie. [wyciag.py:223](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:223>) |
+| Adres bez spacji | **NAPRAWIONE** | `adres:Warszawa, Kwiatowa 5` → `adres [adres]`; oba wyjścia i wszystkie trzy pola. [wyciag.py:224](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:224>) |
+| Nadmierne maskowanie | **CZĘŚCIOWO** | Data z C6 oraz `Telefon: FV…`, `Telefon: NIP…`, `Telefon: zamówienie…` zachowane. Nadal znikają inne daty i syntetyczna kwota wskazana niżej. [wyciag.py:214](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:214>) |
+
+`--selftest`: **OK**. Oba dostarczone CSV uruchomione; sumy zgodne:
+
+| Plik | Wpływy PLN | Wydatki PLN | Poza sumami |
+|---|---:|---:|---|
+| A-mbank | 4 130,00 | −7 324,38 | VAT −230,00 |
+| C-pekao | 4 500,00 | −4 108,30 | EUR −55,00 |
+
+Zwykłe kwoty, daty, faktury, NIP, zamówienia oraz `hotel`, `komis`, `telewizja`, `komunikacja` pozostają poprawne. Typowe etykietowane zapisy PESEL, telefonu i adresu znikają w obu wyjściach.
+
+Pozostające znaleziska:
+
+1. **BLOKER — przedwczesny koniec maskowania ujawnia dane.** `telefon do kontaktu: 22 600 10 20` pozostaje w całości jawny. `adres: Warszawa, Ulica: Kwiatowa 5` → `adres [adres] Ulica: Kwiatowa 5`. Wzorzec końca wartości traktuje `kontaktu:` i `Ulica:` jako nowe pola. Potwierdzone w `drukuj` i `zapisz_csv`, w układach A/C: **10/10 kombinacji zapisu i pola**. [wyciag.py:209](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:209>)
+
+2. **WAŻNE — poprawne opisy abonamentu tracą datę i fakturę.** `Abonament tel. za 01.11.2026` oraz `Abonament tel. 01.11.2026 FV 42/2026` → `Abonament tel. [telefon]`. Wyjątek chroni wyłącznie samą datę po etykiecie. Odtworzone w obu wyjściach; osobne kolumny kwoty, daty i sumy pozostają poprawne. Syntetyczne `telefon 123 456,78 PLN` również nadal traci kwotę; **bez kwalifikacji jako bloker**. [wyciag.py:218](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:218>)
+
+Nie sprawdzano fizycznego zapisu ani Excela; eksporter wykonano w pamięci. Ryzyko wydania: ujawnienie telefonu i części adresu.
+
+BLOKERY DO WYDANIA: TAK

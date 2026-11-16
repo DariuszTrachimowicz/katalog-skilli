@@ -1,0 +1,32 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie: wieloliniowe pola ujawniają dane osoby. Etap 3/3 zakończony, bez edycji plików.**
+
+Własne próby: `python -X utf8 -B -c`, import `maskuj` i `analiza`, kontrola `drukuj` oraz `zapisz_csv`. Poniższe linie dotyczą `skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py`.
+
+| Znalezisko C13 | Ocena i wynik własnej próby |
+|---|---|
+| Drugi PESEL pozostaje jawny | **NAPRAWIONE.** `PESEL:440 514 01458; PESEL:020 708 03628` → `PESEL:[PESEL]; PESEL:[PESEL]`. **12/12 kontroli.** `wyciag.py:238`. |
+| Adres po pionowej kresce | **NAPRAWIONE.** `adres: Warszawa \| Kwiatowa 5/3` → `adres [adres]`. **12/12.** `wyciag.py:254`. |
+| Numer faktury/zamówienia zgodny z PESEL znika | **NAPRAWIONE.** `FV 44051401458` i `zamówienie 44051401458` pozostają identyczne. **24/24.** `wyciag.py:260`. |
+| „Dowolne separatory” | **CZĘŚCIOWO.** `PESEL: 440514_01458` → `PESEL: [PESEL]`, **12/12**. Dwukropek, średnik i półpauza nadal pozostawiają numer jawny. `wyciag.py:238`. |
+
+`--selftest`: **OK**. Skrypt uruchomiony na wszystkich `dane/*.csv`:
+
+| Plik | Wpływy PLN | Wydatki PLN | Poza sumami |
+|---|---:|---:|---|
+| A | 4 130,00 | -7 324,38 | VAT -230,00 |
+| C | 4 500,00 | -4 108,30 | EUR -55,00 |
+
+Regresje: **492/492 kontroli wyjść** dla 41 przypadków kwot, dat, faktur, NIP, zamówień i słów zawierających „tel”/„kom”. Uwzględniono istniejące skracanie tekstu w `drukuj`. Jednoliniowe etykietowane dane osoby: **7848/7848 kontroli bez wycieku**.
+
+Znaleziska końcowe:
+
+1. **BLOKER — złamanie wiersza omija maskowanie etykiet.**  
+   `PESEL: 440 514 01458\nraty za listopad`, `telefon: 600.100.200\nzwrot za listopad` oraz `adres: Warszawa\nKwiatowa 5/3` pozostają jawne. Przyczyna: `.*?` bez obsługi nowych linii przed końcem pola. **`wyciag.py:251`, `wyciag.py:252`, `wyciag.py:254`.** Potwierdzone po wstawieniu realistycznych pól wieloliniowych do kopii danych A/C w pamięci: **72/72 wycieki**, LF i CRLF, trzy pola tekstowe, oba wyjścia; sumy zachowane. Wyjścia: **`wyciag.py:574`, `wyciag.py:575`, `wyciag.py:610`**. Do poprawy: dopasowanie etykiety przez cały tekst wieloliniowy.
+
+2. **KOSMETYKA — separatory nadal nie są dowolne.**  
+   `PESEL: 440514:01458` pozostaje jawny, **12/12 kontroli**. Przypadek konstrukcyjny; analogicznie `;` i `–`. **`wyciag.py:238`.**
+
+Nie sprawdzano fizycznego zapisu ani Excela; `zapisz_csv` przechwycono w pamięci. Ryzyko wydania: ujawnienie danych osoby w wieloliniowym polu CSV.
+
+BLOKERY DO WYDANIA: TAK

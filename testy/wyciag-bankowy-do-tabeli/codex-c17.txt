@@ -1,0 +1,25 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Cykl 17: wstrzymaj wydanie. Krok 3/3 zakończony; bez edycji plików.**
+
+1. **Bloker C16: NAPRAWIONE.** Własna próba `python -X utf8 -B -c`, z importem `maskuj` i `analiza`:  
+   `zwrot, adr: Warszawa, Kwiatowa 5/3` → `zwrot, adr [adres]`.  
+   A/C × trzy pola × dwa wyjścia: **0/12 wycieków**. Przyczyna naprawiona w `skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:254`.
+
+2. **Testy zaliczone:** `--selftest`: **OK**; uruchomiono oba CSV.
+
+   | Plik | Wpływy PLN | Wydatki PLN | Poza sumami |
+   |---|---:|---:|---|
+   | A-mbank.csv | 4 130,00 | -7 324,38 | VAT −230,00 |
+   | C-pekao.csv | 4 500,00 | -4 108,30 | EUR −55,00 |
+
+   PESEL, telefony i adresy: **499 przypadków, 5988 kontroli wyjścia, 0 wycieków**. Podstawowa bateria kwot, dat, FV, NIP, zamówień i słów zawierających „tel”/„kom”: **1152/1152 kontroli**.
+
+3. **BLOKER — numer faktury `FS` jest usuwany.**  
+   `maskuj('Zapłata FS 202611001')` → `Zapłata FS [telefon]`. To realistyczny tytuł przelewu z numerem faktury. Pełne parsowanie A/C potwierdziło zmianę w **12/12 prób `drukuj` i `zapisz_csv`**; sumy zachowane. Istniejący błąd: kontekst dokumentu pomija `FS` (`skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:162`), więc numer przechwytuje wzorzec telefonu (`skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:261`). **Poprawka: uwzględnić `FS` w rozpoznawaniu numerów faktur.**
+
+4. **WAŻNE — sztuczny przypadek nadmiernego maskowania kwoty.**  
+   `Abonament tel. kwota 123 456 789 PLN` → `Abonament tel. kwota [telefon] PLN`, również w obu wyjściach. Osłona kwot wymaga części dziesiętnej: `skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:222`. Nie kwalifikuję tego jako blokera.
+
+Nie sprawdzano fizycznego zapisu ani Excela; `zapisz_csv` przechwycono w pamięci.
+
+BLOKERY DO WYDANIA: TAK

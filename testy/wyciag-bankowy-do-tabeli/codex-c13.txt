@@ -1,0 +1,40 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie: drugi PESEL w jednym polu pozostaje jawny. Etap 3/3 zakończony, bez edycji plików.**
+
+Własne próby: `python -X utf8 -B -c`, import `maskuj` i `analiza`, następnie `drukuj` i `zapisz_csv`.
+
+| Zgłoszenie C12 | Ocena i wynik próby |
+|---|---|
+| Numery faktur i zamówień | **NAPRAWIONE.** `FV FS/123456789/2026` i `zamówienie AB-123456789/2026` pozostają identyczne. `wyciag.py:261`, `wyciag.py:262`. |
+| NIP z odstępami | **NAPRAWIONE.** `telefon: NIP 526 00 00 001` pozostaje identyczne. `wyciag.py:223`. |
+| Ukośniki w telefonie i PESEL | **NAPRAWIONE.** `tel. (22) 600/10/20` → `tel. [telefon]`; `PESEL: 440514/01458` → `PESEL [PESEL]`. `wyciag.py:227`, `wyciag.py:237`. |
+| Średnik wewnątrz adresu | **NAPRAWIONE.** `adres: Warszawa; Kwiatowa 5/3` → `adres [adres]`. `wyciag.py:255`. |
+
+Każda powyższa reprodukcja: **12/12 kontroli** — układy A/C, trzy pola tekstowe, oba wyjścia.
+
+`--selftest`: **OK**. Skrypt uruchomiony na wszystkich `dane/*.csv`:
+
+| Plik | Wpływy PLN | Wydatki PLN | Poza sumami |
+|---|---:|---:|---|
+| A | 4 130,00 | -7 324,38 | VAT -230,00 |
+| C | 4 500,00 | -4 108,30 | EUR -55,00 |
+
+Regresje: **1092/1092 kontroli** dla 91 przypadków zachowania kwot, dat, dokumentów, NIP, zamówień, zer wiodących i słów zawierających „tel”/„kom”. Typowe etykietowane dane osoby: **6912/6912 kontroli bez wycieku**. Poniżej wyjątki poza tą baterią.
+
+Znaleziska końcowe; plik `skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py`:
+
+1. **BLOKER — maskowany jest tylko pierwszy etykietowany PESEL.**  
+   `PESEL:440 514 01458; PESEL:020 708 03628` → `PESEL [PESEL]; PESEL:020 708 03628`. Drugi numer ma poprawną sumę kontrolną. Realistyczny tytuł wspólnej raty dwóch osób. Potwierdzone **12/12**, także z ukośnikiem w drugim numerze. Przyczyna: `re.search` usuwa jeden numer, a dopasowanie etykiety pochłania resztę pola. **`wyciag.py:237`, `wyciag.py:240`, `wyciag.py:252`.**
+
+2. **WAŻNE — pionowa kreska pozostawia część adresu.**  
+   `adres: Warszawa | Kwiatowa 5/3` → `adres [adres]| Kwiatowa 5/3`. **12/12**; próba konstrukcyjna, niepotwierdzona w dostarczonych eksportach. **`wyciag.py:209`, `wyciag.py:255`.**
+
+3. **WAŻNE — numer dokumentu zgodny z sumą PESEL nadal znika.**  
+   `FV 44051401458` → `FV [11 cyfr, np. PESEL]`; analogicznie zamówienie. **12/12**. Przypadek konstrukcyjny; nie wykazano takiego numeru dokumentu w danych bankowych. **`wyciag.py:200`, `wyciag.py:261`.**
+
+4. **KOSMETYKA — „dowolne separatory” mają ograniczony zakres.**  
+   `PESEL: 440514_01458` pozostaje jawny, **12/12**. Podkreślnik jest przypadkiem sztucznym; obsługiwane są spacje, dywizy, kropki i ukośniki. **`wyciag.py:237`.**
+
+Nie sprawdzano fizycznego zapisu ani Excela; CSV przechwycono w pamięci. Ryzyko wydania: ujawnienie drugiego etykietowanego PESEL.
+
+BLOKERY DO WYDANIA: TAK

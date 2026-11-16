@@ -1,0 +1,75 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie. Etap 3/3 zakończony: pozostaje 5 grup blokerów.**
+
+Selftest: `OK`. Walidator: `Skill is valid!`. Uruchomiono oba CSV oraz 52 własne przypadki i dodatkowe reprodukcje. A: wpływy 4 130,00 zł, wydatki 7 324,38 zł; C: wpływy 4 500,00 zł, wydatki 4 108,30 zł, osobno 55 EUR.
+
+Ścieżki `SKILL.md`, `wpis.md`, `references/` i `scripts/` poniżej są względne wobec `skille/wyciag-bankowy-do-tabeli/`. Numery odpowiadają kolejności znalezisk w raportach cyklu 1.
+
+**Raport granice**
+
+| Nr | Status | Dowód |
+|---|---|---|
+| 1. Maskowanie | CZĘŚCIOWO | Rozszerzono `scripts/wyciag.py:162`, ale PESEL z dywizem i adres bez „ul.” nadal przechodzą przez `scripts/wyciag.py:165`. |
+| 2. Formuły CSV | NAPRAWIONE | Neutralizacja w `scripts/wyciag.py:175`, zastosowanie w eksporcie: `scripts/wyciag.py:452`. Próba `=1+1` daje tekst z apostrofem. |
+| 3. Brak salda | NAPRAWIONE | Jawny status w `scripts/wyciag.py:346`, trzy stany w `SKILL.md:114`, ograniczenie obietnicy w `wpis.md:31`. |
+| 4. Cytowanie przepisów | NAPRAWIONE | Globalny zakaz: `SKILL.md:84`; samokontrola: `SKILL.md:206`. |
+| 5. Obsługa dwóch kolumn | NAPRAWIONE | Detektor dopuszcza dwie kolumny: `scripts/wyciag.py:100`; deklaracja zawężona w `wpis.md:76`. |
+
+**Raport ekspert**
+
+| Nr | Status | Dowód |
+|---|---|---|
+| 1. Wyłączanie zwykłych płatności jako VAT | CZĘŚCIOWO | Podatek do US i wskazane MPP pozostają w sumach. Nadal wystarcza fragment swobodnego tytułu/opisu: `scripts/wyciag.py:285`. |
+| 2. Usuwanie operacji | CZĘŚCIOWO | Obsłużono minus końcowy, nawiasy i nieczytelne saldo: `scripts/wyciag.py:129`, `scripts/wyciag.py:231`. Pusta data i błędna data bez separatorów nadal znikają: `scripts/wyciag.py:202`, `scripts/wyciag.py:208`. |
+| 3. Kontrola salda | CZĘŚCIOWO | Kierunek z dat i sumowanie przez luki działają: `scripts/wyciag.py:348`. Dla jednej daty nadal wybierany jest korzystniejszy kierunek: `scripts/wyciag.py:368`. |
+| 4. Waluta sufiksu | CZĘŚCIOWO | Sufiks jest odczytywany: `scripts/wyciag.py:215`. Konflikt z kolumną waluty jest ignorowany: `scripts/wyciag.py:242`. |
+| 5. Ochrona wszystkich wyjść | CZĘŚCIOWO | Błąd kwoty i eksport korzystają z maskowania: `scripts/wyciag.py:227`, `scripts/wyciag.py:452`. Nierozpoznane warianty danych nadal wyciekają. |
+| 6. Opisy wieloliniowe i iPKO | NAPRAWIONE | `io.StringIO` zachowuje podziały; puste nagłówki trafiają do opisu: `scripts/wyciag.py:181`, `scripts/wyciag.py:195`. |
+| 7. Fałszywe US/ZUS | CZĘŚCIOWO | Suma kontrolna jest sprawdzana: `scripts/wyciag.py:253`. Kontekst numeru faktury nadal pomijany: `scripts/wyciag.py:260`. |
+| 8. Kategorie i błędny regex | NAPRAWIONE | Walidacja wzorca: `scripts/wyciag.py:325`; kontrola także bez przypisanych kategorii: `scripts/wyciag.py:431`. |
+| 9. Dwie kolumny | NAPRAWIONE | Własny przypadek `Data;Kwota` przechodzi; `scripts/wyciag.py:100`, `wpis.md:76`. |
+| 10. Formuły CSV | NAPRAWIONE | `scripts/wyciag.py:175`, `scripts/wyciag.py:452`; potwierdzone eksportem w pamięci. |
+| 11. Niepotwierdzone informacje | CZĘŚCIOWO | Daty kart i oczekiwania biur oznaczono jako niepotwierdzone: `references/wyciagi.md:27`, `references/wyciagi.md:86`. Sekcja MPP nadal nie rozdziela CSV od MT940: `references/wyciagi.md:39`. |
+| 12. Uogólnienie KSeF | CZĘŚCIOWO | Dodano „w części” i znacznik weryfikacji, ale bez zakresu i wyjątków: `references/wyciagi.md:48`. |
+
+**Raport język**
+
+| Nr | Status | Dowód |
+|---|---|---|
+| 1. Pozorna kontrola bez salda | NAPRAWIONE | `SKILL.md:114`, `scripts/wyciag.py:346`, `wpis.md:31`. |
+| 2. Zbyt szeroka obsługa CSV | CZĘŚCIOWO | `wpis.md:76` zawężono; `SKILL.md:3` nadal wymienia ING bez zastrzeżenia o niezweryfikowanym układzie. |
+| 3. Brak waluty w tabeli | NAPRAWIONE | Kolumna waluty: `scripts/wyciag.py:418`, `scripts/wyciag.py:449`; instrukcja: `SKILL.md:153`. |
+| 4. Kolizje wyzwalania | CZĘŚCIOWO | Pierwszeństwo dodano w `SKILL.md:3`. Brakuje trudnych przypadków bankowych z celem raportowym/analitycznym w `testy/wyzwalanie/wyciag-bankowy-do-tabeli.md:15`. |
+| 5. Księgowa przy budżecie domowym | NAPRAWIONE | Wariant prywatny bez obowiązkowego odesłania: `SKILL.md:143`. |
+| 6. „Co dostałem” | NAPRAWIONE | „Dane wejściowe”: `SKILL.md:100`; scenariusz poprawiony: `testy/wyniki-gemini/scenariusze/wyciag-bankowy-do-tabeli.md:10`. |
+| 7. Daty w prozie | CZĘŚCIOWO | Datę poprawiono w `references/wyciagi.md:81`; wydruk nadal zawiera ISO poza tabelą: `scripts/wyciag.py:413`. |
+
+**Znaleziska wymagające zmian**
+
+1. **BLOKER: rzeczywisty wydatek wypada z sum jako VAT.** `scripts/wyciag.py:285`, `scripts/wyciag.py:286`. Operacja −5 zł z opisem `OPŁATA ZA PRZEKSIĘGOWANIE NA RACH. VAT` daje wydatki **0 zł**, mimo znacznika `OPŁATA`. Tak samo działa odpowiednia fraza w zwykłym tytule. **Zmiana:** rozpoznawać jednoznaczny typ operacji; swobodny fragment tekstu nie może wyłączać kwoty.
+
+2. **BLOKER: parser nadal traci operacje.** `scripts/wyciag.py:202`, `scripts/wyciag.py:208`: pusta data lub `20261131` usuwa −99 zł bez `SUMY NIEPEŁNE`. **Nowe znalezisko:** niedomknięty cudzysłów po próbce 60 linii wchłania kolejną operację; 62 operacje dały 61 i **−70 zamiast −120 zł** (`scripts/wyciag.py:181`). **Zmiana:** traktować nierozpoznany wiersz z kwotą jako błąd danych; czytać CSV z `strict=True` i obsłużyć `csv.Error`.
+
+3. **BLOKER: konflikt walut zmienia EUR na PLN.** `scripts/wyciag.py:215`, `scripts/wyciag.py:242`. Kwota `-55 EUR` i kolumna `PLN` dają **55 zł wydatku bez ostrzeżenia**. **Zmiana:** sprawdzać zgodność obu oznaczeń; konflikt blokuje końcowe sumy.
+
+4. **BLOKER: saldo otrzymuje nieuzasadnione „zgodna”.** `scripts/wyciag.py:368`, `scripts/wyciag.py:376`. Jedna data pozwala zaakceptować `+100/saldo 100`, `−20/saldo 0`. Pominięta nieczytelna kwota również nie blokuje zgodności przedziału. **Zmiana:** przy nieustalonej kolejności lub nieodczytanej operacji oznaczyć dany zakres jako niesprawdzony.
+
+5. **BLOKER: dane osobowe przechodzą do eksportu i komunikatów.** `scripts/wyciag.py:165`, `scripts/wyciag.py:167`, `scripts/wyciag.py:227`, `scripts/wyciag.py:452`. Pozostają m.in. PESEL zapisany `800101-12345` i `adres: Warszawa, Kwiatowa 5`. **Zmiana:** objąć maskowaniem jawnie oznaczone warianty danych; w błędzie kwoty podawać numer wiersza bez surowej zawartości.
+
+**Pozostałe ważne znaleziska**
+
+1. **WAŻNE, regresja maskowania:** `scripts/wyciag.py:163`, `scripts/wyciag.py:166`, `scripts/wyciag.py:168`. `FV 123456789` staje się telefonem, `FV 12-345/2026` kodem pocztowym, a `kwota 123 456 789 PLN` telefonem. Zagraniczny IBAN może pochłonąć następujące `FV12`, pokazując je jako końcówkę rachunku. **Zmiana:** uwzględniać kontekst faktury/kwoty oraz długość IBAN właściwą dla kraju.
+
+2. **WAŻNE:** `scripts/wyciag.py:260`. Poprawny kontrolnie numer zapisany po `FV` nadal daje `US` albo `ZUS`. **Zmiana:** wymagać kontekstu rachunku; numer dokumentu nie potwierdza odbiorcy przelewu.
+
+3. **WAŻNE:** `SKILL.md:3`, `testy/wyzwalanie/wyciag-bankowy-do-tabeli.md:15`. Pierwszeństwo przy surowej historii jest zbyt szerokie dla celu „wyjaśnij trendy” lub „napisz raport”. **Zmiana:** uzależnić wybór od celu i dodać oba przypadki do zestawu.
+
+4. **WAŻNE:** `references/wyciagi.md:39`, `references/wyciagi.md:48`. Pozostają nierozdzielone przykłady MT940/CSV i niepełna uwaga KSeF. **Zmiana:** oznaczyć format źródłowy przykładów; usunąć poboczną instrukcję KSeF albo podać zweryfikowany zakres.
+
+5. **WAŻNE:** `SKILL.md:3`. Opis nadal sugeruje potwierdzoną obsługę ING, podczas gdy `wpis.md:76` wymaga sprawdzenia prawdziwego pliku. **Zmiana:** ujednolicić deklarację.
+
+**KOSMETYKA:** `scripts/wyciag.py:413` nadal drukuje daty ISO poza tabelą. Zastosować daty słowne zgodnie z `SKILL.md:197`.
+
+Nie edytowano plików. Bez testów modelu i Excela; piaskownica zablokowała plik tymczasowy, eksport sprawdzono w pamięci.
+
+BLOKERY DO WYDANIA: TAK

@@ -1,0 +1,23 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie: 1 bloker.** Etap 3 z 3 zakończony. Ścieżki skrócone poniżej odnoszą się do `skille/wyciag-bankowy-do-tabeli/`.
+
+1. **BLOKER: szablon sugeruje sprawdzenie salda bez danych.** `SKILL.md:109` dopuszcza tylko „zgodna / rozjazd”, choć `scripts/wyciag.py:269` sprawdza saldo dopiero przy minimum dwóch wartościach. Testowy `testy/wyciag-bankowy-do-tabeli/dane/C-pekao.csv:1` nie zawiera salda. **Zmiana:** dodać „nie sprawdzono: brak danych” oraz zakres sprawdzenia. W `wpis.md:31` zastąpić obietnicę wykrycia brakujących operacji informacją, że niespójność salda może je sugerować, a zgodność nie dowodzi kompletności.
+
+2. **WAŻNE: obietnica obsługi każdego CSV jest za szeroka.** `wpis.md:76` mówi „Każdy plik CSV z kolumną daty i kwoty”, ale rozpoznawanie ogranicza lista nazw w `scripts/wyciag.py:60`. `testy/wyciag-bankowy-do-tabeli/research.md:136` wskazuje brak potwierdzonych nagłówków części banków. **Zmiana:** „CSV z rozpoznawanymi nazwami kolumn; sprawdzono przykładowe układy PKO, mBanku, Pekao i Aliora”. Tak samo zawęzić `SKILL.md:3` i `wpis.md:43`.
+
+3. **WAŻNE: tabela gubi oznaczenie waluty.** `scripts/wyciag.py:345` eksportuje kwotę bez kolumny waluty; `SKILL.md:118` również jej nie przewiduje. Przy pozycji EUR samo „WALUTA” nie pozwala poprawnie odczytać kwoty. **Zmiana:** dodać „Waluta” do tabeli i CSV, a instrukcję „kwoty w zł” w `SKILL.md:179` ograniczyć do sum PLN.
+
+4. **WAŻNE: nierozstrzygnięte kolizje wyzwalania.** `skille/porzadkowanie-arkusza/SKILL.md:3` przejmuje krzaczki i jedną kolumnę, a `skille/co-mowi-arkusz/SKILL.md:3` każdy arkusz bez pytania. Oba przypadki obejmuje też nowe `SKILL.md:3`. **Zmiana:** dopisać pierwszeństwo nowego skilla przy surowej historii bankowej wymagającej rozpisania. W `testy/wyzwalanie/wyciag-bankowy-do-tabeli.md:15` dodać trudniejsze przypadki z historią bankową, lecz celem „napisz raport dla zarządu” albo „wyjaśnij trendy”.
+
+5. **WAŻNE: szablon domowego budżetu obowiązkowo odsyła do księgowej.** `SKILL.md:126` i `SKILL.md:133` narzucają pytania podatkowe także osobie rozliczającej mieszkanie ze współlokatorem. **Zmiana:** dla domu używać „Pytania do wyjaśnienia”; sekcję księgowej i zakończenie podatkowe dodawać przy celu firmowym lub podatkowym.
+
+Dwie korekty językowe:
+
+1. **KOSMETYKA:** `SKILL.md:95` ma „Co dostałem”, sprzeczne z neutralnością rodzajową wymaganą w `SKILL.md:182`. **Zmiana:** „Dane wejściowe”; poprawić także nazwę sekcji w scenariuszu A.
+2. **KOSMETYKA:** `scripts/wyciag.py:311` wypisuje daty ISO poza tabelą, a `references/wyciagi.md:80` zawiera „13.12.2024” w prozie. **Zmiana:** daty słownie; ISO pozostawić w tabelach i CSV.
+
+Pomiary: description 986 znaków, korzyść 98, opis SEO 131; FAQ: 35, 36, 36, 39, 28 i 39 słów. Właściciele obecnych near-missów i oba „NIKT” nie wymagają zmiany.
+
+Nie edytowano plików. Nie uruchamiano skilla ani testów modelowych; uwagi dotyczą odczytanych instrukcji, kodu i materiałów.
+
+BLOKERY DO WYDANIA: TAK

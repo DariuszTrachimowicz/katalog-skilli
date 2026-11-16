@@ -1,0 +1,39 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie. Krok 3/3 zakończony; bez edycji plików.**
+
+Własne próby: `python -X utf8 -B -c`, import `maskuj` i `analiza`; oba wyjścia sprawdzone na układach A/C.
+
+| Znalezisko C10 | Ocena i wynik próby |
+|---|---|
+| Drugi telefon | **CZĘŚCIOWO.** `tel. 600.100.200, 500.200.100` → `tel. [telefon], [telefon]`. Lista oddzielona spacją nadal wycieka. |
+| Usuwanie daty/dokumentu | **CZĘŚCIOWO.** `tel. FV 123456789, 600.100.200` → `tel. FV 123456789, [telefon]`. Poprzedzające data, NIP i `zam. nr` również zostają. Numer FV bez przecinka nadal ulega uszkodzeniu. |
+| Kwota z kropką | **CZĘŚCIOWO.** `Abonament tel. 12345.67 PLN` zostaje identyczne. Wariant `12 345.67 PLN` znika. |
+
+Każda reprodukcja C10 przeszła **12/12 kontroli**: dwa wyjścia × trzy pola × A/C.
+
+`--selftest`: **OK**. Wszystkie pliki `dane/*.csv` uruchomione; sumy zgodne:
+
+| Plik | Wpływy PLN | Wydatki PLN | Poza sumami |
+|---|---:|---:|---|
+| A | 4 130,00 | -7 324,38 | VAT -230,00 |
+| C | 4 500,00 | -4 108,30 | EUR -55,00 |
+
+Regresje podstawowe: **420 kontroli zachowania treści** i **1968 kontroli maskowania** bez błędów. Obejmowały kwoty, daty, FV, NIP, zamówienia, słowa `hotel`, `komis`, `telewizja`, `komputer` oraz etykietowane telefony, PESEL i adresy.
+
+Znaleziska rozszerzonych prób:
+
+1. **BLOKER — połączenie liczb pozostawia telefon jawny.**  
+   `tel. NIP 5260000001 600.100.200` pozostaje identyczne. Tak samo `tel. 600.100.200 500.200.100`. Wzorzec skleja liczby, a limit 15 cyfr odrzuca całość. Realistyczne zapisy bez przecinka; wyciek w **12/12 kombinacji każdego przypadku**. [wyciag.py:221](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:221>).
+
+2. **BLOKER — podwójna spacja ujawnia etykietowany PESEL.**  
+   `PESEL: 440514  01458` pozostaje identyczne w **12/12 kombinacji**. To zwykły wariant odstępów przy kopiowaniu numeru; warunek dopuszcza tylko pojedynczy separator. [wyciag.py:234](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:234>).
+
+3. **WAŻNE — telefon zabiera fragment faktury.**  
+   `tel. FV 42/2026 600.100.200` → `tel. FV 42/[telefon]`. Rok zostaje połączony z telefonem i usunięty; potwierdzone w obu wyjściach A/C. [wyciag.py:221](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:221>).
+
+4. **WAŻNE — grupowana kwota dziesiętna znika.**  
+   `Abonament tel. 12 345.67 PLN` → `Abonament tel. [telefon] PLN`. Próba konstrukcyjna, potwierdzona w obu wyjściach; wyjątek kwoty nie dopuszcza spacji tysięcznych. [wyciag.py:223](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:223>).
+
+Nie sprawdzano fizycznego zapisu ani Excela; `zapisz_csv` wykonano w pamięci. Ryzyko: ujawnienie telefonu i PESEL.
+
+BLOKERY DO WYDANIA: TAK

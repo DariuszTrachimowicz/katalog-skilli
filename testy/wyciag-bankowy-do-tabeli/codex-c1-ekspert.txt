@@ -1,0 +1,39 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie. Etap 3 z 3 zakończony.**
+
+Selftest: `OK`. Pliki A i C dają oczekiwane sumy. Wykonałem 38 własnych przypadków z asercjami oraz dodatkowe próby salda, kategorii i maskowania, bez zapisywania plików.
+
+Ścieżki poniżej są względem `skille/wyciag-bankowy-do-tabeli/`.
+
+1. **BLOKER: zwykłe płatności wypadają z sum jako przeksięgowania VAT.** `scripts/wyciag.py:226`. Przelew −123 zł na mikrorachunek z opisem „Zapłata podatku VAT” daje wydatki **0 zł**. Tak samo płatność brutto MPP z `/TXT/rachunek VAT listopad`. **Zmiana:** rozpoznawaj wewnętrzny transfer po jednoznacznym typie operacji i rachunkach; swobodny tytuł nie może wystarczać do wyłączenia.
+
+2. **BLOKER: parser usuwa operacje z zestawienia.** `scripts/wyciag.py:173`, `scripts/wyciag.py:186`. Data `31.11.2026` powoduje pominięcie operacji jako stopki, bez ostrzeżenia. `123,45-`, `(123,45)` lub nieczytelne saldo usuwają cały wiersz, również poprawną kwotę operacji. **Zmiana:** odróżniaj stopki od błędnych danych, zachowuj nierozpoznane pozycje i blokuj prezentowanie niepełnych sum jako końcowych.
+
+3. **BLOKER: kontrola salda akceptuje błędne saldo.** `scripts/wyciag.py:269`. Dwa chronologiczne zapisy: `+100 / saldo 100`, następnie `−20 / saldo 0` nie wywołują uwagi, ponieważ skrypt wybiera korzystniejsze odwrócenie kolejności. **Zmiana:** ustalaj kierunek według dat; nie wybieraj go wyłącznie przez minimalizację błędów. Przy brakujących saldach sumuj wszystkie operacje pomiędzy punktami kontrolnymi.
+
+4. **BLOKER: waluta znika podczas parsowania kwoty.** `scripts/wyciag.py:117`, `scripts/wyciag.py:218`. `−55,00 EUR` bez osobnej kolumny waluty trafia do wydatków jako **−55 zł**, bez ostrzeżenia. **Zmiana:** zachowuj walutę z sufiksu i sprawdzaj jej zgodność z kolumną waluty.
+
+5. **BLOKER: ochrona danych nie obejmuje wszystkich wyjść.** `scripts/wyciag.py:187`, `scripts/wyciag.py:338`, `scripts/wyciag.py:348`. Błędna kwota zawierająca PESEL jest wypisywana dosłownie w uwagach. Adres, telefon i numer karty przechodzą do eksportowanego CSV. **Zmiana:** zabezpiecz również komunikaty błędów i pola eksportu zgodnie z `SKILL.md`; nie wypisuj surowej wartości błędu.
+
+**Pozostałe usterki:**
+
+6. **WAŻNE: parser zmienia lub gubi opisy.** `scripts/wyciag.py:150`, `scripts/wyciag.py:194`. `"opłata\nbankowa"` staje się `opłatabankowa`, przez co przestaje pasować reguła kategorii. Cztery nienazwane kolumny iPKO są pomijane, choć zawierają kontrahenta i dalszy tytuł. **Zmiana:** czytaj CSV przez `io.StringIO`, zachowuj podziały w polach i obsłuż udokumentowany układ iPKO.
+
+7. **WAŻNE: możliwe fałszywe oznaczenia US i ZUS.** `scripts/wyciag.py:205`. Sam 26-cyfrowy numer faktury z odpowiednim prefiksem w opisie wystarcza do oznaczenia urzędu; przechodzą również błędne sumy kontrolne NRB. **Zmiana:** sprawdzaj NRB oraz kontekst numeru w opisie; niepewne trafienia oznaczaj jako podejrzenie.
+
+8. **WAŻNE: kontrola kategorii nie zawsze jest wykonywana.** `scripts/wyciag.py:327`. Przy niepustych regułach, które niczego nie przypiszą, brak komunikatu kontroli sumy. Niepoprawny wzorzec `re:[` kończy wykonanie wyjątkiem (`scripts/wyciag.py:233`). **Zmiana:** licz kontrolę zawsze po przekazaniu reguł i waliduj wyrażenia przed analizą.
+
+9. **WAŻNE: plik zawierający tylko datę i kwotę jest odrzucany.** `scripts/wyciag.py:100`, `wpis.md:76`. Detektor wymaga ponad dwóch kolumn, wbrew deklaracji „każdy plik CSV z kolumną daty i kwoty”. **Zmiana:** dopuść dwie kolumny i ogranicz obietnicę do rozpoznawanych nazw, formatów oraz kodowań.
+
+10. **WAŻNE: eksport zachowuje formuły arkusza.** `scripts/wyciag.py:347`. Opis `=1+1` trafia do CSV jako formuła, nie tekst. **Zmiana:** zabezpieczaj tekstowe komórki przed interpretacją jako formuły; pozostaw liczby w kolumnie kwoty bez zmian.
+
+**Merytoryka i deklaracje:**
+
+11. **WAŻNE: niepotwierdzone informacje przedstawiono jako ustalone.** `references/wyciagi.md:27` opisuje późniejsze księgowanie kart, choć `testy/wyciag-bankowy-do-tabeli/research.md:104` wskazuje brak potwierdzenia. Preferencję biur podano jako zwyczaj (`references/wyciagi.md:84`), mimo braku potwierdzenia w researchu (`research.md:130`). **Zmiana:** oznacz te informacje jako niepotwierdzone albo usuń; zapis MPP w CSV również oddziel od potwierdzonych przykładów MT940 (`research.md:143`).
+
+12. **WAŻNE: reguła KSeF jest nadmiernie uogólniona.** `references/wyciagi.md:48`. Oficjalne źródło wskazuje warunki dotyczące stron płatności, faktur i wyjątków, które pominięto. **Zmiana:** usuń tę poboczną instrukcję podatkową albo podaj zakres i wyjątki zgodnie ze [źródłem KSeF](https://ksef.podatki.gov.pl/informacje-ogolne-ksef-20/numer-ksef-i-zbiorczy-identyfikator/).
+
+Nie zmieniałem plików. Nie testowałem odpowiedzi modelu w rozmowach B1/B2 ani strony publicznej; testy parsera nie potwierdzają zachowania odmów.
+
+BLOKERY DO WYDANIA: TAK
+

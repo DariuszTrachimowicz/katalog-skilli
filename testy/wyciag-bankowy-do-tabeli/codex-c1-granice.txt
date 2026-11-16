@@ -1,0 +1,20 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie. Etap 3 z 3 zakończony.**
+
+Ścieżki poniżej względem `skille/wyciag-bankowy-do-tabeli/`.
+
+1. **BLOKER: niepełne maskowanie danych.** `scripts/wyciag.py:141`, `scripts/wyciag.py:347`: próby pozostawiły adres, telefon, numer karty, zagraniczny IBAN i PESEL ze spacją. Trafiają również do eksportowanego CSV. `scripts/wyciag.py:187` dodatkowo kopiuje surową błędną wartość do komunikatu. **Zmiana:** rozszerzyć maskowanie i objąć nim wszystkie ścieżki wyjścia, także błędy; dodać testy tych przypadków.
+
+2. **BLOKER: możliwość wstrzyknięcia formuły do CSV.** `scripts/wyciag.py:347`: tytuł `=1+1` został wyeksportowany jako aktywna formuła, bez zabezpieczenia. Otwarcie w arkuszu może wykonać treść dostarczoną przez nadawcę przelewu. **Zmiana:** neutralizować początki formuł w polach tekstowych eksportu, zachowując oryginalny plik bankowy; dodać test.
+
+3. **WAŻNE: brak salda może zostać przedstawiony jako zgodność.** `scripts/wyciag.py:269` pomija kontrolę przy mniej niż dwóch saldach, bez komunikatu. `SKILL.md:109` przewiduje tylko „zgodna” albo „rozjazd”. `wpis.md:31` obiecuje wykrycie brakujących operacji. **Zmiana:** dodać status „nie sprawdzono, brak danych” oraz zastrzec, że zgodność sald nie potwierdza kompletności wyciągu.
+
+4. **WAŻNE: zakaz cytowania przepisów nie obejmuje całej odpowiedzi.** `SKILL.md:128` wymaga „bez artykułów” tylko w pytaniach do księgowej; samokontrola w `SKILL.md:187` tego nie sprawdza. **Zmiana:** dopisać globalny zakaz artykułów, ustępów i tytułów ustaw, również na żądanie użytkownika.
+
+5. **WAŻNE: publiczna karta obiecuje obsługę zbyt szeroką.** `wpis.md:76` deklaruje „każdy plik CSV z kolumną daty i kwoty”. Tymczasem `scripts/wyciag.py:100` wymaga ponad dwóch pól: poprawny CSV `Data;Kwota` zakończył próbę błędem separatora. **Zmiana:** zawęzić deklarację do rozpoznawanych układów albo obsłużyć i przetestować dwie kolumny.
+
+Nie edytowałem plików. Nie uruchamiałem rozmów testowych z modelem, Excela ani weryfikacji źródeł online; odporność modelu na ponawiane prośby pozostaje niepotwierdzona.
+
+BLOKERY DO WYDANIA: TAK
+
+

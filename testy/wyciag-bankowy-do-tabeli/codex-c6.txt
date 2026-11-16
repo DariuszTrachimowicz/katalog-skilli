@@ -1,0 +1,31 @@
+# Werdykt sędziego Codex (końcowa odpowiedź; pełny ślad poleceń pominięty)
+**Wstrzymaj wydanie. Krok 3/3 zakończony: nadal występują wycieki danych osoby.**
+
+Własne próby: `python -X utf8 -B -c`, import `maskuj` i `analiza`; oba wyjścia sprawdzone w pamięci. `--selftest`: **OK**. Bez edycji plików.
+
+| Plik | Wpływy PLN | Wydatki PLN | Poza sumami |
+|---|---:|---:|---|
+| A-mbank | 4 130,00 | −7 324,38 | VAT −230,00 |
+| C-pekao | 4 500,00 | −4 108,30 | EUR −55,00 |
+
+| Znalezisko C5 | Status | Wynik własnej próby |
+|---|---|---|
+| Wyciek danych osoby | **CZĘŚCIOWO** | Trzy reprodukcje C5 znikają w obu wyjściach, we wszystkich trzech polach. Inne realistyczne zapisy nadal wyciekają — poniżej. |
+| Niszczenie dat i identyfikatorów | **CZĘŚCIOWO** | `Telefon FV nr 123456789`, NIP i zamówienie bez dwukropka zachowane. `Abonament tel. 01.11.2026` nadal traci datę; dodanie dwukropka przywraca utratę identyfikatorów. [wyciag.py:214](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:214>) |
+| „tel”/„kom” wewnątrz słów | **NAPRAWIONE** | `hotel`, `komis`, `telewizja`, `komunikacja` przed `123456789 PLN` pozostają bez zmian. [wyciag.py:221](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:221>) |
+| Stopka ukrywająca operację | **NAPRAWIONE** | `;-99;Saldo za fakturę` daje `nieodczytane=[3]` i `SUMY NIEPEŁNE`; `Saldo końcowe` pomijane poprawnie. [wyciag.py:241](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:241>) |
+| Faktura oznaczana US | **NAPRAWIONE** | `Faktura VAT numer 41 1010 0071 2222 9876 5432 1098`: brak `US` i kategorii podatkowej. [wyciag.py:162](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:162>) |
+
+Zwykłe kwoty, daty, faktury, NIP i zamówienia przechodzą kontrolę. Osobne kolumny daty i kwoty zachowują wartości także przy maskowaniu tytułu.
+
+Pozostające znaleziska:
+
+1. **BLOKER — telefon z „nr” pozostaje jawny.** `telefon nr: 22 600 10 20`, `tel. nr 22 600 10 20` i `telefon numer 22 600 10 20` nie są maskowane. Wyjątek `NR|NUMER` przepuszcza rzeczywisty numer, którego późniejszy wzorzec nie rozpoznaje. [wyciag.py:216](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:216>)
+
+2. **BLOKER — adres bez spacji po dwukropku pozostaje jawny.** `adres:Warszawa, Kwiatowa 5` przechodzi w całości przez oba wyjścia. Wzorzec wymaga spacji. [wyciag.py:222](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:222>) Oba blokery odtworzone również w układach dostarczonych CSV mBank/Pekao: **10/10 kombinacji pola i zapisu**, w `drukuj` oraz `zapisz_csv`.
+
+3. **WAŻNE — nadmierne maskowanie opisów.** `Abonament tel. 01.11.2026` → `Abonament tel. [telefon]`. `Telefon: FV nr 123456789`, `Telefon: NIP 5260000001` i `Telefon: zamówienie nr 123456789` → `Telefon [telefon]`. Potwierdzone w obu wyjściach. Syntetyczne `telefon 123 456,78 PLN` również traci kwotę. [wyciag.py:214](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:214>), [wyciag.py:216](<C:/Users/CP24/AiXperts - projekty/katalog-skilli/skille/wyciag-bankowy-do-tabeli/scripts/wyciag.py:216>)
+
+Nie sprawdzano fizycznego zapisu CSV ani Excela; eksporter wykonano w pamięci. Ryzyko wydania: ujawnienie telefonu i adresu.
+
+BLOKERY DO WYDANIA: TAK
