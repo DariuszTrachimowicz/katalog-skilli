@@ -62,7 +62,7 @@ Nawigacja, wyszukiwarka, sitemap i test doboru zaktualizują się same.
 ```yaml
 ---
 nazwa: Czerwone flagi w umowie
-kategoria: Prawo              # Biuro, Finanse, Kadry, Prawo, Marketing, Dane
+kategoria: Prawo              # Biuro, Finanse, Kadry, Prawo, Marketing, Dane, E-commerce, Obsługa klienta, Przetargi i dotacje, Branże
 status: gotowy                # gotowy | wkrotce
 poziom: Działa od razu
 aktualizacja: 2026-08-10

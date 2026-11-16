@@ -1,6 +1,6 @@
 ---
 nazwa: Regulamin sklepu, lista kontrolna
-kategoria: Prawo
+kategoria: E-commerce
 status: gotowy
 wersja: 1.1.1
 poziom: Działa od razu

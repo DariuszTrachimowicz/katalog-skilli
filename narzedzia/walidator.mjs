@@ -10,7 +10,7 @@
 import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import { join, basename } from "node:path";
 
-const KATEGORIE = ["Biuro", "Finanse", "Kadry", "Prawo", "Marketing", "Dane"];
+const KATEGORIE = ["Biuro", "Finanse", "Kadry", "Prawo", "Marketing", "Dane", "E-commerce", "Obsługa klienta", "Przetargi i dotacje", "Branże"];
 const ZGODNOSC = ["ok", "format", "brak"];
 const POZIOMY = ["Działa od razu", "Wymaga ustawienia", "Zaawansowany", "Dla technicznych"];
 const SEKCJE_OBOWIAZKOWE = ["Na czym się wywala", "Czego ten skill nie robi celowo", "Przykład z życia"];

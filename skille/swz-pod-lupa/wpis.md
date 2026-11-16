@@ -1,6 +1,6 @@
 ---
 nazwa: SWZ pod lupą
-kategoria: Prawo
+kategoria: Przetargi i dotacje
 status: gotowy
 wersja: 1.0.0
 poziom: Działa od razu

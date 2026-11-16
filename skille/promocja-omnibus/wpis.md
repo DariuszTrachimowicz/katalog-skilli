@@ -1,6 +1,6 @@
 ---
 nazwa: Promocja i najniższa cena z 30 dni
-kategoria: Prawo
+kategoria: E-commerce
 status: gotowy
 wersja: 1.0.0
 poziom: Działa od razu

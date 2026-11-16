@@ -29,6 +29,8 @@ if (!CHROME) { console.error("Nie znalazłem Chrome, ustaw zmienną CHROME."); p
 const KOLORY = {
   Prawo: ["#1f4fd1", "#e5edff"], Finanse: ["#0b7a52", "#e1f4ea"], Kadry: ["#a14a06", "#fdf0df"],
   Biuro: ["#6d36d9", "#efe8ff"], Marketing: ["#b53b0a", "#ffeae1"], Dane: ["#0d6b85", "#dff3f7"],
+  "E-commerce": ["#b0195a", "#fde6ef"], "Obsługa klienta": ["#5c6a00", "#eef3d4"],
+  "Przetargi i dotacje": ["#455468", "#e7edf4"], "Branże": ["#7d5700", "#f8eed3"],
 };
 
 const fontUrl = (n) => pathToFileURL(join(KORZEN, "szablony", "fonty", n)).href;

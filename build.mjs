@@ -74,8 +74,12 @@ const DZIEDZINY = [
   { k: "Finanse", klasa: "k-finanse", o: "Faktury, KSeF, terminy, wyceny i windykacja.", i: "<span>zł</span>" },
   { k: "Kadry", klasa: "k-kadry", o: "Od ogłoszenia o pracę po rozmowę oceniającą.", i: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14.2c2.4 0 4 1.5 4.5 4.3"/></svg>' },
   { k: "Biuro", klasa: "k-biuro", o: "Maile, notatki, prosty język, trudne rozmowy.", i: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></svg>' },
-  { k: "Marketing", klasa: "k-marketing", o: "Oferty, opisy produktów, newsletter, LinkedIn.", i: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l6 4V6L7 10H4Z"/><path d="M16.5 9a4 4 0 0 1 0 6"/><path d="M19 7a7 7 0 0 1 0 10"/></svg>' },
+  { k: "Marketing", klasa: "k-marketing", o: "Oferty, newsletter, LinkedIn.", i: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l6 4V6L7 10H4Z"/><path d="M16.5 9a4 4 0 0 1 0 6"/><path d="M19 7a7 7 0 0 1 0 10"/></svg>' },
   { k: "Dane", klasa: "k-dane", o: "Arkusze, ankiety i raporty z liczb.", i: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16"/><rect x="5.5" y="11" width="3" height="6.5" rx="1"/><rect x="10.5" y="6.5" width="3" height="11" rx="1"/><rect x="15.5" y="9" width="3" height="8.5" rx="1"/></svg>' },
+  { k: "E-commerce", klasa: "k-ecommerce", o: "Allegro, karty produktów, promocje z ceną z 30 dni, regulamin sklepu.", i: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2.5 4h2.6l2.4 11.5h11.2L21 7.5H6.2"/></svg>' },
+  { k: "Obsługa klienta", klasa: "k-obsluga", o: "Odpowiedzi na opinie i pytania klientów, trudne wiadomości.", i: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v10.5H10l-5 4v-4H4Z"/><path d="M8 9.5h8M8 12.5h5"/></svg>' },
+  { k: "Przetargi i dotacje", klasa: "k-przetargi", o: "Przetargi publiczne: SWZ, terminy, wadium, dokumenty do oferty.", i: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h8l4 4v14h-12Z"/><path d="M14.5 3v4h4"/><path d="m9.5 14 2 2 3.5-4"/></svg>' },
+  { k: "Branże", klasa: "k-branze", o: "Narzędzia pod konkretny zawód, np. rzeczoznawców majątkowych.", i: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7.5" width="18" height="12" rx="2"/><path d="M9 7.5V5.5h6v2"/><path d="M3 12.5h18"/></svg>' },
 ];
 const dziedzina = (k) => DZIEDZINY.find((d) => d.k === k) || DZIEDZINY[0];
 const ikona = (d) => `<span class="ik ${d.klasa}" aria-hidden="true">${d.i}</span>`;
@@ -516,6 +520,7 @@ const FAQ_GLOWNA = [
 
 function stronaGlowna(skille) {
   const ile = skille.length;
+  const DZ = DZIEDZINY.filter((d) => skille.some((s) => s.kategoria === d.k)); // pusta dziedzina nie ma kafla ani filtra
   const wszystkieOk = (k) => skille.every((s) => zgOk(s, k));
   const sprawdzone = ["claude", "gpt"].filter(wszystkieOk).map((k) => cfg.platformy[k].nazwa);
 
@@ -548,7 +553,7 @@ function stronaGlowna(skille) {
       </div>
       <ul class="fakty">
         <li><b>${ile}</b>skilli</li>
-        <li><b>${DZIEDZINY.length}</b>dziedzin pracy</li>
+        <li><b>${DZ.length}</b>dziedzin pracy</li>
         <li><b>0 zł</b>licencja GPL</li>
         ${sprawdzone.length ? `<li><b>${sprawdzone.join(", ")}</b>sprawdzone</li>` : ""}
       </ul>
@@ -573,8 +578,8 @@ function stronaGlowna(skille) {
 </section>
 
 <section class="dziedziny" aria-label="Dziedziny">
-  <div class="wrap"><div class="kafle" id="kafle">
-    ${DZIEDZINY.map((d) => `<button class="kafel ${d.klasa}" type="button" data-kat="${d.k}">${ikona(d)}<b>${d.k}</b><span>${d.o}</span><em>${skille.filter((s) => s.kategoria === d.k).length} skilli</em></button>`).join("\n    ")}
+  <div class="wrap"><div class="kafle" id="kafle" style="--kol:${DZ.length <= 6 ? DZ.length : Math.ceil(DZ.length / 2)}">
+    ${DZ.map((d) => `<button class="kafel ${d.klasa}" type="button" data-kat="${d.k}">${ikona(d)}<b>${d.k}</b><span>${d.o}</span><em>${skille.filter((s) => s.kategoria === d.k).length} skilli</em></button>`).join("\n    ")}
   </div></div>
 </section>
 
@@ -592,7 +597,7 @@ function stronaGlowna(skille) {
       </form>
       <div class="chipy" id="chipy" role="group" aria-label="Filtr dziedzin">
         <button class="chip" type="button" data-kat="" aria-pressed="true">Wszystkie <small>${ile}</small></button>
-        ${DZIEDZINY.map((d) => `<button class="chip" type="button" data-kat="${d.k}" aria-pressed="false">${d.k} <small>${skille.filter((s) => s.kategoria === d.k).length}</small></button>`).join("\n        ")}
+        ${DZ.map((d) => `<button class="chip" type="button" data-kat="${d.k}" aria-pressed="false">${d.k} <small>${skille.filter((s) => s.kategoria === d.k).length}</small></button>`).join("\n        ")}
         <span class="licznik" id="licznik" aria-live="polite"></span>
       </div>
     </div>

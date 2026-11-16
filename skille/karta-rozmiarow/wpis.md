@@ -1,6 +1,6 @@
 ---
 nazwa: Karta rozmiarów
-kategoria: Marketing
+kategoria: E-commerce
 status: gotowy
 wersja: 1.0.0
 poziom: Działa od razu

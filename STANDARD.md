@@ -76,7 +76,7 @@ Frontmatter:
 ```yaml
 ---
 nazwa: Nazwa czytelna dla człowieka
-kategoria: Biuro | Finanse | Kadry | Prawo | Marketing | Dane
+kategoria: Biuro | Finanse | Kadry | Prawo | Marketing | Dane | E-commerce | Obsługa klienta | Przetargi i dotacje | Branże
 status: gotowy
 wersja: 1.0.0
 poziom: Działa od razu | Wymaga ustawienia | Dla technicznych

@@ -1,6 +1,6 @@
 ---
 nazwa: Operaty szacunkowe, warsztat rzeczoznawcy
-kategoria: Finanse
+kategoria: Branże
 status: gotowy
 wersja: 1.1.0
 poziom: Zaawansowany

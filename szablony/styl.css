@@ -35,6 +35,10 @@ kbd,code{font-family:var(--mono);font-size:.86em;background:var(--panel);border-
 .k-biuro{--c:#6d36d9;--cb:#efe8ff}
 .k-marketing{--c:#b53b0a;--cb:#ffeae1}
 .k-dane{--c:#0d6b85;--cb:#dff3f7}
+.k-ecommerce{--c:#b0195a;--cb:#fde6ef}
+.k-obsluga{--c:#5c6a00;--cb:#eef3d4}
+.k-przetargi{--c:#455468;--cb:#e7edf4}
+.k-branze{--c:#7d5700;--cb:#f8eed3}
 .ik{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:11px;background:var(--cb);color:var(--c);font-family:var(--display);font-weight:800;font-size:17px;flex:none}
 .ik svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
@@ -116,7 +120,7 @@ h2.sek{font-size:clamp(28px,3.4vw,40px);font-weight:800;margin-bottom:10px}
 
 /* kafle dziedzin */
 .dziedziny{padding:8px 0 40px}
-.kafle{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.kafle{display:grid;grid-template-columns:repeat(var(--kol,6),1fr);gap:12px}
 .kafel{display:flex;flex-direction:column;gap:10px;padding:18px;border-radius:var(--r);border:1px solid var(--line);background:#fff;cursor:pointer;font:inherit;text-align:left;color:inherit;transition:border-color .15s,box-shadow .15s,transform .15s}
 .kafel:hover{border-color:var(--c);box-shadow:0 14px 28px -20px rgba(13,35,64,.45);transform:translateY(-2px)}
 .kafel b{font-family:var(--display);font-size:17px}

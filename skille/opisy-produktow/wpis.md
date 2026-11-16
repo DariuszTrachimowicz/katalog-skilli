@@ -1,6 +1,6 @@
 ---
 nazwa: Opisy produktów
-kategoria: Marketing
+kategoria: E-commerce
 status: gotowy
 wersja: 1.0.3
 poziom: Działa od razu
