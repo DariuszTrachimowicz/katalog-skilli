@@ -81,6 +81,8 @@ const DZIEDZINY = [
   { k: "Przetargi i dotacje", klasa: "k-przetargi", o: "Przetargi publiczne: SWZ, terminy, wadium, dokumenty do oferty.", i: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h8l4 4v14h-12Z"/><path d="M14.5 3v4h4"/><path d="m9.5 14 2 2 3.5-4"/></svg>' },
   { k: "Branże", klasa: "k-branze", o: "Narzędzia pod konkretny zawód, np. rzeczoznawców majątkowych.", i: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7.5" width="18" height="12" rx="2"/><path d="M9 7.5V5.5h6v2"/><path d="M3 12.5h18"/></svg>' },
 ];
+// jak odmiana() w szablony/strona.js: 1 skill, 2-4 skille (bez 12-14), reszta skilli
+const odmianaSkilli = (n) => (n === 1 ? "1 skill" : `${n} ${n % 10 >= 2 && n % 10 <= 4 && !(n % 100 >= 12 && n % 100 <= 14) ? "skille" : "skilli"}`);
 const dziedzina = (k) => DZIEDZINY.find((d) => d.k === k) || DZIEDZINY[0];
 const ikona = (d) => `<span class="ik ${d.klasa}" aria-hidden="true">${d.i}</span>`;
 
@@ -579,7 +581,7 @@ function stronaGlowna(skille) {
 
 <section class="dziedziny" aria-label="Dziedziny">
   <div class="wrap"><div class="kafle" id="kafle" style="--kol:${DZ.length <= 6 ? DZ.length : Math.ceil(DZ.length / 2)}">
-    ${DZ.map((d) => `<button class="kafel ${d.klasa}" type="button" data-kat="${d.k}">${ikona(d)}<b>${d.k}</b><span>${d.o}</span><em>${skille.filter((s) => s.kategoria === d.k).length} skilli</em></button>`).join("\n    ")}
+    ${DZ.map((d) => `<button class="kafel ${d.klasa}" type="button" data-kat="${d.k}">${ikona(d)}<b>${d.k}</b><span>${d.o}</span><em>${odmianaSkilli(skille.filter((s) => s.kategoria === d.k).length)}</em></button>`).join("\n    ")}
   </div></div>
 </section>
 
