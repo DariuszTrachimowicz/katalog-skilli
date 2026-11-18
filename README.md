@@ -1,26 +1,26 @@
 # Katalog skilli AI po polsku
 
-61 darmowych skilli dla Claude, ChatGPT i Gemini, napisanych od zera po polsku i pod polskie realia. Skille znają polskie przepisy, urzędy i formularze: KSeF, e-Doręczenia, RODO, Kodeks pracy, nakaz zapłaty, rękojmię, SWZ, AML, upadłość konsumencką.
+Sprawdzisz umowę przed podpisem i odpowiesz na nakaz zapłaty w terminie, bez szukania przepisów na własną rękę. 61 darmowych skilli dla Claude, ChatGPT i Gemini, napisanych od zera po polsku, pod polskie urzędy i polskie prawo.
 
-Pobierzesz je ze strony **[skille.aixperts.pl](https://skille.aixperts.pl)**. Każdy skill ma tam opis, przykład użycia i plik `.skill` do wgrania.
+Pobierz je ze strony **[skille.aixperts.pl](https://skille.aixperts.pl)**. Każdy skill ma tam opis, przykład użycia i plik `.skill` do wgrania.
 
-## Co jest w katalogu
+## Co zyskasz
 
-- Prawo (29): umowy, NDA, regulaminy, nakaz zapłaty, decyzje z urzędu, spadek, rozwód, sygnaliści, prawa autorskie
-- Finanse (7): KSeF, przygotowanie do księgowej, faktury i wyciągi do tabeli, wycena usługi, windykacja
-- Kadry (5) i Biuro (5): ogłoszenie o pracę, rozmowa oceniająca, zwolnienie, mail po polsku, notatka ze spotkania, prosty język
-- E-commerce (5) i Marketing (4): opisy produktów, oferta na Allegro, najniższa cena z 30 dni, newsletter, post na LinkedIn
-- Dane (4), Przetargi i dotacje, Branże: porządkowanie arkusza, SWZ pod lupą, operaty szacunkowe
+- Prawo (29): wiesz, co podpisujesz i gdzie jest ryzyko w umowie, NDA czy regulaminie; masz plan działania po nakazie zapłaty, decyzji z urzędu, przy spadku i rozwodzie
+- Finanse (7): faktury i wyciągi bankowe w tabeli zamiast przepisywania, procedury KSeF, dokumenty gotowe dla księgowej, wycena usługi
+- Kadry (5) i Biuro (5): ogłoszenie o pracę, rozmowa oceniająca i zwolnienie z Kodeksem pracy pod ręką; mail, który brzmi jak napisany przez człowieka; notatka ze spotkania z zadaniami i terminami
+- E-commerce (5) i Marketing (4): opisy produktów i oferta na Allegro bez zmyślonych cech, promocje sprawdzone pod zasadę najniższej ceny z 30 dni, newsletter, post na LinkedIn
+- Dane (4), Przetargi i dotacje, Branże: porządek w arkuszu, terminy przetargu wyliczone z SWZ, warsztat rzeczoznawcy
 
 ## Dlaczego skille po polsku
 
-Ogólny model często odpowiada według zagranicznych wzorców, nawet gdy pytasz po polsku. W tych skillach są polskie nazwy urzędów i dokumentów, polskie zwyczaje w korespondencji, a w skillach prawnych przepisy z datą stanu prawnego. Teksty, które piszą, mają brzmieć naturalnie, bez kalek z angielskiego.
+Ogólny model często odpowiada według zagranicznych wzorców, nawet gdy pytasz po polsku. Te skille znają polskie urzędy, dokumenty i zwyczaje w korespondencji, a skille prawne mają przepisy z datą stanu prawnego. Dostajesz odpowiedź, którą od razu wykorzystasz w polskiej firmie.
 
 ## Zasady
 
-- Darmowe i otwarte: licencja GPL-3.0, całe źródło jest w tym repozytorium.
+- Za darmo, na licencji GPL-3.0, z całym źródłem w tym repozytorium.
 - Wszystkie 61 działają w Claude i ChatGPT, 37 także w Gemini bez zmian.
-- Każdy skill przechodzi ten sam standard: granice merytoryczne, struktura, język i testy (`STANDARD.md`).
+- Każdy skill przechodzi ten sam standard i te same testy (`STANDARD.md`).
 
 ---
 
