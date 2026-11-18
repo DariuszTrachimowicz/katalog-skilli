@@ -1,6 +1,32 @@
-# Katalog skilli AI, serwis
+# Katalog skilli AI po polsku
 
-Statyczny serwis generowany z folderów ze skillami, plus mała usługa obsługująca zapisy z testu doboru.
+61 darmowych skilli dla Claude, ChatGPT i Gemini, napisanych od zera po polsku i pod polskie realia. Skille znają polskie przepisy, urzędy i formularze: KSeF, e-Doręczenia, RODO, Kodeks pracy, nakaz zapłaty, rękojmię, SWZ, AML, upadłość konsumencką.
+
+Pobierzesz je ze strony **[skille.aixperts.pl](https://skille.aixperts.pl)**. Każdy skill ma tam opis, przykład użycia i plik `.skill` do wgrania.
+
+## Co jest w katalogu
+
+- Prawo (29): umowy, NDA, regulaminy, nakaz zapłaty, decyzje z urzędu, spadek, rozwód, sygnaliści, prawa autorskie
+- Finanse (7): KSeF, przygotowanie do księgowej, faktury i wyciągi do tabeli, wycena usługi, windykacja
+- Kadry (5) i Biuro (5): ogłoszenie o pracę, rozmowa oceniająca, zwolnienie, mail po polsku, notatka ze spotkania, prosty język
+- E-commerce (5) i Marketing (4): opisy produktów, oferta na Allegro, najniższa cena z 30 dni, newsletter, post na LinkedIn
+- Dane (4), Przetargi i dotacje, Branże: porządkowanie arkusza, SWZ pod lupą, operaty szacunkowe
+
+## Dlaczego po polsku
+
+Ogólny model często odpowiada według zagranicznych wzorców, nawet gdy pytasz po polsku. W tych skillach są polskie nazwy urzędów i dokumentów, polskie zwyczaje w korespondencji, a w skillach prawnych przepisy z datą stanu prawnego. Teksty, które piszą, mają brzmieć naturalnie, bez kalek z angielskiego.
+
+## Zasady
+
+- Darmowe i otwarte: licencja GPL-3.0, całe źródło jest w tym repozytorium.
+- Wszystkie 61 działają w Claude i ChatGPT, 37 także w Gemini bez zmian.
+- Każdy skill przechodzi ten sam standard: granice merytoryczne, struktura, język i testy (`STANDARD.md`).
+
+---
+
+## Kod serwisu
+
+To repozytorium zawiera też kod serwisu skille.aixperts.pl. Statyczny serwis generowany z folderów ze skillami, plus mała usługa obsługująca zapisy z testu doboru.
 
 **Zero zależności zewnętrznych.** Nie ma `node_modules`, nie ma `npm install`, nie ma czego aktualizować. Wszystko, czego serwis używa, jest w standardowej bibliotece Node. Za trzy lata zbuduje się tak samo jak dziś.
 
