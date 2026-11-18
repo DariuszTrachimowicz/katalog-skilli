@@ -12,7 +12,7 @@ Pobierzesz je ze strony **[skille.aixperts.pl](https://skille.aixperts.pl)**. Ka
 - E-commerce (5) i Marketing (4): opisy produktów, oferta na Allegro, najniższa cena z 30 dni, newsletter, post na LinkedIn
 - Dane (4), Przetargi i dotacje, Branże: porządkowanie arkusza, SWZ pod lupą, operaty szacunkowe
 
-## Dlaczego po polsku
+## Dlaczego skille po polsku
 
 Ogólny model często odpowiada według zagranicznych wzorców, nawet gdy pytasz po polsku. W tych skillach są polskie nazwy urzędów i dokumentów, polskie zwyczaje w korespondencji, a w skillach prawnych przepisy z datą stanu prawnego. Teksty, które piszą, mają brzmieć naturalnie, bez kalek z angielskiego.
 
